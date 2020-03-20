@@ -1,0 +1,69 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/test-query": {
+            "get": {
+                "operationId": "Test Reference Response",
+                "responses": {
+                    "200": {
+                        "$ref": "#/components/responses/common"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        },
+        "/test-array-ref": {
+            "get": {
+                "operationId": "Test Ref Array",
+                "responses": {
+                    "200": {
+                        "description": "Description",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/NotAnObject"
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        }
+    },
+    "info": {
+        "version": "",
+        "title": ""
+    },
+    "components": {
+        "responses": {
+            "common": {
+                "description": "no error",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "foo": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "schemas": {
+            "NotAnObject": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

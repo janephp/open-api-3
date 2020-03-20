@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/test-query": {
+            "get": {
+                "operationId": "Test Reference Response",
+                "responses": {
+                    "200": {
+                        "description": "test",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "swagger1.json#/components/schemas/body"
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        }
+    },
+    "info": {
+        "version": "",
+        "title": ""
+    }
+}

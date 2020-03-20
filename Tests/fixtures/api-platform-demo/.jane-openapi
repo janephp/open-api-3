@@ -1,0 +1,7 @@
+<?php
+
+return [
+    'openapi-file' => __DIR__ . '/apip-demo.json',
+    'namespace' => 'ApiPlatform\Demo',
+    'directory' => __DIR__ . '/generated',
+];

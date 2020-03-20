@@ -1,0 +1,345 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/test-path-parameters/{testPath}": {
+            "parameters": [
+                {
+                    "name": "testPath",
+                    "in": "path",
+                    "schema": {
+                        "type": "string"
+                    },
+                    "required": true
+                },
+                {
+                    "name": "testQuery",
+                    "in": "query",
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "testHeader",
+                    "in": "header",
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "testGetWithPathParameters",
+                "tags": [
+                    "Test"
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Default response"
+                    }
+                }
+            },
+            "post": {
+                "operationId": "testPostWithPathParameters",
+                "tags": [
+                    "Test"
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Default response"
+                    }
+                }
+            }
+        },
+        "/test-query": {
+            "get": {
+                "operationId": "Test Query Parameters",
+                "parameters": [
+                    {
+                        "name": "testString",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "testInteger",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "testFloat",
+                        "in": "query",
+                        "schema": {
+                            "type": "number"
+                        }
+                    },
+                    {
+                        "name": "testArray",
+                        "in": "query",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                            }
+                        }
+                    },
+                    {
+                        "name": "testRequired",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "testDefault",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "default": "test"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        },
+        "/test-header": {
+            "get": {
+                "operationId": "Test Header Parameters",
+                "parameters": [
+                    {
+                        "name": "testString",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "testInteger",
+                        "in": "header",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "testFloat",
+                        "in": "header",
+                        "schema": {
+                            "type": "number"
+                        }
+                    },
+                    {
+                        "name": "testArray",
+                        "in": "header",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                            }
+                        }
+                    },
+                    {
+                        "name": "testRequired",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "testDefault",
+                        "in": "header",
+                        "schema": {
+                            "type": "string",
+                            "default": "test"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        },
+        "/test-form": {
+            "post": {
+                "operationId": "Test Form Parameters",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "testString": {
+                                        "type": "string"
+                                    },
+                                    "testInteger": {
+                                        "type": "integer"
+                                    },
+                                    "testFloat": {
+                                        "type": "number"
+                                    },
+                                    "testArray": {
+                                        "type": "array"
+                                    },
+                                    "testRequired": {
+                                        "type": "string"
+                                    },
+                                    "testDefault": {
+                                        "type": "string",
+                                        "default": "test"
+                                    }
+                                },
+                                "required": [
+                                    "testRequired"
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/test-form-file": {
+            "post": {
+                "operationId": "Test Form File Parameters",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "testFile": {
+                                        "type": "string",
+                                        "format": "binary"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/test-binary-body": {
+            "post": {
+                "operationId": "Test Binary Body",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ],
+                "requestBody": {
+                    "content": {
+                        "test/plain": {
+                            "schema": {
+                                "type": "string",
+                                "format": "binary"
+                            }
+                        }
+                    },
+                    "required": true
+                }
+            }
+        },
+        "/test-path/{testString}/{testInteger}/{testFloat}": {
+            "get": {
+                "operationId": "Test Path Parameters",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/testString"
+                    },
+                    {
+                        "name": "testInteger",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "testFloat",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        },
+        "/{test_integer}": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "test_integer",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        }
+    },
+    "info": {
+        "version": "",
+        "title": ""
+    },
+    "components": {
+        "parameters": {
+            "testString": {
+                "name": "testString",
+                "in": "path",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

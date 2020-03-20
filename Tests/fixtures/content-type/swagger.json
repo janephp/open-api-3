@@ -1,0 +1,89 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/test-simple": {
+            "post": {
+                "operationId": "Body parameter triggers content type being set",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": true
+                }
+            }
+        },
+        "/test-object": {
+            "get": {
+                "operationId": "Produces triggers accept being set",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        }
+    },
+    "info": {
+        "version": "",
+        "title": ""
+    },
+    "components": {
+        "schemas": {
+            "Schema": {
+                "type": "object",
+                "properties": {
+                    "stringProperty": {
+                        "type": "string"
+                    },
+                    "dateProperty": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "integerProperty": {
+                        "type": "integer"
+                    },
+                    "floatProperty": {
+                        "type": "number"
+                    },
+                    "arrayProperty": {
+                        "type": "array",
+                        "items": {
+                        }
+                    },
+                    "mapProperty": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "string"
+                        }
+                    },
+                    "objectProperty": {
+                        "type": "object",
+                        "properties": {
+                            "stringProperty": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "objectRefProperty": {
+                        "$ref": "#/components/schemas/Schema"
+                    }
+                }
+            }
+        }
+    }
+}
