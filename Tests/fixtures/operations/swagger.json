@@ -1,0 +1,224 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/test-no-tag": {
+            "get": {
+                "operationId": "Test No Tag",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                }
+            }
+        },
+        "/test-operation-url": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                }
+            }
+        },
+        "/test-operation-url/{id}": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                }
+            }
+        },
+        "/test-operation-url-with-extension.php": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test.foo"
+                ]
+            }
+        },
+        "/test-get": {
+            "get": {
+                "operationId": "Get Test",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            },
+            "post": {
+                "operationId": "Post Test",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            },
+            "head": {
+                "operationId": "Head Test",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            },
+            "put": {
+                "operationId": "Put Test",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            },
+            "delete": {
+                "operationId": "Delete Test",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            },
+            "options": {
+                "operationId": "Options Test",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            },
+            "patch": {
+                "operationId": "Patch Test",
+                "responses": {
+                    "200": {
+                        "description": "no error"
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        },
+        "/things": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "no error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Thing"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/things/{id}": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "no error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Thing"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/another-things": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "no error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Thing"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/another-things/{id}": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "no error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Thing"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/no-200-things": {
+            "post": {
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    }
+                }
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "/"
+        }
+    ],
+    "info": {
+        "version": "",
+        "title": ""
+    },
+    "components": {
+        "schemas": {
+            "Thing": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

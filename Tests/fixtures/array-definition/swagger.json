@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/test-simple": {
+            "post": {
+                "operationId": "testSimple",
+                "responses": {
+                    "200": {
+                        "description": "no error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Bar"
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "Test"
+                ]
+            }
+        }
+    },
+    "info": {
+        "version": "",
+        "title": ""
+    },
+    "components": {
+        "schemas": {
+            "Bar": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "bar": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
