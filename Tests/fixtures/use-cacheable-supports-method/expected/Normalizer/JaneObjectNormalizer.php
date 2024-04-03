@@ -13,7 +13,7 @@ use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Serializer\Normalizer\CacheableSupportsMethodInterface;
 if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR_VERSION === 6 and Kernel::MINOR_VERSION === 4)) {
-    class JaneObjectNormalizer implements DenormalizerInterface, NormalizerInterface, DenormalizerAwareInterface, NormalizerAwareInterface, CacheableSupportsMethodInterface
+    class JaneObjectNormalizer implements DenormalizerInterface, NormalizerInterface, DenormalizerAwareInterface, NormalizerAwareInterface
     {
         use DenormalizerAwareTrait;
         use NormalizerAwareTrait;
@@ -55,10 +55,6 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function getSupportedTypes(?string $format = null) : array
         {
             return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Schema' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SchemaObjectProperty' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
-        }
-        public function hasCacheableSupportsMethod() : bool
-        {
-            return true;
         }
     }
 } else {
