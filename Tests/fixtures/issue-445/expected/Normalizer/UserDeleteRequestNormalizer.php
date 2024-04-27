@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\UserDeleteRequest';
+            return $type === \PicturePark\API\Model\UserDeleteRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -58,7 +58,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\UserDeleteRequest' => false];
+            return [\PicturePark\API\Model\UserDeleteRequest::class => false];
         }
     }
 } else {
@@ -70,7 +70,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\UserDeleteRequest';
+            return $type === \PicturePark\API\Model\UserDeleteRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -112,7 +112,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\UserDeleteRequest' => false];
+            return [\PicturePark\API\Model\UserDeleteRequest::class => false];
         }
     }
 }

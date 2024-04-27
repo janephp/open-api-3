@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\SearchBehaviorBaseResultOfSchema';
+            return $type === \PicturePark\API\Model\SearchBehaviorBaseResultOfSchema::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -47,7 +47,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('results', $data)) {
                 $values = [];
                 foreach ($data['results'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\Schema', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\Schema::class, 'json', $context);
                 }
                 $object->setResults($values);
                 unset($data['results']);
@@ -77,7 +77,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('queryDebugInformation', $data) && $data['queryDebugInformation'] !== null) {
                 $values_1 = [];
                 foreach ($data['queryDebugInformation'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\QueryDebugInformation', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\QueryDebugInformation::class, 'json', $context);
                 }
                 $object->setQueryDebugInformation($values_1);
                 unset($data['queryDebugInformation']);
@@ -127,7 +127,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\SearchBehaviorBaseResultOfSchema' => false];
+            return [\PicturePark\API\Model\SearchBehaviorBaseResultOfSchema::class => false];
         }
     }
 } else {
@@ -139,7 +139,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\SearchBehaviorBaseResultOfSchema';
+            return $type === \PicturePark\API\Model\SearchBehaviorBaseResultOfSchema::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -167,7 +167,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('results', $data)) {
                 $values = [];
                 foreach ($data['results'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\Schema', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\Schema::class, 'json', $context);
                 }
                 $object->setResults($values);
                 unset($data['results']);
@@ -197,7 +197,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('queryDebugInformation', $data) && $data['queryDebugInformation'] !== null) {
                 $values_1 = [];
                 foreach ($data['queryDebugInformation'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\QueryDebugInformation', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\QueryDebugInformation::class, 'json', $context);
                 }
                 $object->setQueryDebugInformation($values_1);
                 unset($data['queryDebugInformation']);
@@ -250,7 +250,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\SearchBehaviorBaseResultOfSchema' => false];
+            return [\PicturePark\API\Model\SearchBehaviorBaseResultOfSchema::class => false];
         }
     }
 }

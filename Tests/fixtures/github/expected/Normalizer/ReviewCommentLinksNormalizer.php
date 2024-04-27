@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReviewCommentLinks';
+            return $type === \Github\Model\ReviewCommentLinks::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,15 +44,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('self', $data)) {
-                $object->setSelf($this->denormalizer->denormalize($data['self'], 'Github\\Model\\Link', 'json', $context));
+                $object->setSelf($this->denormalizer->denormalize($data['self'], \Github\Model\Link::class, 'json', $context));
                 unset($data['self']);
             }
             if (\array_key_exists('html', $data)) {
-                $object->setHtml($this->denormalizer->denormalize($data['html'], 'Github\\Model\\Link', 'json', $context));
+                $object->setHtml($this->denormalizer->denormalize($data['html'], \Github\Model\Link::class, 'json', $context));
                 unset($data['html']);
             }
             if (\array_key_exists('pull_request', $data)) {
-                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], 'Github\\Model\\Link', 'json', $context));
+                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], \Github\Model\Link::class, 'json', $context));
                 unset($data['pull_request']);
             }
             foreach ($data as $key => $value) {
@@ -80,7 +80,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReviewCommentLinks' => false];
+            return [\Github\Model\ReviewCommentLinks::class => false];
         }
     }
 } else {
@@ -92,7 +92,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReviewCommentLinks';
+            return $type === \Github\Model\ReviewCommentLinks::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -117,15 +117,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('self', $data)) {
-                $object->setSelf($this->denormalizer->denormalize($data['self'], 'Github\\Model\\Link', 'json', $context));
+                $object->setSelf($this->denormalizer->denormalize($data['self'], \Github\Model\Link::class, 'json', $context));
                 unset($data['self']);
             }
             if (\array_key_exists('html', $data)) {
-                $object->setHtml($this->denormalizer->denormalize($data['html'], 'Github\\Model\\Link', 'json', $context));
+                $object->setHtml($this->denormalizer->denormalize($data['html'], \Github\Model\Link::class, 'json', $context));
                 unset($data['html']);
             }
             if (\array_key_exists('pull_request', $data)) {
-                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], 'Github\\Model\\Link', 'json', $context));
+                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], \Github\Model\Link::class, 'json', $context));
                 unset($data['pull_request']);
             }
             foreach ($data as $key => $value) {
@@ -156,7 +156,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReviewCommentLinks' => false];
+            return [\Github\Model\ReviewCommentLinks::class => false];
         }
     }
 }

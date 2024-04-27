@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\CompanyEventsResponse';
+            return $type === \CreditSafe\API\Model\CompanyEventsResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -50,13 +50,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('data', $data)) {
                 $values = [];
                 foreach ($data['data'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\Event', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\Event::class, 'json', $context);
                 }
                 $object->setData($values);
                 unset($data['data']);
             }
             if (\array_key_exists('paging', $data)) {
-                $object->setPaging($this->denormalizer->denormalize($data['paging'], 'CreditSafe\\API\\Model\\Paging', 'json', $context));
+                $object->setPaging($this->denormalizer->denormalize($data['paging'], \CreditSafe\API\Model\Paging::class, 'json', $context));
                 unset($data['paging']);
             }
             foreach ($data as $key => $value_1) {
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\CompanyEventsResponse' => false];
+            return [\CreditSafe\API\Model\CompanyEventsResponse::class => false];
         }
     }
 } else {
@@ -103,7 +103,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\CompanyEventsResponse';
+            return $type === \CreditSafe\API\Model\CompanyEventsResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -134,13 +134,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('data', $data)) {
                 $values = [];
                 foreach ($data['data'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\Event', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\Event::class, 'json', $context);
                 }
                 $object->setData($values);
                 unset($data['data']);
             }
             if (\array_key_exists('paging', $data)) {
-                $object->setPaging($this->denormalizer->denormalize($data['paging'], 'CreditSafe\\API\\Model\\Paging', 'json', $context));
+                $object->setPaging($this->denormalizer->denormalize($data['paging'], \CreditSafe\API\Model\Paging::class, 'json', $context));
                 unset($data['paging']);
             }
             foreach ($data as $key => $value_1) {
@@ -178,7 +178,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\CompanyEventsResponse' => false];
+            return [\CreditSafe\API\Model\CompanyEventsResponse::class => false];
         }
     }
 }

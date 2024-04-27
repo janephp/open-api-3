@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Thread';
+            return $type === \Github\Model\Thread::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -48,11 +48,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['id']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('subject', $data)) {
-                $object->setSubject($this->denormalizer->denormalize($data['subject'], 'Github\\Model\\ThreadSubject', 'json', $context));
+                $object->setSubject($this->denormalizer->denormalize($data['subject'], \Github\Model\ThreadSubject::class, 'json', $context));
                 unset($data['subject']);
             }
             if (\array_key_exists('reason', $data)) {
@@ -131,7 +131,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Thread' => false];
+            return [\Github\Model\Thread::class => false];
         }
     }
 } else {
@@ -143,7 +143,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Thread';
+            return $type === \Github\Model\Thread::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -172,11 +172,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['id']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('subject', $data)) {
-                $object->setSubject($this->denormalizer->denormalize($data['subject'], 'Github\\Model\\ThreadSubject', 'json', $context));
+                $object->setSubject($this->denormalizer->denormalize($data['subject'], \Github\Model\ThreadSubject::class, 'json', $context));
                 unset($data['subject']);
             }
             if (\array_key_exists('reason', $data)) {
@@ -258,7 +258,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Thread' => false];
+            return [\Github\Model\Thread::class => false];
         }
     }
 }

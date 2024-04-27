@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoCheckRunsPostBody';
+            return $type === \Github\Model\ReposOwnerRepoCheckRunsPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -76,13 +76,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['completed_at']);
             }
             if (\array_key_exists('output', $data)) {
-                $object->setOutput($this->denormalizer->denormalize($data['output'], 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutput', 'json', $context));
+                $object->setOutput($this->denormalizer->denormalize($data['output'], \Github\Model\ReposOwnerRepoCheckRunsPostBodyOutput::class, 'json', $context));
                 unset($data['output']);
             }
             if (\array_key_exists('actions', $data)) {
                 $values = [];
                 foreach ($data['actions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyActionsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReposOwnerRepoCheckRunsPostBodyActionsItem::class, 'json', $context);
                 }
                 $object->setActions($values);
                 unset($data['actions']);
@@ -139,7 +139,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoCheckRunsPostBody' => false];
+            return [\Github\Model\ReposOwnerRepoCheckRunsPostBody::class => false];
         }
     }
 } else {
@@ -151,7 +151,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoCheckRunsPostBody';
+            return $type === \Github\Model\ReposOwnerRepoCheckRunsPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -208,13 +208,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['completed_at']);
             }
             if (\array_key_exists('output', $data)) {
-                $object->setOutput($this->denormalizer->denormalize($data['output'], 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutput', 'json', $context));
+                $object->setOutput($this->denormalizer->denormalize($data['output'], \Github\Model\ReposOwnerRepoCheckRunsPostBodyOutput::class, 'json', $context));
                 unset($data['output']);
             }
             if (\array_key_exists('actions', $data)) {
                 $values = [];
                 foreach ($data['actions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyActionsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReposOwnerRepoCheckRunsPostBodyActionsItem::class, 'json', $context);
                 }
                 $object->setActions($values);
                 unset($data['actions']);
@@ -274,7 +274,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoCheckRunsPostBody' => false];
+            return [\Github\Model\ReposOwnerRepoCheckRunsPostBody::class => false];
         }
     }
 }

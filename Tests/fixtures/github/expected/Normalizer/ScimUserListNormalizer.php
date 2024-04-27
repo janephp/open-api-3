@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ScimUserList';
+            return $type === \Github\Model\ScimUserList::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -66,7 +66,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Resources', $data)) {
                 $values_1 = [];
                 foreach ($data['Resources'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\ScimUser', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\ScimUser::class, 'json', $context);
                 }
                 $object->setResources($values_1);
                 unset($data['Resources']);
@@ -106,7 +106,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ScimUserList' => false];
+            return [\Github\Model\ScimUserList::class => false];
         }
     }
 } else {
@@ -118,7 +118,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ScimUserList';
+            return $type === \Github\Model\ScimUserList::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -165,7 +165,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('Resources', $data)) {
                 $values_1 = [];
                 foreach ($data['Resources'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\ScimUser', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\ScimUser::class, 'json', $context);
                 }
                 $object->setResources($values_1);
                 unset($data['Resources']);
@@ -208,7 +208,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ScimUserList' => false];
+            return [\Github\Model\ScimUserList::class => false];
         }
     }
 }

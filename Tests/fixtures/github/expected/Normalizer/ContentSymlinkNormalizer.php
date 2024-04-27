@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ContentSymlink';
+            return $type === \Github\Model\ContentSymlink::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -93,7 +93,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDownloadUrl(null);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\ContentSymlinkLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\ContentSymlinkLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             foreach ($data as $key => $value) {
@@ -129,7 +129,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ContentSymlink' => false];
+            return [\Github\Model\ContentSymlink::class => false];
         }
     }
 } else {
@@ -141,7 +141,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ContentSymlink';
+            return $type === \Github\Model\ContentSymlink::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -215,7 +215,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDownloadUrl(null);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\ContentSymlinkLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\ContentSymlinkLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             foreach ($data as $key => $value) {
@@ -254,7 +254,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ContentSymlink' => false];
+            return [\Github\Model\ContentSymlink::class => false];
         }
     }
 }

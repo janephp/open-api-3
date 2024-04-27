@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReviewComment';
+            return $type === \Github\Model\ReviewComment::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -94,7 +94,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['in_reply_to_id']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\ReviewCommentUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\ReviewCommentUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -125,7 +125,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['author_association']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\ReviewCommentLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\ReviewCommentLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             if (\array_key_exists('body_text', $data)) {
@@ -236,7 +236,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReviewComment' => false];
+            return [\Github\Model\ReviewComment::class => false];
         }
     }
 } else {
@@ -248,7 +248,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReviewComment';
+            return $type === \Github\Model\ReviewComment::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -323,7 +323,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['in_reply_to_id']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\ReviewCommentUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\ReviewCommentUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -354,7 +354,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['author_association']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\ReviewCommentLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\ReviewCommentLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             if (\array_key_exists('body_text', $data)) {
@@ -468,7 +468,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReviewComment' => false];
+            return [\Github\Model\ReviewComment::class => false];
         }
     }
 }

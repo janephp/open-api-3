@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ValidationError';
+            return $type === \Github\Model\ValidationError::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -54,7 +54,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('errors', $data)) {
                 $values = [];
                 foreach ($data['errors'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ValidationErrorErrorsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ValidationErrorErrorsItem::class, 'json', $context);
                 }
                 $object->setErrors($values);
                 unset($data['errors']);
@@ -90,7 +90,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ValidationError' => false];
+            return [\Github\Model\ValidationError::class => false];
         }
     }
 } else {
@@ -102,7 +102,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ValidationError';
+            return $type === \Github\Model\ValidationError::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -137,7 +137,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('errors', $data)) {
                 $values = [];
                 foreach ($data['errors'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ValidationErrorErrorsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ValidationErrorErrorsItem::class, 'json', $context);
                 }
                 $object->setErrors($values);
                 unset($data['errors']);
@@ -176,7 +176,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ValidationError' => false];
+            return [\Github\Model\ValidationError::class => false];
         }
     }
 }

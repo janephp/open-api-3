@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GitTag';
+            return $type === \Github\Model\GitTag::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -64,15 +64,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['message']);
             }
             if (\array_key_exists('tagger', $data)) {
-                $object->setTagger($this->denormalizer->denormalize($data['tagger'], 'Github\\Model\\GitTagTagger', 'json', $context));
+                $object->setTagger($this->denormalizer->denormalize($data['tagger'], \Github\Model\GitTagTagger::class, 'json', $context));
                 unset($data['tagger']);
             }
             if (\array_key_exists('object', $data)) {
-                $object->setObject($this->denormalizer->denormalize($data['object'], 'Github\\Model\\GitTagObject', 'json', $context));
+                $object->setObject($this->denormalizer->denormalize($data['object'], \Github\Model\GitTagObject::class, 'json', $context));
                 unset($data['object']);
             }
             if (\array_key_exists('verification', $data)) {
-                $object->setVerification($this->denormalizer->denormalize($data['verification'], 'Github\\Model\\Verification', 'json', $context));
+                $object->setVerification($this->denormalizer->denormalize($data['verification'], \Github\Model\Verification::class, 'json', $context));
                 unset($data['verification']);
             }
             foreach ($data as $key => $value) {
@@ -107,7 +107,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GitTag' => false];
+            return [\Github\Model\GitTag::class => false];
         }
     }
 } else {
@@ -119,7 +119,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GitTag';
+            return $type === \Github\Model\GitTag::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -164,15 +164,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['message']);
             }
             if (\array_key_exists('tagger', $data)) {
-                $object->setTagger($this->denormalizer->denormalize($data['tagger'], 'Github\\Model\\GitTagTagger', 'json', $context));
+                $object->setTagger($this->denormalizer->denormalize($data['tagger'], \Github\Model\GitTagTagger::class, 'json', $context));
                 unset($data['tagger']);
             }
             if (\array_key_exists('object', $data)) {
-                $object->setObject($this->denormalizer->denormalize($data['object'], 'Github\\Model\\GitTagObject', 'json', $context));
+                $object->setObject($this->denormalizer->denormalize($data['object'], \Github\Model\GitTagObject::class, 'json', $context));
                 unset($data['object']);
             }
             if (\array_key_exists('verification', $data)) {
-                $object->setVerification($this->denormalizer->denormalize($data['verification'], 'Github\\Model\\Verification', 'json', $context));
+                $object->setVerification($this->denormalizer->denormalize($data['verification'], \Github\Model\Verification::class, 'json', $context));
                 unset($data['verification']);
             }
             foreach ($data as $key => $value) {
@@ -210,7 +210,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GitTag' => false];
+            return [\Github\Model\GitTag::class => false];
         }
     }
 }

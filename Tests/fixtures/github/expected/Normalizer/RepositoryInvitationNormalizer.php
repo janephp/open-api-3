@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\RepositoryInvitation';
+            return $type === \Github\Model\RepositoryInvitation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -48,18 +48,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['id']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('invitee', $data) && $data['invitee'] !== null) {
-                $object->setInvitee($this->denormalizer->denormalize($data['invitee'], 'Github\\Model\\RepositoryInvitationInvitee', 'json', $context));
+                $object->setInvitee($this->denormalizer->denormalize($data['invitee'], \Github\Model\RepositoryInvitationInvitee::class, 'json', $context));
                 unset($data['invitee']);
             }
             elseif (\array_key_exists('invitee', $data) && $data['invitee'] === null) {
                 $object->setInvitee(null);
             }
             if (\array_key_exists('inviter', $data) && $data['inviter'] !== null) {
-                $object->setInviter($this->denormalizer->denormalize($data['inviter'], 'Github\\Model\\RepositoryInvitationInviter', 'json', $context));
+                $object->setInviter($this->denormalizer->denormalize($data['inviter'], \Github\Model\RepositoryInvitationInviter::class, 'json', $context));
                 unset($data['inviter']);
             }
             elseif (\array_key_exists('inviter', $data) && $data['inviter'] === null) {
@@ -116,7 +116,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\RepositoryInvitation' => false];
+            return [\Github\Model\RepositoryInvitation::class => false];
         }
     }
 } else {
@@ -128,7 +128,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\RepositoryInvitation';
+            return $type === \Github\Model\RepositoryInvitation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -157,18 +157,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['id']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('invitee', $data) && $data['invitee'] !== null) {
-                $object->setInvitee($this->denormalizer->denormalize($data['invitee'], 'Github\\Model\\RepositoryInvitationInvitee', 'json', $context));
+                $object->setInvitee($this->denormalizer->denormalize($data['invitee'], \Github\Model\RepositoryInvitationInvitee::class, 'json', $context));
                 unset($data['invitee']);
             }
             elseif (\array_key_exists('invitee', $data) && $data['invitee'] === null) {
                 $object->setInvitee(null);
             }
             if (\array_key_exists('inviter', $data) && $data['inviter'] !== null) {
-                $object->setInviter($this->denormalizer->denormalize($data['inviter'], 'Github\\Model\\RepositoryInvitationInviter', 'json', $context));
+                $object->setInviter($this->denormalizer->denormalize($data['inviter'], \Github\Model\RepositoryInvitationInviter::class, 'json', $context));
                 unset($data['inviter']);
             }
             elseif (\array_key_exists('inviter', $data) && $data['inviter'] === null) {
@@ -228,7 +228,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\RepositoryInvitation' => false];
+            return [\Github\Model\RepositoryInvitation::class => false];
         }
     }
 }

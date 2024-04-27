@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Hook';
+            return $type === \Github\Model\Hook::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -68,7 +68,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['events']);
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\HookConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\HookConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('updated_at', $data)) {
@@ -92,7 +92,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['ping_url']);
             }
             if (\array_key_exists('last_response', $data)) {
-                $object->setLastResponse($this->denormalizer->denormalize($data['last_response'], 'Github\\Model\\HookResponse', 'json', $context));
+                $object->setLastResponse($this->denormalizer->denormalize($data['last_response'], \Github\Model\HookResponse::class, 'json', $context));
                 unset($data['last_response']);
             }
             foreach ($data as $key => $value_1) {
@@ -133,7 +133,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Hook' => false];
+            return [\Github\Model\Hook::class => false];
         }
     }
 } else {
@@ -145,7 +145,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Hook';
+            return $type === \Github\Model\Hook::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -194,7 +194,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['events']);
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\HookConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\HookConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('updated_at', $data)) {
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['ping_url']);
             }
             if (\array_key_exists('last_response', $data)) {
-                $object->setLastResponse($this->denormalizer->denormalize($data['last_response'], 'Github\\Model\\HookResponse', 'json', $context));
+                $object->setLastResponse($this->denormalizer->denormalize($data['last_response'], \Github\Model\HookResponse::class, 'json', $context));
                 unset($data['last_response']);
             }
             foreach ($data as $key => $value_1) {
@@ -262,7 +262,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Hook' => false];
+            return [\Github\Model\Hook::class => false];
         }
     }
 }

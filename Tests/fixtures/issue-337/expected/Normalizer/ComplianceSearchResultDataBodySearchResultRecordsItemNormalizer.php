@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\ComplianceSearchResultDataBodySearchResultRecordsItem';
+            return $type === \CreditSafe\API\Model\ComplianceSearchResultDataBodySearchResultRecordsItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -45,7 +45,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['record']);
             }
             if (\array_key_exists('recordDetails', $data)) {
-                $object->setRecordDetails($this->denormalizer->denormalize($data['recordDetails'], 'CreditSafe\\API\\Model\\ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails', 'json', $context));
+                $object->setRecordDetails($this->denormalizer->denormalize($data['recordDetails'], \CreditSafe\API\Model\ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails::class, 'json', $context));
                 unset($data['recordDetails']);
             }
             if (\array_key_exists('resultID', $data)) {
@@ -57,7 +57,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['runID']);
             }
             if (\array_key_exists('watchlist', $data)) {
-                $object->setWatchlist($this->denormalizer->denormalize($data['watchlist'], 'CreditSafe\\API\\Model\\ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist', 'json', $context));
+                $object->setWatchlist($this->denormalizer->denormalize($data['watchlist'], \CreditSafe\API\Model\ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist::class, 'json', $context));
                 unset($data['watchlist']);
             }
             foreach ($data as $key => $value) {
@@ -94,7 +94,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\ComplianceSearchResultDataBodySearchResultRecordsItem' => false];
+            return [\CreditSafe\API\Model\ComplianceSearchResultDataBodySearchResultRecordsItem::class => false];
         }
     }
 } else {
@@ -106,7 +106,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\ComplianceSearchResultDataBodySearchResultRecordsItem';
+            return $type === \CreditSafe\API\Model\ComplianceSearchResultDataBodySearchResultRecordsItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -132,7 +132,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['record']);
             }
             if (\array_key_exists('recordDetails', $data)) {
-                $object->setRecordDetails($this->denormalizer->denormalize($data['recordDetails'], 'CreditSafe\\API\\Model\\ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails', 'json', $context));
+                $object->setRecordDetails($this->denormalizer->denormalize($data['recordDetails'], \CreditSafe\API\Model\ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails::class, 'json', $context));
                 unset($data['recordDetails']);
             }
             if (\array_key_exists('resultID', $data)) {
@@ -144,7 +144,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['runID']);
             }
             if (\array_key_exists('watchlist', $data)) {
-                $object->setWatchlist($this->denormalizer->denormalize($data['watchlist'], 'CreditSafe\\API\\Model\\ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist', 'json', $context));
+                $object->setWatchlist($this->denormalizer->denormalize($data['watchlist'], \CreditSafe\API\Model\ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist::class, 'json', $context));
                 unset($data['watchlist']);
             }
             foreach ($data as $key => $value) {
@@ -184,7 +184,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\ComplianceSearchResultDataBodySearchResultRecordsItem' => false];
+            return [\CreditSafe\API\Model\ComplianceSearchResultDataBodySearchResultRecordsItem::class => false];
         }
     }
 }

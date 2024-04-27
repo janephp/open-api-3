@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PullRequestReviewComment';
+            return $type === \Github\Model\PullRequestReviewComment::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['in_reply_to_id']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -122,7 +122,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['author_association']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\PullRequestReviewCommentLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\PullRequestReviewCommentLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             if (\array_key_exists('start_line', $data) && $data['start_line'] !== null) {
@@ -159,7 +159,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['side']);
             }
             if (\array_key_exists('reactions', $data)) {
-                $object->setReactions($this->denormalizer->denormalize($data['reactions'], 'Github\\Model\\ReactionRollup', 'json', $context));
+                $object->setReactions($this->denormalizer->denormalize($data['reactions'], \Github\Model\ReactionRollup::class, 'json', $context));
                 unset($data['reactions']);
             }
             if (\array_key_exists('body_html', $data)) {
@@ -240,7 +240,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PullRequestReviewComment' => false];
+            return [\Github\Model\PullRequestReviewComment::class => false];
         }
     }
 } else {
@@ -252,7 +252,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PullRequestReviewComment';
+            return $type === \Github\Model\PullRequestReviewComment::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -324,7 +324,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['in_reply_to_id']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -355,7 +355,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['author_association']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\PullRequestReviewCommentLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\PullRequestReviewCommentLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             if (\array_key_exists('start_line', $data) && $data['start_line'] !== null) {
@@ -392,7 +392,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['side']);
             }
             if (\array_key_exists('reactions', $data)) {
-                $object->setReactions($this->denormalizer->denormalize($data['reactions'], 'Github\\Model\\ReactionRollup', 'json', $context));
+                $object->setReactions($this->denormalizer->denormalize($data['reactions'], \Github\Model\ReactionRollup::class, 'json', $context));
                 unset($data['reactions']);
             }
             if (\array_key_exists('body_html', $data)) {
@@ -476,7 +476,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PullRequestReviewComment' => false];
+            return [\Github\Model\PullRequestReviewComment::class => false];
         }
     }
 }

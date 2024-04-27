@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\LicenseContent';
+            return $type === \Github\Model\LicenseContent::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -97,11 +97,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['encoding']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\LicenseContentLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\LicenseContentLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\LicenseContentLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\LicenseContentLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
@@ -142,7 +142,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\LicenseContent' => false];
+            return [\Github\Model\LicenseContent::class => false];
         }
     }
 } else {
@@ -154,7 +154,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\LicenseContent';
+            return $type === \Github\Model\LicenseContent::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -232,11 +232,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['encoding']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\LicenseContentLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\LicenseContentLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\LicenseContentLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\LicenseContentLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
@@ -280,7 +280,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\LicenseContent' => false];
+            return [\Github\Model\LicenseContent::class => false];
         }
     }
 }

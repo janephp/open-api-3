@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\AuthenticationToken';
+            return $type === \Github\Model\AuthenticationToken::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -62,7 +62,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('repositories', $data)) {
                 $values_1 = [];
                 foreach ($data['repositories'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\Repository', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\Repository::class, 'json', $context);
                 }
                 $object->setRepositories($values_1);
                 unset($data['repositories']);
@@ -122,7 +122,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\AuthenticationToken' => false];
+            return [\Github\Model\AuthenticationToken::class => false];
         }
     }
 } else {
@@ -134,7 +134,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\AuthenticationToken';
+            return $type === \Github\Model\AuthenticationToken::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -177,7 +177,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('repositories', $data)) {
                 $values_1 = [];
                 foreach ($data['repositories'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\Repository', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\Repository::class, 'json', $context);
                 }
                 $object->setRepositories($values_1);
                 unset($data['repositories']);
@@ -240,7 +240,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\AuthenticationToken' => false];
+            return [\Github\Model\AuthenticationToken::class => false];
         }
     }
 }

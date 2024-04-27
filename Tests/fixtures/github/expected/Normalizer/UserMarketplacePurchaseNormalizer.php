@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\UserMarketplacePurchase';
+            return $type === \Github\Model\UserMarketplacePurchase::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -80,11 +80,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt(null);
             }
             if (\array_key_exists('account', $data)) {
-                $object->setAccount($this->denormalizer->denormalize($data['account'], 'Github\\Model\\MarketplaceAccount', 'json', $context));
+                $object->setAccount($this->denormalizer->denormalize($data['account'], \Github\Model\MarketplaceAccount::class, 'json', $context));
                 unset($data['account']);
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\MarketplaceListingPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\MarketplaceListingPlan::class, 'json', $context));
                 unset($data['plan']);
             }
             foreach ($data as $key => $value) {
@@ -117,7 +117,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\UserMarketplacePurchase' => false];
+            return [\Github\Model\UserMarketplacePurchase::class => false];
         }
     }
 } else {
@@ -129,7 +129,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\UserMarketplacePurchase';
+            return $type === \Github\Model\UserMarketplacePurchase::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -190,11 +190,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt(null);
             }
             if (\array_key_exists('account', $data)) {
-                $object->setAccount($this->denormalizer->denormalize($data['account'], 'Github\\Model\\MarketplaceAccount', 'json', $context));
+                $object->setAccount($this->denormalizer->denormalize($data['account'], \Github\Model\MarketplaceAccount::class, 'json', $context));
                 unset($data['account']);
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\MarketplaceListingPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\MarketplaceListingPlan::class, 'json', $context));
                 unset($data['plan']);
             }
             foreach ($data as $key => $value) {
@@ -230,7 +230,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\UserMarketplacePurchase' => false];
+            return [\Github\Model\UserMarketplacePurchase::class => false];
         }
     }
 }

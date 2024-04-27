@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\ListItemUpdateManyRequest';
+            return $type === \PicturePark\API\Model\ListItemUpdateManyRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -46,7 +46,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('items', $data)) {
                 $values = [];
                 foreach ($data['items'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\ListItemUpdateItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\ListItemUpdateItem::class, 'json', $context);
                 }
                 $object->setItems($values);
             }
@@ -65,7 +65,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\ListItemUpdateManyRequest' => false];
+            return [\PicturePark\API\Model\ListItemUpdateManyRequest::class => false];
         }
     }
 } else {
@@ -77,7 +77,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\ListItemUpdateManyRequest';
+            return $type === \PicturePark\API\Model\ListItemUpdateManyRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -104,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('items', $data)) {
                 $values = [];
                 foreach ($data['items'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\ListItemUpdateItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\ListItemUpdateItem::class, 'json', $context);
                 }
                 $object->setItems($values);
             }
@@ -126,7 +126,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\ListItemUpdateManyRequest' => false];
+            return [\PicturePark\API\Model\ListItemUpdateManyRequest::class => false];
         }
     }
 }

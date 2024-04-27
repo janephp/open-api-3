@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\EventPayload';
+            return $type === \Github\Model\EventPayload::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -48,17 +48,17 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['action']);
             }
             if (\array_key_exists('issue', $data)) {
-                $object->setIssue($this->denormalizer->denormalize($data['issue'], 'Github\\Model\\IssueSimple', 'json', $context));
+                $object->setIssue($this->denormalizer->denormalize($data['issue'], \Github\Model\IssueSimple::class, 'json', $context));
                 unset($data['issue']);
             }
             if (\array_key_exists('comment', $data)) {
-                $object->setComment($this->denormalizer->denormalize($data['comment'], 'Github\\Model\\IssueComment', 'json', $context));
+                $object->setComment($this->denormalizer->denormalize($data['comment'], \Github\Model\IssueComment::class, 'json', $context));
                 unset($data['comment']);
             }
             if (\array_key_exists('pages', $data)) {
                 $values = [];
                 foreach ($data['pages'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\EventPayloadPagesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\EventPayloadPagesItem::class, 'json', $context);
                 }
                 $object->setPages($values);
                 unset($data['pages']);
@@ -101,7 +101,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\EventPayload' => false];
+            return [\Github\Model\EventPayload::class => false];
         }
     }
 } else {
@@ -113,7 +113,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\EventPayload';
+            return $type === \Github\Model\EventPayload::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -142,17 +142,17 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['action']);
             }
             if (\array_key_exists('issue', $data)) {
-                $object->setIssue($this->denormalizer->denormalize($data['issue'], 'Github\\Model\\IssueSimple', 'json', $context));
+                $object->setIssue($this->denormalizer->denormalize($data['issue'], \Github\Model\IssueSimple::class, 'json', $context));
                 unset($data['issue']);
             }
             if (\array_key_exists('comment', $data)) {
-                $object->setComment($this->denormalizer->denormalize($data['comment'], 'Github\\Model\\IssueComment', 'json', $context));
+                $object->setComment($this->denormalizer->denormalize($data['comment'], \Github\Model\IssueComment::class, 'json', $context));
                 unset($data['comment']);
             }
             if (\array_key_exists('pages', $data)) {
                 $values = [];
                 foreach ($data['pages'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\EventPayloadPagesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\EventPayloadPagesItem::class, 'json', $context);
                 }
                 $object->setPages($values);
                 unset($data['pages']);
@@ -198,7 +198,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\EventPayload' => false];
+            return [\Github\Model\EventPayload::class => false];
         }
     }
 }

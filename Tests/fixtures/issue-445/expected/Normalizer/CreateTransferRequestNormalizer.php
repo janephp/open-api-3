@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\CreateTransferRequest';
+            return $type === \PicturePark\API\Model\CreateTransferRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -49,7 +49,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data) && $data['files'] !== null) {
                 $values = [];
                 foreach ($data['files'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\TransferUploadFile', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\TransferUploadFile::class, 'json', $context);
                 }
                 $object->setFiles($values);
             }
@@ -59,7 +59,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('webLinks', $data) && $data['webLinks'] !== null) {
                 $values_1 = [];
                 foreach ($data['webLinks'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\TransferWebLink', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\TransferWebLink::class, 'json', $context);
                 }
                 $object->setWebLinks($values_1);
             }
@@ -104,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\CreateTransferRequest' => false];
+            return [\PicturePark\API\Model\CreateTransferRequest::class => false];
         }
     }
 } else {
@@ -116,7 +116,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\CreateTransferRequest';
+            return $type === \PicturePark\API\Model\CreateTransferRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -146,7 +146,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data) && $data['files'] !== null) {
                 $values = [];
                 foreach ($data['files'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\TransferUploadFile', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\TransferUploadFile::class, 'json', $context);
                 }
                 $object->setFiles($values);
             }
@@ -156,7 +156,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('webLinks', $data) && $data['webLinks'] !== null) {
                 $values_1 = [];
                 foreach ($data['webLinks'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\TransferWebLink', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\TransferWebLink::class, 'json', $context);
                 }
                 $object->setWebLinks($values_1);
             }
@@ -204,7 +204,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\CreateTransferRequest' => false];
+            return [\PicturePark\API\Model\CreateTransferRequest::class => false];
         }
     }
 }

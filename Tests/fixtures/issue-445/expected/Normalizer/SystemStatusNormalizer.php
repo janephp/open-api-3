@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\SystemStatus';
+            return $type === \PicturePark\API\Model\SystemStatus::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -43,7 +43,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('searchIndicesStatus', $data) && $data['searchIndicesStatus'] !== null) {
                 $values = [];
                 foreach ($data['searchIndicesStatus'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\StatusOfSearchIndexState', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\StatusOfSearchIndexState::class, 'json', $context);
                 }
                 $object->setSearchIndicesStatus($values);
             }
@@ -53,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('displayValuesStatus', $data) && $data['displayValuesStatus'] !== null) {
                 $values_1 = [];
                 foreach ($data['displayValuesStatus'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\StatusOfDisplayValuesState', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\StatusOfDisplayValuesState::class, 'json', $context);
                 }
                 $object->setDisplayValuesStatus($values_1);
             }
@@ -63,7 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('metadataStatus', $data) && $data['metadataStatus'] !== null) {
                 $values_2 = [];
                 foreach ($data['metadataStatus'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\StatusOfMetadataState', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\StatusOfMetadataState::class, 'json', $context);
                 }
                 $object->setMetadataStatus($values_2);
             }
@@ -100,7 +100,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\SystemStatus' => false];
+            return [\PicturePark\API\Model\SystemStatus::class => false];
         }
     }
 } else {
@@ -112,7 +112,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\SystemStatus';
+            return $type === \PicturePark\API\Model\SystemStatus::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -136,7 +136,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('searchIndicesStatus', $data) && $data['searchIndicesStatus'] !== null) {
                 $values = [];
                 foreach ($data['searchIndicesStatus'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\StatusOfSearchIndexState', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\StatusOfSearchIndexState::class, 'json', $context);
                 }
                 $object->setSearchIndicesStatus($values);
             }
@@ -146,7 +146,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('displayValuesStatus', $data) && $data['displayValuesStatus'] !== null) {
                 $values_1 = [];
                 foreach ($data['displayValuesStatus'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\StatusOfDisplayValuesState', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\StatusOfDisplayValuesState::class, 'json', $context);
                 }
                 $object->setDisplayValuesStatus($values_1);
             }
@@ -156,7 +156,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('metadataStatus', $data) && $data['metadataStatus'] !== null) {
                 $values_2 = [];
                 foreach ($data['metadataStatus'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\StatusOfMetadataState', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\StatusOfMetadataState::class, 'json', $context);
                 }
                 $object->setMetadataStatus($values_2);
             }
@@ -196,7 +196,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\SystemStatus' => false];
+            return [\PicturePark\API\Model\SystemStatus::class => false];
         }
     }
 }

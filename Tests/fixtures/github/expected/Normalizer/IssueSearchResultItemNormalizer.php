@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\IssueSearchResultItem';
+            return $type === \Github\Model\IssueSearchResultItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -97,7 +97,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('assignees', $data) && $data['assignees'] !== null) {
                 $values = [];
                 foreach ($data['assignees'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SimpleUser', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SimpleUser::class, 'json', $context);
                 }
                 $object->setAssignees($values);
                 unset($data['assignees']);
@@ -106,7 +106,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setAssignees(null);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\IssueSearchResultItemUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\IssueSearchResultItemUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -115,7 +115,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('labels', $data)) {
                 $values_1 = [];
                 foreach ($data['labels'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\IssueSearchResultItemLabelsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\IssueSearchResultItemLabelsItem::class, 'json', $context);
                 }
                 $object->setLabels($values_1);
                 unset($data['labels']);
@@ -125,14 +125,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['state']);
             }
             if (\array_key_exists('assignee', $data) && $data['assignee'] !== null) {
-                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], 'Github\\Model\\IssueSearchResultItemAssignee', 'json', $context));
+                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], \Github\Model\IssueSearchResultItemAssignee::class, 'json', $context));
                 unset($data['assignee']);
             }
             elseif (\array_key_exists('assignee', $data) && $data['assignee'] === null) {
                 $object->setAssignee(null);
             }
             if (\array_key_exists('milestone', $data) && $data['milestone'] !== null) {
-                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], 'Github\\Model\\IssueSearchResultItemMilestone', 'json', $context));
+                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], \Github\Model\IssueSearchResultItemMilestone::class, 'json', $context));
                 unset($data['milestone']);
             }
             elseif (\array_key_exists('milestone', $data) && $data['milestone'] === null) {
@@ -160,13 +160,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('text_matches', $data)) {
                 $values_2 = [];
                 foreach ($data['text_matches'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values_2);
                 unset($data['text_matches']);
             }
             if (\array_key_exists('pull_request', $data)) {
-                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], 'Github\\Model\\IssueSearchResultItemPullRequest', 'json', $context));
+                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], \Github\Model\IssueSearchResultItemPullRequest::class, 'json', $context));
                 unset($data['pull_request']);
             }
             if (\array_key_exists('body', $data)) {
@@ -186,7 +186,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['draft']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\Repository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\Repository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('body_html', $data)) {
@@ -202,7 +202,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['timeline_url']);
             }
             if (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] !== null) {
-                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], 'Github\\Model\\IssueSearchResultItemPerformedViaGithubApp', 'json', $context));
+                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], \Github\Model\IssueSearchResultItemPerformedViaGithubApp::class, 'json', $context));
                 unset($data['performed_via_github_app']);
             }
             elseif (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] === null) {
@@ -297,7 +297,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\IssueSearchResultItem' => false];
+            return [\Github\Model\IssueSearchResultItem::class => false];
         }
     }
 } else {
@@ -309,7 +309,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\IssueSearchResultItem';
+            return $type === \Github\Model\IssueSearchResultItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -387,7 +387,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('assignees', $data) && $data['assignees'] !== null) {
                 $values = [];
                 foreach ($data['assignees'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SimpleUser', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SimpleUser::class, 'json', $context);
                 }
                 $object->setAssignees($values);
                 unset($data['assignees']);
@@ -396,7 +396,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setAssignees(null);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\IssueSearchResultItemUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\IssueSearchResultItemUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -405,7 +405,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('labels', $data)) {
                 $values_1 = [];
                 foreach ($data['labels'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\IssueSearchResultItemLabelsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\IssueSearchResultItemLabelsItem::class, 'json', $context);
                 }
                 $object->setLabels($values_1);
                 unset($data['labels']);
@@ -415,14 +415,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['state']);
             }
             if (\array_key_exists('assignee', $data) && $data['assignee'] !== null) {
-                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], 'Github\\Model\\IssueSearchResultItemAssignee', 'json', $context));
+                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], \Github\Model\IssueSearchResultItemAssignee::class, 'json', $context));
                 unset($data['assignee']);
             }
             elseif (\array_key_exists('assignee', $data) && $data['assignee'] === null) {
                 $object->setAssignee(null);
             }
             if (\array_key_exists('milestone', $data) && $data['milestone'] !== null) {
-                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], 'Github\\Model\\IssueSearchResultItemMilestone', 'json', $context));
+                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], \Github\Model\IssueSearchResultItemMilestone::class, 'json', $context));
                 unset($data['milestone']);
             }
             elseif (\array_key_exists('milestone', $data) && $data['milestone'] === null) {
@@ -450,13 +450,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('text_matches', $data)) {
                 $values_2 = [];
                 foreach ($data['text_matches'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values_2);
                 unset($data['text_matches']);
             }
             if (\array_key_exists('pull_request', $data)) {
-                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], 'Github\\Model\\IssueSearchResultItemPullRequest', 'json', $context));
+                $object->setPullRequest($this->denormalizer->denormalize($data['pull_request'], \Github\Model\IssueSearchResultItemPullRequest::class, 'json', $context));
                 unset($data['pull_request']);
             }
             if (\array_key_exists('body', $data)) {
@@ -476,7 +476,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['draft']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\Repository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\Repository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('body_html', $data)) {
@@ -492,7 +492,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['timeline_url']);
             }
             if (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] !== null) {
-                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], 'Github\\Model\\IssueSearchResultItemPerformedViaGithubApp', 'json', $context));
+                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], \Github\Model\IssueSearchResultItemPerformedViaGithubApp::class, 'json', $context));
                 unset($data['performed_via_github_app']);
             }
             elseif (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] === null) {
@@ -590,7 +590,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\IssueSearchResultItem' => false];
+            return [\Github\Model\IssueSearchResultItem::class => false];
         }
     }
 }

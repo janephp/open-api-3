@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\AudioMetadata';
+            return $type === \PicturePark\API\Model\AudioMetadata::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -113,7 +113,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('audioStreams', $data) && $data['audioStreams'] !== null) {
                 $values = [];
                 foreach ($data['audioStreams'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\AudioStream', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\AudioStream::class, 'json', $context);
                 }
                 $object->setAudioStreams($values);
                 unset($data['audioStreams']);
@@ -177,7 +177,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\AudioMetadata' => false];
+            return [\PicturePark\API\Model\AudioMetadata::class => false];
         }
     }
 } else {
@@ -189,7 +189,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\AudioMetadata';
+            return $type === \PicturePark\API\Model\AudioMetadata::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -283,7 +283,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('audioStreams', $data) && $data['audioStreams'] !== null) {
                 $values = [];
                 foreach ($data['audioStreams'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\AudioStream', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\AudioStream::class, 'json', $context);
                 }
                 $object->setAudioStreams($values);
                 unset($data['audioStreams']);
@@ -350,7 +350,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\AudioMetadata' => false];
+            return [\PicturePark\API\Model\AudioMetadata::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportShareCapitalStructure';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportShareCapitalStructure::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,7 +44,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('issuedShareCapital', $data)) {
-                $object->setIssuedShareCapital($this->denormalizer->denormalize($data['issuedShareCapital'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital', 'json', $context));
+                $object->setIssuedShareCapital($this->denormalizer->denormalize($data['issuedShareCapital'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital::class, 'json', $context));
                 unset($data['issuedShareCapital']);
             }
             if (\array_key_exists('numberOfSharesIssued', $data)) {
@@ -54,7 +54,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('shareHolders', $data)) {
                 $values = [];
                 foreach ($data['shareHolders'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem::class, 'json', $context);
                 }
                 $object->setShareHolders($values);
                 unset($data['shareHolders']);
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportShareCapitalStructure' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportShareCapitalStructure::class => false];
         }
     }
 } else {
@@ -103,7 +103,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportShareCapitalStructure';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportShareCapitalStructure::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -128,7 +128,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('issuedShareCapital', $data)) {
-                $object->setIssuedShareCapital($this->denormalizer->denormalize($data['issuedShareCapital'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital', 'json', $context));
+                $object->setIssuedShareCapital($this->denormalizer->denormalize($data['issuedShareCapital'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital::class, 'json', $context));
                 unset($data['issuedShareCapital']);
             }
             if (\array_key_exists('numberOfSharesIssued', $data)) {
@@ -138,7 +138,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('shareHolders', $data)) {
                 $values = [];
                 foreach ($data['shareHolders'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem::class, 'json', $context);
                 }
                 $object->setShareHolders($values);
                 unset($data['shareHolders']);
@@ -178,7 +178,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportShareCapitalStructure' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportShareCapitalStructure::class => false];
         }
     }
 }

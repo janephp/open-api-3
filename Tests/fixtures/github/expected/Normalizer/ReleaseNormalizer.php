@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Release';
+            return $type === \Github\Model\Release::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -123,7 +123,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setPublishedAt(null);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
@@ -132,7 +132,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('assets', $data)) {
                 $values = [];
                 foreach ($data['assets'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReleaseAsset', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReleaseAsset::class, 'json', $context);
                 }
                 $object->setAssets($values);
                 unset($data['assets']);
@@ -197,7 +197,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Release' => false];
+            return [\Github\Model\Release::class => false];
         }
     }
 } else {
@@ -209,7 +209,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Release';
+            return $type === \Github\Model\Release::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -313,7 +313,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setPublishedAt(null);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
@@ -322,7 +322,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('assets', $data)) {
                 $values = [];
                 foreach ($data['assets'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReleaseAsset', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReleaseAsset::class, 'json', $context);
                 }
                 $object->setAssets($values);
                 unset($data['assets']);
@@ -390,7 +390,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Release' => false];
+            return [\Github\Model\Release::class => false];
         }
     }
 }

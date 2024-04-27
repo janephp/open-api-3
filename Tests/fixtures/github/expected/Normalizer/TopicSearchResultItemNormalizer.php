@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\TopicSearchResultItem';
+            return $type === \Github\Model\TopicSearchResultItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -119,7 +119,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('text_matches', $data)) {
                 $values = [];
                 foreach ($data['text_matches'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values);
                 unset($data['text_matches']);
@@ -127,7 +127,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('related', $data) && $data['related'] !== null) {
                 $values_1 = [];
                 foreach ($data['related'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\TopicSearchResultItemRelatedItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\TopicSearchResultItemRelatedItem::class, 'json', $context);
                 }
                 $object->setRelated($values_1);
                 unset($data['related']);
@@ -138,7 +138,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('aliases', $data) && $data['aliases'] !== null) {
                 $values_2 = [];
                 foreach ($data['aliases'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\TopicSearchResultItemAliasesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\TopicSearchResultItemAliasesItem::class, 'json', $context);
                 }
                 $object->setAliases($values_2);
                 unset($data['aliases']);
@@ -206,7 +206,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\TopicSearchResultItem' => false];
+            return [\Github\Model\TopicSearchResultItem::class => false];
         }
     }
 } else {
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\TopicSearchResultItem';
+            return $type === \Github\Model\TopicSearchResultItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -318,7 +318,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('text_matches', $data)) {
                 $values = [];
                 foreach ($data['text_matches'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values);
                 unset($data['text_matches']);
@@ -326,7 +326,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('related', $data) && $data['related'] !== null) {
                 $values_1 = [];
                 foreach ($data['related'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\TopicSearchResultItemRelatedItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\TopicSearchResultItemRelatedItem::class, 'json', $context);
                 }
                 $object->setRelated($values_1);
                 unset($data['related']);
@@ -337,7 +337,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('aliases', $data) && $data['aliases'] !== null) {
                 $values_2 = [];
                 foreach ($data['aliases'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\TopicSearchResultItemAliasesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\TopicSearchResultItemAliasesItem::class, 'json', $context);
                 }
                 $object->setAliases($values_2);
                 unset($data['aliases']);
@@ -408,7 +408,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\TopicSearchResultItem' => false];
+            return [\Github\Model\TopicSearchResultItem::class => false];
         }
     }
 }

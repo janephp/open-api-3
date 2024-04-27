@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\ShareDetail';
+            return $type === \PicturePark\API\Model\ShareDetail::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -61,7 +61,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('contentSelections', $data)) {
                 $values = [];
                 foreach ($data['contentSelections'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\ShareContentDetail', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\ShareContentDetail::class, 'json', $context);
                 }
                 $object->setContentSelections($values);
             }
@@ -99,7 +99,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('schemas', $data) && $data['schemas'] !== null) {
                 $values_2 = [];
                 foreach ($data['schemas'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\SchemaDetail', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\SchemaDetail::class, 'json', $context);
                 }
                 $object->setSchemas($values_2);
             }
@@ -150,7 +150,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\ShareDetail' => false];
+            return [\PicturePark\API\Model\ShareDetail::class => false];
         }
     }
 } else {
@@ -162,7 +162,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\ShareDetail';
+            return $type === \PicturePark\API\Model\ShareDetail::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -204,7 +204,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('contentSelections', $data)) {
                 $values = [];
                 foreach ($data['contentSelections'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\ShareContentDetail', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\ShareContentDetail::class, 'json', $context);
                 }
                 $object->setContentSelections($values);
             }
@@ -242,7 +242,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('schemas', $data) && $data['schemas'] !== null) {
                 $values_2 = [];
                 foreach ($data['schemas'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\SchemaDetail', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\SchemaDetail::class, 'json', $context);
                 }
                 $object->setSchemas($values_2);
             }
@@ -296,7 +296,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\ShareDetail' => false];
+            return [\PicturePark\API\Model\ShareDetail::class => false];
         }
     }
 }

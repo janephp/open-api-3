@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GistFull';
+            return $type === \Github\Model\GistFull::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -78,7 +78,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data)) {
                 $values = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['files'] as $key => $value) {
-                    $values[$key] = $this->denormalizer->denormalize($value, 'Github\\Model\\GistSimpleFilesItem', 'json', $context);
+                    $values[$key] = $this->denormalizer->denormalize($value, \Github\Model\GistSimpleFilesItem::class, 'json', $context);
                 }
                 $object->setFiles($values);
                 unset($data['files']);
@@ -118,7 +118,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments_url']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -131,7 +131,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('forks', $data)) {
                 $values_1 = [];
                 foreach ($data['forks'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\GistFullforksItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\GistFullforksItem::class, 'json', $context);
                 }
                 $object->setForks($values_1);
                 unset($data['forks']);
@@ -139,13 +139,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('history', $data)) {
                 $values_2 = [];
                 foreach ($data['history'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\GistFullhistoryItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\GistFullhistoryItem::class, 'json', $context);
                 }
                 $object->setHistory($values_2);
                 unset($data['history']);
             }
             if (\array_key_exists('fork_of', $data) && $data['fork_of'] !== null) {
-                $object->setForkOf($this->denormalizer->denormalize($data['fork_of'], 'Github\\Model\\GistFullforkOf', 'json', $context));
+                $object->setForkOf($this->denormalizer->denormalize($data['fork_of'], \Github\Model\GistFullforkOf::class, 'json', $context));
                 unset($data['fork_of']);
             }
             elseif (\array_key_exists('fork_of', $data) && $data['fork_of'] === null) {
@@ -248,7 +248,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GistFull' => false];
+            return [\Github\Model\GistFull::class => false];
         }
     }
 } else {
@@ -260,7 +260,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GistFull';
+            return $type === \Github\Model\GistFull::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -319,7 +319,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data)) {
                 $values = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['files'] as $key => $value) {
-                    $values[$key] = $this->denormalizer->denormalize($value, 'Github\\Model\\GistSimpleFilesItem', 'json', $context);
+                    $values[$key] = $this->denormalizer->denormalize($value, \Github\Model\GistSimpleFilesItem::class, 'json', $context);
                 }
                 $object->setFiles($values);
                 unset($data['files']);
@@ -359,7 +359,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments_url']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -372,7 +372,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('forks', $data)) {
                 $values_1 = [];
                 foreach ($data['forks'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\GistFullforksItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\GistFullforksItem::class, 'json', $context);
                 }
                 $object->setForks($values_1);
                 unset($data['forks']);
@@ -380,13 +380,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('history', $data)) {
                 $values_2 = [];
                 foreach ($data['history'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\GistFullhistoryItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\GistFullhistoryItem::class, 'json', $context);
                 }
                 $object->setHistory($values_2);
                 unset($data['history']);
             }
             if (\array_key_exists('fork_of', $data) && $data['fork_of'] !== null) {
-                $object->setForkOf($this->denormalizer->denormalize($data['fork_of'], 'Github\\Model\\GistFullforkOf', 'json', $context));
+                $object->setForkOf($this->denormalizer->denormalize($data['fork_of'], \Github\Model\GistFullforkOf::class, 'json', $context));
                 unset($data['fork_of']);
             }
             elseif (\array_key_exists('fork_of', $data) && $data['fork_of'] === null) {
@@ -492,7 +492,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GistFull' => false];
+            return [\Github\Model\GistFull::class => false];
         }
     }
 }

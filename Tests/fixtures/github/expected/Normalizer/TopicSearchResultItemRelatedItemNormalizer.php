@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\TopicSearchResultItemRelatedItem';
+            return $type === \Github\Model\TopicSearchResultItemRelatedItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,7 +44,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('topic_relation', $data)) {
-                $object->setTopicRelation($this->denormalizer->denormalize($data['topic_relation'], 'Github\\Model\\TopicSearchResultItemRelatedItemTopicRelation', 'json', $context));
+                $object->setTopicRelation($this->denormalizer->denormalize($data['topic_relation'], \Github\Model\TopicSearchResultItemRelatedItemTopicRelation::class, 'json', $context));
                 unset($data['topic_relation']);
             }
             foreach ($data as $key => $value) {
@@ -72,7 +72,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\TopicSearchResultItemRelatedItem' => false];
+            return [\Github\Model\TopicSearchResultItemRelatedItem::class => false];
         }
     }
 } else {
@@ -84,7 +84,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\TopicSearchResultItemRelatedItem';
+            return $type === \Github\Model\TopicSearchResultItemRelatedItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -109,7 +109,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('topic_relation', $data)) {
-                $object->setTopicRelation($this->denormalizer->denormalize($data['topic_relation'], 'Github\\Model\\TopicSearchResultItemRelatedItemTopicRelation', 'json', $context));
+                $object->setTopicRelation($this->denormalizer->denormalize($data['topic_relation'], \Github\Model\TopicSearchResultItemRelatedItemTopicRelation::class, 'json', $context));
                 unset($data['topic_relation']);
             }
             foreach ($data as $key => $value) {
@@ -140,7 +140,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\TopicSearchResultItemRelatedItem' => false];
+            return [\Github\Model\TopicSearchResultItemRelatedItem::class => false];
         }
     }
 }

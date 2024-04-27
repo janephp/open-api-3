@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -49,11 +49,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['commonDescription']);
             }
             if (\array_key_exists('creditLimit', $data)) {
-                $object->setCreditLimit($this->denormalizer->denormalize($data['creditLimit'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit', 'json', $context));
+                $object->setCreditLimit($this->denormalizer->denormalize($data['creditLimit'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit::class, 'json', $context));
                 unset($data['creditLimit']);
             }
             if (\array_key_exists('providerValue', $data)) {
-                $object->setProviderValue($this->denormalizer->denormalize($data['providerValue'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue', 'json', $context));
+                $object->setProviderValue($this->denormalizer->denormalize($data['providerValue'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue::class, 'json', $context));
                 unset($data['providerValue']);
             }
             if (\array_key_exists('providerDescription', $data)) {
@@ -94,7 +94,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating::class => false];
         }
     }
 } else {
@@ -106,7 +106,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -136,11 +136,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['commonDescription']);
             }
             if (\array_key_exists('creditLimit', $data)) {
-                $object->setCreditLimit($this->denormalizer->denormalize($data['creditLimit'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit', 'json', $context));
+                $object->setCreditLimit($this->denormalizer->denormalize($data['creditLimit'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit::class, 'json', $context));
                 unset($data['creditLimit']);
             }
             if (\array_key_exists('providerValue', $data)) {
-                $object->setProviderValue($this->denormalizer->denormalize($data['providerValue'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue', 'json', $context));
+                $object->setProviderValue($this->denormalizer->denormalize($data['providerValue'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue::class, 'json', $context));
                 unset($data['providerValue']);
             }
             if (\array_key_exists('providerDescription', $data)) {
@@ -184,7 +184,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating::class => false];
         }
     }
 }

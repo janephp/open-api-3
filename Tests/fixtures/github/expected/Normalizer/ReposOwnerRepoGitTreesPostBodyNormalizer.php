@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoGitTreesPostBody';
+            return $type === \Github\Model\ReposOwnerRepoGitTreesPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -46,7 +46,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('tree', $data)) {
                 $values = [];
                 foreach ($data['tree'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReposOwnerRepoGitTreesPostBodyTreeItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReposOwnerRepoGitTreesPostBodyTreeItem::class, 'json', $context);
                 }
                 $object->setTree($values);
                 unset($data['tree']);
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoGitTreesPostBody' => false];
+            return [\Github\Model\ReposOwnerRepoGitTreesPostBody::class => false];
         }
     }
 } else {
@@ -97,7 +97,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoGitTreesPostBody';
+            return $type === \Github\Model\ReposOwnerRepoGitTreesPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -124,7 +124,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('tree', $data)) {
                 $values = [];
                 foreach ($data['tree'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReposOwnerRepoGitTreesPostBodyTreeItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReposOwnerRepoGitTreesPostBodyTreeItem::class, 'json', $context);
                 }
                 $object->setTree($values);
                 unset($data['tree']);
@@ -166,7 +166,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoGitTreesPostBody' => false];
+            return [\Github\Model\ReposOwnerRepoGitTreesPostBody::class => false];
         }
     }
 }

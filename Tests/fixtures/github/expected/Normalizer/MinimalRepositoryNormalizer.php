@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\MinimalRepository';
+            return $type === \Github\Model\MinimalRepository::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -60,7 +60,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['full_name']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\MinimalRepositoryOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\MinimalRepositoryOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -360,7 +360,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt(null);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\MinimalRepositoryPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\MinimalRepositoryPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('template_repository', $data)) {
@@ -384,7 +384,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['network_count']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\MinimalRepositoryLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\MinimalRepositoryLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
@@ -582,7 +582,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\MinimalRepository' => false];
+            return [\Github\Model\MinimalRepository::class => false];
         }
     }
 } else {
@@ -594,7 +594,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\MinimalRepository';
+            return $type === \Github\Model\MinimalRepository::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -635,7 +635,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['full_name']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\MinimalRepositoryOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\MinimalRepositoryOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -935,7 +935,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt(null);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\MinimalRepositoryPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\MinimalRepositoryPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('template_repository', $data)) {
@@ -959,7 +959,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['network_count']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\MinimalRepositoryLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\MinimalRepositoryLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
@@ -1160,7 +1160,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\MinimalRepository' => false];
+            return [\Github\Model\MinimalRepository::class => false];
         }
     }
 }

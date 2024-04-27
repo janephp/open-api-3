@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CodeScanningAlert';
+            return $type === \Github\Model\CodeScanningAlert::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -75,7 +75,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['open']);
             }
             if (\array_key_exists('closed_by', $data) && $data['closed_by'] !== null) {
-                $object->setClosedBy($this->denormalizer->denormalize($data['closed_by'], 'Github\\Model\\CodeScanningAlertClosedBy', 'json', $context));
+                $object->setClosedBy($this->denormalizer->denormalize($data['closed_by'], \Github\Model\CodeScanningAlertClosedBy::class, 'json', $context));
                 unset($data['closed_by']);
             }
             elseif (\array_key_exists('closed_by', $data) && $data['closed_by'] === null) {
@@ -161,7 +161,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CodeScanningAlert' => false];
+            return [\Github\Model\CodeScanningAlert::class => false];
         }
     }
 } else {
@@ -173,7 +173,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CodeScanningAlert';
+            return $type === \Github\Model\CodeScanningAlert::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -229,7 +229,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['open']);
             }
             if (\array_key_exists('closed_by', $data) && $data['closed_by'] !== null) {
-                $object->setClosedBy($this->denormalizer->denormalize($data['closed_by'], 'Github\\Model\\CodeScanningAlertClosedBy', 'json', $context));
+                $object->setClosedBy($this->denormalizer->denormalize($data['closed_by'], \Github\Model\CodeScanningAlertClosedBy::class, 'json', $context));
                 unset($data['closed_by']);
             }
             elseif (\array_key_exists('closed_by', $data) && $data['closed_by'] === null) {
@@ -318,7 +318,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CodeScanningAlert' => false];
+            return [\Github\Model\CodeScanningAlert::class => false];
         }
     }
 }

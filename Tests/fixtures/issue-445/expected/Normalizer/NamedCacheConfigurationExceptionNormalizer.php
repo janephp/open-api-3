@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\NamedCacheConfigurationException';
+            return $type === \PicturePark\API\Model\NamedCacheConfigurationException::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -97,7 +97,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('innerExceptions', $data) && $data['innerExceptions'] !== null) {
                 $values = [];
                 foreach ($data['innerExceptions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\PictureparkValidationException', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\PictureparkValidationException::class, 'json', $context);
                 }
                 $object->setInnerExceptions($values);
                 unset($data['innerExceptions']);
@@ -156,7 +156,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\NamedCacheConfigurationException' => false];
+            return [\PicturePark\API\Model\NamedCacheConfigurationException::class => false];
         }
     }
 } else {
@@ -168,7 +168,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\NamedCacheConfigurationException';
+            return $type === \PicturePark\API\Model\NamedCacheConfigurationException::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -246,7 +246,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('innerExceptions', $data) && $data['innerExceptions'] !== null) {
                 $values = [];
                 foreach ($data['innerExceptions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\PictureparkValidationException', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\PictureparkValidationException::class, 'json', $context);
                 }
                 $object->setInnerExceptions($values);
                 unset($data['innerExceptions']);
@@ -308,7 +308,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\NamedCacheConfigurationException' => false];
+            return [\PicturePark\API\Model\NamedCacheConfigurationException::class => false];
         }
     }
 }

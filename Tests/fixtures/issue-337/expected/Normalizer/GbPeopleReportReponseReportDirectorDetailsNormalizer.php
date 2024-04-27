@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetails';
+            return $type === \CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetails::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -69,7 +69,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['surname']);
             }
             if (\array_key_exists('address', $data)) {
-                $object->setAddress($this->denormalizer->denormalize($data['address'], 'CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetailsAddress', 'json', $context));
+                $object->setAddress($this->denormalizer->denormalize($data['address'], \CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetailsAddress::class, 'json', $context));
                 unset($data['address']);
             }
             if (\array_key_exists('gender', $data)) {
@@ -91,13 +91,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('positions', $data)) {
                 $values = [];
                 foreach ($data['positions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetailsPositionsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetailsPositionsItem::class, 'json', $context);
                 }
                 $object->setPositions($values);
                 unset($data['positions']);
             }
             if (\array_key_exists('additionalData', $data)) {
-                $object->setAdditionalData($this->denormalizer->denormalize($data['additionalData'], 'CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetailsAdditionalData', 'json', $context));
+                $object->setAdditionalData($this->denormalizer->denormalize($data['additionalData'], \CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetailsAdditionalData::class, 'json', $context));
                 unset($data['additionalData']);
             }
             foreach ($data as $key => $value_1) {
@@ -165,7 +165,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetails' => false];
+            return [\CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetails::class => false];
         }
     }
 } else {
@@ -177,7 +177,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetails';
+            return $type === \CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetails::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -227,7 +227,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['surname']);
             }
             if (\array_key_exists('address', $data)) {
-                $object->setAddress($this->denormalizer->denormalize($data['address'], 'CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetailsAddress', 'json', $context));
+                $object->setAddress($this->denormalizer->denormalize($data['address'], \CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetailsAddress::class, 'json', $context));
                 unset($data['address']);
             }
             if (\array_key_exists('gender', $data)) {
@@ -249,13 +249,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('positions', $data)) {
                 $values = [];
                 foreach ($data['positions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetailsPositionsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetailsPositionsItem::class, 'json', $context);
                 }
                 $object->setPositions($values);
                 unset($data['positions']);
             }
             if (\array_key_exists('additionalData', $data)) {
-                $object->setAdditionalData($this->denormalizer->denormalize($data['additionalData'], 'CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetailsAdditionalData', 'json', $context));
+                $object->setAdditionalData($this->denormalizer->denormalize($data['additionalData'], \CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetailsAdditionalData::class, 'json', $context));
                 unset($data['additionalData']);
             }
             foreach ($data as $key => $value_1) {
@@ -326,7 +326,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbPeopleReportReponseReportDirectorDetails' => false];
+            return [\CreditSafe\API\Model\GbPeopleReportReponseReportDirectorDetails::class => false];
         }
     }
 }

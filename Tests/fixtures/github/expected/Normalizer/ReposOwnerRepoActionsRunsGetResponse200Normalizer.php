@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoActionsRunsGetResponse200';
+            return $type === \Github\Model\ReposOwnerRepoActionsRunsGetResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -50,7 +50,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('workflow_runs', $data)) {
                 $values = [];
                 foreach ($data['workflow_runs'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\WorkflowRun', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\WorkflowRun::class, 'json', $context);
                 }
                 $object->setWorkflowRuns($values);
                 unset($data['workflow_runs']);
@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoActionsRunsGetResponse200' => false];
+            return [\Github\Model\ReposOwnerRepoActionsRunsGetResponse200::class => false];
         }
     }
 } else {
@@ -99,7 +99,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoActionsRunsGetResponse200';
+            return $type === \Github\Model\ReposOwnerRepoActionsRunsGetResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -130,7 +130,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('workflow_runs', $data)) {
                 $values = [];
                 foreach ($data['workflow_runs'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\WorkflowRun', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\WorkflowRun::class, 'json', $context);
                 }
                 $object->setWorkflowRuns($values);
                 unset($data['workflow_runs']);
@@ -170,7 +170,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoActionsRunsGetResponse200' => false];
+            return [\Github\Model\ReposOwnerRepoActionsRunsGetResponse200::class => false];
         }
     }
 }

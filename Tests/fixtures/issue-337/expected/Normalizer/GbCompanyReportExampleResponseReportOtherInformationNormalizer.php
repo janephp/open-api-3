@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportOtherInformation';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportOtherInformation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -43,7 +43,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('advisors', $data)) {
                 $values = [];
                 foreach ($data['advisors'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem::class, 'json', $context);
                 }
                 $object->setAdvisors($values);
                 unset($data['advisors']);
@@ -51,7 +51,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('employeesInformation', $data)) {
                 $values_1 = [];
                 foreach ($data['employeesInformation'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportOtherInformationEmployeesInformationItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportOtherInformationEmployeesInformationItem::class, 'json', $context);
                 }
                 $object->setEmployeesInformation($values_1);
                 unset($data['employeesInformation']);
@@ -89,7 +89,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportOtherInformation' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportOtherInformation::class => false];
         }
     }
 } else {
@@ -101,7 +101,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportOtherInformation';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportOtherInformation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -125,7 +125,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('advisors', $data)) {
                 $values = [];
                 foreach ($data['advisors'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem::class, 'json', $context);
                 }
                 $object->setAdvisors($values);
                 unset($data['advisors']);
@@ -133,7 +133,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('employeesInformation', $data)) {
                 $values_1 = [];
                 foreach ($data['employeesInformation'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportOtherInformationEmployeesInformationItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportOtherInformationEmployeesInformationItem::class, 'json', $context);
                 }
                 $object->setEmployeesInformation($values_1);
                 unset($data['employeesInformation']);
@@ -174,7 +174,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportOtherInformation' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportOtherInformation::class => false];
         }
     }
 }

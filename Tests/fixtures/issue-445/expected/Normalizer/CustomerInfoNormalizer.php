@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\CustomerInfo';
+            return $type === \PicturePark\API\Model\CustomerInfo::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -64,14 +64,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('languages', $data)) {
                 $values = [];
                 foreach ($data['languages'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\Language', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\Language::class, 'json', $context);
                 }
                 $object->setLanguages($values);
             }
             if (\array_key_exists('outputFormats', $data)) {
                 $values_1 = [];
                 foreach ($data['outputFormats'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\OutputFormatInfo', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\OutputFormatInfo::class, 'json', $context);
                 }
                 $object->setOutputFormats($values_1);
             }
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('apps', $data) && $data['apps'] !== null) {
                 $values_3 = [];
                 foreach ($data['apps'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'PicturePark\\API\\Model\\CustomerApp', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \PicturePark\API\Model\CustomerApp::class, 'json', $context);
                 }
                 $object->setApps($values_3);
             }
@@ -142,7 +142,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\CustomerInfo' => false];
+            return [\PicturePark\API\Model\CustomerInfo::class => false];
         }
     }
 } else {
@@ -154,7 +154,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\CustomerInfo';
+            return $type === \PicturePark\API\Model\CustomerInfo::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -199,14 +199,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('languages', $data)) {
                 $values = [];
                 foreach ($data['languages'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\Language', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\Language::class, 'json', $context);
                 }
                 $object->setLanguages($values);
             }
             if (\array_key_exists('outputFormats', $data)) {
                 $values_1 = [];
                 foreach ($data['outputFormats'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\OutputFormatInfo', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\OutputFormatInfo::class, 'json', $context);
                 }
                 $object->setOutputFormats($values_1);
             }
@@ -220,7 +220,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('apps', $data) && $data['apps'] !== null) {
                 $values_3 = [];
                 foreach ($data['apps'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'PicturePark\\API\\Model\\CustomerApp', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \PicturePark\API\Model\CustomerApp::class, 'json', $context);
                 }
                 $object->setApps($values_3);
             }
@@ -280,7 +280,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\CustomerInfo' => false];
+            return [\PicturePark\API\Model\CustomerInfo::class => false];
         }
     }
 }

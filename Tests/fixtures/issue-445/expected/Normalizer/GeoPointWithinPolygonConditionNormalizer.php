@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\GeoPointWithinPolygonCondition';
+            return $type === \PicturePark\API\Model\GeoPointWithinPolygonCondition::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -61,7 +61,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('polygon', $data) && $data['polygon'] !== null) {
                 $values = [];
                 foreach ($data['polygon'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\LatLon', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\LatLon::class, 'json', $context);
                 }
                 $object->setPolygon($values);
                 unset($data['polygon']);
@@ -102,7 +102,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\GeoPointWithinPolygonCondition' => false];
+            return [\PicturePark\API\Model\GeoPointWithinPolygonCondition::class => false];
         }
     }
 } else {
@@ -114,7 +114,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\GeoPointWithinPolygonCondition';
+            return $type === \PicturePark\API\Model\GeoPointWithinPolygonCondition::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -156,7 +156,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('polygon', $data) && $data['polygon'] !== null) {
                 $values = [];
                 foreach ($data['polygon'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\LatLon', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\LatLon::class, 'json', $context);
                 }
                 $object->setPolygon($values);
                 unset($data['polygon']);
@@ -200,7 +200,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\GeoPointWithinPolygonCondition' => false];
+            return [\PicturePark\API\Model\GeoPointWithinPolygonCondition::class => false];
         }
     }
 }

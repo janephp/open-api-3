@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\RepoSearchResultItem';
+            return $type === \Github\Model\RepoSearchResultItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -60,7 +60,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['full_name']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\RepoSearchResultItemOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\RepoSearchResultItemOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -363,20 +363,20 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['disabled']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\RepoSearchResultItemLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\RepoSearchResultItemLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
                 $object->setLicense(null);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\RepoSearchResultItemPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\RepoSearchResultItemPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('text_matches', $data)) {
                 $values_1 = [];
                 foreach ($data['text_matches'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values_1);
                 unset($data['text_matches']);
@@ -532,7 +532,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\RepoSearchResultItem' => false];
+            return [\Github\Model\RepoSearchResultItem::class => false];
         }
     }
 } else {
@@ -544,7 +544,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\RepoSearchResultItem';
+            return $type === \Github\Model\RepoSearchResultItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -585,7 +585,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['full_name']);
             }
             if (\array_key_exists('owner', $data) && $data['owner'] !== null) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\RepoSearchResultItemOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\RepoSearchResultItemOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             elseif (\array_key_exists('owner', $data) && $data['owner'] === null) {
@@ -888,20 +888,20 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['disabled']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\RepoSearchResultItemLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\RepoSearchResultItemLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
                 $object->setLicense(null);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\RepoSearchResultItemPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\RepoSearchResultItemPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('text_matches', $data)) {
                 $values_1 = [];
                 foreach ($data['text_matches'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values_1);
                 unset($data['text_matches']);
@@ -1060,7 +1060,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\RepoSearchResultItem' => false];
+            return [\Github\Model\RepoSearchResultItem::class => false];
         }
     }
 }

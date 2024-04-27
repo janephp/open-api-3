@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedUser';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedUser::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -69,7 +69,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['verified']);
             }
             if (\array_key_exists('withheld', $data)) {
-                $object->setWithheld($this->denormalizer->denormalize($data['withheld'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\UserWithheld', 'json', $context));
+                $object->setWithheld($this->denormalizer->denormalize($data['withheld'], \Jane\Component\OpenApi3\Tests\Expected\Model\UserWithheld::class, 'json', $context));
                 unset($data['withheld']);
             }
             if (\array_key_exists('profile_image_url', $data)) {
@@ -89,7 +89,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['description']);
             }
             if (\array_key_exists('entities', $data)) {
-                $object->setEntities($this->denormalizer->denormalize($data['entities'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultUserFieldsEntities', 'json', $context));
+                $object->setEntities($this->denormalizer->denormalize($data['entities'], \Jane\Component\OpenApi3\Tests\Expected\Model\DefaultUserFieldsEntities::class, 'json', $context));
                 unset($data['entities']);
             }
             if (\array_key_exists('most_recent_tweet_id', $data)) {
@@ -101,7 +101,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['pinned_tweet_id']);
             }
             if (\array_key_exists('stats', $data)) {
-                $object->setStats($this->denormalizer->denormalize($data['stats'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedUserFieldsStats', 'json', $context));
+                $object->setStats($this->denormalizer->denormalize($data['stats'], \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedUserFieldsStats::class, 'json', $context));
                 unset($data['stats']);
             }
             foreach ($data as $key => $value) {
@@ -155,7 +155,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedUser' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DetailedUser::class => false];
         }
     }
 } else {
@@ -167,7 +167,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedUser';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedUser::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -217,7 +217,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['verified']);
             }
             if (\array_key_exists('withheld', $data)) {
-                $object->setWithheld($this->denormalizer->denormalize($data['withheld'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\UserWithheld', 'json', $context));
+                $object->setWithheld($this->denormalizer->denormalize($data['withheld'], \Jane\Component\OpenApi3\Tests\Expected\Model\UserWithheld::class, 'json', $context));
                 unset($data['withheld']);
             }
             if (\array_key_exists('profile_image_url', $data)) {
@@ -237,7 +237,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['description']);
             }
             if (\array_key_exists('entities', $data)) {
-                $object->setEntities($this->denormalizer->denormalize($data['entities'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultUserFieldsEntities', 'json', $context));
+                $object->setEntities($this->denormalizer->denormalize($data['entities'], \Jane\Component\OpenApi3\Tests\Expected\Model\DefaultUserFieldsEntities::class, 'json', $context));
                 unset($data['entities']);
             }
             if (\array_key_exists('most_recent_tweet_id', $data)) {
@@ -249,7 +249,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['pinned_tweet_id']);
             }
             if (\array_key_exists('stats', $data)) {
-                $object->setStats($this->denormalizer->denormalize($data['stats'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedUserFieldsStats', 'json', $context));
+                $object->setStats($this->denormalizer->denormalize($data['stats'], \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedUserFieldsStats::class, 'json', $context));
                 unset($data['stats']);
             }
             foreach ($data as $key => $value) {
@@ -306,7 +306,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedUser' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DetailedUser::class => false];
         }
     }
 }

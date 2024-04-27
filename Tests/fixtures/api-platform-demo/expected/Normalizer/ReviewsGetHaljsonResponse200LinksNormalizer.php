@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200Links';
+            return $type === \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200Links::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -41,23 +41,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('self', $data)) {
-                $object->setSelf($this->denormalizer->denormalize($data['self'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksSelf', 'json', $context));
+                $object->setSelf($this->denormalizer->denormalize($data['self'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksSelf::class, 'json', $context));
                 unset($data['self']);
             }
             if (\array_key_exists('first', $data)) {
-                $object->setFirst($this->denormalizer->denormalize($data['first'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksFirst', 'json', $context));
+                $object->setFirst($this->denormalizer->denormalize($data['first'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksFirst::class, 'json', $context));
                 unset($data['first']);
             }
             if (\array_key_exists('last', $data)) {
-                $object->setLast($this->denormalizer->denormalize($data['last'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksLast', 'json', $context));
+                $object->setLast($this->denormalizer->denormalize($data['last'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksLast::class, 'json', $context));
                 unset($data['last']);
             }
             if (\array_key_exists('next', $data)) {
-                $object->setNext($this->denormalizer->denormalize($data['next'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksNext', 'json', $context));
+                $object->setNext($this->denormalizer->denormalize($data['next'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksNext::class, 'json', $context));
                 unset($data['next']);
             }
             if (\array_key_exists('previous', $data)) {
-                $object->setPrevious($this->denormalizer->denormalize($data['previous'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksPrevious', 'json', $context));
+                $object->setPrevious($this->denormalizer->denormalize($data['previous'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksPrevious::class, 'json', $context));
                 unset($data['previous']);
             }
             foreach ($data as $key => $value) {
@@ -94,7 +94,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200Links' => false];
+            return [\ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200Links::class => false];
         }
     }
 } else {
@@ -106,7 +106,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200Links';
+            return $type === \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200Links::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -128,23 +128,23 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('self', $data)) {
-                $object->setSelf($this->denormalizer->denormalize($data['self'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksSelf', 'json', $context));
+                $object->setSelf($this->denormalizer->denormalize($data['self'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksSelf::class, 'json', $context));
                 unset($data['self']);
             }
             if (\array_key_exists('first', $data)) {
-                $object->setFirst($this->denormalizer->denormalize($data['first'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksFirst', 'json', $context));
+                $object->setFirst($this->denormalizer->denormalize($data['first'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksFirst::class, 'json', $context));
                 unset($data['first']);
             }
             if (\array_key_exists('last', $data)) {
-                $object->setLast($this->denormalizer->denormalize($data['last'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksLast', 'json', $context));
+                $object->setLast($this->denormalizer->denormalize($data['last'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksLast::class, 'json', $context));
                 unset($data['last']);
             }
             if (\array_key_exists('next', $data)) {
-                $object->setNext($this->denormalizer->denormalize($data['next'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksNext', 'json', $context));
+                $object->setNext($this->denormalizer->denormalize($data['next'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksNext::class, 'json', $context));
                 unset($data['next']);
             }
             if (\array_key_exists('previous', $data)) {
-                $object->setPrevious($this->denormalizer->denormalize($data['previous'], 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200LinksPrevious', 'json', $context));
+                $object->setPrevious($this->denormalizer->denormalize($data['previous'], \ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200LinksPrevious::class, 'json', $context));
                 unset($data['previous']);
             }
             foreach ($data as $key => $value) {
@@ -184,7 +184,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200Links' => false];
+            return [\ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200Links::class => false];
         }
     }
 }

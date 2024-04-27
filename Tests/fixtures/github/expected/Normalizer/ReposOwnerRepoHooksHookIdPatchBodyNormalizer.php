@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoHooksHookIdPatchBody';
+            return $type === \Github\Model\ReposOwnerRepoHooksHookIdPatchBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,7 +44,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\ReposOwnerRepoHooksHookIdPatchBodyConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\ReposOwnerRepoHooksHookIdPatchBodyConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('events', $data)) {
@@ -124,7 +124,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoHooksHookIdPatchBody' => false];
+            return [\Github\Model\ReposOwnerRepoHooksHookIdPatchBody::class => false];
         }
     }
 } else {
@@ -136,7 +136,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoHooksHookIdPatchBody';
+            return $type === \Github\Model\ReposOwnerRepoHooksHookIdPatchBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -161,7 +161,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\ReposOwnerRepoHooksHookIdPatchBodyConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\ReposOwnerRepoHooksHookIdPatchBodyConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('events', $data)) {
@@ -244,7 +244,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoHooksHookIdPatchBody' => false];
+            return [\Github\Model\ReposOwnerRepoHooksHookIdPatchBody::class => false];
         }
     }
 }

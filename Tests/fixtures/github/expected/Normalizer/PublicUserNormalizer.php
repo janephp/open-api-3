@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PublicUser';
+            return $type === \Github\Model\PublicUser::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -167,7 +167,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\PublicUserPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\PublicUserPlan::class, 'json', $context));
             }
             if (\array_key_exists('suspended_at', $data) && $data['suspended_at'] !== null) {
                 $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['suspended_at']));
@@ -257,7 +257,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PublicUser' => false];
+            return [\Github\Model\PublicUser::class => false];
         }
     }
 } else {
@@ -269,7 +269,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PublicUser';
+            return $type === \Github\Model\PublicUser::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -417,7 +417,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\PublicUserPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\PublicUserPlan::class, 'json', $context));
             }
             if (\array_key_exists('suspended_at', $data) && $data['suspended_at'] !== null) {
                 $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['suspended_at']));
@@ -510,7 +510,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PublicUser' => false];
+            return [\Github\Model\PublicUser::class => false];
         }
     }
 }

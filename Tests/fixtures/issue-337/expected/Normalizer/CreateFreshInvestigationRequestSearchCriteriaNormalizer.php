@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequestSearchCriteria';
+            return $type === \CreditSafe\API\Model\CreateFreshInvestigationRequestSearchCriteria::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -53,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['telephoneNumber']);
             }
             if (\array_key_exists('address', $data)) {
-                $object->setAddress($this->denormalizer->denormalize($data['address'], 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequestSearchCriteriaAddress', 'json', $context));
+                $object->setAddress($this->denormalizer->denormalize($data['address'], \CreditSafe\API\Model\CreateFreshInvestigationRequestSearchCriteriaAddress::class, 'json', $context));
                 unset($data['address']);
             }
             if (\array_key_exists('regNo', $data)) {
@@ -108,7 +108,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\CreateFreshInvestigationRequestSearchCriteria' => false];
+            return [\CreditSafe\API\Model\CreateFreshInvestigationRequestSearchCriteria::class => false];
         }
     }
 } else {
@@ -120,7 +120,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequestSearchCriteria';
+            return $type === \CreditSafe\API\Model\CreateFreshInvestigationRequestSearchCriteria::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -154,7 +154,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['telephoneNumber']);
             }
             if (\array_key_exists('address', $data)) {
-                $object->setAddress($this->denormalizer->denormalize($data['address'], 'CreditSafe\\API\\Model\\CreateFreshInvestigationRequestSearchCriteriaAddress', 'json', $context));
+                $object->setAddress($this->denormalizer->denormalize($data['address'], \CreditSafe\API\Model\CreateFreshInvestigationRequestSearchCriteriaAddress::class, 'json', $context));
                 unset($data['address']);
             }
             if (\array_key_exists('regNo', $data)) {
@@ -212,7 +212,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\CreateFreshInvestigationRequestSearchCriteria' => false];
+            return [\CreditSafe\API\Model\CreateFreshInvestigationRequestSearchCriteria::class => false];
         }
     }
 }

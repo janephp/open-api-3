@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\OrgHook';
+            return $type === \Github\Model\OrgHook::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -72,7 +72,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['active']);
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\OrgHookConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\OrgHookConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('updated_at', $data)) {
@@ -123,7 +123,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\OrgHook' => false];
+            return [\Github\Model\OrgHook::class => false];
         }
     }
 } else {
@@ -135,7 +135,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\OrgHook';
+            return $type === \Github\Model\OrgHook::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -188,7 +188,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['active']);
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\OrgHookConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\OrgHookConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('updated_at', $data)) {
@@ -242,7 +242,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\OrgHook' => false];
+            return [\Github\Model\OrgHook::class => false];
         }
     }
 }

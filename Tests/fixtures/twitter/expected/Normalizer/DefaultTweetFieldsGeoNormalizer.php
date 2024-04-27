@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultTweetFieldsGeo';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DefaultTweetFieldsGeo::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -41,7 +41,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('coordinates', $data)) {
-                $object->setCoordinates($this->denormalizer->denormalize($data['coordinates'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Point', 'json', $context));
+                $object->setCoordinates($this->denormalizer->denormalize($data['coordinates'], \Jane\Component\OpenApi3\Tests\Expected\Model\Point::class, 'json', $context));
                 unset($data['coordinates']);
             }
             if (\array_key_exists('place_id', $data)) {
@@ -73,7 +73,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultTweetFieldsGeo' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DefaultTweetFieldsGeo::class => false];
         }
     }
 } else {
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultTweetFieldsGeo';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DefaultTweetFieldsGeo::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -107,7 +107,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('coordinates', $data)) {
-                $object->setCoordinates($this->denormalizer->denormalize($data['coordinates'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Point', 'json', $context));
+                $object->setCoordinates($this->denormalizer->denormalize($data['coordinates'], \Jane\Component\OpenApi3\Tests\Expected\Model\Point::class, 'json', $context));
                 unset($data['coordinates']);
             }
             if (\array_key_exists('place_id', $data)) {
@@ -142,7 +142,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultTweetFieldsGeo' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DefaultTweetFieldsGeo::class => false];
         }
     }
 }

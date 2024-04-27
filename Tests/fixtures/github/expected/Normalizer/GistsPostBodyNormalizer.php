@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GistsPostBody';
+            return $type === \Github\Model\GistsPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -50,7 +50,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data)) {
                 $values = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['files'] as $key => $value) {
-                    $values[$key] = $this->denormalizer->denormalize($value, 'Github\\Model\\GistsPostBodyFilesItem', 'json', $context);
+                    $values[$key] = $this->denormalizer->denormalize($value, \Github\Model\GistsPostBodyFilesItem::class, 'json', $context);
                 }
                 $object->setFiles($values);
                 unset($data['files']);
@@ -92,7 +92,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GistsPostBody' => false];
+            return [\Github\Model\GistsPostBody::class => false];
         }
     }
 } else {
@@ -104,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GistsPostBody';
+            return $type === \Github\Model\GistsPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -135,7 +135,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('files', $data)) {
                 $values = new \ArrayObject([], \ArrayObject::ARRAY_AS_PROPS);
                 foreach ($data['files'] as $key => $value) {
-                    $values[$key] = $this->denormalizer->denormalize($value, 'Github\\Model\\GistsPostBodyFilesItem', 'json', $context);
+                    $values[$key] = $this->denormalizer->denormalize($value, \Github\Model\GistsPostBodyFilesItem::class, 'json', $context);
                 }
                 $object->setFiles($values);
                 unset($data['files']);
@@ -180,7 +180,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GistsPostBody' => false];
+            return [\Github\Model\GistsPostBody::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\FieldTranslatedString';
+            return $type === \PicturePark\API\Model\FieldTranslatedString::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -123,7 +123,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('indexAnalyzers', $data) && $data['indexAnalyzers'] !== null) {
                 $values = [];
                 foreach ($data['indexAnalyzers'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\AnalyzerBase', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\AnalyzerBase::class, 'json', $context);
                 }
                 $object->setIndexAnalyzers($values);
                 unset($data['indexAnalyzers']);
@@ -134,7 +134,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('simpleSearchAnalyzers', $data) && $data['simpleSearchAnalyzers'] !== null) {
                 $values_1 = [];
                 foreach ($data['simpleSearchAnalyzers'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\AnalyzerBase', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\AnalyzerBase::class, 'json', $context);
                 }
                 $object->setSimpleSearchAnalyzers($values_1);
                 unset($data['simpleSearchAnalyzers']);
@@ -245,7 +245,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\FieldTranslatedString' => false];
+            return [\PicturePark\API\Model\FieldTranslatedString::class => false];
         }
     }
 } else {
@@ -257,7 +257,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\FieldTranslatedString';
+            return $type === \PicturePark\API\Model\FieldTranslatedString::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -361,7 +361,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('indexAnalyzers', $data) && $data['indexAnalyzers'] !== null) {
                 $values = [];
                 foreach ($data['indexAnalyzers'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\AnalyzerBase', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\AnalyzerBase::class, 'json', $context);
                 }
                 $object->setIndexAnalyzers($values);
                 unset($data['indexAnalyzers']);
@@ -372,7 +372,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('simpleSearchAnalyzers', $data) && $data['simpleSearchAnalyzers'] !== null) {
                 $values_1 = [];
                 foreach ($data['simpleSearchAnalyzers'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\AnalyzerBase', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\AnalyzerBase::class, 'json', $context);
                 }
                 $object->setSimpleSearchAnalyzers($values_1);
                 unset($data['simpleSearchAnalyzers']);
@@ -486,7 +486,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\FieldTranslatedString' => false];
+            return [\PicturePark\API\Model\FieldTranslatedString::class => false];
         }
     }
 }

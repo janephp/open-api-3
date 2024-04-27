@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Hovercard';
+            return $type === \Github\Model\Hovercard::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -46,7 +46,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('contexts', $data)) {
                 $values = [];
                 foreach ($data['contexts'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\HovercardContextsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\HovercardContextsItem::class, 'json', $context);
                 }
                 $object->setContexts($values);
                 unset($data['contexts']);
@@ -78,7 +78,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Hovercard' => false];
+            return [\Github\Model\Hovercard::class => false];
         }
     }
 } else {
@@ -90,7 +90,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Hovercard';
+            return $type === \Github\Model\Hovercard::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -117,7 +117,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('contexts', $data)) {
                 $values = [];
                 foreach ($data['contexts'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\HovercardContextsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\HovercardContextsItem::class, 'json', $context);
                 }
                 $object->setContexts($values);
                 unset($data['contexts']);
@@ -152,7 +152,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Hovercard' => false];
+            return [\Github\Model\Hovercard::class => false];
         }
     }
 }

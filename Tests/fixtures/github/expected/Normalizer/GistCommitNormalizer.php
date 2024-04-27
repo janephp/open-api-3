@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GistCommit';
+            return $type === \Github\Model\GistCommit::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -52,14 +52,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['version']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\GistCommitUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\GistCommitUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('change_status', $data)) {
-                $object->setChangeStatus($this->denormalizer->denormalize($data['change_status'], 'Github\\Model\\GistCommitChangeStatus', 'json', $context));
+                $object->setChangeStatus($this->denormalizer->denormalize($data['change_status'], \Github\Model\GistCommitChangeStatus::class, 'json', $context));
                 unset($data['change_status']);
             }
             if (\array_key_exists('committed_at', $data)) {
@@ -93,7 +93,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GistCommit' => false];
+            return [\Github\Model\GistCommit::class => false];
         }
     }
 } else {
@@ -105,7 +105,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GistCommit';
+            return $type === \Github\Model\GistCommit::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -138,14 +138,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['version']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\GistCommitUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\GistCommitUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('change_status', $data)) {
-                $object->setChangeStatus($this->denormalizer->denormalize($data['change_status'], 'Github\\Model\\GistCommitChangeStatus', 'json', $context));
+                $object->setChangeStatus($this->denormalizer->denormalize($data['change_status'], \Github\Model\GistCommitChangeStatus::class, 'json', $context));
                 unset($data['change_status']);
             }
             if (\array_key_exists('committed_at', $data)) {
@@ -182,7 +182,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GistCommit' => false];
+            return [\Github\Model\GistCommit::class => false];
         }
     }
 }

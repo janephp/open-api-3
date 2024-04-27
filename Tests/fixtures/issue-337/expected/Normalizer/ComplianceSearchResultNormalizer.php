@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\ComplianceSearchResult';
+            return $type === \CreditSafe\API\Model\ComplianceSearchResult::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -41,7 +41,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('data', $data)) {
-                $object->setData($this->denormalizer->denormalize($data['data'], 'CreditSafe\\API\\Model\\ComplianceSearchResultData', 'json', $context));
+                $object->setData($this->denormalizer->denormalize($data['data'], \CreditSafe\API\Model\ComplianceSearchResultData::class, 'json', $context));
                 unset($data['data']);
             }
             foreach ($data as $key => $value) {
@@ -66,7 +66,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\ComplianceSearchResult' => false];
+            return [\CreditSafe\API\Model\ComplianceSearchResult::class => false];
         }
     }
 } else {
@@ -78,7 +78,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\ComplianceSearchResult';
+            return $type === \CreditSafe\API\Model\ComplianceSearchResult::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -100,7 +100,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('data', $data)) {
-                $object->setData($this->denormalizer->denormalize($data['data'], 'CreditSafe\\API\\Model\\ComplianceSearchResultData', 'json', $context));
+                $object->setData($this->denormalizer->denormalize($data['data'], \CreditSafe\API\Model\ComplianceSearchResultData::class, 'json', $context));
                 unset($data['data']);
             }
             foreach ($data as $key => $value) {
@@ -128,7 +128,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\ComplianceSearchResult' => false];
+            return [\CreditSafe\API\Model\ComplianceSearchResult::class => false];
         }
     }
 }

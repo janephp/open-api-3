@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutput';
+            return $type === \Github\Model\ReposOwnerRepoCheckRunsPostBodyOutput::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -58,7 +58,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('annotations', $data)) {
                 $values = [];
                 foreach ($data['annotations'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutputAnnotationsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReposOwnerRepoCheckRunsPostBodyOutputAnnotationsItem::class, 'json', $context);
                 }
                 $object->setAnnotations($values);
                 unset($data['annotations']);
@@ -66,7 +66,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('images', $data)) {
                 $values_1 = [];
                 foreach ($data['images'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutputImagesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\ReposOwnerRepoCheckRunsPostBodyOutputImagesItem::class, 'json', $context);
                 }
                 $object->setImages($values_1);
                 unset($data['images']);
@@ -112,7 +112,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutput' => false];
+            return [\Github\Model\ReposOwnerRepoCheckRunsPostBodyOutput::class => false];
         }
     }
 } else {
@@ -124,7 +124,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutput';
+            return $type === \Github\Model\ReposOwnerRepoCheckRunsPostBodyOutput::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -163,7 +163,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('annotations', $data)) {
                 $values = [];
                 foreach ($data['annotations'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutputAnnotationsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReposOwnerRepoCheckRunsPostBodyOutputAnnotationsItem::class, 'json', $context);
                 }
                 $object->setAnnotations($values);
                 unset($data['annotations']);
@@ -171,7 +171,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('images', $data)) {
                 $values_1 = [];
                 foreach ($data['images'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutputImagesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\ReposOwnerRepoCheckRunsPostBodyOutputImagesItem::class, 'json', $context);
                 }
                 $object->setImages($values_1);
                 unset($data['images']);
@@ -220,7 +220,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoCheckRunsPostBodyOutput' => false];
+            return [\Github\Model\ReposOwnerRepoCheckRunsPostBodyOutput::class => false];
         }
     }
 }

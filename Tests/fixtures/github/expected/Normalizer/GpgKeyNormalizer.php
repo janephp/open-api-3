@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GpgKey';
+            return $type === \Github\Model\GpgKey::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -65,7 +65,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('emails', $data)) {
                 $values = [];
                 foreach ($data['emails'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\GpgKeyEmailsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\GpgKeyEmailsItem::class, 'json', $context);
                 }
                 $object->setEmails($values);
                 unset($data['emails']);
@@ -73,7 +73,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('subkeys', $data)) {
                 $values_1 = [];
                 foreach ($data['subkeys'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\GpgKeySubkeysItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\GpgKeySubkeysItem::class, 'json', $context);
                 }
                 $object->setSubkeys($values_1);
                 unset($data['subkeys']);
@@ -155,7 +155,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GpgKey' => false];
+            return [\Github\Model\GpgKey::class => false];
         }
     }
 } else {
@@ -167,7 +167,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GpgKey';
+            return $type === \Github\Model\GpgKey::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -213,7 +213,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('emails', $data)) {
                 $values = [];
                 foreach ($data['emails'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\GpgKeyEmailsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\GpgKeyEmailsItem::class, 'json', $context);
                 }
                 $object->setEmails($values);
                 unset($data['emails']);
@@ -221,7 +221,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('subkeys', $data)) {
                 $values_1 = [];
                 foreach ($data['subkeys'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\GpgKeySubkeysItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\GpgKeySubkeysItem::class, 'json', $context);
                 }
                 $object->setSubkeys($values_1);
                 unset($data['subkeys']);
@@ -306,7 +306,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GpgKey' => false];
+            return [\Github\Model\GpgKey::class => false];
         }
     }
 }

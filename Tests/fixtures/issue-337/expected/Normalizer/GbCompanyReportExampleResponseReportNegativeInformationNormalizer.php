@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportNegativeInformation';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportNegativeInformation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -41,11 +41,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('ccjSummary', $data)) {
-                $object->setCcjSummary($this->denormalizer->denormalize($data['ccjSummary'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportNegativeInformationCcjSummary', 'json', $context));
+                $object->setCcjSummary($this->denormalizer->denormalize($data['ccjSummary'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportNegativeInformationCcjSummary::class, 'json', $context));
                 unset($data['ccjSummary']);
             }
             if (\array_key_exists('countyCourtJudgements', $data)) {
-                $object->setCountyCourtJudgements($this->denormalizer->denormalize($data['countyCourtJudgements'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgements', 'json', $context));
+                $object->setCountyCourtJudgements($this->denormalizer->denormalize($data['countyCourtJudgements'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgements::class, 'json', $context));
                 unset($data['countyCourtJudgements']);
             }
             foreach ($data as $key => $value) {
@@ -73,7 +73,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportNegativeInformation' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportNegativeInformation::class => false];
         }
     }
 } else {
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportNegativeInformation';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportNegativeInformation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -107,11 +107,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('ccjSummary', $data)) {
-                $object->setCcjSummary($this->denormalizer->denormalize($data['ccjSummary'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportNegativeInformationCcjSummary', 'json', $context));
+                $object->setCcjSummary($this->denormalizer->denormalize($data['ccjSummary'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportNegativeInformationCcjSummary::class, 'json', $context));
                 unset($data['ccjSummary']);
             }
             if (\array_key_exists('countyCourtJudgements', $data)) {
-                $object->setCountyCourtJudgements($this->denormalizer->denormalize($data['countyCourtJudgements'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgements', 'json', $context));
+                $object->setCountyCourtJudgements($this->denormalizer->denormalize($data['countyCourtJudgements'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgements::class, 'json', $context));
                 unset($data['countyCourtJudgements']);
             }
             foreach ($data as $key => $value) {
@@ -142,7 +142,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportNegativeInformation' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportNegativeInformation::class => false];
         }
     }
 }

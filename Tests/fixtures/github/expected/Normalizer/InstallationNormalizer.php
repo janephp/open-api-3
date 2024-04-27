@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Installation';
+            return $type === \Github\Model\Installation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -50,9 +50,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('account', $data) && $data['account'] !== null) {
                 $value = $data['account'];
                 if (is_array($data['account']) and isset($data['account']['login']) and isset($data['account']['id']) and isset($data['account']['node_id']) and isset($data['account']['avatar_url']) and isset($data['account']['gravatar_id']) and isset($data['account']['url']) and isset($data['account']['html_url']) and isset($data['account']['followers_url']) and isset($data['account']['following_url']) and isset($data['account']['gists_url']) and isset($data['account']['starred_url']) and isset($data['account']['subscriptions_url']) and isset($data['account']['organizations_url']) and isset($data['account']['repos_url']) and isset($data['account']['events_url']) and isset($data['account']['received_events_url']) and isset($data['account']['type']) and isset($data['account']['site_admin'])) {
-                    $value = $this->denormalizer->denormalize($data['account'], 'Github\\Model\\SimpleUser', 'json', $context);
+                    $value = $this->denormalizer->denormalize($data['account'], \Github\Model\SimpleUser::class, 'json', $context);
                 } elseif (is_array($data['account']) and isset($data['account']['html_url']) and isset($data['account']['id']) and isset($data['account']['node_id']) and isset($data['account']['name']) and isset($data['account']['slug']) and isset($data['account']['created_at']) and isset($data['account']['updated_at']) and isset($data['account']['avatar_url'])) {
-                    $value = $this->denormalizer->denormalize($data['account'], 'Github\\Model\\Enterprise', 'json', $context);
+                    $value = $this->denormalizer->denormalize($data['account'], \Github\Model\Enterprise::class, 'json', $context);
                 }
                 $object->setAccount($value);
                 unset($data['account']);
@@ -89,7 +89,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['target_type']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\InstallationPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\InstallationPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('events', $data)) {
@@ -120,7 +120,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['app_slug']);
             }
             if (\array_key_exists('suspended_by', $data) && $data['suspended_by'] !== null) {
-                $object->setSuspendedBy($this->denormalizer->denormalize($data['suspended_by'], 'Github\\Model\\InstallationSuspendedBy', 'json', $context));
+                $object->setSuspendedBy($this->denormalizer->denormalize($data['suspended_by'], \Github\Model\InstallationSuspendedBy::class, 'json', $context));
                 unset($data['suspended_by']);
             }
             elseif (\array_key_exists('suspended_by', $data) && $data['suspended_by'] === null) {
@@ -196,7 +196,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Installation' => false];
+            return [\Github\Model\Installation::class => false];
         }
     }
 } else {
@@ -208,7 +208,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Installation';
+            return $type === \Github\Model\Installation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -239,9 +239,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('account', $data) && $data['account'] !== null) {
                 $value = $data['account'];
                 if (is_array($data['account']) and isset($data['account']['login']) and isset($data['account']['id']) and isset($data['account']['node_id']) and isset($data['account']['avatar_url']) and isset($data['account']['gravatar_id']) and isset($data['account']['url']) and isset($data['account']['html_url']) and isset($data['account']['followers_url']) and isset($data['account']['following_url']) and isset($data['account']['gists_url']) and isset($data['account']['starred_url']) and isset($data['account']['subscriptions_url']) and isset($data['account']['organizations_url']) and isset($data['account']['repos_url']) and isset($data['account']['events_url']) and isset($data['account']['received_events_url']) and isset($data['account']['type']) and isset($data['account']['site_admin'])) {
-                    $value = $this->denormalizer->denormalize($data['account'], 'Github\\Model\\SimpleUser', 'json', $context);
+                    $value = $this->denormalizer->denormalize($data['account'], \Github\Model\SimpleUser::class, 'json', $context);
                 } elseif (is_array($data['account']) and isset($data['account']['html_url']) and isset($data['account']['id']) and isset($data['account']['node_id']) and isset($data['account']['name']) and isset($data['account']['slug']) and isset($data['account']['created_at']) and isset($data['account']['updated_at']) and isset($data['account']['avatar_url'])) {
-                    $value = $this->denormalizer->denormalize($data['account'], 'Github\\Model\\Enterprise', 'json', $context);
+                    $value = $this->denormalizer->denormalize($data['account'], \Github\Model\Enterprise::class, 'json', $context);
                 }
                 $object->setAccount($value);
                 unset($data['account']);
@@ -278,7 +278,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['target_type']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\InstallationPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\InstallationPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('events', $data)) {
@@ -309,7 +309,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['app_slug']);
             }
             if (\array_key_exists('suspended_by', $data) && $data['suspended_by'] !== null) {
-                $object->setSuspendedBy($this->denormalizer->denormalize($data['suspended_by'], 'Github\\Model\\InstallationSuspendedBy', 'json', $context));
+                $object->setSuspendedBy($this->denormalizer->denormalize($data['suspended_by'], \Github\Model\InstallationSuspendedBy::class, 'json', $context));
                 unset($data['suspended_by']);
             }
             elseif (\array_key_exists('suspended_by', $data) && $data['suspended_by'] === null) {
@@ -388,7 +388,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Installation' => false];
+            return [\Github\Model\Installation::class => false];
         }
     }
 }

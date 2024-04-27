@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ProtectedBranch';
+            return $type === \Github\Model\ProtectedBranch::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -48,35 +48,35 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['url']);
             }
             if (\array_key_exists('required_status_checks', $data)) {
-                $object->setRequiredStatusChecks($this->denormalizer->denormalize($data['required_status_checks'], 'Github\\Model\\StatusCheckPolicy', 'json', $context));
+                $object->setRequiredStatusChecks($this->denormalizer->denormalize($data['required_status_checks'], \Github\Model\StatusCheckPolicy::class, 'json', $context));
                 unset($data['required_status_checks']);
             }
             if (\array_key_exists('required_pull_request_reviews', $data)) {
-                $object->setRequiredPullRequestReviews($this->denormalizer->denormalize($data['required_pull_request_reviews'], 'Github\\Model\\ProtectedBranchRequiredPullRequestReviews', 'json', $context));
+                $object->setRequiredPullRequestReviews($this->denormalizer->denormalize($data['required_pull_request_reviews'], \Github\Model\ProtectedBranchRequiredPullRequestReviews::class, 'json', $context));
                 unset($data['required_pull_request_reviews']);
             }
             if (\array_key_exists('required_signatures', $data)) {
-                $object->setRequiredSignatures($this->denormalizer->denormalize($data['required_signatures'], 'Github\\Model\\ProtectedBranchRequiredSignatures', 'json', $context));
+                $object->setRequiredSignatures($this->denormalizer->denormalize($data['required_signatures'], \Github\Model\ProtectedBranchRequiredSignatures::class, 'json', $context));
                 unset($data['required_signatures']);
             }
             if (\array_key_exists('enforce_admins', $data)) {
-                $object->setEnforceAdmins($this->denormalizer->denormalize($data['enforce_admins'], 'Github\\Model\\ProtectedBranchEnforceAdmins', 'json', $context));
+                $object->setEnforceAdmins($this->denormalizer->denormalize($data['enforce_admins'], \Github\Model\ProtectedBranchEnforceAdmins::class, 'json', $context));
                 unset($data['enforce_admins']);
             }
             if (\array_key_exists('required_linear_history', $data)) {
-                $object->setRequiredLinearHistory($this->denormalizer->denormalize($data['required_linear_history'], 'Github\\Model\\ProtectedBranchRequiredLinearHistory', 'json', $context));
+                $object->setRequiredLinearHistory($this->denormalizer->denormalize($data['required_linear_history'], \Github\Model\ProtectedBranchRequiredLinearHistory::class, 'json', $context));
                 unset($data['required_linear_history']);
             }
             if (\array_key_exists('allow_force_pushes', $data)) {
-                $object->setAllowForcePushes($this->denormalizer->denormalize($data['allow_force_pushes'], 'Github\\Model\\ProtectedBranchAllowForcePushes', 'json', $context));
+                $object->setAllowForcePushes($this->denormalizer->denormalize($data['allow_force_pushes'], \Github\Model\ProtectedBranchAllowForcePushes::class, 'json', $context));
                 unset($data['allow_force_pushes']);
             }
             if (\array_key_exists('allow_deletions', $data)) {
-                $object->setAllowDeletions($this->denormalizer->denormalize($data['allow_deletions'], 'Github\\Model\\ProtectedBranchAllowDeletions', 'json', $context));
+                $object->setAllowDeletions($this->denormalizer->denormalize($data['allow_deletions'], \Github\Model\ProtectedBranchAllowDeletions::class, 'json', $context));
                 unset($data['allow_deletions']);
             }
             if (\array_key_exists('restrictions', $data)) {
-                $object->setRestrictions($this->denormalizer->denormalize($data['restrictions'], 'Github\\Model\\BranchRestrictionPolicy', 'json', $context));
+                $object->setRestrictions($this->denormalizer->denormalize($data['restrictions'], \Github\Model\BranchRestrictionPolicy::class, 'json', $context));
                 unset($data['restrictions']);
             }
             foreach ($data as $key => $value) {
@@ -126,7 +126,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ProtectedBranch' => false];
+            return [\Github\Model\ProtectedBranch::class => false];
         }
     }
 } else {
@@ -138,7 +138,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ProtectedBranch';
+            return $type === \Github\Model\ProtectedBranch::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -167,35 +167,35 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['url']);
             }
             if (\array_key_exists('required_status_checks', $data)) {
-                $object->setRequiredStatusChecks($this->denormalizer->denormalize($data['required_status_checks'], 'Github\\Model\\StatusCheckPolicy', 'json', $context));
+                $object->setRequiredStatusChecks($this->denormalizer->denormalize($data['required_status_checks'], \Github\Model\StatusCheckPolicy::class, 'json', $context));
                 unset($data['required_status_checks']);
             }
             if (\array_key_exists('required_pull_request_reviews', $data)) {
-                $object->setRequiredPullRequestReviews($this->denormalizer->denormalize($data['required_pull_request_reviews'], 'Github\\Model\\ProtectedBranchRequiredPullRequestReviews', 'json', $context));
+                $object->setRequiredPullRequestReviews($this->denormalizer->denormalize($data['required_pull_request_reviews'], \Github\Model\ProtectedBranchRequiredPullRequestReviews::class, 'json', $context));
                 unset($data['required_pull_request_reviews']);
             }
             if (\array_key_exists('required_signatures', $data)) {
-                $object->setRequiredSignatures($this->denormalizer->denormalize($data['required_signatures'], 'Github\\Model\\ProtectedBranchRequiredSignatures', 'json', $context));
+                $object->setRequiredSignatures($this->denormalizer->denormalize($data['required_signatures'], \Github\Model\ProtectedBranchRequiredSignatures::class, 'json', $context));
                 unset($data['required_signatures']);
             }
             if (\array_key_exists('enforce_admins', $data)) {
-                $object->setEnforceAdmins($this->denormalizer->denormalize($data['enforce_admins'], 'Github\\Model\\ProtectedBranchEnforceAdmins', 'json', $context));
+                $object->setEnforceAdmins($this->denormalizer->denormalize($data['enforce_admins'], \Github\Model\ProtectedBranchEnforceAdmins::class, 'json', $context));
                 unset($data['enforce_admins']);
             }
             if (\array_key_exists('required_linear_history', $data)) {
-                $object->setRequiredLinearHistory($this->denormalizer->denormalize($data['required_linear_history'], 'Github\\Model\\ProtectedBranchRequiredLinearHistory', 'json', $context));
+                $object->setRequiredLinearHistory($this->denormalizer->denormalize($data['required_linear_history'], \Github\Model\ProtectedBranchRequiredLinearHistory::class, 'json', $context));
                 unset($data['required_linear_history']);
             }
             if (\array_key_exists('allow_force_pushes', $data)) {
-                $object->setAllowForcePushes($this->denormalizer->denormalize($data['allow_force_pushes'], 'Github\\Model\\ProtectedBranchAllowForcePushes', 'json', $context));
+                $object->setAllowForcePushes($this->denormalizer->denormalize($data['allow_force_pushes'], \Github\Model\ProtectedBranchAllowForcePushes::class, 'json', $context));
                 unset($data['allow_force_pushes']);
             }
             if (\array_key_exists('allow_deletions', $data)) {
-                $object->setAllowDeletions($this->denormalizer->denormalize($data['allow_deletions'], 'Github\\Model\\ProtectedBranchAllowDeletions', 'json', $context));
+                $object->setAllowDeletions($this->denormalizer->denormalize($data['allow_deletions'], \Github\Model\ProtectedBranchAllowDeletions::class, 'json', $context));
                 unset($data['allow_deletions']);
             }
             if (\array_key_exists('restrictions', $data)) {
-                $object->setRestrictions($this->denormalizer->denormalize($data['restrictions'], 'Github\\Model\\BranchRestrictionPolicy', 'json', $context));
+                $object->setRestrictions($this->denormalizer->denormalize($data['restrictions'], \Github\Model\BranchRestrictionPolicy::class, 'json', $context));
                 unset($data['restrictions']);
             }
             foreach ($data as $key => $value) {
@@ -248,7 +248,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ProtectedBranch' => false];
+            return [\Github\Model\ProtectedBranch::class => false];
         }
     }
 }

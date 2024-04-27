@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\SchemaDetail';
+            return $type === \PicturePark\API\Model\SchemaDetail::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -84,14 +84,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('displayPatterns', $data)) {
                 $values_2 = [];
                 foreach ($data['displayPatterns'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\DisplayPattern', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\DisplayPattern::class, 'json', $context);
                 }
                 $object->setDisplayPatterns($values_2);
             }
             if (\array_key_exists('fields', $data) && $data['fields'] !== null) {
                 $values_3 = [];
                 foreach ($data['fields'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'PicturePark\\API\\Model\\FieldBase', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \PicturePark\API\Model\FieldBase::class, 'json', $context);
                 }
                 $object->setFields($values_3);
             }
@@ -101,7 +101,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('fieldsOverwrite', $data) && $data['fieldsOverwrite'] !== null) {
                 $values_4 = [];
                 foreach ($data['fieldsOverwrite'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'PicturePark\\API\\Model\\FieldOverwriteBase', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \PicturePark\API\Model\FieldOverwriteBase::class, 'json', $context);
                 }
                 $object->setFieldsOverwrite($values_4);
             }
@@ -111,7 +111,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('sort', $data) && $data['sort'] !== null) {
                 $values_5 = [];
                 foreach ($data['sort'] as $value_5) {
-                    $values_5[] = $this->denormalizer->denormalize($value_5, 'PicturePark\\API\\Model\\SortInfo', 'json', $context);
+                    $values_5[] = $this->denormalizer->denormalize($value_5, \PicturePark\API\Model\SortInfo::class, 'json', $context);
                 }
                 $object->setSort($values_5);
             }
@@ -121,7 +121,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('aggregations', $data) && $data['aggregations'] !== null) {
                 $values_6 = [];
                 foreach ($data['aggregations'] as $value_6) {
-                    $values_6[] = $this->denormalizer->denormalize($value_6, 'PicturePark\\API\\Model\\AggregatorBase', 'json', $context);
+                    $values_6[] = $this->denormalizer->denormalize($value_6, \PicturePark\API\Model\AggregatorBase::class, 'json', $context);
                 }
                 $object->setAggregations($values_6);
             }
@@ -274,7 +274,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\SchemaDetail' => false];
+            return [\PicturePark\API\Model\SchemaDetail::class => false];
         }
     }
 } else {
@@ -286,7 +286,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\SchemaDetail';
+            return $type === \PicturePark\API\Model\SchemaDetail::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -351,14 +351,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('displayPatterns', $data)) {
                 $values_2 = [];
                 foreach ($data['displayPatterns'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\DisplayPattern', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\DisplayPattern::class, 'json', $context);
                 }
                 $object->setDisplayPatterns($values_2);
             }
             if (\array_key_exists('fields', $data) && $data['fields'] !== null) {
                 $values_3 = [];
                 foreach ($data['fields'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'PicturePark\\API\\Model\\FieldBase', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \PicturePark\API\Model\FieldBase::class, 'json', $context);
                 }
                 $object->setFields($values_3);
             }
@@ -368,7 +368,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('fieldsOverwrite', $data) && $data['fieldsOverwrite'] !== null) {
                 $values_4 = [];
                 foreach ($data['fieldsOverwrite'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'PicturePark\\API\\Model\\FieldOverwriteBase', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \PicturePark\API\Model\FieldOverwriteBase::class, 'json', $context);
                 }
                 $object->setFieldsOverwrite($values_4);
             }
@@ -378,7 +378,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('sort', $data) && $data['sort'] !== null) {
                 $values_5 = [];
                 foreach ($data['sort'] as $value_5) {
-                    $values_5[] = $this->denormalizer->denormalize($value_5, 'PicturePark\\API\\Model\\SortInfo', 'json', $context);
+                    $values_5[] = $this->denormalizer->denormalize($value_5, \PicturePark\API\Model\SortInfo::class, 'json', $context);
                 }
                 $object->setSort($values_5);
             }
@@ -388,7 +388,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('aggregations', $data) && $data['aggregations'] !== null) {
                 $values_6 = [];
                 foreach ($data['aggregations'] as $value_6) {
-                    $values_6[] = $this->denormalizer->denormalize($value_6, 'PicturePark\\API\\Model\\AggregatorBase', 'json', $context);
+                    $values_6[] = $this->denormalizer->denormalize($value_6, \PicturePark\API\Model\AggregatorBase::class, 'json', $context);
                 }
                 $object->setAggregations($values_6);
             }
@@ -544,7 +544,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\SchemaDetail' => false];
+            return [\PicturePark\API\Model\SchemaDetail::class => false];
         }
     }
 }

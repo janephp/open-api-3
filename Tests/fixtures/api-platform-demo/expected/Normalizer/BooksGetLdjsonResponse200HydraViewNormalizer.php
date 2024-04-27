@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraView';
+            return $type === \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraView::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -101,7 +101,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraView' => false];
+            return [\ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraView::class => false];
         }
     }
 } else {
@@ -113,7 +113,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraView';
+            return $type === \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraView::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -198,7 +198,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraView' => false];
+            return [\ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraView::class => false];
         }
     }
 }

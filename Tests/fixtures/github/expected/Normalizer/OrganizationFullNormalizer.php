@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\OrganizationFull';
+            return $type === \Github\Model\OrganizationFull::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -198,7 +198,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setBillingEmail(null);
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\OrganizationFullPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\OrganizationFullPlan::class, 'json', $context));
                 unset($data['plan']);
             }
             if (\array_key_exists('default_repository_permission', $data) && $data['default_repository_permission'] !== null) {
@@ -349,7 +349,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\OrganizationFull' => false];
+            return [\Github\Model\OrganizationFull::class => false];
         }
     }
 } else {
@@ -361,7 +361,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\OrganizationFull';
+            return $type === \Github\Model\OrganizationFull::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -540,7 +540,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setBillingEmail(null);
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\OrganizationFullPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\OrganizationFullPlan::class, 'json', $context));
                 unset($data['plan']);
             }
             if (\array_key_exists('default_repository_permission', $data) && $data['default_repository_permission'] !== null) {
@@ -694,7 +694,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\OrganizationFull' => false];
+            return [\Github\Model\OrganizationFull::class => false];
         }
     }
 }

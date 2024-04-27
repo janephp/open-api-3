@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CheckSuite';
+            return $type === \Github\Model\CheckSuite::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -100,7 +100,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('pull_requests', $data) && $data['pull_requests'] !== null) {
                 $values = [];
                 foreach ($data['pull_requests'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\PullRequestMinimal', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\PullRequestMinimal::class, 'json', $context);
                 }
                 $object->setPullRequests($values);
                 unset($data['pull_requests']);
@@ -109,14 +109,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setPullRequests(null);
             }
             if (\array_key_exists('app', $data) && $data['app'] !== null) {
-                $object->setApp($this->denormalizer->denormalize($data['app'], 'Github\\Model\\CheckSuiteApp', 'json', $context));
+                $object->setApp($this->denormalizer->denormalize($data['app'], \Github\Model\CheckSuiteApp::class, 'json', $context));
                 unset($data['app']);
             }
             elseif (\array_key_exists('app', $data) && $data['app'] === null) {
                 $object->setApp(null);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('created_at', $data) && $data['created_at'] !== null) {
@@ -134,7 +134,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt(null);
             }
             if (\array_key_exists('head_commit', $data)) {
-                $object->setHeadCommit($this->denormalizer->denormalize($data['head_commit'], 'Github\\Model\\SimpleCommit', 'json', $context));
+                $object->setHeadCommit($this->denormalizer->denormalize($data['head_commit'], \Github\Model\SimpleCommit::class, 'json', $context));
                 unset($data['head_commit']);
             }
             if (\array_key_exists('latest_check_runs_count', $data)) {
@@ -188,7 +188,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CheckSuite' => false];
+            return [\Github\Model\CheckSuite::class => false];
         }
     }
 } else {
@@ -200,7 +200,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CheckSuite';
+            return $type === \Github\Model\CheckSuite::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -281,7 +281,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('pull_requests', $data) && $data['pull_requests'] !== null) {
                 $values = [];
                 foreach ($data['pull_requests'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\PullRequestMinimal', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\PullRequestMinimal::class, 'json', $context);
                 }
                 $object->setPullRequests($values);
                 unset($data['pull_requests']);
@@ -290,14 +290,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setPullRequests(null);
             }
             if (\array_key_exists('app', $data) && $data['app'] !== null) {
-                $object->setApp($this->denormalizer->denormalize($data['app'], 'Github\\Model\\CheckSuiteApp', 'json', $context));
+                $object->setApp($this->denormalizer->denormalize($data['app'], \Github\Model\CheckSuiteApp::class, 'json', $context));
                 unset($data['app']);
             }
             elseif (\array_key_exists('app', $data) && $data['app'] === null) {
                 $object->setApp(null);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('created_at', $data) && $data['created_at'] !== null) {
@@ -315,7 +315,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setUpdatedAt(null);
             }
             if (\array_key_exists('head_commit', $data)) {
-                $object->setHeadCommit($this->denormalizer->denormalize($data['head_commit'], 'Github\\Model\\SimpleCommit', 'json', $context));
+                $object->setHeadCommit($this->denormalizer->denormalize($data['head_commit'], \Github\Model\SimpleCommit::class, 'json', $context));
                 unset($data['head_commit']);
             }
             if (\array_key_exists('latest_check_runs_count', $data)) {
@@ -372,7 +372,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CheckSuite' => false];
+            return [\Github\Model\CheckSuite::class => false];
         }
     }
 }

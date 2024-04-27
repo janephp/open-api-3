@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3PostBody';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -41,7 +41,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('post-field-3', $data)) {
-                $object->setPostField3($this->denormalizer->denormalize($data['post-field-3'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3PostBodyPostField3', 'json', $context));
+                $object->setPostField3($this->denormalizer->denormalize($data['post-field-3'], \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBodyPostField3::class, 'json', $context));
                 unset($data['post-field-3']);
             }
             foreach ($data as $key => $value) {
@@ -66,7 +66,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3PostBody' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody::class => false];
         }
     }
 } else {
@@ -78,7 +78,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3PostBody';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -100,7 +100,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('post-field-3', $data)) {
-                $object->setPostField3($this->denormalizer->denormalize($data['post-field-3'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3PostBodyPostField3', 'json', $context));
+                $object->setPostField3($this->denormalizer->denormalize($data['post-field-3'], \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBodyPostField3::class, 'json', $context));
                 unset($data['post-field-3']);
             }
             foreach ($data as $key => $value) {
@@ -128,7 +128,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint3PostBody' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody::class => false];
         }
     }
 }

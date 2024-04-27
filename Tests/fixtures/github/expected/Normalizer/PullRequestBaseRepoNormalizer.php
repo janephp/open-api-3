@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PullRequestBaseRepo';
+            return $type === \Github\Model\PullRequestBaseRepo::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -183,7 +183,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['notifications_url']);
             }
             if (\array_key_exists('owner', $data)) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\PullRequestBaseRepoOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\PullRequestBaseRepoOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             if (\array_key_exists('private', $data)) {
@@ -312,7 +312,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['open_issues_count']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\PullRequestBaseRepoPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\PullRequestBaseRepoPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('temp_clone_token', $data)) {
@@ -332,7 +332,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['allow_rebase_merge']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\PullRequestBaseRepoLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\PullRequestBaseRepoLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
@@ -502,7 +502,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PullRequestBaseRepo' => false];
+            return [\Github\Model\PullRequestBaseRepo::class => false];
         }
     }
 } else {
@@ -514,7 +514,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PullRequestBaseRepo';
+            return $type === \Github\Model\PullRequestBaseRepo::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -678,7 +678,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['notifications_url']);
             }
             if (\array_key_exists('owner', $data)) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\PullRequestBaseRepoOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\PullRequestBaseRepoOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             if (\array_key_exists('private', $data)) {
@@ -807,7 +807,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['open_issues_count']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\PullRequestBaseRepoPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\PullRequestBaseRepoPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('temp_clone_token', $data)) {
@@ -827,7 +827,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['allow_rebase_merge']);
             }
             if (\array_key_exists('license', $data) && $data['license'] !== null) {
-                $object->setLicense($this->denormalizer->denormalize($data['license'], 'Github\\Model\\PullRequestBaseRepoLicense', 'json', $context));
+                $object->setLicense($this->denormalizer->denormalize($data['license'], \Github\Model\PullRequestBaseRepoLicense::class, 'json', $context));
                 unset($data['license']);
             }
             elseif (\array_key_exists('license', $data) && $data['license'] === null) {
@@ -1000,7 +1000,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PullRequestBaseRepo' => false];
+            return [\Github\Model\PullRequestBaseRepo::class => false];
         }
     }
 }

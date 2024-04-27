@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Event';
+            return $type === \Github\Model\Event::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -55,19 +55,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setType(null);
             }
             if (\array_key_exists('actor', $data)) {
-                $object->setActor($this->denormalizer->denormalize($data['actor'], 'Github\\Model\\Actor', 'json', $context));
+                $object->setActor($this->denormalizer->denormalize($data['actor'], \Github\Model\Actor::class, 'json', $context));
                 unset($data['actor']);
             }
             if (\array_key_exists('repo', $data)) {
-                $object->setRepo($this->denormalizer->denormalize($data['repo'], 'Github\\Model\\EventRepo', 'json', $context));
+                $object->setRepo($this->denormalizer->denormalize($data['repo'], \Github\Model\EventRepo::class, 'json', $context));
                 unset($data['repo']);
             }
             if (\array_key_exists('org', $data)) {
-                $object->setOrg($this->denormalizer->denormalize($data['org'], 'Github\\Model\\Actor', 'json', $context));
+                $object->setOrg($this->denormalizer->denormalize($data['org'], \Github\Model\Actor::class, 'json', $context));
                 unset($data['org']);
             }
             if (\array_key_exists('payload', $data)) {
-                $object->setPayload($this->denormalizer->denormalize($data['payload'], 'Github\\Model\\EventPayload', 'json', $context));
+                $object->setPayload($this->denormalizer->denormalize($data['payload'], \Github\Model\EventPayload::class, 'json', $context));
                 unset($data['payload']);
             }
             if (\array_key_exists('public', $data)) {
@@ -113,7 +113,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Event' => false];
+            return [\Github\Model\Event::class => false];
         }
     }
 } else {
@@ -125,7 +125,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Event';
+            return $type === \Github\Model\Event::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -161,19 +161,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setType(null);
             }
             if (\array_key_exists('actor', $data)) {
-                $object->setActor($this->denormalizer->denormalize($data['actor'], 'Github\\Model\\Actor', 'json', $context));
+                $object->setActor($this->denormalizer->denormalize($data['actor'], \Github\Model\Actor::class, 'json', $context));
                 unset($data['actor']);
             }
             if (\array_key_exists('repo', $data)) {
-                $object->setRepo($this->denormalizer->denormalize($data['repo'], 'Github\\Model\\EventRepo', 'json', $context));
+                $object->setRepo($this->denormalizer->denormalize($data['repo'], \Github\Model\EventRepo::class, 'json', $context));
                 unset($data['repo']);
             }
             if (\array_key_exists('org', $data)) {
-                $object->setOrg($this->denormalizer->denormalize($data['org'], 'Github\\Model\\Actor', 'json', $context));
+                $object->setOrg($this->denormalizer->denormalize($data['org'], \Github\Model\Actor::class, 'json', $context));
                 unset($data['org']);
             }
             if (\array_key_exists('payload', $data)) {
-                $object->setPayload($this->denormalizer->denormalize($data['payload'], 'Github\\Model\\EventPayload', 'json', $context));
+                $object->setPayload($this->denormalizer->denormalize($data['payload'], \Github\Model\EventPayload::class, 'json', $context));
                 unset($data['payload']);
             }
             if (\array_key_exists('public', $data)) {
@@ -222,7 +222,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Event' => false];
+            return [\Github\Model\Event::class => false];
         }
     }
 }

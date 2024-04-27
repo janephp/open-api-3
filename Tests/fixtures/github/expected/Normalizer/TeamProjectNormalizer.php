@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\TeamProject';
+            return $type === \Github\Model\TeamProject::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['state']);
             }
             if (\array_key_exists('creator', $data) && $data['creator'] !== null) {
-                $object->setCreator($this->denormalizer->denormalize($data['creator'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setCreator($this->denormalizer->denormalize($data['creator'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['creator']);
             }
             elseif (\array_key_exists('creator', $data) && $data['creator'] === null) {
@@ -110,7 +110,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['private']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\TeamProjectPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\TeamProjectPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             foreach ($data as $key => $value) {
@@ -183,7 +183,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\TeamProject' => false];
+            return [\Github\Model\TeamProject::class => false];
         }
     }
 } else {
@@ -195,7 +195,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\TeamProject';
+            return $type === \Github\Model\TeamProject::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -263,7 +263,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['state']);
             }
             if (\array_key_exists('creator', $data) && $data['creator'] !== null) {
-                $object->setCreator($this->denormalizer->denormalize($data['creator'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setCreator($this->denormalizer->denormalize($data['creator'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['creator']);
             }
             elseif (\array_key_exists('creator', $data) && $data['creator'] === null) {
@@ -286,7 +286,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['private']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\TeamProjectPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\TeamProjectPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             foreach ($data as $key => $value) {
@@ -362,7 +362,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\TeamProject' => false];
+            return [\Github\Model\TeamProject::class => false];
         }
     }
 }

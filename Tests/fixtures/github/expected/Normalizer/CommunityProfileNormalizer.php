@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CommunityProfile';
+            return $type === \Github\Model\CommunityProfile::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -62,7 +62,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDocumentation(null);
             }
             if (\array_key_exists('files', $data)) {
-                $object->setFiles($this->denormalizer->denormalize($data['files'], 'Github\\Model\\CommunityProfileFiles', 'json', $context));
+                $object->setFiles($this->denormalizer->denormalize($data['files'], \Github\Model\CommunityProfileFiles::class, 'json', $context));
                 unset($data['files']);
             }
             if (\array_key_exists('updated_at', $data) && $data['updated_at'] !== null) {
@@ -99,7 +99,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CommunityProfile' => false];
+            return [\Github\Model\CommunityProfile::class => false];
         }
     }
 } else {
@@ -111,7 +111,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CommunityProfile';
+            return $type === \Github\Model\CommunityProfile::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -154,7 +154,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDocumentation(null);
             }
             if (\array_key_exists('files', $data)) {
-                $object->setFiles($this->denormalizer->denormalize($data['files'], 'Github\\Model\\CommunityProfileFiles', 'json', $context));
+                $object->setFiles($this->denormalizer->denormalize($data['files'], \Github\Model\CommunityProfileFiles::class, 'json', $context));
                 unset($data['files']);
             }
             if (\array_key_exists('updated_at', $data) && $data['updated_at'] !== null) {
@@ -194,7 +194,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CommunityProfile' => false];
+            return [\Github\Model\CommunityProfile::class => false];
         }
     }
 }

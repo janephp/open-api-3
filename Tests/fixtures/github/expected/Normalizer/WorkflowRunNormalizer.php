@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\WorkflowRun';
+            return $type === \Github\Model\WorkflowRun::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -99,7 +99,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('pull_requests', $data) && $data['pull_requests'] !== null) {
                 $values = [];
                 foreach ($data['pull_requests'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\PullRequestMinimal', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\PullRequestMinimal::class, 'json', $context);
                 }
                 $object->setPullRequests($values);
                 unset($data['pull_requests']);
@@ -150,15 +150,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['workflow_url']);
             }
             if (\array_key_exists('head_commit', $data)) {
-                $object->setHeadCommit($this->denormalizer->denormalize($data['head_commit'], 'Github\\Model\\SimpleCommit', 'json', $context));
+                $object->setHeadCommit($this->denormalizer->denormalize($data['head_commit'], \Github\Model\SimpleCommit::class, 'json', $context));
                 unset($data['head_commit']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('head_repository', $data)) {
-                $object->setHeadRepository($this->denormalizer->denormalize($data['head_repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setHeadRepository($this->denormalizer->denormalize($data['head_repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['head_repository']);
             }
             if (\array_key_exists('head_repository_id', $data)) {
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\WorkflowRun' => false];
+            return [\Github\Model\WorkflowRun::class => false];
         }
     }
 } else {
@@ -230,7 +230,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\WorkflowRun';
+            return $type === \Github\Model\WorkflowRun::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -310,7 +310,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('pull_requests', $data) && $data['pull_requests'] !== null) {
                 $values = [];
                 foreach ($data['pull_requests'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\PullRequestMinimal', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\PullRequestMinimal::class, 'json', $context);
                 }
                 $object->setPullRequests($values);
                 unset($data['pull_requests']);
@@ -361,15 +361,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['workflow_url']);
             }
             if (\array_key_exists('head_commit', $data)) {
-                $object->setHeadCommit($this->denormalizer->denormalize($data['head_commit'], 'Github\\Model\\SimpleCommit', 'json', $context));
+                $object->setHeadCommit($this->denormalizer->denormalize($data['head_commit'], \Github\Model\SimpleCommit::class, 'json', $context));
                 unset($data['head_commit']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('head_repository', $data)) {
-                $object->setHeadRepository($this->denormalizer->denormalize($data['head_repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setHeadRepository($this->denormalizer->denormalize($data['head_repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['head_repository']);
             }
             if (\array_key_exists('head_repository_id', $data)) {
@@ -432,7 +432,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\WorkflowRun' => false];
+            return [\Github\Model\WorkflowRun::class => false];
         }
     }
 }

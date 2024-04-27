@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\StarredRepository';
+            return $type === \Github\Model\StarredRepository::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -48,7 +48,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['starred_at']);
             }
             if (\array_key_exists('repo', $data)) {
-                $object->setRepo($this->denormalizer->denormalize($data['repo'], 'Github\\Model\\Repository', 'json', $context));
+                $object->setRepo($this->denormalizer->denormalize($data['repo'], \Github\Model\Repository::class, 'json', $context));
                 unset($data['repo']);
             }
             foreach ($data as $key => $value) {
@@ -75,7 +75,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\StarredRepository' => false];
+            return [\Github\Model\StarredRepository::class => false];
         }
     }
 } else {
@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\StarredRepository';
+            return $type === \Github\Model\StarredRepository::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -116,7 +116,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['starred_at']);
             }
             if (\array_key_exists('repo', $data)) {
-                $object->setRepo($this->denormalizer->denormalize($data['repo'], 'Github\\Model\\Repository', 'json', $context));
+                $object->setRepo($this->denormalizer->denormalize($data['repo'], \Github\Model\Repository::class, 'json', $context));
                 unset($data['repo']);
             }
             foreach ($data as $key => $value) {
@@ -146,7 +146,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\StarredRepository' => false];
+            return [\Github\Model\StarredRepository::class => false];
         }
     }
 }

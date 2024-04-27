@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CheckRun';
+            return $type === \Github\Model\CheckRun::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -106,7 +106,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setCompletedAt(null);
             }
             if (\array_key_exists('output', $data)) {
-                $object->setOutput($this->denormalizer->denormalize($data['output'], 'Github\\Model\\CheckRunOutput', 'json', $context));
+                $object->setOutput($this->denormalizer->denormalize($data['output'], \Github\Model\CheckRunOutput::class, 'json', $context));
                 unset($data['output']);
             }
             if (\array_key_exists('name', $data)) {
@@ -114,14 +114,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('check_suite', $data) && $data['check_suite'] !== null) {
-                $object->setCheckSuite($this->denormalizer->denormalize($data['check_suite'], 'Github\\Model\\CheckRunCheckSuite', 'json', $context));
+                $object->setCheckSuite($this->denormalizer->denormalize($data['check_suite'], \Github\Model\CheckRunCheckSuite::class, 'json', $context));
                 unset($data['check_suite']);
             }
             elseif (\array_key_exists('check_suite', $data) && $data['check_suite'] === null) {
                 $object->setCheckSuite(null);
             }
             if (\array_key_exists('app', $data) && $data['app'] !== null) {
-                $object->setApp($this->denormalizer->denormalize($data['app'], 'Github\\Model\\CheckRunApp', 'json', $context));
+                $object->setApp($this->denormalizer->denormalize($data['app'], \Github\Model\CheckRunApp::class, 'json', $context));
                 unset($data['app']);
             }
             elseif (\array_key_exists('app', $data) && $data['app'] === null) {
@@ -169,7 +169,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CheckRun' => false];
+            return [\Github\Model\CheckRun::class => false];
         }
     }
 } else {
@@ -181,7 +181,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CheckRun';
+            return $type === \Github\Model\CheckRun::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -268,7 +268,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setCompletedAt(null);
             }
             if (\array_key_exists('output', $data)) {
-                $object->setOutput($this->denormalizer->denormalize($data['output'], 'Github\\Model\\CheckRunOutput', 'json', $context));
+                $object->setOutput($this->denormalizer->denormalize($data['output'], \Github\Model\CheckRunOutput::class, 'json', $context));
                 unset($data['output']);
             }
             if (\array_key_exists('name', $data)) {
@@ -276,14 +276,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('check_suite', $data) && $data['check_suite'] !== null) {
-                $object->setCheckSuite($this->denormalizer->denormalize($data['check_suite'], 'Github\\Model\\CheckRunCheckSuite', 'json', $context));
+                $object->setCheckSuite($this->denormalizer->denormalize($data['check_suite'], \Github\Model\CheckRunCheckSuite::class, 'json', $context));
                 unset($data['check_suite']);
             }
             elseif (\array_key_exists('check_suite', $data) && $data['check_suite'] === null) {
                 $object->setCheckSuite(null);
             }
             if (\array_key_exists('app', $data) && $data['app'] !== null) {
-                $object->setApp($this->denormalizer->denormalize($data['app'], 'Github\\Model\\CheckRunApp', 'json', $context));
+                $object->setApp($this->denormalizer->denormalize($data['app'], \Github\Model\CheckRunApp::class, 'json', $context));
                 unset($data['app']);
             }
             elseif (\array_key_exists('app', $data) && $data['app'] === null) {
@@ -334,7 +334,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CheckRun' => false];
+            return [\Github\Model\CheckRun::class => false];
         }
     }
 }

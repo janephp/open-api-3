@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetSearchResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\TweetSearchResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -49,7 +49,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['data']);
             }
             if (\array_key_exists('includes', $data)) {
-                $object->setIncludes($this->denormalizer->denormalize($data['includes'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Expansions', 'json', $context));
+                $object->setIncludes($this->denormalizer->denormalize($data['includes'], \Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class, 'json', $context));
                 unset($data['includes']);
             }
             if (\array_key_exists('errors', $data)) {
@@ -61,7 +61,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['errors']);
             }
             if (\array_key_exists('meta', $data)) {
-                $object->setMeta($this->denormalizer->denormalize($data['meta'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetSearchResponseMeta', 'json', $context));
+                $object->setMeta($this->denormalizer->denormalize($data['meta'], \Jane\Component\OpenApi3\Tests\Expected\Model\TweetSearchResponseMeta::class, 'json', $context));
                 unset($data['meta']);
             }
             foreach ($data as $key => $value_2) {
@@ -103,7 +103,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetSearchResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\TweetSearchResponse::class => false];
         }
     }
 } else {
@@ -115,7 +115,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetSearchResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\TweetSearchResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -145,7 +145,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['data']);
             }
             if (\array_key_exists('includes', $data)) {
-                $object->setIncludes($this->denormalizer->denormalize($data['includes'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Expansions', 'json', $context));
+                $object->setIncludes($this->denormalizer->denormalize($data['includes'], \Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class, 'json', $context));
                 unset($data['includes']);
             }
             if (\array_key_exists('errors', $data)) {
@@ -157,7 +157,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['errors']);
             }
             if (\array_key_exists('meta', $data)) {
-                $object->setMeta($this->denormalizer->denormalize($data['meta'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetSearchResponseMeta', 'json', $context));
+                $object->setMeta($this->denormalizer->denormalize($data['meta'], \Jane\Component\OpenApi3\Tests\Expected\Model\TweetSearchResponseMeta::class, 'json', $context));
                 unset($data['meta']);
             }
             foreach ($data as $key => $value_2) {
@@ -202,7 +202,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetSearchResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\TweetSearchResponse::class => false];
         }
     }
 }

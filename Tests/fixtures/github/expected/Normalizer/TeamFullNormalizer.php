@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\TeamFull';
+            return $type === \Github\Model\TeamFull::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repositories_url']);
             }
             if (\array_key_exists('parent', $data) && $data['parent'] !== null) {
-                $object->setParent($this->denormalizer->denormalize($data['parent'], 'Github\\Model\\TeamFullParent', 'json', $context));
+                $object->setParent($this->denormalizer->denormalize($data['parent'], \Github\Model\TeamFullParent::class, 'json', $context));
                 unset($data['parent']);
             }
             elseif (\array_key_exists('parent', $data) && $data['parent'] === null) {
@@ -114,7 +114,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['updated_at']);
             }
             if (\array_key_exists('organization', $data)) {
-                $object->setOrganization($this->denormalizer->denormalize($data['organization'], 'Github\\Model\\Organization', 'json', $context));
+                $object->setOrganization($this->denormalizer->denormalize($data['organization'], \Github\Model\Organization::class, 'json', $context));
                 unset($data['organization']);
             }
             if (\array_key_exists('ldap_dn', $data)) {
@@ -167,7 +167,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\TeamFull' => false];
+            return [\Github\Model\TeamFull::class => false];
         }
     }
 } else {
@@ -179,7 +179,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\TeamFull';
+            return $type === \Github\Model\TeamFull::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -251,7 +251,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repositories_url']);
             }
             if (\array_key_exists('parent', $data) && $data['parent'] !== null) {
-                $object->setParent($this->denormalizer->denormalize($data['parent'], 'Github\\Model\\TeamFullParent', 'json', $context));
+                $object->setParent($this->denormalizer->denormalize($data['parent'], \Github\Model\TeamFullParent::class, 'json', $context));
                 unset($data['parent']);
             }
             elseif (\array_key_exists('parent', $data) && $data['parent'] === null) {
@@ -274,7 +274,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['updated_at']);
             }
             if (\array_key_exists('organization', $data)) {
-                $object->setOrganization($this->denormalizer->denormalize($data['organization'], 'Github\\Model\\Organization', 'json', $context));
+                $object->setOrganization($this->denormalizer->denormalize($data['organization'], \Github\Model\Organization::class, 'json', $context));
                 unset($data['organization']);
             }
             if (\array_key_exists('ldap_dn', $data)) {
@@ -330,7 +330,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\TeamFull' => false];
+            return [\Github\Model\TeamFull::class => false];
         }
     }
 }

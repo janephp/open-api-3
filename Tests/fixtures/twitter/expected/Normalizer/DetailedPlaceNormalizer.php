@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedPlace';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedPlace::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -77,7 +77,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['contained_within']);
             }
             if (\array_key_exists('geo', $data)) {
-                $object->setGeo($this->denormalizer->denormalize($data['geo'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Geo', 'json', $context));
+                $object->setGeo($this->denormalizer->denormalize($data['geo'], \Jane\Component\OpenApi3\Tests\Expected\Model\Geo::class, 'json', $context));
                 unset($data['geo']);
             }
             foreach ($data as $key => $value_1) {
@@ -118,7 +118,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedPlace' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DetailedPlace::class => false];
         }
     }
 } else {
@@ -130,7 +130,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedPlace';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DetailedPlace::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -188,7 +188,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['contained_within']);
             }
             if (\array_key_exists('geo', $data)) {
-                $object->setGeo($this->denormalizer->denormalize($data['geo'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Geo', 'json', $context));
+                $object->setGeo($this->denormalizer->denormalize($data['geo'], \Jane\Component\OpenApi3\Tests\Expected\Model\Geo::class, 'json', $context));
                 unset($data['geo']);
             }
             foreach ($data as $key => $value_1) {
@@ -232,7 +232,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DetailedPlace' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DetailedPlace::class => false];
         }
     }
 }

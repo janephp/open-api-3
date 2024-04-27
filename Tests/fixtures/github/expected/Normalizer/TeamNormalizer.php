@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Team';
+            return $type === \Github\Model\Team::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repositories_url']);
             }
             if (\array_key_exists('parent', $data) && $data['parent'] !== null) {
-                $object->setParent($this->denormalizer->denormalize($data['parent'], 'Github\\Model\\TeamParent', 'json', $context));
+                $object->setParent($this->denormalizer->denormalize($data['parent'], \Github\Model\TeamParent::class, 'json', $context));
                 unset($data['parent']);
             }
             elseif (\array_key_exists('parent', $data) && $data['parent'] === null) {
@@ -135,7 +135,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Team' => false];
+            return [\Github\Model\Team::class => false];
         }
     }
 } else {
@@ -147,7 +147,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Team';
+            return $type === \Github\Model\Team::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -219,7 +219,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repositories_url']);
             }
             if (\array_key_exists('parent', $data) && $data['parent'] !== null) {
-                $object->setParent($this->denormalizer->denormalize($data['parent'], 'Github\\Model\\TeamParent', 'json', $context));
+                $object->setParent($this->denormalizer->denormalize($data['parent'], \Github\Model\TeamParent::class, 'json', $context));
                 unset($data['parent']);
             }
             elseif (\array_key_exists('parent', $data) && $data['parent'] === null) {
@@ -266,7 +266,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Team' => false];
+            return [\Github\Model\Team::class => false];
         }
     }
 }

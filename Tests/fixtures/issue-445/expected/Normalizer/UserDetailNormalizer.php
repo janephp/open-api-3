@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\UserDetail';
+            return $type === \PicturePark\API\Model\UserDetail::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -72,7 +72,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('userRoles', $data) && $data['userRoles'] !== null) {
                 $values = [];
                 foreach ($data['userRoles'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\UserRoleAssignment', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\UserRoleAssignment::class, 'json', $context);
                 }
                 $object->setUserRoles($values);
                 unset($data['userRoles']);
@@ -111,7 +111,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('ownerTokens', $data) && $data['ownerTokens'] !== null) {
                 $values_1 = [];
                 foreach ($data['ownerTokens'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\OwnerToken', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\OwnerToken::class, 'json', $context);
                 }
                 $object->setOwnerTokens($values_1);
                 unset($data['ownerTokens']);
@@ -227,7 +227,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\UserDetail' => false];
+            return [\PicturePark\API\Model\UserDetail::class => false];
         }
     }
 } else {
@@ -239,7 +239,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\UserDetail';
+            return $type === \PicturePark\API\Model\UserDetail::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -292,7 +292,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('userRoles', $data) && $data['userRoles'] !== null) {
                 $values = [];
                 foreach ($data['userRoles'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\UserRoleAssignment', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\UserRoleAssignment::class, 'json', $context);
                 }
                 $object->setUserRoles($values);
                 unset($data['userRoles']);
@@ -331,7 +331,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('ownerTokens', $data) && $data['ownerTokens'] !== null) {
                 $values_1 = [];
                 foreach ($data['ownerTokens'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\OwnerToken', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\OwnerToken::class, 'json', $context);
                 }
                 $object->setOwnerTokens($values_1);
                 unset($data['ownerTokens']);
@@ -450,7 +450,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\UserDetail' => false];
+            return [\PicturePark\API\Model\UserDetail::class => false];
         }
     }
 }

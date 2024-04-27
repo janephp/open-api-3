@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Deployment';
+            return $type === \Github\Model\Deployment::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -68,7 +68,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['task']);
             }
             if (\array_key_exists('payload', $data)) {
-                $object->setPayload($this->denormalizer->denormalize($data['payload'], 'Github\\Model\\DeploymentPayload', 'json', $context));
+                $object->setPayload($this->denormalizer->denormalize($data['payload'], \Github\Model\DeploymentPayload::class, 'json', $context));
                 unset($data['payload']);
             }
             if (\array_key_exists('original_environment', $data)) {
@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDescription(null);
             }
             if (\array_key_exists('creator', $data) && $data['creator'] !== null) {
-                $object->setCreator($this->denormalizer->denormalize($data['creator'], 'Github\\Model\\DeploymentCreator', 'json', $context));
+                $object->setCreator($this->denormalizer->denormalize($data['creator'], \Github\Model\DeploymentCreator::class, 'json', $context));
                 unset($data['creator']);
             }
             elseif (\array_key_exists('creator', $data) && $data['creator'] === null) {
@@ -118,7 +118,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['production_environment']);
             }
             if (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] !== null) {
-                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], 'Github\\Model\\DeploymentPerformedViaGithubApp', 'json', $context));
+                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], \Github\Model\DeploymentPerformedViaGithubApp::class, 'json', $context));
                 unset($data['performed_via_github_app']);
             }
             elseif (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] === null) {
@@ -172,7 +172,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Deployment' => false];
+            return [\Github\Model\Deployment::class => false];
         }
     }
 } else {
@@ -184,7 +184,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Deployment';
+            return $type === \Github\Model\Deployment::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -233,7 +233,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['task']);
             }
             if (\array_key_exists('payload', $data)) {
-                $object->setPayload($this->denormalizer->denormalize($data['payload'], 'Github\\Model\\DeploymentPayload', 'json', $context));
+                $object->setPayload($this->denormalizer->denormalize($data['payload'], \Github\Model\DeploymentPayload::class, 'json', $context));
                 unset($data['payload']);
             }
             if (\array_key_exists('original_environment', $data)) {
@@ -252,7 +252,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setDescription(null);
             }
             if (\array_key_exists('creator', $data) && $data['creator'] !== null) {
-                $object->setCreator($this->denormalizer->denormalize($data['creator'], 'Github\\Model\\DeploymentCreator', 'json', $context));
+                $object->setCreator($this->denormalizer->denormalize($data['creator'], \Github\Model\DeploymentCreator::class, 'json', $context));
                 unset($data['creator']);
             }
             elseif (\array_key_exists('creator', $data) && $data['creator'] === null) {
@@ -283,7 +283,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['production_environment']);
             }
             if (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] !== null) {
-                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], 'Github\\Model\\DeploymentPerformedViaGithubApp', 'json', $context));
+                $object->setPerformedViaGithubApp($this->denormalizer->denormalize($data['performed_via_github_app'], \Github\Model\DeploymentPerformedViaGithubApp::class, 'json', $context));
                 unset($data['performed_via_github_app']);
             }
             elseif (\array_key_exists('performed_via_github_app', $data) && $data['performed_via_github_app'] === null) {
@@ -340,7 +340,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Deployment' => false];
+            return [\Github\Model\Deployment::class => false];
         }
     }
 }

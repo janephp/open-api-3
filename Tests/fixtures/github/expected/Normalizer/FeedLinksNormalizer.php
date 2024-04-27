@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\FeedLinks';
+            return $type === \Github\Model\FeedLinks::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,37 +44,37 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('timeline', $data)) {
-                $object->setTimeline($this->denormalizer->denormalize($data['timeline'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setTimeline($this->denormalizer->denormalize($data['timeline'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['timeline']);
             }
             if (\array_key_exists('user', $data)) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['user']);
             }
             if (\array_key_exists('security_advisories', $data)) {
-                $object->setSecurityAdvisories($this->denormalizer->denormalize($data['security_advisories'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setSecurityAdvisories($this->denormalizer->denormalize($data['security_advisories'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['security_advisories']);
             }
             if (\array_key_exists('current_user', $data)) {
-                $object->setCurrentUser($this->denormalizer->denormalize($data['current_user'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setCurrentUser($this->denormalizer->denormalize($data['current_user'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['current_user']);
             }
             if (\array_key_exists('current_user_public', $data)) {
-                $object->setCurrentUserPublic($this->denormalizer->denormalize($data['current_user_public'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setCurrentUserPublic($this->denormalizer->denormalize($data['current_user_public'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['current_user_public']);
             }
             if (\array_key_exists('current_user_actor', $data)) {
-                $object->setCurrentUserActor($this->denormalizer->denormalize($data['current_user_actor'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setCurrentUserActor($this->denormalizer->denormalize($data['current_user_actor'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['current_user_actor']);
             }
             if (\array_key_exists('current_user_organization', $data)) {
-                $object->setCurrentUserOrganization($this->denormalizer->denormalize($data['current_user_organization'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setCurrentUserOrganization($this->denormalizer->denormalize($data['current_user_organization'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['current_user_organization']);
             }
             if (\array_key_exists('current_user_organizations', $data)) {
                 $values = [];
                 foreach ($data['current_user_organizations'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\LinkWithType', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\LinkWithType::class, 'json', $context);
                 }
                 $object->setCurrentUserOrganizations($values);
                 unset($data['current_user_organizations']);
@@ -125,7 +125,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\FeedLinks' => false];
+            return [\Github\Model\FeedLinks::class => false];
         }
     }
 } else {
@@ -137,7 +137,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\FeedLinks';
+            return $type === \Github\Model\FeedLinks::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -162,37 +162,37 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('timeline', $data)) {
-                $object->setTimeline($this->denormalizer->denormalize($data['timeline'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setTimeline($this->denormalizer->denormalize($data['timeline'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['timeline']);
             }
             if (\array_key_exists('user', $data)) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['user']);
             }
             if (\array_key_exists('security_advisories', $data)) {
-                $object->setSecurityAdvisories($this->denormalizer->denormalize($data['security_advisories'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setSecurityAdvisories($this->denormalizer->denormalize($data['security_advisories'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['security_advisories']);
             }
             if (\array_key_exists('current_user', $data)) {
-                $object->setCurrentUser($this->denormalizer->denormalize($data['current_user'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setCurrentUser($this->denormalizer->denormalize($data['current_user'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['current_user']);
             }
             if (\array_key_exists('current_user_public', $data)) {
-                $object->setCurrentUserPublic($this->denormalizer->denormalize($data['current_user_public'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setCurrentUserPublic($this->denormalizer->denormalize($data['current_user_public'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['current_user_public']);
             }
             if (\array_key_exists('current_user_actor', $data)) {
-                $object->setCurrentUserActor($this->denormalizer->denormalize($data['current_user_actor'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setCurrentUserActor($this->denormalizer->denormalize($data['current_user_actor'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['current_user_actor']);
             }
             if (\array_key_exists('current_user_organization', $data)) {
-                $object->setCurrentUserOrganization($this->denormalizer->denormalize($data['current_user_organization'], 'Github\\Model\\LinkWithType', 'json', $context));
+                $object->setCurrentUserOrganization($this->denormalizer->denormalize($data['current_user_organization'], \Github\Model\LinkWithType::class, 'json', $context));
                 unset($data['current_user_organization']);
             }
             if (\array_key_exists('current_user_organizations', $data)) {
                 $values = [];
                 foreach ($data['current_user_organizations'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\LinkWithType', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\LinkWithType::class, 'json', $context);
                 }
                 $object->setCurrentUserOrganizations($values);
                 unset($data['current_user_organizations']);
@@ -246,7 +246,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\FeedLinks' => false];
+            return [\Github\Model\FeedLinks::class => false];
         }
     }
 }

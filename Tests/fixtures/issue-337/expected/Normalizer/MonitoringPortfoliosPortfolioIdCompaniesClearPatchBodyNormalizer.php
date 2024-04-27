@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody';
+            return $type === \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -43,7 +43,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('companies', $data)) {
                 $values = [];
                 foreach ($data['companies'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBodyCompaniesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBodyCompaniesItem::class, 'json', $context);
                 }
                 $object->setCompanies($values);
                 unset($data['companies']);
@@ -74,7 +74,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody' => false];
+            return [\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody::class => false];
         }
     }
 } else {
@@ -86,7 +86,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody';
+            return $type === \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -110,7 +110,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('companies', $data)) {
                 $values = [];
                 foreach ($data['companies'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBodyCompaniesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBodyCompaniesItem::class, 'json', $context);
                 }
                 $object->setCompanies($values);
                 unset($data['companies']);
@@ -144,7 +144,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody' => false];
+            return [\CreditSafe\API\Model\MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody::class => false];
         }
     }
 }

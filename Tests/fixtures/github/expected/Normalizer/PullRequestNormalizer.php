@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PullRequest';
+            return $type === \Github\Model\PullRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -108,7 +108,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['title']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\PullRequestUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\PullRequestUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -124,13 +124,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('labels', $data)) {
                 $values = [];
                 foreach ($data['labels'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\PullRequestLabelsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\PullRequestLabelsItem::class, 'json', $context);
                 }
                 $object->setLabels($values);
                 unset($data['labels']);
             }
             if (\array_key_exists('milestone', $data) && $data['milestone'] !== null) {
-                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], 'Github\\Model\\PullRequestMilestone', 'json', $context));
+                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], \Github\Model\PullRequestMilestone::class, 'json', $context));
                 unset($data['milestone']);
             }
             elseif (\array_key_exists('milestone', $data) && $data['milestone'] === null) {
@@ -173,7 +173,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setMergeCommitSha(null);
             }
             if (\array_key_exists('assignee', $data) && $data['assignee'] !== null) {
-                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], 'Github\\Model\\PullRequestAssignee', 'json', $context));
+                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], \Github\Model\PullRequestAssignee::class, 'json', $context));
                 unset($data['assignee']);
             }
             elseif (\array_key_exists('assignee', $data) && $data['assignee'] === null) {
@@ -182,7 +182,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('assignees', $data) && $data['assignees'] !== null) {
                 $values_1 = [];
                 foreach ($data['assignees'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\SimpleUser', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\SimpleUser::class, 'json', $context);
                 }
                 $object->setAssignees($values_1);
                 unset($data['assignees']);
@@ -193,7 +193,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('requested_reviewers', $data) && $data['requested_reviewers'] !== null) {
                 $values_2 = [];
                 foreach ($data['requested_reviewers'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\SimpleUser', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\SimpleUser::class, 'json', $context);
                 }
                 $object->setRequestedReviewers($values_2);
                 unset($data['requested_reviewers']);
@@ -204,7 +204,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('requested_teams', $data) && $data['requested_teams'] !== null) {
                 $values_3 = [];
                 foreach ($data['requested_teams'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Github\\Model\\TeamSimple', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Github\Model\TeamSimple::class, 'json', $context);
                 }
                 $object->setRequestedTeams($values_3);
                 unset($data['requested_teams']);
@@ -213,15 +213,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setRequestedTeams(null);
             }
             if (\array_key_exists('head', $data)) {
-                $object->setHead($this->denormalizer->denormalize($data['head'], 'Github\\Model\\PullRequestHead', 'json', $context));
+                $object->setHead($this->denormalizer->denormalize($data['head'], \Github\Model\PullRequestHead::class, 'json', $context));
                 unset($data['head']);
             }
             if (\array_key_exists('base', $data)) {
-                $object->setBase($this->denormalizer->denormalize($data['base'], 'Github\\Model\\PullRequestBase', 'json', $context));
+                $object->setBase($this->denormalizer->denormalize($data['base'], \Github\Model\PullRequestBase::class, 'json', $context));
                 unset($data['base']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\PullRequestLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\PullRequestLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             if (\array_key_exists('author_association', $data)) {
@@ -255,7 +255,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['mergeable_state']);
             }
             if (\array_key_exists('merged_by', $data) && $data['merged_by'] !== null) {
-                $object->setMergedBy($this->denormalizer->denormalize($data['merged_by'], 'Github\\Model\\PullRequestMergedBy', 'json', $context));
+                $object->setMergedBy($this->denormalizer->denormalize($data['merged_by'], \Github\Model\PullRequestMergedBy::class, 'json', $context));
                 unset($data['merged_by']);
             }
             elseif (\array_key_exists('merged_by', $data) && $data['merged_by'] === null) {
@@ -386,7 +386,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PullRequest' => false];
+            return [\Github\Model\PullRequest::class => false];
         }
     }
 } else {
@@ -398,7 +398,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PullRequest';
+            return $type === \Github\Model\PullRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -487,7 +487,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['title']);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\PullRequestUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\PullRequestUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
@@ -503,13 +503,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('labels', $data)) {
                 $values = [];
                 foreach ($data['labels'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\PullRequestLabelsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\PullRequestLabelsItem::class, 'json', $context);
                 }
                 $object->setLabels($values);
                 unset($data['labels']);
             }
             if (\array_key_exists('milestone', $data) && $data['milestone'] !== null) {
-                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], 'Github\\Model\\PullRequestMilestone', 'json', $context));
+                $object->setMilestone($this->denormalizer->denormalize($data['milestone'], \Github\Model\PullRequestMilestone::class, 'json', $context));
                 unset($data['milestone']);
             }
             elseif (\array_key_exists('milestone', $data) && $data['milestone'] === null) {
@@ -552,7 +552,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setMergeCommitSha(null);
             }
             if (\array_key_exists('assignee', $data) && $data['assignee'] !== null) {
-                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], 'Github\\Model\\PullRequestAssignee', 'json', $context));
+                $object->setAssignee($this->denormalizer->denormalize($data['assignee'], \Github\Model\PullRequestAssignee::class, 'json', $context));
                 unset($data['assignee']);
             }
             elseif (\array_key_exists('assignee', $data) && $data['assignee'] === null) {
@@ -561,7 +561,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('assignees', $data) && $data['assignees'] !== null) {
                 $values_1 = [];
                 foreach ($data['assignees'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\SimpleUser', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\SimpleUser::class, 'json', $context);
                 }
                 $object->setAssignees($values_1);
                 unset($data['assignees']);
@@ -572,7 +572,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('requested_reviewers', $data) && $data['requested_reviewers'] !== null) {
                 $values_2 = [];
                 foreach ($data['requested_reviewers'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\SimpleUser', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\SimpleUser::class, 'json', $context);
                 }
                 $object->setRequestedReviewers($values_2);
                 unset($data['requested_reviewers']);
@@ -583,7 +583,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('requested_teams', $data) && $data['requested_teams'] !== null) {
                 $values_3 = [];
                 foreach ($data['requested_teams'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Github\\Model\\TeamSimple', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Github\Model\TeamSimple::class, 'json', $context);
                 }
                 $object->setRequestedTeams($values_3);
                 unset($data['requested_teams']);
@@ -592,15 +592,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setRequestedTeams(null);
             }
             if (\array_key_exists('head', $data)) {
-                $object->setHead($this->denormalizer->denormalize($data['head'], 'Github\\Model\\PullRequestHead', 'json', $context));
+                $object->setHead($this->denormalizer->denormalize($data['head'], \Github\Model\PullRequestHead::class, 'json', $context));
                 unset($data['head']);
             }
             if (\array_key_exists('base', $data)) {
-                $object->setBase($this->denormalizer->denormalize($data['base'], 'Github\\Model\\PullRequestBase', 'json', $context));
+                $object->setBase($this->denormalizer->denormalize($data['base'], \Github\Model\PullRequestBase::class, 'json', $context));
                 unset($data['base']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\PullRequestLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\PullRequestLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             if (\array_key_exists('author_association', $data)) {
@@ -634,7 +634,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['mergeable_state']);
             }
             if (\array_key_exists('merged_by', $data) && $data['merged_by'] !== null) {
-                $object->setMergedBy($this->denormalizer->denormalize($data['merged_by'], 'Github\\Model\\PullRequestMergedBy', 'json', $context));
+                $object->setMergedBy($this->denormalizer->denormalize($data['merged_by'], \Github\Model\PullRequestMergedBy::class, 'json', $context));
                 unset($data['merged_by']);
             }
             elseif (\array_key_exists('merged_by', $data) && $data['merged_by'] === null) {
@@ -768,7 +768,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PullRequest' => false];
+            return [\Github\Model\PullRequest::class => false];
         }
     }
 }

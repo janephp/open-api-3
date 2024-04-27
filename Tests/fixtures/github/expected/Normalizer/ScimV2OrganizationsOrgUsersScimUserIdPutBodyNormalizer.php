@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ScimV2OrganizationsOrgUsersScimUserIdPutBody';
+            return $type === \Github\Model\ScimV2OrganizationsOrgUsersScimUserIdPutBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -76,13 +76,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['userName']);
             }
             if (\array_key_exists('name', $data)) {
-                $object->setName($this->denormalizer->denormalize($data['name'], 'Github\\Model\\ScimV2OrganizationsOrgUsersScimUserIdPutBodyName', 'json', $context));
+                $object->setName($this->denormalizer->denormalize($data['name'], \Github\Model\ScimV2OrganizationsOrgUsersScimUserIdPutBodyName::class, 'json', $context));
                 unset($data['name']);
             }
             if (\array_key_exists('emails', $data)) {
                 $values_2 = [];
                 foreach ($data['emails'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem::class, 'json', $context);
                 }
                 $object->setEmails($values_2);
                 unset($data['emails']);
@@ -139,7 +139,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ScimV2OrganizationsOrgUsersScimUserIdPutBody' => false];
+            return [\Github\Model\ScimV2OrganizationsOrgUsersScimUserIdPutBody::class => false];
         }
     }
 } else {
@@ -151,7 +151,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ScimV2OrganizationsOrgUsersScimUserIdPutBody';
+            return $type === \Github\Model\ScimV2OrganizationsOrgUsersScimUserIdPutBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -208,13 +208,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['userName']);
             }
             if (\array_key_exists('name', $data)) {
-                $object->setName($this->denormalizer->denormalize($data['name'], 'Github\\Model\\ScimV2OrganizationsOrgUsersScimUserIdPutBodyName', 'json', $context));
+                $object->setName($this->denormalizer->denormalize($data['name'], \Github\Model\ScimV2OrganizationsOrgUsersScimUserIdPutBodyName::class, 'json', $context));
                 unset($data['name']);
             }
             if (\array_key_exists('emails', $data)) {
                 $values_2 = [];
                 foreach ($data['emails'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Github\\Model\\ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Github\Model\ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem::class, 'json', $context);
                 }
                 $object->setEmails($values_2);
                 unset($data['emails']);
@@ -274,7 +274,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ScimV2OrganizationsOrgUsersScimUserIdPutBody' => false];
+            return [\Github\Model\ScimV2OrganizationsOrgUsersScimUserIdPutBody::class => false];
         }
     }
 }

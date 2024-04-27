@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraSearch';
+            return $type === \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraSearch::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -55,7 +55,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('hydra:mapping', $data)) {
                 $values = [];
                 foreach ($data['hydra:mapping'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraSearchHydraMappingItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraSearchHydraMappingItem::class, 'json', $context);
                 }
                 $object->setHydraMapping($values);
                 unset($data['hydra:mapping']);
@@ -95,7 +95,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraSearch' => false];
+            return [\ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraSearch::class => false];
         }
     }
 } else {
@@ -107,7 +107,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraSearch';
+            return $type === \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraSearch::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -143,7 +143,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('hydra:mapping', $data)) {
                 $values = [];
                 foreach ($data['hydra:mapping'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraSearchHydraMappingItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraSearchHydraMappingItem::class, 'json', $context);
                 }
                 $object->setHydraMapping($values);
                 unset($data['hydra:mapping']);
@@ -186,7 +186,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraSearch' => false];
+            return [\ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraSearch::class => false];
         }
     }
 }

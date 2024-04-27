@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\PortfolioRequest';
+            return $type === \CreditSafe\API\Model\PortfolioRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -49,7 +49,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['isDefault']);
             }
             if (\array_key_exists('emails', $data)) {
-                $object->setEmails($this->denormalizer->denormalize($data['emails'], 'CreditSafe\\API\\Model\\PortfolioRequestEmails', 'json', $context));
+                $object->setEmails($this->denormalizer->denormalize($data['emails'], \CreditSafe\API\Model\PortfolioRequestEmails::class, 'json', $context));
                 unset($data['emails']);
             }
             if (\array_key_exists('emailSubject', $data)) {
@@ -97,7 +97,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\PortfolioRequest' => false];
+            return [\CreditSafe\API\Model\PortfolioRequest::class => false];
         }
     }
 } else {
@@ -109,7 +109,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\PortfolioRequest';
+            return $type === \CreditSafe\API\Model\PortfolioRequest::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -139,7 +139,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['isDefault']);
             }
             if (\array_key_exists('emails', $data)) {
-                $object->setEmails($this->denormalizer->denormalize($data['emails'], 'CreditSafe\\API\\Model\\PortfolioRequestEmails', 'json', $context));
+                $object->setEmails($this->denormalizer->denormalize($data['emails'], \CreditSafe\API\Model\PortfolioRequestEmails::class, 'json', $context));
                 unset($data['emails']);
             }
             if (\array_key_exists('emailSubject', $data)) {
@@ -190,7 +190,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\PortfolioRequest' => false];
+            return [\CreditSafe\API\Model\PortfolioRequest::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BookJsonldBookRead';
+            return $type === \ApiPlatform\Demo\Model\BookJsonldBookRead::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('reviews', $data)) {
                 $values = [];
                 foreach ($data['reviews'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'ApiPlatform\\Demo\\Model\\ReviewJsonldBookRead', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \ApiPlatform\Demo\Model\ReviewJsonldBookRead::class, 'json', $context);
                 }
                 $object->setReviews($values);
                 unset($data['reviews']);
@@ -123,7 +123,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BookJsonldBookRead' => false];
+            return [\ApiPlatform\Demo\Model\BookJsonldBookRead::class => false];
         }
     }
 } else {
@@ -135,7 +135,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BookJsonldBookRead';
+            return $type === \ApiPlatform\Demo\Model\BookJsonldBookRead::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -201,7 +201,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('reviews', $data)) {
                 $values = [];
                 foreach ($data['reviews'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'ApiPlatform\\Demo\\Model\\ReviewJsonldBookRead', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \ApiPlatform\Demo\Model\ReviewJsonldBookRead::class, 'json', $context);
                 }
                 $object->setReviews($values);
                 unset($data['reviews']);
@@ -242,7 +242,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BookJsonldBookRead' => false];
+            return [\ApiPlatform\Demo\Model\BookJsonldBookRead::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FullTextEntities';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\FullTextEntities::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -43,7 +43,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('urls', $data)) {
                 $values = [];
                 foreach ($data['urls'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\UrlEntity', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Jane\Component\OpenApi3\Tests\Expected\Model\UrlEntity::class, 'json', $context);
                 }
                 $object->setUrls($values);
                 unset($data['urls']);
@@ -51,7 +51,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('hashtags', $data)) {
                 $values_1 = [];
                 foreach ($data['hashtags'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\HashtagEntity', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Jane\Component\OpenApi3\Tests\Expected\Model\HashtagEntity::class, 'json', $context);
                 }
                 $object->setHashtags($values_1);
                 unset($data['hashtags']);
@@ -59,7 +59,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('mentions', $data)) {
                 $values_2 = [];
                 foreach ($data['mentions'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\MentionEntity', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Jane\Component\OpenApi3\Tests\Expected\Model\MentionEntity::class, 'json', $context);
                 }
                 $object->setMentions($values_2);
                 unset($data['mentions']);
@@ -67,7 +67,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('cashtags', $data)) {
                 $values_3 = [];
                 foreach ($data['cashtags'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\CashtagEntity', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Jane\Component\OpenApi3\Tests\Expected\Model\CashtagEntity::class, 'json', $context);
                 }
                 $object->setCashtags($values_3);
                 unset($data['cashtags']);
@@ -75,7 +75,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('annotations', $data)) {
                 $values_4 = [];
                 foreach ($data['annotations'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FullTextEntitiesAnnotationsItem', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \Jane\Component\OpenApi3\Tests\Expected\Model\FullTextEntitiesAnnotationsItem::class, 'json', $context);
                 }
                 $object->setAnnotations($values_4);
                 unset($data['annotations']);
@@ -134,7 +134,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FullTextEntities' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\FullTextEntities::class => false];
         }
     }
 } else {
@@ -146,7 +146,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FullTextEntities';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\FullTextEntities::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -170,7 +170,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('urls', $data)) {
                 $values = [];
                 foreach ($data['urls'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\UrlEntity', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Jane\Component\OpenApi3\Tests\Expected\Model\UrlEntity::class, 'json', $context);
                 }
                 $object->setUrls($values);
                 unset($data['urls']);
@@ -178,7 +178,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('hashtags', $data)) {
                 $values_1 = [];
                 foreach ($data['hashtags'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\HashtagEntity', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Jane\Component\OpenApi3\Tests\Expected\Model\HashtagEntity::class, 'json', $context);
                 }
                 $object->setHashtags($values_1);
                 unset($data['hashtags']);
@@ -186,7 +186,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('mentions', $data)) {
                 $values_2 = [];
                 foreach ($data['mentions'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\MentionEntity', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \Jane\Component\OpenApi3\Tests\Expected\Model\MentionEntity::class, 'json', $context);
                 }
                 $object->setMentions($values_2);
                 unset($data['mentions']);
@@ -194,7 +194,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('cashtags', $data)) {
                 $values_3 = [];
                 foreach ($data['cashtags'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\CashtagEntity', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \Jane\Component\OpenApi3\Tests\Expected\Model\CashtagEntity::class, 'json', $context);
                 }
                 $object->setCashtags($values_3);
                 unset($data['cashtags']);
@@ -202,7 +202,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('annotations', $data)) {
                 $values_4 = [];
                 foreach ($data['annotations'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FullTextEntitiesAnnotationsItem', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \Jane\Component\OpenApi3\Tests\Expected\Model\FullTextEntitiesAnnotationsItem::class, 'json', $context);
                 }
                 $object->setAnnotations($values_4);
                 unset($data['annotations']);
@@ -264,7 +264,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FullTextEntities' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\FullTextEntities::class => false];
         }
     }
 }

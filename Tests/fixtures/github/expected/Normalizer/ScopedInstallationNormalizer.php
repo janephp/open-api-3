@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ScopedInstallation';
+            return $type === \Github\Model\ScopedInstallation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -67,7 +67,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repositories_url']);
             }
             if (\array_key_exists('account', $data) && $data['account'] !== null) {
-                $object->setAccount($this->denormalizer->denormalize($data['account'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setAccount($this->denormalizer->denormalize($data['account'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['account']);
             }
             elseif (\array_key_exists('account', $data) && $data['account'] === null) {
@@ -104,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ScopedInstallation' => false];
+            return [\Github\Model\ScopedInstallation::class => false];
         }
     }
 } else {
@@ -116,7 +116,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ScopedInstallation';
+            return $type === \Github\Model\ScopedInstallation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -164,7 +164,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['repositories_url']);
             }
             if (\array_key_exists('account', $data) && $data['account'] !== null) {
-                $object->setAccount($this->denormalizer->denormalize($data['account'], 'Github\\Model\\SimpleUser', 'json', $context));
+                $object->setAccount($this->denormalizer->denormalize($data['account'], \Github\Model\SimpleUser::class, 'json', $context));
                 unset($data['account']);
             }
             elseif (\array_key_exists('account', $data) && $data['account'] === null) {
@@ -204,7 +204,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ScopedInstallation' => false];
+            return [\Github\Model\ScopedInstallation::class => false];
         }
     }
 }

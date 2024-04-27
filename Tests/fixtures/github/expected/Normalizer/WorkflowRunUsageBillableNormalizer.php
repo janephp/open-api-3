@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\WorkflowRunUsageBillable';
+            return $type === \Github\Model\WorkflowRunUsageBillable::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,15 +44,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('UBUNTU', $data)) {
-                $object->setUBUNTU($this->denormalizer->denormalize($data['UBUNTU'], 'Github\\Model\\WorkflowRunUsageBillableUBUNTU', 'json', $context));
+                $object->setUBUNTU($this->denormalizer->denormalize($data['UBUNTU'], \Github\Model\WorkflowRunUsageBillableUBUNTU::class, 'json', $context));
                 unset($data['UBUNTU']);
             }
             if (\array_key_exists('MACOS', $data)) {
-                $object->setMACOS($this->denormalizer->denormalize($data['MACOS'], 'Github\\Model\\WorkflowRunUsageBillableMACOS', 'json', $context));
+                $object->setMACOS($this->denormalizer->denormalize($data['MACOS'], \Github\Model\WorkflowRunUsageBillableMACOS::class, 'json', $context));
                 unset($data['MACOS']);
             }
             if (\array_key_exists('WINDOWS', $data)) {
-                $object->setWINDOWS($this->denormalizer->denormalize($data['WINDOWS'], 'Github\\Model\\WorkflowRunUsageBillableWINDOWS', 'json', $context));
+                $object->setWINDOWS($this->denormalizer->denormalize($data['WINDOWS'], \Github\Model\WorkflowRunUsageBillableWINDOWS::class, 'json', $context));
                 unset($data['WINDOWS']);
             }
             foreach ($data as $key => $value) {
@@ -86,7 +86,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\WorkflowRunUsageBillable' => false];
+            return [\Github\Model\WorkflowRunUsageBillable::class => false];
         }
     }
 } else {
@@ -98,7 +98,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\WorkflowRunUsageBillable';
+            return $type === \Github\Model\WorkflowRunUsageBillable::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -123,15 +123,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('UBUNTU', $data)) {
-                $object->setUBUNTU($this->denormalizer->denormalize($data['UBUNTU'], 'Github\\Model\\WorkflowRunUsageBillableUBUNTU', 'json', $context));
+                $object->setUBUNTU($this->denormalizer->denormalize($data['UBUNTU'], \Github\Model\WorkflowRunUsageBillableUBUNTU::class, 'json', $context));
                 unset($data['UBUNTU']);
             }
             if (\array_key_exists('MACOS', $data)) {
-                $object->setMACOS($this->denormalizer->denormalize($data['MACOS'], 'Github\\Model\\WorkflowRunUsageBillableMACOS', 'json', $context));
+                $object->setMACOS($this->denormalizer->denormalize($data['MACOS'], \Github\Model\WorkflowRunUsageBillableMACOS::class, 'json', $context));
                 unset($data['MACOS']);
             }
             if (\array_key_exists('WINDOWS', $data)) {
-                $object->setWINDOWS($this->denormalizer->denormalize($data['WINDOWS'], 'Github\\Model\\WorkflowRunUsageBillableWINDOWS', 'json', $context));
+                $object->setWINDOWS($this->denormalizer->denormalize($data['WINDOWS'], \Github\Model\WorkflowRunUsageBillableWINDOWS::class, 'json', $context));
                 unset($data['WINDOWS']);
             }
             foreach ($data as $key => $value) {
@@ -168,7 +168,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\WorkflowRunUsageBillable' => false];
+            return [\Github\Model\WorkflowRunUsageBillable::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ApiOverview';
+            return $type === \Github\Model\ApiOverview::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -48,7 +48,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['verifiable_password_authentication']);
             }
             if (\array_key_exists('ssh_key_fingerprints', $data)) {
-                $object->setSshKeyFingerprints($this->denormalizer->denormalize($data['ssh_key_fingerprints'], 'Github\\Model\\ApiOverviewSshKeyFingerprints', 'json', $context));
+                $object->setSshKeyFingerprints($this->denormalizer->denormalize($data['ssh_key_fingerprints'], \Github\Model\ApiOverviewSshKeyFingerprints::class, 'json', $context));
                 unset($data['ssh_key_fingerprints']);
             }
             if (\array_key_exists('hooks', $data)) {
@@ -181,7 +181,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ApiOverview' => false];
+            return [\Github\Model\ApiOverview::class => false];
         }
     }
 } else {
@@ -193,7 +193,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ApiOverview';
+            return $type === \Github\Model\ApiOverview::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -222,7 +222,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['verifiable_password_authentication']);
             }
             if (\array_key_exists('ssh_key_fingerprints', $data)) {
-                $object->setSshKeyFingerprints($this->denormalizer->denormalize($data['ssh_key_fingerprints'], 'Github\\Model\\ApiOverviewSshKeyFingerprints', 'json', $context));
+                $object->setSshKeyFingerprints($this->denormalizer->denormalize($data['ssh_key_fingerprints'], \Github\Model\ApiOverviewSshKeyFingerprints::class, 'json', $context));
                 unset($data['ssh_key_fingerprints']);
             }
             if (\array_key_exists('hooks', $data)) {
@@ -358,7 +358,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ApiOverview' => false];
+            return [\Github\Model\ApiOverview::class => false];
         }
     }
 }

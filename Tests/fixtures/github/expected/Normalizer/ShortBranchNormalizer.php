@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ShortBranch';
+            return $type === \Github\Model\ShortBranch::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -48,7 +48,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('commit', $data)) {
-                $object->setCommit($this->denormalizer->denormalize($data['commit'], 'Github\\Model\\ShortBranchCommit', 'json', $context));
+                $object->setCommit($this->denormalizer->denormalize($data['commit'], \Github\Model\ShortBranchCommit::class, 'json', $context));
                 unset($data['commit']);
             }
             if (\array_key_exists('protected', $data)) {
@@ -56,7 +56,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['protected']);
             }
             if (\array_key_exists('protection', $data)) {
-                $object->setProtection($this->denormalizer->denormalize($data['protection'], 'Github\\Model\\BranchProtection', 'json', $context));
+                $object->setProtection($this->denormalizer->denormalize($data['protection'], \Github\Model\BranchProtection::class, 'json', $context));
                 unset($data['protection']);
             }
             if (\array_key_exists('protection_url', $data)) {
@@ -94,7 +94,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ShortBranch' => false];
+            return [\Github\Model\ShortBranch::class => false];
         }
     }
 } else {
@@ -106,7 +106,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ShortBranch';
+            return $type === \Github\Model\ShortBranch::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -135,7 +135,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('commit', $data)) {
-                $object->setCommit($this->denormalizer->denormalize($data['commit'], 'Github\\Model\\ShortBranchCommit', 'json', $context));
+                $object->setCommit($this->denormalizer->denormalize($data['commit'], \Github\Model\ShortBranchCommit::class, 'json', $context));
                 unset($data['commit']);
             }
             if (\array_key_exists('protected', $data)) {
@@ -143,7 +143,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['protected']);
             }
             if (\array_key_exists('protection', $data)) {
-                $object->setProtection($this->denormalizer->denormalize($data['protection'], 'Github\\Model\\BranchProtection', 'json', $context));
+                $object->setProtection($this->denormalizer->denormalize($data['protection'], \Github\Model\BranchProtection::class, 'json', $context));
                 unset($data['protection']);
             }
             if (\array_key_exists('protection_url', $data)) {
@@ -184,7 +184,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ShortBranch' => false];
+            return [\Github\Model\ShortBranch::class => false];
         }
     }
 }

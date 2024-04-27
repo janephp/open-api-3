@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PageBuild';
+            return $type === \Github\Model\PageBuild::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -52,11 +52,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['status']);
             }
             if (\array_key_exists('error', $data)) {
-                $object->setError($this->denormalizer->denormalize($data['error'], 'Github\\Model\\PageBuildError', 'json', $context));
+                $object->setError($this->denormalizer->denormalize($data['error'], \Github\Model\PageBuildError::class, 'json', $context));
                 unset($data['error']);
             }
             if (\array_key_exists('pusher', $data) && $data['pusher'] !== null) {
-                $object->setPusher($this->denormalizer->denormalize($data['pusher'], 'Github\\Model\\PageBuildPusher', 'json', $context));
+                $object->setPusher($this->denormalizer->denormalize($data['pusher'], \Github\Model\PageBuildPusher::class, 'json', $context));
                 unset($data['pusher']);
             }
             elseif (\array_key_exists('pusher', $data) && $data['pusher'] === null) {
@@ -108,7 +108,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PageBuild' => false];
+            return [\Github\Model\PageBuild::class => false];
         }
     }
 } else {
@@ -120,7 +120,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\PageBuild';
+            return $type === \Github\Model\PageBuild::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -153,11 +153,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['status']);
             }
             if (\array_key_exists('error', $data)) {
-                $object->setError($this->denormalizer->denormalize($data['error'], 'Github\\Model\\PageBuildError', 'json', $context));
+                $object->setError($this->denormalizer->denormalize($data['error'], \Github\Model\PageBuildError::class, 'json', $context));
                 unset($data['error']);
             }
             if (\array_key_exists('pusher', $data) && $data['pusher'] !== null) {
-                $object->setPusher($this->denormalizer->denormalize($data['pusher'], 'Github\\Model\\PageBuildPusher', 'json', $context));
+                $object->setPusher($this->denormalizer->denormalize($data['pusher'], \Github\Model\PageBuildPusher::class, 'json', $context));
                 unset($data['pusher']);
             }
             elseif (\array_key_exists('pusher', $data) && $data['pusher'] === null) {
@@ -212,7 +212,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\PageBuild' => false];
+            return [\Github\Model\PageBuild::class => false];
         }
     }
 }

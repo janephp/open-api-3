@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Organization';
+            return $type === \Github\Model\Organization::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -159,7 +159,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['updated_at']);
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\OrganizationPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\OrganizationPlan::class, 'json', $context));
                 unset($data['plan']);
             }
             foreach ($data as $key => $value) {
@@ -227,7 +227,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Organization' => false];
+            return [\Github\Model\Organization::class => false];
         }
     }
 } else {
@@ -239,7 +239,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Organization';
+            return $type === \Github\Model\Organization::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -379,7 +379,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['updated_at']);
             }
             if (\array_key_exists('plan', $data)) {
-                $object->setPlan($this->denormalizer->denormalize($data['plan'], 'Github\\Model\\OrganizationPlan', 'json', $context));
+                $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\OrganizationPlan::class, 'json', $context));
                 unset($data['plan']);
             }
             foreach ($data as $key => $value) {
@@ -450,7 +450,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Organization' => false];
+            return [\Github\Model\Organization::class => false];
         }
     }
 }

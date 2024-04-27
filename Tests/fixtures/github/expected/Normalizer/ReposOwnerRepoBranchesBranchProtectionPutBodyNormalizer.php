@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBody';
+            return $type === \Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,7 +44,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('required_status_checks', $data) && $data['required_status_checks'] !== null) {
-                $object->setRequiredStatusChecks($this->denormalizer->denormalize($data['required_status_checks'], 'Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredStatusChecks', 'json', $context));
+                $object->setRequiredStatusChecks($this->denormalizer->denormalize($data['required_status_checks'], \Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredStatusChecks::class, 'json', $context));
                 unset($data['required_status_checks']);
             }
             elseif (\array_key_exists('required_status_checks', $data) && $data['required_status_checks'] === null) {
@@ -58,14 +58,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setEnforceAdmins(null);
             }
             if (\array_key_exists('required_pull_request_reviews', $data) && $data['required_pull_request_reviews'] !== null) {
-                $object->setRequiredPullRequestReviews($this->denormalizer->denormalize($data['required_pull_request_reviews'], 'Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredPullRequestReviews', 'json', $context));
+                $object->setRequiredPullRequestReviews($this->denormalizer->denormalize($data['required_pull_request_reviews'], \Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredPullRequestReviews::class, 'json', $context));
                 unset($data['required_pull_request_reviews']);
             }
             elseif (\array_key_exists('required_pull_request_reviews', $data) && $data['required_pull_request_reviews'] === null) {
                 $object->setRequiredPullRequestReviews(null);
             }
             if (\array_key_exists('restrictions', $data) && $data['restrictions'] !== null) {
-                $object->setRestrictions($this->denormalizer->denormalize($data['restrictions'], 'Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions', 'json', $context));
+                $object->setRestrictions($this->denormalizer->denormalize($data['restrictions'], \Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions::class, 'json', $context));
                 unset($data['restrictions']);
             }
             elseif (\array_key_exists('restrictions', $data) && $data['restrictions'] === null) {
@@ -121,7 +121,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBody' => false];
+            return [\Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBody::class => false];
         }
     }
 } else {
@@ -133,7 +133,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBody';
+            return $type === \Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -158,7 +158,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('required_status_checks', $data) && $data['required_status_checks'] !== null) {
-                $object->setRequiredStatusChecks($this->denormalizer->denormalize($data['required_status_checks'], 'Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredStatusChecks', 'json', $context));
+                $object->setRequiredStatusChecks($this->denormalizer->denormalize($data['required_status_checks'], \Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredStatusChecks::class, 'json', $context));
                 unset($data['required_status_checks']);
             }
             elseif (\array_key_exists('required_status_checks', $data) && $data['required_status_checks'] === null) {
@@ -172,14 +172,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setEnforceAdmins(null);
             }
             if (\array_key_exists('required_pull_request_reviews', $data) && $data['required_pull_request_reviews'] !== null) {
-                $object->setRequiredPullRequestReviews($this->denormalizer->denormalize($data['required_pull_request_reviews'], 'Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredPullRequestReviews', 'json', $context));
+                $object->setRequiredPullRequestReviews($this->denormalizer->denormalize($data['required_pull_request_reviews'], \Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredPullRequestReviews::class, 'json', $context));
                 unset($data['required_pull_request_reviews']);
             }
             elseif (\array_key_exists('required_pull_request_reviews', $data) && $data['required_pull_request_reviews'] === null) {
                 $object->setRequiredPullRequestReviews(null);
             }
             if (\array_key_exists('restrictions', $data) && $data['restrictions'] !== null) {
-                $object->setRestrictions($this->denormalizer->denormalize($data['restrictions'], 'Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions', 'json', $context));
+                $object->setRestrictions($this->denormalizer->denormalize($data['restrictions'], \Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions::class, 'json', $context));
                 unset($data['restrictions']);
             }
             elseif (\array_key_exists('restrictions', $data) && $data['restrictions'] === null) {
@@ -238,7 +238,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoBranchesBranchProtectionPutBody' => false];
+            return [\Github\Model\ReposOwnerRepoBranchesBranchProtectionPutBody::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -41,11 +41,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('field-2', $data)) {
-                $object->setField2($this->denormalizer->denormalize($data['field-2'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1', 'json', $context));
+                $object->setField2($this->denormalizer->denormalize($data['field-2'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class, 'json', $context));
                 unset($data['field-2']);
             }
             if (\array_key_exists('field-2-bis', $data)) {
-                $object->setField2Bis($this->denormalizer->denormalize($data['field-2-bis'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2', 'json', $context));
+                $object->setField2Bis($this->denormalizer->denormalize($data['field-2-bis'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class, 'json', $context));
                 unset($data['field-2-bis']);
             }
             foreach ($data as $key => $value) {
@@ -73,7 +73,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class => false];
         }
     }
 } else {
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -107,11 +107,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('field-2', $data)) {
-                $object->setField2($this->denormalizer->denormalize($data['field-2'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel1', 'json', $context));
+                $object->setField2($this->denormalizer->denormalize($data['field-2'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel1::class, 'json', $context));
                 unset($data['field-2']);
             }
             if (\array_key_exists('field-2-bis', $data)) {
-                $object->setField2Bis($this->denormalizer->denormalize($data['field-2-bis'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\SubLevel2', 'json', $context));
+                $object->setField2Bis($this->denormalizer->denormalize($data['field-2-bis'], \Jane\Component\OpenApi3\Tests\Expected\Model\SubLevel2::class, 'json', $context));
                 unset($data['field-2-bis']);
             }
             foreach ($data as $key => $value) {
@@ -142,7 +142,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Endpoint2GetResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse::class => false];
         }
     }
 }

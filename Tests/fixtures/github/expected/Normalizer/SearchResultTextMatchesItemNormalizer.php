@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\SearchResultTextMatchesItem';
+            return $type === \Github\Model\SearchResultTextMatchesItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -65,7 +65,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('matches', $data)) {
                 $values = [];
                 foreach ($data['matches'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SearchResultTextMatchesItemMatchesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SearchResultTextMatchesItemMatchesItem::class, 'json', $context);
                 }
                 $object->setMatches($values);
                 unset($data['matches']);
@@ -111,7 +111,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\SearchResultTextMatchesItem' => false];
+            return [\Github\Model\SearchResultTextMatchesItem::class => false];
         }
     }
 } else {
@@ -123,7 +123,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\SearchResultTextMatchesItem';
+            return $type === \Github\Model\SearchResultTextMatchesItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -169,7 +169,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('matches', $data)) {
                 $values = [];
                 foreach ($data['matches'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SearchResultTextMatchesItemMatchesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SearchResultTextMatchesItemMatchesItem::class, 'json', $context);
                 }
                 $object->setMatches($values);
                 unset($data['matches']);
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\SearchResultTextMatchesItem' => false];
+            return [\Github\Model\SearchResultTextMatchesItem::class => false];
         }
     }
 }

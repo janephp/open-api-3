@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\TopBooksGetHaljsonResponse200';
+            return $type === \ApiPlatform\Demo\Model\TopBooksGetHaljsonResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -43,7 +43,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('_embedded', $data)) {
                 $values = [];
                 foreach ($data['_embedded'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'ApiPlatform\\Demo\\Model\\TopBookJsonhal', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \ApiPlatform\Demo\Model\TopBookJsonhal::class, 'json', $context);
                 }
                 $object->setEmbedded($values);
                 unset($data['_embedded']);
@@ -57,7 +57,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['itemsPerPage']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'ApiPlatform\\Demo\\Model\\TopBooksGetHaljsonResponse200Links', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \ApiPlatform\Demo\Model\TopBooksGetHaljsonResponse200Links::class, 'json', $context));
                 unset($data['_links']);
             }
             foreach ($data as $key => $value_1) {
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\TopBooksGetHaljsonResponse200' => false];
+            return [\ApiPlatform\Demo\Model\TopBooksGetHaljsonResponse200::class => false];
         }
     }
 } else {
@@ -103,7 +103,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\TopBooksGetHaljsonResponse200';
+            return $type === \ApiPlatform\Demo\Model\TopBooksGetHaljsonResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -127,7 +127,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('_embedded', $data)) {
                 $values = [];
                 foreach ($data['_embedded'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'ApiPlatform\\Demo\\Model\\TopBookJsonhal', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \ApiPlatform\Demo\Model\TopBookJsonhal::class, 'json', $context);
                 }
                 $object->setEmbedded($values);
                 unset($data['_embedded']);
@@ -141,7 +141,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['itemsPerPage']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'ApiPlatform\\Demo\\Model\\TopBooksGetHaljsonResponse200Links', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \ApiPlatform\Demo\Model\TopBooksGetHaljsonResponse200Links::class, 'json', $context));
                 unset($data['_links']);
             }
             foreach ($data as $key => $value_1) {
@@ -178,7 +178,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\TopBooksGetHaljsonResponse200' => false];
+            return [\ApiPlatform\Demo\Model\TopBooksGetHaljsonResponse200::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\RepositoryTemplateRepository';
+            return $type === \Github\Model\RepositoryTemplateRepository::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -60,7 +60,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['full_name']);
             }
             if (\array_key_exists('owner', $data)) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\RepositoryTemplateRepositoryOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\RepositoryTemplateRepositoryOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             if (\array_key_exists('private', $data)) {
@@ -336,7 +336,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['updated_at']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\RepositoryTemplateRepositoryPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\RepositoryTemplateRepositoryPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('allow_rebase_merge', $data)) {
@@ -640,7 +640,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\RepositoryTemplateRepository' => false];
+            return [\Github\Model\RepositoryTemplateRepository::class => false];
         }
     }
 } else {
@@ -652,7 +652,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\RepositoryTemplateRepository';
+            return $type === \Github\Model\RepositoryTemplateRepository::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -693,7 +693,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['full_name']);
             }
             if (\array_key_exists('owner', $data)) {
-                $object->setOwner($this->denormalizer->denormalize($data['owner'], 'Github\\Model\\RepositoryTemplateRepositoryOwner', 'json', $context));
+                $object->setOwner($this->denormalizer->denormalize($data['owner'], \Github\Model\RepositoryTemplateRepositoryOwner::class, 'json', $context));
                 unset($data['owner']);
             }
             if (\array_key_exists('private', $data)) {
@@ -969,7 +969,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['updated_at']);
             }
             if (\array_key_exists('permissions', $data)) {
-                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], 'Github\\Model\\RepositoryTemplateRepositoryPermissions', 'json', $context));
+                $object->setPermissions($this->denormalizer->denormalize($data['permissions'], \Github\Model\RepositoryTemplateRepositoryPermissions::class, 'json', $context));
                 unset($data['permissions']);
             }
             if (\array_key_exists('allow_rebase_merge', $data)) {
@@ -1276,7 +1276,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\RepositoryTemplateRepository' => false];
+            return [\Github\Model\RepositoryTemplateRepository::class => false];
         }
     }
 }

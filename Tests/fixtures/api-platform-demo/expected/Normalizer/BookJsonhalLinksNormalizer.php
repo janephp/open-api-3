@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BookJsonhalLinks';
+            return $type === \ApiPlatform\Demo\Model\BookJsonhalLinks::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -41,7 +41,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('self', $data)) {
-                $object->setSelf($this->denormalizer->denormalize($data['self'], 'ApiPlatform\\Demo\\Model\\BookJsonhalLinksSelf', 'json', $context));
+                $object->setSelf($this->denormalizer->denormalize($data['self'], \ApiPlatform\Demo\Model\BookJsonhalLinksSelf::class, 'json', $context));
                 unset($data['self']);
             }
             foreach ($data as $key => $value) {
@@ -66,7 +66,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BookJsonhalLinks' => false];
+            return [\ApiPlatform\Demo\Model\BookJsonhalLinks::class => false];
         }
     }
 } else {
@@ -78,7 +78,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BookJsonhalLinks';
+            return $type === \ApiPlatform\Demo\Model\BookJsonhalLinks::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -100,7 +100,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('self', $data)) {
-                $object->setSelf($this->denormalizer->denormalize($data['self'], 'ApiPlatform\\Demo\\Model\\BookJsonhalLinksSelf', 'json', $context));
+                $object->setSelf($this->denormalizer->denormalize($data['self'], \ApiPlatform\Demo\Model\BookJsonhalLinksSelf::class, 'json', $context));
                 unset($data['self']);
             }
             foreach ($data as $key => $value) {
@@ -128,7 +128,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BookJsonhalLinks' => false];
+            return [\ApiPlatform\Demo\Model\BookJsonhalLinks::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItem';
+            return $type === \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -43,7 +43,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectOnlineReports', $data)) {
                 $values = [];
                 foreach ($data['creditsafeConnectOnlineReports'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectOnlineReports($values);
                 unset($data['creditsafeConnectOnlineReports']);
@@ -51,7 +51,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectOfflineReports', $data)) {
                 $values_1 = [];
                 foreach ($data['creditsafeConnectOfflineReports'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectOfflineReports($values_1);
                 unset($data['creditsafeConnectOfflineReports']);
@@ -59,7 +59,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectMonitoring', $data)) {
                 $values_2 = [];
                 foreach ($data['creditsafeConnectMonitoring'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectMonitoringItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectMonitoringItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectMonitoring($values_2);
                 unset($data['creditsafeConnectMonitoring']);
@@ -67,7 +67,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectDirectorReports', $data)) {
                 $values_3 = [];
                 foreach ($data['creditsafeConnectDirectorReports'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectDirectorReportsItem', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectDirectorReportsItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectDirectorReports($values_3);
                 unset($data['creditsafeConnectDirectorReports']);
@@ -75,7 +75,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectImageDocuments', $data)) {
                 $values_4 = [];
                 foreach ($data['creditsafeConnectImageDocuments'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectImageDocumentsItem', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectImageDocumentsItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectImageDocuments($values_4);
                 unset($data['creditsafeConnectImageDocuments']);
@@ -83,7 +83,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectBankValidation', $data)) {
                 $values_5 = [];
                 foreach ($data['creditsafeConnectBankValidation'] as $value_5) {
-                    $values_5[] = $this->denormalizer->denormalize($value_5, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationItem', 'json', $context);
+                    $values_5[] = $this->denormalizer->denormalize($value_5, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectBankValidation($values_5);
                 unset($data['creditsafeConnectBankValidation']);
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectBankVerification', $data)) {
                 $values_6 = [];
                 foreach ($data['creditsafeConnectBankVerification'] as $value_6) {
-                    $values_6[] = $this->denormalizer->denormalize($value_6, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationItem', 'json', $context);
+                    $values_6[] = $this->denormalizer->denormalize($value_6, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectBankVerification($values_6);
                 unset($data['creditsafeConnectBankVerification']);
@@ -164,7 +164,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItem' => false];
+            return [\CreditSafe\API\Model\AccessCountriesResponseCountryAccessItem::class => false];
         }
     }
 } else {
@@ -176,7 +176,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItem';
+            return $type === \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -200,7 +200,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectOnlineReports', $data)) {
                 $values = [];
                 foreach ($data['creditsafeConnectOnlineReports'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectOnlineReports($values);
                 unset($data['creditsafeConnectOnlineReports']);
@@ -208,7 +208,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectOfflineReports', $data)) {
                 $values_1 = [];
                 foreach ($data['creditsafeConnectOfflineReports'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectOfflineReports($values_1);
                 unset($data['creditsafeConnectOfflineReports']);
@@ -216,7 +216,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectMonitoring', $data)) {
                 $values_2 = [];
                 foreach ($data['creditsafeConnectMonitoring'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectMonitoringItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectMonitoringItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectMonitoring($values_2);
                 unset($data['creditsafeConnectMonitoring']);
@@ -224,7 +224,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectDirectorReports', $data)) {
                 $values_3 = [];
                 foreach ($data['creditsafeConnectDirectorReports'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectDirectorReportsItem', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectDirectorReportsItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectDirectorReports($values_3);
                 unset($data['creditsafeConnectDirectorReports']);
@@ -232,7 +232,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectImageDocuments', $data)) {
                 $values_4 = [];
                 foreach ($data['creditsafeConnectImageDocuments'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectImageDocumentsItem', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectImageDocumentsItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectImageDocuments($values_4);
                 unset($data['creditsafeConnectImageDocuments']);
@@ -240,7 +240,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectBankValidation', $data)) {
                 $values_5 = [];
                 foreach ($data['creditsafeConnectBankValidation'] as $value_5) {
-                    $values_5[] = $this->denormalizer->denormalize($value_5, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationItem', 'json', $context);
+                    $values_5[] = $this->denormalizer->denormalize($value_5, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectBankValidationItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectBankValidation($values_5);
                 unset($data['creditsafeConnectBankValidation']);
@@ -248,7 +248,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditsafeConnectBankVerification', $data)) {
                 $values_6 = [];
                 foreach ($data['creditsafeConnectBankVerification'] as $value_6) {
-                    $values_6[] = $this->denormalizer->denormalize($value_6, 'CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationItem', 'json', $context);
+                    $values_6[] = $this->denormalizer->denormalize($value_6, \CreditSafe\API\Model\AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationItem::class, 'json', $context);
                 }
                 $object->setCreditsafeConnectBankVerification($values_6);
                 unset($data['creditsafeConnectBankVerification']);
@@ -324,7 +324,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\AccessCountriesResponseCountryAccessItem' => false];
+            return [\CreditSafe\API\Model\AccessCountriesResponseCountryAccessItem::class => false];
         }
     }
 }

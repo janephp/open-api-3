@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ProtectedBranchPullRequestReviewDismissalRestrictions';
+            return $type === \Github\Model\ProtectedBranchPullRequestReviewDismissalRestrictions::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -46,7 +46,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('users', $data)) {
                 $values = [];
                 foreach ($data['users'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SimpleUser', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SimpleUser::class, 'json', $context);
                 }
                 $object->setUsers($values);
                 unset($data['users']);
@@ -54,7 +54,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('teams', $data)) {
                 $values_1 = [];
                 foreach ($data['teams'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\Team', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\Team::class, 'json', $context);
                 }
                 $object->setTeams($values_1);
                 unset($data['teams']);
@@ -116,7 +116,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ProtectedBranchPullRequestReviewDismissalRestrictions' => false];
+            return [\Github\Model\ProtectedBranchPullRequestReviewDismissalRestrictions::class => false];
         }
     }
 } else {
@@ -128,7 +128,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ProtectedBranchPullRequestReviewDismissalRestrictions';
+            return $type === \Github\Model\ProtectedBranchPullRequestReviewDismissalRestrictions::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -155,7 +155,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('users', $data)) {
                 $values = [];
                 foreach ($data['users'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\SimpleUser', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\SimpleUser::class, 'json', $context);
                 }
                 $object->setUsers($values);
                 unset($data['users']);
@@ -163,7 +163,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('teams', $data)) {
                 $values_1 = [];
                 foreach ($data['teams'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\Team', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\Team::class, 'json', $context);
                 }
                 $object->setTeams($values_1);
                 unset($data['teams']);
@@ -228,7 +228,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ProtectedBranchPullRequestReviewDismissalRestrictions' => false];
+            return [\Github\Model\ProtectedBranchPullRequestReviewDismissalRestrictions::class => false];
         }
     }
 }

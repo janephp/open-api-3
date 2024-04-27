@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\RateLimitOverview';
+            return $type === \Github\Model\RateLimitOverview::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,11 +44,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('resources', $data)) {
-                $object->setResources($this->denormalizer->denormalize($data['resources'], 'Github\\Model\\RateLimitOverviewResources', 'json', $context));
+                $object->setResources($this->denormalizer->denormalize($data['resources'], \Github\Model\RateLimitOverviewResources::class, 'json', $context));
                 unset($data['resources']);
             }
             if (\array_key_exists('rate', $data)) {
-                $object->setRate($this->denormalizer->denormalize($data['rate'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setRate($this->denormalizer->denormalize($data['rate'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['rate']);
             }
             foreach ($data as $key => $value) {
@@ -75,7 +75,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\RateLimitOverview' => false];
+            return [\Github\Model\RateLimitOverview::class => false];
         }
     }
 } else {
@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\RateLimitOverview';
+            return $type === \Github\Model\RateLimitOverview::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -112,11 +112,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('resources', $data)) {
-                $object->setResources($this->denormalizer->denormalize($data['resources'], 'Github\\Model\\RateLimitOverviewResources', 'json', $context));
+                $object->setResources($this->denormalizer->denormalize($data['resources'], \Github\Model\RateLimitOverviewResources::class, 'json', $context));
                 unset($data['resources']);
             }
             if (\array_key_exists('rate', $data)) {
-                $object->setRate($this->denormalizer->denormalize($data['rate'], 'Github\\Model\\RateLimit', 'json', $context));
+                $object->setRate($this->denormalizer->denormalize($data['rate'], \Github\Model\RateLimit::class, 'json', $context));
                 unset($data['rate']);
             }
             foreach ($data as $key => $value) {
@@ -146,7 +146,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\RateLimitOverview' => false];
+            return [\Github\Model\RateLimitOverview::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\UserInstallationsGetResponse200';
+            return $type === \Github\Model\UserInstallationsGetResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -50,7 +50,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('installations', $data)) {
                 $values = [];
                 foreach ($data['installations'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\Installation', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\Installation::class, 'json', $context);
                 }
                 $object->setInstallations($values);
                 unset($data['installations']);
@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\UserInstallationsGetResponse200' => false];
+            return [\Github\Model\UserInstallationsGetResponse200::class => false];
         }
     }
 } else {
@@ -99,7 +99,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\UserInstallationsGetResponse200';
+            return $type === \Github\Model\UserInstallationsGetResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -130,7 +130,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('installations', $data)) {
                 $values = [];
                 foreach ($data['installations'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\Installation', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\Installation::class, 'json', $context);
                 }
                 $object->setInstallations($values);
                 unset($data['installations']);
@@ -170,7 +170,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\UserInstallationsGetResponse200' => false];
+            return [\Github\Model\UserInstallationsGetResponse200::class => false];
         }
     }
 }

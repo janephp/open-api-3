@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\MarketplacePurchase';
+            return $type === \Github\Model\MarketplacePurchase::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -64,14 +64,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['organization_billing_email']);
             }
             if (\array_key_exists('marketplace_pending_change', $data) && $data['marketplace_pending_change'] !== null) {
-                $object->setMarketplacePendingChange($this->denormalizer->denormalize($data['marketplace_pending_change'], 'Github\\Model\\MarketplacePurchaseMarketplacePendingChange', 'json', $context));
+                $object->setMarketplacePendingChange($this->denormalizer->denormalize($data['marketplace_pending_change'], \Github\Model\MarketplacePurchaseMarketplacePendingChange::class, 'json', $context));
                 unset($data['marketplace_pending_change']);
             }
             elseif (\array_key_exists('marketplace_pending_change', $data) && $data['marketplace_pending_change'] === null) {
                 $object->setMarketplacePendingChange(null);
             }
             if (\array_key_exists('marketplace_purchase', $data)) {
-                $object->setMarketplacePurchase($this->denormalizer->denormalize($data['marketplace_purchase'], 'Github\\Model\\MarketplacePurchaseMarketplacePurchase', 'json', $context));
+                $object->setMarketplacePurchase($this->denormalizer->denormalize($data['marketplace_purchase'], \Github\Model\MarketplacePurchaseMarketplacePurchase::class, 'json', $context));
                 unset($data['marketplace_purchase']);
             }
             foreach ($data as $key => $value) {
@@ -107,7 +107,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\MarketplacePurchase' => false];
+            return [\Github\Model\MarketplacePurchase::class => false];
         }
     }
 } else {
@@ -119,7 +119,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\MarketplacePurchase';
+            return $type === \Github\Model\MarketplacePurchase::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -164,14 +164,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['organization_billing_email']);
             }
             if (\array_key_exists('marketplace_pending_change', $data) && $data['marketplace_pending_change'] !== null) {
-                $object->setMarketplacePendingChange($this->denormalizer->denormalize($data['marketplace_pending_change'], 'Github\\Model\\MarketplacePurchaseMarketplacePendingChange', 'json', $context));
+                $object->setMarketplacePendingChange($this->denormalizer->denormalize($data['marketplace_pending_change'], \Github\Model\MarketplacePurchaseMarketplacePendingChange::class, 'json', $context));
                 unset($data['marketplace_pending_change']);
             }
             elseif (\array_key_exists('marketplace_pending_change', $data) && $data['marketplace_pending_change'] === null) {
                 $object->setMarketplacePendingChange(null);
             }
             if (\array_key_exists('marketplace_purchase', $data)) {
-                $object->setMarketplacePurchase($this->denormalizer->denormalize($data['marketplace_purchase'], 'Github\\Model\\MarketplacePurchaseMarketplacePurchase', 'json', $context));
+                $object->setMarketplacePurchase($this->denormalizer->denormalize($data['marketplace_purchase'], \Github\Model\MarketplacePurchaseMarketplacePurchase::class, 'json', $context));
                 unset($data['marketplace_purchase']);
             }
             foreach ($data as $key => $value) {
@@ -210,7 +210,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\MarketplacePurchase' => false];
+            return [\Github\Model\MarketplacePurchase::class => false];
         }
     }
 }

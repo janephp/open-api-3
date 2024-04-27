@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetLookupResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -49,7 +49,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['data']);
             }
             if (\array_key_exists('includes', $data)) {
-                $object->setIncludes($this->denormalizer->denormalize($data['includes'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Expansions', 'json', $context));
+                $object->setIncludes($this->denormalizer->denormalize($data['includes'], \Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class, 'json', $context));
                 unset($data['includes']);
             }
             if (\array_key_exists('errors', $data)) {
@@ -96,7 +96,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetLookupResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => false];
         }
     }
 } else {
@@ -108,7 +108,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetLookupResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -138,7 +138,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['data']);
             }
             if (\array_key_exists('includes', $data)) {
-                $object->setIncludes($this->denormalizer->denormalize($data['includes'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Expansions', 'json', $context));
+                $object->setIncludes($this->denormalizer->denormalize($data['includes'], \Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class, 'json', $context));
                 unset($data['includes']);
             }
             if (\array_key_exists('errors', $data)) {
@@ -188,7 +188,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetLookupResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => false];
         }
     }
 }

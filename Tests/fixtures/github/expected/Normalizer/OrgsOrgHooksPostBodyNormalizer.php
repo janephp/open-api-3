@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\OrgsOrgHooksPostBody';
+            return $type === \Github\Model\OrgsOrgHooksPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -48,7 +48,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\OrgsOrgHooksPostBodyConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\OrgsOrgHooksPostBodyConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('events', $data)) {
@@ -97,7 +97,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\OrgsOrgHooksPostBody' => false];
+            return [\Github\Model\OrgsOrgHooksPostBody::class => false];
         }
     }
 } else {
@@ -109,7 +109,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\OrgsOrgHooksPostBody';
+            return $type === \Github\Model\OrgsOrgHooksPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -138,7 +138,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['name']);
             }
             if (\array_key_exists('config', $data)) {
-                $object->setConfig($this->denormalizer->denormalize($data['config'], 'Github\\Model\\OrgsOrgHooksPostBodyConfig', 'json', $context));
+                $object->setConfig($this->denormalizer->denormalize($data['config'], \Github\Model\OrgsOrgHooksPostBodyConfig::class, 'json', $context));
                 unset($data['config']);
             }
             if (\array_key_exists('events', $data)) {
@@ -190,7 +190,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\OrgsOrgHooksPostBody' => false];
+            return [\Github\Model\OrgsOrgHooksPostBody::class => false];
         }
     }
 }

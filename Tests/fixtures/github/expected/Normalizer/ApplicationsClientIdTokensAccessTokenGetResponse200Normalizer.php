@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ApplicationsClientIdTokensAccessTokenGetResponse200';
+            return $type === \Github\Model\ApplicationsClientIdTokensAccessTokenGetResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -81,7 +81,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setHashedToken(null);
             }
             if (\array_key_exists('app', $data)) {
-                $object->setApp($this->denormalizer->denormalize($data['app'], 'Github\\Model\\AuthorizationApp', 'json', $context));
+                $object->setApp($this->denormalizer->denormalize($data['app'], \Github\Model\AuthorizationApp::class, 'json', $context));
                 unset($data['app']);
             }
             if (\array_key_exists('note', $data) && $data['note'] !== null) {
@@ -114,14 +114,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setFingerprint(null);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\AuthorizationUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\AuthorizationUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('installation', $data) && $data['installation'] !== null) {
-                $object->setInstallation($this->denormalizer->denormalize($data['installation'], 'Github\\Model\\AuthorizationInstallation', 'json', $context));
+                $object->setInstallation($this->denormalizer->denormalize($data['installation'], \Github\Model\AuthorizationInstallation::class, 'json', $context));
                 unset($data['installation']);
             }
             elseif (\array_key_exists('installation', $data) && $data['installation'] === null) {
@@ -171,7 +171,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ApplicationsClientIdTokensAccessTokenGetResponse200' => false];
+            return [\Github\Model\ApplicationsClientIdTokensAccessTokenGetResponse200::class => false];
         }
     }
 } else {
@@ -183,7 +183,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ApplicationsClientIdTokensAccessTokenGetResponse200';
+            return $type === \Github\Model\ApplicationsClientIdTokensAccessTokenGetResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -245,7 +245,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setHashedToken(null);
             }
             if (\array_key_exists('app', $data)) {
-                $object->setApp($this->denormalizer->denormalize($data['app'], 'Github\\Model\\AuthorizationApp', 'json', $context));
+                $object->setApp($this->denormalizer->denormalize($data['app'], \Github\Model\AuthorizationApp::class, 'json', $context));
                 unset($data['app']);
             }
             if (\array_key_exists('note', $data) && $data['note'] !== null) {
@@ -278,14 +278,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setFingerprint(null);
             }
             if (\array_key_exists('user', $data) && $data['user'] !== null) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\AuthorizationUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\AuthorizationUser::class, 'json', $context));
                 unset($data['user']);
             }
             elseif (\array_key_exists('user', $data) && $data['user'] === null) {
                 $object->setUser(null);
             }
             if (\array_key_exists('installation', $data) && $data['installation'] !== null) {
-                $object->setInstallation($this->denormalizer->denormalize($data['installation'], 'Github\\Model\\AuthorizationInstallation', 'json', $context));
+                $object->setInstallation($this->denormalizer->denormalize($data['installation'], \Github\Model\AuthorizationInstallation::class, 'json', $context));
                 unset($data['installation']);
             }
             elseif (\array_key_exists('installation', $data) && $data['installation'] === null) {
@@ -338,7 +338,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ApplicationsClientIdTokensAccessTokenGetResponse200' => false];
+            return [\Github\Model\ApplicationsClientIdTokensAccessTokenGetResponse200::class => false];
         }
     }
 }

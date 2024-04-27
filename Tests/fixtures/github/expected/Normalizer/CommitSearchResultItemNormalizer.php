@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CommitSearchResultItem';
+            return $type === \Github\Model\CommitSearchResultItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -60,18 +60,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments_url']);
             }
             if (\array_key_exists('commit', $data)) {
-                $object->setCommit($this->denormalizer->denormalize($data['commit'], 'Github\\Model\\CommitSearchResultItemCommit', 'json', $context));
+                $object->setCommit($this->denormalizer->denormalize($data['commit'], \Github\Model\CommitSearchResultItemCommit::class, 'json', $context));
                 unset($data['commit']);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\CommitSearchResultItemAuthor', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\CommitSearchResultItemAuthor::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
                 $object->setAuthor(null);
             }
             if (\array_key_exists('committer', $data) && $data['committer'] !== null) {
-                $object->setCommitter($this->denormalizer->denormalize($data['committer'], 'Github\\Model\\CommitSearchResultItemCommitter', 'json', $context));
+                $object->setCommitter($this->denormalizer->denormalize($data['committer'], \Github\Model\CommitSearchResultItemCommitter::class, 'json', $context));
                 unset($data['committer']);
             }
             elseif (\array_key_exists('committer', $data) && $data['committer'] === null) {
@@ -80,13 +80,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('parents', $data)) {
                 $values = [];
                 foreach ($data['parents'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\CommitSearchResultItemParentsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\CommitSearchResultItemParentsItem::class, 'json', $context);
                 }
                 $object->setParents($values);
                 unset($data['parents']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('score', $data)) {
@@ -100,7 +100,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('text_matches', $data)) {
                 $values_1 = [];
                 foreach ($data['text_matches'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values_1);
                 unset($data['text_matches']);
@@ -149,7 +149,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CommitSearchResultItem' => false];
+            return [\Github\Model\CommitSearchResultItem::class => false];
         }
     }
 } else {
@@ -161,7 +161,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CommitSearchResultItem';
+            return $type === \Github\Model\CommitSearchResultItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -202,18 +202,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['comments_url']);
             }
             if (\array_key_exists('commit', $data)) {
-                $object->setCommit($this->denormalizer->denormalize($data['commit'], 'Github\\Model\\CommitSearchResultItemCommit', 'json', $context));
+                $object->setCommit($this->denormalizer->denormalize($data['commit'], \Github\Model\CommitSearchResultItemCommit::class, 'json', $context));
                 unset($data['commit']);
             }
             if (\array_key_exists('author', $data) && $data['author'] !== null) {
-                $object->setAuthor($this->denormalizer->denormalize($data['author'], 'Github\\Model\\CommitSearchResultItemAuthor', 'json', $context));
+                $object->setAuthor($this->denormalizer->denormalize($data['author'], \Github\Model\CommitSearchResultItemAuthor::class, 'json', $context));
                 unset($data['author']);
             }
             elseif (\array_key_exists('author', $data) && $data['author'] === null) {
                 $object->setAuthor(null);
             }
             if (\array_key_exists('committer', $data) && $data['committer'] !== null) {
-                $object->setCommitter($this->denormalizer->denormalize($data['committer'], 'Github\\Model\\CommitSearchResultItemCommitter', 'json', $context));
+                $object->setCommitter($this->denormalizer->denormalize($data['committer'], \Github\Model\CommitSearchResultItemCommitter::class, 'json', $context));
                 unset($data['committer']);
             }
             elseif (\array_key_exists('committer', $data) && $data['committer'] === null) {
@@ -222,13 +222,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('parents', $data)) {
                 $values = [];
                 foreach ($data['parents'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\CommitSearchResultItemParentsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\CommitSearchResultItemParentsItem::class, 'json', $context);
                 }
                 $object->setParents($values);
                 unset($data['parents']);
             }
             if (\array_key_exists('repository', $data)) {
-                $object->setRepository($this->denormalizer->denormalize($data['repository'], 'Github\\Model\\MinimalRepository', 'json', $context));
+                $object->setRepository($this->denormalizer->denormalize($data['repository'], \Github\Model\MinimalRepository::class, 'json', $context));
                 unset($data['repository']);
             }
             if (\array_key_exists('score', $data)) {
@@ -242,7 +242,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('text_matches', $data)) {
                 $values_1 = [];
                 foreach ($data['text_matches'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'Github\\Model\\SearchResultTextMatchesItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \Github\Model\SearchResultTextMatchesItem::class, 'json', $context);
                 }
                 $object->setTextMatches($values_1);
                 unset($data['text_matches']);
@@ -294,7 +294,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CommitSearchResultItem' => false];
+            return [\Github\Model\CommitSearchResultItem::class => false];
         }
     }
 }

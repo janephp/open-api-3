@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CheckSuitePreferencePreferences';
+            return $type === \Github\Model\CheckSuitePreferencePreferences::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -46,7 +46,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('auto_trigger_checks', $data)) {
                 $values = [];
                 foreach ($data['auto_trigger_checks'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\CheckSuitePreferencePreferencesAutoTriggerChecksItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\CheckSuitePreferencePreferencesAutoTriggerChecksItem::class, 'json', $context);
                 }
                 $object->setAutoTriggerChecks($values);
                 unset($data['auto_trigger_checks']);
@@ -80,7 +80,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CheckSuitePreferencePreferences' => false];
+            return [\Github\Model\CheckSuitePreferencePreferences::class => false];
         }
     }
 } else {
@@ -92,7 +92,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\CheckSuitePreferencePreferences';
+            return $type === \Github\Model\CheckSuitePreferencePreferences::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -119,7 +119,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('auto_trigger_checks', $data)) {
                 $values = [];
                 foreach ($data['auto_trigger_checks'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\CheckSuitePreferencePreferencesAutoTriggerChecksItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\CheckSuitePreferencePreferencesAutoTriggerChecksItem::class, 'json', $context);
                 }
                 $object->setAutoTriggerChecks($values);
                 unset($data['auto_trigger_checks']);
@@ -156,7 +156,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\CheckSuitePreferencePreferences' => false];
+            return [\Github\Model\CheckSuitePreferencePreferences::class => false];
         }
     }
 }

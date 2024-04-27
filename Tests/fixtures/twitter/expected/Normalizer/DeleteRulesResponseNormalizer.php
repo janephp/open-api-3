@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DeleteRulesResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DeleteRulesResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -41,7 +41,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('meta', $data)) {
-                $object->setMeta($this->denormalizer->denormalize($data['meta'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\RulesResponseMetadata', 'json', $context));
+                $object->setMeta($this->denormalizer->denormalize($data['meta'], \Jane\Component\OpenApi3\Tests\Expected\Model\RulesResponseMetadata::class, 'json', $context));
                 unset($data['meta']);
             }
             foreach ($data as $key => $value) {
@@ -64,7 +64,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DeleteRulesResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DeleteRulesResponse::class => false];
         }
     }
 } else {
@@ -76,7 +76,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DeleteRulesResponse';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DeleteRulesResponse::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -98,7 +98,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('meta', $data)) {
-                $object->setMeta($this->denormalizer->denormalize($data['meta'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\RulesResponseMetadata', 'json', $context));
+                $object->setMeta($this->denormalizer->denormalize($data['meta'], \Jane\Component\OpenApi3\Tests\Expected\Model\RulesResponseMetadata::class, 'json', $context));
                 unset($data['meta']);
             }
             foreach ($data as $key => $value) {
@@ -124,7 +124,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DeleteRulesResponse' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DeleteRulesResponse::class => false];
         }
     }
 }

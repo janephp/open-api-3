@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\ListCompanyImagesDataItem';
+            return $type === \CreditSafe\API\Model\ListCompanyImagesDataItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -45,11 +45,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['imageId']);
             }
             if (\array_key_exists('company', $data)) {
-                $object->setCompany($this->denormalizer->denormalize($data['company'], 'CreditSafe\\API\\Model\\ListCompanyImagesDataItemCompany', 'json', $context));
+                $object->setCompany($this->denormalizer->denormalize($data['company'], \CreditSafe\API\Model\ListCompanyImagesDataItemCompany::class, 'json', $context));
                 unset($data['company']);
             }
             if (\array_key_exists('document', $data)) {
-                $object->setDocument($this->denormalizer->denormalize($data['document'], 'CreditSafe\\API\\Model\\ListCompanyImagesDataItemDocument', 'json', $context));
+                $object->setDocument($this->denormalizer->denormalize($data['document'], \CreditSafe\API\Model\ListCompanyImagesDataItemDocument::class, 'json', $context));
                 unset($data['document']);
             }
             if (\array_key_exists('format', $data)) {
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['status']);
             }
             if (\array_key_exists('localProperties', $data)) {
-                $object->setLocalProperties($this->denormalizer->denormalize($data['localProperties'], 'CreditSafe\\API\\Model\\ListCompanyImagesDataItemLocalProperties', 'json', $context));
+                $object->setLocalProperties($this->denormalizer->denormalize($data['localProperties'], \CreditSafe\API\Model\ListCompanyImagesDataItemLocalProperties::class, 'json', $context));
                 unset($data['localProperties']);
             }
             foreach ($data as $key => $value) {
@@ -143,7 +143,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\ListCompanyImagesDataItem' => false];
+            return [\CreditSafe\API\Model\ListCompanyImagesDataItem::class => false];
         }
     }
 } else {
@@ -155,7 +155,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\ListCompanyImagesDataItem';
+            return $type === \CreditSafe\API\Model\ListCompanyImagesDataItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -181,11 +181,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['imageId']);
             }
             if (\array_key_exists('company', $data)) {
-                $object->setCompany($this->denormalizer->denormalize($data['company'], 'CreditSafe\\API\\Model\\ListCompanyImagesDataItemCompany', 'json', $context));
+                $object->setCompany($this->denormalizer->denormalize($data['company'], \CreditSafe\API\Model\ListCompanyImagesDataItemCompany::class, 'json', $context));
                 unset($data['company']);
             }
             if (\array_key_exists('document', $data)) {
-                $object->setDocument($this->denormalizer->denormalize($data['document'], 'CreditSafe\\API\\Model\\ListCompanyImagesDataItemDocument', 'json', $context));
+                $object->setDocument($this->denormalizer->denormalize($data['document'], \CreditSafe\API\Model\ListCompanyImagesDataItemDocument::class, 'json', $context));
                 unset($data['document']);
             }
             if (\array_key_exists('format', $data)) {
@@ -221,7 +221,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['status']);
             }
             if (\array_key_exists('localProperties', $data)) {
-                $object->setLocalProperties($this->denormalizer->denormalize($data['localProperties'], 'CreditSafe\\API\\Model\\ListCompanyImagesDataItemLocalProperties', 'json', $context));
+                $object->setLocalProperties($this->denormalizer->denormalize($data['localProperties'], \CreditSafe\API\Model\ListCompanyImagesDataItemLocalProperties::class, 'json', $context));
                 unset($data['localProperties']);
             }
             foreach ($data as $key => $value) {
@@ -282,7 +282,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\ListCompanyImagesDataItem' => false];
+            return [\CreditSafe\API\Model\ListCompanyImagesDataItem::class => false];
         }
     }
 }

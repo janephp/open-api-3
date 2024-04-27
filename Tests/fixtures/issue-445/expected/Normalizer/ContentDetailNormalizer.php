@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\ContentDetail';
+            return $type === \PicturePark\API\Model\ContentDetail::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -119,7 +119,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('outputs', $data) && $data['outputs'] !== null) {
                 $values_7 = [];
                 foreach ($data['outputs'] as $value_7) {
-                    $values_7[] = $this->denormalizer->denormalize($value_7, 'PicturePark\\API\\Model\\Output', 'json', $context);
+                    $values_7[] = $this->denormalizer->denormalize($value_7, \PicturePark\API\Model\Output::class, 'json', $context);
                 }
                 $object->setOutputs($values_7);
             }
@@ -258,7 +258,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\ContentDetail' => false];
+            return [\PicturePark\API\Model\ContentDetail::class => false];
         }
     }
 } else {
@@ -270,7 +270,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\ContentDetail';
+            return $type === \PicturePark\API\Model\ContentDetail::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -370,7 +370,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('outputs', $data) && $data['outputs'] !== null) {
                 $values_7 = [];
                 foreach ($data['outputs'] as $value_7) {
-                    $values_7[] = $this->denormalizer->denormalize($value_7, 'PicturePark\\API\\Model\\Output', 'json', $context);
+                    $values_7[] = $this->denormalizer->denormalize($value_7, \PicturePark\API\Model\Output::class, 'json', $context);
                 }
                 $object->setOutputs($values_7);
             }
@@ -512,7 +512,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\ContentDetail' => false];
+            return [\PicturePark\API\Model\ContentDetail::class => false];
         }
     }
 }

@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\ContentDownloadEvent';
+            return $type === \PicturePark\API\Model\ContentDownloadEvent::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -51,7 +51,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('downloadInfos', $data) && $data['downloadInfos'] !== null) {
                 $values = [];
                 foreach ($data['downloadInfos'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\DownloadTrackingInfo', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\DownloadTrackingInfo::class, 'json', $context);
                 }
                 $object->setDownloadInfos($values);
                 unset($data['downloadInfos']);
@@ -114,7 +114,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\ContentDownloadEvent' => false];
+            return [\PicturePark\API\Model\ContentDownloadEvent::class => false];
         }
     }
 } else {
@@ -126,7 +126,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\ContentDownloadEvent';
+            return $type === \PicturePark\API\Model\ContentDownloadEvent::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -158,7 +158,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('downloadInfos', $data) && $data['downloadInfos'] !== null) {
                 $values = [];
                 foreach ($data['downloadInfos'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'PicturePark\\API\\Model\\DownloadTrackingInfo', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \PicturePark\API\Model\DownloadTrackingInfo::class, 'json', $context);
                 }
                 $object->setDownloadInfos($values);
                 unset($data['downloadInfos']);
@@ -224,7 +224,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\ContentDownloadEvent' => false];
+            return [\PicturePark\API\Model\ContentDownloadEvent::class => false];
         }
     }
 }

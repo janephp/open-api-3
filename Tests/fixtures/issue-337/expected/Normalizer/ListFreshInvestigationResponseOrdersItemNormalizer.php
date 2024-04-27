@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItem';
+            return $type === \CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -65,11 +65,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['chargeReference']);
             }
             if (\array_key_exists('contactDetails', $data)) {
-                $object->setContactDetails($this->denormalizer->denormalize($data['contactDetails'], 'CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItemContactDetails', 'json', $context));
+                $object->setContactDetails($this->denormalizer->denormalize($data['contactDetails'], \CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItemContactDetails::class, 'json', $context));
                 unset($data['contactDetails']);
             }
             if (\array_key_exists('status', $data)) {
-                $object->setStatus($this->denormalizer->denormalize($data['status'], 'CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItemStatus', 'json', $context));
+                $object->setStatus($this->denormalizer->denormalize($data['status'], \CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItemStatus::class, 'json', $context));
                 unset($data['status']);
             }
             if (\array_key_exists('consent', $data)) {
@@ -77,7 +77,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['consent']);
             }
             if (\array_key_exists('searchCriteria', $data)) {
-                $object->setSearchCriteria($this->denormalizer->denormalize($data['searchCriteria'], 'CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItemSearchCriteria', 'json', $context));
+                $object->setSearchCriteria($this->denormalizer->denormalize($data['searchCriteria'], \CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItemSearchCriteria::class, 'json', $context));
                 unset($data['searchCriteria']);
             }
             foreach ($data as $key => $value) {
@@ -129,7 +129,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItem' => false];
+            return [\CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItem::class => false];
         }
     }
 } else {
@@ -141,7 +141,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItem';
+            return $type === \CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -187,11 +187,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['chargeReference']);
             }
             if (\array_key_exists('contactDetails', $data)) {
-                $object->setContactDetails($this->denormalizer->denormalize($data['contactDetails'], 'CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItemContactDetails', 'json', $context));
+                $object->setContactDetails($this->denormalizer->denormalize($data['contactDetails'], \CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItemContactDetails::class, 'json', $context));
                 unset($data['contactDetails']);
             }
             if (\array_key_exists('status', $data)) {
-                $object->setStatus($this->denormalizer->denormalize($data['status'], 'CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItemStatus', 'json', $context));
+                $object->setStatus($this->denormalizer->denormalize($data['status'], \CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItemStatus::class, 'json', $context));
                 unset($data['status']);
             }
             if (\array_key_exists('consent', $data)) {
@@ -199,7 +199,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['consent']);
             }
             if (\array_key_exists('searchCriteria', $data)) {
-                $object->setSearchCriteria($this->denormalizer->denormalize($data['searchCriteria'], 'CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItemSearchCriteria', 'json', $context));
+                $object->setSearchCriteria($this->denormalizer->denormalize($data['searchCriteria'], \CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItemSearchCriteria::class, 'json', $context));
                 unset($data['searchCriteria']);
             }
             foreach ($data as $key => $value) {
@@ -254,7 +254,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\ListFreshInvestigationResponseOrdersItem' => false];
+            return [\CreditSafe\API\Model\ListFreshInvestigationResponseOrdersItem::class => false];
         }
     }
 }

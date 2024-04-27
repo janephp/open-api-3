@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ResponseForbiddenGist';
+            return $type === \Github\Model\ResponseForbiddenGist::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,7 +44,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('block', $data)) {
-                $object->setBlock($this->denormalizer->denormalize($data['block'], 'Github\\Model\\ResponseForbiddenGistBlock', 'json', $context));
+                $object->setBlock($this->denormalizer->denormalize($data['block'], \Github\Model\ResponseForbiddenGistBlock::class, 'json', $context));
                 unset($data['block']);
             }
             if (\array_key_exists('message', $data)) {
@@ -86,7 +86,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ResponseForbiddenGist' => false];
+            return [\Github\Model\ResponseForbiddenGist::class => false];
         }
     }
 } else {
@@ -98,7 +98,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ResponseForbiddenGist';
+            return $type === \Github\Model\ResponseForbiddenGist::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -123,7 +123,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('block', $data)) {
-                $object->setBlock($this->denormalizer->denormalize($data['block'], 'Github\\Model\\ResponseForbiddenGistBlock', 'json', $context));
+                $object->setBlock($this->denormalizer->denormalize($data['block'], \Github\Model\ResponseForbiddenGistBlock::class, 'json', $context));
                 unset($data['block']);
             }
             if (\array_key_exists('message', $data)) {
@@ -168,7 +168,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ResponseForbiddenGist' => false];
+            return [\Github\Model\ResponseForbiddenGist::class => false];
         }
     }
 }

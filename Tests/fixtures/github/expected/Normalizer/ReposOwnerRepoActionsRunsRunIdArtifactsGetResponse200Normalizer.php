@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoActionsRunsRunIdArtifactsGetResponse200';
+            return $type === \Github\Model\ReposOwnerRepoActionsRunsRunIdArtifactsGetResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -50,7 +50,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('artifacts', $data)) {
                 $values = [];
                 foreach ($data['artifacts'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\Artifact', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\Artifact::class, 'json', $context);
                 }
                 $object->setArtifacts($values);
                 unset($data['artifacts']);
@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoActionsRunsRunIdArtifactsGetResponse200' => false];
+            return [\Github\Model\ReposOwnerRepoActionsRunsRunIdArtifactsGetResponse200::class => false];
         }
     }
 } else {
@@ -99,7 +99,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoActionsRunsRunIdArtifactsGetResponse200';
+            return $type === \Github\Model\ReposOwnerRepoActionsRunsRunIdArtifactsGetResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -130,7 +130,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('artifacts', $data)) {
                 $values = [];
                 foreach ($data['artifacts'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\Artifact', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\Artifact::class, 'json', $context);
                 }
                 $object->setArtifacts($values);
                 unset($data['artifacts']);
@@ -170,7 +170,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoActionsRunsRunIdArtifactsGetResponse200' => false];
+            return [\Github\Model\ReposOwnerRepoActionsRunsRunIdArtifactsGetResponse200::class => false];
         }
     }
 }

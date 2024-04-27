@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportGroupStructure';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportGroupStructure::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -43,7 +43,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('subsidiaryCompanies', $data)) {
                 $values = [];
                 foreach ($data['subsidiaryCompanies'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem::class, 'json', $context);
                 }
                 $object->setSubsidiaryCompanies($values);
                 unset($data['subsidiaryCompanies']);
@@ -74,7 +74,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportGroupStructure' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportGroupStructure::class => false];
         }
     }
 } else {
@@ -86,7 +86,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportGroupStructure';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportGroupStructure::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -110,7 +110,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('subsidiaryCompanies', $data)) {
                 $values = [];
                 foreach ($data['subsidiaryCompanies'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem::class, 'json', $context);
                 }
                 $object->setSubsidiaryCompanies($values);
                 unset($data['subsidiaryCompanies']);
@@ -144,7 +144,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportGroupStructure' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportGroupStructure::class => false];
         }
     }
 }

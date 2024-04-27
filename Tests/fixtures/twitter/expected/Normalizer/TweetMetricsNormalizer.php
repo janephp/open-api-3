@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetMetrics';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\TweetMetrics::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -45,11 +45,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['tweet_id']);
             }
             if (\array_key_exists('tweet', $data)) {
-                $object->setTweet($this->denormalizer->denormalize($data['tweet'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetInteractionMetrics', 'json', $context));
+                $object->setTweet($this->denormalizer->denormalize($data['tweet'], \Jane\Component\OpenApi3\Tests\Expected\Model\TweetInteractionMetrics::class, 'json', $context));
                 unset($data['tweet']);
             }
             if (\array_key_exists('video', $data)) {
-                $object->setVideo($this->denormalizer->denormalize($data['video'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\VideoMetrics', 'json', $context));
+                $object->setVideo($this->denormalizer->denormalize($data['video'], \Jane\Component\OpenApi3\Tests\Expected\Model\VideoMetrics::class, 'json', $context));
                 unset($data['video']);
             }
             foreach ($data as $key => $value) {
@@ -76,7 +76,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetMetrics' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\TweetMetrics::class => false];
         }
     }
 } else {
@@ -88,7 +88,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetMetrics';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\TweetMetrics::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -114,11 +114,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['tweet_id']);
             }
             if (\array_key_exists('tweet', $data)) {
-                $object->setTweet($this->denormalizer->denormalize($data['tweet'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetInteractionMetrics', 'json', $context));
+                $object->setTweet($this->denormalizer->denormalize($data['tweet'], \Jane\Component\OpenApi3\Tests\Expected\Model\TweetInteractionMetrics::class, 'json', $context));
                 unset($data['tweet']);
             }
             if (\array_key_exists('video', $data)) {
-                $object->setVideo($this->denormalizer->denormalize($data['video'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\VideoMetrics', 'json', $context));
+                $object->setVideo($this->denormalizer->denormalize($data['video'], \Jane\Component\OpenApi3\Tests\Expected\Model\VideoMetrics::class, 'json', $context));
                 unset($data['video']);
             }
             foreach ($data as $key => $value) {
@@ -148,7 +148,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetMetrics' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\TweetMetrics::class => false];
         }
     }
 }

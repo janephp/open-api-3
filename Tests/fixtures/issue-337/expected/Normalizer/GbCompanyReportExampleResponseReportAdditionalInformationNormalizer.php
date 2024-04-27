@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformation';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -43,19 +43,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('companyHistory', $data)) {
                 $values = [];
                 foreach ($data['companyHistory'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationCompanyHistoryItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationCompanyHistoryItem::class, 'json', $context);
                 }
                 $object->setCompanyHistory($values);
                 unset($data['companyHistory']);
             }
             if (\array_key_exists('mortgageSummary', $data)) {
-                $object->setMortgageSummary($this->denormalizer->denormalize($data['mortgageSummary'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary', 'json', $context));
+                $object->setMortgageSummary($this->denormalizer->denormalize($data['mortgageSummary'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary::class, 'json', $context));
                 unset($data['mortgageSummary']);
             }
             if (\array_key_exists('mortgageDetails', $data)) {
                 $values_1 = [];
                 foreach ($data['mortgageDetails'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsItem::class, 'json', $context);
                 }
                 $object->setMortgageDetails($values_1);
                 unset($data['mortgageDetails']);
@@ -63,7 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('commentaries', $data)) {
                 $values_2 = [];
                 foreach ($data['commentaries'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem::class, 'json', $context);
                 }
                 $object->setCommentaries($values_2);
                 unset($data['commentaries']);
@@ -71,7 +71,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('ratingHistory', $data)) {
                 $values_3 = [];
                 foreach ($data['ratingHistory'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem::class, 'json', $context);
                 }
                 $object->setRatingHistory($values_3);
                 unset($data['ratingHistory']);
@@ -79,7 +79,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditLimitHistory', $data)) {
                 $values_4 = [];
                 foreach ($data['creditLimitHistory'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItem', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItem::class, 'json', $context);
                 }
                 $object->setCreditLimitHistory($values_4);
                 unset($data['creditLimitHistory']);
@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('badDebtDetails', $data)) {
                 $values_5 = [];
                 foreach ($data['badDebtDetails'] as $value_5) {
-                    $values_5[] = $this->denormalizer->denormalize($value_5, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItem', 'json', $context);
+                    $values_5[] = $this->denormalizer->denormalize($value_5, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItem::class, 'json', $context);
                 }
                 $object->setBadDebtDetails($values_5);
                 unset($data['badDebtDetails']);
@@ -156,7 +156,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformation' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformation::class => false];
         }
     }
 } else {
@@ -168,7 +168,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformation';
+            return $type === \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformation::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -192,19 +192,19 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('companyHistory', $data)) {
                 $values = [];
                 foreach ($data['companyHistory'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationCompanyHistoryItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationCompanyHistoryItem::class, 'json', $context);
                 }
                 $object->setCompanyHistory($values);
                 unset($data['companyHistory']);
             }
             if (\array_key_exists('mortgageSummary', $data)) {
-                $object->setMortgageSummary($this->denormalizer->denormalize($data['mortgageSummary'], 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary', 'json', $context));
+                $object->setMortgageSummary($this->denormalizer->denormalize($data['mortgageSummary'], \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary::class, 'json', $context));
                 unset($data['mortgageSummary']);
             }
             if (\array_key_exists('mortgageDetails', $data)) {
                 $values_1 = [];
                 foreach ($data['mortgageDetails'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsItem', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsItem::class, 'json', $context);
                 }
                 $object->setMortgageDetails($values_1);
                 unset($data['mortgageDetails']);
@@ -212,7 +212,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('commentaries', $data)) {
                 $values_2 = [];
                 foreach ($data['commentaries'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem::class, 'json', $context);
                 }
                 $object->setCommentaries($values_2);
                 unset($data['commentaries']);
@@ -220,7 +220,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('ratingHistory', $data)) {
                 $values_3 = [];
                 foreach ($data['ratingHistory'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem::class, 'json', $context);
                 }
                 $object->setRatingHistory($values_3);
                 unset($data['ratingHistory']);
@@ -228,7 +228,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('creditLimitHistory', $data)) {
                 $values_4 = [];
                 foreach ($data['creditLimitHistory'] as $value_4) {
-                    $values_4[] = $this->denormalizer->denormalize($value_4, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItem', 'json', $context);
+                    $values_4[] = $this->denormalizer->denormalize($value_4, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItem::class, 'json', $context);
                 }
                 $object->setCreditLimitHistory($values_4);
                 unset($data['creditLimitHistory']);
@@ -236,7 +236,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('badDebtDetails', $data)) {
                 $values_5 = [];
                 foreach ($data['badDebtDetails'] as $value_5) {
-                    $values_5[] = $this->denormalizer->denormalize($value_5, 'CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItem', 'json', $context);
+                    $values_5[] = $this->denormalizer->denormalize($value_5, \CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItem::class, 'json', $context);
                 }
                 $object->setBadDebtDetails($values_5);
                 unset($data['badDebtDetails']);
@@ -308,7 +308,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['CreditSafe\\API\\Model\\GbCompanyReportExampleResponseReportAdditionalInformation' => false];
+            return [\CreditSafe\API\Model\GbCompanyReportExampleResponseReportAdditionalInformation::class => false];
         }
     }
 }

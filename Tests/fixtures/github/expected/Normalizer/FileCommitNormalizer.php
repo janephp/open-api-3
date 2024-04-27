@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\FileCommit';
+            return $type === \Github\Model\FileCommit::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,14 +44,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('content', $data) && $data['content'] !== null) {
-                $object->setContent($this->denormalizer->denormalize($data['content'], 'Github\\Model\\FileCommitContent', 'json', $context));
+                $object->setContent($this->denormalizer->denormalize($data['content'], \Github\Model\FileCommitContent::class, 'json', $context));
                 unset($data['content']);
             }
             elseif (\array_key_exists('content', $data) && $data['content'] === null) {
                 $object->setContent(null);
             }
             if (\array_key_exists('commit', $data)) {
-                $object->setCommit($this->denormalizer->denormalize($data['commit'], 'Github\\Model\\FileCommitCommit', 'json', $context));
+                $object->setCommit($this->denormalizer->denormalize($data['commit'], \Github\Model\FileCommitCommit::class, 'json', $context));
                 unset($data['commit']);
             }
             foreach ($data as $key => $value) {
@@ -82,7 +82,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\FileCommit' => false];
+            return [\Github\Model\FileCommit::class => false];
         }
     }
 } else {
@@ -94,7 +94,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\FileCommit';
+            return $type === \Github\Model\FileCommit::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -119,14 +119,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('content', $data) && $data['content'] !== null) {
-                $object->setContent($this->denormalizer->denormalize($data['content'], 'Github\\Model\\FileCommitContent', 'json', $context));
+                $object->setContent($this->denormalizer->denormalize($data['content'], \Github\Model\FileCommitContent::class, 'json', $context));
                 unset($data['content']);
             }
             elseif (\array_key_exists('content', $data) && $data['content'] === null) {
                 $object->setContent(null);
             }
             if (\array_key_exists('commit', $data)) {
-                $object->setCommit($this->denormalizer->denormalize($data['commit'], 'Github\\Model\\FileCommitCommit', 'json', $context));
+                $object->setCommit($this->denormalizer->denormalize($data['commit'], \Github\Model\FileCommitCommit::class, 'json', $context));
                 unset($data['commit']);
             }
             foreach ($data as $key => $value) {
@@ -160,7 +160,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\FileCommit' => false];
+            return [\Github\Model\FileCommit::class => false];
         }
     }
 }

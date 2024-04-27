@@ -43,7 +43,7 @@ class ErrorNormalizer implements DenormalizerInterface, NormalizerInterface, Den
     }
     public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
     {
-        $data = array();
+        $data = [];
         if (null !== $object->getMessage()) {
             $data['message'] = $object->getMessage();
         }

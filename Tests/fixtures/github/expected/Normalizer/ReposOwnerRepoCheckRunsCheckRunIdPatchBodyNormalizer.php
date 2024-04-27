@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoCheckRunsCheckRunIdPatchBody';
+            return $type === \Github\Model\ReposOwnerRepoCheckRunsCheckRunIdPatchBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -72,13 +72,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['completed_at']);
             }
             if (\array_key_exists('output', $data)) {
-                $object->setOutput($this->denormalizer->denormalize($data['output'], 'Github\\Model\\ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput', 'json', $context));
+                $object->setOutput($this->denormalizer->denormalize($data['output'], \Github\Model\ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput::class, 'json', $context));
                 unset($data['output']);
             }
             if (\array_key_exists('actions', $data)) {
                 $values = [];
                 foreach ($data['actions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReposOwnerRepoCheckRunsCheckRunIdPatchBodyActionsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReposOwnerRepoCheckRunsCheckRunIdPatchBodyActionsItem::class, 'json', $context);
                 }
                 $object->setActions($values);
                 unset($data['actions']);
@@ -136,7 +136,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoCheckRunsCheckRunIdPatchBody' => false];
+            return [\Github\Model\ReposOwnerRepoCheckRunsCheckRunIdPatchBody::class => false];
         }
     }
 } else {
@@ -148,7 +148,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoCheckRunsCheckRunIdPatchBody';
+            return $type === \Github\Model\ReposOwnerRepoCheckRunsCheckRunIdPatchBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -201,13 +201,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['completed_at']);
             }
             if (\array_key_exists('output', $data)) {
-                $object->setOutput($this->denormalizer->denormalize($data['output'], 'Github\\Model\\ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput', 'json', $context));
+                $object->setOutput($this->denormalizer->denormalize($data['output'], \Github\Model\ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput::class, 'json', $context));
                 unset($data['output']);
             }
             if (\array_key_exists('actions', $data)) {
                 $values = [];
                 foreach ($data['actions'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ReposOwnerRepoCheckRunsCheckRunIdPatchBodyActionsItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ReposOwnerRepoCheckRunsCheckRunIdPatchBodyActionsItem::class, 'json', $context);
                 }
                 $object->setActions($values);
                 unset($data['actions']);
@@ -268,7 +268,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoCheckRunsCheckRunIdPatchBody' => false];
+            return [\Github\Model\ReposOwnerRepoCheckRunsCheckRunIdPatchBody::class => false];
         }
     }
 }

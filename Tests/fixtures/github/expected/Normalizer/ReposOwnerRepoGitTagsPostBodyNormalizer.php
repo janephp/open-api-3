@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoGitTagsPostBody';
+            return $type === \Github\Model\ReposOwnerRepoGitTagsPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -60,7 +60,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['type']);
             }
             if (\array_key_exists('tagger', $data)) {
-                $object->setTagger($this->denormalizer->denormalize($data['tagger'], 'Github\\Model\\ReposOwnerRepoGitTagsPostBodyTagger', 'json', $context));
+                $object->setTagger($this->denormalizer->denormalize($data['tagger'], \Github\Model\ReposOwnerRepoGitTagsPostBodyTagger::class, 'json', $context));
                 unset($data['tagger']);
             }
             foreach ($data as $key => $value) {
@@ -92,7 +92,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoGitTagsPostBody' => false];
+            return [\Github\Model\ReposOwnerRepoGitTagsPostBody::class => false];
         }
     }
 } else {
@@ -104,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ReposOwnerRepoGitTagsPostBody';
+            return $type === \Github\Model\ReposOwnerRepoGitTagsPostBody::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -145,7 +145,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['type']);
             }
             if (\array_key_exists('tagger', $data)) {
-                $object->setTagger($this->denormalizer->denormalize($data['tagger'], 'Github\\Model\\ReposOwnerRepoGitTagsPostBodyTagger', 'json', $context));
+                $object->setTagger($this->denormalizer->denormalize($data['tagger'], \Github\Model\ReposOwnerRepoGitTagsPostBodyTagger::class, 'json', $context));
                 unset($data['tagger']);
             }
             foreach ($data as $key => $value) {
@@ -180,7 +180,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ReposOwnerRepoGitTagsPostBody' => false];
+            return [\Github\Model\ReposOwnerRepoGitTagsPostBody::class => false];
         }
     }
 }

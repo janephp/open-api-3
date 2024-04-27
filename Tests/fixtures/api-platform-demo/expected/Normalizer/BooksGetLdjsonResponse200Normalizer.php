@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200';
+            return $type === \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -43,7 +43,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('hydra:member', $data)) {
                 $values = [];
                 foreach ($data['hydra:member'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'ApiPlatform\\Demo\\Model\\BookJsonldBookRead', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \ApiPlatform\Demo\Model\BookJsonldBookRead::class, 'json', $context);
                 }
                 $object->setHydraMember($values);
                 unset($data['hydra:member']);
@@ -53,11 +53,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['hydra:totalItems']);
             }
             if (\array_key_exists('hydra:view', $data)) {
-                $object->setHydraView($this->denormalizer->denormalize($data['hydra:view'], 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraView', 'json', $context));
+                $object->setHydraView($this->denormalizer->denormalize($data['hydra:view'], \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraView::class, 'json', $context));
                 unset($data['hydra:view']);
             }
             if (\array_key_exists('hydra:search', $data)) {
-                $object->setHydraSearch($this->denormalizer->denormalize($data['hydra:search'], 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraSearch', 'json', $context));
+                $object->setHydraSearch($this->denormalizer->denormalize($data['hydra:search'], \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraSearch::class, 'json', $context));
                 unset($data['hydra:search']);
             }
             foreach ($data as $key => $value_1) {
@@ -93,7 +93,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200' => false];
+            return [\ApiPlatform\Demo\Model\BooksGetLdjsonResponse200::class => false];
         }
     }
 } else {
@@ -105,7 +105,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200';
+            return $type === \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -129,7 +129,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('hydra:member', $data)) {
                 $values = [];
                 foreach ($data['hydra:member'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'ApiPlatform\\Demo\\Model\\BookJsonldBookRead', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \ApiPlatform\Demo\Model\BookJsonldBookRead::class, 'json', $context);
                 }
                 $object->setHydraMember($values);
                 unset($data['hydra:member']);
@@ -139,11 +139,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['hydra:totalItems']);
             }
             if (\array_key_exists('hydra:view', $data)) {
-                $object->setHydraView($this->denormalizer->denormalize($data['hydra:view'], 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraView', 'json', $context));
+                $object->setHydraView($this->denormalizer->denormalize($data['hydra:view'], \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraView::class, 'json', $context));
                 unset($data['hydra:view']);
             }
             if (\array_key_exists('hydra:search', $data)) {
-                $object->setHydraSearch($this->denormalizer->denormalize($data['hydra:search'], 'ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200HydraSearch', 'json', $context));
+                $object->setHydraSearch($this->denormalizer->denormalize($data['hydra:search'], \ApiPlatform\Demo\Model\BooksGetLdjsonResponse200HydraSearch::class, 'json', $context));
                 unset($data['hydra:search']);
             }
             foreach ($data as $key => $value_1) {
@@ -182,7 +182,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['ApiPlatform\\Demo\\Model\\BooksGetLdjsonResponse200' => false];
+            return [\ApiPlatform\Demo\Model\BooksGetLdjsonResponse200::class => false];
         }
     }
 }

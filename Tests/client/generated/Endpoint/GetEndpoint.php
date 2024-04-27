@@ -15,11 +15,11 @@ class GetEndpoint extends \Jane\Component\OpenApi3\Tests\Client\Runtime\Client\B
     }
     public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
     {
-        return array(array(), null);
+        return [[], null];
     }
     public function getExtraHeaders() : array
     {
-        return array('Accept' => array('application/json'));
+        return ['Accept' => ['application/json']];
     }
     /**
      * {@inheritdoc}
@@ -39,6 +39,6 @@ class GetEndpoint extends \Jane\Component\OpenApi3\Tests\Client\Runtime\Client\B
     }
     public function getAuthenticationScopes() : array
     {
-        return array('ApiKeyAuth');
+        return ['ApiKeyAuth'];
     }
 }

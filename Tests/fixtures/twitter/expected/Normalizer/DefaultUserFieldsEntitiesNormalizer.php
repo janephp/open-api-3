@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultUserFieldsEntities';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DefaultUserFieldsEntities::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -41,11 +41,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('url', $data)) {
-                $object->setUrl($this->denormalizer->denormalize($data['url'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultUserFieldsEntitiesUrl', 'json', $context));
+                $object->setUrl($this->denormalizer->denormalize($data['url'], \Jane\Component\OpenApi3\Tests\Expected\Model\DefaultUserFieldsEntitiesUrl::class, 'json', $context));
                 unset($data['url']);
             }
             if (\array_key_exists('description', $data)) {
-                $object->setDescription($this->denormalizer->denormalize($data['description'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FullTextEntities', 'json', $context));
+                $object->setDescription($this->denormalizer->denormalize($data['description'], \Jane\Component\OpenApi3\Tests\Expected\Model\FullTextEntities::class, 'json', $context));
                 unset($data['description']);
             }
             foreach ($data as $key => $value) {
@@ -73,7 +73,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultUserFieldsEntities' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DefaultUserFieldsEntities::class => false];
         }
     }
 } else {
@@ -85,7 +85,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultUserFieldsEntities';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\DefaultUserFieldsEntities::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -107,11 +107,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('url', $data)) {
-                $object->setUrl($this->denormalizer->denormalize($data['url'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultUserFieldsEntitiesUrl', 'json', $context));
+                $object->setUrl($this->denormalizer->denormalize($data['url'], \Jane\Component\OpenApi3\Tests\Expected\Model\DefaultUserFieldsEntitiesUrl::class, 'json', $context));
                 unset($data['url']);
             }
             if (\array_key_exists('description', $data)) {
-                $object->setDescription($this->denormalizer->denormalize($data['description'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FullTextEntities', 'json', $context));
+                $object->setDescription($this->denormalizer->denormalize($data['description'], \Jane\Component\OpenApi3\Tests\Expected\Model\FullTextEntities::class, 'json', $context));
                 unset($data['description']);
             }
             foreach ($data as $key => $value) {
@@ -142,7 +142,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\DefaultUserFieldsEntities' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\DefaultUserFieldsEntities::class => false];
         }
     }
 }

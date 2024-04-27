@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GistFullforksItem';
+            return $type === \Github\Model\GistFullforksItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -44,7 +44,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('user', $data)) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\GistFullforksItemUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\GistFullforksItemUser::class, 'json', $context));
                 unset($data['user']);
             }
             if (\array_key_exists('url', $data)) {
@@ -100,7 +100,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GistFullforksItem' => false];
+            return [\Github\Model\GistFullforksItem::class => false];
         }
     }
 } else {
@@ -112,7 +112,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\GistFullforksItem';
+            return $type === \Github\Model\GistFullforksItem::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -137,7 +137,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('user', $data)) {
-                $object->setUser($this->denormalizer->denormalize($data['user'], 'Github\\Model\\GistFullforksItemUser', 'json', $context));
+                $object->setUser($this->denormalizer->denormalize($data['user'], \Github\Model\GistFullforksItemUser::class, 'json', $context));
                 unset($data['user']);
             }
             if (\array_key_exists('url', $data)) {
@@ -196,7 +196,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\GistFullforksItem' => false];
+            return [\Github\Model\GistFullforksItem::class => false];
         }
     }
 }

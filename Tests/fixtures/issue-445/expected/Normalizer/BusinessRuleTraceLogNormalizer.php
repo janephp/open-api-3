@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\BusinessRuleTraceLog';
+            return $type === \PicturePark\API\Model\BusinessRuleTraceLog::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -68,7 +68,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('rules', $data) && $data['rules'] !== null) {
                 $values_1 = [];
                 foreach ($data['rules'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\BusinessRuleTracedRule', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\BusinessRuleTracedRule::class, 'json', $context);
                 }
                 $object->setRules($values_1);
             }
@@ -78,7 +78,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('validationErrors', $data) && $data['validationErrors'] !== null) {
                 $values_2 = [];
                 foreach ($data['validationErrors'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\ErrorResponse', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\ErrorResponse::class, 'json', $context);
                 }
                 $object->setValidationErrors($values_2);
             }
@@ -88,7 +88,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('generalErrors', $data) && $data['generalErrors'] !== null) {
                 $values_3 = [];
                 foreach ($data['generalErrors'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'PicturePark\\API\\Model\\ErrorResponse', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \PicturePark\API\Model\ErrorResponse::class, 'json', $context);
                 }
                 $object->setGeneralErrors($values_3);
             }
@@ -148,7 +148,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\BusinessRuleTraceLog' => false];
+            return [\PicturePark\API\Model\BusinessRuleTraceLog::class => false];
         }
     }
 } else {
@@ -160,7 +160,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'PicturePark\\API\\Model\\BusinessRuleTraceLog';
+            return $type === \PicturePark\API\Model\BusinessRuleTraceLog::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -209,7 +209,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('rules', $data) && $data['rules'] !== null) {
                 $values_1 = [];
                 foreach ($data['rules'] as $value_1) {
-                    $values_1[] = $this->denormalizer->denormalize($value_1, 'PicturePark\\API\\Model\\BusinessRuleTracedRule', 'json', $context);
+                    $values_1[] = $this->denormalizer->denormalize($value_1, \PicturePark\API\Model\BusinessRuleTracedRule::class, 'json', $context);
                 }
                 $object->setRules($values_1);
             }
@@ -219,7 +219,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('validationErrors', $data) && $data['validationErrors'] !== null) {
                 $values_2 = [];
                 foreach ($data['validationErrors'] as $value_2) {
-                    $values_2[] = $this->denormalizer->denormalize($value_2, 'PicturePark\\API\\Model\\ErrorResponse', 'json', $context);
+                    $values_2[] = $this->denormalizer->denormalize($value_2, \PicturePark\API\Model\ErrorResponse::class, 'json', $context);
                 }
                 $object->setValidationErrors($values_2);
             }
@@ -229,7 +229,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('generalErrors', $data) && $data['generalErrors'] !== null) {
                 $values_3 = [];
                 foreach ($data['generalErrors'] as $value_3) {
-                    $values_3[] = $this->denormalizer->denormalize($value_3, 'PicturePark\\API\\Model\\ErrorResponse', 'json', $context);
+                    $values_3[] = $this->denormalizer->denormalize($value_3, \PicturePark\API\Model\ErrorResponse::class, 'json', $context);
                 }
                 $object->setGeneralErrors($values_3);
             }
@@ -292,7 +292,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['PicturePark\\API\\Model\\BusinessRuleTraceLog' => false];
+            return [\PicturePark\API\Model\BusinessRuleTraceLog::class => false];
         }
     }
 }

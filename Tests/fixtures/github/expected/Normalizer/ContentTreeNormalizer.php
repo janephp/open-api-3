@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ContentTree';
+            return $type === \Github\Model\ContentTree::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -91,13 +91,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('entries', $data)) {
                 $values = [];
                 foreach ($data['entries'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ContentTreeEntriesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ContentTreeEntriesItem::class, 'json', $context);
                 }
                 $object->setEntries($values);
                 unset($data['entries']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\ContentTreeLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\ContentTreeLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             foreach ($data as $key => $value_1) {
@@ -139,7 +139,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ContentTree' => false];
+            return [\Github\Model\ContentTree::class => false];
         }
     }
 } else {
@@ -151,7 +151,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\ContentTree';
+            return $type === \Github\Model\ContentTree::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -223,13 +223,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('entries', $data)) {
                 $values = [];
                 foreach ($data['entries'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ContentTreeEntriesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ContentTreeEntriesItem::class, 'json', $context);
                 }
                 $object->setEntries($values);
                 unset($data['entries']);
             }
             if (\array_key_exists('_links', $data)) {
-                $object->setLinks($this->denormalizer->denormalize($data['_links'], 'Github\\Model\\ContentTreeLinks', 'json', $context));
+                $object->setLinks($this->denormalizer->denormalize($data['_links'], \Github\Model\ContentTreeLinks::class, 'json', $context));
                 unset($data['_links']);
             }
             foreach ($data as $key => $value_1) {
@@ -274,7 +274,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\ContentTree' => false];
+            return [\Github\Model\ContentTree::class => false];
         }
     }
 }

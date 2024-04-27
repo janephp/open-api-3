@@ -22,7 +22,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Import';
+            return $type === \Github\Model\Import::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -127,7 +127,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('project_choices', $data)) {
                 $values = [];
                 foreach ($data['project_choices'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ImportProjectChoicesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ImportProjectChoicesItem::class, 'json', $context);
                 }
                 $object->setProjectChoices($values);
                 unset($data['project_choices']);
@@ -244,7 +244,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Import' => false];
+            return [\Github\Model\Import::class => false];
         }
     }
 } else {
@@ -256,7 +256,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Github\\Model\\Import';
+            return $type === \Github\Model\Import::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
@@ -364,7 +364,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('project_choices', $data)) {
                 $values = [];
                 foreach ($data['project_choices'] as $value) {
-                    $values[] = $this->denormalizer->denormalize($value, 'Github\\Model\\ImportProjectChoicesItem', 'json', $context);
+                    $values[] = $this->denormalizer->denormalize($value, \Github\Model\ImportProjectChoicesItem::class, 'json', $context);
                 }
                 $object->setProjectChoices($values);
                 unset($data['project_choices']);
@@ -484,7 +484,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Github\\Model\\Import' => false];
+            return [\Github\Model\Import::class => false];
         }
     }
 }
