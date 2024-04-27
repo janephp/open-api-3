@@ -73,7 +73,7 @@ class FormBodyContentGenerator extends AbstractBodyContentGenerator
             new Expr\FuncCall(new Name('http_build_query'), [
                 new Arg(new Expr\MethodCall(
                     new Expr\Variable('serializer'),
-                    new Name('normalize'),
+                    'normalize',
                     [
                         new Arg(new Expr\PropertyFetch(new Expr\Variable('this'), 'body')),
                         new Arg(new Scalar\String_('json')),

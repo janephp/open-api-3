@@ -52,7 +52,7 @@ class JsonBodyContentGenerator extends AbstractBodyContentGenerator
             ]),
             new Expr\MethodCall(
                 new Expr\Variable('serializer'),
-                new Name('serialize'),
+                'serialize',
                 [
                     new Arg(new Expr\PropertyFetch(new Expr\Variable('this'), 'body')),
                     new Arg(new Scalar\String_('json')),

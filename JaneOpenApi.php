@@ -14,6 +14,7 @@ use Jane\Component\OpenApiCommon\Generator\NormalizerGenerator;
 use Jane\Component\OpenApiCommon\Generator\RuntimeGenerator;
 use Jane\Component\OpenApiCommon\JaneOpenApi as CommonJaneOpenApi;
 use PhpParser\ParserFactory;
+use PhpParser\PhpVersion;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
 class JaneOpenApi extends CommonJaneOpenApi
@@ -35,13 +36,16 @@ class JaneOpenApi extends CommonJaneOpenApi
     protected static function generators(DenormalizerInterface $denormalizer, array $options = []): \Generator
     {
         $naming = new Naming();
-        $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP7);
+        $parser = is_string($options['php-version'] ?? null)
+            ? (new ParserFactory())->createForVersion(PhpVersion::fromString($options['php-version']))
+            : (new ParserFactory())->createForHostVersion()
+        ;
 
         yield new ModelGenerator($naming, $parser);
         yield new NormalizerGenerator($naming, $parser, $options['reference'] ?? false, $options['use-cacheable-supports-method'] ?? false, $options['skip-null-values'] ?? true, $options['skip-required-fields'] ?? false, $options['validation'] ?? false, $options['include-null-value'] ?? true);
         yield new AuthenticationGenerator();
-        yield GeneratorFactory::build($denormalizer, $options['endpoint-generator'] ?: EndpointGenerator::class);
-        yield new RuntimeGenerator($naming, $parser, $options['validation'] ?? false);
+        yield GeneratorFactory::build($denormalizer, $options['endpoint-generator'] ?: EndpointGenerator::class, $options['php-version'] ?? null);
+        yield new RuntimeGenerator($naming, $parser);
         if ($options['validation'] ?? false) {
             yield new ValidatorGenerator($naming);
         }
