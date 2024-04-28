@@ -14,7 +14,6 @@ use Jane\Component\OpenApiCommon\Generator\NormalizerGenerator;
 use Jane\Component\OpenApiCommon\Generator\RuntimeGenerator;
 use Jane\Component\OpenApiCommon\JaneOpenApi as CommonJaneOpenApi;
 use PhpParser\ParserFactory;
-use PhpParser\PhpVersion;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 
 class JaneOpenApi extends CommonJaneOpenApi
