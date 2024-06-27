@@ -18,11 +18,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array(
-            
-            'Gounlaf\\JanephpBug\\Model\\PatchableEntity' => 'Gounlaf\\JanephpBug\\Normalizer\\PatchableEntityNormalizer',
-            '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Gounlaf\\JanephpBug\\Runtime\\Normalizer\\ReferenceNormalizer',
-        ), $normalizersCache = [];
+        protected $normalizers = [\Gounlaf\JanephpBug\Model\PatchableEntity::class => \Gounlaf\JanephpBug\Normalizer\PatchableEntityNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Gounlaf\JanephpBug\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -57,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Gounlaf\\JanephpBug\\Model\\PatchableEntity' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Gounlaf\JanephpBug\Model\PatchableEntity::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 } else {
@@ -67,11 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array(
-            
-            'Gounlaf\\JanephpBug\\Model\\PatchableEntity' => 'Gounlaf\\JanephpBug\\Normalizer\\PatchableEntityNormalizer',
-            '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Gounlaf\\JanephpBug\\Runtime\\Normalizer\\ReferenceNormalizer',
-        ), $normalizersCache = [];
+        protected $normalizers = [\Gounlaf\JanephpBug\Model\PatchableEntity::class => \Gounlaf\JanephpBug\Normalizer\PatchableEntityNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Gounlaf\JanephpBug\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -112,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Gounlaf\\JanephpBug\\Model\\PatchableEntity' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Gounlaf\JanephpBug\Model\PatchableEntity::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 }

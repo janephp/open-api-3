@@ -22,11 +22,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FooBarWithMapping';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\FooBarWithMapping::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FooBarWithMapping';
+            return is_object($data) && get_class($data) === Jane\Component\OpenApi3\Tests\Expected\Model\FooBarWithMapping::class;
         }
         public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
         {
@@ -43,9 +43,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('what', $data)) {
                 $value = $data['what'];
                 if (is_array($data['what']) and (isset($data['what']['type']) and $data['what']['type'] == 'foo')) {
-                    $value = $this->denormalizer->denormalize($data['what'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Foo', 'json', $context);
+                    $value = $this->denormalizer->denormalize($data['what'], \Jane\Component\OpenApi3\Tests\Expected\Model\Foo::class, 'json', $context);
                 } elseif (is_array($data['what']) and (isset($data['what']['type']) and $data['what']['type'] == 'bar')) {
-                    $value = $this->denormalizer->denormalize($data['what'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Bar', 'json', $context);
+                    $value = $this->denormalizer->denormalize($data['what'], \Jane\Component\OpenApi3\Tests\Expected\Model\Bar::class, 'json', $context);
                 }
                 $object->setWhat($value);
                 unset($data['what']);
@@ -78,7 +78,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FooBarWithMapping' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\FooBarWithMapping::class => false];
         }
     }
 } else {
@@ -90,11 +90,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use ValidatorTrait;
         public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
         {
-            return $type === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FooBarWithMapping';
+            return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\FooBarWithMapping::class;
         }
         public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
         {
-            return is_object($data) && get_class($data) === 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FooBarWithMapping';
+            return is_object($data) && get_class($data) === Jane\Component\OpenApi3\Tests\Expected\Model\FooBarWithMapping::class;
         }
         /**
          * @return mixed
@@ -114,9 +114,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (\array_key_exists('what', $data)) {
                 $value = $data['what'];
                 if (is_array($data['what']) and (isset($data['what']['type']) and $data['what']['type'] == 'foo')) {
-                    $value = $this->denormalizer->denormalize($data['what'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Foo', 'json', $context);
+                    $value = $this->denormalizer->denormalize($data['what'], \Jane\Component\OpenApi3\Tests\Expected\Model\Foo::class, 'json', $context);
                 } elseif (is_array($data['what']) and (isset($data['what']['type']) and $data['what']['type'] == 'bar')) {
-                    $value = $this->denormalizer->denormalize($data['what'], 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Bar', 'json', $context);
+                    $value = $this->denormalizer->denormalize($data['what'], \Jane\Component\OpenApi3\Tests\Expected\Model\Bar::class, 'json', $context);
                 }
                 $object->setWhat($value);
                 unset($data['what']);
@@ -152,7 +152,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\FooBarWithMapping' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\FooBarWithMapping::class => false];
         }
     }
 }

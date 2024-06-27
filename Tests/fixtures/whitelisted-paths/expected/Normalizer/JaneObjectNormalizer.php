@@ -18,14 +18,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array(
-            
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Expansions' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\ExpansionsNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetLookupResponse' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\TweetLookupResponseNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Poll' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\PollNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\PollOption' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\PollOptionNormalizer',
-            '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\OpenApi3\\Tests\\Expected\\Runtime\\Normalizer\\ReferenceNormalizer',
-        ), $normalizersCache = [];
+        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ExpansionsNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\TweetLookupResponseNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollOptionNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -60,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Expansions' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetLookupResponse' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Poll' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\PollOption' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 } else {
@@ -70,14 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array(
-            
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Expansions' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\ExpansionsNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetLookupResponse' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\TweetLookupResponseNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Poll' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\PollNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\PollOption' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\PollOptionNormalizer',
-            '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\OpenApi3\\Tests\\Expected\\Runtime\\Normalizer\\ReferenceNormalizer',
-        ), $normalizersCache = [];
+        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ExpansionsNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\TweetLookupResponseNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollOptionNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -118,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Expansions' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\TweetLookupResponse' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Poll' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\PollOption' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 }

@@ -18,13 +18,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array(
-            
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Pet' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\PetNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Cat' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\CatNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Dog' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\DogNormalizer',
-            '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\OpenApi3\\Tests\\Expected\\Runtime\\Normalizer\\ReferenceNormalizer',
-        ), $normalizersCache = [];
+        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Pet::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PetNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Cat::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\CatNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Dog::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\DogNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -59,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Pet' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Cat' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Dog' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Pet::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Cat::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Dog::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 } else {
@@ -69,13 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array(
-            
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Pet' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\PetNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Cat' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\CatNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Dog' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\DogNormalizer',
-            '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\OpenApi3\\Tests\\Expected\\Runtime\\Normalizer\\ReferenceNormalizer',
-        ), $normalizersCache = [];
+        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Pet::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PetNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Cat::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\CatNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Dog::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\DogNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -116,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Pet' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Cat' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Dog' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Pet::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Cat::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Dog::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 }

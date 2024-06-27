@@ -18,12 +18,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array(
-            
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Pet' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\PetNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Error' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\ErrorNormalizer',
-            '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\OpenApi3\\Tests\\Expected\\Runtime\\Normalizer\\ReferenceNormalizer',
-        ), $normalizersCache = [];
+        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Pet::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PetNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Error::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ErrorNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -58,7 +53,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Pet' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Error' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Pet::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Error::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 } else {
@@ -68,12 +63,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = array(
-            
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Pet' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\PetNormalizer',
-            'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Error' => 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Normalizer\\ErrorNormalizer',
-            '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => '\\Jane\\Component\\OpenApi3\\Tests\\Expected\\Runtime\\Normalizer\\ReferenceNormalizer',
-        ), $normalizersCache = [];
+        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Pet::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PetNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Error::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ErrorNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -114,7 +104,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null) : array
         {
-            return ['Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Pet' => false, 'Jane\\Component\\OpenApi3\\Tests\\Expected\\Model\\Error' => false, '\\Jane\\Component\\JsonSchemaRuntime\\Reference' => false];
+            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Pet::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Error::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
     }
 }
