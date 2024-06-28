@@ -8,7 +8,7 @@ class SearchNoResultsError extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class SearchNoResultsError extends \ArrayObject
      *
      * @return float
      */
-    public function getTotalSize() : float
+    public function getTotalSize(): float
     {
         return $this->totalSize;
     }
@@ -46,7 +46,7 @@ class SearchNoResultsError extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalSize(float $totalSize) : self
+    public function setTotalSize(float $totalSize): self
     {
         $this->initialized['totalSize'] = true;
         $this->totalSize = $totalSize;
@@ -57,7 +57,7 @@ class SearchNoResultsError extends \ArrayObject
      *
      * @return array<string, mixed>
      */
-    public function getCompanies() : iterable
+    public function getCompanies(): iterable
     {
         return $this->companies;
     }
@@ -68,7 +68,7 @@ class SearchNoResultsError extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanies(iterable $companies) : self
+    public function setCompanies(iterable $companies): self
     {
         $this->initialized['companies'] = true;
         $this->companies = $companies;
@@ -79,7 +79,7 @@ class SearchNoResultsError extends \ArrayObject
      *
      * @return SearchNoResultsErrorMessages
      */
-    public function getMessages() : SearchNoResultsErrorMessages
+    public function getMessages(): SearchNoResultsErrorMessages
     {
         return $this->messages;
     }
@@ -90,7 +90,7 @@ class SearchNoResultsError extends \ArrayObject
      *
      * @return self
      */
-    public function setMessages(SearchNoResultsErrorMessages $messages) : self
+    public function setMessages(SearchNoResultsErrorMessages $messages): self
     {
         $this->initialized['messages'] = true;
         $this->messages = $messages;

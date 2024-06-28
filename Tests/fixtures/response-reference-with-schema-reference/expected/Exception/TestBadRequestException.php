@@ -18,11 +18,11 @@ class TestBadRequestException extends BadRequestException
         $this->failure = $failure;
         $this->response = $response;
     }
-    public function getFailure() : \Jane\Component\OpenApi3\Tests\Expected\Model\Failure
+    public function getFailure(): \Jane\Component\OpenApi3\Tests\Expected\Model\Failure
     {
         return $this->failure;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

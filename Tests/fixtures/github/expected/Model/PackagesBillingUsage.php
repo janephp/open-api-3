@@ -8,7 +8,7 @@ class PackagesBillingUsage extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PackagesBillingUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalGigabytesBandwidthUsed() : int
+    public function getTotalGigabytesBandwidthUsed(): int
     {
         return $this->totalGigabytesBandwidthUsed;
     }
@@ -46,7 +46,7 @@ class PackagesBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalGigabytesBandwidthUsed(int $totalGigabytesBandwidthUsed) : self
+    public function setTotalGigabytesBandwidthUsed(int $totalGigabytesBandwidthUsed): self
     {
         $this->initialized['totalGigabytesBandwidthUsed'] = true;
         $this->totalGigabytesBandwidthUsed = $totalGigabytesBandwidthUsed;
@@ -57,7 +57,7 @@ class PackagesBillingUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalPaidGigabytesBandwidthUsed() : int
+    public function getTotalPaidGigabytesBandwidthUsed(): int
     {
         return $this->totalPaidGigabytesBandwidthUsed;
     }
@@ -68,7 +68,7 @@ class PackagesBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalPaidGigabytesBandwidthUsed(int $totalPaidGigabytesBandwidthUsed) : self
+    public function setTotalPaidGigabytesBandwidthUsed(int $totalPaidGigabytesBandwidthUsed): self
     {
         $this->initialized['totalPaidGigabytesBandwidthUsed'] = true;
         $this->totalPaidGigabytesBandwidthUsed = $totalPaidGigabytesBandwidthUsed;
@@ -79,7 +79,7 @@ class PackagesBillingUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getIncludedGigabytesBandwidth() : int
+    public function getIncludedGigabytesBandwidth(): int
     {
         return $this->includedGigabytesBandwidth;
     }
@@ -90,7 +90,7 @@ class PackagesBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludedGigabytesBandwidth(int $includedGigabytesBandwidth) : self
+    public function setIncludedGigabytesBandwidth(int $includedGigabytesBandwidth): self
     {
         $this->initialized['includedGigabytesBandwidth'] = true;
         $this->includedGigabytesBandwidth = $includedGigabytesBandwidth;

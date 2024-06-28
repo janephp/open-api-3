@@ -8,7 +8,7 @@ class Authorization extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class Authorization extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -112,7 +112,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -123,7 +123,7 @@ class Authorization extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -134,7 +134,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -145,7 +145,7 @@ class Authorization extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getScopes() : ?array
+    public function getScopes(): ?array
     {
         return $this->scopes;
     }
@@ -156,7 +156,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setScopes(?array $scopes) : self
+    public function setScopes(?array $scopes): self
     {
         $this->initialized['scopes'] = true;
         $this->scopes = $scopes;
@@ -167,7 +167,7 @@ class Authorization extends \ArrayObject
      *
      * @return string
      */
-    public function getToken() : string
+    public function getToken(): string
     {
         return $this->token;
     }
@@ -178,7 +178,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setToken(string $token) : self
+    public function setToken(string $token): self
     {
         $this->initialized['token'] = true;
         $this->token = $token;
@@ -189,7 +189,7 @@ class Authorization extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTokenLastEight() : ?string
+    public function getTokenLastEight(): ?string
     {
         return $this->tokenLastEight;
     }
@@ -200,7 +200,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setTokenLastEight(?string $tokenLastEight) : self
+    public function setTokenLastEight(?string $tokenLastEight): self
     {
         $this->initialized['tokenLastEight'] = true;
         $this->tokenLastEight = $tokenLastEight;
@@ -211,7 +211,7 @@ class Authorization extends \ArrayObject
      *
      * @return string|null
      */
-    public function getHashedToken() : ?string
+    public function getHashedToken(): ?string
     {
         return $this->hashedToken;
     }
@@ -222,7 +222,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setHashedToken(?string $hashedToken) : self
+    public function setHashedToken(?string $hashedToken): self
     {
         $this->initialized['hashedToken'] = true;
         $this->hashedToken = $hashedToken;
@@ -233,7 +233,7 @@ class Authorization extends \ArrayObject
      *
      * @return AuthorizationApp
      */
-    public function getApp() : AuthorizationApp
+    public function getApp(): AuthorizationApp
     {
         return $this->app;
     }
@@ -244,7 +244,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setApp(AuthorizationApp $app) : self
+    public function setApp(AuthorizationApp $app): self
     {
         $this->initialized['app'] = true;
         $this->app = $app;
@@ -255,7 +255,7 @@ class Authorization extends \ArrayObject
      *
      * @return string|null
      */
-    public function getNote() : ?string
+    public function getNote(): ?string
     {
         return $this->note;
     }
@@ -266,7 +266,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setNote(?string $note) : self
+    public function setNote(?string $note): self
     {
         $this->initialized['note'] = true;
         $this->note = $note;
@@ -277,7 +277,7 @@ class Authorization extends \ArrayObject
      *
      * @return string|null
      */
-    public function getNoteUrl() : ?string
+    public function getNoteUrl(): ?string
     {
         return $this->noteUrl;
     }
@@ -288,7 +288,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setNoteUrl(?string $noteUrl) : self
+    public function setNoteUrl(?string $noteUrl): self
     {
         $this->initialized['noteUrl'] = true;
         $this->noteUrl = $noteUrl;
@@ -299,7 +299,7 @@ class Authorization extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -310,7 +310,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -321,7 +321,7 @@ class Authorization extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -332,7 +332,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -343,7 +343,7 @@ class Authorization extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFingerprint() : ?string
+    public function getFingerprint(): ?string
     {
         return $this->fingerprint;
     }
@@ -354,7 +354,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setFingerprint(?string $fingerprint) : self
+    public function setFingerprint(?string $fingerprint): self
     {
         $this->initialized['fingerprint'] = true;
         $this->fingerprint = $fingerprint;
@@ -365,7 +365,7 @@ class Authorization extends \ArrayObject
      *
      * @return AuthorizationUser|null
      */
-    public function getUser() : ?AuthorizationUser
+    public function getUser(): ?AuthorizationUser
     {
         return $this->user;
     }
@@ -376,7 +376,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?AuthorizationUser $user) : self
+    public function setUser(?AuthorizationUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -387,7 +387,7 @@ class Authorization extends \ArrayObject
      *
      * @return AuthorizationInstallation|null
      */
-    public function getInstallation() : ?AuthorizationInstallation
+    public function getInstallation(): ?AuthorizationInstallation
     {
         return $this->installation;
     }
@@ -398,7 +398,7 @@ class Authorization extends \ArrayObject
      *
      * @return self
      */
-    public function setInstallation(?AuthorizationInstallation $installation) : self
+    public function setInstallation(?AuthorizationInstallation $installation): self
     {
         $this->initialized['installation'] = true;
         $this->installation = $installation;

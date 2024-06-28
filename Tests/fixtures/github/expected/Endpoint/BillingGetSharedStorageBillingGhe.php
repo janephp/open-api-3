@@ -21,19 +21,19 @@ class BillingGetSharedStorageBillingGhe extends \Github\Runtime\Client\BaseEndpo
         $this->enterprise_id = $enterpriseId;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{enterprise_id}'], [$this->enterprise_id], '/enterprises/{enterprise_id}/settings/billing/shared-storage');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
@@ -48,10 +48,10 @@ class BillingGetSharedStorageBillingGhe extends \Github\Runtime\Client\BaseEndpo
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'Github\\Model\\CombinedBillingUsage', 'json');
+            return $serializer->deserialize($body, 'Github\Model\CombinedBillingUsage', 'json');
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

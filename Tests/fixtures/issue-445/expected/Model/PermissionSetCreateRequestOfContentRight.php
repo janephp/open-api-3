@@ -8,7 +8,7 @@ class PermissionSetCreateRequestOfContentRight
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -60,7 +60,7 @@ class PermissionSetCreateRequestOfContentRight
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -71,7 +71,7 @@ class PermissionSetCreateRequestOfContentRight
      *
      * @return list<UserRoleRightsOfContentRight>|null
      */
-    public function getUserRolesRights() : ?array
+    public function getUserRolesRights(): ?array
     {
         return $this->userRolesRights;
     }
@@ -82,7 +82,7 @@ class PermissionSetCreateRequestOfContentRight
      *
      * @return self
      */
-    public function setUserRolesRights(?array $userRolesRights) : self
+    public function setUserRolesRights(?array $userRolesRights): self
     {
         $this->initialized['userRolesRights'] = true;
         $this->userRolesRights = $userRolesRights;
@@ -93,7 +93,7 @@ class PermissionSetCreateRequestOfContentRight
      *
      * @return list<UserRoleRightsOfPermissionSetRight>|null
      */
-    public function getUserRolesPermissionSetRights() : ?array
+    public function getUserRolesPermissionSetRights(): ?array
     {
         return $this->userRolesPermissionSetRights;
     }
@@ -104,7 +104,7 @@ class PermissionSetCreateRequestOfContentRight
      *
      * @return self
      */
-    public function setUserRolesPermissionSetRights(?array $userRolesPermissionSetRights) : self
+    public function setUserRolesPermissionSetRights(?array $userRolesPermissionSetRights): self
     {
         $this->initialized['userRolesPermissionSetRights'] = true;
         $this->userRolesPermissionSetRights = $userRolesPermissionSetRights;
@@ -115,7 +115,7 @@ class PermissionSetCreateRequestOfContentRight
      *
      * @return bool
      */
-    public function getExclusive() : bool
+    public function getExclusive(): bool
     {
         return $this->exclusive;
     }
@@ -126,7 +126,7 @@ class PermissionSetCreateRequestOfContentRight
      *
      * @return self
      */
-    public function setExclusive(bool $exclusive) : self
+    public function setExclusive(bool $exclusive): self
     {
         $this->initialized['exclusive'] = true;
         $this->exclusive = $exclusive;
@@ -139,7 +139,7 @@ class PermissionSetCreateRequestOfContentRight
     *
     * @return string|null
     */
-    public function getRequestId() : ?string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -152,7 +152,7 @@ class PermissionSetCreateRequestOfContentRight
     *
     * @return self
     */
-    public function setRequestId(?string $requestId) : self
+    public function setRequestId(?string $requestId): self
     {
         $this->initialized['requestId'] = true;
         $this->requestId = $requestId;

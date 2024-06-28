@@ -8,7 +8,7 @@ class Migration extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class Migration extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -106,7 +106,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -117,7 +117,7 @@ class Migration extends \ArrayObject
      *
      * @return MigrationOwner|null
      */
-    public function getOwner() : ?MigrationOwner
+    public function getOwner(): ?MigrationOwner
     {
         return $this->owner;
     }
@@ -128,7 +128,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setOwner(?MigrationOwner $owner) : self
+    public function setOwner(?MigrationOwner $owner): self
     {
         $this->initialized['owner'] = true;
         $this->owner = $owner;
@@ -139,7 +139,7 @@ class Migration extends \ArrayObject
      *
      * @return string
      */
-    public function getGuid() : string
+    public function getGuid(): string
     {
         return $this->guid;
     }
@@ -150,7 +150,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setGuid(string $guid) : self
+    public function setGuid(string $guid): self
     {
         $this->initialized['guid'] = true;
         $this->guid = $guid;
@@ -161,7 +161,7 @@ class Migration extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -172,7 +172,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -183,7 +183,7 @@ class Migration extends \ArrayObject
      *
      * @return bool
      */
-    public function getLockRepositories() : bool
+    public function getLockRepositories(): bool
     {
         return $this->lockRepositories;
     }
@@ -194,7 +194,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setLockRepositories(bool $lockRepositories) : self
+    public function setLockRepositories(bool $lockRepositories): self
     {
         $this->initialized['lockRepositories'] = true;
         $this->lockRepositories = $lockRepositories;
@@ -205,7 +205,7 @@ class Migration extends \ArrayObject
      *
      * @return bool
      */
-    public function getExcludeAttachments() : bool
+    public function getExcludeAttachments(): bool
     {
         return $this->excludeAttachments;
     }
@@ -216,7 +216,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setExcludeAttachments(bool $excludeAttachments) : self
+    public function setExcludeAttachments(bool $excludeAttachments): self
     {
         $this->initialized['excludeAttachments'] = true;
         $this->excludeAttachments = $excludeAttachments;
@@ -227,7 +227,7 @@ class Migration extends \ArrayObject
      *
      * @return list<Repository>
      */
-    public function getRepositories() : array
+    public function getRepositories(): array
     {
         return $this->repositories;
     }
@@ -238,7 +238,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositories(array $repositories) : self
+    public function setRepositories(array $repositories): self
     {
         $this->initialized['repositories'] = true;
         $this->repositories = $repositories;
@@ -249,7 +249,7 @@ class Migration extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -260,7 +260,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -271,7 +271,7 @@ class Migration extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -282,7 +282,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -293,7 +293,7 @@ class Migration extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -304,7 +304,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -315,7 +315,7 @@ class Migration extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -326,7 +326,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -337,7 +337,7 @@ class Migration extends \ArrayObject
      *
      * @return string
      */
-    public function getArchiveUrl() : string
+    public function getArchiveUrl(): string
     {
         return $this->archiveUrl;
     }
@@ -348,7 +348,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setArchiveUrl(string $archiveUrl) : self
+    public function setArchiveUrl(string $archiveUrl): self
     {
         $this->initialized['archiveUrl'] = true;
         $this->archiveUrl = $archiveUrl;
@@ -359,7 +359,7 @@ class Migration extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getExclude() : array
+    public function getExclude(): array
     {
         return $this->exclude;
     }
@@ -370,7 +370,7 @@ class Migration extends \ArrayObject
      *
      * @return self
      */
-    public function setExclude(array $exclude) : self
+    public function setExclude(array $exclude): self
     {
         $this->initialized['exclude'] = true;
         $this->exclude = $exclude;

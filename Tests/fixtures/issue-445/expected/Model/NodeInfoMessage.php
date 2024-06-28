@@ -8,7 +8,7 @@ class NodeInfoMessage extends Message
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class NodeInfoMessage extends Message
      *
      * @return string|null
      */
-    public function getNodeId() : ?string
+    public function getNodeId(): ?string
     {
         return $this->nodeId;
     }
@@ -76,7 +76,7 @@ class NodeInfoMessage extends Message
      *
      * @return self
      */
-    public function setNodeId(?string $nodeId) : self
+    public function setNodeId(?string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -87,7 +87,7 @@ class NodeInfoMessage extends Message
      *
      * @return string|null
      */
-    public function getHostName() : ?string
+    public function getHostName(): ?string
     {
         return $this->hostName;
     }
@@ -98,7 +98,7 @@ class NodeInfoMessage extends Message
      *
      * @return self
      */
-    public function setHostName(?string $hostName) : self
+    public function setHostName(?string $hostName): self
     {
         $this->initialized['hostName'] = true;
         $this->hostName = $hostName;
@@ -109,7 +109,7 @@ class NodeInfoMessage extends Message
      *
      * @return \DateTime
      */
-    public function getLastResponseTime() : \DateTime
+    public function getLastResponseTime(): \DateTime
     {
         return $this->lastResponseTime;
     }
@@ -120,7 +120,7 @@ class NodeInfoMessage extends Message
      *
      * @return self
      */
-    public function setLastResponseTime(\DateTime $lastResponseTime) : self
+    public function setLastResponseTime(\DateTime $lastResponseTime): self
     {
         $this->initialized['lastResponseTime'] = true;
         $this->lastResponseTime = $lastResponseTime;
@@ -131,7 +131,7 @@ class NodeInfoMessage extends Message
      *
      * @return string|null
      */
-    public function getServiceName() : ?string
+    public function getServiceName(): ?string
     {
         return $this->serviceName;
     }
@@ -142,7 +142,7 @@ class NodeInfoMessage extends Message
      *
      * @return self
      */
-    public function setServiceName(?string $serviceName) : self
+    public function setServiceName(?string $serviceName): self
     {
         $this->initialized['serviceName'] = true;
         $this->serviceName = $serviceName;
@@ -153,7 +153,7 @@ class NodeInfoMessage extends Message
      *
      * @return string|null
      */
-    public function getFileVersion() : ?string
+    public function getFileVersion(): ?string
     {
         return $this->fileVersion;
     }
@@ -164,7 +164,7 @@ class NodeInfoMessage extends Message
      *
      * @return self
      */
-    public function setFileVersion(?string $fileVersion) : self
+    public function setFileVersion(?string $fileVersion): self
     {
         $this->initialized['fileVersion'] = true;
         $this->fileVersion = $fileVersion;
@@ -175,7 +175,7 @@ class NodeInfoMessage extends Message
      *
      * @return string|null
      */
-    public function getProductVersion() : ?string
+    public function getProductVersion(): ?string
     {
         return $this->productVersion;
     }
@@ -186,7 +186,7 @@ class NodeInfoMessage extends Message
      *
      * @return self
      */
-    public function setProductVersion(?string $productVersion) : self
+    public function setProductVersion(?string $productVersion): self
     {
         $this->initialized['productVersion'] = true;
         $this->productVersion = $productVersion;
@@ -197,7 +197,7 @@ class NodeInfoMessage extends Message
      *
      * @return string|null
      */
-    public function getRelease() : ?string
+    public function getRelease(): ?string
     {
         return $this->release;
     }
@@ -208,7 +208,7 @@ class NodeInfoMessage extends Message
      *
      * @return self
      */
-    public function setRelease(?string $release) : self
+    public function setRelease(?string $release): self
     {
         $this->initialized['release'] = true;
         $this->release = $release;
@@ -219,7 +219,7 @@ class NodeInfoMessage extends Message
      *
      * @return string|null
      */
-    public function getLogLevel() : ?string
+    public function getLogLevel(): ?string
     {
         return $this->logLevel;
     }
@@ -230,7 +230,7 @@ class NodeInfoMessage extends Message
      *
      * @return self
      */
-    public function setLogLevel(?string $logLevel) : self
+    public function setLogLevel(?string $logLevel): self
     {
         $this->initialized['logLevel'] = true;
         $this->logLevel = $logLevel;

@@ -8,7 +8,7 @@ class RateLimitOverview extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RateLimitOverview extends \ArrayObject
      *
      * @return RateLimitOverviewResources
      */
-    public function getResources() : RateLimitOverviewResources
+    public function getResources(): RateLimitOverviewResources
     {
         return $this->resources;
     }
@@ -40,7 +40,7 @@ class RateLimitOverview extends \ArrayObject
      *
      * @return self
      */
-    public function setResources(RateLimitOverviewResources $resources) : self
+    public function setResources(RateLimitOverviewResources $resources): self
     {
         $this->initialized['resources'] = true;
         $this->resources = $resources;
@@ -51,7 +51,7 @@ class RateLimitOverview extends \ArrayObject
      *
      * @return RateLimit
      */
-    public function getRate() : RateLimit
+    public function getRate(): RateLimit
     {
         return $this->rate;
     }
@@ -62,7 +62,7 @@ class RateLimitOverview extends \ArrayObject
      *
      * @return self
      */
-    public function setRate(RateLimit $rate) : self
+    public function setRate(RateLimit $rate): self
     {
         $this->initialized['rate'] = true;
         $this->rate = $rate;

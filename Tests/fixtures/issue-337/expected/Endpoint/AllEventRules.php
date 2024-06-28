@@ -16,23 +16,23 @@ class AllEventRules extends \CreditSafe\API\Runtime\Client\BaseEndpoint implemen
         $this->headerParameters = $headerParameters;
     }
     use \CreditSafe\API\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/monitoring/eventRules';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
-    protected function getHeadersOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getHeadersOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getHeadersOptionsResolver();
         $optionsResolver->setDefined(['Authorization']);
@@ -56,10 +56,10 @@ class AllEventRules extends \CreditSafe\API\Runtime\Client\BaseEndpoint implemen
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'CreditSafe\\API\\Model\\EventRulesResponse', 'json');
+            return $serializer->deserialize($body, 'CreditSafe\API\Model\EventRulesResponse', 'json');
         }
         if (is_null($contentType) === false && (400 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \CreditSafe\API\Exception\AllEventRulesBadRequestException($serializer->deserialize($body, 'CreditSafe\\API\\Model\\BadRequestError', 'json'), $response);
+            throw new \CreditSafe\API\Exception\AllEventRulesBadRequestException($serializer->deserialize($body, 'CreditSafe\API\Model\BadRequestError', 'json'), $response);
         }
         if (is_null($contentType) === false && (401 === $status && mb_strpos($contentType, 'application/json') !== false)) {
             throw new \CreditSafe\API\Exception\AllEventRulesUnauthorizedException($response);
@@ -71,7 +71,7 @@ class AllEventRules extends \CreditSafe\API\Runtime\Client\BaseEndpoint implemen
             throw new \CreditSafe\API\Exception\AllEventRulesNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return ['bearerAuth'];
     }

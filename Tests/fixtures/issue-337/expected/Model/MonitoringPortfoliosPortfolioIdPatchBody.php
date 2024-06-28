@@ -8,7 +8,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -52,7 +52,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -63,7 +63,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
      *
      * @return list<MonitoringPortfoliosPortfolioIdPatchBodyEmailsItem>
      */
-    public function getEmails() : array
+    public function getEmails(): array
     {
         return $this->emails;
     }
@@ -74,7 +74,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmails(array $emails) : self
+    public function setEmails(array $emails): self
     {
         $this->initialized['emails'] = true;
         $this->emails = $emails;
@@ -85,7 +85,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmailLanguage() : string
+    public function getEmailLanguage(): string
     {
         return $this->emailLanguage;
     }
@@ -96,7 +96,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailLanguage(string $emailLanguage) : self
+    public function setEmailLanguage(string $emailLanguage): self
     {
         $this->initialized['emailLanguage'] = true;
         $this->emailLanguage = $emailLanguage;
@@ -107,7 +107,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmailSubject() : string
+    public function getEmailSubject(): string
     {
         return $this->emailSubject;
     }
@@ -118,7 +118,7 @@ class MonitoringPortfoliosPortfolioIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailSubject(string $emailSubject) : self
+    public function setEmailSubject(string $emailSubject): self
     {
         $this->initialized['emailSubject'] = true;
         $this->emailSubject = $emailSubject;

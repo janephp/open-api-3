@@ -97,15 +97,15 @@ class ActionsCreateOrUpdateRepoSecret extends \Github\Runtime\Client\BaseEndpoin
         $this->body = $requestBody;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'PUT';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{owner}', '{repo}', '{secret_name}'], [$this->owner, $this->repo, $this->secret_name], '/repos/{owner}/{repo}/actions/secrets/{secret_name}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \Github\Model\ReposOwnerRepoActionsSecretsSecretNamePutBody) {
             return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
@@ -129,7 +129,7 @@ class ActionsCreateOrUpdateRepoSecret extends \Github\Runtime\Client\BaseEndpoin
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

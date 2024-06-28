@@ -8,7 +8,7 @@ class Share
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class Share
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -70,7 +70,7 @@ class Share
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -81,7 +81,7 @@ class Share
      *
      * @return string|null
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -92,7 +92,7 @@ class Share
      *
      * @return self
      */
-    public function setName(?string $name) : self
+    public function setName(?string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -103,7 +103,7 @@ class Share
      *
      * @return list<string>
      */
-    public function getContentIds() : array
+    public function getContentIds(): array
     {
         return $this->contentIds;
     }
@@ -114,7 +114,7 @@ class Share
      *
      * @return self
      */
-    public function setContentIds(array $contentIds) : self
+    public function setContentIds(array $contentIds): self
     {
         $this->initialized['contentIds'] = true;
         $this->contentIds = $contentIds;
@@ -136,7 +136,7 @@ class Share
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;
@@ -147,7 +147,7 @@ class Share
      *
      * @return \DateTime|null
      */
-    public function getExpirationDate() : ?\DateTime
+    public function getExpirationDate(): ?\DateTime
     {
         return $this->expirationDate;
     }
@@ -158,7 +158,7 @@ class Share
      *
      * @return self
      */
-    public function setExpirationDate(?\DateTime $expirationDate) : self
+    public function setExpirationDate(?\DateTime $expirationDate): self
     {
         $this->initialized['expirationDate'] = true;
         $this->expirationDate = $expirationDate;
@@ -180,7 +180,7 @@ class Share
      *
      * @return self
      */
-    public function setShareType($shareType) : self
+    public function setShareType($shareType): self
     {
         $this->initialized['shareType'] = true;
         $this->shareType = $shareType;
@@ -191,7 +191,7 @@ class Share
      *
      * @return bool
      */
-    public function getIsReadOnly() : bool
+    public function getIsReadOnly(): bool
     {
         return $this->isReadOnly;
     }
@@ -202,7 +202,7 @@ class Share
      *
      * @return self
      */
-    public function setIsReadOnly(bool $isReadOnly) : self
+    public function setIsReadOnly(bool $isReadOnly): self
     {
         $this->initialized['isReadOnly'] = true;
         $this->isReadOnly = $isReadOnly;

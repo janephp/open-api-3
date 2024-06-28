@@ -8,7 +8,7 @@ class AggregationResultItem
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -48,7 +48,7 @@ class AggregationResultItem
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -59,7 +59,7 @@ class AggregationResultItem
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -70,7 +70,7 @@ class AggregationResultItem
      *
      * @return int
      */
-    public function getCount() : int
+    public function getCount(): int
     {
         return $this->count;
     }
@@ -81,7 +81,7 @@ class AggregationResultItem
      *
      * @return self
      */
-    public function setCount(int $count) : self
+    public function setCount(int $count): self
     {
         $this->initialized['count'] = true;
         $this->count = $count;
@@ -105,7 +105,7 @@ class AggregationResultItem
     *
     * @return self
     */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -116,7 +116,7 @@ class AggregationResultItem
      *
      * @return bool
      */
-    public function getActive() : bool
+    public function getActive(): bool
     {
         return $this->active;
     }
@@ -127,7 +127,7 @@ class AggregationResultItem
      *
      * @return self
      */
-    public function setActive(bool $active) : self
+    public function setActive(bool $active): self
     {
         $this->initialized['active'] = true;
         $this->active = $active;
@@ -138,7 +138,7 @@ class AggregationResultItem
      *
      * @return list<AggregationResult>|null
      */
-    public function getAggregationResults() : ?array
+    public function getAggregationResults(): ?array
     {
         return $this->aggregationResults;
     }
@@ -149,7 +149,7 @@ class AggregationResultItem
      *
      * @return self
      */
-    public function setAggregationResults(?array $aggregationResults) : self
+    public function setAggregationResults(?array $aggregationResults): self
     {
         $this->initialized['aggregationResults'] = true;
         $this->aggregationResults = $aggregationResults;

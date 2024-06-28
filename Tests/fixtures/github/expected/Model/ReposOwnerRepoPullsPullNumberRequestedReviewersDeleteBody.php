@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPullNumberRequestedReviewersDeleteBody extends \ArrayOb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoPullsPullNumberRequestedReviewersDeleteBody extends \ArrayOb
      *
      * @return list<string>
      */
-    public function getReviewers() : array
+    public function getReviewers(): array
     {
         return $this->reviewers;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoPullsPullNumberRequestedReviewersDeleteBody extends \ArrayOb
      *
      * @return self
      */
-    public function setReviewers(array $reviewers) : self
+    public function setReviewers(array $reviewers): self
     {
         $this->initialized['reviewers'] = true;
         $this->reviewers = $reviewers;
@@ -51,7 +51,7 @@ class ReposOwnerRepoPullsPullNumberRequestedReviewersDeleteBody extends \ArrayOb
      *
      * @return list<string>
      */
-    public function getTeamReviewers() : array
+    public function getTeamReviewers(): array
     {
         return $this->teamReviewers;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoPullsPullNumberRequestedReviewersDeleteBody extends \ArrayOb
      *
      * @return self
      */
-    public function setTeamReviewers(array $teamReviewers) : self
+    public function setTeamReviewers(array $teamReviewers): self
     {
         $this->initialized['teamReviewers'] = true;
         $this->teamReviewers = $teamReviewers;

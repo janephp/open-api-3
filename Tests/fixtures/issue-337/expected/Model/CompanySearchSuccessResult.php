@@ -8,7 +8,7 @@ class CompanySearchSuccessResult extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class CompanySearchSuccessResult extends \ArrayObject
      *
      * @return float
      */
-    public function getTotalSize() : float
+    public function getTotalSize(): float
     {
         return $this->totalSize;
     }
@@ -40,7 +40,7 @@ class CompanySearchSuccessResult extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalSize(float $totalSize) : self
+    public function setTotalSize(float $totalSize): self
     {
         $this->initialized['totalSize'] = true;
         $this->totalSize = $totalSize;
@@ -51,7 +51,7 @@ class CompanySearchSuccessResult extends \ArrayObject
      *
      * @return list<CompanySearchSuccessResultCompaniesItem>
      */
-    public function getCompanies() : array
+    public function getCompanies(): array
     {
         return $this->companies;
     }
@@ -62,7 +62,7 @@ class CompanySearchSuccessResult extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanies(array $companies) : self
+    public function setCompanies(array $companies): self
     {
         $this->initialized['companies'] = true;
         $this->companies = $companies;

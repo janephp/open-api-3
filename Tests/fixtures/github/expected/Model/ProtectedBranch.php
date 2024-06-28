@@ -8,7 +8,7 @@ class ProtectedBranch extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -82,7 +82,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -93,7 +93,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return StatusCheckPolicy
      */
-    public function getRequiredStatusChecks() : StatusCheckPolicy
+    public function getRequiredStatusChecks(): StatusCheckPolicy
     {
         return $this->requiredStatusChecks;
     }
@@ -104,7 +104,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredStatusChecks(StatusCheckPolicy $requiredStatusChecks) : self
+    public function setRequiredStatusChecks(StatusCheckPolicy $requiredStatusChecks): self
     {
         $this->initialized['requiredStatusChecks'] = true;
         $this->requiredStatusChecks = $requiredStatusChecks;
@@ -115,7 +115,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return ProtectedBranchRequiredPullRequestReviews
      */
-    public function getRequiredPullRequestReviews() : ProtectedBranchRequiredPullRequestReviews
+    public function getRequiredPullRequestReviews(): ProtectedBranchRequiredPullRequestReviews
     {
         return $this->requiredPullRequestReviews;
     }
@@ -126,7 +126,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredPullRequestReviews(ProtectedBranchRequiredPullRequestReviews $requiredPullRequestReviews) : self
+    public function setRequiredPullRequestReviews(ProtectedBranchRequiredPullRequestReviews $requiredPullRequestReviews): self
     {
         $this->initialized['requiredPullRequestReviews'] = true;
         $this->requiredPullRequestReviews = $requiredPullRequestReviews;
@@ -137,7 +137,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return ProtectedBranchRequiredSignatures
      */
-    public function getRequiredSignatures() : ProtectedBranchRequiredSignatures
+    public function getRequiredSignatures(): ProtectedBranchRequiredSignatures
     {
         return $this->requiredSignatures;
     }
@@ -148,7 +148,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredSignatures(ProtectedBranchRequiredSignatures $requiredSignatures) : self
+    public function setRequiredSignatures(ProtectedBranchRequiredSignatures $requiredSignatures): self
     {
         $this->initialized['requiredSignatures'] = true;
         $this->requiredSignatures = $requiredSignatures;
@@ -159,7 +159,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return ProtectedBranchEnforceAdmins
      */
-    public function getEnforceAdmins() : ProtectedBranchEnforceAdmins
+    public function getEnforceAdmins(): ProtectedBranchEnforceAdmins
     {
         return $this->enforceAdmins;
     }
@@ -170,7 +170,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setEnforceAdmins(ProtectedBranchEnforceAdmins $enforceAdmins) : self
+    public function setEnforceAdmins(ProtectedBranchEnforceAdmins $enforceAdmins): self
     {
         $this->initialized['enforceAdmins'] = true;
         $this->enforceAdmins = $enforceAdmins;
@@ -181,7 +181,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return ProtectedBranchRequiredLinearHistory
      */
-    public function getRequiredLinearHistory() : ProtectedBranchRequiredLinearHistory
+    public function getRequiredLinearHistory(): ProtectedBranchRequiredLinearHistory
     {
         return $this->requiredLinearHistory;
     }
@@ -192,7 +192,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredLinearHistory(ProtectedBranchRequiredLinearHistory $requiredLinearHistory) : self
+    public function setRequiredLinearHistory(ProtectedBranchRequiredLinearHistory $requiredLinearHistory): self
     {
         $this->initialized['requiredLinearHistory'] = true;
         $this->requiredLinearHistory = $requiredLinearHistory;
@@ -203,7 +203,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return ProtectedBranchAllowForcePushes
      */
-    public function getAllowForcePushes() : ProtectedBranchAllowForcePushes
+    public function getAllowForcePushes(): ProtectedBranchAllowForcePushes
     {
         return $this->allowForcePushes;
     }
@@ -214,7 +214,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowForcePushes(ProtectedBranchAllowForcePushes $allowForcePushes) : self
+    public function setAllowForcePushes(ProtectedBranchAllowForcePushes $allowForcePushes): self
     {
         $this->initialized['allowForcePushes'] = true;
         $this->allowForcePushes = $allowForcePushes;
@@ -225,7 +225,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return ProtectedBranchAllowDeletions
      */
-    public function getAllowDeletions() : ProtectedBranchAllowDeletions
+    public function getAllowDeletions(): ProtectedBranchAllowDeletions
     {
         return $this->allowDeletions;
     }
@@ -236,7 +236,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowDeletions(ProtectedBranchAllowDeletions $allowDeletions) : self
+    public function setAllowDeletions(ProtectedBranchAllowDeletions $allowDeletions): self
     {
         $this->initialized['allowDeletions'] = true;
         $this->allowDeletions = $allowDeletions;
@@ -247,7 +247,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return BranchRestrictionPolicy
      */
-    public function getRestrictions() : BranchRestrictionPolicy
+    public function getRestrictions(): BranchRestrictionPolicy
     {
         return $this->restrictions;
     }
@@ -258,7 +258,7 @@ class ProtectedBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setRestrictions(BranchRestrictionPolicy $restrictions) : self
+    public function setRestrictions(BranchRestrictionPolicy $restrictions): self
     {
         $this->initialized['restrictions'] = true;
         $this->restrictions = $restrictions;

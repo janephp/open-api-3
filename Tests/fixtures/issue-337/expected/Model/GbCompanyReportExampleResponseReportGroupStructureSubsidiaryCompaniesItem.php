@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -70,7 +70,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -81,7 +81,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -92,7 +92,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -103,7 +103,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return string
      */
-    public function getSafeNumber() : string
+    public function getSafeNumber(): string
     {
         return $this->safeNumber;
     }
@@ -114,7 +114,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return self
      */
-    public function setSafeNumber(string $safeNumber) : self
+    public function setSafeNumber(string $safeNumber): self
     {
         $this->initialized['safeNumber'] = true;
         $this->safeNumber = $safeNumber;
@@ -125,7 +125,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -136,7 +136,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -147,7 +147,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -158,7 +158,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -169,7 +169,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -180,7 +180,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -191,7 +191,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return string
      */
-    public function getRegistrationNumber() : string
+    public function getRegistrationNumber(): string
     {
         return $this->registrationNumber;
     }
@@ -202,7 +202,7 @@ class GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem 
      *
      * @return self
      */
-    public function setRegistrationNumber(string $registrationNumber) : self
+    public function setRegistrationNumber(string $registrationNumber): self
     {
         $this->initialized['registrationNumber'] = true;
         $this->registrationNumber = $registrationNumber;

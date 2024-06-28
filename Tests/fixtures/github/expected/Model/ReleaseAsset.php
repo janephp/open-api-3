@@ -8,7 +8,7 @@ class ReleaseAsset extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -106,7 +106,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -117,7 +117,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return string
      */
-    public function getBrowserDownloadUrl() : string
+    public function getBrowserDownloadUrl(): string
     {
         return $this->browserDownloadUrl;
     }
@@ -128,7 +128,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setBrowserDownloadUrl(string $browserDownloadUrl) : self
+    public function setBrowserDownloadUrl(string $browserDownloadUrl): self
     {
         $this->initialized['browserDownloadUrl'] = true;
         $this->browserDownloadUrl = $browserDownloadUrl;
@@ -139,7 +139,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -150,7 +150,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -161,7 +161,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -172,7 +172,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -183,7 +183,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -194,7 +194,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -205,7 +205,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLabel() : ?string
+    public function getLabel(): ?string
     {
         return $this->label;
     }
@@ -216,7 +216,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setLabel(?string $label) : self
+    public function setLabel(?string $label): self
     {
         $this->initialized['label'] = true;
         $this->label = $label;
@@ -227,7 +227,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -238,7 +238,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -249,7 +249,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return string
      */
-    public function getContentType() : string
+    public function getContentType(): string
     {
         return $this->contentType;
     }
@@ -260,7 +260,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setContentType(string $contentType) : self
+    public function setContentType(string $contentType): self
     {
         $this->initialized['contentType'] = true;
         $this->contentType = $contentType;
@@ -271,7 +271,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return int
      */
-    public function getSize() : int
+    public function getSize(): int
     {
         return $this->size;
     }
@@ -282,7 +282,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setSize(int $size) : self
+    public function setSize(int $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;
@@ -293,7 +293,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return int
      */
-    public function getDownloadCount() : int
+    public function getDownloadCount(): int
     {
         return $this->downloadCount;
     }
@@ -304,7 +304,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setDownloadCount(int $downloadCount) : self
+    public function setDownloadCount(int $downloadCount): self
     {
         $this->initialized['downloadCount'] = true;
         $this->downloadCount = $downloadCount;
@@ -315,7 +315,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -326,7 +326,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -337,7 +337,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -348,7 +348,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -359,7 +359,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return ReleaseAssetUploader|null
      */
-    public function getUploader() : ?ReleaseAssetUploader
+    public function getUploader(): ?ReleaseAssetUploader
     {
         return $this->uploader;
     }
@@ -370,7 +370,7 @@ class ReleaseAsset extends \ArrayObject
      *
      * @return self
      */
-    public function setUploader(?ReleaseAssetUploader $uploader) : self
+    public function setUploader(?ReleaseAssetUploader $uploader): self
     {
         $this->initialized['uploader'] = true;
         $this->uploader = $uploader;

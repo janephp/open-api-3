@@ -23,22 +23,22 @@ class PullsMerge extends \Github\Runtime\Client\BaseEndpoint implements \Github\
         $this->body = $requestBody;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'PUT';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{owner}', '{repo}', '{pull_number}'], [$this->owner, $this->repo, $this->pull_number], '/repos/{owner}/{repo}/pulls/{pull_number}/merge');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \Github\Model\ReposOwnerRepoPullsPullNumberMergePutBody) {
             return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
@@ -58,25 +58,25 @@ class PullsMerge extends \Github\Runtime\Client\BaseEndpoint implements \Github\
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'Github\\Model\\PullRequestMergeResult', 'json');
+            return $serializer->deserialize($body, 'Github\Model\PullRequestMergeResult', 'json');
         }
         if (is_null($contentType) === false && (405 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \Github\Exception\PullsMergeMethodNotAllowedException($serializer->deserialize($body, 'Github\\Model\\ReposOwnerRepoPullsPullNumberMergePutResponse405', 'json'), $response);
+            throw new \Github\Exception\PullsMergeMethodNotAllowedException($serializer->deserialize($body, 'Github\Model\ReposOwnerRepoPullsPullNumberMergePutResponse405', 'json'), $response);
         }
         if (is_null($contentType) === false && (409 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \Github\Exception\PullsMergeConflictException($serializer->deserialize($body, 'Github\\Model\\ReposOwnerRepoPullsPullNumberMergePutResponse409', 'json'), $response);
+            throw new \Github\Exception\PullsMergeConflictException($serializer->deserialize($body, 'Github\Model\ReposOwnerRepoPullsPullNumberMergePutResponse409', 'json'), $response);
         }
         if (is_null($contentType) === false && (422 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \Github\Exception\PullsMergeUnprocessableEntityException($serializer->deserialize($body, 'Github\\Model\\ValidationError', 'json'), $response);
+            throw new \Github\Exception\PullsMergeUnprocessableEntityException($serializer->deserialize($body, 'Github\Model\ValidationError', 'json'), $response);
         }
         if (is_null($contentType) === false && (403 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \Github\Exception\PullsMergeForbiddenException($serializer->deserialize($body, 'Github\\Model\\BasicError', 'json'), $response);
+            throw new \Github\Exception\PullsMergeForbiddenException($serializer->deserialize($body, 'Github\Model\BasicError', 'json'), $response);
         }
         if (is_null($contentType) === false && (404 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \Github\Exception\PullsMergeNotFoundException($serializer->deserialize($body, 'Github\\Model\\BasicError', 'json'), $response);
+            throw new \Github\Exception\PullsMergeNotFoundException($serializer->deserialize($body, 'Github\Model\BasicError', 'json'), $response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

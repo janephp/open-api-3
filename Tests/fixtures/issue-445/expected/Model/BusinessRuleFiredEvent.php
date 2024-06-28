@@ -8,7 +8,7 @@ class BusinessRuleFiredEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class BusinessRuleFiredEvent extends ApplicationEvent
      *
      * @return list<BusinessRuleFiredEventDetail>|null
      */
-    public function getDetails() : ?array
+    public function getDetails(): ?array
     {
         return $this->details;
     }
@@ -34,7 +34,7 @@ class BusinessRuleFiredEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setDetails(?array $details) : self
+    public function setDetails(?array $details): self
     {
         $this->initialized['details'] = true;
         $this->details = $details;

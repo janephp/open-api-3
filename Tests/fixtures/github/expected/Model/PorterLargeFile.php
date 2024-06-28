@@ -8,7 +8,7 @@ class PorterLargeFile extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class PorterLargeFile extends \ArrayObject
      *
      * @return string
      */
-    public function getRefName() : string
+    public function getRefName(): string
     {
         return $this->refName;
     }
@@ -52,7 +52,7 @@ class PorterLargeFile extends \ArrayObject
      *
      * @return self
      */
-    public function setRefName(string $refName) : self
+    public function setRefName(string $refName): self
     {
         $this->initialized['refName'] = true;
         $this->refName = $refName;
@@ -63,7 +63,7 @@ class PorterLargeFile extends \ArrayObject
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -74,7 +74,7 @@ class PorterLargeFile extends \ArrayObject
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -85,7 +85,7 @@ class PorterLargeFile extends \ArrayObject
      *
      * @return string
      */
-    public function getOid() : string
+    public function getOid(): string
     {
         return $this->oid;
     }
@@ -96,7 +96,7 @@ class PorterLargeFile extends \ArrayObject
      *
      * @return self
      */
-    public function setOid(string $oid) : self
+    public function setOid(string $oid): self
     {
         $this->initialized['oid'] = true;
         $this->oid = $oid;
@@ -107,7 +107,7 @@ class PorterLargeFile extends \ArrayObject
      *
      * @return int
      */
-    public function getSize() : int
+    public function getSize(): int
     {
         return $this->size;
     }
@@ -118,7 +118,7 @@ class PorterLargeFile extends \ArrayObject
      *
      * @return self
      */
-    public function setSize(int $size) : self
+    public function setSize(int $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;

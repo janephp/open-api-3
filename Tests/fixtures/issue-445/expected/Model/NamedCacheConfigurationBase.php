@@ -8,7 +8,7 @@ class NamedCacheConfigurationBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class NamedCacheConfigurationBase
      *
      * @return string|null
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -54,7 +54,7 @@ class NamedCacheConfigurationBase
      *
      * @return bool
      */
-    public function getCaseSensitive() : bool
+    public function getCaseSensitive(): bool
     {
         return $this->caseSensitive;
     }
@@ -73,7 +73,7 @@ class NamedCacheConfigurationBase
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

@@ -8,7 +8,7 @@ class InteractionLimit extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class InteractionLimit extends \ArrayObject
      *
      * @return string
      */
-    public function getLimit() : string
+    public function getLimit(): string
     {
         return $this->limit;
     }
@@ -46,7 +46,7 @@ class InteractionLimit extends \ArrayObject
      *
      * @return self
      */
-    public function setLimit(string $limit) : self
+    public function setLimit(string $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -57,7 +57,7 @@ class InteractionLimit extends \ArrayObject
      *
      * @return string
      */
-    public function getOrigin() : string
+    public function getOrigin(): string
     {
         return $this->origin;
     }
@@ -68,7 +68,7 @@ class InteractionLimit extends \ArrayObject
      *
      * @return self
      */
-    public function setOrigin(string $origin) : self
+    public function setOrigin(string $origin): self
     {
         $this->initialized['origin'] = true;
         $this->origin = $origin;
@@ -79,7 +79,7 @@ class InteractionLimit extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getExpiresAt() : \DateTime
+    public function getExpiresAt(): \DateTime
     {
         return $this->expiresAt;
     }
@@ -90,7 +90,7 @@ class InteractionLimit extends \ArrayObject
      *
      * @return self
      */
-    public function setExpiresAt(\DateTime $expiresAt) : self
+    public function setExpiresAt(\DateTime $expiresAt): self
     {
         $this->initialized['expiresAt'] = true;
         $this->expiresAt = $expiresAt;

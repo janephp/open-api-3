@@ -8,7 +8,7 @@ class RepositorySubscription extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return bool
      */
-    public function getSubscribed() : bool
+    public function getSubscribed(): bool
     {
         return $this->subscribed;
     }
@@ -64,7 +64,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setSubscribed(bool $subscribed) : self
+    public function setSubscribed(bool $subscribed): self
     {
         $this->initialized['subscribed'] = true;
         $this->subscribed = $subscribed;
@@ -75,7 +75,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return bool
      */
-    public function getIgnored() : bool
+    public function getIgnored(): bool
     {
         return $this->ignored;
     }
@@ -86,7 +86,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setIgnored(bool $ignored) : self
+    public function setIgnored(bool $ignored): self
     {
         $this->initialized['ignored'] = true;
         $this->ignored = $ignored;
@@ -97,7 +97,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return string|null
      */
-    public function getReason() : ?string
+    public function getReason(): ?string
     {
         return $this->reason;
     }
@@ -108,7 +108,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setReason(?string $reason) : self
+    public function setReason(?string $reason): self
     {
         $this->initialized['reason'] = true;
         $this->reason = $reason;
@@ -119,7 +119,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -130,7 +130,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -141,7 +141,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -152,7 +152,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -163,7 +163,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoryUrl() : string
+    public function getRepositoryUrl(): string
     {
         return $this->repositoryUrl;
     }
@@ -174,7 +174,7 @@ class RepositorySubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryUrl(string $repositoryUrl) : self
+    public function setRepositoryUrl(string $repositoryUrl): self
     {
         $this->initialized['repositoryUrl'] = true;
         $this->repositoryUrl = $repositoryUrl;

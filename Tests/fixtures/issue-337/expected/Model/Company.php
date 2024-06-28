@@ -8,7 +8,7 @@ class Company extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class Company extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -64,7 +64,7 @@ class Company extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -75,7 +75,7 @@ class Company extends \ArrayObject
      *
      * @return string
      */
-    public function getSafeNumber() : string
+    public function getSafeNumber(): string
     {
         return $this->safeNumber;
     }
@@ -86,7 +86,7 @@ class Company extends \ArrayObject
      *
      * @return self
      */
-    public function setSafeNumber(string $safeNumber) : self
+    public function setSafeNumber(string $safeNumber): self
     {
         $this->initialized['safeNumber'] = true;
         $this->safeNumber = $safeNumber;
@@ -97,7 +97,7 @@ class Company extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -108,7 +108,7 @@ class Company extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -119,7 +119,7 @@ class Company extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -130,7 +130,7 @@ class Company extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -141,7 +141,7 @@ class Company extends \ArrayObject
      *
      * @return float
      */
-    public function getPortfolioId() : float
+    public function getPortfolioId(): float
     {
         return $this->portfolioId;
     }
@@ -152,7 +152,7 @@ class Company extends \ArrayObject
      *
      * @return self
      */
-    public function setPortfolioId(float $portfolioId) : self
+    public function setPortfolioId(float $portfolioId): self
     {
         $this->initialized['portfolioId'] = true;
         $this->portfolioId = $portfolioId;
@@ -163,7 +163,7 @@ class Company extends \ArrayObject
      *
      * @return string
      */
-    public function getPortfolioName() : string
+    public function getPortfolioName(): string
     {
         return $this->portfolioName;
     }
@@ -174,7 +174,7 @@ class Company extends \ArrayObject
      *
      * @return self
      */
-    public function setPortfolioName(string $portfolioName) : self
+    public function setPortfolioName(string $portfolioName): self
     {
         $this->initialized['portfolioName'] = true;
         $this->portfolioName = $portfolioName;

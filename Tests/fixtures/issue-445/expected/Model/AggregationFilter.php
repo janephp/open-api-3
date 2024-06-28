@@ -8,7 +8,7 @@ class AggregationFilter extends FilterBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AggregationFilter extends FilterBase
      *
      * @return string|null
      */
-    public function getAggregationName() : ?string
+    public function getAggregationName(): ?string
     {
         return $this->aggregationName;
     }
@@ -46,7 +46,7 @@ class AggregationFilter extends FilterBase
      *
      * @return self
      */
-    public function setAggregationName(?string $aggregationName) : self
+    public function setAggregationName(?string $aggregationName): self
     {
         $this->initialized['aggregationName'] = true;
         $this->aggregationName = $aggregationName;
@@ -68,7 +68,7 @@ class AggregationFilter extends FilterBase
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -79,7 +79,7 @@ class AggregationFilter extends FilterBase
      *
      * @return string|null
      */
-    public function getTemporaryAggregatorRequestId() : ?string
+    public function getTemporaryAggregatorRequestId(): ?string
     {
         return $this->temporaryAggregatorRequestId;
     }
@@ -90,7 +90,7 @@ class AggregationFilter extends FilterBase
      *
      * @return self
      */
-    public function setTemporaryAggregatorRequestId(?string $temporaryAggregatorRequestId) : self
+    public function setTemporaryAggregatorRequestId(?string $temporaryAggregatorRequestId): self
     {
         $this->initialized['temporaryAggregatorRequestId'] = true;
         $this->temporaryAggregatorRequestId = $temporaryAggregatorRequestId;

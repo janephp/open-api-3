@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAdditionalInfoItem>
      */
-    public function getAdditionalInfo() : array
+    public function getAdditionalInfo(): array
     {
         return $this->additionalInfo;
     }
@@ -88,7 +88,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setAdditionalInfo(array $additionalInfo) : self
+    public function setAdditionalInfo(array $additionalInfo): self
     {
         $this->initialized['additionalInfo'] = true;
         $this->additionalInfo = $additionalInfo;
@@ -99,7 +99,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAddressesItem>
      */
-    public function getAddresses() : array
+    public function getAddresses(): array
     {
         return $this->addresses;
     }
@@ -110,7 +110,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setAddresses(array $addresses) : self
+    public function setAddresses(array $addresses): self
     {
         $this->initialized['addresses'] = true;
         $this->addresses = $addresses;
@@ -121,7 +121,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsAkAsItem>
      */
-    public function getAkAs() : array
+    public function getAkAs(): array
     {
         return $this->akAs;
     }
@@ -132,7 +132,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setAkAs(array $akAs) : self
+    public function setAkAs(array $akAs): self
     {
         $this->initialized['akAs'] = true;
         $this->akAs = $akAs;
@@ -143,7 +143,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return string
      */
-    public function getComments() : string
+    public function getComments(): string
     {
         return $this->comments;
     }
@@ -154,7 +154,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setComments(string $comments) : self
+    public function setComments(string $comments): self
     {
         $this->initialized['comments'] = true;
         $this->comments = $comments;
@@ -165,7 +165,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return string
      */
-    public function getDateListed() : string
+    public function getDateListed(): string
     {
         return $this->dateListed;
     }
@@ -176,7 +176,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setDateListed(string $dateListed) : self
+    public function setDateListed(string $dateListed): self
     {
         $this->initialized['dateListed'] = true;
         $this->dateListed = $dateListed;
@@ -187,7 +187,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return string
      */
-    public function getEntityType() : string
+    public function getEntityType(): string
     {
         return $this->entityType;
     }
@@ -198,7 +198,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setEntityType(string $entityType) : self
+    public function setEntityType(string $entityType): self
     {
         $this->initialized['entityType'] = true;
         $this->entityType = $entityType;
@@ -209,7 +209,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsIDsItem>
      */
-    public function getIDs() : array
+    public function getIDs(): array
     {
         return $this->iDs;
     }
@@ -220,7 +220,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setIDs(array $iDs) : self
+    public function setIDs(array $iDs): self
     {
         $this->initialized['iDs'] = true;
         $this->iDs = $iDs;
@@ -231,7 +231,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return string
      */
-    public function getListReferenceNumber() : string
+    public function getListReferenceNumber(): string
     {
         return $this->listReferenceNumber;
     }
@@ -242,7 +242,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setListReferenceNumber(string $listReferenceNumber) : self
+    public function setListReferenceNumber(string $listReferenceNumber): self
     {
         $this->initialized['listReferenceNumber'] = true;
         $this->listReferenceNumber = $listReferenceNumber;
@@ -253,7 +253,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsName
      */
-    public function getName() : ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsName
+    public function getName(): ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsName
     {
         return $this->name;
     }
@@ -264,7 +264,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setName(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsName $name) : self
+    public function setName(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetailsName $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -275,7 +275,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return string
      */
-    public function getReasonListed() : string
+    public function getReasonListed(): string
     {
         return $this->reasonListed;
     }
@@ -286,7 +286,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setReasonListed(string $reasonListed) : self
+    public function setReasonListed(string $reasonListed): self
     {
         $this->initialized['reasonListed'] = true;
         $this->reasonListed = $reasonListed;

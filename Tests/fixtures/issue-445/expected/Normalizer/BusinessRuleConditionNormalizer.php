@@ -20,81 +20,81 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\BusinessRuleCondition::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\BusinessRuleCondition::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (array_key_exists('kind', $data) and 'BooleanCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\BooleanCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\BooleanCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'AndCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\AndCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\AndCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OrCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OrCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OrCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'LayerAssignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\LayerAssignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\LayerAssignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'LayerUnassignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\LayerUnassignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\LayerUnassignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentPermissionSetAssignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentPermissionSetAssignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentPermissionSetAssignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentPermissionSetUnassignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentPermissionSetUnassignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentPermissionSetUnassignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldValueChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldValueChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldValueChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'MatchRegexCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\MatchRegexCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\MatchRegexCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TagboxItemAssignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TagboxItemAssignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TagboxItemAssignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TagboxItemUnassignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TagboxItemUnassignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TagboxItemUnassignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentSchemaCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentSchemaCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentSchemaCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NumberCompareCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NumberCompareCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NumberCompareCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentRelationItemAssignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentRelationItemAssignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentRelationItemAssignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentRelationItemUnassignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentRelationItemUnassignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentRelationItemUnassignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'GeoPointWithinPolygonCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\GeoPointWithinPolygonCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\GeoPointWithinPolygonCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentPermissionSetsChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentPermissionSetsChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentPermissionSetsChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentRelationItemsChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentRelationItemsChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentRelationItemsChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'LayersChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\LayersChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\LayersChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TagboxItemsChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TagboxItemsChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TagboxItemsChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldEmptyCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldEmptyCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldEmptyCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NotCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NotCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NotCondition', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -117,7 +117,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if (null !== $object->getKind() and 'BooleanCondition' === $object->getKind()) {
@@ -192,7 +192,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\BusinessRuleCondition::class => false];
         }
@@ -204,11 +204,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\BusinessRuleCondition::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\BusinessRuleCondition::class;
         }
@@ -218,70 +218,70 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function denormalize($data, $type, $format = null, array $context = [])
         {
             if (array_key_exists('kind', $data) and 'BooleanCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\BooleanCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\BooleanCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'AndCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\AndCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\AndCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OrCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OrCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OrCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'LayerAssignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\LayerAssignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\LayerAssignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'LayerUnassignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\LayerUnassignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\LayerUnassignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentPermissionSetAssignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentPermissionSetAssignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentPermissionSetAssignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentPermissionSetUnassignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentPermissionSetUnassignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentPermissionSetUnassignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldValueChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldValueChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldValueChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'MatchRegexCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\MatchRegexCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\MatchRegexCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TagboxItemAssignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TagboxItemAssignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TagboxItemAssignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TagboxItemUnassignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TagboxItemUnassignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TagboxItemUnassignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentSchemaCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentSchemaCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentSchemaCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NumberCompareCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NumberCompareCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NumberCompareCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentRelationItemAssignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentRelationItemAssignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentRelationItemAssignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentRelationItemUnassignedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentRelationItemUnassignedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentRelationItemUnassignedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'GeoPointWithinPolygonCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\GeoPointWithinPolygonCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\GeoPointWithinPolygonCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentPermissionSetsChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentPermissionSetsChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentPermissionSetsChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ContentRelationItemsChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ContentRelationItemsChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ContentRelationItemsChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'LayersChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\LayersChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\LayersChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TagboxItemsChangedCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TagboxItemsChangedCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TagboxItemsChangedCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldEmptyCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldEmptyCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldEmptyCondition', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NotCondition' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NotCondition', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NotCondition', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -382,7 +382,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\BusinessRuleCondition::class => false];
         }

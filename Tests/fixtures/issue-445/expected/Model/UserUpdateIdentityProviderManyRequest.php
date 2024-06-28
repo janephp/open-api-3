@@ -8,7 +8,7 @@ class UserUpdateIdentityProviderManyRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class UserUpdateIdentityProviderManyRequest extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getUserIds() : array
+    public function getUserIds(): array
     {
         return $this->userIds;
     }
@@ -40,7 +40,7 @@ class UserUpdateIdentityProviderManyRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUserIds(array $userIds) : self
+    public function setUserIds(array $userIds): self
     {
         $this->initialized['userIds'] = true;
         $this->userIds = $userIds;
@@ -51,7 +51,7 @@ class UserUpdateIdentityProviderManyRequest extends \ArrayObject
      *
      * @return string
      */
-    public function getIdentityProviderId() : string
+    public function getIdentityProviderId(): string
     {
         return $this->identityProviderId;
     }
@@ -62,7 +62,7 @@ class UserUpdateIdentityProviderManyRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setIdentityProviderId(string $identityProviderId) : self
+    public function setIdentityProviderId(string $identityProviderId): self
     {
         $this->initialized['identityProviderId'] = true;
         $this->identityProviderId = $identityProviderId;

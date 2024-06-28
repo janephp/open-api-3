@@ -8,7 +8,7 @@ class SchemaUpdateResult
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -34,7 +34,7 @@ class SchemaUpdateResult
      *
      * @return self
      */
-    public function setSchema($schema) : self
+    public function setSchema($schema): self
     {
         $this->initialized['schema'] = true;
         $this->schema = $schema;

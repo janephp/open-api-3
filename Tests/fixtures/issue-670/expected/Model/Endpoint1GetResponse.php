@@ -8,7 +8,7 @@ class Endpoint1GetResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class Endpoint1GetResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getField1() : string
+    public function getField1(): string
     {
         return $this->field1;
     }
@@ -34,7 +34,7 @@ class Endpoint1GetResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setField1(string $field1) : self
+    public function setField1(string $field1): self
     {
         $this->initialized['field1'] = true;
         $this->field1 = $field1;

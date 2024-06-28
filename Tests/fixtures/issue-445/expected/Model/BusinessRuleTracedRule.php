@@ -8,7 +8,7 @@ class BusinessRuleTracedRule
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class BusinessRuleTracedRule
      *
      * @return self
      */
-    public function setConfiguration($configuration) : self
+    public function setConfiguration($configuration): self
     {
         $this->initialized['configuration'] = true;
         $this->configuration = $configuration;
@@ -51,7 +51,7 @@ class BusinessRuleTracedRule
      *
      * @return list<BusinessRuleTracedEvaluation>|null
      */
-    public function getEvaluations() : ?array
+    public function getEvaluations(): ?array
     {
         return $this->evaluations;
     }
@@ -62,7 +62,7 @@ class BusinessRuleTracedRule
      *
      * @return self
      */
-    public function setEvaluations(?array $evaluations) : self
+    public function setEvaluations(?array $evaluations): self
     {
         $this->initialized['evaluations'] = true;
         $this->evaluations = $evaluations;

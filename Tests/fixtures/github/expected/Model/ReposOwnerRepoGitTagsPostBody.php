@@ -8,7 +8,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTag() : string
+    public function getTag(): string
     {
         return $this->tag;
     }
@@ -58,7 +58,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTag(string $tag) : self
+    public function setTag(string $tag): self
     {
         $this->initialized['tag'] = true;
         $this->tag = $tag;
@@ -69,7 +69,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -80,7 +80,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -91,7 +91,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getObject() : string
+    public function getObject(): string
     {
         return $this->object;
     }
@@ -102,7 +102,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setObject(string $object) : self
+    public function setObject(string $object): self
     {
         $this->initialized['object'] = true;
         $this->object = $object;
@@ -113,7 +113,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -124,7 +124,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -135,7 +135,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return ReposOwnerRepoGitTagsPostBodyTagger
      */
-    public function getTagger() : ReposOwnerRepoGitTagsPostBodyTagger
+    public function getTagger(): ReposOwnerRepoGitTagsPostBodyTagger
     {
         return $this->tagger;
     }
@@ -146,7 +146,7 @@ class ReposOwnerRepoGitTagsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTagger(ReposOwnerRepoGitTagsPostBodyTagger $tagger) : self
+    public function setTagger(ReposOwnerRepoGitTagsPostBodyTagger $tagger): self
     {
         $this->initialized['tagger'] = true;
         $this->tagger = $tagger;

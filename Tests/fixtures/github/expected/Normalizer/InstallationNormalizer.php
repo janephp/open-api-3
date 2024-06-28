@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\Installation::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\Installation::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -101,11 +101,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['events']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('single_file_name', $data) && $data['single_file_name'] !== null) {
@@ -127,7 +127,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setSuspendedBy(null);
             }
             if (\array_key_exists('suspended_at', $data) && $data['suspended_at'] !== null) {
-                $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['suspended_at']));
+                $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['suspended_at']));
                 unset($data['suspended_at']);
             }
             elseif (\array_key_exists('suspended_at', $data) && $data['suspended_at'] === null) {
@@ -147,7 +147,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['id'] = $object->getId();
@@ -171,15 +171,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $values[] = $value_1;
             }
             $data['events'] = $values;
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['single_file_name'] = $object->getSingleFileName();
             $data['app_slug'] = $object->getAppSlug();
             if ($object->isInitialized('suspendedBy') && null !== $object->getSuspendedBy()) {
                 $data['suspended_by'] = $this->normalizer->normalize($object->getSuspendedBy(), 'json', $context);
             }
             if ($object->isInitialized('suspendedAt') && null !== $object->getSuspendedAt()) {
-                $data['suspended_at'] = $object->getSuspendedAt()->format('Y-m-d\\TH:i:sP');
+                $data['suspended_at'] = $object->getSuspendedAt()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('contactEmail') && null !== $object->getContactEmail()) {
                 $data['contact_email'] = $object->getContactEmail();
@@ -194,7 +194,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\Installation::class => false];
         }
@@ -206,11 +206,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\Installation::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\Installation::class;
         }
@@ -290,11 +290,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['events']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
                 unset($data['created_at']);
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
                 unset($data['updated_at']);
             }
             if (\array_key_exists('single_file_name', $data) && $data['single_file_name'] !== null) {
@@ -316,7 +316,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setSuspendedBy(null);
             }
             if (\array_key_exists('suspended_at', $data) && $data['suspended_at'] !== null) {
-                $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['suspended_at']));
+                $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['suspended_at']));
                 unset($data['suspended_at']);
             }
             elseif (\array_key_exists('suspended_at', $data) && $data['suspended_at'] === null) {
@@ -363,15 +363,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $values[] = $value_1;
             }
             $data['events'] = $values;
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             $data['single_file_name'] = $object->getSingleFileName();
             $data['app_slug'] = $object->getAppSlug();
             if ($object->isInitialized('suspendedBy') && null !== $object->getSuspendedBy()) {
                 $data['suspended_by'] = $this->normalizer->normalize($object->getSuspendedBy(), 'json', $context);
             }
             if ($object->isInitialized('suspendedAt') && null !== $object->getSuspendedAt()) {
-                $data['suspended_at'] = $object->getSuspendedAt()->format('Y-m-d\\TH:i:sP');
+                $data['suspended_at'] = $object->getSuspendedAt()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('contactEmail') && null !== $object->getContactEmail()) {
                 $data['contact_email'] = $object->getContactEmail();
@@ -386,7 +386,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\Installation::class => false];
         }

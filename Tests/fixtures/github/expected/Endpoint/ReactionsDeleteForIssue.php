@@ -26,15 +26,15 @@ class ReactionsDeleteForIssue extends \Github\Runtime\Client\BaseEndpoint implem
         $this->reaction_id = $reactionId;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'DELETE';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{owner}', '{repo}', '{issue_number}', '{reaction_id}'], [$this->owner, $this->repo, $this->issue_number, $this->reaction_id], '/repos/{owner}/{repo}/issues/{issue_number}/reactions/{reaction_id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
@@ -52,7 +52,7 @@ class ReactionsDeleteForIssue extends \Github\Runtime\Client\BaseEndpoint implem
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

@@ -8,7 +8,7 @@ class FieldExistsResponse
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -38,7 +38,7 @@ class FieldExistsResponse
      *
      * @return bool
      */
-    public function getExists() : bool
+    public function getExists(): bool
     {
         return $this->exists;
     }
@@ -49,7 +49,7 @@ class FieldExistsResponse
      *
      * @return self
      */
-    public function setExists(bool $exists) : self
+    public function setExists(bool $exists): self
     {
         $this->initialized['exists'] = true;
         $this->exists = $exists;
@@ -61,7 +61,7 @@ class FieldExistsResponse
     *
     * @return bool
     */
-    public function getPreviouslyUsed() : bool
+    public function getPreviouslyUsed(): bool
     {
         return $this->previouslyUsed;
     }
@@ -73,7 +73,7 @@ class FieldExistsResponse
     *
     * @return self
     */
-    public function setPreviouslyUsed(bool $previouslyUsed) : self
+    public function setPreviouslyUsed(bool $previouslyUsed): self
     {
         $this->initialized['previouslyUsed'] = true;
         $this->previouslyUsed = $previouslyUsed;
@@ -86,7 +86,7 @@ class FieldExistsResponse
     *
     * @return string|null
     */
-    public function getSchemaId() : ?string
+    public function getSchemaId(): ?string
     {
         return $this->schemaId;
     }
@@ -99,7 +99,7 @@ class FieldExistsResponse
     *
     * @return self
     */
-    public function setSchemaId(?string $schemaId) : self
+    public function setSchemaId(?string $schemaId): self
     {
         $this->initialized['schemaId'] = true;
         $this->schemaId = $schemaId;

@@ -8,7 +8,7 @@ class LabelSearchResultItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -82,7 +82,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -93,7 +93,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -104,7 +104,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -115,7 +115,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -126,7 +126,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -137,7 +137,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -148,7 +148,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -159,7 +159,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getColor() : string
+    public function getColor(): string
     {
         return $this->color;
     }
@@ -170,7 +170,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setColor(string $color) : self
+    public function setColor(string $color): self
     {
         $this->initialized['color'] = true;
         $this->color = $color;
@@ -181,7 +181,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getDefault() : bool
+    public function getDefault(): bool
     {
         return $this->default;
     }
@@ -192,7 +192,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDefault(bool $default) : self
+    public function setDefault(bool $default): self
     {
         $this->initialized['default'] = true;
         $this->default = $default;
@@ -203,7 +203,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -214,7 +214,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -225,7 +225,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return int
      */
-    public function getScore() : int
+    public function getScore(): int
     {
         return $this->score;
     }
@@ -236,7 +236,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setScore(int $score) : self
+    public function setScore(int $score): self
     {
         $this->initialized['score'] = true;
         $this->score = $score;
@@ -247,7 +247,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return list<SearchResultTextMatchesItem>
      */
-    public function getTextMatches() : array
+    public function getTextMatches(): array
     {
         return $this->textMatches;
     }
@@ -258,7 +258,7 @@ class LabelSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTextMatches(array $textMatches) : self
+    public function setTextMatches(array $textMatches): self
     {
         $this->initialized['textMatches'] = true;
         $this->textMatches = $textMatches;

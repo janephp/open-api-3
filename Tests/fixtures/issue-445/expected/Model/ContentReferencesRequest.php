@@ -8,7 +8,7 @@ class ContentReferencesRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class ContentReferencesRequest
      *
      * @return self
      */
-    public function setReferences($references) : self
+    public function setReferences($references): self
     {
         $this->initialized['references'] = true;
         $this->references = $references;
@@ -62,7 +62,7 @@ class ContentReferencesRequest
      *
      * @return self
      */
-    public function setShares($shares) : self
+    public function setShares($shares): self
     {
         $this->initialized['shares'] = true;
         $this->shares = $shares;

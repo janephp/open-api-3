@@ -8,7 +8,7 @@ class CdnPurgeJobBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class CdnPurgeJobBase
      *
      * @return bool
      */
-    public function getSuccess() : bool
+    public function getSuccess(): bool
     {
         return $this->success;
     }
@@ -54,7 +54,7 @@ class CdnPurgeJobBase
      *
      * @return int
      */
-    public function getRetriesLeft() : int
+    public function getRetriesLeft(): int
     {
         return $this->retriesLeft;
     }
@@ -73,7 +73,7 @@ class CdnPurgeJobBase
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

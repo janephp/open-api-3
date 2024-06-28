@@ -8,7 +8,7 @@ class IssueSearchResultItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -215,7 +215,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -226,7 +226,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -237,7 +237,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoryUrl() : string
+    public function getRepositoryUrl(): string
     {
         return $this->repositoryUrl;
     }
@@ -248,7 +248,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryUrl(string $repositoryUrl) : self
+    public function setRepositoryUrl(string $repositoryUrl): self
     {
         $this->initialized['repositoryUrl'] = true;
         $this->repositoryUrl = $repositoryUrl;
@@ -259,7 +259,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelsUrl() : string
+    public function getLabelsUrl(): string
     {
         return $this->labelsUrl;
     }
@@ -270,7 +270,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelsUrl(string $labelsUrl) : self
+    public function setLabelsUrl(string $labelsUrl): self
     {
         $this->initialized['labelsUrl'] = true;
         $this->labelsUrl = $labelsUrl;
@@ -281,7 +281,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCommentsUrl() : string
+    public function getCommentsUrl(): string
     {
         return $this->commentsUrl;
     }
@@ -292,7 +292,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCommentsUrl(string $commentsUrl) : self
+    public function setCommentsUrl(string $commentsUrl): self
     {
         $this->initialized['commentsUrl'] = true;
         $this->commentsUrl = $commentsUrl;
@@ -303,7 +303,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getEventsUrl() : string
+    public function getEventsUrl(): string
     {
         return $this->eventsUrl;
     }
@@ -314,7 +314,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setEventsUrl(string $eventsUrl) : self
+    public function setEventsUrl(string $eventsUrl): self
     {
         $this->initialized['eventsUrl'] = true;
         $this->eventsUrl = $eventsUrl;
@@ -325,7 +325,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -336,7 +336,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -347,7 +347,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -358,7 +358,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -369,7 +369,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -380,7 +380,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -391,7 +391,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -402,7 +402,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -413,7 +413,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -424,7 +424,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -435,7 +435,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getLocked() : bool
+    public function getLocked(): bool
     {
         return $this->locked;
     }
@@ -446,7 +446,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLocked(bool $locked) : self
+    public function setLocked(bool $locked): self
     {
         $this->initialized['locked'] = true;
         $this->locked = $locked;
@@ -457,7 +457,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getActiveLockReason() : ?string
+    public function getActiveLockReason(): ?string
     {
         return $this->activeLockReason;
     }
@@ -468,7 +468,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setActiveLockReason(?string $activeLockReason) : self
+    public function setActiveLockReason(?string $activeLockReason): self
     {
         $this->initialized['activeLockReason'] = true;
         $this->activeLockReason = $activeLockReason;
@@ -479,7 +479,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return list<SimpleUser>|null
      */
-    public function getAssignees() : ?array
+    public function getAssignees(): ?array
     {
         return $this->assignees;
     }
@@ -490,7 +490,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAssignees(?array $assignees) : self
+    public function setAssignees(?array $assignees): self
     {
         $this->initialized['assignees'] = true;
         $this->assignees = $assignees;
@@ -501,7 +501,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return IssueSearchResultItemUser|null
      */
-    public function getUser() : ?IssueSearchResultItemUser
+    public function getUser(): ?IssueSearchResultItemUser
     {
         return $this->user;
     }
@@ -512,7 +512,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?IssueSearchResultItemUser $user) : self
+    public function setUser(?IssueSearchResultItemUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -523,7 +523,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return list<IssueSearchResultItemLabelsItem>
      */
-    public function getLabels() : array
+    public function getLabels(): array
     {
         return $this->labels;
     }
@@ -534,7 +534,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLabels(array $labels) : self
+    public function setLabels(array $labels): self
     {
         $this->initialized['labels'] = true;
         $this->labels = $labels;
@@ -545,7 +545,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -556,7 +556,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -567,7 +567,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return IssueSearchResultItemAssignee|null
      */
-    public function getAssignee() : ?IssueSearchResultItemAssignee
+    public function getAssignee(): ?IssueSearchResultItemAssignee
     {
         return $this->assignee;
     }
@@ -578,7 +578,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAssignee(?IssueSearchResultItemAssignee $assignee) : self
+    public function setAssignee(?IssueSearchResultItemAssignee $assignee): self
     {
         $this->initialized['assignee'] = true;
         $this->assignee = $assignee;
@@ -589,7 +589,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return IssueSearchResultItemMilestone|null
      */
-    public function getMilestone() : ?IssueSearchResultItemMilestone
+    public function getMilestone(): ?IssueSearchResultItemMilestone
     {
         return $this->milestone;
     }
@@ -600,7 +600,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setMilestone(?IssueSearchResultItemMilestone $milestone) : self
+    public function setMilestone(?IssueSearchResultItemMilestone $milestone): self
     {
         $this->initialized['milestone'] = true;
         $this->milestone = $milestone;
@@ -611,7 +611,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return int
      */
-    public function getComments() : int
+    public function getComments(): int
     {
         return $this->comments;
     }
@@ -622,7 +622,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setComments(int $comments) : self
+    public function setComments(int $comments): self
     {
         $this->initialized['comments'] = true;
         $this->comments = $comments;
@@ -633,7 +633,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -644,7 +644,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -655,7 +655,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -666,7 +666,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -677,7 +677,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getClosedAt() : ?\DateTime
+    public function getClosedAt(): ?\DateTime
     {
         return $this->closedAt;
     }
@@ -688,7 +688,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setClosedAt(?\DateTime $closedAt) : self
+    public function setClosedAt(?\DateTime $closedAt): self
     {
         $this->initialized['closedAt'] = true;
         $this->closedAt = $closedAt;
@@ -699,7 +699,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return list<SearchResultTextMatchesItem>
      */
-    public function getTextMatches() : array
+    public function getTextMatches(): array
     {
         return $this->textMatches;
     }
@@ -710,7 +710,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTextMatches(array $textMatches) : self
+    public function setTextMatches(array $textMatches): self
     {
         $this->initialized['textMatches'] = true;
         $this->textMatches = $textMatches;
@@ -721,7 +721,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return IssueSearchResultItemPullRequest
      */
-    public function getPullRequest() : IssueSearchResultItemPullRequest
+    public function getPullRequest(): IssueSearchResultItemPullRequest
     {
         return $this->pullRequest;
     }
@@ -732,7 +732,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequest(IssueSearchResultItemPullRequest $pullRequest) : self
+    public function setPullRequest(IssueSearchResultItemPullRequest $pullRequest): self
     {
         $this->initialized['pullRequest'] = true;
         $this->pullRequest = $pullRequest;
@@ -743,7 +743,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -754,7 +754,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -765,7 +765,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return int
      */
-    public function getScore() : int
+    public function getScore(): int
     {
         return $this->score;
     }
@@ -776,7 +776,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setScore(int $score) : self
+    public function setScore(int $score): self
     {
         $this->initialized['score'] = true;
         $this->score = $score;
@@ -787,7 +787,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorAssociation() : string
+    public function getAuthorAssociation(): string
     {
         return $this->authorAssociation;
     }
@@ -798,7 +798,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorAssociation(string $authorAssociation) : self
+    public function setAuthorAssociation(string $authorAssociation): self
     {
         $this->initialized['authorAssociation'] = true;
         $this->authorAssociation = $authorAssociation;
@@ -809,7 +809,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getDraft() : bool
+    public function getDraft(): bool
     {
         return $this->draft;
     }
@@ -820,7 +820,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDraft(bool $draft) : self
+    public function setDraft(bool $draft): self
     {
         $this->initialized['draft'] = true;
         $this->draft = $draft;
@@ -831,7 +831,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return Repository
      */
-    public function getRepository() : Repository
+    public function getRepository(): Repository
     {
         return $this->repository;
     }
@@ -842,7 +842,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRepository(Repository $repository) : self
+    public function setRepository(Repository $repository): self
     {
         $this->initialized['repository'] = true;
         $this->repository = $repository;
@@ -853,7 +853,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getBodyHtml() : string
+    public function getBodyHtml(): string
     {
         return $this->bodyHtml;
     }
@@ -864,7 +864,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setBodyHtml(string $bodyHtml) : self
+    public function setBodyHtml(string $bodyHtml): self
     {
         $this->initialized['bodyHtml'] = true;
         $this->bodyHtml = $bodyHtml;
@@ -875,7 +875,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getBodyText() : string
+    public function getBodyText(): string
     {
         return $this->bodyText;
     }
@@ -886,7 +886,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setBodyText(string $bodyText) : self
+    public function setBodyText(string $bodyText): self
     {
         $this->initialized['bodyText'] = true;
         $this->bodyText = $bodyText;
@@ -897,7 +897,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getTimelineUrl() : string
+    public function getTimelineUrl(): string
     {
         return $this->timelineUrl;
     }
@@ -908,7 +908,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTimelineUrl(string $timelineUrl) : self
+    public function setTimelineUrl(string $timelineUrl): self
     {
         $this->initialized['timelineUrl'] = true;
         $this->timelineUrl = $timelineUrl;
@@ -919,7 +919,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return IssueSearchResultItemPerformedViaGithubApp|null
      */
-    public function getPerformedViaGithubApp() : ?IssueSearchResultItemPerformedViaGithubApp
+    public function getPerformedViaGithubApp(): ?IssueSearchResultItemPerformedViaGithubApp
     {
         return $this->performedViaGithubApp;
     }
@@ -930,7 +930,7 @@ class IssueSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPerformedViaGithubApp(?IssueSearchResultItemPerformedViaGithubApp $performedViaGithubApp) : self
+    public function setPerformedViaGithubApp(?IssueSearchResultItemPerformedViaGithubApp $performedViaGithubApp): self
     {
         $this->initialized['performedViaGithubApp'] = true;
         $this->performedViaGithubApp = $performedViaGithubApp;

@@ -8,7 +8,7 @@ class ApplicationGrantApp extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ApplicationGrantApp extends \ArrayObject
      *
      * @return string
      */
-    public function getClientId() : string
+    public function getClientId(): string
     {
         return $this->clientId;
     }
@@ -46,7 +46,7 @@ class ApplicationGrantApp extends \ArrayObject
      *
      * @return self
      */
-    public function setClientId(string $clientId) : self
+    public function setClientId(string $clientId): self
     {
         $this->initialized['clientId'] = true;
         $this->clientId = $clientId;
@@ -57,7 +57,7 @@ class ApplicationGrantApp extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -68,7 +68,7 @@ class ApplicationGrantApp extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -79,7 +79,7 @@ class ApplicationGrantApp extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -90,7 +90,7 @@ class ApplicationGrantApp extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;

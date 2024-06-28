@@ -8,7 +8,7 @@ class IdpClaimToUserAttributeMapping
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class IdpClaimToUserAttributeMapping
      *
      * @return string|null
      */
-    public function getClaimType() : ?string
+    public function getClaimType(): ?string
     {
         return $this->claimType;
     }
@@ -40,7 +40,7 @@ class IdpClaimToUserAttributeMapping
      *
      * @return self
      */
-    public function setClaimType(?string $claimType) : self
+    public function setClaimType(?string $claimType): self
     {
         $this->initialized['claimType'] = true;
         $this->claimType = $claimType;
@@ -51,7 +51,7 @@ class IdpClaimToUserAttributeMapping
      *
      * @return string|null
      */
-    public function getUserAttributePath() : ?string
+    public function getUserAttributePath(): ?string
     {
         return $this->userAttributePath;
     }
@@ -62,7 +62,7 @@ class IdpClaimToUserAttributeMapping
      *
      * @return self
      */
-    public function setUserAttributePath(?string $userAttributePath) : self
+    public function setUserAttributePath(?string $userAttributePath): self
     {
         $this->initialized['userAttributePath'] = true;
         $this->userAttributePath = $userAttributePath;

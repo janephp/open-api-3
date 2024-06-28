@@ -8,7 +8,7 @@ class ContributorActivity extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ContributorActivity extends \ArrayObject
      *
      * @return ContributorActivityAuthor|null
      */
-    public function getAuthor() : ?ContributorActivityAuthor
+    public function getAuthor(): ?ContributorActivityAuthor
     {
         return $this->author;
     }
@@ -46,7 +46,7 @@ class ContributorActivity extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(?ContributorActivityAuthor $author) : self
+    public function setAuthor(?ContributorActivityAuthor $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -57,7 +57,7 @@ class ContributorActivity extends \ArrayObject
      *
      * @return int
      */
-    public function getTotal() : int
+    public function getTotal(): int
     {
         return $this->total;
     }
@@ -68,7 +68,7 @@ class ContributorActivity extends \ArrayObject
      *
      * @return self
      */
-    public function setTotal(int $total) : self
+    public function setTotal(int $total): self
     {
         $this->initialized['total'] = true;
         $this->total = $total;
@@ -79,7 +79,7 @@ class ContributorActivity extends \ArrayObject
      *
      * @return list<ContributorActivityWeeksItem>
      */
-    public function getWeeks() : array
+    public function getWeeks(): array
     {
         return $this->weeks;
     }
@@ -90,7 +90,7 @@ class ContributorActivity extends \ArrayObject
      *
      * @return self
      */
-    public function setWeeks(array $weeks) : self
+    public function setWeeks(array $weeks): self
     {
         $this->initialized['weeks'] = true;
         $this->weeks = $weeks;

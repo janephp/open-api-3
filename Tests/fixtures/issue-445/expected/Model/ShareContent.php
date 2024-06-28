@@ -8,7 +8,7 @@ class ShareContent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShareContent
      *
      * @return string
      */
-    public function getContentId() : string
+    public function getContentId(): string
     {
         return $this->contentId;
     }
@@ -40,7 +40,7 @@ class ShareContent
      *
      * @return self
      */
-    public function setContentId(string $contentId) : self
+    public function setContentId(string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;
@@ -51,7 +51,7 @@ class ShareContent
      *
      * @return list<string>|null
      */
-    public function getOutputFormatIds() : ?array
+    public function getOutputFormatIds(): ?array
     {
         return $this->outputFormatIds;
     }
@@ -62,7 +62,7 @@ class ShareContent
      *
      * @return self
      */
-    public function setOutputFormatIds(?array $outputFormatIds) : self
+    public function setOutputFormatIds(?array $outputFormatIds): self
     {
         $this->initialized['outputFormatIds'] = true;
         $this->outputFormatIds = $outputFormatIds;

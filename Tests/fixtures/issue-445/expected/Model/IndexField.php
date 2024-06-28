@@ -8,7 +8,7 @@ class IndexField
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -72,7 +72,7 @@ class IndexField
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -83,7 +83,7 @@ class IndexField
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -94,7 +94,7 @@ class IndexField
      *
      * @return string|null
      */
-    public function getFieldId() : ?string
+    public function getFieldId(): ?string
     {
         return $this->fieldId;
     }
@@ -105,7 +105,7 @@ class IndexField
      *
      * @return self
      */
-    public function setFieldId(?string $fieldId) : self
+    public function setFieldId(?string $fieldId): self
     {
         $this->initialized['fieldId'] = true;
         $this->fieldId = $fieldId;
@@ -116,7 +116,7 @@ class IndexField
      *
      * @return string|null
      */
-    public function getType() : ?string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -127,7 +127,7 @@ class IndexField
      *
      * @return self
      */
-    public function setType(?string $type) : self
+    public function setType(?string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -138,7 +138,7 @@ class IndexField
      *
      * @return array<string, string>|null
      */
-    public function getIndexFields() : ?iterable
+    public function getIndexFields(): ?iterable
     {
         return $this->indexFields;
     }
@@ -149,7 +149,7 @@ class IndexField
      *
      * @return self
      */
-    public function setIndexFields(?iterable $indexFields) : self
+    public function setIndexFields(?iterable $indexFields): self
     {
         $this->initialized['indexFields'] = true;
         $this->indexFields = $indexFields;
@@ -161,7 +161,7 @@ class IndexField
     *
     * @return array<string, string>|null
     */
-    public function getSimpleSearchFields() : ?iterable
+    public function getSimpleSearchFields(): ?iterable
     {
         return $this->simpleSearchFields;
     }
@@ -173,7 +173,7 @@ class IndexField
     *
     * @return self
     */
-    public function setSimpleSearchFields(?iterable $simpleSearchFields) : self
+    public function setSimpleSearchFields(?iterable $simpleSearchFields): self
     {
         $this->initialized['simpleSearchFields'] = true;
         $this->simpleSearchFields = $simpleSearchFields;
@@ -184,7 +184,7 @@ class IndexField
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -195,7 +195,7 @@ class IndexField
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;
@@ -206,7 +206,7 @@ class IndexField
      *
      * @return bool
      */
-    public function getIgnoreForSearch() : bool
+    public function getIgnoreForSearch(): bool
     {
         return $this->ignoreForSearch;
     }
@@ -217,7 +217,7 @@ class IndexField
      *
      * @return self
      */
-    public function setIgnoreForSearch(bool $ignoreForSearch) : self
+    public function setIgnoreForSearch(bool $ignoreForSearch): self
     {
         $this->initialized['ignoreForSearch'] = true;
         $this->ignoreForSearch = $ignoreForSearch;
@@ -228,7 +228,7 @@ class IndexField
      *
      * @return string|null
      */
-    public function getNestedPath() : ?string
+    public function getNestedPath(): ?string
     {
         return $this->nestedPath;
     }
@@ -239,7 +239,7 @@ class IndexField
      *
      * @return self
      */
-    public function setNestedPath(?string $nestedPath) : self
+    public function setNestedPath(?string $nestedPath): self
     {
         $this->initialized['nestedPath'] = true;
         $this->nestedPath = $nestedPath;
@@ -250,7 +250,7 @@ class IndexField
      *
      * @return string|null
      */
-    public function getSortField() : ?string
+    public function getSortField(): ?string
     {
         return $this->sortField;
     }
@@ -261,7 +261,7 @@ class IndexField
      *
      * @return self
      */
-    public function setSortField(?string $sortField) : self
+    public function setSortField(?string $sortField): self
     {
         $this->initialized['sortField'] = true;
         $this->sortField = $sortField;

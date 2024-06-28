@@ -8,7 +8,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
      *
      * @return WorkflowRunUsageBillableUBUNTU
      */
-    public function getUBUNTU() : WorkflowRunUsageBillableUBUNTU
+    public function getUBUNTU(): WorkflowRunUsageBillableUBUNTU
     {
         return $this->uBUNTU;
     }
@@ -46,7 +46,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
      *
      * @return self
      */
-    public function setUBUNTU(WorkflowRunUsageBillableUBUNTU $uBUNTU) : self
+    public function setUBUNTU(WorkflowRunUsageBillableUBUNTU $uBUNTU): self
     {
         $this->initialized['uBUNTU'] = true;
         $this->uBUNTU = $uBUNTU;
@@ -57,7 +57,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
      *
      * @return WorkflowRunUsageBillableMACOS
      */
-    public function getMACOS() : WorkflowRunUsageBillableMACOS
+    public function getMACOS(): WorkflowRunUsageBillableMACOS
     {
         return $this->mACOS;
     }
@@ -68,7 +68,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
      *
      * @return self
      */
-    public function setMACOS(WorkflowRunUsageBillableMACOS $mACOS) : self
+    public function setMACOS(WorkflowRunUsageBillableMACOS $mACOS): self
     {
         $this->initialized['mACOS'] = true;
         $this->mACOS = $mACOS;
@@ -79,7 +79,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
      *
      * @return WorkflowRunUsageBillableWINDOWS
      */
-    public function getWINDOWS() : WorkflowRunUsageBillableWINDOWS
+    public function getWINDOWS(): WorkflowRunUsageBillableWINDOWS
     {
         return $this->wINDOWS;
     }
@@ -90,7 +90,7 @@ class WorkflowRunUsageBillable extends \ArrayObject
      *
      * @return self
      */
-    public function setWINDOWS(WorkflowRunUsageBillableWINDOWS $wINDOWS) : self
+    public function setWINDOWS(WorkflowRunUsageBillableWINDOWS $wINDOWS): self
     {
         $this->initialized['wINDOWS'] = true;
         $this->wINDOWS = $wINDOWS;

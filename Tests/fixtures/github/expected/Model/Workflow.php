@@ -8,7 +8,7 @@ class Workflow extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class Workflow extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -94,7 +94,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -105,7 +105,7 @@ class Workflow extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -116,7 +116,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -127,7 +127,7 @@ class Workflow extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -138,7 +138,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -149,7 +149,7 @@ class Workflow extends \ArrayObject
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -160,7 +160,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -171,7 +171,7 @@ class Workflow extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -182,7 +182,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -193,7 +193,7 @@ class Workflow extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -204,7 +204,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -215,7 +215,7 @@ class Workflow extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -226,7 +226,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -237,7 +237,7 @@ class Workflow extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -248,7 +248,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -259,7 +259,7 @@ class Workflow extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -270,7 +270,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -281,7 +281,7 @@ class Workflow extends \ArrayObject
      *
      * @return string
      */
-    public function getBadgeUrl() : string
+    public function getBadgeUrl(): string
     {
         return $this->badgeUrl;
     }
@@ -292,7 +292,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setBadgeUrl(string $badgeUrl) : self
+    public function setBadgeUrl(string $badgeUrl): self
     {
         $this->initialized['badgeUrl'] = true;
         $this->badgeUrl = $badgeUrl;
@@ -303,7 +303,7 @@ class Workflow extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getDeletedAt() : \DateTime
+    public function getDeletedAt(): \DateTime
     {
         return $this->deletedAt;
     }
@@ -314,7 +314,7 @@ class Workflow extends \ArrayObject
      *
      * @return self
      */
-    public function setDeletedAt(\DateTime $deletedAt) : self
+    public function setDeletedAt(\DateTime $deletedAt): self
     {
         $this->initialized['deletedAt'] = true;
         $this->deletedAt = $deletedAt;

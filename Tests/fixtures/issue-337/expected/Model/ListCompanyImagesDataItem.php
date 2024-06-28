@@ -8,7 +8,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return string
      */
-    public function getImageId() : string
+    public function getImageId(): string
     {
         return $this->imageId;
     }
@@ -100,7 +100,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setImageId(string $imageId) : self
+    public function setImageId(string $imageId): self
     {
         $this->initialized['imageId'] = true;
         $this->imageId = $imageId;
@@ -111,7 +111,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return ListCompanyImagesDataItemCompany
      */
-    public function getCompany() : ListCompanyImagesDataItemCompany
+    public function getCompany(): ListCompanyImagesDataItemCompany
     {
         return $this->company;
     }
@@ -122,7 +122,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCompany(ListCompanyImagesDataItemCompany $company) : self
+    public function setCompany(ListCompanyImagesDataItemCompany $company): self
     {
         $this->initialized['company'] = true;
         $this->company = $company;
@@ -133,7 +133,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return ListCompanyImagesDataItemDocument
      */
-    public function getDocument() : ListCompanyImagesDataItemDocument
+    public function getDocument(): ListCompanyImagesDataItemDocument
     {
         return $this->document;
     }
@@ -144,7 +144,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDocument(ListCompanyImagesDataItemDocument $document) : self
+    public function setDocument(ListCompanyImagesDataItemDocument $document): self
     {
         $this->initialized['document'] = true;
         $this->document = $document;
@@ -155,7 +155,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return string
      */
-    public function getFormat() : string
+    public function getFormat(): string
     {
         return $this->format;
     }
@@ -166,7 +166,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setFormat(string $format) : self
+    public function setFormat(string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -177,7 +177,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return string
      */
-    public function getSource() : string
+    public function getSource(): string
     {
         return $this->source;
     }
@@ -188,7 +188,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSource(string $source) : self
+    public function setSource(string $source): self
     {
         $this->initialized['source'] = true;
         $this->source = $source;
@@ -199,7 +199,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return string
      */
-    public function getFilingDate() : string
+    public function getFilingDate(): string
     {
         return $this->filingDate;
     }
@@ -210,7 +210,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setFilingDate(string $filingDate) : self
+    public function setFilingDate(string $filingDate): self
     {
         $this->initialized['filingDate'] = true;
         $this->filingDate = $filingDate;
@@ -221,7 +221,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUploadDate() : string
+    public function getUploadDate(): string
     {
         return $this->uploadDate;
     }
@@ -232,7 +232,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUploadDate(string $uploadDate) : self
+    public function setUploadDate(string $uploadDate): self
     {
         $this->initialized['uploadDate'] = true;
         $this->uploadDate = $uploadDate;
@@ -243,7 +243,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return string
      */
-    public function getAccountingDate() : string
+    public function getAccountingDate(): string
     {
         return $this->accountingDate;
     }
@@ -254,7 +254,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountingDate(string $accountingDate) : self
+    public function setAccountingDate(string $accountingDate): self
     {
         $this->initialized['accountingDate'] = true;
         $this->accountingDate = $accountingDate;
@@ -265,7 +265,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return string
      */
-    public function getLanguage() : string
+    public function getLanguage(): string
     {
         return $this->language;
     }
@@ -276,7 +276,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(string $language) : self
+    public function setLanguage(string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -287,7 +287,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return string
      */
-    public function getComments() : string
+    public function getComments(): string
     {
         return $this->comments;
     }
@@ -298,7 +298,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setComments(string $comments) : self
+    public function setComments(string $comments): self
     {
         $this->initialized['comments'] = true;
         $this->comments = $comments;
@@ -309,7 +309,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -320,7 +320,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -331,7 +331,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return ListCompanyImagesDataItemLocalProperties
      */
-    public function getLocalProperties() : ListCompanyImagesDataItemLocalProperties
+    public function getLocalProperties(): ListCompanyImagesDataItemLocalProperties
     {
         return $this->localProperties;
     }
@@ -342,7 +342,7 @@ class ListCompanyImagesDataItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLocalProperties(ListCompanyImagesDataItemLocalProperties $localProperties) : self
+    public function setLocalProperties(ListCompanyImagesDataItemLocalProperties $localProperties): self
     {
         $this->initialized['localProperties'] = true;
         $this->localProperties = $localProperties;

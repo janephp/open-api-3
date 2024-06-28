@@ -8,7 +8,7 @@ class ReposOwnerRepoSubscriptionPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoSubscriptionPutBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getSubscribed() : bool
+    public function getSubscribed(): bool
     {
         return $this->subscribed;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoSubscriptionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSubscribed(bool $subscribed) : self
+    public function setSubscribed(bool $subscribed): self
     {
         $this->initialized['subscribed'] = true;
         $this->subscribed = $subscribed;
@@ -51,7 +51,7 @@ class ReposOwnerRepoSubscriptionPutBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getIgnored() : bool
+    public function getIgnored(): bool
     {
         return $this->ignored;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoSubscriptionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIgnored(bool $ignored) : self
+    public function setIgnored(bool $ignored): self
     {
         $this->initialized['ignored'] = true;
         $this->ignored = $ignored;

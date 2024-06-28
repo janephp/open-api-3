@@ -18,11 +18,11 @@ class PostFooBadRequestException extends BadRequestException
         $this->responseProblemDetailsResponse400 = $responseProblemDetailsResponse400;
         $this->response = $response;
     }
-    public function getResponseProblemDetailsResponse400() : \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse400
+    public function getResponseProblemDetailsResponse400(): \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse400
     {
         return $this->responseProblemDetailsResponse400;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

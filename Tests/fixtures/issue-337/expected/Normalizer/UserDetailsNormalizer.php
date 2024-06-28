@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \CreditSafe\API\Model\UserDetails::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === CreditSafe\API\Model\UserDetails::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -54,7 +54,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['countryCode']);
             }
             if (\array_key_exists('createdDate', $data)) {
-                $object->setCreatedDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['createdDate']));
+                $object->setCreatedDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['createdDate']));
                 unset($data['createdDate']);
             }
             if (\array_key_exists('csCustomerId', $data)) {
@@ -74,15 +74,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['languageCode']);
             }
             if (\array_key_exists('lastAccessDate', $data)) {
-                $object->setLastAccessDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastAccessDate']));
+                $object->setLastAccessDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastAccessDate']));
                 unset($data['lastAccessDate']);
             }
             if (\array_key_exists('modifiedDate', $data)) {
-                $object->setModifiedDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['modifiedDate']));
+                $object->setModifiedDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['modifiedDate']));
                 unset($data['modifiedDate']);
             }
             if (\array_key_exists('contractEndDate', $data)) {
-                $object->setContractEndDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['contractEndDate']));
+                $object->setContractEndDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['contractEndDate']));
                 unset($data['contractEndDate']);
             }
             if (\array_key_exists('userId', $data)) {
@@ -96,14 +96,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('countryCode') && null !== $object->getCountryCode()) {
                 $data['countryCode'] = $object->getCountryCode();
             }
             if ($object->isInitialized('createdDate') && null !== $object->getCreatedDate()) {
-                $data['createdDate'] = $object->getCreatedDate()->format('Y-m-d\\TH:i:sP');
+                $data['createdDate'] = $object->getCreatedDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('csCustomerId') && null !== $object->getCsCustomerId()) {
                 $data['csCustomerId'] = $object->getCsCustomerId();
@@ -118,13 +118,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['languageCode'] = $object->getLanguageCode();
             }
             if ($object->isInitialized('lastAccessDate') && null !== $object->getLastAccessDate()) {
-                $data['lastAccessDate'] = $object->getLastAccessDate()->format('Y-m-d\\TH:i:sP');
+                $data['lastAccessDate'] = $object->getLastAccessDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('modifiedDate') && null !== $object->getModifiedDate()) {
-                $data['modifiedDate'] = $object->getModifiedDate()->format('Y-m-d\\TH:i:sP');
+                $data['modifiedDate'] = $object->getModifiedDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('contractEndDate') && null !== $object->getContractEndDate()) {
-                $data['contractEndDate'] = $object->getContractEndDate()->format('Y-m-d\\TH:i:sP');
+                $data['contractEndDate'] = $object->getContractEndDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('userId') && null !== $object->getUserId()) {
                 $data['userId'] = $object->getUserId();
@@ -136,7 +136,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\CreditSafe\API\Model\UserDetails::class => false];
         }
@@ -148,11 +148,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \CreditSafe\API\Model\UserDetails::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === CreditSafe\API\Model\UserDetails::class;
         }
@@ -185,7 +185,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['countryCode']);
             }
             if (\array_key_exists('createdDate', $data)) {
-                $object->setCreatedDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['createdDate']));
+                $object->setCreatedDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['createdDate']));
                 unset($data['createdDate']);
             }
             if (\array_key_exists('csCustomerId', $data)) {
@@ -205,15 +205,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['languageCode']);
             }
             if (\array_key_exists('lastAccessDate', $data)) {
-                $object->setLastAccessDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastAccessDate']));
+                $object->setLastAccessDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastAccessDate']));
                 unset($data['lastAccessDate']);
             }
             if (\array_key_exists('modifiedDate', $data)) {
-                $object->setModifiedDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['modifiedDate']));
+                $object->setModifiedDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['modifiedDate']));
                 unset($data['modifiedDate']);
             }
             if (\array_key_exists('contractEndDate', $data)) {
-                $object->setContractEndDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['contractEndDate']));
+                $object->setContractEndDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['contractEndDate']));
                 unset($data['contractEndDate']);
             }
             if (\array_key_exists('userId', $data)) {
@@ -237,7 +237,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['countryCode'] = $object->getCountryCode();
             }
             if ($object->isInitialized('createdDate') && null !== $object->getCreatedDate()) {
-                $data['createdDate'] = $object->getCreatedDate()->format('Y-m-d\\TH:i:sP');
+                $data['createdDate'] = $object->getCreatedDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('csCustomerId') && null !== $object->getCsCustomerId()) {
                 $data['csCustomerId'] = $object->getCsCustomerId();
@@ -252,13 +252,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['languageCode'] = $object->getLanguageCode();
             }
             if ($object->isInitialized('lastAccessDate') && null !== $object->getLastAccessDate()) {
-                $data['lastAccessDate'] = $object->getLastAccessDate()->format('Y-m-d\\TH:i:sP');
+                $data['lastAccessDate'] = $object->getLastAccessDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('modifiedDate') && null !== $object->getModifiedDate()) {
-                $data['modifiedDate'] = $object->getModifiedDate()->format('Y-m-d\\TH:i:sP');
+                $data['modifiedDate'] = $object->getModifiedDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('contractEndDate') && null !== $object->getContractEndDate()) {
-                $data['contractEndDate'] = $object->getContractEndDate()->format('Y-m-d\\TH:i:sP');
+                $data['contractEndDate'] = $object->getContractEndDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('userId') && null !== $object->getUserId()) {
                 $data['userId'] = $object->getUserId();
@@ -270,7 +270,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\CreditSafe\API\Model\UserDetails::class => false];
         }

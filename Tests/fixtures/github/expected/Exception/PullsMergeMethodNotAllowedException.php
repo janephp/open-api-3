@@ -18,11 +18,11 @@ class PullsMergeMethodNotAllowedException extends MethodNotAllowedException
         $this->reposOwnerRepoPullsPullNumberMergePutResponse405 = $reposOwnerRepoPullsPullNumberMergePutResponse405;
         $this->response = $response;
     }
-    public function getReposOwnerRepoPullsPullNumberMergePutResponse405() : \Github\Model\ReposOwnerRepoPullsPullNumberMergePutResponse405
+    public function getReposOwnerRepoPullsPullNumberMergePutResponse405(): \Github\Model\ReposOwnerRepoPullsPullNumberMergePutResponse405
     {
         return $this->reposOwnerRepoPullsPullNumberMergePutResponse405;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

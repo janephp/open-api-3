@@ -8,7 +8,7 @@ class SplitTransformation extends BusinessRuleTransformation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class SplitTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setSeparators($separators) : self
+    public function setSeparators($separators): self
     {
         $this->initialized['separators'] = true;
         $this->separators = $separators;
@@ -57,7 +57,7 @@ class SplitTransformation extends BusinessRuleTransformation
      *
      * @return bool
      */
-    public function getKeepEmpty() : bool
+    public function getKeepEmpty(): bool
     {
         return $this->keepEmpty;
     }
@@ -68,7 +68,7 @@ class SplitTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setKeepEmpty(bool $keepEmpty) : self
+    public function setKeepEmpty(bool $keepEmpty): self
     {
         $this->initialized['keepEmpty'] = true;
         $this->keepEmpty = $keepEmpty;
@@ -79,7 +79,7 @@ class SplitTransformation extends BusinessRuleTransformation
      *
      * @return bool
      */
-    public function getTrim() : bool
+    public function getTrim(): bool
     {
         return $this->trim;
     }
@@ -90,7 +90,7 @@ class SplitTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setTrim(bool $trim) : self
+    public function setTrim(bool $trim): self
     {
         $this->initialized['trim'] = true;
         $this->trim = $trim;

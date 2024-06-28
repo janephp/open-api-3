@@ -8,7 +8,7 @@ class BankMatchValidate extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getAccountNumber() : string
+    public function getAccountNumber(): string
     {
         return $this->accountNumber;
     }
@@ -106,7 +106,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountNumber(string $accountNumber) : self
+    public function setAccountNumber(string $accountNumber): self
     {
         $this->initialized['accountNumber'] = true;
         $this->accountNumber = $accountNumber;
@@ -117,7 +117,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getIban() : string
+    public function getIban(): string
     {
         return $this->iban;
     }
@@ -128,7 +128,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setIban(string $iban) : self
+    public function setIban(string $iban): self
     {
         $this->initialized['iban'] = true;
         $this->iban = $iban;
@@ -139,7 +139,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getIbanResult() : string
+    public function getIbanResult(): string
     {
         return $this->ibanResult;
     }
@@ -150,7 +150,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setIbanResult(string $ibanResult) : self
+    public function setIbanResult(string $ibanResult): self
     {
         $this->initialized['ibanResult'] = true;
         $this->ibanResult = $ibanResult;
@@ -161,7 +161,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getIbanText() : string
+    public function getIbanText(): string
     {
         return $this->ibanText;
     }
@@ -172,7 +172,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setIbanText(string $ibanText) : self
+    public function setIbanText(string $ibanText): self
     {
         $this->initialized['ibanText'] = true;
         $this->ibanText = $ibanText;
@@ -183,7 +183,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getLogDate() : string
+    public function getLogDate(): string
     {
         return $this->logDate;
     }
@@ -194,7 +194,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setLogDate(string $logDate) : self
+    public function setLogDate(string $logDate): self
     {
         $this->initialized['logDate'] = true;
         $this->logDate = $logDate;
@@ -205,7 +205,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getSafeNumber() : string
+    public function getSafeNumber(): string
     {
         return $this->safeNumber;
     }
@@ -216,7 +216,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setSafeNumber(string $safeNumber) : self
+    public function setSafeNumber(string $safeNumber): self
     {
         $this->initialized['safeNumber'] = true;
         $this->safeNumber = $safeNumber;
@@ -227,7 +227,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getScanResult() : string
+    public function getScanResult(): string
     {
         return $this->scanResult;
     }
@@ -238,7 +238,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setScanResult(string $scanResult) : self
+    public function setScanResult(string $scanResult): self
     {
         $this->initialized['scanResult'] = true;
         $this->scanResult = $scanResult;
@@ -249,7 +249,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getScanText() : string
+    public function getScanText(): string
     {
         return $this->scanText;
     }
@@ -260,7 +260,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setScanText(string $scanText) : self
+    public function setScanText(string $scanText): self
     {
         $this->initialized['scanText'] = true;
         $this->scanText = $scanText;
@@ -271,7 +271,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getSortCode() : string
+    public function getSortCode(): string
     {
         return $this->sortCode;
     }
@@ -282,7 +282,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setSortCode(string $sortCode) : self
+    public function setSortCode(string $sortCode): self
     {
         $this->initialized['sortCode'] = true;
         $this->sortCode = $sortCode;
@@ -293,7 +293,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getStatusResult() : string
+    public function getStatusResult(): string
     {
         return $this->statusResult;
     }
@@ -304,7 +304,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setStatusResult(string $statusResult) : self
+    public function setStatusResult(string $statusResult): self
     {
         $this->initialized['statusResult'] = true;
         $this->statusResult = $statusResult;
@@ -315,7 +315,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getStatusText() : string
+    public function getStatusText(): string
     {
         return $this->statusText;
     }
@@ -326,7 +326,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setStatusText(string $statusText) : self
+    public function setStatusText(string $statusText): self
     {
         $this->initialized['statusText'] = true;
         $this->statusText = $statusText;
@@ -337,7 +337,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getVatResult() : string
+    public function getVatResult(): string
     {
         return $this->vatResult;
     }
@@ -348,7 +348,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setVatResult(string $vatResult) : self
+    public function setVatResult(string $vatResult): self
     {
         $this->initialized['vatResult'] = true;
         $this->vatResult = $vatResult;
@@ -359,7 +359,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return string
      */
-    public function getVatText() : string
+    public function getVatText(): string
     {
         return $this->vatText;
     }
@@ -370,7 +370,7 @@ class BankMatchValidate extends \ArrayObject
      *
      * @return self
      */
-    public function setVatText(string $vatText) : self
+    public function setVatText(string $vatText): self
     {
         $this->initialized['vatText'] = true;
         $this->vatText = $vatText;

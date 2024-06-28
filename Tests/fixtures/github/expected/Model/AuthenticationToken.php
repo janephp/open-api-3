@@ -8,7 +8,7 @@ class AuthenticationToken extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return string
      */
-    public function getToken() : string
+    public function getToken(): string
     {
         return $this->token;
     }
@@ -64,7 +64,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return self
      */
-    public function setToken(string $token) : self
+    public function setToken(string $token): self
     {
         $this->initialized['token'] = true;
         $this->token = $token;
@@ -75,7 +75,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getExpiresAt() : \DateTime
+    public function getExpiresAt(): \DateTime
     {
         return $this->expiresAt;
     }
@@ -86,7 +86,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return self
      */
-    public function setExpiresAt(\DateTime $expiresAt) : self
+    public function setExpiresAt(\DateTime $expiresAt): self
     {
         $this->initialized['expiresAt'] = true;
         $this->expiresAt = $expiresAt;
@@ -97,7 +97,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return array<string, mixed>
      */
-    public function getPermissions() : iterable
+    public function getPermissions(): iterable
     {
         return $this->permissions;
     }
@@ -108,7 +108,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(iterable $permissions) : self
+    public function setPermissions(iterable $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;
@@ -119,7 +119,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return list<Repository>
      */
-    public function getRepositories() : array
+    public function getRepositories(): array
     {
         return $this->repositories;
     }
@@ -130,7 +130,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositories(array $repositories) : self
+    public function setRepositories(array $repositories): self
     {
         $this->initialized['repositories'] = true;
         $this->repositories = $repositories;
@@ -141,7 +141,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSingleFile() : ?string
+    public function getSingleFile(): ?string
     {
         return $this->singleFile;
     }
@@ -152,7 +152,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return self
      */
-    public function setSingleFile(?string $singleFile) : self
+    public function setSingleFile(?string $singleFile): self
     {
         $this->initialized['singleFile'] = true;
         $this->singleFile = $singleFile;
@@ -163,7 +163,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositorySelection() : string
+    public function getRepositorySelection(): string
     {
         return $this->repositorySelection;
     }
@@ -174,7 +174,7 @@ class AuthenticationToken extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositorySelection(string $repositorySelection) : self
+    public function setRepositorySelection(string $repositorySelection): self
     {
         $this->initialized['repositorySelection'] = true;
         $this->repositorySelection = $repositorySelection;

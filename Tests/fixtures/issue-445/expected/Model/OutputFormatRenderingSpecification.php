@@ -8,7 +8,7 @@ class OutputFormatRenderingSpecification
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class OutputFormatRenderingSpecification
      *
      * @return self
      */
-    public function setSourceOutputFormats($sourceOutputFormats) : self
+    public function setSourceOutputFormats($sourceOutputFormats): self
     {
         $this->initialized['sourceOutputFormats'] = true;
         $this->sourceOutputFormats = $sourceOutputFormats;
@@ -62,7 +62,7 @@ class OutputFormatRenderingSpecification
      *
      * @return self
      */
-    public function setFormat($format) : self
+    public function setFormat($format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;

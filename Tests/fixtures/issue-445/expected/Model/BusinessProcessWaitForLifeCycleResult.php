@@ -8,7 +8,7 @@ class BusinessProcessWaitForLifeCycleResult
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class BusinessProcessWaitForLifeCycleResult
      *
      * @return self
      */
-    public function setLifeCycleHit($lifeCycleHit) : self
+    public function setLifeCycleHit($lifeCycleHit): self
     {
         $this->initialized['lifeCycleHit'] = true;
         $this->lifeCycleHit = $lifeCycleHit;
@@ -62,7 +62,7 @@ class BusinessProcessWaitForLifeCycleResult
      *
      * @return self
      */
-    public function setBusinessProcess($businessProcess) : self
+    public function setBusinessProcess($businessProcess): self
     {
         $this->initialized['businessProcess'] = true;
         $this->businessProcess = $businessProcess;

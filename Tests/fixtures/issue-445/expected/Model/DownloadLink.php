@@ -8,7 +8,7 @@ class DownloadLink
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class DownloadLink
      *
      * @return string
      */
-    public function getDownloadToken() : string
+    public function getDownloadToken(): string
     {
         return $this->downloadToken;
     }
@@ -40,7 +40,7 @@ class DownloadLink
      *
      * @return self
      */
-    public function setDownloadToken(string $downloadToken) : self
+    public function setDownloadToken(string $downloadToken): self
     {
         $this->initialized['downloadToken'] = true;
         $this->downloadToken = $downloadToken;
@@ -51,7 +51,7 @@ class DownloadLink
      *
      * @return string
      */
-    public function getDownloadUrl() : string
+    public function getDownloadUrl(): string
     {
         return $this->downloadUrl;
     }
@@ -62,7 +62,7 @@ class DownloadLink
      *
      * @return self
      */
-    public function setDownloadUrl(string $downloadUrl) : self
+    public function setDownloadUrl(string $downloadUrl): self
     {
         $this->initialized['downloadUrl'] = true;
         $this->downloadUrl = $downloadUrl;

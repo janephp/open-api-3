@@ -8,7 +8,7 @@ class BusinessRuleTracedEvaluationCondition
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class BusinessRuleTracedEvaluationCondition
      *
      * @return string|null
      */
-    public function getTraceRefId() : ?string
+    public function getTraceRefId(): ?string
     {
         return $this->traceRefId;
     }
@@ -46,7 +46,7 @@ class BusinessRuleTracedEvaluationCondition
      *
      * @return self
      */
-    public function setTraceRefId(?string $traceRefId) : self
+    public function setTraceRefId(?string $traceRefId): self
     {
         $this->initialized['traceRefId'] = true;
         $this->traceRefId = $traceRefId;
@@ -57,7 +57,7 @@ class BusinessRuleTracedEvaluationCondition
      *
      * @return bool
      */
-    public function getSatisfied() : bool
+    public function getSatisfied(): bool
     {
         return $this->satisfied;
     }
@@ -68,7 +68,7 @@ class BusinessRuleTracedEvaluationCondition
      *
      * @return self
      */
-    public function setSatisfied(bool $satisfied) : self
+    public function setSatisfied(bool $satisfied): self
     {
         $this->initialized['satisfied'] = true;
         $this->satisfied = $satisfied;
@@ -79,7 +79,7 @@ class BusinessRuleTracedEvaluationCondition
      *
      * @return string|null
      */
-    public function getReason() : ?string
+    public function getReason(): ?string
     {
         return $this->reason;
     }
@@ -90,7 +90,7 @@ class BusinessRuleTracedEvaluationCondition
      *
      * @return self
      */
-    public function setReason(?string $reason) : self
+    public function setReason(?string $reason): self
     {
         $this->initialized['reason'] = true;
         $this->reason = $reason;

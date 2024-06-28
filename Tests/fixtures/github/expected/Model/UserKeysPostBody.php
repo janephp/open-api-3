@@ -8,7 +8,7 @@ class UserKeysPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class UserKeysPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -40,7 +40,7 @@ class UserKeysPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -51,7 +51,7 @@ class UserKeysPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getKey() : string
+    public function getKey(): string
     {
         return $this->key;
     }
@@ -62,7 +62,7 @@ class UserKeysPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setKey(string $key) : self
+    public function setKey(string $key): self
     {
         $this->initialized['key'] = true;
         $this->key = $key;

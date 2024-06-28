@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCreditScore extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class GbCompanyReportExampleResponseReportCreditScore extends \ArrayObject
      *
      * @return GbCompanyReportExampleResponseReportCreditScoreCurrentCreditRating
      */
-    public function getCurrentCreditRating() : GbCompanyReportExampleResponseReportCreditScoreCurrentCreditRating
+    public function getCurrentCreditRating(): GbCompanyReportExampleResponseReportCreditScoreCurrentCreditRating
     {
         return $this->currentCreditRating;
     }
@@ -52,7 +52,7 @@ class GbCompanyReportExampleResponseReportCreditScore extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentCreditRating(GbCompanyReportExampleResponseReportCreditScoreCurrentCreditRating $currentCreditRating) : self
+    public function setCurrentCreditRating(GbCompanyReportExampleResponseReportCreditScoreCurrentCreditRating $currentCreditRating): self
     {
         $this->initialized['currentCreditRating'] = true;
         $this->currentCreditRating = $currentCreditRating;
@@ -63,7 +63,7 @@ class GbCompanyReportExampleResponseReportCreditScore extends \ArrayObject
      *
      * @return GbCompanyReportExampleResponseReportCreditScoreCurrentContractLimit
      */
-    public function getCurrentContractLimit() : GbCompanyReportExampleResponseReportCreditScoreCurrentContractLimit
+    public function getCurrentContractLimit(): GbCompanyReportExampleResponseReportCreditScoreCurrentContractLimit
     {
         return $this->currentContractLimit;
     }
@@ -74,7 +74,7 @@ class GbCompanyReportExampleResponseReportCreditScore extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentContractLimit(GbCompanyReportExampleResponseReportCreditScoreCurrentContractLimit $currentContractLimit) : self
+    public function setCurrentContractLimit(GbCompanyReportExampleResponseReportCreditScoreCurrentContractLimit $currentContractLimit): self
     {
         $this->initialized['currentContractLimit'] = true;
         $this->currentContractLimit = $currentContractLimit;
@@ -85,7 +85,7 @@ class GbCompanyReportExampleResponseReportCreditScore extends \ArrayObject
      *
      * @return GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating
      */
-    public function getPreviousCreditRating() : GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating
+    public function getPreviousCreditRating(): GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating
     {
         return $this->previousCreditRating;
     }
@@ -96,7 +96,7 @@ class GbCompanyReportExampleResponseReportCreditScore extends \ArrayObject
      *
      * @return self
      */
-    public function setPreviousCreditRating(GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating $previousCreditRating) : self
+    public function setPreviousCreditRating(GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating $previousCreditRating): self
     {
         $this->initialized['previousCreditRating'] = true;
         $this->previousCreditRating = $previousCreditRating;
@@ -107,7 +107,7 @@ class GbCompanyReportExampleResponseReportCreditScore extends \ArrayObject
      *
      * @return string
      */
-    public function getLatestRatingChangeDate() : string
+    public function getLatestRatingChangeDate(): string
     {
         return $this->latestRatingChangeDate;
     }
@@ -118,7 +118,7 @@ class GbCompanyReportExampleResponseReportCreditScore extends \ArrayObject
      *
      * @return self
      */
-    public function setLatestRatingChangeDate(string $latestRatingChangeDate) : self
+    public function setLatestRatingChangeDate(string $latestRatingChangeDate): self
     {
         $this->initialized['latestRatingChangeDate'] = true;
         $this->latestRatingChangeDate = $latestRatingChangeDate;

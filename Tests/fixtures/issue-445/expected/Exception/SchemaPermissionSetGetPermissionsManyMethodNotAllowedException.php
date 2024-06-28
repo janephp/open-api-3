@@ -13,7 +13,7 @@ class SchemaPermissionSetGetPermissionsManyMethodNotAllowedException extends Met
         parent::__construct('Method not allowed');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

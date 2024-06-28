@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -58,7 +58,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -69,7 +69,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getSimpleValue() : string
+    public function getSimpleValue(): string
     {
         return $this->simpleValue;
     }
@@ -80,7 +80,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setSimpleValue(string $simpleValue) : self
+    public function setSimpleValue(string $simpleValue): self
     {
         $this->initialized['simpleValue'] = true;
         $this->simpleValue = $simpleValue;
@@ -91,7 +91,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getStreet() : string
+    public function getStreet(): string
     {
         return $this->street;
     }
@@ -102,7 +102,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setStreet(string $street) : self
+    public function setStreet(string $street): self
     {
         $this->initialized['street'] = true;
         $this->street = $street;
@@ -113,7 +113,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getCity() : string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -124,7 +124,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setCity(string $city) : self
+    public function setCity(string $city): self
     {
         $this->initialized['city'] = true;
         $this->city = $city;
@@ -135,7 +135,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -146,7 +146,7 @@ class GbPeopleReportReponseReportDirectorDetailsAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;

@@ -8,7 +8,7 @@ class VideoStream
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class VideoStream
      *
      * @return string|null
      */
-    public function getBitRate() : ?string
+    public function getBitRate(): ?string
     {
         return $this->bitRate;
     }
@@ -112,7 +112,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setBitRate(?string $bitRate) : self
+    public function setBitRate(?string $bitRate): self
     {
         $this->initialized['bitRate'] = true;
         $this->bitRate = $bitRate;
@@ -123,7 +123,7 @@ class VideoStream
      *
      * @return string|null
      */
-    public function getCodec() : ?string
+    public function getCodec(): ?string
     {
         return $this->codec;
     }
@@ -134,7 +134,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setCodec(?string $codec) : self
+    public function setCodec(?string $codec): self
     {
         $this->initialized['codec'] = true;
         $this->codec = $codec;
@@ -145,7 +145,7 @@ class VideoStream
      *
      * @return string|null
      */
-    public function getDisplayAspectRatio() : ?string
+    public function getDisplayAspectRatio(): ?string
     {
         return $this->displayAspectRatio;
     }
@@ -156,7 +156,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setDisplayAspectRatio(?string $displayAspectRatio) : self
+    public function setDisplayAspectRatio(?string $displayAspectRatio): self
     {
         $this->initialized['displayAspectRatio'] = true;
         $this->displayAspectRatio = $displayAspectRatio;
@@ -167,7 +167,7 @@ class VideoStream
      *
      * @return float
      */
-    public function getDurationInSeconds() : float
+    public function getDurationInSeconds(): float
     {
         return $this->durationInSeconds;
     }
@@ -178,7 +178,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setDurationInSeconds(float $durationInSeconds) : self
+    public function setDurationInSeconds(float $durationInSeconds): self
     {
         $this->initialized['durationInSeconds'] = true;
         $this->durationInSeconds = $durationInSeconds;
@@ -189,7 +189,7 @@ class VideoStream
      *
      * @return string|null
      */
-    public function getFormat() : ?string
+    public function getFormat(): ?string
     {
         return $this->format;
     }
@@ -200,7 +200,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setFormat(?string $format) : self
+    public function setFormat(?string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -211,7 +211,7 @@ class VideoStream
      *
      * @return int|null
      */
-    public function getFrameCount() : ?int
+    public function getFrameCount(): ?int
     {
         return $this->frameCount;
     }
@@ -222,7 +222,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setFrameCount(?int $frameCount) : self
+    public function setFrameCount(?int $frameCount): self
     {
         $this->initialized['frameCount'] = true;
         $this->frameCount = $frameCount;
@@ -233,7 +233,7 @@ class VideoStream
      *
      * @return float|null
      */
-    public function getFrameRate() : ?float
+    public function getFrameRate(): ?float
     {
         return $this->frameRate;
     }
@@ -244,7 +244,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setFrameRate(?float $frameRate) : self
+    public function setFrameRate(?float $frameRate): self
     {
         $this->initialized['frameRate'] = true;
         $this->frameRate = $frameRate;
@@ -255,7 +255,7 @@ class VideoStream
      *
      * @return int|null
      */
-    public function getHeight() : ?int
+    public function getHeight(): ?int
     {
         return $this->height;
     }
@@ -266,7 +266,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setHeight(?int $height) : self
+    public function setHeight(?int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -277,7 +277,7 @@ class VideoStream
      *
      * @return string|null
      */
-    public function getLanguage() : ?string
+    public function getLanguage(): ?string
     {
         return $this->language;
     }
@@ -288,7 +288,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setLanguage(?string $language) : self
+    public function setLanguage(?string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -299,7 +299,7 @@ class VideoStream
      *
      * @return float|null
      */
-    public function getPixelAspectRatio() : ?float
+    public function getPixelAspectRatio(): ?float
     {
         return $this->pixelAspectRatio;
     }
@@ -310,7 +310,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setPixelAspectRatio(?float $pixelAspectRatio) : self
+    public function setPixelAspectRatio(?float $pixelAspectRatio): self
     {
         $this->initialized['pixelAspectRatio'] = true;
         $this->pixelAspectRatio = $pixelAspectRatio;
@@ -321,7 +321,7 @@ class VideoStream
      *
      * @return int|null
      */
-    public function getResolution() : ?int
+    public function getResolution(): ?int
     {
         return $this->resolution;
     }
@@ -332,7 +332,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setResolution(?int $resolution) : self
+    public function setResolution(?int $resolution): self
     {
         $this->initialized['resolution'] = true;
         $this->resolution = $resolution;
@@ -343,7 +343,7 @@ class VideoStream
      *
      * @return int|null
      */
-    public function getStreamSize() : ?int
+    public function getStreamSize(): ?int
     {
         return $this->streamSize;
     }
@@ -354,7 +354,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setStreamSize(?int $streamSize) : self
+    public function setStreamSize(?int $streamSize): self
     {
         $this->initialized['streamSize'] = true;
         $this->streamSize = $streamSize;
@@ -365,7 +365,7 @@ class VideoStream
      *
      * @return int|null
      */
-    public function getWidth() : ?int
+    public function getWidth(): ?int
     {
         return $this->width;
     }
@@ -376,7 +376,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setWidth(?int $width) : self
+    public function setWidth(?int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;
@@ -387,7 +387,7 @@ class VideoStream
      *
      * @return float|null
      */
-    public function getRotation() : ?float
+    public function getRotation(): ?float
     {
         return $this->rotation;
     }
@@ -398,7 +398,7 @@ class VideoStream
      *
      * @return self
      */
-    public function setRotation(?float $rotation) : self
+    public function setRotation(?float $rotation): self
     {
         $this->initialized['rotation'] = true;
         $this->rotation = $rotation;

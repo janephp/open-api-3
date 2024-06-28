@@ -8,7 +8,7 @@ class TransferEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TransferEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getTransferId() : ?string
+    public function getTransferId(): ?string
     {
         return $this->transferId;
     }
@@ -40,7 +40,7 @@ class TransferEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setTransferId(?string $transferId) : self
+    public function setTransferId(?string $transferId): self
     {
         $this->initialized['transferId'] = true;
         $this->transferId = $transferId;
@@ -51,7 +51,7 @@ class TransferEvent extends ApplicationEvent
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -62,7 +62,7 @@ class TransferEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;

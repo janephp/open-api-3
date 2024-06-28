@@ -8,7 +8,7 @@ class WatermarkAction extends ImageActionBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return string|null
      */
-    public function getWatermarkFilePath() : ?string
+    public function getWatermarkFilePath(): ?string
     {
         return $this->watermarkFilePath;
     }
@@ -76,7 +76,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return self
      */
-    public function setWatermarkFilePath(?string $watermarkFilePath) : self
+    public function setWatermarkFilePath(?string $watermarkFilePath): self
     {
         $this->initialized['watermarkFilePath'] = true;
         $this->watermarkFilePath = $watermarkFilePath;
@@ -87,7 +87,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return int|null
      */
-    public function getMarginLeft() : ?int
+    public function getMarginLeft(): ?int
     {
         return $this->marginLeft;
     }
@@ -98,7 +98,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return self
      */
-    public function setMarginLeft(?int $marginLeft) : self
+    public function setMarginLeft(?int $marginLeft): self
     {
         $this->initialized['marginLeft'] = true;
         $this->marginLeft = $marginLeft;
@@ -109,7 +109,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return int|null
      */
-    public function getMarginTop() : ?int
+    public function getMarginTop(): ?int
     {
         return $this->marginTop;
     }
@@ -120,7 +120,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return self
      */
-    public function setMarginTop(?int $marginTop) : self
+    public function setMarginTop(?int $marginTop): self
     {
         $this->initialized['marginTop'] = true;
         $this->marginTop = $marginTop;
@@ -131,7 +131,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return int|null
      */
-    public function getMarginRight() : ?int
+    public function getMarginRight(): ?int
     {
         return $this->marginRight;
     }
@@ -142,7 +142,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return self
      */
-    public function setMarginRight(?int $marginRight) : self
+    public function setMarginRight(?int $marginRight): self
     {
         $this->initialized['marginRight'] = true;
         $this->marginRight = $marginRight;
@@ -153,7 +153,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return int|null
      */
-    public function getMarginBottom() : ?int
+    public function getMarginBottom(): ?int
     {
         return $this->marginBottom;
     }
@@ -164,7 +164,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return self
      */
-    public function setMarginBottom(?int $marginBottom) : self
+    public function setMarginBottom(?int $marginBottom): self
     {
         $this->initialized['marginBottom'] = true;
         $this->marginBottom = $marginBottom;
@@ -175,7 +175,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return float
      */
-    public function getOpacity() : float
+    public function getOpacity(): float
     {
         return $this->opacity;
     }
@@ -186,7 +186,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return self
      */
-    public function setOpacity(float $opacity) : self
+    public function setOpacity(float $opacity): self
     {
         $this->initialized['opacity'] = true;
         $this->opacity = $opacity;
@@ -197,7 +197,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return float
      */
-    public function getWidthRatio() : float
+    public function getWidthRatio(): float
     {
         return $this->widthRatio;
     }
@@ -208,7 +208,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return self
      */
-    public function setWidthRatio(float $widthRatio) : self
+    public function setWidthRatio(float $widthRatio): self
     {
         $this->initialized['widthRatio'] = true;
         $this->widthRatio = $widthRatio;
@@ -219,7 +219,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return float
      */
-    public function getHeightRatio() : float
+    public function getHeightRatio(): float
     {
         return $this->heightRatio;
     }
@@ -230,7 +230,7 @@ class WatermarkAction extends ImageActionBase
      *
      * @return self
      */
-    public function setHeightRatio(float $heightRatio) : self
+    public function setHeightRatio(float $heightRatio): self
     {
         $this->initialized['heightRatio'] = true;
         $this->heightRatio = $heightRatio;

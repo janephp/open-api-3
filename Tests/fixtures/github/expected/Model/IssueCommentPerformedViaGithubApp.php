@@ -8,7 +8,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -119,7 +119,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -130,7 +130,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -141,7 +141,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string
      */
-    public function getSlug() : string
+    public function getSlug(): string
     {
         return $this->slug;
     }
@@ -152,7 +152,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setSlug(string $slug) : self
+    public function setSlug(string $slug): self
     {
         $this->initialized['slug'] = true;
         $this->slug = $slug;
@@ -163,7 +163,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -174,7 +174,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -185,7 +185,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return IntegrationOwner|null
      */
-    public function getOwner() : ?IntegrationOwner
+    public function getOwner(): ?IntegrationOwner
     {
         return $this->owner;
     }
@@ -196,7 +196,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setOwner(?IntegrationOwner $owner) : self
+    public function setOwner(?IntegrationOwner $owner): self
     {
         $this->initialized['owner'] = true;
         $this->owner = $owner;
@@ -207,7 +207,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -218,7 +218,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -229,7 +229,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -240,7 +240,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -251,7 +251,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string
      */
-    public function getExternalUrl() : string
+    public function getExternalUrl(): string
     {
         return $this->externalUrl;
     }
@@ -262,7 +262,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setExternalUrl(string $externalUrl) : self
+    public function setExternalUrl(string $externalUrl): self
     {
         $this->initialized['externalUrl'] = true;
         $this->externalUrl = $externalUrl;
@@ -273,7 +273,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -284,7 +284,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -295,7 +295,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -306,7 +306,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -317,7 +317,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -328,7 +328,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -339,7 +339,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return IntegrationPermissions
      */
-    public function getPermissions() : IntegrationPermissions
+    public function getPermissions(): IntegrationPermissions
     {
         return $this->permissions;
     }
@@ -350,7 +350,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(IntegrationPermissions $permissions) : self
+    public function setPermissions(IntegrationPermissions $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;
@@ -361,7 +361,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getEvents() : array
+    public function getEvents(): array
     {
         return $this->events;
     }
@@ -372,7 +372,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setEvents(array $events) : self
+    public function setEvents(array $events): self
     {
         $this->initialized['events'] = true;
         $this->events = $events;
@@ -383,7 +383,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return int
      */
-    public function getInstallationsCount() : int
+    public function getInstallationsCount(): int
     {
         return $this->installationsCount;
     }
@@ -394,7 +394,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setInstallationsCount(int $installationsCount) : self
+    public function setInstallationsCount(int $installationsCount): self
     {
         $this->initialized['installationsCount'] = true;
         $this->installationsCount = $installationsCount;
@@ -405,7 +405,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string
      */
-    public function getClientId() : string
+    public function getClientId(): string
     {
         return $this->clientId;
     }
@@ -416,7 +416,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setClientId(string $clientId) : self
+    public function setClientId(string $clientId): self
     {
         $this->initialized['clientId'] = true;
         $this->clientId = $clientId;
@@ -427,7 +427,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string
      */
-    public function getClientSecret() : string
+    public function getClientSecret(): string
     {
         return $this->clientSecret;
     }
@@ -438,7 +438,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setClientSecret(string $clientSecret) : self
+    public function setClientSecret(string $clientSecret): self
     {
         $this->initialized['clientSecret'] = true;
         $this->clientSecret = $clientSecret;
@@ -449,7 +449,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string
      */
-    public function getWebhookSecret() : string
+    public function getWebhookSecret(): string
     {
         return $this->webhookSecret;
     }
@@ -460,7 +460,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setWebhookSecret(string $webhookSecret) : self
+    public function setWebhookSecret(string $webhookSecret): self
     {
         $this->initialized['webhookSecret'] = true;
         $this->webhookSecret = $webhookSecret;
@@ -471,7 +471,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return string
      */
-    public function getPem() : string
+    public function getPem(): string
     {
         return $this->pem;
     }
@@ -482,7 +482,7 @@ class IssueCommentPerformedViaGithubApp extends \ArrayObject
      *
      * @return self
      */
-    public function setPem(string $pem) : self
+    public function setPem(string $pem): self
     {
         $this->initialized['pem'] = true;
         $this->pem = $pem;

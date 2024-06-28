@@ -8,7 +8,7 @@ class BaseGist extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -137,7 +137,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -148,7 +148,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -159,7 +159,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string
      */
-    public function getForksUrl() : string
+    public function getForksUrl(): string
     {
         return $this->forksUrl;
     }
@@ -170,7 +170,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setForksUrl(string $forksUrl) : self
+    public function setForksUrl(string $forksUrl): self
     {
         $this->initialized['forksUrl'] = true;
         $this->forksUrl = $forksUrl;
@@ -181,7 +181,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitsUrl() : string
+    public function getCommitsUrl(): string
     {
         return $this->commitsUrl;
     }
@@ -192,7 +192,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitsUrl(string $commitsUrl) : self
+    public function setCommitsUrl(string $commitsUrl): self
     {
         $this->initialized['commitsUrl'] = true;
         $this->commitsUrl = $commitsUrl;
@@ -203,7 +203,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -214,7 +214,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -225,7 +225,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -236,7 +236,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -247,7 +247,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string
      */
-    public function getGitPullUrl() : string
+    public function getGitPullUrl(): string
     {
         return $this->gitPullUrl;
     }
@@ -258,7 +258,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setGitPullUrl(string $gitPullUrl) : self
+    public function setGitPullUrl(string $gitPullUrl): self
     {
         $this->initialized['gitPullUrl'] = true;
         $this->gitPullUrl = $gitPullUrl;
@@ -269,7 +269,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string
      */
-    public function getGitPushUrl() : string
+    public function getGitPushUrl(): string
     {
         return $this->gitPushUrl;
     }
@@ -280,7 +280,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setGitPushUrl(string $gitPushUrl) : self
+    public function setGitPushUrl(string $gitPushUrl): self
     {
         $this->initialized['gitPushUrl'] = true;
         $this->gitPushUrl = $gitPushUrl;
@@ -291,7 +291,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -302,7 +302,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -313,7 +313,7 @@ class BaseGist extends \ArrayObject
      *
      * @return array<string, BaseGistFilesItem>
      */
-    public function getFiles() : iterable
+    public function getFiles(): iterable
     {
         return $this->files;
     }
@@ -324,7 +324,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setFiles(iterable $files) : self
+    public function setFiles(iterable $files): self
     {
         $this->initialized['files'] = true;
         $this->files = $files;
@@ -335,7 +335,7 @@ class BaseGist extends \ArrayObject
      *
      * @return bool
      */
-    public function getPublic() : bool
+    public function getPublic(): bool
     {
         return $this->public;
     }
@@ -346,7 +346,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setPublic(bool $public) : self
+    public function setPublic(bool $public): self
     {
         $this->initialized['public'] = true;
         $this->public = $public;
@@ -357,7 +357,7 @@ class BaseGist extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -368,7 +368,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -379,7 +379,7 @@ class BaseGist extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -390,7 +390,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -401,7 +401,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -412,7 +412,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -423,7 +423,7 @@ class BaseGist extends \ArrayObject
      *
      * @return int
      */
-    public function getComments() : int
+    public function getComments(): int
     {
         return $this->comments;
     }
@@ -434,7 +434,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setComments(int $comments) : self
+    public function setComments(int $comments): self
     {
         $this->initialized['comments'] = true;
         $this->comments = $comments;
@@ -445,7 +445,7 @@ class BaseGist extends \ArrayObject
      *
      * @return BaseGistUser|null
      */
-    public function getUser() : ?BaseGistUser
+    public function getUser(): ?BaseGistUser
     {
         return $this->user;
     }
@@ -456,7 +456,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?BaseGistUser $user) : self
+    public function setUser(?BaseGistUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -467,7 +467,7 @@ class BaseGist extends \ArrayObject
      *
      * @return string
      */
-    public function getCommentsUrl() : string
+    public function getCommentsUrl(): string
     {
         return $this->commentsUrl;
     }
@@ -478,7 +478,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setCommentsUrl(string $commentsUrl) : self
+    public function setCommentsUrl(string $commentsUrl): self
     {
         $this->initialized['commentsUrl'] = true;
         $this->commentsUrl = $commentsUrl;
@@ -489,7 +489,7 @@ class BaseGist extends \ArrayObject
      *
      * @return BaseGistOwner|null
      */
-    public function getOwner() : ?BaseGistOwner
+    public function getOwner(): ?BaseGistOwner
     {
         return $this->owner;
     }
@@ -500,7 +500,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setOwner(?BaseGistOwner $owner) : self
+    public function setOwner(?BaseGistOwner $owner): self
     {
         $this->initialized['owner'] = true;
         $this->owner = $owner;
@@ -511,7 +511,7 @@ class BaseGist extends \ArrayObject
      *
      * @return bool
      */
-    public function getTruncated() : bool
+    public function getTruncated(): bool
     {
         return $this->truncated;
     }
@@ -522,7 +522,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setTruncated(bool $truncated) : self
+    public function setTruncated(bool $truncated): self
     {
         $this->initialized['truncated'] = true;
         $this->truncated = $truncated;
@@ -533,7 +533,7 @@ class BaseGist extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getForks() : array
+    public function getForks(): array
     {
         return $this->forks;
     }
@@ -544,7 +544,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setForks(array $forks) : self
+    public function setForks(array $forks): self
     {
         $this->initialized['forks'] = true;
         $this->forks = $forks;
@@ -555,7 +555,7 @@ class BaseGist extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getHistory() : array
+    public function getHistory(): array
     {
         return $this->history;
     }
@@ -566,7 +566,7 @@ class BaseGist extends \ArrayObject
      *
      * @return self
      */
-    public function setHistory(array $history) : self
+    public function setHistory(array $history): self
     {
         $this->initialized['history'] = true;
         $this->history = $history;

@@ -8,7 +8,7 @@ class CommitSearchResultItemParentsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class CommitSearchResultItemParentsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -46,7 +46,7 @@ class CommitSearchResultItemParentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -57,7 +57,7 @@ class CommitSearchResultItemParentsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -68,7 +68,7 @@ class CommitSearchResultItemParentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -79,7 +79,7 @@ class CommitSearchResultItemParentsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -90,7 +90,7 @@ class CommitSearchResultItemParentsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;

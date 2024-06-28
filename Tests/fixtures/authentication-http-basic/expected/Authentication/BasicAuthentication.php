@@ -11,13 +11,13 @@ class BasicAuthentication implements \Jane\Component\OpenApiRuntime\Client\Authe
         $this->{'username'} = $username;
         $this->{'password'} = $password;
     }
-    public function authentication(\Psr\Http\Message\RequestInterface $request) : \Psr\Http\Message\RequestInterface
+    public function authentication(\Psr\Http\Message\RequestInterface $request): \Psr\Http\Message\RequestInterface
     {
         $header = sprintf('Basic %s', base64_encode(sprintf('%s:%s', $this->{'username'}, $this->{'password'})));
         $request = $request->withHeader('Authorization', $header);
         return $request;
     }
-    public function getScope() : string
+    public function getScope(): string
     {
         return 'Basic';
     }

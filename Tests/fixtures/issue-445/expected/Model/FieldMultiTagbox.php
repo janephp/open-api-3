@@ -8,7 +8,7 @@ class FieldMultiTagbox extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -60,7 +60,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return string
      */
-    public function getSchemaId() : string
+    public function getSchemaId(): string
     {
         return $this->schemaId;
     }
@@ -71,7 +71,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return self
      */
-    public function setSchemaId(string $schemaId) : self
+    public function setSchemaId(string $schemaId): self
     {
         $this->initialized['schemaId'] = true;
         $this->schemaId = $schemaId;
@@ -93,7 +93,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return self
      */
-    public function setSchemaIndexingInfo($schemaIndexingInfo) : self
+    public function setSchemaIndexingInfo($schemaIndexingInfo): self
     {
         $this->initialized['schemaIndexingInfo'] = true;
         $this->schemaIndexingInfo = $schemaIndexingInfo;
@@ -104,7 +104,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return int|null
      */
-    public function getMaximumItems() : ?int
+    public function getMaximumItems(): ?int
     {
         return $this->maximumItems;
     }
@@ -115,7 +115,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return self
      */
-    public function setMaximumItems(?int $maximumItems) : self
+    public function setMaximumItems(?int $maximumItems): self
     {
         $this->initialized['maximumItems'] = true;
         $this->maximumItems = $maximumItems;
@@ -126,7 +126,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return int|null
      */
-    public function getMinimumItems() : ?int
+    public function getMinimumItems(): ?int
     {
         return $this->minimumItems;
     }
@@ -137,7 +137,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return self
      */
-    public function setMinimumItems(?int $minimumItems) : self
+    public function setMinimumItems(?int $minimumItems): self
     {
         $this->initialized['minimumItems'] = true;
         $this->minimumItems = $minimumItems;
@@ -159,7 +159,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -170,7 +170,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return string|null
      */
-    public function getListItemCreateTemplate() : ?string
+    public function getListItemCreateTemplate(): ?string
     {
         return $this->listItemCreateTemplate;
     }
@@ -181,7 +181,7 @@ class FieldMultiTagbox extends FieldBase
      *
      * @return self
      */
-    public function setListItemCreateTemplate(?string $listItemCreateTemplate) : self
+    public function setListItemCreateTemplate(?string $listItemCreateTemplate): self
     {
         $this->initialized['listItemCreateTemplate'] = true;
         $this->listItemCreateTemplate = $listItemCreateTemplate;
@@ -205,7 +205,7 @@ class FieldMultiTagbox extends FieldBase
     *
     * @return self
     */
-    public function setViewModeDisplayPatternType($viewModeDisplayPatternType) : self
+    public function setViewModeDisplayPatternType($viewModeDisplayPatternType): self
     {
         $this->initialized['viewModeDisplayPatternType'] = true;
         $this->viewModeDisplayPatternType = $viewModeDisplayPatternType;

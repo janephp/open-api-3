@@ -8,7 +8,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return string
      */
-    public function getCountryName() : string
+    public function getCountryName(): string
     {
         return $this->countryName;
     }
@@ -70,7 +70,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return self
      */
-    public function setCountryName(string $countryName) : self
+    public function setCountryName(string $countryName): self
     {
         $this->initialized['countryName'] = true;
         $this->countryName = $countryName;
@@ -81,7 +81,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return string
      */
-    public function getTemplateName() : string
+    public function getTemplateName(): string
     {
         return $this->templateName;
     }
@@ -92,7 +92,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return self
      */
-    public function setTemplateName(string $templateName) : self
+    public function setTemplateName(string $templateName): self
     {
         $this->initialized['templateName'] = true;
         $this->templateName = $templateName;
@@ -103,7 +103,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return string
      */
-    public function getCountryIso2() : string
+    public function getCountryIso2(): string
     {
         return $this->countryIso2;
     }
@@ -114,7 +114,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return self
      */
-    public function setCountryIso2(string $countryIso2) : self
+    public function setCountryIso2(string $countryIso2): self
     {
         $this->initialized['countryIso2'] = true;
         $this->countryIso2 = $countryIso2;
@@ -125,7 +125,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return string
      */
-    public function getStartDate() : string
+    public function getStartDate(): string
     {
         return $this->startDate;
     }
@@ -136,7 +136,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return self
      */
-    public function setStartDate(string $startDate) : self
+    public function setStartDate(string $startDate): self
     {
         $this->initialized['startDate'] = true;
         $this->startDate = $startDate;
@@ -147,7 +147,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return string
      */
-    public function getExpireDate() : string
+    public function getExpireDate(): string
     {
         return $this->expireDate;
     }
@@ -158,7 +158,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return self
      */
-    public function setExpireDate(string $expireDate) : self
+    public function setExpireDate(string $expireDate): self
     {
         $this->initialized['expireDate'] = true;
         $this->expireDate = $expireDate;
@@ -169,7 +169,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return int
      */
-    public function getPaid() : int
+    public function getPaid(): int
     {
         return $this->paid;
     }
@@ -180,7 +180,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return self
      */
-    public function setPaid(int $paid) : self
+    public function setPaid(int $paid): self
     {
         $this->initialized['paid'] = true;
         $this->paid = $paid;
@@ -191,7 +191,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return int
      */
-    public function getUsed() : int
+    public function getUsed(): int
     {
         return $this->used;
     }
@@ -202,7 +202,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOnlineReportsItem
      *
      * @return self
      */
-    public function setUsed(int $used) : self
+    public function setUsed(int $used): self
     {
         $this->initialized['used'] = true;
         $this->used = $used;

@@ -8,7 +8,7 @@ class SchemaImportRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class SchemaImportRequest
      *
      * @return string
      */
-    public function getFileTransferId() : string
+    public function getFileTransferId(): string
     {
         return $this->fileTransferId;
     }
@@ -46,7 +46,7 @@ class SchemaImportRequest
      *
      * @return self
      */
-    public function setFileTransferId(string $fileTransferId) : self
+    public function setFileTransferId(string $fileTransferId): self
     {
         $this->initialized['fileTransferId'] = true;
         $this->fileTransferId = $fileTransferId;
@@ -57,7 +57,7 @@ class SchemaImportRequest
      *
      * @return bool
      */
-    public function getAllowMissingDependencies() : bool
+    public function getAllowMissingDependencies(): bool
     {
         return $this->allowMissingDependencies;
     }
@@ -68,7 +68,7 @@ class SchemaImportRequest
      *
      * @return self
      */
-    public function setAllowMissingDependencies(bool $allowMissingDependencies) : self
+    public function setAllowMissingDependencies(bool $allowMissingDependencies): self
     {
         $this->initialized['allowMissingDependencies'] = true;
         $this->allowMissingDependencies = $allowMissingDependencies;
@@ -79,7 +79,7 @@ class SchemaImportRequest
      *
      * @return bool
      */
-    public function getImportListItems() : bool
+    public function getImportListItems(): bool
     {
         return $this->importListItems;
     }
@@ -90,7 +90,7 @@ class SchemaImportRequest
      *
      * @return self
      */
-    public function setImportListItems(bool $importListItems) : self
+    public function setImportListItems(bool $importListItems): self
     {
         $this->initialized['importListItems'] = true;
         $this->importListItems = $importListItems;

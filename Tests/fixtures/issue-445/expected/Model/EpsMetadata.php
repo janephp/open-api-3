@@ -8,7 +8,7 @@ class EpsMetadata
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class EpsMetadata
      *
      * @return bool
      */
-    public function getIsRasterized() : bool
+    public function getIsRasterized(): bool
     {
         return $this->isRasterized;
     }
@@ -46,7 +46,7 @@ class EpsMetadata
      *
      * @return self
      */
-    public function setIsRasterized(bool $isRasterized) : self
+    public function setIsRasterized(bool $isRasterized): self
     {
         $this->initialized['isRasterized'] = true;
         $this->isRasterized = $isRasterized;
@@ -57,7 +57,7 @@ class EpsMetadata
      *
      * @return float
      */
-    public function getWidthInPoints() : float
+    public function getWidthInPoints(): float
     {
         return $this->widthInPoints;
     }
@@ -68,7 +68,7 @@ class EpsMetadata
      *
      * @return self
      */
-    public function setWidthInPoints(float $widthInPoints) : self
+    public function setWidthInPoints(float $widthInPoints): self
     {
         $this->initialized['widthInPoints'] = true;
         $this->widthInPoints = $widthInPoints;
@@ -79,7 +79,7 @@ class EpsMetadata
      *
      * @return float
      */
-    public function getHeightInPoints() : float
+    public function getHeightInPoints(): float
     {
         return $this->heightInPoints;
     }
@@ -90,7 +90,7 @@ class EpsMetadata
      *
      * @return self
      */
-    public function setHeightInPoints(float $heightInPoints) : self
+    public function setHeightInPoints(float $heightInPoints): self
     {
         $this->initialized['heightInPoints'] = true;
         $this->heightInPoints = $heightInPoints;

@@ -8,7 +8,7 @@ class DefaultUserFieldsEntitiesUrl extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class DefaultUserFieldsEntitiesUrl extends \ArrayObject
      *
      * @return list<UrlEntity>
      */
-    public function getUrls() : array
+    public function getUrls(): array
     {
         return $this->urls;
     }
@@ -34,7 +34,7 @@ class DefaultUserFieldsEntitiesUrl extends \ArrayObject
      *
      * @return self
      */
-    public function setUrls(array $urls) : self
+    public function setUrls(array $urls): self
     {
         $this->initialized['urls'] = true;
         $this->urls = $urls;

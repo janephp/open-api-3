@@ -14,15 +14,15 @@ class PostEndpoint2 extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\Clie
         $this->body = $requestBody;
     }
     use \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'POST';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/endpoint/2';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2PostBody) {
             return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
@@ -43,7 +43,7 @@ class PostEndpoint2 extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\Clie
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

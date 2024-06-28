@@ -20,18 +20,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\BusinessProcess::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\BusinessProcess::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (array_key_exists('kind', $data) and 'BusinessProcessDetails' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\BusinessProcessDetails', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\BusinessProcessDetails', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -71,10 +71,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setLifeCycle($data['lifeCycle']);
             }
             if (\array_key_exists('startDate', $data)) {
-                $object->setStartDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['startDate']));
+                $object->setStartDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['startDate']));
             }
             if (\array_key_exists('endDate', $data)) {
-                $object->setEndDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['endDate']));
+                $object->setEndDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['endDate']));
             }
             if (\array_key_exists('finished', $data)) {
                 $object->setFinished($data['finished']);
@@ -96,7 +96,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setCurrentState(null);
             }
             if (\array_key_exists('lastReportedProgress', $data) && $data['lastReportedProgress'] !== null) {
-                $object->setLastReportedProgress(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastReportedProgress']));
+                $object->setLastReportedProgress(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastReportedProgress']));
             }
             elseif (\array_key_exists('lastReportedProgress', $data) && $data['lastReportedProgress'] === null) {
                 $object->setLastReportedProgress(null);
@@ -112,7 +112,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if (null !== $object->getKind() and 'BusinessProcessDetails' === $object->getKind()) {
@@ -129,8 +129,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['supportsCancellation'] = $object->getSupportsCancellation();
             $data['businessProcessScope'] = $object->getBusinessProcessScope();
             $data['lifeCycle'] = $object->getLifeCycle();
-            $data['startDate'] = $object->getStartDate()->format('Y-m-d\\TH:i:sP');
-            $data['endDate'] = $object->getEndDate()->format('Y-m-d\\TH:i:sP');
+            $data['startDate'] = $object->getStartDate()->format('Y-m-d\TH:i:sP');
+            $data['endDate'] = $object->getEndDate()->format('Y-m-d\TH:i:sP');
             $data['finished'] = $object->getFinished();
             if ($object->isInitialized('stateHistory') && null !== $object->getStateHistory()) {
                 $values = [];
@@ -143,7 +143,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['currentState'] = $object->getCurrentState();
             }
             if ($object->isInitialized('lastReportedProgress') && null !== $object->getLastReportedProgress()) {
-                $data['lastReportedProgress'] = $object->getLastReportedProgress()->format('Y-m-d\\TH:i:sP');
+                $data['lastReportedProgress'] = $object->getLastReportedProgress()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('continuationBusinessProcessId') && null !== $object->getContinuationBusinessProcessId()) {
                 $data['continuationBusinessProcessId'] = $object->getContinuationBusinessProcessId();
@@ -151,7 +151,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\BusinessProcess::class => false];
         }
@@ -163,11 +163,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\BusinessProcess::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\BusinessProcess::class;
         }
@@ -177,7 +177,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function denormalize($data, $type, $format = null, array $context = [])
         {
             if (array_key_exists('kind', $data) and 'BusinessProcessDetails' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\BusinessProcessDetails', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\BusinessProcessDetails', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -217,10 +217,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setLifeCycle($data['lifeCycle']);
             }
             if (\array_key_exists('startDate', $data)) {
-                $object->setStartDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['startDate']));
+                $object->setStartDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['startDate']));
             }
             if (\array_key_exists('endDate', $data)) {
-                $object->setEndDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['endDate']));
+                $object->setEndDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['endDate']));
             }
             if (\array_key_exists('finished', $data)) {
                 $object->setFinished($data['finished']);
@@ -242,7 +242,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setCurrentState(null);
             }
             if (\array_key_exists('lastReportedProgress', $data) && $data['lastReportedProgress'] !== null) {
-                $object->setLastReportedProgress(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastReportedProgress']));
+                $object->setLastReportedProgress(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastReportedProgress']));
             }
             elseif (\array_key_exists('lastReportedProgress', $data) && $data['lastReportedProgress'] === null) {
                 $object->setLastReportedProgress(null);
@@ -278,8 +278,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['supportsCancellation'] = $object->getSupportsCancellation();
             $data['businessProcessScope'] = $object->getBusinessProcessScope();
             $data['lifeCycle'] = $object->getLifeCycle();
-            $data['startDate'] = $object->getStartDate()->format('Y-m-d\\TH:i:sP');
-            $data['endDate'] = $object->getEndDate()->format('Y-m-d\\TH:i:sP');
+            $data['startDate'] = $object->getStartDate()->format('Y-m-d\TH:i:sP');
+            $data['endDate'] = $object->getEndDate()->format('Y-m-d\TH:i:sP');
             $data['finished'] = $object->getFinished();
             if ($object->isInitialized('stateHistory') && null !== $object->getStateHistory()) {
                 $values = [];
@@ -292,7 +292,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['currentState'] = $object->getCurrentState();
             }
             if ($object->isInitialized('lastReportedProgress') && null !== $object->getLastReportedProgress()) {
-                $data['lastReportedProgress'] = $object->getLastReportedProgress()->format('Y-m-d\\TH:i:sP');
+                $data['lastReportedProgress'] = $object->getLastReportedProgress()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('continuationBusinessProcessId') && null !== $object->getContinuationBusinessProcessId()) {
                 $data['continuationBusinessProcessId'] = $object->getContinuationBusinessProcessId();
@@ -300,7 +300,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\BusinessProcess::class => false];
         }

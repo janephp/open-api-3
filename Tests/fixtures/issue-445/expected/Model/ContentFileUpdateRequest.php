@@ -8,7 +8,7 @@ class ContentFileUpdateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ContentFileUpdateRequest
      *
      * @return string
      */
-    public function getFileTransferId() : string
+    public function getFileTransferId(): string
     {
         return $this->fileTransferId;
     }
@@ -34,7 +34,7 @@ class ContentFileUpdateRequest
      *
      * @return self
      */
-    public function setFileTransferId(string $fileTransferId) : self
+    public function setFileTransferId(string $fileTransferId): self
     {
         $this->initialized['fileTransferId'] = true;
         $this->fileTransferId = $fileTransferId;

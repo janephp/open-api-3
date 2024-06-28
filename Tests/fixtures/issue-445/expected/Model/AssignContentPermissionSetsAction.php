@@ -8,7 +8,7 @@ class AssignContentPermissionSetsAction extends BusinessRuleAction
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class AssignContentPermissionSetsAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setPermissionSetIds($permissionSetIds) : self
+    public function setPermissionSetIds($permissionSetIds): self
     {
         $this->initialized['permissionSetIds'] = true;
         $this->permissionSetIds = $permissionSetIds;
@@ -51,7 +51,7 @@ class AssignContentPermissionSetsAction extends BusinessRuleAction
      *
      * @return bool
      */
-    public function getReplace() : bool
+    public function getReplace(): bool
     {
         return $this->replace;
     }
@@ -62,7 +62,7 @@ class AssignContentPermissionSetsAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setReplace(bool $replace) : self
+    public function setReplace(bool $replace): self
     {
         $this->initialized['replace'] = true;
         $this->replace = $replace;

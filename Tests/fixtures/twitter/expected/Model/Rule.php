@@ -8,7 +8,7 @@ class Rule extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class Rule extends \ArrayObject
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -46,7 +46,7 @@ class Rule extends \ArrayObject
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;
@@ -57,7 +57,7 @@ class Rule extends \ArrayObject
      *
      * @return string
      */
-    public function getTag() : string
+    public function getTag(): string
     {
         return $this->tag;
     }
@@ -68,7 +68,7 @@ class Rule extends \ArrayObject
      *
      * @return self
      */
-    public function setTag(string $tag) : self
+    public function setTag(string $tag): self
     {
         $this->initialized['tag'] = true;
         $this->tag = $tag;
@@ -79,7 +79,7 @@ class Rule extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -90,7 +90,7 @@ class Rule extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;

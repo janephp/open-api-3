@@ -8,7 +8,7 @@ class ContentDetailViewEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ContentDetailViewEvent extends ApplicationEvent
      *
      * @return list<string>|null
      */
-    public function getContentIds() : ?array
+    public function getContentIds(): ?array
     {
         return $this->contentIds;
     }
@@ -34,7 +34,7 @@ class ContentDetailViewEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setContentIds(?array $contentIds) : self
+    public function setContentIds(?array $contentIds): self
     {
         $this->initialized['contentIds'] = true;
         $this->contentIds = $contentIds;

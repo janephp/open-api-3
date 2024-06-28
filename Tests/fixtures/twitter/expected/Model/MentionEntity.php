@@ -8,7 +8,7 @@ class MentionEntity extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class MentionEntity extends \ArrayObject
      *
      * @return int
      */
-    public function getStart() : int
+    public function getStart(): int
     {
         return $this->start;
     }
@@ -46,7 +46,7 @@ class MentionEntity extends \ArrayObject
      *
      * @return self
      */
-    public function setStart(int $start) : self
+    public function setStart(int $start): self
     {
         $this->initialized['start'] = true;
         $this->start = $start;
@@ -57,7 +57,7 @@ class MentionEntity extends \ArrayObject
      *
      * @return int
      */
-    public function getEnd() : int
+    public function getEnd(): int
     {
         return $this->end;
     }
@@ -68,7 +68,7 @@ class MentionEntity extends \ArrayObject
      *
      * @return self
      */
-    public function setEnd(int $end) : self
+    public function setEnd(int $end): self
     {
         $this->initialized['end'] = true;
         $this->end = $end;
@@ -79,7 +79,7 @@ class MentionEntity extends \ArrayObject
      *
      * @return string
      */
-    public function getUsername() : string
+    public function getUsername(): string
     {
         return $this->username;
     }
@@ -90,7 +90,7 @@ class MentionEntity extends \ArrayObject
      *
      * @return self
      */
-    public function setUsername(string $username) : self
+    public function setUsername(string $username): self
     {
         $this->initialized['username'] = true;
         $this->username = $username;

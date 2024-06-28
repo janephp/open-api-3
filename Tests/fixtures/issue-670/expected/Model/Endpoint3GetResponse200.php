@@ -8,7 +8,7 @@ class Endpoint3GetResponse200 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class Endpoint3GetResponse200 extends \ArrayObject
      *
      * @return Endpoint3GetResponse200Field3
      */
-    public function getField3() : Endpoint3GetResponse200Field3
+    public function getField3(): Endpoint3GetResponse200Field3
     {
         return $this->field3;
     }
@@ -34,7 +34,7 @@ class Endpoint3GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setField3(Endpoint3GetResponse200Field3 $field3) : self
+    public function setField3(Endpoint3GetResponse200Field3 $field3): self
     {
         $this->initialized['field3'] = true;
         $this->field3 = $field3;

@@ -8,7 +8,7 @@ class BusinessProcessDetailsDataCdnPurge extends BusinessProcessDetailsDataBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class BusinessProcessDetailsDataCdnPurge extends BusinessProcessDetailsDataBase
      *
      * @return string
      */
-    public function getSerializedCdnConfiguration() : string
+    public function getSerializedCdnConfiguration(): string
     {
         return $this->serializedCdnConfiguration;
     }
@@ -40,7 +40,7 @@ class BusinessProcessDetailsDataCdnPurge extends BusinessProcessDetailsDataBase
      *
      * @return self
      */
-    public function setSerializedCdnConfiguration(string $serializedCdnConfiguration) : self
+    public function setSerializedCdnConfiguration(string $serializedCdnConfiguration): self
     {
         $this->initialized['serializedCdnConfiguration'] = true;
         $this->serializedCdnConfiguration = $serializedCdnConfiguration;
@@ -51,7 +51,7 @@ class BusinessProcessDetailsDataCdnPurge extends BusinessProcessDetailsDataBase
      *
      * @return list<CdnPurgeJobBase>
      */
-    public function getJobs() : array
+    public function getJobs(): array
     {
         return $this->jobs;
     }
@@ -62,7 +62,7 @@ class BusinessProcessDetailsDataCdnPurge extends BusinessProcessDetailsDataBase
      *
      * @return self
      */
-    public function setJobs(array $jobs) : self
+    public function setJobs(array $jobs): self
     {
         $this->initialized['jobs'] = true;
         $this->jobs = $jobs;

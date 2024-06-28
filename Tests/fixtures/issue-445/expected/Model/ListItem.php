@@ -8,7 +8,7 @@ class ListItem
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -82,7 +82,7 @@ class ListItem
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;
@@ -93,7 +93,7 @@ class ListItem
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -104,7 +104,7 @@ class ListItem
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -115,7 +115,7 @@ class ListItem
      *
      * @return string|null
      */
-    public function getContentSchemaId() : ?string
+    public function getContentSchemaId(): ?string
     {
         return $this->contentSchemaId;
     }
@@ -126,7 +126,7 @@ class ListItem
      *
      * @return self
      */
-    public function setContentSchemaId(?string $contentSchemaId) : self
+    public function setContentSchemaId(?string $contentSchemaId): self
     {
         $this->initialized['contentSchemaId'] = true;
         $this->contentSchemaId = $contentSchemaId;
@@ -148,7 +148,7 @@ class ListItem
      *
      * @return self
      */
-    public function setDisplayValues($displayValues) : self
+    public function setDisplayValues($displayValues): self
     {
         $this->initialized['displayValues'] = true;
         $this->displayValues = $displayValues;
@@ -159,7 +159,7 @@ class ListItem
      *
      * @return array<string, mixed>|null
      */
-    public function getContent() : ?iterable
+    public function getContent(): ?iterable
     {
         return $this->content;
     }
@@ -170,7 +170,7 @@ class ListItem
      *
      * @return self
      */
-    public function setContent(?iterable $content) : self
+    public function setContent(?iterable $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -181,7 +181,7 @@ class ListItem
      *
      * @return list<string>|null
      */
-    public function getBrokenReferenceIds() : ?array
+    public function getBrokenReferenceIds(): ?array
     {
         return $this->brokenReferenceIds;
     }
@@ -192,7 +192,7 @@ class ListItem
      *
      * @return self
      */
-    public function setBrokenReferenceIds(?array $brokenReferenceIds) : self
+    public function setBrokenReferenceIds(?array $brokenReferenceIds): self
     {
         $this->initialized['brokenReferenceIds'] = true;
         $this->brokenReferenceIds = $brokenReferenceIds;
@@ -203,7 +203,7 @@ class ListItem
      *
      * @return list<string>|null
      */
-    public function getBrokenRelationTargetIds() : ?array
+    public function getBrokenRelationTargetIds(): ?array
     {
         return $this->brokenRelationTargetIds;
     }
@@ -214,7 +214,7 @@ class ListItem
      *
      * @return self
      */
-    public function setBrokenRelationTargetIds(?array $brokenRelationTargetIds) : self
+    public function setBrokenRelationTargetIds(?array $brokenRelationTargetIds): self
     {
         $this->initialized['brokenRelationTargetIds'] = true;
         $this->brokenRelationTargetIds = $brokenRelationTargetIds;
@@ -225,7 +225,7 @@ class ListItem
      *
      * @return list<string>|null
      */
-    public function getBrokenIndirectReferenceIds() : ?array
+    public function getBrokenIndirectReferenceIds(): ?array
     {
         return $this->brokenIndirectReferenceIds;
     }
@@ -236,7 +236,7 @@ class ListItem
      *
      * @return self
      */
-    public function setBrokenIndirectReferenceIds(?array $brokenIndirectReferenceIds) : self
+    public function setBrokenIndirectReferenceIds(?array $brokenIndirectReferenceIds): self
     {
         $this->initialized['brokenIndirectReferenceIds'] = true;
         $this->brokenIndirectReferenceIds = $brokenIndirectReferenceIds;
@@ -258,7 +258,7 @@ class ListItem
      *
      * @return self
      */
-    public function setLifeCycle($lifeCycle) : self
+    public function setLifeCycle($lifeCycle): self
     {
         $this->initialized['lifeCycle'] = true;
         $this->lifeCycle = $lifeCycle;

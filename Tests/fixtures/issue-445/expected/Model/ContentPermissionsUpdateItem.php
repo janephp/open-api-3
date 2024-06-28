@@ -8,7 +8,7 @@ class ContentPermissionsUpdateItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -31,7 +31,7 @@ class ContentPermissionsUpdateItem extends \ArrayObject
     *
     * @return list<string>|null
     */
-    public function getContentPermissionSetIds() : ?array
+    public function getContentPermissionSetIds(): ?array
     {
         return $this->contentPermissionSetIds;
     }
@@ -43,7 +43,7 @@ class ContentPermissionsUpdateItem extends \ArrayObject
     *
     * @return self
     */
-    public function setContentPermissionSetIds(?array $contentPermissionSetIds) : self
+    public function setContentPermissionSetIds(?array $contentPermissionSetIds): self
     {
         $this->initialized['contentPermissionSetIds'] = true;
         $this->contentPermissionSetIds = $contentPermissionSetIds;
@@ -54,7 +54,7 @@ class ContentPermissionsUpdateItem extends \ArrayObject
      *
      * @return string
      */
-    public function getContentId() : string
+    public function getContentId(): string
     {
         return $this->contentId;
     }
@@ -65,7 +65,7 @@ class ContentPermissionsUpdateItem extends \ArrayObject
      *
      * @return self
      */
-    public function setContentId(string $contentId) : self
+    public function setContentId(string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;

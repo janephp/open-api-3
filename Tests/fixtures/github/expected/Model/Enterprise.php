@@ -8,7 +8,7 @@ class Enterprise extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class Enterprise extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -88,7 +88,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -99,7 +99,7 @@ class Enterprise extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -110,7 +110,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -121,7 +121,7 @@ class Enterprise extends \ArrayObject
      *
      * @return string|null
      */
-    public function getWebsiteUrl() : ?string
+    public function getWebsiteUrl(): ?string
     {
         return $this->websiteUrl;
     }
@@ -132,7 +132,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setWebsiteUrl(?string $websiteUrl) : self
+    public function setWebsiteUrl(?string $websiteUrl): self
     {
         $this->initialized['websiteUrl'] = true;
         $this->websiteUrl = $websiteUrl;
@@ -143,7 +143,7 @@ class Enterprise extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -154,7 +154,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -165,7 +165,7 @@ class Enterprise extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -176,7 +176,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -187,7 +187,7 @@ class Enterprise extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -198,7 +198,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -209,7 +209,7 @@ class Enterprise extends \ArrayObject
      *
      * @return string
      */
-    public function getSlug() : string
+    public function getSlug(): string
     {
         return $this->slug;
     }
@@ -220,7 +220,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setSlug(string $slug) : self
+    public function setSlug(string $slug): self
     {
         $this->initialized['slug'] = true;
         $this->slug = $slug;
@@ -231,7 +231,7 @@ class Enterprise extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getCreatedAt() : ?\DateTime
+    public function getCreatedAt(): ?\DateTime
     {
         return $this->createdAt;
     }
@@ -242,7 +242,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(?\DateTime $createdAt) : self
+    public function setCreatedAt(?\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -253,7 +253,7 @@ class Enterprise extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getUpdatedAt() : ?\DateTime
+    public function getUpdatedAt(): ?\DateTime
     {
         return $this->updatedAt;
     }
@@ -264,7 +264,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(?\DateTime $updatedAt) : self
+    public function setUpdatedAt(?\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -275,7 +275,7 @@ class Enterprise extends \ArrayObject
      *
      * @return string
      */
-    public function getAvatarUrl() : string
+    public function getAvatarUrl(): string
     {
         return $this->avatarUrl;
     }
@@ -286,7 +286,7 @@ class Enterprise extends \ArrayObject
      *
      * @return self
      */
-    public function setAvatarUrl(string $avatarUrl) : self
+    public function setAvatarUrl(string $avatarUrl): self
     {
         $this->initialized['avatarUrl'] = true;
         $this->avatarUrl = $avatarUrl;

@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -82,7 +82,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -93,7 +93,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return string
      */
-    public function getYearEndDate() : string
+    public function getYearEndDate(): string
     {
         return $this->yearEndDate;
     }
@@ -104,7 +104,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return self
      */
-    public function setYearEndDate(string $yearEndDate) : self
+    public function setYearEndDate(string $yearEndDate): self
     {
         $this->initialized['yearEndDate'] = true;
         $this->yearEndDate = $yearEndDate;
@@ -115,7 +115,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return float
      */
-    public function getNumberOfWeeks() : float
+    public function getNumberOfWeeks(): float
     {
         return $this->numberOfWeeks;
     }
@@ -126,7 +126,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return self
      */
-    public function setNumberOfWeeks(float $numberOfWeeks) : self
+    public function setNumberOfWeeks(float $numberOfWeeks): self
     {
         $this->initialized['numberOfWeeks'] = true;
         $this->numberOfWeeks = $numberOfWeeks;
@@ -137,7 +137,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -148,7 +148,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return self
      */
-    public function setCurrency(string $currency) : self
+    public function setCurrency(string $currency): self
     {
         $this->initialized['currency'] = true;
         $this->currency = $currency;
@@ -159,7 +159,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return bool
      */
-    public function getConsolidatedAccounts() : bool
+    public function getConsolidatedAccounts(): bool
     {
         return $this->consolidatedAccounts;
     }
@@ -170,7 +170,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return self
      */
-    public function setConsolidatedAccounts(bool $consolidatedAccounts) : self
+    public function setConsolidatedAccounts(bool $consolidatedAccounts): self
     {
         $this->initialized['consolidatedAccounts'] = true;
         $this->consolidatedAccounts = $consolidatedAccounts;
@@ -181,7 +181,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss
      */
-    public function getProfitAndLoss() : GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss
+    public function getProfitAndLoss(): GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss
     {
         return $this->profitAndLoss;
     }
@@ -192,7 +192,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return self
      */
-    public function setProfitAndLoss(GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss $profitAndLoss) : self
+    public function setProfitAndLoss(GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss $profitAndLoss): self
     {
         $this->initialized['profitAndLoss'] = true;
         $this->profitAndLoss = $profitAndLoss;
@@ -203,7 +203,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return GbCompanyReportExampleResponseReportFinancialStatementsItemBalanceSheet
      */
-    public function getBalanceSheet() : GbCompanyReportExampleResponseReportFinancialStatementsItemBalanceSheet
+    public function getBalanceSheet(): GbCompanyReportExampleResponseReportFinancialStatementsItemBalanceSheet
     {
         return $this->balanceSheet;
     }
@@ -214,7 +214,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return self
      */
-    public function setBalanceSheet(GbCompanyReportExampleResponseReportFinancialStatementsItemBalanceSheet $balanceSheet) : self
+    public function setBalanceSheet(GbCompanyReportExampleResponseReportFinancialStatementsItemBalanceSheet $balanceSheet): self
     {
         $this->initialized['balanceSheet'] = true;
         $this->balanceSheet = $balanceSheet;
@@ -225,7 +225,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
      */
-    public function getOtherFinancials() : GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
+    public function getOtherFinancials(): GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
     {
         return $this->otherFinancials;
     }
@@ -236,7 +236,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return self
      */
-    public function setOtherFinancials(GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials $otherFinancials) : self
+    public function setOtherFinancials(GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials $otherFinancials): self
     {
         $this->initialized['otherFinancials'] = true;
         $this->otherFinancials = $otherFinancials;
@@ -247,7 +247,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return GbCompanyReportExampleResponseReportFinancialStatementsItemRatios
      */
-    public function getRatios() : GbCompanyReportExampleResponseReportFinancialStatementsItemRatios
+    public function getRatios(): GbCompanyReportExampleResponseReportFinancialStatementsItemRatios
     {
         return $this->ratios;
     }
@@ -258,7 +258,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItem extends \Array
      *
      * @return self
      */
-    public function setRatios(GbCompanyReportExampleResponseReportFinancialStatementsItemRatios $ratios) : self
+    public function setRatios(GbCompanyReportExampleResponseReportFinancialStatementsItemRatios $ratios): self
     {
         $this->initialized['ratios'] = true;
         $this->ratios = $ratios;

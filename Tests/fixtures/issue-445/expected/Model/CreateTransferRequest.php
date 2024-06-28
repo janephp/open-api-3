@@ -8,7 +8,7 @@ class CreateTransferRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -57,7 +57,7 @@ class CreateTransferRequest
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -68,7 +68,7 @@ class CreateTransferRequest
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -90,7 +90,7 @@ class CreateTransferRequest
      *
      * @return self
      */
-    public function setTransferType($transferType) : self
+    public function setTransferType($transferType): self
     {
         $this->initialized['transferType'] = true;
         $this->transferType = $transferType;
@@ -103,7 +103,7 @@ class CreateTransferRequest
     *
     * @return list<TransferUploadFile>|null
     */
-    public function getFiles() : ?array
+    public function getFiles(): ?array
     {
         return $this->files;
     }
@@ -116,7 +116,7 @@ class CreateTransferRequest
     *
     * @return self
     */
-    public function setFiles(?array $files) : self
+    public function setFiles(?array $files): self
     {
         $this->initialized['files'] = true;
         $this->files = $files;
@@ -129,7 +129,7 @@ class CreateTransferRequest
     *
     * @return list<TransferWebLink>|null
     */
-    public function getWebLinks() : ?array
+    public function getWebLinks(): ?array
     {
         return $this->webLinks;
     }
@@ -142,7 +142,7 @@ class CreateTransferRequest
     *
     * @return self
     */
-    public function setWebLinks(?array $webLinks) : self
+    public function setWebLinks(?array $webLinks): self
     {
         $this->initialized['webLinks'] = true;
         $this->webLinks = $webLinks;
@@ -153,7 +153,7 @@ class CreateTransferRequest
      *
      * @return string|null
      */
-    public function getCollectionName() : ?string
+    public function getCollectionName(): ?string
     {
         return $this->collectionName;
     }
@@ -164,7 +164,7 @@ class CreateTransferRequest
      *
      * @return self
      */
-    public function setCollectionName(?string $collectionName) : self
+    public function setCollectionName(?string $collectionName): self
     {
         $this->initialized['collectionName'] = true;
         $this->collectionName = $collectionName;
@@ -175,7 +175,7 @@ class CreateTransferRequest
      *
      * @return bool
      */
-    public function getCreateCollection() : bool
+    public function getCreateCollection(): bool
     {
         return $this->createCollection;
     }
@@ -186,7 +186,7 @@ class CreateTransferRequest
      *
      * @return self
      */
-    public function setCreateCollection(bool $createCollection) : self
+    public function setCreateCollection(bool $createCollection): self
     {
         $this->initialized['createCollection'] = true;
         $this->createCollection = $createCollection;

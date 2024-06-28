@@ -8,7 +8,7 @@ class SortField
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class SortField
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -40,7 +40,7 @@ class SortField
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -62,7 +62,7 @@ class SortField
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;

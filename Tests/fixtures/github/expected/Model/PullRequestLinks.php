@@ -8,7 +8,7 @@ class PullRequestLinks extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getComments() : Link
+    public function getComments(): Link
     {
         return $this->comments;
     }
@@ -76,7 +76,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setComments(Link $comments) : self
+    public function setComments(Link $comments): self
     {
         $this->initialized['comments'] = true;
         $this->comments = $comments;
@@ -87,7 +87,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getCommits() : Link
+    public function getCommits(): Link
     {
         return $this->commits;
     }
@@ -98,7 +98,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setCommits(Link $commits) : self
+    public function setCommits(Link $commits): self
     {
         $this->initialized['commits'] = true;
         $this->commits = $commits;
@@ -109,7 +109,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getStatuses() : Link
+    public function getStatuses(): Link
     {
         return $this->statuses;
     }
@@ -120,7 +120,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setStatuses(Link $statuses) : self
+    public function setStatuses(Link $statuses): self
     {
         $this->initialized['statuses'] = true;
         $this->statuses = $statuses;
@@ -131,7 +131,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getHtml() : Link
+    public function getHtml(): Link
     {
         return $this->html;
     }
@@ -142,7 +142,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setHtml(Link $html) : self
+    public function setHtml(Link $html): self
     {
         $this->initialized['html'] = true;
         $this->html = $html;
@@ -153,7 +153,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getIssue() : Link
+    public function getIssue(): Link
     {
         return $this->issue;
     }
@@ -164,7 +164,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setIssue(Link $issue) : self
+    public function setIssue(Link $issue): self
     {
         $this->initialized['issue'] = true;
         $this->issue = $issue;
@@ -175,7 +175,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getReviewComments() : Link
+    public function getReviewComments(): Link
     {
         return $this->reviewComments;
     }
@@ -186,7 +186,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setReviewComments(Link $reviewComments) : self
+    public function setReviewComments(Link $reviewComments): self
     {
         $this->initialized['reviewComments'] = true;
         $this->reviewComments = $reviewComments;
@@ -197,7 +197,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getReviewComment() : Link
+    public function getReviewComment(): Link
     {
         return $this->reviewComment;
     }
@@ -208,7 +208,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setReviewComment(Link $reviewComment) : self
+    public function setReviewComment(Link $reviewComment): self
     {
         $this->initialized['reviewComment'] = true;
         $this->reviewComment = $reviewComment;
@@ -219,7 +219,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getSelf() : Link
+    public function getSelf(): Link
     {
         return $this->self;
     }
@@ -230,7 +230,7 @@ class PullRequestLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setSelf(Link $self) : self
+    public function setSelf(Link $self): self
     {
         $this->initialized['self'] = true;
         $this->self = $self;

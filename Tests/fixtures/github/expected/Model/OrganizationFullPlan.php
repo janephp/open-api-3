@@ -8,7 +8,7 @@ class OrganizationFullPlan extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -58,7 +58,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -69,7 +69,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getSpace() : int
+    public function getSpace(): int
     {
         return $this->space;
     }
@@ -80,7 +80,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setSpace(int $space) : self
+    public function setSpace(int $space): self
     {
         $this->initialized['space'] = true;
         $this->space = $space;
@@ -91,7 +91,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getPrivateRepos() : int
+    public function getPrivateRepos(): int
     {
         return $this->privateRepos;
     }
@@ -102,7 +102,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivateRepos(int $privateRepos) : self
+    public function setPrivateRepos(int $privateRepos): self
     {
         $this->initialized['privateRepos'] = true;
         $this->privateRepos = $privateRepos;
@@ -113,7 +113,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getFilledSeats() : int
+    public function getFilledSeats(): int
     {
         return $this->filledSeats;
     }
@@ -124,7 +124,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setFilledSeats(int $filledSeats) : self
+    public function setFilledSeats(int $filledSeats): self
     {
         $this->initialized['filledSeats'] = true;
         $this->filledSeats = $filledSeats;
@@ -135,7 +135,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getSeats() : int
+    public function getSeats(): int
     {
         return $this->seats;
     }
@@ -146,7 +146,7 @@ class OrganizationFullPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setSeats(int $seats) : self
+    public function setSeats(int $seats): self
     {
         $this->initialized['seats'] = true;
         $this->seats = $seats;

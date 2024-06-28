@@ -8,7 +8,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -64,7 +64,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -75,7 +75,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -86,7 +86,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -97,7 +97,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAssignee() : ?string
+    public function getAssignee(): ?string
     {
         return $this->assignee;
     }
@@ -108,7 +108,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAssignee(?string $assignee) : self
+    public function setAssignee(?string $assignee): self
     {
         $this->initialized['assignee'] = true;
         $this->assignee = $assignee;
@@ -119,7 +119,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return int|null
      */
-    public function getMilestone() : ?int
+    public function getMilestone(): ?int
     {
         return $this->milestone;
     }
@@ -130,7 +130,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMilestone(?int $milestone) : self
+    public function setMilestone(?int $milestone): self
     {
         $this->initialized['milestone'] = true;
         $this->milestone = $milestone;
@@ -141,7 +141,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getLabels() : array
+    public function getLabels(): array
     {
         return $this->labels;
     }
@@ -152,7 +152,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLabels(array $labels) : self
+    public function setLabels(array $labels): self
     {
         $this->initialized['labels'] = true;
         $this->labels = $labels;
@@ -163,7 +163,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getAssignees() : array
+    public function getAssignees(): array
     {
         return $this->assignees;
     }
@@ -174,7 +174,7 @@ class ReposOwnerRepoIssuesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAssignees(array $assignees) : self
+    public function setAssignees(array $assignees): self
     {
         $this->initialized['assignees'] = true;
         $this->assignees = $assignees;

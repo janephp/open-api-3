@@ -8,7 +8,7 @@ class GbPeopleReportReponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return string
      */
-    public function getCorrelationId() : string
+    public function getCorrelationId(): string
     {
         return $this->correlationId;
     }
@@ -70,7 +70,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return self
      */
-    public function setCorrelationId(string $correlationId) : self
+    public function setCorrelationId(string $correlationId): self
     {
         $this->initialized['correlationId'] = true;
         $this->correlationId = $correlationId;
@@ -81,7 +81,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return string
      */
-    public function getOrderId() : string
+    public function getOrderId(): string
     {
         return $this->orderId;
     }
@@ -92,7 +92,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return self
      */
-    public function setOrderId(string $orderId) : self
+    public function setOrderId(string $orderId): self
     {
         $this->initialized['orderId'] = true;
         $this->orderId = $orderId;
@@ -103,7 +103,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return string
      */
-    public function getDirectorId() : string
+    public function getDirectorId(): string
     {
         return $this->directorId;
     }
@@ -114,7 +114,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return self
      */
-    public function setDirectorId(string $directorId) : self
+    public function setDirectorId(string $directorId): self
     {
         $this->initialized['directorId'] = true;
         $this->directorId = $directorId;
@@ -125,7 +125,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return string
      */
-    public function getDateOfOrder() : string
+    public function getDateOfOrder(): string
     {
         return $this->dateOfOrder;
     }
@@ -136,7 +136,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return self
      */
-    public function setDateOfOrder(string $dateOfOrder) : self
+    public function setDateOfOrder(string $dateOfOrder): self
     {
         $this->initialized['dateOfOrder'] = true;
         $this->dateOfOrder = $dateOfOrder;
@@ -147,7 +147,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return string
      */
-    public function getLanguage() : string
+    public function getLanguage(): string
     {
         return $this->language;
     }
@@ -158,7 +158,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(string $language) : self
+    public function setLanguage(string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -169,7 +169,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return string
      */
-    public function getUserId() : string
+    public function getUserId(): string
     {
         return $this->userId;
     }
@@ -180,7 +180,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return self
      */
-    public function setUserId(string $userId) : self
+    public function setUserId(string $userId): self
     {
         $this->initialized['userId'] = true;
         $this->userId = $userId;
@@ -191,7 +191,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return GbPeopleReportReponseReport
      */
-    public function getReport() : GbPeopleReportReponseReport
+    public function getReport(): GbPeopleReportReponseReport
     {
         return $this->report;
     }
@@ -202,7 +202,7 @@ class GbPeopleReportReponse extends \ArrayObject
      *
      * @return self
      */
-    public function setReport(GbPeopleReportReponseReport $report) : self
+    public function setReport(GbPeopleReportReponseReport $report): self
     {
         $this->initialized['report'] = true;
         $this->report = $report;

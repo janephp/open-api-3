@@ -8,7 +8,7 @@ class StarredRepository extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class StarredRepository extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getStarredAt() : \DateTime
+    public function getStarredAt(): \DateTime
     {
         return $this->starredAt;
     }
@@ -40,7 +40,7 @@ class StarredRepository extends \ArrayObject
      *
      * @return self
      */
-    public function setStarredAt(\DateTime $starredAt) : self
+    public function setStarredAt(\DateTime $starredAt): self
     {
         $this->initialized['starredAt'] = true;
         $this->starredAt = $starredAt;
@@ -51,7 +51,7 @@ class StarredRepository extends \ArrayObject
      *
      * @return Repository
      */
-    public function getRepo() : Repository
+    public function getRepo(): Repository
     {
         return $this->repo;
     }
@@ -62,7 +62,7 @@ class StarredRepository extends \ArrayObject
      *
      * @return self
      */
-    public function setRepo(Repository $repo) : self
+    public function setRepo(Repository $repo): self
     {
         $this->initialized['repo'] = true;
         $this->repo = $repo;

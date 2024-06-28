@@ -8,7 +8,7 @@ class CompletedFreshInvestigationSearchCriteriaAddress extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class CompletedFreshInvestigationSearchCriteriaAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getCity() : string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -46,7 +46,7 @@ class CompletedFreshInvestigationSearchCriteriaAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setCity(string $city) : self
+    public function setCity(string $city): self
     {
         $this->initialized['city'] = true;
         $this->city = $city;
@@ -57,7 +57,7 @@ class CompletedFreshInvestigationSearchCriteriaAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getPostcode() : string
+    public function getPostcode(): string
     {
         return $this->postcode;
     }
@@ -68,7 +68,7 @@ class CompletedFreshInvestigationSearchCriteriaAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setPostcode(string $postcode) : self
+    public function setPostcode(string $postcode): self
     {
         $this->initialized['postcode'] = true;
         $this->postcode = $postcode;
@@ -79,7 +79,7 @@ class CompletedFreshInvestigationSearchCriteriaAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getSimple() : string
+    public function getSimple(): string
     {
         return $this->simple;
     }
@@ -90,7 +90,7 @@ class CompletedFreshInvestigationSearchCriteriaAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setSimple(string $simple) : self
+    public function setSimple(string $simple): self
     {
         $this->initialized['simple'] = true;
         $this->simple = $simple;

@@ -8,7 +8,7 @@ class GistComment extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class GistComment extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -76,7 +76,7 @@ class GistComment extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -87,7 +87,7 @@ class GistComment extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -98,7 +98,7 @@ class GistComment extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -109,7 +109,7 @@ class GistComment extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -120,7 +120,7 @@ class GistComment extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -131,7 +131,7 @@ class GistComment extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -142,7 +142,7 @@ class GistComment extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -153,7 +153,7 @@ class GistComment extends \ArrayObject
      *
      * @return GistCommentUser|null
      */
-    public function getUser() : ?GistCommentUser
+    public function getUser(): ?GistCommentUser
     {
         return $this->user;
     }
@@ -164,7 +164,7 @@ class GistComment extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?GistCommentUser $user) : self
+    public function setUser(?GistCommentUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -175,7 +175,7 @@ class GistComment extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -186,7 +186,7 @@ class GistComment extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -197,7 +197,7 @@ class GistComment extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -208,7 +208,7 @@ class GistComment extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -219,7 +219,7 @@ class GistComment extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorAssociation() : string
+    public function getAuthorAssociation(): string
     {
         return $this->authorAssociation;
     }
@@ -230,7 +230,7 @@ class GistComment extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorAssociation(string $authorAssociation) : self
+    public function setAuthorAssociation(string $authorAssociation): self
     {
         $this->initialized['authorAssociation'] = true;
         $this->authorAssociation = $authorAssociation;

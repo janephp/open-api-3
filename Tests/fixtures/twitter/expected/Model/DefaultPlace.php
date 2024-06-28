@@ -8,7 +8,7 @@ class DefaultPlace extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return string
      */
-    public function getFormat() : string
+    public function getFormat(): string
     {
         return $this->format;
     }
@@ -76,7 +76,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return self
      */
-    public function setFormat(string $format) : self
+    public function setFormat(string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -87,7 +87,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -98,7 +98,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -109,7 +109,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -120,7 +120,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -131,7 +131,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -142,7 +142,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -153,7 +153,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return string
      */
-    public function getPlaceType() : string
+    public function getPlaceType(): string
     {
         return $this->placeType;
     }
@@ -164,7 +164,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return self
      */
-    public function setPlaceType(string $placeType) : self
+    public function setPlaceType(string $placeType): self
     {
         $this->initialized['placeType'] = true;
         $this->placeType = $placeType;
@@ -175,7 +175,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return string
      */
-    public function getFullName() : string
+    public function getFullName(): string
     {
         return $this->fullName;
     }
@@ -186,7 +186,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return self
      */
-    public function setFullName(string $fullName) : self
+    public function setFullName(string $fullName): self
     {
         $this->initialized['fullName'] = true;
         $this->fullName = $fullName;
@@ -197,7 +197,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -208,7 +208,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -219,7 +219,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getContainedWithin() : array
+    public function getContainedWithin(): array
     {
         return $this->containedWithin;
     }
@@ -230,7 +230,7 @@ class DefaultPlace extends \ArrayObject
      *
      * @return self
      */
-    public function setContainedWithin(array $containedWithin) : self
+    public function setContainedWithin(array $containedWithin): self
     {
         $this->initialized['containedWithin'] = true;
         $this->containedWithin = $containedWithin;

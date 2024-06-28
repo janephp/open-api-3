@@ -8,7 +8,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -69,7 +69,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -80,7 +80,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -91,7 +91,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -102,7 +102,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -113,7 +113,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getMaintainers() : array
+    public function getMaintainers(): array
     {
         return $this->maintainers;
     }
@@ -124,7 +124,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMaintainers(array $maintainers) : self
+    public function setMaintainers(array $maintainers): self
     {
         $this->initialized['maintainers'] = true;
         $this->maintainers = $maintainers;
@@ -135,7 +135,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getRepoNames() : array
+    public function getRepoNames(): array
     {
         return $this->repoNames;
     }
@@ -146,7 +146,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRepoNames(array $repoNames) : self
+    public function setRepoNames(array $repoNames): self
     {
         $this->initialized['repoNames'] = true;
         $this->repoNames = $repoNames;
@@ -164,7 +164,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
     *
     * @return string
     */
-    public function getPrivacy() : string
+    public function getPrivacy(): string
     {
         return $this->privacy;
     }
@@ -182,7 +182,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setPrivacy(string $privacy) : self
+    public function setPrivacy(string $privacy): self
     {
         $this->initialized['privacy'] = true;
         $this->privacy = $privacy;
@@ -196,7 +196,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
     *
     * @return string
     */
-    public function getPermission() : string
+    public function getPermission(): string
     {
         return $this->permission;
     }
@@ -210,7 +210,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setPermission(string $permission) : self
+    public function setPermission(string $permission): self
     {
         $this->initialized['permission'] = true;
         $this->permission = $permission;
@@ -221,7 +221,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getParentTeamId() : int
+    public function getParentTeamId(): int
     {
         return $this->parentTeamId;
     }
@@ -232,7 +232,7 @@ class OrgsOrgTeamsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setParentTeamId(int $parentTeamId) : self
+    public function setParentTeamId(int $parentTeamId): self
     {
         $this->initialized['parentTeamId'] = true;
         $this->parentTeamId = $parentTeamId;

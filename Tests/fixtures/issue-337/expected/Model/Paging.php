@@ -8,7 +8,7 @@ class Paging extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class Paging extends \ArrayObject
      *
      * @return float
      */
-    public function getSize() : float
+    public function getSize(): float
     {
         return $this->size;
     }
@@ -52,7 +52,7 @@ class Paging extends \ArrayObject
      *
      * @return self
      */
-    public function setSize(float $size) : self
+    public function setSize(float $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;
@@ -63,7 +63,7 @@ class Paging extends \ArrayObject
      *
      * @return float
      */
-    public function getPrev() : float
+    public function getPrev(): float
     {
         return $this->prev;
     }
@@ -74,7 +74,7 @@ class Paging extends \ArrayObject
      *
      * @return self
      */
-    public function setPrev(float $prev) : self
+    public function setPrev(float $prev): self
     {
         $this->initialized['prev'] = true;
         $this->prev = $prev;
@@ -85,7 +85,7 @@ class Paging extends \ArrayObject
      *
      * @return float
      */
-    public function getNext() : float
+    public function getNext(): float
     {
         return $this->next;
     }
@@ -96,7 +96,7 @@ class Paging extends \ArrayObject
      *
      * @return self
      */
-    public function setNext(float $next) : self
+    public function setNext(float $next): self
     {
         $this->initialized['next'] = true;
         $this->next = $next;
@@ -107,7 +107,7 @@ class Paging extends \ArrayObject
      *
      * @return float
      */
-    public function getLast() : float
+    public function getLast(): float
     {
         return $this->last;
     }
@@ -118,7 +118,7 @@ class Paging extends \ArrayObject
      *
      * @return self
      */
-    public function setLast(float $last) : self
+    public function setLast(float $last): self
     {
         $this->initialized['last'] = true;
         $this->last = $last;

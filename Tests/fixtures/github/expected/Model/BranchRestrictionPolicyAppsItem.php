@@ -8,7 +8,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -100,7 +100,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -111,7 +111,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getSlug() : string
+    public function getSlug(): string
     {
         return $this->slug;
     }
@@ -122,7 +122,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSlug(string $slug) : self
+    public function setSlug(string $slug): self
     {
         $this->initialized['slug'] = true;
         $this->slug = $slug;
@@ -133,7 +133,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -144,7 +144,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -155,7 +155,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return BranchRestrictionPolicyAppsItemOwner
      */
-    public function getOwner() : BranchRestrictionPolicyAppsItemOwner
+    public function getOwner(): BranchRestrictionPolicyAppsItemOwner
     {
         return $this->owner;
     }
@@ -166,7 +166,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setOwner(BranchRestrictionPolicyAppsItemOwner $owner) : self
+    public function setOwner(BranchRestrictionPolicyAppsItemOwner $owner): self
     {
         $this->initialized['owner'] = true;
         $this->owner = $owner;
@@ -177,7 +177,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -188,7 +188,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -199,7 +199,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -210,7 +210,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -221,7 +221,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getExternalUrl() : string
+    public function getExternalUrl(): string
     {
         return $this->externalUrl;
     }
@@ -232,7 +232,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setExternalUrl(string $externalUrl) : self
+    public function setExternalUrl(string $externalUrl): self
     {
         $this->initialized['externalUrl'] = true;
         $this->externalUrl = $externalUrl;
@@ -243,7 +243,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -254,7 +254,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -265,7 +265,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -276,7 +276,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -287,7 +287,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUpdatedAt() : string
+    public function getUpdatedAt(): string
     {
         return $this->updatedAt;
     }
@@ -298,7 +298,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(string $updatedAt) : self
+    public function setUpdatedAt(string $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -309,7 +309,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return BranchRestrictionPolicyAppsItemPermissions
      */
-    public function getPermissions() : BranchRestrictionPolicyAppsItemPermissions
+    public function getPermissions(): BranchRestrictionPolicyAppsItemPermissions
     {
         return $this->permissions;
     }
@@ -320,7 +320,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(BranchRestrictionPolicyAppsItemPermissions $permissions) : self
+    public function setPermissions(BranchRestrictionPolicyAppsItemPermissions $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;
@@ -331,7 +331,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getEvents() : array
+    public function getEvents(): array
     {
         return $this->events;
     }
@@ -342,7 +342,7 @@ class BranchRestrictionPolicyAppsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setEvents(array $events) : self
+    public function setEvents(array $events): self
     {
         $this->initialized['events'] = true;
         $this->events = $events;

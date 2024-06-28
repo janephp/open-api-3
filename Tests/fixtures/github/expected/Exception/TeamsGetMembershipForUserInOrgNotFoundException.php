@@ -13,7 +13,7 @@ class TeamsGetMembershipForUserInOrgNotFoundException extends NotFoundException
         parent::__construct('Response if user has no team membership');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -18,11 +18,11 @@ class ReposDeleteForbiddenException extends ForbiddenException
         $this->reposOwnerRepoDeleteResponse403 = $reposOwnerRepoDeleteResponse403;
         $this->response = $response;
     }
-    public function getReposOwnerRepoDeleteResponse403() : \Github\Model\ReposOwnerRepoDeleteResponse403
+    public function getReposOwnerRepoDeleteResponse403(): \Github\Model\ReposOwnerRepoDeleteResponse403
     {
         return $this->reposOwnerRepoDeleteResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

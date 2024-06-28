@@ -8,7 +8,7 @@ class SimulatedTaggingOptions extends TaggingOptionsBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class SimulatedTaggingOptions extends TaggingOptionsBase
      *
      * @return string|null
      */
-    public function getNumberOfKeywords() : ?string
+    public function getNumberOfKeywords(): ?string
     {
         return $this->numberOfKeywords;
     }
@@ -34,7 +34,7 @@ class SimulatedTaggingOptions extends TaggingOptionsBase
      *
      * @return self
      */
-    public function setNumberOfKeywords(?string $numberOfKeywords) : self
+    public function setNumberOfKeywords(?string $numberOfKeywords): self
     {
         $this->initialized['numberOfKeywords'] = true;
         $this->numberOfKeywords = $numberOfKeywords;

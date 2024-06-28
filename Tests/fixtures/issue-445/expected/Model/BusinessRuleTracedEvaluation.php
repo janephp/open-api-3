@@ -8,7 +8,7 @@ class BusinessRuleTracedEvaluation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return bool
      */
-    public function getConditionSatisfied() : bool
+    public function getConditionSatisfied(): bool
     {
         return $this->conditionSatisfied;
     }
@@ -58,7 +58,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return self
      */
-    public function setConditionSatisfied(bool $conditionSatisfied) : self
+    public function setConditionSatisfied(bool $conditionSatisfied): self
     {
         $this->initialized['conditionSatisfied'] = true;
         $this->conditionSatisfied = $conditionSatisfied;
@@ -69,7 +69,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return list<BusinessRuleTracedEvaluationCondition>|null
      */
-    public function getConditions() : ?array
+    public function getConditions(): ?array
     {
         return $this->conditions;
     }
@@ -80,7 +80,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return self
      */
-    public function setConditions(?array $conditions) : self
+    public function setConditions(?array $conditions): self
     {
         $this->initialized['conditions'] = true;
         $this->conditions = $conditions;
@@ -91,7 +91,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return list<BusinessRuleTracedTransformationGroup>|null
      */
-    public function getTransformationGroups() : ?array
+    public function getTransformationGroups(): ?array
     {
         return $this->transformationGroups;
     }
@@ -102,7 +102,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return self
      */
-    public function setTransformationGroups(?array $transformationGroups) : self
+    public function setTransformationGroups(?array $transformationGroups): self
     {
         $this->initialized['transformationGroups'] = true;
         $this->transformationGroups = $transformationGroups;
@@ -113,7 +113,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return list<BusinessRuleTracedAction>|null
      */
-    public function getActions() : ?array
+    public function getActions(): ?array
     {
         return $this->actions;
     }
@@ -124,7 +124,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return self
      */
-    public function setActions(?array $actions) : self
+    public function setActions(?array $actions): self
     {
         $this->initialized['actions'] = true;
         $this->actions = $actions;
@@ -135,7 +135,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return array<string, string>|null
      */
-    public function getVariables() : ?iterable
+    public function getVariables(): ?iterable
     {
         return $this->variables;
     }
@@ -146,7 +146,7 @@ class BusinessRuleTracedEvaluation
      *
      * @return self
      */
-    public function setVariables(?iterable $variables) : self
+    public function setVariables(?iterable $variables): self
     {
         $this->initialized['variables'] = true;
         $this->variables = $variables;

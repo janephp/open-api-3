@@ -8,7 +8,7 @@ class NumberCompareCondition extends BusinessRuleCondition
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class NumberCompareCondition extends BusinessRuleCondition
      *
      * @return string|null
      */
-    public function getFieldPath() : ?string
+    public function getFieldPath(): ?string
     {
         return $this->fieldPath;
     }
@@ -46,7 +46,7 @@ class NumberCompareCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setFieldPath(?string $fieldPath) : self
+    public function setFieldPath(?string $fieldPath): self
     {
         $this->initialized['fieldPath'] = true;
         $this->fieldPath = $fieldPath;
@@ -68,7 +68,7 @@ class NumberCompareCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setMode($mode) : self
+    public function setMode($mode): self
     {
         $this->initialized['mode'] = true;
         $this->mode = $mode;
@@ -79,7 +79,7 @@ class NumberCompareCondition extends BusinessRuleCondition
      *
      * @return float
      */
-    public function getValue() : float
+    public function getValue(): float
     {
         return $this->value;
     }
@@ -90,7 +90,7 @@ class NumberCompareCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setValue(float $value) : self
+    public function setValue(float $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

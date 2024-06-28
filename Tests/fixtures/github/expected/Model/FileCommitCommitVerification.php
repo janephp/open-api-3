@@ -8,7 +8,7 @@ class FileCommitCommitVerification extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class FileCommitCommitVerification extends \ArrayObject
      *
      * @return bool
      */
-    public function getVerified() : bool
+    public function getVerified(): bool
     {
         return $this->verified;
     }
@@ -52,7 +52,7 @@ class FileCommitCommitVerification extends \ArrayObject
      *
      * @return self
      */
-    public function setVerified(bool $verified) : self
+    public function setVerified(bool $verified): self
     {
         $this->initialized['verified'] = true;
         $this->verified = $verified;
@@ -63,7 +63,7 @@ class FileCommitCommitVerification extends \ArrayObject
      *
      * @return string
      */
-    public function getReason() : string
+    public function getReason(): string
     {
         return $this->reason;
     }
@@ -74,7 +74,7 @@ class FileCommitCommitVerification extends \ArrayObject
      *
      * @return self
      */
-    public function setReason(string $reason) : self
+    public function setReason(string $reason): self
     {
         $this->initialized['reason'] = true;
         $this->reason = $reason;
@@ -85,7 +85,7 @@ class FileCommitCommitVerification extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSignature() : ?string
+    public function getSignature(): ?string
     {
         return $this->signature;
     }
@@ -96,7 +96,7 @@ class FileCommitCommitVerification extends \ArrayObject
      *
      * @return self
      */
-    public function setSignature(?string $signature) : self
+    public function setSignature(?string $signature): self
     {
         $this->initialized['signature'] = true;
         $this->signature = $signature;
@@ -107,7 +107,7 @@ class FileCommitCommitVerification extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPayload() : ?string
+    public function getPayload(): ?string
     {
         return $this->payload;
     }
@@ -118,7 +118,7 @@ class FileCommitCommitVerification extends \ArrayObject
      *
      * @return self
      */
-    public function setPayload(?string $payload) : self
+    public function setPayload(?string $payload): self
     {
         $this->initialized['payload'] = true;
         $this->payload = $payload;

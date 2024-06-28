@@ -8,7 +8,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -58,7 +58,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -69,7 +69,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCategoryName() : string
+    public function getCategoryName(): string
     {
         return $this->categoryName;
     }
@@ -80,7 +80,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCategoryName(string $categoryName) : self
+    public function setCategoryName(string $categoryName): self
     {
         $this->initialized['categoryName'] = true;
         $this->categoryName = $categoryName;
@@ -91,7 +91,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getProductName() : string
+    public function getProductName(): string
     {
         return $this->productName;
     }
@@ -102,7 +102,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setProductName(string $productName) : self
+    public function setProductName(string $productName): self
     {
         $this->initialized['productName'] = true;
         $this->productName = $productName;
@@ -113,7 +113,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -124,7 +124,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -135,7 +135,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return int
      */
-    public function getConfidence() : int
+    public function getConfidence(): int
     {
         return $this->confidence;
     }
@@ -146,7 +146,7 @@ class CompliancePreDefinedSearchesPredefinedSearchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setConfidence(int $confidence) : self
+    public function setConfidence(int $confidence): self
     {
         $this->initialized['confidence'] = true;
         $this->confidence = $confidence;

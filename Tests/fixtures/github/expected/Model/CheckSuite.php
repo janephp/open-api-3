@@ -8,7 +8,7 @@ class CheckSuite extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -119,7 +119,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -130,7 +130,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -141,7 +141,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -152,7 +152,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -163,7 +163,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return string|null
      */
-    public function getHeadBranch() : ?string
+    public function getHeadBranch(): ?string
     {
         return $this->headBranch;
     }
@@ -174,7 +174,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setHeadBranch(?string $headBranch) : self
+    public function setHeadBranch(?string $headBranch): self
     {
         $this->initialized['headBranch'] = true;
         $this->headBranch = $headBranch;
@@ -185,7 +185,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return string
      */
-    public function getHeadSha() : string
+    public function getHeadSha(): string
     {
         return $this->headSha;
     }
@@ -196,7 +196,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setHeadSha(string $headSha) : self
+    public function setHeadSha(string $headSha): self
     {
         $this->initialized['headSha'] = true;
         $this->headSha = $headSha;
@@ -207,7 +207,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return string|null
      */
-    public function getStatus() : ?string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -218,7 +218,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(?string $status) : self
+    public function setStatus(?string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -229,7 +229,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return string|null
      */
-    public function getConclusion() : ?string
+    public function getConclusion(): ?string
     {
         return $this->conclusion;
     }
@@ -240,7 +240,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setConclusion(?string $conclusion) : self
+    public function setConclusion(?string $conclusion): self
     {
         $this->initialized['conclusion'] = true;
         $this->conclusion = $conclusion;
@@ -251,7 +251,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUrl() : ?string
+    public function getUrl(): ?string
     {
         return $this->url;
     }
@@ -262,7 +262,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(?string $url) : self
+    public function setUrl(?string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -273,7 +273,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return string|null
      */
-    public function getBefore() : ?string
+    public function getBefore(): ?string
     {
         return $this->before;
     }
@@ -284,7 +284,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setBefore(?string $before) : self
+    public function setBefore(?string $before): self
     {
         $this->initialized['before'] = true;
         $this->before = $before;
@@ -295,7 +295,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAfter() : ?string
+    public function getAfter(): ?string
     {
         return $this->after;
     }
@@ -306,7 +306,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setAfter(?string $after) : self
+    public function setAfter(?string $after): self
     {
         $this->initialized['after'] = true;
         $this->after = $after;
@@ -317,7 +317,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return list<PullRequestMinimal>|null
      */
-    public function getPullRequests() : ?array
+    public function getPullRequests(): ?array
     {
         return $this->pullRequests;
     }
@@ -328,7 +328,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequests(?array $pullRequests) : self
+    public function setPullRequests(?array $pullRequests): self
     {
         $this->initialized['pullRequests'] = true;
         $this->pullRequests = $pullRequests;
@@ -339,7 +339,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return CheckSuiteApp|null
      */
-    public function getApp() : ?CheckSuiteApp
+    public function getApp(): ?CheckSuiteApp
     {
         return $this->app;
     }
@@ -350,7 +350,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setApp(?CheckSuiteApp $app) : self
+    public function setApp(?CheckSuiteApp $app): self
     {
         $this->initialized['app'] = true;
         $this->app = $app;
@@ -361,7 +361,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return MinimalRepository
      */
-    public function getRepository() : MinimalRepository
+    public function getRepository(): MinimalRepository
     {
         return $this->repository;
     }
@@ -372,7 +372,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setRepository(MinimalRepository $repository) : self
+    public function setRepository(MinimalRepository $repository): self
     {
         $this->initialized['repository'] = true;
         $this->repository = $repository;
@@ -383,7 +383,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getCreatedAt() : ?\DateTime
+    public function getCreatedAt(): ?\DateTime
     {
         return $this->createdAt;
     }
@@ -394,7 +394,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(?\DateTime $createdAt) : self
+    public function setCreatedAt(?\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -405,7 +405,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getUpdatedAt() : ?\DateTime
+    public function getUpdatedAt(): ?\DateTime
     {
         return $this->updatedAt;
     }
@@ -416,7 +416,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(?\DateTime $updatedAt) : self
+    public function setUpdatedAt(?\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -427,7 +427,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return SimpleCommit
      */
-    public function getHeadCommit() : SimpleCommit
+    public function getHeadCommit(): SimpleCommit
     {
         return $this->headCommit;
     }
@@ -438,7 +438,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setHeadCommit(SimpleCommit $headCommit) : self
+    public function setHeadCommit(SimpleCommit $headCommit): self
     {
         $this->initialized['headCommit'] = true;
         $this->headCommit = $headCommit;
@@ -449,7 +449,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return int
      */
-    public function getLatestCheckRunsCount() : int
+    public function getLatestCheckRunsCount(): int
     {
         return $this->latestCheckRunsCount;
     }
@@ -460,7 +460,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setLatestCheckRunsCount(int $latestCheckRunsCount) : self
+    public function setLatestCheckRunsCount(int $latestCheckRunsCount): self
     {
         $this->initialized['latestCheckRunsCount'] = true;
         $this->latestCheckRunsCount = $latestCheckRunsCount;
@@ -471,7 +471,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return string
      */
-    public function getCheckRunsUrl() : string
+    public function getCheckRunsUrl(): string
     {
         return $this->checkRunsUrl;
     }
@@ -482,7 +482,7 @@ class CheckSuite extends \ArrayObject
      *
      * @return self
      */
-    public function setCheckRunsUrl(string $checkRunsUrl) : self
+    public function setCheckRunsUrl(string $checkRunsUrl): self
     {
         $this->initialized['checkRunsUrl'] = true;
         $this->checkRunsUrl = $checkRunsUrl;

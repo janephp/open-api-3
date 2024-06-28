@@ -8,7 +8,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return string
      */
-    public function getRuleCode() : string
+    public function getRuleCode(): string
     {
         return $this->ruleCode;
     }
@@ -58,7 +58,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return self
      */
-    public function setRuleCode(string $ruleCode) : self
+    public function setRuleCode(string $ruleCode): self
     {
         $this->initialized['ruleCode'] = true;
         $this->ruleCode = $ruleCode;
@@ -69,7 +69,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return string
      */
-    public function getIsActive() : string
+    public function getIsActive(): string
     {
         return $this->isActive;
     }
@@ -80,7 +80,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return self
      */
-    public function setIsActive(string $isActive) : self
+    public function setIsActive(string $isActive): self
     {
         $this->initialized['isActive'] = true;
         $this->isActive = $isActive;
@@ -91,7 +91,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return string
      */
-    public function getParam0() : string
+    public function getParam0(): string
     {
         return $this->param0;
     }
@@ -102,7 +102,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return self
      */
-    public function setParam0(string $param0) : self
+    public function setParam0(string $param0): self
     {
         $this->initialized['param0'] = true;
         $this->param0 = $param0;
@@ -113,7 +113,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return string
      */
-    public function getParam1() : string
+    public function getParam1(): string
     {
         return $this->param1;
     }
@@ -124,7 +124,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return self
      */
-    public function setParam1(string $param1) : self
+    public function setParam1(string $param1): self
     {
         $this->initialized['param1'] = true;
         $this->param1 = $param1;
@@ -135,7 +135,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return string
      */
-    public function getParam2() : string
+    public function getParam2(): string
     {
         return $this->param2;
     }
@@ -146,7 +146,7 @@ class MonitoringPortfoliosPortfolioIdEventRulesCountryCodePutBodyItem extends \A
      *
      * @return self
      */
-    public function setParam2(string $param2) : self
+    public function setParam2(string $param2): self
     {
         $this->initialized['param2'] = true;
         $this->param2 = $param2;

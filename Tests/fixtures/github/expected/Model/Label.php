@@ -8,7 +8,7 @@ class Label extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class Label extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -70,7 +70,7 @@ class Label extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -81,7 +81,7 @@ class Label extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -92,7 +92,7 @@ class Label extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -103,7 +103,7 @@ class Label extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -114,7 +114,7 @@ class Label extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -125,7 +125,7 @@ class Label extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -136,7 +136,7 @@ class Label extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -147,7 +147,7 @@ class Label extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -158,7 +158,7 @@ class Label extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -169,7 +169,7 @@ class Label extends \ArrayObject
      *
      * @return string
      */
-    public function getColor() : string
+    public function getColor(): string
     {
         return $this->color;
     }
@@ -180,7 +180,7 @@ class Label extends \ArrayObject
      *
      * @return self
      */
-    public function setColor(string $color) : self
+    public function setColor(string $color): self
     {
         $this->initialized['color'] = true;
         $this->color = $color;
@@ -191,7 +191,7 @@ class Label extends \ArrayObject
      *
      * @return bool
      */
-    public function getDefault() : bool
+    public function getDefault(): bool
     {
         return $this->default;
     }
@@ -202,7 +202,7 @@ class Label extends \ArrayObject
      *
      * @return self
      */
-    public function setDefault(bool $default) : self
+    public function setDefault(bool $default): self
     {
         $this->initialized['default'] = true;
         $this->default = $default;

@@ -8,7 +8,7 @@ class ReposOwnerRepoLabelsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ReposOwnerRepoLabelsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -46,7 +46,7 @@ class ReposOwnerRepoLabelsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -57,7 +57,7 @@ class ReposOwnerRepoLabelsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getColor() : string
+    public function getColor(): string
     {
         return $this->color;
     }
@@ -68,7 +68,7 @@ class ReposOwnerRepoLabelsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setColor(string $color) : self
+    public function setColor(string $color): self
     {
         $this->initialized['color'] = true;
         $this->color = $color;
@@ -79,7 +79,7 @@ class ReposOwnerRepoLabelsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -90,7 +90,7 @@ class ReposOwnerRepoLabelsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

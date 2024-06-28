@@ -18,11 +18,11 @@ class OrgsRemoveOutsideCollaboratorUnprocessableEntityException extends Unproces
         $this->orgsOrgOutsideCollaboratorsUsernameDeleteResponse422 = $orgsOrgOutsideCollaboratorsUsernameDeleteResponse422;
         $this->response = $response;
     }
-    public function getOrgsOrgOutsideCollaboratorsUsernameDeleteResponse422() : \Github\Model\OrgsOrgOutsideCollaboratorsUsernameDeleteResponse422
+    public function getOrgsOrgOutsideCollaboratorsUsernameDeleteResponse422(): \Github\Model\OrgsOrgOutsideCollaboratorsUsernameDeleteResponse422
     {
         return $this->orgsOrgOutsideCollaboratorsUsernameDeleteResponse422;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

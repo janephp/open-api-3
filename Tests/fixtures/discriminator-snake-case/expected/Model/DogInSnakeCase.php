@@ -8,7 +8,7 @@ class DogInSnakeCase extends Pet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class DogInSnakeCase extends Pet
      *
      * @return int
      */
-    public function getPackSize() : int
+    public function getPackSize(): int
     {
         return $this->packSize;
     }
@@ -34,7 +34,7 @@ class DogInSnakeCase extends Pet
      *
      * @return self
      */
-    public function setPackSize(int $packSize) : self
+    public function setPackSize(int $packSize): self
     {
         $this->initialized['packSize'] = true;
         $this->packSize = $packSize;

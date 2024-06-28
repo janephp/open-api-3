@@ -8,7 +8,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
      *
      * @return bool
      */
-    public function getConsent() : bool
+    public function getConsent(): bool
     {
         return $this->consent;
     }
@@ -52,7 +52,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setConsent(bool $consent) : self
+    public function setConsent(bool $consent): self
     {
         $this->initialized['consent'] = true;
         $this->consent = $consent;
@@ -63,7 +63,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
      *
      * @return CreateFreshInvestigationRequestContactInfo
      */
-    public function getContactInfo() : CreateFreshInvestigationRequestContactInfo
+    public function getContactInfo(): CreateFreshInvestigationRequestContactInfo
     {
         return $this->contactInfo;
     }
@@ -74,7 +74,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setContactInfo(CreateFreshInvestigationRequestContactInfo $contactInfo) : self
+    public function setContactInfo(CreateFreshInvestigationRequestContactInfo $contactInfo): self
     {
         $this->initialized['contactInfo'] = true;
         $this->contactInfo = $contactInfo;
@@ -85,7 +85,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
      *
      * @return string
      */
-    public function getChargeReference() : string
+    public function getChargeReference(): string
     {
         return $this->chargeReference;
     }
@@ -96,7 +96,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setChargeReference(string $chargeReference) : self
+    public function setChargeReference(string $chargeReference): self
     {
         $this->initialized['chargeReference'] = true;
         $this->chargeReference = $chargeReference;
@@ -107,7 +107,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
      *
      * @return CreateFreshInvestigationRequestSearchCriteria
      */
-    public function getSearchCriteria() : CreateFreshInvestigationRequestSearchCriteria
+    public function getSearchCriteria(): CreateFreshInvestigationRequestSearchCriteria
     {
         return $this->searchCriteria;
     }
@@ -118,7 +118,7 @@ class CreateFreshInvestigationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchCriteria(CreateFreshInvestigationRequestSearchCriteria $searchCriteria) : self
+    public function setSearchCriteria(CreateFreshInvestigationRequestSearchCriteria $searchCriteria): self
     {
         $this->initialized['searchCriteria'] = true;
         $this->searchCriteria = $searchCriteria;

@@ -8,7 +8,7 @@ class SimpleAnalyzer extends AnalyzerBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class SimpleAnalyzer extends AnalyzerBase
      *
      * @return self
      */
-    public function setType($type) : self
+    public function setType($type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -51,7 +51,7 @@ class SimpleAnalyzer extends AnalyzerBase
      *
      * @return string|null
      */
-    public function getFieldSuffix() : ?string
+    public function getFieldSuffix(): ?string
     {
         return $this->fieldSuffix;
     }
@@ -62,7 +62,7 @@ class SimpleAnalyzer extends AnalyzerBase
      *
      * @return self
      */
-    public function setFieldSuffix(?string $fieldSuffix) : self
+    public function setFieldSuffix(?string $fieldSuffix): self
     {
         $this->initialized['fieldSuffix'] = true;
         $this->fieldSuffix = $fieldSuffix;

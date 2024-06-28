@@ -12,7 +12,7 @@ class ParchmentJsonld extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -68,7 +68,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setContext($context) : self
+    public function setContext($context): self
     {
         $this->initialized['context'] = true;
         $this->context = $context;
@@ -79,7 +79,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -90,7 +90,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -101,7 +101,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -112,7 +112,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -123,7 +123,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId2() : ?string
+    public function getId2(): ?string
     {
         return $this->id2;
     }
@@ -134,7 +134,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setId2(?string $id2) : self
+    public function setId2(?string $id2): self
     {
         $this->initialized['id2'] = true;
         $this->id2 = $id2;
@@ -145,7 +145,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -156,7 +156,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -167,7 +167,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -178,7 +178,7 @@ class ParchmentJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

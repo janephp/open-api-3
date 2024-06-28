@@ -8,7 +8,7 @@ class AnimatedGif extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -58,7 +58,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -69,7 +69,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return string
      */
-    public function getPreviewImageUrl() : string
+    public function getPreviewImageUrl(): string
     {
         return $this->previewImageUrl;
     }
@@ -80,7 +80,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return self
      */
-    public function setPreviewImageUrl(string $previewImageUrl) : self
+    public function setPreviewImageUrl(string $previewImageUrl): self
     {
         $this->initialized['previewImageUrl'] = true;
         $this->previewImageUrl = $previewImageUrl;
@@ -91,7 +91,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return string
      */
-    public function getMediaKey() : string
+    public function getMediaKey(): string
     {
         return $this->mediaKey;
     }
@@ -102,7 +102,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return self
      */
-    public function setMediaKey(string $mediaKey) : self
+    public function setMediaKey(string $mediaKey): self
     {
         $this->initialized['mediaKey'] = true;
         $this->mediaKey = $mediaKey;
@@ -113,7 +113,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return int
      */
-    public function getHeight() : int
+    public function getHeight(): int
     {
         return $this->height;
     }
@@ -124,7 +124,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return self
      */
-    public function setHeight(int $height) : self
+    public function setHeight(int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -135,7 +135,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return int
      */
-    public function getWidth() : int
+    public function getWidth(): int
     {
         return $this->width;
     }
@@ -146,7 +146,7 @@ class AnimatedGif extends \ArrayObject
      *
      * @return self
      */
-    public function setWidth(int $width) : self
+    public function setWidth(int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;

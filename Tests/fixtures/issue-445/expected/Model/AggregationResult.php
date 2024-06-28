@@ -8,7 +8,7 @@ class AggregationResult
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -36,7 +36,7 @@ class AggregationResult
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -47,7 +47,7 @@ class AggregationResult
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -58,7 +58,7 @@ class AggregationResult
      *
      * @return int|null
      */
-    public function getSumOtherDocCount() : ?int
+    public function getSumOtherDocCount(): ?int
     {
         return $this->sumOtherDocCount;
     }
@@ -69,7 +69,7 @@ class AggregationResult
      *
      * @return self
      */
-    public function setSumOtherDocCount(?int $sumOtherDocCount) : self
+    public function setSumOtherDocCount(?int $sumOtherDocCount): self
     {
         $this->initialized['sumOtherDocCount'] = true;
         $this->sumOtherDocCount = $sumOtherDocCount;
@@ -81,7 +81,7 @@ class AggregationResult
     *
     * @return list<AggregationResultItem>|null
     */
-    public function getAggregationResultItems() : ?array
+    public function getAggregationResultItems(): ?array
     {
         return $this->aggregationResultItems;
     }
@@ -93,7 +93,7 @@ class AggregationResult
     *
     * @return self
     */
-    public function setAggregationResultItems(?array $aggregationResultItems) : self
+    public function setAggregationResultItems(?array $aggregationResultItems): self
     {
         $this->initialized['aggregationResultItems'] = true;
         $this->aggregationResultItems = $aggregationResultItems;

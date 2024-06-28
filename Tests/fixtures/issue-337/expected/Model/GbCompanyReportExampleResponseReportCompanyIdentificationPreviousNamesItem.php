@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem
      *
      * @return string
      */
-    public function getDateChanged() : string
+    public function getDateChanged(): string
     {
         return $this->dateChanged;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem
      *
      * @return self
      */
-    public function setDateChanged(string $dateChanged) : self
+    public function setDateChanged(string $dateChanged): self
     {
         $this->initialized['dateChanged'] = true;
         $this->dateChanged = $dateChanged;

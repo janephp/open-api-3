@@ -8,7 +8,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -46,7 +46,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -57,7 +57,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLabel() : string
+    public function getLabel(): string
     {
         return $this->label;
     }
@@ -68,7 +68,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLabel(string $label) : self
+    public function setLabel(string $label): self
     {
         $this->initialized['label'] = true;
         $this->label = $label;
@@ -79,7 +79,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -90,7 +90,7 @@ class ReposOwnerRepoReleasesAssetsAssetIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;

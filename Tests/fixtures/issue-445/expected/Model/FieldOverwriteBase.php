@@ -8,7 +8,7 @@ class FieldOverwriteBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -42,7 +42,7 @@ class FieldOverwriteBase
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -62,7 +62,7 @@ class FieldOverwriteBase
     *
     * @return bool
     */
-    public function getRequired() : bool
+    public function getRequired(): bool
     {
         return $this->required;
     }
@@ -82,7 +82,7 @@ class FieldOverwriteBase
      *
      * @return bool
      */
-    public function getOverwriteRequired() : bool
+    public function getOverwriteRequired(): bool
     {
         return $this->overwriteRequired;
     }
@@ -101,7 +101,7 @@ class FieldOverwriteBase
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

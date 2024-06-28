@@ -8,7 +8,7 @@ class GeoLocation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GeoLocation
      *
      * @return float
      */
-    public function getLat() : float
+    public function getLat(): float
     {
         return $this->lat;
     }
@@ -40,7 +40,7 @@ class GeoLocation
      *
      * @return self
      */
-    public function setLat(float $lat) : self
+    public function setLat(float $lat): self
     {
         $this->initialized['lat'] = true;
         $this->lat = $lat;
@@ -51,7 +51,7 @@ class GeoLocation
      *
      * @return float
      */
-    public function getLon() : float
+    public function getLon(): float
     {
         return $this->lon;
     }
@@ -62,7 +62,7 @@ class GeoLocation
      *
      * @return self
      */
-    public function setLon(float $lon) : self
+    public function setLon(float $lon): self
     {
         $this->initialized['lon'] = true;
         $this->lon = $lon;

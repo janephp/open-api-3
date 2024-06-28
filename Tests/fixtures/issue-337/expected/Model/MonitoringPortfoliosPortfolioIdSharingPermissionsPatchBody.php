@@ -8,7 +8,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody extends \ArrayO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody extends \ArrayO
      *
      * @return string
      */
-    public function getRevokeAll() : string
+    public function getRevokeAll(): string
     {
         return $this->revokeAll;
     }
@@ -40,7 +40,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody extends \ArrayO
      *
      * @return self
      */
-    public function setRevokeAll(string $revokeAll) : self
+    public function setRevokeAll(string $revokeAll): self
     {
         $this->initialized['revokeAll'] = true;
         $this->revokeAll = $revokeAll;
@@ -51,7 +51,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody extends \ArrayO
      *
      * @return list<MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem>
      */
-    public function getCompanies() : array
+    public function getCompanies(): array
     {
         return $this->companies;
     }
@@ -62,7 +62,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBody extends \ArrayO
      *
      * @return self
      */
-    public function setCompanies(array $companies) : self
+    public function setCompanies(array $companies): self
     {
         $this->initialized['companies'] = true;
         $this->companies = $companies;

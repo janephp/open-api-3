@@ -8,7 +8,7 @@ class KeySimple extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class KeySimple extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -40,7 +40,7 @@ class KeySimple extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -51,7 +51,7 @@ class KeySimple extends \ArrayObject
      *
      * @return string
      */
-    public function getKey() : string
+    public function getKey(): string
     {
         return $this->key;
     }
@@ -62,7 +62,7 @@ class KeySimple extends \ArrayObject
      *
      * @return self
      */
-    public function setKey(string $key) : self
+    public function setKey(string $key): self
     {
         $this->initialized['key'] = true;
         $this->key = $key;

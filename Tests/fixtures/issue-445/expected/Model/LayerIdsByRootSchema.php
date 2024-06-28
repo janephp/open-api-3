@@ -8,7 +8,7 @@ class LayerIdsByRootSchema
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class LayerIdsByRootSchema
      *
      * @return string|null
      */
-    public function getRootSchemaId() : ?string
+    public function getRootSchemaId(): ?string
     {
         return $this->rootSchemaId;
     }
@@ -40,7 +40,7 @@ class LayerIdsByRootSchema
      *
      * @return self
      */
-    public function setRootSchemaId(?string $rootSchemaId) : self
+    public function setRootSchemaId(?string $rootSchemaId): self
     {
         $this->initialized['rootSchemaId'] = true;
         $this->rootSchemaId = $rootSchemaId;
@@ -51,7 +51,7 @@ class LayerIdsByRootSchema
      *
      * @return list<string>|null
      */
-    public function getLayerSchemaIds() : ?array
+    public function getLayerSchemaIds(): ?array
     {
         return $this->layerSchemaIds;
     }
@@ -62,7 +62,7 @@ class LayerIdsByRootSchema
      *
      * @return self
      */
-    public function setLayerSchemaIds(?array $layerSchemaIds) : self
+    public function setLayerSchemaIds(?array $layerSchemaIds): self
     {
         $this->initialized['layerSchemaIds'] = true;
         $this->layerSchemaIds = $layerSchemaIds;

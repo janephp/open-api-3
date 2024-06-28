@@ -8,7 +8,7 @@ class PullRequestSimple extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -227,7 +227,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -238,7 +238,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -249,7 +249,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -260,7 +260,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -271,7 +271,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -282,7 +282,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -293,7 +293,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -304,7 +304,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -315,7 +315,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getDiffUrl() : string
+    public function getDiffUrl(): string
     {
         return $this->diffUrl;
     }
@@ -326,7 +326,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setDiffUrl(string $diffUrl) : self
+    public function setDiffUrl(string $diffUrl): self
     {
         $this->initialized['diffUrl'] = true;
         $this->diffUrl = $diffUrl;
@@ -337,7 +337,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getPatchUrl() : string
+    public function getPatchUrl(): string
     {
         return $this->patchUrl;
     }
@@ -348,7 +348,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setPatchUrl(string $patchUrl) : self
+    public function setPatchUrl(string $patchUrl): self
     {
         $this->initialized['patchUrl'] = true;
         $this->patchUrl = $patchUrl;
@@ -359,7 +359,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getIssueUrl() : string
+    public function getIssueUrl(): string
     {
         return $this->issueUrl;
     }
@@ -370,7 +370,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setIssueUrl(string $issueUrl) : self
+    public function setIssueUrl(string $issueUrl): self
     {
         $this->initialized['issueUrl'] = true;
         $this->issueUrl = $issueUrl;
@@ -381,7 +381,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitsUrl() : string
+    public function getCommitsUrl(): string
     {
         return $this->commitsUrl;
     }
@@ -392,7 +392,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitsUrl(string $commitsUrl) : self
+    public function setCommitsUrl(string $commitsUrl): self
     {
         $this->initialized['commitsUrl'] = true;
         $this->commitsUrl = $commitsUrl;
@@ -403,7 +403,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getReviewCommentsUrl() : string
+    public function getReviewCommentsUrl(): string
     {
         return $this->reviewCommentsUrl;
     }
@@ -414,7 +414,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setReviewCommentsUrl(string $reviewCommentsUrl) : self
+    public function setReviewCommentsUrl(string $reviewCommentsUrl): self
     {
         $this->initialized['reviewCommentsUrl'] = true;
         $this->reviewCommentsUrl = $reviewCommentsUrl;
@@ -425,7 +425,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getReviewCommentUrl() : string
+    public function getReviewCommentUrl(): string
     {
         return $this->reviewCommentUrl;
     }
@@ -436,7 +436,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setReviewCommentUrl(string $reviewCommentUrl) : self
+    public function setReviewCommentUrl(string $reviewCommentUrl): self
     {
         $this->initialized['reviewCommentUrl'] = true;
         $this->reviewCommentUrl = $reviewCommentUrl;
@@ -447,7 +447,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getCommentsUrl() : string
+    public function getCommentsUrl(): string
     {
         return $this->commentsUrl;
     }
@@ -458,7 +458,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setCommentsUrl(string $commentsUrl) : self
+    public function setCommentsUrl(string $commentsUrl): self
     {
         $this->initialized['commentsUrl'] = true;
         $this->commentsUrl = $commentsUrl;
@@ -469,7 +469,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getStatusesUrl() : string
+    public function getStatusesUrl(): string
     {
         return $this->statusesUrl;
     }
@@ -480,7 +480,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setStatusesUrl(string $statusesUrl) : self
+    public function setStatusesUrl(string $statusesUrl): self
     {
         $this->initialized['statusesUrl'] = true;
         $this->statusesUrl = $statusesUrl;
@@ -491,7 +491,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -502,7 +502,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -513,7 +513,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -524,7 +524,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -535,7 +535,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return bool
      */
-    public function getLocked() : bool
+    public function getLocked(): bool
     {
         return $this->locked;
     }
@@ -546,7 +546,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setLocked(bool $locked) : self
+    public function setLocked(bool $locked): self
     {
         $this->initialized['locked'] = true;
         $this->locked = $locked;
@@ -557,7 +557,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -568,7 +568,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -579,7 +579,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return PullRequestSimpleUser|null
      */
-    public function getUser() : ?PullRequestSimpleUser
+    public function getUser(): ?PullRequestSimpleUser
     {
         return $this->user;
     }
@@ -590,7 +590,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?PullRequestSimpleUser $user) : self
+    public function setUser(?PullRequestSimpleUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -601,7 +601,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string|null
      */
-    public function getBody() : ?string
+    public function getBody(): ?string
     {
         return $this->body;
     }
@@ -612,7 +612,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(?string $body) : self
+    public function setBody(?string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -623,7 +623,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return list<PullRequestSimpleLabelsItem>
      */
-    public function getLabels() : array
+    public function getLabels(): array
     {
         return $this->labels;
     }
@@ -634,7 +634,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setLabels(array $labels) : self
+    public function setLabels(array $labels): self
     {
         $this->initialized['labels'] = true;
         $this->labels = $labels;
@@ -645,7 +645,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return PullRequestSimpleMilestone|null
      */
-    public function getMilestone() : ?PullRequestSimpleMilestone
+    public function getMilestone(): ?PullRequestSimpleMilestone
     {
         return $this->milestone;
     }
@@ -656,7 +656,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setMilestone(?PullRequestSimpleMilestone $milestone) : self
+    public function setMilestone(?PullRequestSimpleMilestone $milestone): self
     {
         $this->initialized['milestone'] = true;
         $this->milestone = $milestone;
@@ -667,7 +667,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string|null
      */
-    public function getActiveLockReason() : ?string
+    public function getActiveLockReason(): ?string
     {
         return $this->activeLockReason;
     }
@@ -678,7 +678,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setActiveLockReason(?string $activeLockReason) : self
+    public function setActiveLockReason(?string $activeLockReason): self
     {
         $this->initialized['activeLockReason'] = true;
         $this->activeLockReason = $activeLockReason;
@@ -689,7 +689,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -700,7 +700,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -711,7 +711,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -722,7 +722,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -733,7 +733,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getClosedAt() : ?\DateTime
+    public function getClosedAt(): ?\DateTime
     {
         return $this->closedAt;
     }
@@ -744,7 +744,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setClosedAt(?\DateTime $closedAt) : self
+    public function setClosedAt(?\DateTime $closedAt): self
     {
         $this->initialized['closedAt'] = true;
         $this->closedAt = $closedAt;
@@ -755,7 +755,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getMergedAt() : ?\DateTime
+    public function getMergedAt(): ?\DateTime
     {
         return $this->mergedAt;
     }
@@ -766,7 +766,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setMergedAt(?\DateTime $mergedAt) : self
+    public function setMergedAt(?\DateTime $mergedAt): self
     {
         $this->initialized['mergedAt'] = true;
         $this->mergedAt = $mergedAt;
@@ -777,7 +777,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string|null
      */
-    public function getMergeCommitSha() : ?string
+    public function getMergeCommitSha(): ?string
     {
         return $this->mergeCommitSha;
     }
@@ -788,7 +788,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setMergeCommitSha(?string $mergeCommitSha) : self
+    public function setMergeCommitSha(?string $mergeCommitSha): self
     {
         $this->initialized['mergeCommitSha'] = true;
         $this->mergeCommitSha = $mergeCommitSha;
@@ -799,7 +799,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return PullRequestSimpleAssignee|null
      */
-    public function getAssignee() : ?PullRequestSimpleAssignee
+    public function getAssignee(): ?PullRequestSimpleAssignee
     {
         return $this->assignee;
     }
@@ -810,7 +810,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setAssignee(?PullRequestSimpleAssignee $assignee) : self
+    public function setAssignee(?PullRequestSimpleAssignee $assignee): self
     {
         $this->initialized['assignee'] = true;
         $this->assignee = $assignee;
@@ -821,7 +821,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return list<SimpleUser>|null
      */
-    public function getAssignees() : ?array
+    public function getAssignees(): ?array
     {
         return $this->assignees;
     }
@@ -832,7 +832,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setAssignees(?array $assignees) : self
+    public function setAssignees(?array $assignees): self
     {
         $this->initialized['assignees'] = true;
         $this->assignees = $assignees;
@@ -843,7 +843,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return list<SimpleUser>|null
      */
-    public function getRequestedReviewers() : ?array
+    public function getRequestedReviewers(): ?array
     {
         return $this->requestedReviewers;
     }
@@ -854,7 +854,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedReviewers(?array $requestedReviewers) : self
+    public function setRequestedReviewers(?array $requestedReviewers): self
     {
         $this->initialized['requestedReviewers'] = true;
         $this->requestedReviewers = $requestedReviewers;
@@ -865,7 +865,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return list<TeamSimple>|null
      */
-    public function getRequestedTeams() : ?array
+    public function getRequestedTeams(): ?array
     {
         return $this->requestedTeams;
     }
@@ -876,7 +876,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedTeams(?array $requestedTeams) : self
+    public function setRequestedTeams(?array $requestedTeams): self
     {
         $this->initialized['requestedTeams'] = true;
         $this->requestedTeams = $requestedTeams;
@@ -887,7 +887,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return PullRequestSimpleHead
      */
-    public function getHead() : PullRequestSimpleHead
+    public function getHead(): PullRequestSimpleHead
     {
         return $this->head;
     }
@@ -898,7 +898,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setHead(PullRequestSimpleHead $head) : self
+    public function setHead(PullRequestSimpleHead $head): self
     {
         $this->initialized['head'] = true;
         $this->head = $head;
@@ -909,7 +909,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return PullRequestSimpleBase
      */
-    public function getBase() : PullRequestSimpleBase
+    public function getBase(): PullRequestSimpleBase
     {
         return $this->base;
     }
@@ -920,7 +920,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setBase(PullRequestSimpleBase $base) : self
+    public function setBase(PullRequestSimpleBase $base): self
     {
         $this->initialized['base'] = true;
         $this->base = $base;
@@ -931,7 +931,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return PullRequestSimpleLinks
      */
-    public function getLinks() : PullRequestSimpleLinks
+    public function getLinks(): PullRequestSimpleLinks
     {
         return $this->links;
     }
@@ -942,7 +942,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(PullRequestSimpleLinks $links) : self
+    public function setLinks(PullRequestSimpleLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;
@@ -953,7 +953,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorAssociation() : string
+    public function getAuthorAssociation(): string
     {
         return $this->authorAssociation;
     }
@@ -964,7 +964,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorAssociation(string $authorAssociation) : self
+    public function setAuthorAssociation(string $authorAssociation): self
     {
         $this->initialized['authorAssociation'] = true;
         $this->authorAssociation = $authorAssociation;
@@ -975,7 +975,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return bool
      */
-    public function getDraft() : bool
+    public function getDraft(): bool
     {
         return $this->draft;
     }
@@ -986,7 +986,7 @@ class PullRequestSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setDraft(bool $draft) : self
+    public function setDraft(bool $draft): self
     {
         $this->initialized['draft'] = true;
         $this->draft = $draft;

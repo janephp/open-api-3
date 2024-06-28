@@ -8,7 +8,7 @@ class DefaultPlaceFields extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class DefaultPlaceFields extends \ArrayObject
      *
      * @return string
      */
-    public function getPlaceType() : string
+    public function getPlaceType(): string
     {
         return $this->placeType;
     }
@@ -52,7 +52,7 @@ class DefaultPlaceFields extends \ArrayObject
      *
      * @return self
      */
-    public function setPlaceType(string $placeType) : self
+    public function setPlaceType(string $placeType): self
     {
         $this->initialized['placeType'] = true;
         $this->placeType = $placeType;
@@ -63,7 +63,7 @@ class DefaultPlaceFields extends \ArrayObject
      *
      * @return string
      */
-    public function getFullName() : string
+    public function getFullName(): string
     {
         return $this->fullName;
     }
@@ -74,7 +74,7 @@ class DefaultPlaceFields extends \ArrayObject
      *
      * @return self
      */
-    public function setFullName(string $fullName) : self
+    public function setFullName(string $fullName): self
     {
         $this->initialized['fullName'] = true;
         $this->fullName = $fullName;
@@ -85,7 +85,7 @@ class DefaultPlaceFields extends \ArrayObject
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -96,7 +96,7 @@ class DefaultPlaceFields extends \ArrayObject
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -107,7 +107,7 @@ class DefaultPlaceFields extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getContainedWithin() : array
+    public function getContainedWithin(): array
     {
         return $this->containedWithin;
     }
@@ -118,7 +118,7 @@ class DefaultPlaceFields extends \ArrayObject
      *
      * @return self
      */
-    public function setContainedWithin(array $containedWithin) : self
+    public function setContainedWithin(array $containedWithin): self
     {
         $this->initialized['containedWithin'] = true;
         $this->containedWithin = $containedWithin;

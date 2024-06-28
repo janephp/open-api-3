@@ -8,7 +8,7 @@ class UserUpdateRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -88,7 +88,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -99,7 +99,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFirstName() : ?string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
@@ -110,7 +110,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setFirstName(?string $firstName) : self
+    public function setFirstName(?string $firstName): self
     {
         $this->initialized['firstName'] = true;
         $this->firstName = $firstName;
@@ -121,7 +121,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLastName() : ?string
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
@@ -132,7 +132,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setLastName(?string $lastName) : self
+    public function setLastName(?string $lastName): self
     {
         $this->initialized['lastName'] = true;
         $this->lastName = $lastName;
@@ -143,7 +143,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -154,7 +154,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -165,7 +165,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsDeleted() : bool
+    public function getIsDeleted(): bool
     {
         return $this->isDeleted;
     }
@@ -176,7 +176,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setIsDeleted(bool $isDeleted) : self
+    public function setIsDeleted(bool $isDeleted): self
     {
         $this->initialized['isDeleted'] = true;
         $this->isDeleted = $isDeleted;
@@ -187,7 +187,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return list<UserRole>|null
      */
-    public function getUserRoles() : ?array
+    public function getUserRoles(): ?array
     {
         return $this->userRoles;
     }
@@ -198,7 +198,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUserRoles(?array $userRoles) : self
+    public function setUserRoles(?array $userRoles): self
     {
         $this->initialized['userRoles'] = true;
         $this->userRoles = $userRoles;
@@ -209,7 +209,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getComment() : ?string
+    public function getComment(): ?string
     {
         return $this->comment;
     }
@@ -220,7 +220,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setComment(?string $comment) : self
+    public function setComment(?string $comment): self
     {
         $this->initialized['comment'] = true;
         $this->comment = $comment;
@@ -231,7 +231,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLanguageCode() : ?string
+    public function getLanguageCode(): ?string
     {
         return $this->languageCode;
     }
@@ -242,7 +242,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguageCode(?string $languageCode) : self
+    public function setLanguageCode(?string $languageCode): self
     {
         $this->initialized['languageCode'] = true;
         $this->languageCode = $languageCode;
@@ -264,7 +264,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress($address) : self
+    public function setAddress($address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -275,7 +275,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getIdentityProviderId() : ?string
+    public function getIdentityProviderId(): ?string
     {
         return $this->identityProviderId;
     }
@@ -286,7 +286,7 @@ class UserUpdateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setIdentityProviderId(?string $identityProviderId) : self
+    public function setIdentityProviderId(?string $identityProviderId): self
     {
         $this->initialized['identityProviderId'] = true;
         $this->identityProviderId = $identityProviderId;

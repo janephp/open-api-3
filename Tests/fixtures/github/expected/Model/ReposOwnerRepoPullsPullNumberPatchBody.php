@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -58,7 +58,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -69,7 +69,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -80,7 +80,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -91,7 +91,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -102,7 +102,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -113,7 +113,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBase() : string
+    public function getBase(): string
     {
         return $this->base;
     }
@@ -124,7 +124,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBase(string $base) : self
+    public function setBase(string $base): self
     {
         $this->initialized['base'] = true;
         $this->base = $base;
@@ -135,7 +135,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getMaintainerCanModify() : bool
+    public function getMaintainerCanModify(): bool
     {
         return $this->maintainerCanModify;
     }
@@ -146,7 +146,7 @@ class ReposOwnerRepoPullsPullNumberPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMaintainerCanModify(bool $maintainerCanModify) : self
+    public function setMaintainerCanModify(bool $maintainerCanModify): self
     {
         $this->initialized['maintainerCanModify'] = true;
         $this->maintainerCanModify = $maintainerCanModify;

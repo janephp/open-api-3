@@ -8,7 +8,7 @@ class CombinedCommitStatus extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -70,7 +70,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -81,7 +81,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return list<SimpleCommitStatus>
      */
-    public function getStatuses() : array
+    public function getStatuses(): array
     {
         return $this->statuses;
     }
@@ -92,7 +92,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setStatuses(array $statuses) : self
+    public function setStatuses(array $statuses): self
     {
         $this->initialized['statuses'] = true;
         $this->statuses = $statuses;
@@ -103,7 +103,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -114,7 +114,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -125,7 +125,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalCount() : int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -136,7 +136,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalCount(int $totalCount) : self
+    public function setTotalCount(int $totalCount): self
     {
         $this->initialized['totalCount'] = true;
         $this->totalCount = $totalCount;
@@ -147,7 +147,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return MinimalRepository
      */
-    public function getRepository() : MinimalRepository
+    public function getRepository(): MinimalRepository
     {
         return $this->repository;
     }
@@ -158,7 +158,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setRepository(MinimalRepository $repository) : self
+    public function setRepository(MinimalRepository $repository): self
     {
         $this->initialized['repository'] = true;
         $this->repository = $repository;
@@ -169,7 +169,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitUrl() : string
+    public function getCommitUrl(): string
     {
         return $this->commitUrl;
     }
@@ -180,7 +180,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitUrl(string $commitUrl) : self
+    public function setCommitUrl(string $commitUrl): self
     {
         $this->initialized['commitUrl'] = true;
         $this->commitUrl = $commitUrl;
@@ -191,7 +191,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -202,7 +202,7 @@ class CombinedCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;

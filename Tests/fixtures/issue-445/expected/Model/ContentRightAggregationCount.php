@@ -8,7 +8,7 @@ class ContentRightAggregationCount
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class ContentRightAggregationCount
      *
      * @return self
      */
-    public function setContentRight($contentRight) : self
+    public function setContentRight($contentRight): self
     {
         $this->initialized['contentRight'] = true;
         $this->contentRight = $contentRight;
@@ -51,7 +51,7 @@ class ContentRightAggregationCount
      *
      * @return int
      */
-    public function getCount() : int
+    public function getCount(): int
     {
         return $this->count;
     }
@@ -62,7 +62,7 @@ class ContentRightAggregationCount
      *
      * @return self
      */
-    public function setCount(int $count) : self
+    public function setCount(int $count): self
     {
         $this->initialized['count'] = true;
         $this->count = $count;

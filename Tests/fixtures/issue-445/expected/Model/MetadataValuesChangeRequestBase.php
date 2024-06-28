@@ -8,7 +8,7 @@ class MetadataValuesChangeRequestBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class MetadataValuesChangeRequestBase
      *
      * @return list<MetadataValuesChangeCommandBase>
      */
-    public function getChangeCommands() : array
+    public function getChangeCommands(): array
     {
         return $this->changeCommands;
     }
@@ -60,7 +60,7 @@ class MetadataValuesChangeRequestBase
      *
      * @return bool
      */
-    public function getAllowMissingDependencies() : bool
+    public function getAllowMissingDependencies(): bool
     {
         return $this->allowMissingDependencies;
     }
@@ -79,7 +79,7 @@ class MetadataValuesChangeRequestBase
      *
      * @return bool
      */
-    public function getNotifyProgress() : bool
+    public function getNotifyProgress(): bool
     {
         return $this->notifyProgress;
     }
@@ -98,7 +98,7 @@ class MetadataValuesChangeRequestBase
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

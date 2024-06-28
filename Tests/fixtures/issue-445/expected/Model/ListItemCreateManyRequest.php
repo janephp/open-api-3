@@ -8,7 +8,7 @@ class ListItemCreateManyRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ListItemCreateManyRequest
      *
      * @return bool
      */
-    public function getAllowMissingDependencies() : bool
+    public function getAllowMissingDependencies(): bool
     {
         return $this->allowMissingDependencies;
     }
@@ -40,7 +40,7 @@ class ListItemCreateManyRequest
      *
      * @return self
      */
-    public function setAllowMissingDependencies(bool $allowMissingDependencies) : self
+    public function setAllowMissingDependencies(bool $allowMissingDependencies): self
     {
         $this->initialized['allowMissingDependencies'] = true;
         $this->allowMissingDependencies = $allowMissingDependencies;
@@ -51,7 +51,7 @@ class ListItemCreateManyRequest
      *
      * @return list<ListItemCreateRequest>
      */
-    public function getItems() : array
+    public function getItems(): array
     {
         return $this->items;
     }
@@ -62,7 +62,7 @@ class ListItemCreateManyRequest
      *
      * @return self
      */
-    public function setItems(array $items) : self
+    public function setItems(array $items): self
     {
         $this->initialized['items'] = true;
         $this->items = $items;

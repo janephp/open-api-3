@@ -8,7 +8,7 @@ class TeamProjectPermissions extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TeamProjectPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getRead() : bool
+    public function getRead(): bool
     {
         return $this->read;
     }
@@ -46,7 +46,7 @@ class TeamProjectPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setRead(bool $read) : self
+    public function setRead(bool $read): self
     {
         $this->initialized['read'] = true;
         $this->read = $read;
@@ -57,7 +57,7 @@ class TeamProjectPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getWrite() : bool
+    public function getWrite(): bool
     {
         return $this->write;
     }
@@ -68,7 +68,7 @@ class TeamProjectPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setWrite(bool $write) : self
+    public function setWrite(bool $write): self
     {
         $this->initialized['write'] = true;
         $this->write = $write;
@@ -79,7 +79,7 @@ class TeamProjectPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getAdmin() : bool
+    public function getAdmin(): bool
     {
         return $this->admin;
     }
@@ -90,7 +90,7 @@ class TeamProjectPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setAdmin(bool $admin) : self
+    public function setAdmin(bool $admin): self
     {
         $this->initialized['admin'] = true;
         $this->admin = $admin;

@@ -18,11 +18,11 @@ class ReposMergeNotFoundException extends NotFoundException
         $this->reposOwnerRepoMergesPostResponse404 = $reposOwnerRepoMergesPostResponse404;
         $this->response = $response;
     }
-    public function getReposOwnerRepoMergesPostResponse404() : \Github\Model\ReposOwnerRepoMergesPostResponse404
+    public function getReposOwnerRepoMergesPostResponse404(): \Github\Model\ReposOwnerRepoMergesPostResponse404
     {
         return $this->reposOwnerRepoMergesPostResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

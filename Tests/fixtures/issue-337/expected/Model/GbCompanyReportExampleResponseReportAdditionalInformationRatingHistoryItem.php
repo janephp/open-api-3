@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem
      *
      * @return string
      */
-    public function getDate() : string
+    public function getDate(): string
     {
         return $this->date;
     }
@@ -46,7 +46,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem
      *
      * @return self
      */
-    public function setDate(string $date) : self
+    public function setDate(string $date): self
     {
         $this->initialized['date'] = true;
         $this->date = $date;
@@ -57,7 +57,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem
      *
      * @return float
      */
-    public function getCompanyValue() : float
+    public function getCompanyValue(): float
     {
         return $this->companyValue;
     }
@@ -68,7 +68,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem
      *
      * @return self
      */
-    public function setCompanyValue(float $companyValue) : self
+    public function setCompanyValue(float $companyValue): self
     {
         $this->initialized['companyValue'] = true;
         $this->companyValue = $companyValue;
@@ -79,7 +79,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem
      *
      * @return string
      */
-    public function getRatingDescription() : string
+    public function getRatingDescription(): string
     {
         return $this->ratingDescription;
     }
@@ -90,7 +90,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem
      *
      * @return self
      */
-    public function setRatingDescription(string $ratingDescription) : self
+    public function setRatingDescription(string $ratingDescription): self
     {
         $this->initialized['ratingDescription'] = true;
         $this->ratingDescription = $ratingDescription;

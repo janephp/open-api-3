@@ -8,7 +8,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -58,7 +58,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -69,7 +69,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return string
      */
-    public function getCompanyName() : string
+    public function getCompanyName(): string
     {
         return $this->companyName;
     }
@@ -80,7 +80,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyName(string $companyName) : self
+    public function setCompanyName(string $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;
@@ -91,7 +91,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return string
      */
-    public function getCompanyNumber() : string
+    public function getCompanyNumber(): string
     {
         return $this->companyNumber;
     }
@@ -102,7 +102,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyNumber(string $companyNumber) : self
+    public function setCompanyNumber(string $companyNumber): self
     {
         $this->initialized['companyNumber'] = true;
         $this->companyNumber = $companyNumber;
@@ -113,7 +113,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -124,7 +124,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -135,7 +135,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return string
      */
-    public function getRegNo() : string
+    public function getRegNo(): string
     {
         return $this->regNo;
     }
@@ -146,7 +146,7 @@ class PeopleSearchSuccessResultDirectorsItemCompany extends \ArrayObject
      *
      * @return self
      */
-    public function setRegNo(string $regNo) : self
+    public function setRegNo(string $regNo): self
     {
         $this->initialized['regNo'] = true;
         $this->regNo = $regNo;

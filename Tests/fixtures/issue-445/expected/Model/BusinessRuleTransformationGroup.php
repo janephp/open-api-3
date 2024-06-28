@@ -8,7 +8,7 @@ class BusinessRuleTransformationGroup
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class BusinessRuleTransformationGroup
      *
      * @return list<string>|null
      */
-    public function getInputs() : ?array
+    public function getInputs(): ?array
     {
         return $this->inputs;
     }
@@ -52,7 +52,7 @@ class BusinessRuleTransformationGroup
      *
      * @return self
      */
-    public function setInputs(?array $inputs) : self
+    public function setInputs(?array $inputs): self
     {
         $this->initialized['inputs'] = true;
         $this->inputs = $inputs;
@@ -63,7 +63,7 @@ class BusinessRuleTransformationGroup
      *
      * @return list<BusinessRuleTransformation>|null
      */
-    public function getTransformations() : ?array
+    public function getTransformations(): ?array
     {
         return $this->transformations;
     }
@@ -74,7 +74,7 @@ class BusinessRuleTransformationGroup
      *
      * @return self
      */
-    public function setTransformations(?array $transformations) : self
+    public function setTransformations(?array $transformations): self
     {
         $this->initialized['transformations'] = true;
         $this->transformations = $transformations;
@@ -85,7 +85,7 @@ class BusinessRuleTransformationGroup
      *
      * @return string|null
      */
-    public function getStoreIn() : ?string
+    public function getStoreIn(): ?string
     {
         return $this->storeIn;
     }
@@ -96,7 +96,7 @@ class BusinessRuleTransformationGroup
      *
      * @return self
      */
-    public function setStoreIn(?string $storeIn) : self
+    public function setStoreIn(?string $storeIn): self
     {
         $this->initialized['storeIn'] = true;
         $this->storeIn = $storeIn;
@@ -107,7 +107,7 @@ class BusinessRuleTransformationGroup
      *
      * @return string|null
      */
-    public function getTraceRefId() : ?string
+    public function getTraceRefId(): ?string
     {
         return $this->traceRefId;
     }
@@ -118,7 +118,7 @@ class BusinessRuleTransformationGroup
      *
      * @return self
      */
-    public function setTraceRefId(?string $traceRefId) : self
+    public function setTraceRefId(?string $traceRefId): self
     {
         $this->initialized['traceRefId'] = true;
         $this->traceRefId = $traceRefId;

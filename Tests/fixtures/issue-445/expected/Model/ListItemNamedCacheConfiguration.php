@@ -8,7 +8,7 @@ class ListItemNamedCacheConfiguration extends NamedCacheConfigurationBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ListItemNamedCacheConfiguration extends NamedCacheConfigurationBase
      *
      * @return string|null
      */
-    public function getSchemaId() : ?string
+    public function getSchemaId(): ?string
     {
         return $this->schemaId;
     }
@@ -52,7 +52,7 @@ class ListItemNamedCacheConfiguration extends NamedCacheConfigurationBase
      *
      * @return self
      */
-    public function setSchemaId(?string $schemaId) : self
+    public function setSchemaId(?string $schemaId): self
     {
         $this->initialized['schemaId'] = true;
         $this->schemaId = $schemaId;
@@ -63,7 +63,7 @@ class ListItemNamedCacheConfiguration extends NamedCacheConfigurationBase
      *
      * @return list<string>|null
      */
-    public function getKeyFields() : ?array
+    public function getKeyFields(): ?array
     {
         return $this->keyFields;
     }
@@ -74,7 +74,7 @@ class ListItemNamedCacheConfiguration extends NamedCacheConfigurationBase
      *
      * @return self
      */
-    public function setKeyFields(?array $keyFields) : self
+    public function setKeyFields(?array $keyFields): self
     {
         $this->initialized['keyFields'] = true;
         $this->keyFields = $keyFields;
@@ -96,7 +96,7 @@ class ListItemNamedCacheConfiguration extends NamedCacheConfigurationBase
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -107,7 +107,7 @@ class ListItemNamedCacheConfiguration extends NamedCacheConfigurationBase
      *
      * @return bool
      */
-    public function getIncludeAllSchemaChildren() : bool
+    public function getIncludeAllSchemaChildren(): bool
     {
         return $this->includeAllSchemaChildren;
     }
@@ -118,7 +118,7 @@ class ListItemNamedCacheConfiguration extends NamedCacheConfigurationBase
      *
      * @return self
      */
-    public function setIncludeAllSchemaChildren(bool $includeAllSchemaChildren) : self
+    public function setIncludeAllSchemaChildren(bool $includeAllSchemaChildren): self
     {
         $this->initialized['includeAllSchemaChildren'] = true;
         $this->includeAllSchemaChildren = $includeAllSchemaChildren;

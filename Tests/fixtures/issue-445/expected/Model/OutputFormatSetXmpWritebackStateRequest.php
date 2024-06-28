@@ -8,7 +8,7 @@ class OutputFormatSetXmpWritebackStateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class OutputFormatSetXmpWritebackStateRequest
      *
      * @return bool
      */
-    public function getEnabled() : bool
+    public function getEnabled(): bool
     {
         return $this->enabled;
     }
@@ -34,7 +34,7 @@ class OutputFormatSetXmpWritebackStateRequest
      *
      * @return self
      */
-    public function setEnabled(bool $enabled) : self
+    public function setEnabled(bool $enabled): self
     {
         $this->initialized['enabled'] = true;
         $this->enabled = $enabled;

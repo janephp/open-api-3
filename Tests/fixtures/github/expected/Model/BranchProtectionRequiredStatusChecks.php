@@ -8,7 +8,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -52,7 +52,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -63,7 +63,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
      *
      * @return string
      */
-    public function getEnforcementLevel() : string
+    public function getEnforcementLevel(): string
     {
         return $this->enforcementLevel;
     }
@@ -74,7 +74,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
      *
      * @return self
      */
-    public function setEnforcementLevel(string $enforcementLevel) : self
+    public function setEnforcementLevel(string $enforcementLevel): self
     {
         $this->initialized['enforcementLevel'] = true;
         $this->enforcementLevel = $enforcementLevel;
@@ -85,7 +85,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getContexts() : array
+    public function getContexts(): array
     {
         return $this->contexts;
     }
@@ -96,7 +96,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
      *
      * @return self
      */
-    public function setContexts(array $contexts) : self
+    public function setContexts(array $contexts): self
     {
         $this->initialized['contexts'] = true;
         $this->contexts = $contexts;
@@ -107,7 +107,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
      *
      * @return string
      */
-    public function getContextsUrl() : string
+    public function getContextsUrl(): string
     {
         return $this->contextsUrl;
     }
@@ -118,7 +118,7 @@ class BranchProtectionRequiredStatusChecks extends \ArrayObject
      *
      * @return self
      */
-    public function setContextsUrl(string $contextsUrl) : self
+    public function setContextsUrl(string $contextsUrl): self
     {
         $this->initialized['contextsUrl'] = true;
         $this->contextsUrl = $contextsUrl;

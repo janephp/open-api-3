@@ -8,7 +8,7 @@ class FieldDateTimeArray extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return string|null
      */
-    public function getFormat() : ?string
+    public function getFormat(): ?string
     {
         return $this->format;
     }
@@ -58,7 +58,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return self
      */
-    public function setFormat(?string $format) : self
+    public function setFormat(?string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -69,7 +69,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -80,7 +80,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;
@@ -91,7 +91,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return bool
      */
-    public function getInitializeOnItemCreation() : bool
+    public function getInitializeOnItemCreation(): bool
     {
         return $this->initializeOnItemCreation;
     }
@@ -102,7 +102,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return self
      */
-    public function setInitializeOnItemCreation(bool $initializeOnItemCreation) : self
+    public function setInitializeOnItemCreation(bool $initializeOnItemCreation): self
     {
         $this->initialized['initializeOnItemCreation'] = true;
         $this->initializeOnItemCreation = $initializeOnItemCreation;
@@ -113,7 +113,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMaximumItems() : ?int
+    public function getMaximumItems(): ?int
     {
         return $this->maximumItems;
     }
@@ -124,7 +124,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return self
      */
-    public function setMaximumItems(?int $maximumItems) : self
+    public function setMaximumItems(?int $maximumItems): self
     {
         $this->initialized['maximumItems'] = true;
         $this->maximumItems = $maximumItems;
@@ -135,7 +135,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMinimumItems() : ?int
+    public function getMinimumItems(): ?int
     {
         return $this->minimumItems;
     }
@@ -146,7 +146,7 @@ class FieldDateTimeArray extends FieldBase
      *
      * @return self
      */
-    public function setMinimumItems(?int $minimumItems) : self
+    public function setMinimumItems(?int $minimumItems): self
     {
         $this->initialized['minimumItems'] = true;
         $this->minimumItems = $minimumItems;

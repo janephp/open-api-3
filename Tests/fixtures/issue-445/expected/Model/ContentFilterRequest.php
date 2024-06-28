@@ -8,7 +8,7 @@ class ContentFilterRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class ContentFilterRequest
      *
      * @return string|null
      */
-    public function getChannelId() : ?string
+    public function getChannelId(): ?string
     {
         return $this->channelId;
     }
@@ -82,7 +82,7 @@ class ContentFilterRequest
      *
      * @return self
      */
-    public function setChannelId(?string $channelId) : self
+    public function setChannelId(?string $channelId): self
     {
         $this->initialized['channelId'] = true;
         $this->channelId = $channelId;
@@ -93,7 +93,7 @@ class ContentFilterRequest
      *
      * @return list<string>|null
      */
-    public function getSearchLanguages() : ?array
+    public function getSearchLanguages(): ?array
     {
         return $this->searchLanguages;
     }
@@ -104,7 +104,7 @@ class ContentFilterRequest
      *
      * @return self
      */
-    public function setSearchLanguages(?array $searchLanguages) : self
+    public function setSearchLanguages(?array $searchLanguages): self
     {
         $this->initialized['searchLanguages'] = true;
         $this->searchLanguages = $searchLanguages;
@@ -115,7 +115,7 @@ class ContentFilterRequest
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -126,7 +126,7 @@ class ContentFilterRequest
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -148,7 +148,7 @@ class ContentFilterRequest
      *
      * @return self
      */
-    public function setSearchType($searchType) : self
+    public function setSearchType($searchType): self
     {
         $this->initialized['searchType'] = true;
         $this->searchType = $searchType;
@@ -159,7 +159,7 @@ class ContentFilterRequest
      *
      * @return string|null
      */
-    public function getCollectionId() : ?string
+    public function getCollectionId(): ?string
     {
         return $this->collectionId;
     }
@@ -170,7 +170,7 @@ class ContentFilterRequest
      *
      * @return self
      */
-    public function setCollectionId(?string $collectionId) : self
+    public function setCollectionId(?string $collectionId): self
     {
         $this->initialized['collectionId'] = true;
         $this->collectionId = $collectionId;
@@ -192,7 +192,7 @@ class ContentFilterRequest
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -214,7 +214,7 @@ class ContentFilterRequest
      *
      * @return self
      */
-    public function setLifeCycleFilter($lifeCycleFilter) : self
+    public function setLifeCycleFilter($lifeCycleFilter): self
     {
         $this->initialized['lifeCycleFilter'] = true;
         $this->lifeCycleFilter = $lifeCycleFilter;
@@ -236,7 +236,7 @@ class ContentFilterRequest
      *
      * @return self
      */
-    public function setBrokenDependenciesFilter($brokenDependenciesFilter) : self
+    public function setBrokenDependenciesFilter($brokenDependenciesFilter): self
     {
         $this->initialized['brokenDependenciesFilter'] = true;
         $this->brokenDependenciesFilter = $brokenDependenciesFilter;
@@ -247,7 +247,7 @@ class ContentFilterRequest
      *
      * @return list<string>|null
      */
-    public function getRightsFilter() : ?array
+    public function getRightsFilter(): ?array
     {
         return $this->rightsFilter;
     }
@@ -258,7 +258,7 @@ class ContentFilterRequest
      *
      * @return self
      */
-    public function setRightsFilter(?array $rightsFilter) : self
+    public function setRightsFilter(?array $rightsFilter): self
     {
         $this->initialized['rightsFilter'] = true;
         $this->rightsFilter = $rightsFilter;

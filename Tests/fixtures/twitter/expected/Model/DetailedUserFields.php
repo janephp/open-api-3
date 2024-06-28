@@ -8,7 +8,7 @@ class DetailedUserFields extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class DetailedUserFields extends \ArrayObject
      *
      * @return DetailedUserFieldsStats
      */
-    public function getStats() : DetailedUserFieldsStats
+    public function getStats(): DetailedUserFieldsStats
     {
         return $this->stats;
     }
@@ -34,7 +34,7 @@ class DetailedUserFields extends \ArrayObject
      *
      * @return self
      */
-    public function setStats(DetailedUserFieldsStats $stats) : self
+    public function setStats(DetailedUserFieldsStats $stats): self
     {
         $this->initialized['stats'] = true;
         $this->stats = $stats;

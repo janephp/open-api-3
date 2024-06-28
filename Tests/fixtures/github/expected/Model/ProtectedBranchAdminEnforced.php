@@ -8,7 +8,7 @@ class ProtectedBranchAdminEnforced extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ProtectedBranchAdminEnforced extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -40,7 +40,7 @@ class ProtectedBranchAdminEnforced extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -51,7 +51,7 @@ class ProtectedBranchAdminEnforced extends \ArrayObject
      *
      * @return bool
      */
-    public function getEnabled() : bool
+    public function getEnabled(): bool
     {
         return $this->enabled;
     }
@@ -62,7 +62,7 @@ class ProtectedBranchAdminEnforced extends \ArrayObject
      *
      * @return self
      */
-    public function setEnabled(bool $enabled) : self
+    public function setEnabled(bool $enabled): self
     {
         $this->initialized['enabled'] = true;
         $this->enabled = $enabled;

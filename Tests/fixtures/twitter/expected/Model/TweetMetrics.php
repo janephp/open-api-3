@@ -8,7 +8,7 @@ class TweetMetrics extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TweetMetrics extends \ArrayObject
      *
      * @return string
      */
-    public function getTweetId() : string
+    public function getTweetId(): string
     {
         return $this->tweetId;
     }
@@ -46,7 +46,7 @@ class TweetMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setTweetId(string $tweetId) : self
+    public function setTweetId(string $tweetId): self
     {
         $this->initialized['tweetId'] = true;
         $this->tweetId = $tweetId;
@@ -57,7 +57,7 @@ class TweetMetrics extends \ArrayObject
      *
      * @return TweetInteractionMetrics
      */
-    public function getTweet() : TweetInteractionMetrics
+    public function getTweet(): TweetInteractionMetrics
     {
         return $this->tweet;
     }
@@ -68,7 +68,7 @@ class TweetMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setTweet(TweetInteractionMetrics $tweet) : self
+    public function setTweet(TweetInteractionMetrics $tweet): self
     {
         $this->initialized['tweet'] = true;
         $this->tweet = $tweet;
@@ -79,7 +79,7 @@ class TweetMetrics extends \ArrayObject
      *
      * @return VideoMetrics
      */
-    public function getVideo() : VideoMetrics
+    public function getVideo(): VideoMetrics
     {
         return $this->video;
     }
@@ -90,7 +90,7 @@ class TweetMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setVideo(VideoMetrics $video) : self
+    public function setVideo(VideoMetrics $video): self
     {
         $this->initialized['video'] = true;
         $this->video = $video;

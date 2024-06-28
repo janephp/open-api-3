@@ -8,7 +8,7 @@ class ReposOwnerRepoInteractionLimitsPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ReposOwnerRepoInteractionLimitsPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLimit() : string
+    public function getLimit(): string
     {
         return $this->limit;
     }
@@ -34,7 +34,7 @@ class ReposOwnerRepoInteractionLimitsPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLimit(string $limit) : self
+    public function setLimit(string $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;

@@ -24,26 +24,26 @@ class ApiReviewsGetCollection extends \ApiPlatform\Demo\Runtime\Client\BaseEndpo
         $this->accept = $accept;
     }
     use \ApiPlatform\Demo\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/reviews';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         if (empty($this->accept)) {
             return ['Accept' => ['application/ld+json', 'application/hal+json', 'application/vnd.api+json', 'application/json', 'application/xml', 'text/xml', 'application/x-yaml', 'text/csv']];
         }
         return $this->accept;
     }
-    protected function getQueryOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getQueryOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getQueryOptionsResolver();
         $optionsResolver->setDefined(['page', 'itemsPerPage', 'order[id]', 'order[publicationDate]', 'book']);
@@ -69,20 +69,20 @@ class ApiReviewsGetCollection extends \ApiPlatform\Demo\Runtime\Client\BaseEndpo
         $body = (string) $response->getBody();
         if (200 === $status) {
             if (mb_strpos($contentType, 'application/ld+json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\ReviewsGetLdjsonResponse200', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\ReviewsGetLdjsonResponse200', 'json');
             }
             if (mb_strpos($contentType, 'application/hal+json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\ReviewsGetHaljsonResponse200', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\ReviewsGetHaljsonResponse200', 'json');
             }
             if (mb_strpos($contentType, 'application/vnd.api+json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\ReviewReviewRead[]', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\ReviewReviewRead[]', 'json');
             }
             if (mb_strpos($contentType, 'application/json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\ReviewReviewRead[]', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\ReviewReviewRead[]', 'json');
             }
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return ['apiKey'];
     }

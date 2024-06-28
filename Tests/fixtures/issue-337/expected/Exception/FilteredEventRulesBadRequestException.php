@@ -18,11 +18,11 @@ class FilteredEventRulesBadRequestException extends BadRequestException
         $this->badRequestError = $badRequestError;
         $this->response = $response;
     }
-    public function getBadRequestError() : \CreditSafe\API\Model\BadRequestError
+    public function getBadRequestError(): \CreditSafe\API\Model\BadRequestError
     {
         return $this->badRequestError;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

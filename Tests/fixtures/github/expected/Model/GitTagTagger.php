@@ -8,7 +8,7 @@ class GitTagTagger extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GitTagTagger extends \ArrayObject
      *
      * @return string
      */
-    public function getDate() : string
+    public function getDate(): string
     {
         return $this->date;
     }
@@ -46,7 +46,7 @@ class GitTagTagger extends \ArrayObject
      *
      * @return self
      */
-    public function setDate(string $date) : self
+    public function setDate(string $date): self
     {
         $this->initialized['date'] = true;
         $this->date = $date;
@@ -57,7 +57,7 @@ class GitTagTagger extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -68,7 +68,7 @@ class GitTagTagger extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -79,7 +79,7 @@ class GitTagTagger extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -90,7 +90,7 @@ class GitTagTagger extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;

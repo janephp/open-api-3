@@ -8,7 +8,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -70,7 +70,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -81,7 +81,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getAdditionalInfo() : string
+    public function getAdditionalInfo(): string
     {
         return $this->additionalInfo;
     }
@@ -92,7 +92,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setAdditionalInfo(string $additionalInfo) : self
+    public function setAdditionalInfo(string $additionalInfo): self
     {
         $this->initialized['additionalInfo'] = true;
         $this->additionalInfo = $additionalInfo;
@@ -103,7 +103,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getTelephoneNumber() : string
+    public function getTelephoneNumber(): string
     {
         return $this->telephoneNumber;
     }
@@ -114,7 +114,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setTelephoneNumber(string $telephoneNumber) : self
+    public function setTelephoneNumber(string $telephoneNumber): self
     {
         $this->initialized['telephoneNumber'] = true;
         $this->telephoneNumber = $telephoneNumber;
@@ -125,7 +125,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return CreateFreshInvestigationRequestSearchCriteriaAddress
      */
-    public function getAddress() : CreateFreshInvestigationRequestSearchCriteriaAddress
+    public function getAddress(): CreateFreshInvestigationRequestSearchCriteriaAddress
     {
         return $this->address;
     }
@@ -136,7 +136,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress(CreateFreshInvestigationRequestSearchCriteriaAddress $address) : self
+    public function setAddress(CreateFreshInvestigationRequestSearchCriteriaAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -147,7 +147,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getRegNo() : string
+    public function getRegNo(): string
     {
         return $this->regNo;
     }
@@ -158,7 +158,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setRegNo(string $regNo) : self
+    public function setRegNo(string $regNo): self
     {
         $this->initialized['regNo'] = true;
         $this->regNo = $regNo;
@@ -169,7 +169,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getVatNo() : string
+    public function getVatNo(): string
     {
         return $this->vatNo;
     }
@@ -180,7 +180,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setVatNo(string $vatNo) : self
+    public function setVatNo(string $vatNo): self
     {
         $this->initialized['vatNo'] = true;
         $this->vatNo = $vatNo;
@@ -191,7 +191,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -202,7 +202,7 @@ class CreateFreshInvestigationRequestSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;

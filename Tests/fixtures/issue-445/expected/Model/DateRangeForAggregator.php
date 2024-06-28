@@ -8,7 +8,7 @@ class DateRangeForAggregator
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class DateRangeForAggregator
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -57,7 +57,7 @@ class DateRangeForAggregator
      *
      * @return string|null
      */
-    public function getFrom() : ?string
+    public function getFrom(): ?string
     {
         return $this->from;
     }
@@ -68,7 +68,7 @@ class DateRangeForAggregator
      *
      * @return self
      */
-    public function setFrom(?string $from) : self
+    public function setFrom(?string $from): self
     {
         $this->initialized['from'] = true;
         $this->from = $from;
@@ -79,7 +79,7 @@ class DateRangeForAggregator
      *
      * @return string|null
      */
-    public function getTo() : ?string
+    public function getTo(): ?string
     {
         return $this->to;
     }
@@ -90,7 +90,7 @@ class DateRangeForAggregator
      *
      * @return self
      */
-    public function setTo(?string $to) : self
+    public function setTo(?string $to): self
     {
         $this->initialized['to'] = true;
         $this->to = $to;

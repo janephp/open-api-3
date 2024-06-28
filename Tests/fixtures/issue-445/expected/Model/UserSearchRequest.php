@@ -8,7 +8,7 @@ class UserSearchRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -112,7 +112,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -123,7 +123,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getSearchBehaviors() : ?array
+    public function getSearchBehaviors(): ?array
     {
         return $this->searchBehaviors;
     }
@@ -134,7 +134,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchBehaviors(?array $searchBehaviors) : self
+    public function setSearchBehaviors(?array $searchBehaviors): self
     {
         $this->initialized['searchBehaviors'] = true;
         $this->searchBehaviors = $searchBehaviors;
@@ -156,7 +156,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -178,7 +178,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setLifeCycleFilter($lifeCycleFilter) : self
+    public function setLifeCycleFilter($lifeCycleFilter): self
     {
         $this->initialized['lifeCycleFilter'] = true;
         $this->lifeCycleFilter = $lifeCycleFilter;
@@ -189,7 +189,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getUserRightsFilter() : ?array
+    public function getUserRightsFilter(): ?array
     {
         return $this->userRightsFilter;
     }
@@ -200,7 +200,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUserRightsFilter(?array $userRightsFilter) : self
+    public function setUserRightsFilter(?array $userRightsFilter): self
     {
         $this->initialized['userRightsFilter'] = true;
         $this->userRightsFilter = $userRightsFilter;
@@ -216,7 +216,7 @@ class UserSearchRequest extends \ArrayObject
     *
     * @return list<AggregationFilter>|null
     */
-    public function getAggregationFilters() : ?array
+    public function getAggregationFilters(): ?array
     {
         return $this->aggregationFilters;
     }
@@ -232,7 +232,7 @@ class UserSearchRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setAggregationFilters(?array $aggregationFilters) : self
+    public function setAggregationFilters(?array $aggregationFilters): self
     {
         $this->initialized['aggregationFilters'] = true;
         $this->aggregationFilters = $aggregationFilters;
@@ -243,7 +243,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncludeServiceUser() : bool
+    public function getIncludeServiceUser(): bool
     {
         return $this->includeServiceUser;
     }
@@ -254,7 +254,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludeServiceUser(bool $includeServiceUser) : self
+    public function setIncludeServiceUser(bool $includeServiceUser): self
     {
         $this->initialized['includeServiceUser'] = true;
         $this->includeServiceUser = $includeServiceUser;
@@ -266,7 +266,7 @@ class UserSearchRequest extends \ArrayObject
     *
     * @return bool
     */
-    public function getEditableOnly() : bool
+    public function getEditableOnly(): bool
     {
         return $this->editableOnly;
     }
@@ -278,7 +278,7 @@ class UserSearchRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setEditableOnly(bool $editableOnly) : self
+    public function setEditableOnly(bool $editableOnly): self
     {
         $this->initialized['editableOnly'] = true;
         $this->editableOnly = $editableOnly;
@@ -289,7 +289,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return list<SortInfo>|null
      */
-    public function getSort() : ?array
+    public function getSort(): ?array
     {
         return $this->sort;
     }
@@ -300,7 +300,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSort(?array $sort) : self
+    public function setSort(?array $sort): self
     {
         $this->initialized['sort'] = true;
         $this->sort = $sort;
@@ -311,7 +311,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -322,7 +322,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -333,7 +333,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -344,7 +344,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;
@@ -355,7 +355,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return bool
      */
-    public function getDebugMode() : bool
+    public function getDebugMode(): bool
     {
         return $this->debugMode;
     }
@@ -366,7 +366,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setDebugMode(bool $debugMode) : self
+    public function setDebugMode(bool $debugMode): self
     {
         $this->initialized['debugMode'] = true;
         $this->debugMode = $debugMode;
@@ -377,7 +377,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return list<AggregatorBase>|null
      */
-    public function getAggregators() : ?array
+    public function getAggregators(): ?array
     {
         return $this->aggregators;
     }
@@ -388,7 +388,7 @@ class UserSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setAggregators(?array $aggregators) : self
+    public function setAggregators(?array $aggregators): self
     {
         $this->initialized['aggregators'] = true;
         $this->aggregators = $aggregators;

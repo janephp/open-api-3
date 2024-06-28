@@ -8,7 +8,7 @@ class PermissionSetOwnershipTransferRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class PermissionSetOwnershipTransferRequest
      *
      * @return string
      */
-    public function getTransferUserId() : string
+    public function getTransferUserId(): string
     {
         return $this->transferUserId;
     }
@@ -34,7 +34,7 @@ class PermissionSetOwnershipTransferRequest
      *
      * @return self
      */
-    public function setTransferUserId(string $transferUserId) : self
+    public function setTransferUserId(string $transferUserId): self
     {
         $this->initialized['transferUserId'] = true;
         $this->transferUserId = $transferUserId;

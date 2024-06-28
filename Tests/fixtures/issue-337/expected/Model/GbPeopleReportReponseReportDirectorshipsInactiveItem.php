@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCompanyName() : string
+    public function getCompanyName(): string
     {
         return $this->companyName;
     }
@@ -88,7 +88,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyName(string $companyName) : self
+    public function setCompanyName(string $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;
@@ -99,7 +99,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCompanyNumber() : string
+    public function getCompanyNumber(): string
     {
         return $this->companyNumber;
     }
@@ -110,7 +110,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyNumber(string $companyNumber) : self
+    public function setCompanyNumber(string $companyNumber): self
     {
         $this->initialized['companyNumber'] = true;
         $this->companyNumber = $companyNumber;
@@ -121,7 +121,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCompanyRegistrationNumber() : string
+    public function getCompanyRegistrationNumber(): string
     {
         return $this->companyRegistrationNumber;
     }
@@ -132,7 +132,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyRegistrationNumber(string $companyRegistrationNumber) : self
+    public function setCompanyRegistrationNumber(string $companyRegistrationNumber): self
     {
         $this->initialized['companyRegistrationNumber'] = true;
         $this->companyRegistrationNumber = $companyRegistrationNumber;
@@ -143,7 +143,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -154,7 +154,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -165,7 +165,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return GbPeopleReportReponseReportDirectorshipsInactiveItemPosition
      */
-    public function getPosition() : GbPeopleReportReponseReportDirectorshipsInactiveItemPosition
+    public function getPosition(): GbPeopleReportReponseReportDirectorshipsInactiveItemPosition
     {
         return $this->position;
     }
@@ -176,7 +176,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPosition(GbPeopleReportReponseReportDirectorshipsInactiveItemPosition $position) : self
+    public function setPosition(GbPeopleReportReponseReportDirectorshipsInactiveItemPosition $position): self
     {
         $this->initialized['position'] = true;
         $this->position = $position;
@@ -187,7 +187,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCompanyRegistrationDate() : string
+    public function getCompanyRegistrationDate(): string
     {
         return $this->companyRegistrationDate;
     }
@@ -198,7 +198,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyRegistrationDate(string $companyRegistrationDate) : self
+    public function setCompanyRegistrationDate(string $companyRegistrationDate): self
     {
         $this->initialized['companyRegistrationDate'] = true;
         $this->companyRegistrationDate = $companyRegistrationDate;
@@ -209,7 +209,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return GbPeopleReportReponseReportDirectorshipsInactiveItemNetWorth
      */
-    public function getNetWorth() : GbPeopleReportReponseReportDirectorshipsInactiveItemNetWorth
+    public function getNetWorth(): GbPeopleReportReponseReportDirectorshipsInactiveItemNetWorth
     {
         return $this->netWorth;
     }
@@ -220,7 +220,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setNetWorth(GbPeopleReportReponseReportDirectorshipsInactiveItemNetWorth $netWorth) : self
+    public function setNetWorth(GbPeopleReportReponseReportDirectorshipsInactiveItemNetWorth $netWorth): self
     {
         $this->initialized['netWorth'] = true;
         $this->netWorth = $netWorth;
@@ -231,7 +231,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return int
      */
-    public function getLegalCount() : int
+    public function getLegalCount(): int
     {
         return $this->legalCount;
     }
@@ -242,7 +242,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLegalCount(int $legalCount) : self
+    public function setLegalCount(int $legalCount): self
     {
         $this->initialized['legalCount'] = true;
         $this->legalCount = $legalCount;
@@ -253,7 +253,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return GbPeopleReportReponseReportDirectorshipsInactiveItemCreditScore
      */
-    public function getCreditScore() : GbPeopleReportReponseReportDirectorshipsInactiveItemCreditScore
+    public function getCreditScore(): GbPeopleReportReponseReportDirectorshipsInactiveItemCreditScore
     {
         return $this->creditScore;
     }
@@ -264,7 +264,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCreditScore(GbPeopleReportReponseReportDirectorshipsInactiveItemCreditScore $creditScore) : self
+    public function setCreditScore(GbPeopleReportReponseReportDirectorshipsInactiveItemCreditScore $creditScore): self
     {
         $this->initialized['creditScore'] = true;
         $this->creditScore = $creditScore;
@@ -275,7 +275,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData
      */
-    public function getAdditionalData() : GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData
+    public function getAdditionalData(): GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData
     {
         return $this->additionalData;
     }
@@ -286,7 +286,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAdditionalData(GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData $additionalData) : self
+    public function setAdditionalData(GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData $additionalData): self
     {
         $this->initialized['additionalData'] = true;
         $this->additionalData = $additionalData;

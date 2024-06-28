@@ -8,7 +8,7 @@ class TransferDetail extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -113,7 +113,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -124,7 +124,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -135,7 +135,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -146,7 +146,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -168,7 +168,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setState($state) : self
+    public function setState($state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -190,7 +190,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setTransferType($transferType) : self
+    public function setTransferType($transferType): self
     {
         $this->initialized['transferType'] = true;
         $this->transferType = $transferType;
@@ -201,7 +201,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return string|null
      */
-    public function getBusinessProcessId() : ?string
+    public function getBusinessProcessId(): ?string
     {
         return $this->businessProcessId;
     }
@@ -212,7 +212,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setBusinessProcessId(?string $businessProcessId) : self
+    public function setBusinessProcessId(?string $businessProcessId): self
     {
         $this->initialized['businessProcessId'] = true;
         $this->businessProcessId = $businessProcessId;
@@ -223,7 +223,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return int
      */
-    public function getFileTransferCount() : int
+    public function getFileTransferCount(): int
     {
         return $this->fileTransferCount;
     }
@@ -234,7 +234,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setFileTransferCount(int $fileTransferCount) : self
+    public function setFileTransferCount(int $fileTransferCount): self
     {
         $this->initialized['fileTransferCount'] = true;
         $this->fileTransferCount = $fileTransferCount;
@@ -245,7 +245,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCollectionId() : ?string
+    public function getCollectionId(): ?string
     {
         return $this->collectionId;
     }
@@ -256,7 +256,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setCollectionId(?string $collectionId) : self
+    public function setCollectionId(?string $collectionId): self
     {
         $this->initialized['collectionId'] = true;
         $this->collectionId = $collectionId;
@@ -278,7 +278,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;
@@ -289,7 +289,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return int
      */
-    public function getItemProgress() : int
+    public function getItemProgress(): int
     {
         return $this->itemProgress;
     }
@@ -300,7 +300,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setItemProgress(int $itemProgress) : self
+    public function setItemProgress(int $itemProgress): self
     {
         $this->initialized['itemProgress'] = true;
         $this->itemProgress = $itemProgress;
@@ -311,7 +311,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return int
      */
-    public function getItemCount() : int
+    public function getItemCount(): int
     {
         return $this->itemCount;
     }
@@ -322,7 +322,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setItemCount(int $itemCount) : self
+    public function setItemCount(int $itemCount): self
     {
         $this->initialized['itemCount'] = true;
         $this->itemCount = $itemCount;
@@ -333,7 +333,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return int
      */
-    public function getFileUploadInProgressCount() : int
+    public function getFileUploadInProgressCount(): int
     {
         return $this->fileUploadInProgressCount;
     }
@@ -344,7 +344,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setFileUploadInProgressCount(int $fileUploadInProgressCount) : self
+    public function setFileUploadInProgressCount(int $fileUploadInProgressCount): self
     {
         $this->initialized['fileUploadInProgressCount'] = true;
         $this->fileUploadInProgressCount = $fileUploadInProgressCount;
@@ -355,7 +355,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return int
      */
-    public function getDataExtractionInProgressCount() : int
+    public function getDataExtractionInProgressCount(): int
     {
         return $this->dataExtractionInProgressCount;
     }
@@ -366,7 +366,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setDataExtractionInProgressCount(int $dataExtractionInProgressCount) : self
+    public function setDataExtractionInProgressCount(int $dataExtractionInProgressCount): self
     {
         $this->initialized['dataExtractionInProgressCount'] = true;
         $this->dataExtractionInProgressCount = $dataExtractionInProgressCount;
@@ -377,7 +377,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return int
      */
-    public function getItemsFailed() : int
+    public function getItemsFailed(): int
     {
         return $this->itemsFailed;
     }
@@ -388,7 +388,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setItemsFailed(int $itemsFailed) : self
+    public function setItemsFailed(int $itemsFailed): self
     {
         $this->initialized['itemsFailed'] = true;
         $this->itemsFailed = $itemsFailed;
@@ -399,7 +399,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return int
      */
-    public function getItemsCancelled() : int
+    public function getItemsCancelled(): int
     {
         return $this->itemsCancelled;
     }
@@ -410,7 +410,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setItemsCancelled(int $itemsCancelled) : self
+    public function setItemsCancelled(int $itemsCancelled): self
     {
         $this->initialized['itemsCancelled'] = true;
         $this->itemsCancelled = $itemsCancelled;
@@ -421,7 +421,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getLastDataExtractionProgressTimeStamp() : ?\DateTime
+    public function getLastDataExtractionProgressTimeStamp(): ?\DateTime
     {
         return $this->lastDataExtractionProgressTimeStamp;
     }
@@ -432,7 +432,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setLastDataExtractionProgressTimeStamp(?\DateTime $lastDataExtractionProgressTimeStamp) : self
+    public function setLastDataExtractionProgressTimeStamp(?\DateTime $lastDataExtractionProgressTimeStamp): self
     {
         $this->initialized['lastDataExtractionProgressTimeStamp'] = true;
         $this->lastDataExtractionProgressTimeStamp = $lastDataExtractionProgressTimeStamp;
@@ -443,7 +443,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getLastFileUploadProgressTimeStamp() : ?\DateTime
+    public function getLastFileUploadProgressTimeStamp(): ?\DateTime
     {
         return $this->lastFileUploadProgressTimeStamp;
     }
@@ -454,7 +454,7 @@ class TransferDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setLastFileUploadProgressTimeStamp(?\DateTime $lastFileUploadProgressTimeStamp) : self
+    public function setLastFileUploadProgressTimeStamp(?\DateTime $lastFileUploadProgressTimeStamp): self
     {
         $this->initialized['lastFileUploadProgressTimeStamp'] = true;
         $this->lastFileUploadProgressTimeStamp = $lastFileUploadProgressTimeStamp;

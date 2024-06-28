@@ -8,7 +8,7 @@ class BookBookRead extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -70,7 +70,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -81,7 +81,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return string|null
      */
-    public function getIsbn() : ?string
+    public function getIsbn(): ?string
     {
         return $this->isbn;
     }
@@ -92,7 +92,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setIsbn(?string $isbn) : self
+    public function setIsbn(?string $isbn): self
     {
         $this->initialized['isbn'] = true;
         $this->isbn = $isbn;
@@ -103,7 +103,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -114,7 +114,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -125,7 +125,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -136,7 +136,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -147,7 +147,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthor() : string
+    public function getAuthor(): string
     {
         return $this->author;
     }
@@ -158,7 +158,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(string $author) : self
+    public function setAuthor(string $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -169,7 +169,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getPublicationDate() : \DateTime
+    public function getPublicationDate(): \DateTime
     {
         return $this->publicationDate;
     }
@@ -180,7 +180,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setPublicationDate(\DateTime $publicationDate) : self
+    public function setPublicationDate(\DateTime $publicationDate): self
     {
         $this->initialized['publicationDate'] = true;
         $this->publicationDate = $publicationDate;
@@ -191,7 +191,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return list<ReviewBookRead>
      */
-    public function getReviews() : array
+    public function getReviews(): array
     {
         return $this->reviews;
     }
@@ -202,7 +202,7 @@ class BookBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setReviews(array $reviews) : self
+    public function setReviews(array $reviews): self
     {
         $this->initialized['reviews'] = true;
         $this->reviews = $reviews;

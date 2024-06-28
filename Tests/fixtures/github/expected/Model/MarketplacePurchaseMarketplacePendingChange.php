@@ -8,7 +8,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsInstalled() : bool
+    public function getIsInstalled(): bool
     {
         return $this->isInstalled;
     }
@@ -58,7 +58,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return self
      */
-    public function setIsInstalled(bool $isInstalled) : self
+    public function setIsInstalled(bool $isInstalled): self
     {
         $this->initialized['isInstalled'] = true;
         $this->isInstalled = $isInstalled;
@@ -69,7 +69,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return string
      */
-    public function getEffectiveDate() : string
+    public function getEffectiveDate(): string
     {
         return $this->effectiveDate;
     }
@@ -80,7 +80,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return self
      */
-    public function setEffectiveDate(string $effectiveDate) : self
+    public function setEffectiveDate(string $effectiveDate): self
     {
         $this->initialized['effectiveDate'] = true;
         $this->effectiveDate = $effectiveDate;
@@ -91,7 +91,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return int|null
      */
-    public function getUnitCount() : ?int
+    public function getUnitCount(): ?int
     {
         return $this->unitCount;
     }
@@ -102,7 +102,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return self
      */
-    public function setUnitCount(?int $unitCount) : self
+    public function setUnitCount(?int $unitCount): self
     {
         $this->initialized['unitCount'] = true;
         $this->unitCount = $unitCount;
@@ -113,7 +113,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -124,7 +124,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -135,7 +135,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return MarketplaceListingPlan
      */
-    public function getPlan() : MarketplaceListingPlan
+    public function getPlan(): MarketplaceListingPlan
     {
         return $this->plan;
     }
@@ -146,7 +146,7 @@ class MarketplacePurchaseMarketplacePendingChange extends \ArrayObject
      *
      * @return self
      */
-    public function setPlan(MarketplaceListingPlan $plan) : self
+    public function setPlan(MarketplaceListingPlan $plan): self
     {
         $this->initialized['plan'] = true;
         $this->plan = $plan;

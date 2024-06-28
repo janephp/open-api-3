@@ -8,7 +8,7 @@ class UserDetail extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -125,7 +125,7 @@ class UserDetail extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -136,7 +136,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -147,7 +147,7 @@ class UserDetail extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFirstName() : ?string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
@@ -158,7 +158,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setFirstName(?string $firstName) : self
+    public function setFirstName(?string $firstName): self
     {
         $this->initialized['firstName'] = true;
         $this->firstName = $firstName;
@@ -169,7 +169,7 @@ class UserDetail extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLastName() : ?string
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
@@ -180,7 +180,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setLastName(?string $lastName) : self
+    public function setLastName(?string $lastName): self
     {
         $this->initialized['lastName'] = true;
         $this->lastName = $lastName;
@@ -191,7 +191,7 @@ class UserDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -202,7 +202,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -213,7 +213,7 @@ class UserDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsDeleted() : bool
+    public function getIsDeleted(): bool
     {
         return $this->isDeleted;
     }
@@ -224,7 +224,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setIsDeleted(bool $isDeleted) : self
+    public function setIsDeleted(bool $isDeleted): self
     {
         $this->initialized['isDeleted'] = true;
         $this->isDeleted = $isDeleted;
@@ -235,7 +235,7 @@ class UserDetail extends \ArrayObject
      *
      * @return list<UserRoleAssignment>|null
      */
-    public function getUserRoles() : ?array
+    public function getUserRoles(): ?array
     {
         return $this->userRoles;
     }
@@ -246,7 +246,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setUserRoles(?array $userRoles) : self
+    public function setUserRoles(?array $userRoles): self
     {
         $this->initialized['userRoles'] = true;
         $this->userRoles = $userRoles;
@@ -257,7 +257,7 @@ class UserDetail extends \ArrayObject
      *
      * @return string|null
      */
-    public function getComment() : ?string
+    public function getComment(): ?string
     {
         return $this->comment;
     }
@@ -268,7 +268,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setComment(?string $comment) : self
+    public function setComment(?string $comment): self
     {
         $this->initialized['comment'] = true;
         $this->comment = $comment;
@@ -279,7 +279,7 @@ class UserDetail extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLanguageCode() : ?string
+    public function getLanguageCode(): ?string
     {
         return $this->languageCode;
     }
@@ -290,7 +290,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguageCode(?string $languageCode) : self
+    public function setLanguageCode(?string $languageCode): self
     {
         $this->initialized['languageCode'] = true;
         $this->languageCode = $languageCode;
@@ -312,7 +312,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress($address) : self
+    public function setAddress($address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -323,7 +323,7 @@ class UserDetail extends \ArrayObject
      *
      * @return string|null
      */
-    public function getIdentityProviderId() : ?string
+    public function getIdentityProviderId(): ?string
     {
         return $this->identityProviderId;
     }
@@ -334,7 +334,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setIdentityProviderId(?string $identityProviderId) : self
+    public function setIdentityProviderId(?string $identityProviderId): self
     {
         $this->initialized['identityProviderId'] = true;
         $this->identityProviderId = $identityProviderId;
@@ -345,7 +345,7 @@ class UserDetail extends \ArrayObject
      *
      * @return list<OwnerToken>|null
      */
-    public function getOwnerTokens() : ?array
+    public function getOwnerTokens(): ?array
     {
         return $this->ownerTokens;
     }
@@ -356,7 +356,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setOwnerTokens(?array $ownerTokens) : self
+    public function setOwnerTokens(?array $ownerTokens): self
     {
         $this->initialized['ownerTokens'] = true;
         $this->ownerTokens = $ownerTokens;
@@ -378,7 +378,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorizationState($authorizationState) : self
+    public function setAuthorizationState($authorizationState): self
     {
         $this->initialized['authorizationState'] = true;
         $this->authorizationState = $authorizationState;
@@ -389,7 +389,7 @@ class UserDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsLocked() : bool
+    public function getIsLocked(): bool
     {
         return $this->isLocked;
     }
@@ -400,7 +400,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setIsLocked(bool $isLocked) : self
+    public function setIsLocked(bool $isLocked): self
     {
         $this->initialized['isLocked'] = true;
         $this->isLocked = $isLocked;
@@ -422,7 +422,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setLifeCycle($lifeCycle) : self
+    public function setLifeCycle($lifeCycle): self
     {
         $this->initialized['lifeCycle'] = true;
         $this->lifeCycle = $lifeCycle;
@@ -433,7 +433,7 @@ class UserDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsSupportUser() : bool
+    public function getIsSupportUser(): bool
     {
         return $this->isSupportUser;
     }
@@ -444,7 +444,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setIsSupportUser(bool $isSupportUser) : self
+    public function setIsSupportUser(bool $isSupportUser): self
     {
         $this->initialized['isSupportUser'] = true;
         $this->isSupportUser = $isSupportUser;
@@ -455,7 +455,7 @@ class UserDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsReadOnly() : bool
+    public function getIsReadOnly(): bool
     {
         return $this->isReadOnly;
     }
@@ -466,7 +466,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setIsReadOnly(bool $isReadOnly) : self
+    public function setIsReadOnly(bool $isReadOnly): self
     {
         $this->initialized['isReadOnly'] = true;
         $this->isReadOnly = $isReadOnly;
@@ -477,7 +477,7 @@ class UserDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsFederated() : bool
+    public function getIsFederated(): bool
     {
         return $this->isFederated;
     }
@@ -488,7 +488,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setIsFederated(bool $isFederated) : self
+    public function setIsFederated(bool $isFederated): self
     {
         $this->initialized['isFederated'] = true;
         $this->isFederated = $isFederated;
@@ -510,7 +510,7 @@ class UserDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;

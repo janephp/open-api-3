@@ -8,7 +8,7 @@ class ReposOwnerRepoHooksPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ReposOwnerRepoHooksPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -52,7 +52,7 @@ class ReposOwnerRepoHooksPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -63,7 +63,7 @@ class ReposOwnerRepoHooksPostBody extends \ArrayObject
      *
      * @return ReposOwnerRepoHooksPostBodyConfig
      */
-    public function getConfig() : ReposOwnerRepoHooksPostBodyConfig
+    public function getConfig(): ReposOwnerRepoHooksPostBodyConfig
     {
         return $this->config;
     }
@@ -74,7 +74,7 @@ class ReposOwnerRepoHooksPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setConfig(ReposOwnerRepoHooksPostBodyConfig $config) : self
+    public function setConfig(ReposOwnerRepoHooksPostBodyConfig $config): self
     {
         $this->initialized['config'] = true;
         $this->config = $config;
@@ -85,7 +85,7 @@ class ReposOwnerRepoHooksPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getEvents() : array
+    public function getEvents(): array
     {
         return $this->events;
     }
@@ -96,7 +96,7 @@ class ReposOwnerRepoHooksPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEvents(array $events) : self
+    public function setEvents(array $events): self
     {
         $this->initialized['events'] = true;
         $this->events = $events;
@@ -107,7 +107,7 @@ class ReposOwnerRepoHooksPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getActive() : bool
+    public function getActive(): bool
     {
         return $this->active;
     }
@@ -118,7 +118,7 @@ class ReposOwnerRepoHooksPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setActive(bool $active) : self
+    public function setActive(bool $active): self
     {
         $this->initialized['active'] = true;
         $this->active = $active;

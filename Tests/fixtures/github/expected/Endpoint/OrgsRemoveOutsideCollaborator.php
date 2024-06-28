@@ -18,19 +18,19 @@ class OrgsRemoveOutsideCollaborator extends \Github\Runtime\Client\BaseEndpoint 
         $this->username = $username;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'DELETE';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{org}', '{username}'], [$this->org, $this->username], '/orgs/{org}/outside_collaborators/{username}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
@@ -49,10 +49,10 @@ class OrgsRemoveOutsideCollaborator extends \Github\Runtime\Client\BaseEndpoint 
             return null;
         }
         if (is_null($contentType) === false && (422 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \Github\Exception\OrgsRemoveOutsideCollaboratorUnprocessableEntityException($serializer->deserialize($body, 'Github\\Model\\OrgsOrgOutsideCollaboratorsUsernameDeleteResponse422', 'json'), $response);
+            throw new \Github\Exception\OrgsRemoveOutsideCollaboratorUnprocessableEntityException($serializer->deserialize($body, 'Github\Model\OrgsOrgOutsideCollaboratorsUsernameDeleteResponse422', 'json'), $response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

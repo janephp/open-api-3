@@ -8,7 +8,7 @@ class DeleteRulesRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class DeleteRulesRequest extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getIds() : array
+    public function getIds(): array
     {
         return $this->ids;
     }
@@ -40,7 +40,7 @@ class DeleteRulesRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setIds(array $ids) : self
+    public function setIds(array $ids): self
     {
         $this->initialized['ids'] = true;
         $this->ids = $ids;
@@ -51,7 +51,7 @@ class DeleteRulesRequest extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getValues() : array
+    public function getValues(): array
     {
         return $this->values;
     }
@@ -62,7 +62,7 @@ class DeleteRulesRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setValues(array $values) : self
+    public function setValues(array $values): self
     {
         $this->initialized['values'] = true;
         $this->values = $values;

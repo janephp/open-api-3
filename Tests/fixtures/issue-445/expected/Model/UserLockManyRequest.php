@@ -8,7 +8,7 @@ class UserLockManyRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -31,7 +31,7 @@ class UserLockManyRequest extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getUserIds() : array
+    public function getUserIds(): array
     {
         return $this->userIds;
     }
@@ -42,7 +42,7 @@ class UserLockManyRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUserIds(array $userIds) : self
+    public function setUserIds(array $userIds): self
     {
         $this->initialized['userIds'] = true;
         $this->userIds = $userIds;
@@ -55,7 +55,7 @@ class UserLockManyRequest extends \ArrayObject
     *
     * @return bool
     */
-    public function getLock() : bool
+    public function getLock(): bool
     {
         return $this->lock;
     }
@@ -68,7 +68,7 @@ class UserLockManyRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setLock(bool $lock) : self
+    public function setLock(bool $lock): self
     {
         $this->initialized['lock'] = true;
         $this->lock = $lock;

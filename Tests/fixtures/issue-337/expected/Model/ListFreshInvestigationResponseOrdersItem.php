@@ -8,7 +8,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return int
      */
-    public function getOrderID() : int
+    public function getOrderID(): int
     {
         return $this->orderID;
     }
@@ -88,7 +88,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setOrderID(int $orderID) : self
+    public function setOrderID(int $orderID): self
     {
         $this->initialized['orderID'] = true;
         $this->orderID = $orderID;
@@ -99,7 +99,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUserID() : string
+    public function getUserID(): string
     {
         return $this->userID;
     }
@@ -110,7 +110,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUserID(string $userID) : self
+    public function setUserID(string $userID): self
     {
         $this->initialized['userID'] = true;
         $this->userID = $userID;
@@ -121,7 +121,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCreationDate() : string
+    public function getCreationDate(): string
     {
         return $this->creationDate;
     }
@@ -132,7 +132,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCreationDate(string $creationDate) : self
+    public function setCreationDate(string $creationDate): self
     {
         $this->initialized['creationDate'] = true;
         $this->creationDate = $creationDate;
@@ -143,7 +143,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return string
      */
-    public function getLastStatusChangeDate() : string
+    public function getLastStatusChangeDate(): string
     {
         return $this->lastStatusChangeDate;
     }
@@ -154,7 +154,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLastStatusChangeDate(string $lastStatusChangeDate) : self
+    public function setLastStatusChangeDate(string $lastStatusChangeDate): self
     {
         $this->initialized['lastStatusChangeDate'] = true;
         $this->lastStatusChangeDate = $lastStatusChangeDate;
@@ -165,7 +165,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return int
      */
-    public function getTransactionID() : int
+    public function getTransactionID(): int
     {
         return $this->transactionID;
     }
@@ -176,7 +176,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTransactionID(int $transactionID) : self
+    public function setTransactionID(int $transactionID): self
     {
         $this->initialized['transactionID'] = true;
         $this->transactionID = $transactionID;
@@ -187,7 +187,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return string
      */
-    public function getChargeReference() : string
+    public function getChargeReference(): string
     {
         return $this->chargeReference;
     }
@@ -198,7 +198,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setChargeReference(string $chargeReference) : self
+    public function setChargeReference(string $chargeReference): self
     {
         $this->initialized['chargeReference'] = true;
         $this->chargeReference = $chargeReference;
@@ -209,7 +209,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return ListFreshInvestigationResponseOrdersItemContactDetails
      */
-    public function getContactDetails() : ListFreshInvestigationResponseOrdersItemContactDetails
+    public function getContactDetails(): ListFreshInvestigationResponseOrdersItemContactDetails
     {
         return $this->contactDetails;
     }
@@ -220,7 +220,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setContactDetails(ListFreshInvestigationResponseOrdersItemContactDetails $contactDetails) : self
+    public function setContactDetails(ListFreshInvestigationResponseOrdersItemContactDetails $contactDetails): self
     {
         $this->initialized['contactDetails'] = true;
         $this->contactDetails = $contactDetails;
@@ -231,7 +231,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return ListFreshInvestigationResponseOrdersItemStatus
      */
-    public function getStatus() : ListFreshInvestigationResponseOrdersItemStatus
+    public function getStatus(): ListFreshInvestigationResponseOrdersItemStatus
     {
         return $this->status;
     }
@@ -242,7 +242,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(ListFreshInvestigationResponseOrdersItemStatus $status) : self
+    public function setStatus(ListFreshInvestigationResponseOrdersItemStatus $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -253,7 +253,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getConsent() : bool
+    public function getConsent(): bool
     {
         return $this->consent;
     }
@@ -264,7 +264,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setConsent(bool $consent) : self
+    public function setConsent(bool $consent): self
     {
         $this->initialized['consent'] = true;
         $this->consent = $consent;
@@ -275,7 +275,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return ListFreshInvestigationResponseOrdersItemSearchCriteria
      */
-    public function getSearchCriteria() : ListFreshInvestigationResponseOrdersItemSearchCriteria
+    public function getSearchCriteria(): ListFreshInvestigationResponseOrdersItemSearchCriteria
     {
         return $this->searchCriteria;
     }
@@ -286,7 +286,7 @@ class ListFreshInvestigationResponseOrdersItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchCriteria(ListFreshInvestigationResponseOrdersItemSearchCriteria $searchCriteria) : self
+    public function setSearchCriteria(ListFreshInvestigationResponseOrdersItemSearchCriteria $searchCriteria): self
     {
         $this->initialized['searchCriteria'] = true;
         $this->searchCriteria = $searchCriteria;

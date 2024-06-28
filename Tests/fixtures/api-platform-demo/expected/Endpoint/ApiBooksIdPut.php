@@ -20,15 +20,15 @@ class ApiBooksIdPut extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoint implem
         $this->accept = $accept;
     }
     use \ApiPlatform\Demo\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'PUT';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{id}'], [$this->id], '/books/{id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \ApiPlatform\Demo\Model\BookJsonld) {
             return [['Content-Type' => ['application/ld+json']], $serializer->serialize($this->body, 'json')];
@@ -59,7 +59,7 @@ class ApiBooksIdPut extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoint implem
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         if (empty($this->accept)) {
             return ['Accept' => ['application/ld+json', 'application/hal+json', 'application/vnd.api+json', 'application/json', 'application/xml', 'text/xml', 'application/x-yaml', 'text/csv']];
@@ -81,16 +81,16 @@ class ApiBooksIdPut extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoint implem
         $body = (string) $response->getBody();
         if (200 === $status) {
             if (mb_strpos($contentType, 'application/ld+json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\BookJsonldBookRead', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\BookJsonldBookRead', 'json');
             }
             if (mb_strpos($contentType, 'application/hal+json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\BookJsonhalBookRead', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\BookJsonhalBookRead', 'json');
             }
             if (mb_strpos($contentType, 'application/vnd.api+json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\BookBookRead', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\BookBookRead', 'json');
             }
             if (mb_strpos($contentType, 'application/json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\BookBookRead', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\BookBookRead', 'json');
             }
         }
         if (400 === $status) {
@@ -103,7 +103,7 @@ class ApiBooksIdPut extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoint implem
             throw new \ApiPlatform\Demo\Exception\ApiBooksIdPutNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return ['apiKey'];
     }

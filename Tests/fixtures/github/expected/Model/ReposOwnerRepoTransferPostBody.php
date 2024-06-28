@@ -8,7 +8,7 @@ class ReposOwnerRepoTransferPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoTransferPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getNewOwner() : string
+    public function getNewOwner(): string
     {
         return $this->newOwner;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoTransferPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNewOwner(string $newOwner) : self
+    public function setNewOwner(string $newOwner): self
     {
         $this->initialized['newOwner'] = true;
         $this->newOwner = $newOwner;
@@ -51,7 +51,7 @@ class ReposOwnerRepoTransferPostBody extends \ArrayObject
      *
      * @return list<int>
      */
-    public function getTeamIds() : array
+    public function getTeamIds(): array
     {
         return $this->teamIds;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoTransferPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTeamIds(array $teamIds) : self
+    public function setTeamIds(array $teamIds): self
     {
         $this->initialized['teamIds'] = true;
         $this->teamIds = $teamIds;

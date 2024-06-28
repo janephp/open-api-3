@@ -8,7 +8,7 @@ class ContentSearchRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -134,7 +134,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -145,7 +145,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -156,7 +156,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getSearchBehaviors() : ?array
+    public function getSearchBehaviors(): ?array
     {
         return $this->searchBehaviors;
     }
@@ -167,7 +167,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchBehaviors(?array $searchBehaviors) : self
+    public function setSearchBehaviors(?array $searchBehaviors): self
     {
         $this->initialized['searchBehaviors'] = true;
         $this->searchBehaviors = $searchBehaviors;
@@ -189,7 +189,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -205,7 +205,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return list<AggregationFilter>|null
     */
-    public function getAggregationFilters() : ?array
+    public function getAggregationFilters(): ?array
     {
         return $this->aggregationFilters;
     }
@@ -221,7 +221,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setAggregationFilters(?array $aggregationFilters) : self
+    public function setAggregationFilters(?array $aggregationFilters): self
     {
         $this->initialized['aggregationFilters'] = true;
         $this->aggregationFilters = $aggregationFilters;
@@ -233,7 +233,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return string|null
     */
-    public function getChannelId() : ?string
+    public function getChannelId(): ?string
     {
         return $this->channelId;
     }
@@ -245,7 +245,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setChannelId(?string $channelId) : self
+    public function setChannelId(?string $channelId): self
     {
         $this->initialized['channelId'] = true;
         $this->channelId = $channelId;
@@ -257,7 +257,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return list<string>|null
     */
-    public function getSearchLanguages() : ?array
+    public function getSearchLanguages(): ?array
     {
         return $this->searchLanguages;
     }
@@ -269,7 +269,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setSearchLanguages(?array $searchLanguages) : self
+    public function setSearchLanguages(?array $searchLanguages): self
     {
         $this->initialized['searchLanguages'] = true;
         $this->searchLanguages = $searchLanguages;
@@ -280,7 +280,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCollectionId() : ?string
+    public function getCollectionId(): ?string
     {
         return $this->collectionId;
     }
@@ -291,7 +291,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setCollectionId(?string $collectionId) : self
+    public function setCollectionId(?string $collectionId): self
     {
         $this->initialized['collectionId'] = true;
         $this->collectionId = $collectionId;
@@ -313,7 +313,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setLifeCycleFilter($lifeCycleFilter) : self
+    public function setLifeCycleFilter($lifeCycleFilter): self
     {
         $this->initialized['lifeCycleFilter'] = true;
         $this->lifeCycleFilter = $lifeCycleFilter;
@@ -335,7 +335,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setBrokenDependenciesFilter($brokenDependenciesFilter) : self
+    public function setBrokenDependenciesFilter($brokenDependenciesFilter): self
     {
         $this->initialized['brokenDependenciesFilter'] = true;
         $this->brokenDependenciesFilter = $brokenDependenciesFilter;
@@ -357,7 +357,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchType($searchType) : self
+    public function setSearchType($searchType): self
     {
         $this->initialized['searchType'] = true;
         $this->searchType = $searchType;
@@ -368,7 +368,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getDisplayPatternIds() : ?array
+    public function getDisplayPatternIds(): ?array
     {
         return $this->displayPatternIds;
     }
@@ -379,7 +379,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setDisplayPatternIds(?array $displayPatternIds) : self
+    public function setDisplayPatternIds(?array $displayPatternIds): self
     {
         $this->initialized['displayPatternIds'] = true;
         $this->displayPatternIds = $displayPatternIds;
@@ -390,7 +390,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return list<SortInfo>|null
      */
-    public function getSort() : ?array
+    public function getSort(): ?array
     {
         return $this->sort;
     }
@@ -401,7 +401,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSort(?array $sort) : self
+    public function setSort(?array $sort): self
     {
         $this->initialized['sort'] = true;
         $this->sort = $sort;
@@ -412,7 +412,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -423,7 +423,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -434,7 +434,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -445,7 +445,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;
@@ -456,7 +456,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getRightsFilter() : ?array
+    public function getRightsFilter(): ?array
     {
         return $this->rightsFilter;
     }
@@ -467,7 +467,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setRightsFilter(?array $rightsFilter) : self
+    public function setRightsFilter(?array $rightsFilter): self
     {
         $this->initialized['rightsFilter'] = true;
         $this->rightsFilter = $rightsFilter;
@@ -479,7 +479,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return list<string>|null
     */
-    public function getRightsAggregations() : ?array
+    public function getRightsAggregations(): ?array
     {
         return $this->rightsAggregations;
     }
@@ -491,7 +491,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setRightsAggregations(?array $rightsAggregations) : self
+    public function setRightsAggregations(?array $rightsAggregations): self
     {
         $this->initialized['rightsAggregations'] = true;
         $this->rightsAggregations = $rightsAggregations;
@@ -503,7 +503,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return bool
     */
-    public function getDebugMode() : bool
+    public function getDebugMode(): bool
     {
         return $this->debugMode;
     }
@@ -515,7 +515,7 @@ class ContentSearchRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setDebugMode(bool $debugMode) : self
+    public function setDebugMode(bool $debugMode): self
     {
         $this->initialized['debugMode'] = true;
         $this->debugMode = $debugMode;
@@ -526,7 +526,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return list<AggregatorBase>|null
      */
-    public function getAggregators() : ?array
+    public function getAggregators(): ?array
     {
         return $this->aggregators;
     }
@@ -537,7 +537,7 @@ class ContentSearchRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setAggregators(?array $aggregators) : self
+    public function setAggregators(?array $aggregators): self
     {
         $this->initialized['aggregators'] = true;
         $this->aggregators = $aggregators;

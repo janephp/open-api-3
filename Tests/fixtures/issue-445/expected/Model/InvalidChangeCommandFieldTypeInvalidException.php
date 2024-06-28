@@ -8,7 +8,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string
      */
-    public function getTraceLevel() : string
+    public function getTraceLevel(): string
     {
         return $this->traceLevel;
     }
@@ -112,7 +112,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceLevel(string $traceLevel) : self
+    public function setTraceLevel(string $traceLevel): self
     {
         $this->initialized['traceLevel'] = true;
         $this->traceLevel = $traceLevel;
@@ -123,7 +123,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceId() : ?string
+    public function getTraceId(): ?string
     {
         return $this->traceId;
     }
@@ -134,7 +134,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceId(?string $traceId) : self
+    public function setTraceId(?string $traceId): self
     {
         $this->initialized['traceId'] = true;
         $this->traceId = $traceId;
@@ -145,7 +145,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceJobId() : ?string
+    public function getTraceJobId(): ?string
     {
         return $this->traceJobId;
     }
@@ -156,7 +156,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceJobId(?string $traceJobId) : self
+    public function setTraceJobId(?string $traceJobId): self
     {
         $this->initialized['traceJobId'] = true;
         $this->traceJobId = $traceJobId;
@@ -167,7 +167,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return int
      */
-    public function getHttpStatusCode() : int
+    public function getHttpStatusCode(): int
     {
         return $this->httpStatusCode;
     }
@@ -178,7 +178,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setHttpStatusCode(int $httpStatusCode) : self
+    public function setHttpStatusCode(int $httpStatusCode): self
     {
         $this->initialized['httpStatusCode'] = true;
         $this->httpStatusCode = $httpStatusCode;
@@ -189,7 +189,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExceptionMessage() : ?string
+    public function getExceptionMessage(): ?string
     {
         return $this->exceptionMessage;
     }
@@ -200,7 +200,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setExceptionMessage(?string $exceptionMessage) : self
+    public function setExceptionMessage(?string $exceptionMessage): self
     {
         $this->initialized['exceptionMessage'] = true;
         $this->exceptionMessage = $exceptionMessage;
@@ -211,7 +211,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }
@@ -222,7 +222,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setKind(string $kind) : self
+    public function setKind(string $kind): self
     {
         $this->initialized['kind'] = true;
         $this->kind = $kind;
@@ -233,7 +233,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCustomerId() : ?string
+    public function getCustomerId(): ?string
     {
         return $this->customerId;
     }
@@ -244,7 +244,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerId(?string $customerId) : self
+    public function setCustomerId(?string $customerId): self
     {
         $this->initialized['customerId'] = true;
         $this->customerId = $customerId;
@@ -255,7 +255,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCustomerAlias() : ?string
+    public function getCustomerAlias(): ?string
     {
         return $this->customerAlias;
     }
@@ -266,7 +266,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerAlias(?string $customerAlias) : self
+    public function setCustomerAlias(?string $customerAlias): self
     {
         $this->initialized['customerAlias'] = true;
         $this->customerAlias = $customerAlias;
@@ -277,7 +277,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUserId() : ?string
+    public function getUserId(): ?string
     {
         return $this->userId;
     }
@@ -288,7 +288,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setUserId(?string $userId) : self
+    public function setUserId(?string $userId): self
     {
         $this->initialized['userId'] = true;
         $this->userId = $userId;
@@ -299,7 +299,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCommandType() : ?string
+    public function getCommandType(): ?string
     {
         return $this->commandType;
     }
@@ -310,7 +310,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setCommandType(?string $commandType) : self
+    public function setCommandType(?string $commandType): self
     {
         $this->initialized['commandType'] = true;
         $this->commandType = $commandType;
@@ -321,7 +321,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFieldId() : ?string
+    public function getFieldId(): ?string
     {
         return $this->fieldId;
     }
@@ -332,7 +332,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setFieldId(?string $fieldId) : self
+    public function setFieldId(?string $fieldId): self
     {
         $this->initialized['fieldId'] = true;
         $this->fieldId = $fieldId;
@@ -343,7 +343,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSchemaId() : ?string
+    public function getSchemaId(): ?string
     {
         return $this->schemaId;
     }
@@ -354,7 +354,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setSchemaId(?string $schemaId) : self
+    public function setSchemaId(?string $schemaId): self
     {
         $this->initialized['schemaId'] = true;
         $this->schemaId = $schemaId;
@@ -365,7 +365,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFieldActualType() : ?string
+    public function getFieldActualType(): ?string
     {
         return $this->fieldActualType;
     }
@@ -376,7 +376,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setFieldActualType(?string $fieldActualType) : self
+    public function setFieldActualType(?string $fieldActualType): self
     {
         $this->initialized['fieldActualType'] = true;
         $this->fieldActualType = $fieldActualType;
@@ -387,7 +387,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFieldExpectedType() : ?string
+    public function getFieldExpectedType(): ?string
     {
         return $this->fieldExpectedType;
     }
@@ -398,7 +398,7 @@ class InvalidChangeCommandFieldTypeInvalidException extends \ArrayObject
      *
      * @return self
      */
-    public function setFieldExpectedType(?string $fieldExpectedType) : self
+    public function setFieldExpectedType(?string $fieldExpectedType): self
     {
         $this->initialized['fieldExpectedType'] = true;
         $this->fieldExpectedType = $fieldExpectedType;

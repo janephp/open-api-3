@@ -8,7 +8,7 @@ class GitTree extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class GitTree extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -52,7 +52,7 @@ class GitTree extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -63,7 +63,7 @@ class GitTree extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -74,7 +74,7 @@ class GitTree extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -85,7 +85,7 @@ class GitTree extends \ArrayObject
      *
      * @return bool
      */
-    public function getTruncated() : bool
+    public function getTruncated(): bool
     {
         return $this->truncated;
     }
@@ -96,7 +96,7 @@ class GitTree extends \ArrayObject
      *
      * @return self
      */
-    public function setTruncated(bool $truncated) : self
+    public function setTruncated(bool $truncated): self
     {
         $this->initialized['truncated'] = true;
         $this->truncated = $truncated;
@@ -107,7 +107,7 @@ class GitTree extends \ArrayObject
      *
      * @return list<GitTreeTreeItem>
      */
-    public function getTree() : array
+    public function getTree(): array
     {
         return $this->tree;
     }
@@ -118,7 +118,7 @@ class GitTree extends \ArrayObject
      *
      * @return self
      */
-    public function setTree(array $tree) : self
+    public function setTree(array $tree): self
     {
         $this->initialized['tree'] = true;
         $this->tree = $tree;

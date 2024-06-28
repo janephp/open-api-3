@@ -8,7 +8,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return string
      */
-    public function getTraceLevel() : string
+    public function getTraceLevel(): string
     {
         return $this->traceLevel;
     }
@@ -70,7 +70,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceLevel(string $traceLevel) : self
+    public function setTraceLevel(string $traceLevel): self
     {
         $this->initialized['traceLevel'] = true;
         $this->traceLevel = $traceLevel;
@@ -81,7 +81,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceId() : ?string
+    public function getTraceId(): ?string
     {
         return $this->traceId;
     }
@@ -92,7 +92,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceId(?string $traceId) : self
+    public function setTraceId(?string $traceId): self
     {
         $this->initialized['traceId'] = true;
         $this->traceId = $traceId;
@@ -103,7 +103,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceJobId() : ?string
+    public function getTraceJobId(): ?string
     {
         return $this->traceJobId;
     }
@@ -114,7 +114,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceJobId(?string $traceJobId) : self
+    public function setTraceJobId(?string $traceJobId): self
     {
         $this->initialized['traceJobId'] = true;
         $this->traceJobId = $traceJobId;
@@ -125,7 +125,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return int
      */
-    public function getHttpStatusCode() : int
+    public function getHttpStatusCode(): int
     {
         return $this->httpStatusCode;
     }
@@ -136,7 +136,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return self
      */
-    public function setHttpStatusCode(int $httpStatusCode) : self
+    public function setHttpStatusCode(int $httpStatusCode): self
     {
         $this->initialized['httpStatusCode'] = true;
         $this->httpStatusCode = $httpStatusCode;
@@ -147,7 +147,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExceptionMessage() : ?string
+    public function getExceptionMessage(): ?string
     {
         return $this->exceptionMessage;
     }
@@ -158,7 +158,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return self
      */
-    public function setExceptionMessage(?string $exceptionMessage) : self
+    public function setExceptionMessage(?string $exceptionMessage): self
     {
         $this->initialized['exceptionMessage'] = true;
         $this->exceptionMessage = $exceptionMessage;
@@ -169,7 +169,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }
@@ -180,7 +180,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return self
      */
-    public function setKind(string $kind) : self
+    public function setKind(string $kind): self
     {
         $this->initialized['kind'] = true;
         $this->kind = $kind;
@@ -191,7 +191,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getHostName() : ?string
+    public function getHostName(): ?string
     {
         return $this->hostName;
     }
@@ -202,7 +202,7 @@ class CustomerHostNotFoundException extends \ArrayObject
      *
      * @return self
      */
-    public function setHostName(?string $hostName) : self
+    public function setHostName(?string $hostName): self
     {
         $this->initialized['hostName'] = true;
         $this->hostName = $hostName;

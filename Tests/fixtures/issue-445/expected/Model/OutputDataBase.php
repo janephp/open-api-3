@@ -8,7 +8,7 @@ class OutputDataBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class OutputDataBase
      *
      * @return string|null
      */
-    public function getFileExtension() : ?string
+    public function getFileExtension(): ?string
     {
         return $this->fileExtension;
     }
@@ -72,7 +72,7 @@ class OutputDataBase
      *
      * @return string|null
      */
-    public function getFilePath() : ?string
+    public function getFilePath(): ?string
     {
         return $this->filePath;
     }
@@ -91,7 +91,7 @@ class OutputDataBase
      *
      * @return int|null
      */
-    public function getFileSizeInBytes() : ?int
+    public function getFileSizeInBytes(): ?int
     {
         return $this->fileSizeInBytes;
     }
@@ -110,7 +110,7 @@ class OutputDataBase
      *
      * @return string|null
      */
-    public function getSha1Hash() : ?string
+    public function getSha1Hash(): ?string
     {
         return $this->sha1Hash;
     }
@@ -129,7 +129,7 @@ class OutputDataBase
      *
      * @return string|null
      */
-    public function getOriginalFileName() : ?string
+    public function getOriginalFileName(): ?string
     {
         return $this->originalFileName;
     }
@@ -148,7 +148,7 @@ class OutputDataBase
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

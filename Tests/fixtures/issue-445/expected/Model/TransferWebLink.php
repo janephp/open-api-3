@@ -8,7 +8,7 @@ class TransferWebLink extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -45,7 +45,7 @@ class TransferWebLink extends \ArrayObject
      *
      * @return string|null
      */
-    public function getIdentifier() : ?string
+    public function getIdentifier(): ?string
     {
         return $this->identifier;
     }
@@ -58,7 +58,7 @@ class TransferWebLink extends \ArrayObject
      *
      * @return self
      */
-    public function setIdentifier(?string $identifier) : self
+    public function setIdentifier(?string $identifier): self
     {
         $this->initialized['identifier'] = true;
         $this->identifier = $identifier;
@@ -69,7 +69,7 @@ class TransferWebLink extends \ArrayObject
      *
      * @return string|null
      */
-    public function getRequestId() : ?string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -80,7 +80,7 @@ class TransferWebLink extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestId(?string $requestId) : self
+    public function setRequestId(?string $requestId): self
     {
         $this->initialized['requestId'] = true;
         $this->requestId = $requestId;
@@ -91,7 +91,7 @@ class TransferWebLink extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -102,7 +102,7 @@ class TransferWebLink extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -113,7 +113,7 @@ class TransferWebLink extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileName() : ?string
+    public function getFileName(): ?string
     {
         return $this->fileName;
     }
@@ -124,7 +124,7 @@ class TransferWebLink extends \ArrayObject
      *
      * @return self
      */
-    public function setFileName(?string $fileName) : self
+    public function setFileName(?string $fileName): self
     {
         $this->initialized['fileName'] = true;
         $this->fileName = $fileName;

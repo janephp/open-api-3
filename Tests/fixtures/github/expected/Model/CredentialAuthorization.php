@@ -8,7 +8,7 @@ class CredentialAuthorization extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return string
      */
-    public function getLogin() : string
+    public function getLogin(): string
     {
         return $this->login;
     }
@@ -76,7 +76,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return self
      */
-    public function setLogin(string $login) : self
+    public function setLogin(string $login): self
     {
         $this->initialized['login'] = true;
         $this->login = $login;
@@ -87,7 +87,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return int
      */
-    public function getCredentialId() : int
+    public function getCredentialId(): int
     {
         return $this->credentialId;
     }
@@ -98,7 +98,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return self
      */
-    public function setCredentialId(int $credentialId) : self
+    public function setCredentialId(int $credentialId): self
     {
         $this->initialized['credentialId'] = true;
         $this->credentialId = $credentialId;
@@ -109,7 +109,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return string
      */
-    public function getCredentialType() : string
+    public function getCredentialType(): string
     {
         return $this->credentialType;
     }
@@ -120,7 +120,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return self
      */
-    public function setCredentialType(string $credentialType) : self
+    public function setCredentialType(string $credentialType): self
     {
         $this->initialized['credentialType'] = true;
         $this->credentialType = $credentialType;
@@ -131,7 +131,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return string
      */
-    public function getTokenLastEight() : string
+    public function getTokenLastEight(): string
     {
         return $this->tokenLastEight;
     }
@@ -142,7 +142,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return self
      */
-    public function setTokenLastEight(string $tokenLastEight) : self
+    public function setTokenLastEight(string $tokenLastEight): self
     {
         $this->initialized['tokenLastEight'] = true;
         $this->tokenLastEight = $tokenLastEight;
@@ -153,7 +153,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCredentialAuthorizedAt() : \DateTime
+    public function getCredentialAuthorizedAt(): \DateTime
     {
         return $this->credentialAuthorizedAt;
     }
@@ -164,7 +164,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return self
      */
-    public function setCredentialAuthorizedAt(\DateTime $credentialAuthorizedAt) : self
+    public function setCredentialAuthorizedAt(\DateTime $credentialAuthorizedAt): self
     {
         $this->initialized['credentialAuthorizedAt'] = true;
         $this->credentialAuthorizedAt = $credentialAuthorizedAt;
@@ -175,7 +175,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getScopes() : array
+    public function getScopes(): array
     {
         return $this->scopes;
     }
@@ -186,7 +186,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return self
      */
-    public function setScopes(array $scopes) : self
+    public function setScopes(array $scopes): self
     {
         $this->initialized['scopes'] = true;
         $this->scopes = $scopes;
@@ -197,7 +197,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return string
      */
-    public function getFingerprint() : string
+    public function getFingerprint(): string
     {
         return $this->fingerprint;
     }
@@ -208,7 +208,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return self
      */
-    public function setFingerprint(string $fingerprint) : self
+    public function setFingerprint(string $fingerprint): self
     {
         $this->initialized['fingerprint'] = true;
         $this->fingerprint = $fingerprint;
@@ -219,7 +219,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getCredentialAccessedAt() : ?\DateTime
+    public function getCredentialAccessedAt(): ?\DateTime
     {
         return $this->credentialAccessedAt;
     }
@@ -230,7 +230,7 @@ class CredentialAuthorization extends \ArrayObject
      *
      * @return self
      */
-    public function setCredentialAccessedAt(?\DateTime $credentialAccessedAt) : self
+    public function setCredentialAccessedAt(?\DateTime $credentialAccessedAt): self
     {
         $this->initialized['credentialAccessedAt'] = true;
         $this->credentialAccessedAt = $credentialAccessedAt;

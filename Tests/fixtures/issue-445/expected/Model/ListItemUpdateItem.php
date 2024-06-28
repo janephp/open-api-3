@@ -8,7 +8,7 @@ class ListItemUpdateItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -38,7 +38,7 @@ class ListItemUpdateItem extends \ArrayObject
      *
      * @return array<string, mixed>|null
      */
-    public function getContent() : ?iterable
+    public function getContent(): ?iterable
     {
         return $this->content;
     }
@@ -49,7 +49,7 @@ class ListItemUpdateItem extends \ArrayObject
      *
      * @return self
      */
-    public function setContent(?iterable $content) : self
+    public function setContent(?iterable $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -77,7 +77,7 @@ class ListItemUpdateItem extends \ArrayObject
     *
     * @return self
     */
-    public function setContentFieldsUpdateOptions($contentFieldsUpdateOptions) : self
+    public function setContentFieldsUpdateOptions($contentFieldsUpdateOptions): self
     {
         $this->initialized['contentFieldsUpdateOptions'] = true;
         $this->contentFieldsUpdateOptions = $contentFieldsUpdateOptions;
@@ -88,7 +88,7 @@ class ListItemUpdateItem extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -99,7 +99,7 @@ class ListItemUpdateItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;

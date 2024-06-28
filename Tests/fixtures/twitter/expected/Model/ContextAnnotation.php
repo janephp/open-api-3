@@ -8,7 +8,7 @@ class ContextAnnotation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ContextAnnotation extends \ArrayObject
      *
      * @return ContextAnnotationDomainFields
      */
-    public function getDomain() : ContextAnnotationDomainFields
+    public function getDomain(): ContextAnnotationDomainFields
     {
         return $this->domain;
     }
@@ -40,7 +40,7 @@ class ContextAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setDomain(ContextAnnotationDomainFields $domain) : self
+    public function setDomain(ContextAnnotationDomainFields $domain): self
     {
         $this->initialized['domain'] = true;
         $this->domain = $domain;
@@ -51,7 +51,7 @@ class ContextAnnotation extends \ArrayObject
      *
      * @return ContextAnnotationEntityFields
      */
-    public function getEntity() : ContextAnnotationEntityFields
+    public function getEntity(): ContextAnnotationEntityFields
     {
         return $this->entity;
     }
@@ -62,7 +62,7 @@ class ContextAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setEntity(ContextAnnotationEntityFields $entity) : self
+    public function setEntity(ContextAnnotationEntityFields $entity): self
     {
         $this->initialized['entity'] = true;
         $this->entity = $entity;

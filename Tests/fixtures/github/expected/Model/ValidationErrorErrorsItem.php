@@ -8,7 +8,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getResource() : string
+    public function getResource(): string
     {
         return $this->resource;
     }
@@ -64,7 +64,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setResource(string $resource) : self
+    public function setResource(string $resource): self
     {
         $this->initialized['resource'] = true;
         $this->resource = $resource;
@@ -75,7 +75,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -86,7 +86,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -97,7 +97,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -108,7 +108,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -119,7 +119,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -130,7 +130,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -141,7 +141,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getIndex() : int
+    public function getIndex(): int
     {
         return $this->index;
     }
@@ -152,7 +152,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setIndex(int $index) : self
+    public function setIndex(int $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;
@@ -174,7 +174,7 @@ class ValidationErrorErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setValue($value) : self
+    public function setValue($value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

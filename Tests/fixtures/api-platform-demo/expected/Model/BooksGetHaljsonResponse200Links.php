@@ -8,7 +8,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return BooksGetHaljsonResponse200LinksSelf
      */
-    public function getSelf() : BooksGetHaljsonResponse200LinksSelf
+    public function getSelf(): BooksGetHaljsonResponse200LinksSelf
     {
         return $this->self;
     }
@@ -58,7 +58,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setSelf(BooksGetHaljsonResponse200LinksSelf $self) : self
+    public function setSelf(BooksGetHaljsonResponse200LinksSelf $self): self
     {
         $this->initialized['self'] = true;
         $this->self = $self;
@@ -69,7 +69,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return BooksGetHaljsonResponse200LinksFirst
      */
-    public function getFirst() : BooksGetHaljsonResponse200LinksFirst
+    public function getFirst(): BooksGetHaljsonResponse200LinksFirst
     {
         return $this->first;
     }
@@ -80,7 +80,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setFirst(BooksGetHaljsonResponse200LinksFirst $first) : self
+    public function setFirst(BooksGetHaljsonResponse200LinksFirst $first): self
     {
         $this->initialized['first'] = true;
         $this->first = $first;
@@ -91,7 +91,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return BooksGetHaljsonResponse200LinksLast
      */
-    public function getLast() : BooksGetHaljsonResponse200LinksLast
+    public function getLast(): BooksGetHaljsonResponse200LinksLast
     {
         return $this->last;
     }
@@ -102,7 +102,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setLast(BooksGetHaljsonResponse200LinksLast $last) : self
+    public function setLast(BooksGetHaljsonResponse200LinksLast $last): self
     {
         $this->initialized['last'] = true;
         $this->last = $last;
@@ -113,7 +113,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return BooksGetHaljsonResponse200LinksNext
      */
-    public function getNext() : BooksGetHaljsonResponse200LinksNext
+    public function getNext(): BooksGetHaljsonResponse200LinksNext
     {
         return $this->next;
     }
@@ -124,7 +124,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setNext(BooksGetHaljsonResponse200LinksNext $next) : self
+    public function setNext(BooksGetHaljsonResponse200LinksNext $next): self
     {
         $this->initialized['next'] = true;
         $this->next = $next;
@@ -135,7 +135,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return BooksGetHaljsonResponse200LinksPrevious
      */
-    public function getPrevious() : BooksGetHaljsonResponse200LinksPrevious
+    public function getPrevious(): BooksGetHaljsonResponse200LinksPrevious
     {
         return $this->previous;
     }
@@ -146,7 +146,7 @@ class BooksGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setPrevious(BooksGetHaljsonResponse200LinksPrevious $previous) : self
+    public function setPrevious(BooksGetHaljsonResponse200LinksPrevious $previous): self
     {
         $this->initialized['previous'] = true;
         $this->previous = $previous;

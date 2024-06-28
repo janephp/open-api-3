@@ -8,7 +8,7 @@ class ResponseForbiddenGistBlock extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ResponseForbiddenGistBlock extends \ArrayObject
      *
      * @return string
      */
-    public function getReason() : string
+    public function getReason(): string
     {
         return $this->reason;
     }
@@ -46,7 +46,7 @@ class ResponseForbiddenGistBlock extends \ArrayObject
      *
      * @return self
      */
-    public function setReason(string $reason) : self
+    public function setReason(string $reason): self
     {
         $this->initialized['reason'] = true;
         $this->reason = $reason;
@@ -57,7 +57,7 @@ class ResponseForbiddenGistBlock extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -68,7 +68,7 @@ class ResponseForbiddenGistBlock extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -79,7 +79,7 @@ class ResponseForbiddenGistBlock extends \ArrayObject
      *
      * @return string|null
      */
-    public function getHtmlUrl() : ?string
+    public function getHtmlUrl(): ?string
     {
         return $this->htmlUrl;
     }
@@ -90,7 +90,7 @@ class ResponseForbiddenGistBlock extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(?string $htmlUrl) : self
+    public function setHtmlUrl(?string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;

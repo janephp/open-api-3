@@ -8,7 +8,7 @@ class GitRef extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class GitRef extends \ArrayObject
      *
      * @return string
      */
-    public function getRef() : string
+    public function getRef(): string
     {
         return $this->ref;
     }
@@ -52,7 +52,7 @@ class GitRef extends \ArrayObject
      *
      * @return self
      */
-    public function setRef(string $ref) : self
+    public function setRef(string $ref): self
     {
         $this->initialized['ref'] = true;
         $this->ref = $ref;
@@ -63,7 +63,7 @@ class GitRef extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -74,7 +74,7 @@ class GitRef extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -85,7 +85,7 @@ class GitRef extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -96,7 +96,7 @@ class GitRef extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -107,7 +107,7 @@ class GitRef extends \ArrayObject
      *
      * @return GitRefObject
      */
-    public function getObject() : GitRefObject
+    public function getObject(): GitRefObject
     {
         return $this->object;
     }
@@ -118,7 +118,7 @@ class GitRef extends \ArrayObject
      *
      * @return self
      */
-    public function setObject(GitRefObject $object) : self
+    public function setObject(GitRefObject $object): self
     {
         $this->initialized['object'] = true;
         $this->object = $object;

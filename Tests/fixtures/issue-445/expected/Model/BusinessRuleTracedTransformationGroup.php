@@ -8,7 +8,7 @@ class BusinessRuleTracedTransformationGroup
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class BusinessRuleTracedTransformationGroup
      *
      * @return string|null
      */
-    public function getTraceRefId() : ?string
+    public function getTraceRefId(): ?string
     {
         return $this->traceRefId;
     }
@@ -52,7 +52,7 @@ class BusinessRuleTracedTransformationGroup
      *
      * @return self
      */
-    public function setTraceRefId(?string $traceRefId) : self
+    public function setTraceRefId(?string $traceRefId): self
     {
         $this->initialized['traceRefId'] = true;
         $this->traceRefId = $traceRefId;
@@ -63,7 +63,7 @@ class BusinessRuleTracedTransformationGroup
      *
      * @return string|null
      */
-    public function getInput() : ?string
+    public function getInput(): ?string
     {
         return $this->input;
     }
@@ -74,7 +74,7 @@ class BusinessRuleTracedTransformationGroup
      *
      * @return self
      */
-    public function setInput(?string $input) : self
+    public function setInput(?string $input): self
     {
         $this->initialized['input'] = true;
         $this->input = $input;
@@ -85,7 +85,7 @@ class BusinessRuleTracedTransformationGroup
      *
      * @return string|null
      */
-    public function getOutput() : ?string
+    public function getOutput(): ?string
     {
         return $this->output;
     }
@@ -96,7 +96,7 @@ class BusinessRuleTracedTransformationGroup
      *
      * @return self
      */
-    public function setOutput(?string $output) : self
+    public function setOutput(?string $output): self
     {
         $this->initialized['output'] = true;
         $this->output = $output;
@@ -107,7 +107,7 @@ class BusinessRuleTracedTransformationGroup
      *
      * @return list<BusinessRuleTracedTransformation>|null
      */
-    public function getTransformations() : ?array
+    public function getTransformations(): ?array
     {
         return $this->transformations;
     }
@@ -118,7 +118,7 @@ class BusinessRuleTracedTransformationGroup
      *
      * @return self
      */
-    public function setTransformations(?array $transformations) : self
+    public function setTransformations(?array $transformations): self
     {
         $this->initialized['transformations'] = true;
         $this->transformations = $transformations;

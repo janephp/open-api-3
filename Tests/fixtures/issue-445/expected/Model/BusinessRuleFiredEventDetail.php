@@ -8,7 +8,7 @@ class BusinessRuleFiredEventDetail
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class BusinessRuleFiredEventDetail
      *
      * @return string|null
      */
-    public function getDocumentId() : ?string
+    public function getDocumentId(): ?string
     {
         return $this->documentId;
     }
@@ -46,7 +46,7 @@ class BusinessRuleFiredEventDetail
      *
      * @return self
      */
-    public function setDocumentId(?string $documentId) : self
+    public function setDocumentId(?string $documentId): self
     {
         $this->initialized['documentId'] = true;
         $this->documentId = $documentId;
@@ -57,7 +57,7 @@ class BusinessRuleFiredEventDetail
      *
      * @return string|null
      */
-    public function getDocumentType() : ?string
+    public function getDocumentType(): ?string
     {
         return $this->documentType;
     }
@@ -68,7 +68,7 @@ class BusinessRuleFiredEventDetail
      *
      * @return self
      */
-    public function setDocumentType(?string $documentType) : self
+    public function setDocumentType(?string $documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;
@@ -79,7 +79,7 @@ class BusinessRuleFiredEventDetail
      *
      * @return list<string>|null
      */
-    public function getRuleIds() : ?array
+    public function getRuleIds(): ?array
     {
         return $this->ruleIds;
     }
@@ -90,7 +90,7 @@ class BusinessRuleFiredEventDetail
      *
      * @return self
      */
-    public function setRuleIds(?array $ruleIds) : self
+    public function setRuleIds(?array $ruleIds): self
     {
         $this->initialized['ruleIds'] = true;
         $this->ruleIds = $ruleIds;

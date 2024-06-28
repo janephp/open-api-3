@@ -21,19 +21,19 @@ class ReposGetPagesBuild extends \Github\Runtime\Client\BaseEndpoint implements 
         $this->build_id = $buildId;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{owner}', '{repo}', '{build_id}'], [$this->owner, $this->repo, $this->build_id], '/repos/{owner}/{repo}/pages/builds/{build_id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
@@ -48,10 +48,10 @@ class ReposGetPagesBuild extends \Github\Runtime\Client\BaseEndpoint implements 
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'Github\\Model\\PageBuild', 'json');
+            return $serializer->deserialize($body, 'Github\Model\PageBuild', 'json');
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

@@ -8,7 +8,7 @@ class CdnPurgeJobByTag extends CdnPurgeJobBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class CdnPurgeJobByTag extends CdnPurgeJobBase
      *
      * @return string
      */
-    public function getTag() : string
+    public function getTag(): string
     {
         return $this->tag;
     }
@@ -34,7 +34,7 @@ class CdnPurgeJobByTag extends CdnPurgeJobBase
      *
      * @return self
      */
-    public function setTag(string $tag) : self
+    public function setTag(string $tag): self
     {
         $this->initialized['tag'] = true;
         $this->tag = $tag;

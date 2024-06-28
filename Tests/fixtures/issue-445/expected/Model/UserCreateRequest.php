@@ -8,7 +8,7 @@ class UserCreateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class UserCreateRequest
      *
      * @return string|null
      */
-    public function getFirstName() : ?string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
@@ -64,7 +64,7 @@ class UserCreateRequest
      *
      * @return self
      */
-    public function setFirstName(?string $firstName) : self
+    public function setFirstName(?string $firstName): self
     {
         $this->initialized['firstName'] = true;
         $this->firstName = $firstName;
@@ -75,7 +75,7 @@ class UserCreateRequest
      *
      * @return string|null
      */
-    public function getLastName() : ?string
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
@@ -86,7 +86,7 @@ class UserCreateRequest
      *
      * @return self
      */
-    public function setLastName(?string $lastName) : self
+    public function setLastName(?string $lastName): self
     {
         $this->initialized['lastName'] = true;
         $this->lastName = $lastName;
@@ -97,7 +97,7 @@ class UserCreateRequest
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -108,7 +108,7 @@ class UserCreateRequest
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -119,7 +119,7 @@ class UserCreateRequest
      *
      * @return string|null
      */
-    public function getLanguageCode() : ?string
+    public function getLanguageCode(): ?string
     {
         return $this->languageCode;
     }
@@ -130,7 +130,7 @@ class UserCreateRequest
      *
      * @return self
      */
-    public function setLanguageCode(?string $languageCode) : self
+    public function setLanguageCode(?string $languageCode): self
     {
         $this->initialized['languageCode'] = true;
         $this->languageCode = $languageCode;
@@ -141,7 +141,7 @@ class UserCreateRequest
      *
      * @return list<string>|null
      */
-    public function getUserRoleIds() : ?array
+    public function getUserRoleIds(): ?array
     {
         return $this->userRoleIds;
     }
@@ -152,7 +152,7 @@ class UserCreateRequest
      *
      * @return self
      */
-    public function setUserRoleIds(?array $userRoleIds) : self
+    public function setUserRoleIds(?array $userRoleIds): self
     {
         $this->initialized['userRoleIds'] = true;
         $this->userRoleIds = $userRoleIds;
@@ -174,7 +174,7 @@ class UserCreateRequest
      *
      * @return self
      */
-    public function setAddress($address) : self
+    public function setAddress($address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;

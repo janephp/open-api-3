@@ -8,7 +8,7 @@ class BusinessProcessCreateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -36,7 +36,7 @@ class BusinessProcessCreateRequest
      *
      * @return bool
      */
-    public function getSupportsCancellation() : bool
+    public function getSupportsCancellation(): bool
     {
         return $this->supportsCancellation;
     }
@@ -47,7 +47,7 @@ class BusinessProcessCreateRequest
      *
      * @return self
      */
-    public function setSupportsCancellation(bool $supportsCancellation) : self
+    public function setSupportsCancellation(bool $supportsCancellation): self
     {
         $this->initialized['supportsCancellation'] = true;
         $this->supportsCancellation = $supportsCancellation;
@@ -71,7 +71,7 @@ class BusinessProcessCreateRequest
     *
     * @return self
     */
-    public function setNotification($notification) : self
+    public function setNotification($notification): self
     {
         $this->initialized['notification'] = true;
         $this->notification = $notification;
@@ -82,7 +82,7 @@ class BusinessProcessCreateRequest
      *
      * @return string
      */
-    public function getInitialState() : string
+    public function getInitialState(): string
     {
         return $this->initialState;
     }
@@ -93,7 +93,7 @@ class BusinessProcessCreateRequest
      *
      * @return self
      */
-    public function setInitialState(string $initialState) : self
+    public function setInitialState(string $initialState): self
     {
         $this->initialized['initialState'] = true;
         $this->initialState = $initialState;

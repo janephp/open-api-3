@@ -8,7 +8,7 @@ class NotificationEvent extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return Company
      */
-    public function getCompany() : Company
+    public function getCompany(): Company
     {
         return $this->company;
     }
@@ -76,7 +76,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setCompany(Company $company) : self
+    public function setCompany(Company $company): self
     {
         $this->initialized['company'] = true;
         $this->company = $company;
@@ -87,7 +87,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return float
      */
-    public function getEventId() : float
+    public function getEventId(): float
     {
         return $this->eventId;
     }
@@ -98,7 +98,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setEventId(float $eventId) : self
+    public function setEventId(float $eventId): self
     {
         $this->initialized['eventId'] = true;
         $this->eventId = $eventId;
@@ -109,7 +109,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getEventDate() : \DateTime
+    public function getEventDate(): \DateTime
     {
         return $this->eventDate;
     }
@@ -120,7 +120,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setEventDate(\DateTime $eventDate) : self
+    public function setEventDate(\DateTime $eventDate): self
     {
         $this->initialized['eventDate'] = true;
         $this->eventDate = $eventDate;
@@ -131,7 +131,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return string
      */
-    public function getNewValue() : string
+    public function getNewValue(): string
     {
         return $this->newValue;
     }
@@ -142,7 +142,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setNewValue(string $newValue) : self
+    public function setNewValue(string $newValue): self
     {
         $this->initialized['newValue'] = true;
         $this->newValue = $newValue;
@@ -153,7 +153,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return string
      */
-    public function getOldValue() : string
+    public function getOldValue(): string
     {
         return $this->oldValue;
     }
@@ -164,7 +164,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setOldValue(string $oldValue) : self
+    public function setOldValue(string $oldValue): self
     {
         $this->initialized['oldValue'] = true;
         $this->oldValue = $oldValue;
@@ -175,7 +175,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return float
      */
-    public function getNotificationEventId() : float
+    public function getNotificationEventId(): float
     {
         return $this->notificationEventId;
     }
@@ -186,7 +186,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setNotificationEventId(float $notificationEventId) : self
+    public function setNotificationEventId(float $notificationEventId): self
     {
         $this->initialized['notificationEventId'] = true;
         $this->notificationEventId = $notificationEventId;
@@ -197,7 +197,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return float
      */
-    public function getRuleCode() : float
+    public function getRuleCode(): float
     {
         return $this->ruleCode;
     }
@@ -208,7 +208,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setRuleCode(float $ruleCode) : self
+    public function setRuleCode(float $ruleCode): self
     {
         $this->initialized['ruleCode'] = true;
         $this->ruleCode = $ruleCode;
@@ -219,7 +219,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return string
      */
-    public function getRuleName() : string
+    public function getRuleName(): string
     {
         return $this->ruleName;
     }
@@ -230,7 +230,7 @@ class NotificationEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setRuleName(string $ruleName) : self
+    public function setRuleName(string $ruleName): self
     {
         $this->initialized['ruleName'] = true;
         $this->ruleName = $ruleName;

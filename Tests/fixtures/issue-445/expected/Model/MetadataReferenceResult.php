@@ -8,7 +8,7 @@ class MetadataReferenceResult extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalResults() : int
+    public function getTotalResults(): int
     {
         return $this->totalResults;
     }
@@ -58,7 +58,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalResults(int $totalResults) : self
+    public function setTotalResults(int $totalResults): self
     {
         $this->initialized['totalResults'] = true;
         $this->totalResults = $totalResults;
@@ -69,7 +69,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return list<MetadataReference>
      */
-    public function getResults() : array
+    public function getResults(): array
     {
         return $this->results;
     }
@@ -80,7 +80,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return self
      */
-    public function setResults(array $results) : self
+    public function setResults(array $results): self
     {
         $this->initialized['results'] = true;
         $this->results = $results;
@@ -91,7 +91,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return int
      */
-    public function getElapsedMilliseconds() : int
+    public function getElapsedMilliseconds(): int
     {
         return $this->elapsedMilliseconds;
     }
@@ -102,7 +102,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return self
      */
-    public function setElapsedMilliseconds(int $elapsedMilliseconds) : self
+    public function setElapsedMilliseconds(int $elapsedMilliseconds): self
     {
         $this->initialized['elapsedMilliseconds'] = true;
         $this->elapsedMilliseconds = $elapsedMilliseconds;
@@ -113,7 +113,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -124,7 +124,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;
@@ -135,7 +135,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return bool|null
      */
-    public function getIsReferencedByRestrictedItem() : ?bool
+    public function getIsReferencedByRestrictedItem(): ?bool
     {
         return $this->isReferencedByRestrictedItem;
     }
@@ -146,7 +146,7 @@ class MetadataReferenceResult extends \ArrayObject
      *
      * @return self
      */
-    public function setIsReferencedByRestrictedItem(?bool $isReferencedByRestrictedItem) : self
+    public function setIsReferencedByRestrictedItem(?bool $isReferencedByRestrictedItem): self
     {
         $this->initialized['isReferencedByRestrictedItem'] = true;
         $this->isReferencedByRestrictedItem = $isReferencedByRestrictedItem;

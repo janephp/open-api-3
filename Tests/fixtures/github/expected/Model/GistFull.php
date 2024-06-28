@@ -8,7 +8,7 @@ class GistFull extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -143,7 +143,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -154,7 +154,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -165,7 +165,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getForksUrl() : string
+    public function getForksUrl(): string
     {
         return $this->forksUrl;
     }
@@ -176,7 +176,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setForksUrl(string $forksUrl) : self
+    public function setForksUrl(string $forksUrl): self
     {
         $this->initialized['forksUrl'] = true;
         $this->forksUrl = $forksUrl;
@@ -187,7 +187,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitsUrl() : string
+    public function getCommitsUrl(): string
     {
         return $this->commitsUrl;
     }
@@ -198,7 +198,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitsUrl(string $commitsUrl) : self
+    public function setCommitsUrl(string $commitsUrl): self
     {
         $this->initialized['commitsUrl'] = true;
         $this->commitsUrl = $commitsUrl;
@@ -209,7 +209,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -220,7 +220,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -231,7 +231,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -242,7 +242,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -253,7 +253,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getGitPullUrl() : string
+    public function getGitPullUrl(): string
     {
         return $this->gitPullUrl;
     }
@@ -264,7 +264,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setGitPullUrl(string $gitPullUrl) : self
+    public function setGitPullUrl(string $gitPullUrl): self
     {
         $this->initialized['gitPullUrl'] = true;
         $this->gitPullUrl = $gitPullUrl;
@@ -275,7 +275,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getGitPushUrl() : string
+    public function getGitPushUrl(): string
     {
         return $this->gitPushUrl;
     }
@@ -286,7 +286,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setGitPushUrl(string $gitPushUrl) : self
+    public function setGitPushUrl(string $gitPushUrl): self
     {
         $this->initialized['gitPushUrl'] = true;
         $this->gitPushUrl = $gitPushUrl;
@@ -297,7 +297,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -308,7 +308,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -319,7 +319,7 @@ class GistFull extends \ArrayObject
      *
      * @return array<string, GistSimpleFilesItem>
      */
-    public function getFiles() : iterable
+    public function getFiles(): iterable
     {
         return $this->files;
     }
@@ -330,7 +330,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setFiles(iterable $files) : self
+    public function setFiles(iterable $files): self
     {
         $this->initialized['files'] = true;
         $this->files = $files;
@@ -341,7 +341,7 @@ class GistFull extends \ArrayObject
      *
      * @return bool
      */
-    public function getPublic() : bool
+    public function getPublic(): bool
     {
         return $this->public;
     }
@@ -352,7 +352,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setPublic(bool $public) : self
+    public function setPublic(bool $public): self
     {
         $this->initialized['public'] = true;
         $this->public = $public;
@@ -363,7 +363,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -374,7 +374,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -385,7 +385,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getUpdatedAt() : string
+    public function getUpdatedAt(): string
     {
         return $this->updatedAt;
     }
@@ -396,7 +396,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(string $updatedAt) : self
+    public function setUpdatedAt(string $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -407,7 +407,7 @@ class GistFull extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -418,7 +418,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -429,7 +429,7 @@ class GistFull extends \ArrayObject
      *
      * @return int
      */
-    public function getComments() : int
+    public function getComments(): int
     {
         return $this->comments;
     }
@@ -440,7 +440,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setComments(int $comments) : self
+    public function setComments(int $comments): self
     {
         $this->initialized['comments'] = true;
         $this->comments = $comments;
@@ -451,7 +451,7 @@ class GistFull extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUser() : ?string
+    public function getUser(): ?string
     {
         return $this->user;
     }
@@ -462,7 +462,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?string $user) : self
+    public function setUser(?string $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -473,7 +473,7 @@ class GistFull extends \ArrayObject
      *
      * @return string
      */
-    public function getCommentsUrl() : string
+    public function getCommentsUrl(): string
     {
         return $this->commentsUrl;
     }
@@ -484,7 +484,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setCommentsUrl(string $commentsUrl) : self
+    public function setCommentsUrl(string $commentsUrl): self
     {
         $this->initialized['commentsUrl'] = true;
         $this->commentsUrl = $commentsUrl;
@@ -495,7 +495,7 @@ class GistFull extends \ArrayObject
      *
      * @return SimpleUser|null
      */
-    public function getOwner() : ?SimpleUser
+    public function getOwner(): ?SimpleUser
     {
         return $this->owner;
     }
@@ -506,7 +506,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setOwner(?SimpleUser $owner) : self
+    public function setOwner(?SimpleUser $owner): self
     {
         $this->initialized['owner'] = true;
         $this->owner = $owner;
@@ -517,7 +517,7 @@ class GistFull extends \ArrayObject
      *
      * @return bool
      */
-    public function getTruncated() : bool
+    public function getTruncated(): bool
     {
         return $this->truncated;
     }
@@ -528,7 +528,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setTruncated(bool $truncated) : self
+    public function setTruncated(bool $truncated): self
     {
         $this->initialized['truncated'] = true;
         $this->truncated = $truncated;
@@ -539,7 +539,7 @@ class GistFull extends \ArrayObject
      *
      * @return list<GistFullforksItem>
      */
-    public function getForks() : array
+    public function getForks(): array
     {
         return $this->forks;
     }
@@ -550,7 +550,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setForks(array $forks) : self
+    public function setForks(array $forks): self
     {
         $this->initialized['forks'] = true;
         $this->forks = $forks;
@@ -561,7 +561,7 @@ class GistFull extends \ArrayObject
      *
      * @return list<GistFullhistoryItem>
      */
-    public function getHistory() : array
+    public function getHistory(): array
     {
         return $this->history;
     }
@@ -572,7 +572,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setHistory(array $history) : self
+    public function setHistory(array $history): self
     {
         $this->initialized['history'] = true;
         $this->history = $history;
@@ -583,7 +583,7 @@ class GistFull extends \ArrayObject
      *
      * @return GistFullforkOf|null
      */
-    public function getForkOf() : ?GistFullforkOf
+    public function getForkOf(): ?GistFullforkOf
     {
         return $this->forkOf;
     }
@@ -594,7 +594,7 @@ class GistFull extends \ArrayObject
      *
      * @return self
      */
-    public function setForkOf(?GistFullforkOf $forkOf) : self
+    public function setForkOf(?GistFullforkOf $forkOf): self
     {
         $this->initialized['forkOf'] = true;
         $this->forkOf = $forkOf;

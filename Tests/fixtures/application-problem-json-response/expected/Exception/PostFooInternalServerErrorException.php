@@ -18,11 +18,11 @@ class PostFooInternalServerErrorException extends InternalServerErrorException
         $this->responseProblemDetailsResponse500 = $responseProblemDetailsResponse500;
         $this->response = $response;
     }
-    public function getResponseProblemDetailsResponse500() : \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse500
+    public function getResponseProblemDetailsResponse500(): \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse500
     {
         return $this->responseProblemDetailsResponse500;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class TermsFilter extends FilterBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -31,7 +31,7 @@ class TermsFilter extends FilterBase
     *
     * @return string
     */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -43,7 +43,7 @@ class TermsFilter extends FilterBase
     *
     * @return self
     */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -54,7 +54,7 @@ class TermsFilter extends FilterBase
      *
      * @return list<string>
      */
-    public function getTerms() : array
+    public function getTerms(): array
     {
         return $this->terms;
     }
@@ -65,7 +65,7 @@ class TermsFilter extends FilterBase
      *
      * @return self
      */
-    public function setTerms(array $terms) : self
+    public function setTerms(array $terms): self
     {
         $this->initialized['terms'] = true;
         $this->terms = $terms;

@@ -8,7 +8,7 @@ class Status extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class Status extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -94,7 +94,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -105,7 +105,7 @@ class Status extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAvatarUrl() : ?string
+    public function getAvatarUrl(): ?string
     {
         return $this->avatarUrl;
     }
@@ -116,7 +116,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setAvatarUrl(?string $avatarUrl) : self
+    public function setAvatarUrl(?string $avatarUrl): self
     {
         $this->initialized['avatarUrl'] = true;
         $this->avatarUrl = $avatarUrl;
@@ -127,7 +127,7 @@ class Status extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -138,7 +138,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -149,7 +149,7 @@ class Status extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -160,7 +160,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -171,7 +171,7 @@ class Status extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -182,7 +182,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -193,7 +193,7 @@ class Status extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -204,7 +204,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -215,7 +215,7 @@ class Status extends \ArrayObject
      *
      * @return string
      */
-    public function getTargetUrl() : string
+    public function getTargetUrl(): string
     {
         return $this->targetUrl;
     }
@@ -226,7 +226,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setTargetUrl(string $targetUrl) : self
+    public function setTargetUrl(string $targetUrl): self
     {
         $this->initialized['targetUrl'] = true;
         $this->targetUrl = $targetUrl;
@@ -237,7 +237,7 @@ class Status extends \ArrayObject
      *
      * @return string
      */
-    public function getContext() : string
+    public function getContext(): string
     {
         return $this->context;
     }
@@ -248,7 +248,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setContext(string $context) : self
+    public function setContext(string $context): self
     {
         $this->initialized['context'] = true;
         $this->context = $context;
@@ -259,7 +259,7 @@ class Status extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -270,7 +270,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -281,7 +281,7 @@ class Status extends \ArrayObject
      *
      * @return string
      */
-    public function getUpdatedAt() : string
+    public function getUpdatedAt(): string
     {
         return $this->updatedAt;
     }
@@ -292,7 +292,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(string $updatedAt) : self
+    public function setUpdatedAt(string $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -303,7 +303,7 @@ class Status extends \ArrayObject
      *
      * @return SimpleUser|null
      */
-    public function getCreator() : ?SimpleUser
+    public function getCreator(): ?SimpleUser
     {
         return $this->creator;
     }
@@ -314,7 +314,7 @@ class Status extends \ArrayObject
      *
      * @return self
      */
-    public function setCreator(?SimpleUser $creator) : self
+    public function setCreator(?SimpleUser $creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;

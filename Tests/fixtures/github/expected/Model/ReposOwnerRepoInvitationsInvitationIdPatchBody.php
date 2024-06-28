@@ -8,7 +8,7 @@ class ReposOwnerRepoInvitationsInvitationIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ReposOwnerRepoInvitationsInvitationIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPermissions() : string
+    public function getPermissions(): string
     {
         return $this->permissions;
     }
@@ -34,7 +34,7 @@ class ReposOwnerRepoInvitationsInvitationIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(string $permissions) : self
+    public function setPermissions(string $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;

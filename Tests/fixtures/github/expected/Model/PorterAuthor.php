@@ -8,7 +8,7 @@ class PorterAuthor extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -70,7 +70,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -81,7 +81,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return string
      */
-    public function getRemoteId() : string
+    public function getRemoteId(): string
     {
         return $this->remoteId;
     }
@@ -92,7 +92,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return self
      */
-    public function setRemoteId(string $remoteId) : self
+    public function setRemoteId(string $remoteId): self
     {
         $this->initialized['remoteId'] = true;
         $this->remoteId = $remoteId;
@@ -103,7 +103,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return string
      */
-    public function getRemoteName() : string
+    public function getRemoteName(): string
     {
         return $this->remoteName;
     }
@@ -114,7 +114,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return self
      */
-    public function setRemoteName(string $remoteName) : self
+    public function setRemoteName(string $remoteName): self
     {
         $this->initialized['remoteName'] = true;
         $this->remoteName = $remoteName;
@@ -125,7 +125,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -136,7 +136,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -147,7 +147,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -158,7 +158,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -169,7 +169,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -180,7 +180,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -191,7 +191,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return string
      */
-    public function getImportUrl() : string
+    public function getImportUrl(): string
     {
         return $this->importUrl;
     }
@@ -202,7 +202,7 @@ class PorterAuthor extends \ArrayObject
      *
      * @return self
      */
-    public function setImportUrl(string $importUrl) : self
+    public function setImportUrl(string $importUrl): self
     {
         $this->initialized['importUrl'] = true;
         $this->importUrl = $importUrl;

@@ -8,7 +8,7 @@ class InternalRecipient
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class InternalRecipient
      *
      * @return self
      */
-    public function setRecipient($recipient) : self
+    public function setRecipient($recipient): self
     {
         $this->initialized['recipient'] = true;
         $this->recipient = $recipient;
@@ -57,7 +57,7 @@ class InternalRecipient
      *
      * @return string|null
      */
-    public function getToken() : ?string
+    public function getToken(): ?string
     {
         return $this->token;
     }
@@ -68,7 +68,7 @@ class InternalRecipient
      *
      * @return self
      */
-    public function setToken(?string $token) : self
+    public function setToken(?string $token): self
     {
         $this->initialized['token'] = true;
         $this->token = $token;
@@ -79,7 +79,7 @@ class InternalRecipient
      *
      * @return string|null
      */
-    public function getUrl() : ?string
+    public function getUrl(): ?string
     {
         return $this->url;
     }
@@ -90,7 +90,7 @@ class InternalRecipient
      *
      * @return self
      */
-    public function setUrl(?string $url) : self
+    public function setUrl(?string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;

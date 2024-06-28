@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScore extends \A
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScore extends \A
      *
      * @return GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRating
      */
-    public function getCurrentCreditRating() : GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRating
+    public function getCurrentCreditRating(): GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRating
     {
         return $this->currentCreditRating;
     }
@@ -34,7 +34,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScore extends \A
      *
      * @return self
      */
-    public function setCurrentCreditRating(GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRating $currentCreditRating) : self
+    public function setCurrentCreditRating(GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCreditRating $currentCreditRating): self
     {
         $this->initialized['currentCreditRating'] = true;
         $this->currentCreditRating = $currentCreditRating;

@@ -8,7 +8,7 @@ class ShareDataEmbed extends ShareDataBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ShareDataEmbed extends ShareDataBase
      *
      * @return string
      */
-    public function getToken() : string
+    public function getToken(): string
     {
         return $this->token;
     }
@@ -34,7 +34,7 @@ class ShareDataEmbed extends ShareDataBase
      *
      * @return self
      */
-    public function setToken(string $token) : self
+    public function setToken(string $token): self
     {
         $this->initialized['token'] = true;
         $this->token = $token;

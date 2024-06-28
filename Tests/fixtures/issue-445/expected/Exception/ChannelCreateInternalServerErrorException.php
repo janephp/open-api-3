@@ -18,11 +18,11 @@ class ChannelCreateInternalServerErrorException extends InternalServerErrorExcep
         $this->pictureparkException = $pictureparkException;
         $this->response = $response;
     }
-    public function getPictureparkException() : \PicturePark\API\Model\PictureparkException
+    public function getPictureparkException(): \PicturePark\API\Model\PictureparkException
     {
         return $this->pictureparkException;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

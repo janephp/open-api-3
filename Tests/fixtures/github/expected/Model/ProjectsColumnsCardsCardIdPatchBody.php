@@ -8,7 +8,7 @@ class ProjectsColumnsCardsCardIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ProjectsColumnsCardsCardIdPatchBody extends \ArrayObject
      *
      * @return string|null
      */
-    public function getNote() : ?string
+    public function getNote(): ?string
     {
         return $this->note;
     }
@@ -40,7 +40,7 @@ class ProjectsColumnsCardsCardIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNote(?string $note) : self
+    public function setNote(?string $note): self
     {
         $this->initialized['note'] = true;
         $this->note = $note;
@@ -51,7 +51,7 @@ class ProjectsColumnsCardsCardIdPatchBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getArchived() : bool
+    public function getArchived(): bool
     {
         return $this->archived;
     }
@@ -62,7 +62,7 @@ class ProjectsColumnsCardsCardIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setArchived(bool $archived) : self
+    public function setArchived(bool $archived): self
     {
         $this->initialized['archived'] = true;
         $this->archived = $archived;

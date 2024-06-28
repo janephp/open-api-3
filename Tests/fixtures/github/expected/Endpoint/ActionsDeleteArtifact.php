@@ -21,15 +21,15 @@ class ActionsDeleteArtifact extends \Github\Runtime\Client\BaseEndpoint implemen
         $this->artifact_id = $artifactId;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'DELETE';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{owner}', '{repo}', '{artifact_id}'], [$this->owner, $this->repo, $this->artifact_id], '/repos/{owner}/{repo}/actions/artifacts/{artifact_id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
@@ -47,7 +47,7 @@ class ActionsDeleteArtifact extends \Github\Runtime\Client\BaseEndpoint implemen
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

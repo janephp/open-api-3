@@ -8,7 +8,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
      *
      * @return list<ReviewJsonldReviewRead>
      */
-    public function getHydraMember() : array
+    public function getHydraMember(): array
     {
         return $this->hydraMember;
     }
@@ -52,7 +52,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraMember(array $hydraMember) : self
+    public function setHydraMember(array $hydraMember): self
     {
         $this->initialized['hydraMember'] = true;
         $this->hydraMember = $hydraMember;
@@ -63,7 +63,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
      *
      * @return int
      */
-    public function getHydraTotalItems() : int
+    public function getHydraTotalItems(): int
     {
         return $this->hydraTotalItems;
     }
@@ -74,7 +74,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraTotalItems(int $hydraTotalItems) : self
+    public function setHydraTotalItems(int $hydraTotalItems): self
     {
         $this->initialized['hydraTotalItems'] = true;
         $this->hydraTotalItems = $hydraTotalItems;
@@ -85,7 +85,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
      *
      * @return BooksBookIdReviewsGetLdjsonResponse200HydraView
      */
-    public function getHydraView() : BooksBookIdReviewsGetLdjsonResponse200HydraView
+    public function getHydraView(): BooksBookIdReviewsGetLdjsonResponse200HydraView
     {
         return $this->hydraView;
     }
@@ -96,7 +96,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraView(BooksBookIdReviewsGetLdjsonResponse200HydraView $hydraView) : self
+    public function setHydraView(BooksBookIdReviewsGetLdjsonResponse200HydraView $hydraView): self
     {
         $this->initialized['hydraView'] = true;
         $this->hydraView = $hydraView;
@@ -107,7 +107,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
      *
      * @return BooksBookIdReviewsGetLdjsonResponse200HydraSearch
      */
-    public function getHydraSearch() : BooksBookIdReviewsGetLdjsonResponse200HydraSearch
+    public function getHydraSearch(): BooksBookIdReviewsGetLdjsonResponse200HydraSearch
     {
         return $this->hydraSearch;
     }
@@ -118,7 +118,7 @@ class BooksBookIdReviewsGetLdjsonResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraSearch(BooksBookIdReviewsGetLdjsonResponse200HydraSearch $hydraSearch) : self
+    public function setHydraSearch(BooksBookIdReviewsGetLdjsonResponse200HydraSearch $hydraSearch): self
     {
         $this->initialized['hydraSearch'] = true;
         $this->hydraSearch = $hydraSearch;

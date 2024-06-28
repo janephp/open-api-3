@@ -8,7 +8,7 @@ class ListItemUpdateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -32,7 +32,7 @@ class ListItemUpdateRequest
      *
      * @return array<string, mixed>|null
      */
-    public function getContent() : ?iterable
+    public function getContent(): ?iterable
     {
         return $this->content;
     }
@@ -43,7 +43,7 @@ class ListItemUpdateRequest
      *
      * @return self
      */
-    public function setContent(?iterable $content) : self
+    public function setContent(?iterable $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -71,7 +71,7 @@ class ListItemUpdateRequest
     *
     * @return self
     */
-    public function setContentFieldsUpdateOptions($contentFieldsUpdateOptions) : self
+    public function setContentFieldsUpdateOptions($contentFieldsUpdateOptions): self
     {
         $this->initialized['contentFieldsUpdateOptions'] = true;
         $this->contentFieldsUpdateOptions = $contentFieldsUpdateOptions;

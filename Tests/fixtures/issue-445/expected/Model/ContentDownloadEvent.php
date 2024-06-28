@@ -8,7 +8,7 @@ class ContentDownloadEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ContentDownloadEvent extends ApplicationEvent
      *
      * @return list<DownloadTrackingInfo>|null
      */
-    public function getDownloadInfos() : ?array
+    public function getDownloadInfos(): ?array
     {
         return $this->downloadInfos;
     }
@@ -52,7 +52,7 @@ class ContentDownloadEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setDownloadInfos(?array $downloadInfos) : self
+    public function setDownloadInfos(?array $downloadInfos): self
     {
         $this->initialized['downloadInfos'] = true;
         $this->downloadInfos = $downloadInfos;
@@ -63,7 +63,7 @@ class ContentDownloadEvent extends ApplicationEvent
      *
      * @return int
      */
-    public function getFileSize() : int
+    public function getFileSize(): int
     {
         return $this->fileSize;
     }
@@ -74,7 +74,7 @@ class ContentDownloadEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setFileSize(int $fileSize) : self
+    public function setFileSize(int $fileSize): self
     {
         $this->initialized['fileSize'] = true;
         $this->fileSize = $fileSize;
@@ -85,7 +85,7 @@ class ContentDownloadEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getShareToken() : ?string
+    public function getShareToken(): ?string
     {
         return $this->shareToken;
     }
@@ -96,7 +96,7 @@ class ContentDownloadEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setShareToken(?string $shareToken) : self
+    public function setShareToken(?string $shareToken): self
     {
         $this->initialized['shareToken'] = true;
         $this->shareToken = $shareToken;
@@ -107,7 +107,7 @@ class ContentDownloadEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getRange() : ?string
+    public function getRange(): ?string
     {
         return $this->range;
     }
@@ -118,7 +118,7 @@ class ContentDownloadEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setRange(?string $range) : self
+    public function setRange(?string $range): self
     {
         $this->initialized['range'] = true;
         $this->range = $range;

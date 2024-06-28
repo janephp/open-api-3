@@ -8,7 +8,7 @@ class ContentTraffic extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ContentTraffic extends \ArrayObject
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -52,7 +52,7 @@ class ContentTraffic extends \ArrayObject
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -63,7 +63,7 @@ class ContentTraffic extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -74,7 +74,7 @@ class ContentTraffic extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -85,7 +85,7 @@ class ContentTraffic extends \ArrayObject
      *
      * @return int
      */
-    public function getCount() : int
+    public function getCount(): int
     {
         return $this->count;
     }
@@ -96,7 +96,7 @@ class ContentTraffic extends \ArrayObject
      *
      * @return self
      */
-    public function setCount(int $count) : self
+    public function setCount(int $count): self
     {
         $this->initialized['count'] = true;
         $this->count = $count;
@@ -107,7 +107,7 @@ class ContentTraffic extends \ArrayObject
      *
      * @return int
      */
-    public function getUniques() : int
+    public function getUniques(): int
     {
         return $this->uniques;
     }
@@ -118,7 +118,7 @@ class ContentTraffic extends \ArrayObject
      *
      * @return self
      */
-    public function setUniques(int $uniques) : self
+    public function setUniques(int $uniques): self
     {
         $this->initialized['uniques'] = true;
         $this->uniques = $uniques;

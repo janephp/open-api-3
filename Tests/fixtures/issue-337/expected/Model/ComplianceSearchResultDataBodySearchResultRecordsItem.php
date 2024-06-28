@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getRecord() : int
+    public function getRecord(): int
     {
         return $this->record;
     }
@@ -58,7 +58,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRecord(int $record) : self
+    public function setRecord(int $record): self
     {
         $this->initialized['record'] = true;
         $this->record = $record;
@@ -69,7 +69,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails
      */
-    public function getRecordDetails() : ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails
+    public function getRecordDetails(): ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails
     {
         return $this->recordDetails;
     }
@@ -80,7 +80,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRecordDetails(ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails $recordDetails) : self
+    public function setRecordDetails(ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails $recordDetails): self
     {
         $this->initialized['recordDetails'] = true;
         $this->recordDetails = $recordDetails;
@@ -91,7 +91,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getResultID() : int
+    public function getResultID(): int
     {
         return $this->resultID;
     }
@@ -102,7 +102,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setResultID(int $resultID) : self
+    public function setResultID(int $resultID): self
     {
         $this->initialized['resultID'] = true;
         $this->resultID = $resultID;
@@ -113,7 +113,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getRunID() : int
+    public function getRunID(): int
     {
         return $this->runID;
     }
@@ -124,7 +124,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRunID(int $runID) : self
+    public function setRunID(int $runID): self
     {
         $this->initialized['runID'] = true;
         $this->runID = $runID;
@@ -135,7 +135,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist
      */
-    public function getWatchlist() : ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist
+    public function getWatchlist(): ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist
     {
         return $this->watchlist;
     }
@@ -146,7 +146,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setWatchlist(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist $watchlist) : self
+    public function setWatchlist(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist $watchlist): self
     {
         $this->initialized['watchlist'] = true;
         $this->watchlist = $watchlist;

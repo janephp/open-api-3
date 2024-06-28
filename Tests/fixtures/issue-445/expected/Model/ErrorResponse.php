@@ -8,7 +8,7 @@ class ErrorResponse
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ErrorResponse
      *
      * @return string|null
      */
-    public function getException() : ?string
+    public function getException(): ?string
     {
         return $this->exception;
     }
@@ -46,7 +46,7 @@ class ErrorResponse
      *
      * @return self
      */
-    public function setException(?string $exception) : self
+    public function setException(?string $exception): self
     {
         $this->initialized['exception'] = true;
         $this->exception = $exception;
@@ -57,7 +57,7 @@ class ErrorResponse
      *
      * @return string|null
      */
-    public function getTraceId() : ?string
+    public function getTraceId(): ?string
     {
         return $this->traceId;
     }
@@ -68,7 +68,7 @@ class ErrorResponse
      *
      * @return self
      */
-    public function setTraceId(?string $traceId) : self
+    public function setTraceId(?string $traceId): self
     {
         $this->initialized['traceId'] = true;
         $this->traceId = $traceId;
@@ -79,7 +79,7 @@ class ErrorResponse
      *
      * @return string|null
      */
-    public function getTraceJobId() : ?string
+    public function getTraceJobId(): ?string
     {
         return $this->traceJobId;
     }
@@ -90,7 +90,7 @@ class ErrorResponse
      *
      * @return self
      */
-    public function setTraceJobId(?string $traceJobId) : self
+    public function setTraceJobId(?string $traceJobId): self
     {
         $this->initialized['traceJobId'] = true;
         $this->traceJobId = $traceJobId;

@@ -8,7 +8,7 @@ class DeploymentStatus extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -107,7 +107,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -118,7 +118,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -129,7 +129,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -140,7 +140,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -151,7 +151,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -162,7 +162,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -173,7 +173,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -184,7 +184,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -195,7 +195,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return DeploymentStatusCreator|null
      */
-    public function getCreator() : ?DeploymentStatusCreator
+    public function getCreator(): ?DeploymentStatusCreator
     {
         return $this->creator;
     }
@@ -206,7 +206,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setCreator(?DeploymentStatusCreator $creator) : self
+    public function setCreator(?DeploymentStatusCreator $creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;
@@ -217,7 +217,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -228,7 +228,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -239,7 +239,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getEnvironment() : string
+    public function getEnvironment(): string
     {
         return $this->environment;
     }
@@ -250,7 +250,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setEnvironment(string $environment) : self
+    public function setEnvironment(string $environment): self
     {
         $this->initialized['environment'] = true;
         $this->environment = $environment;
@@ -261,7 +261,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getTargetUrl() : string
+    public function getTargetUrl(): string
     {
         return $this->targetUrl;
     }
@@ -272,7 +272,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setTargetUrl(string $targetUrl) : self
+    public function setTargetUrl(string $targetUrl): self
     {
         $this->initialized['targetUrl'] = true;
         $this->targetUrl = $targetUrl;
@@ -283,7 +283,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -294,7 +294,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -305,7 +305,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -316,7 +316,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -327,7 +327,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getDeploymentUrl() : string
+    public function getDeploymentUrl(): string
     {
         return $this->deploymentUrl;
     }
@@ -338,7 +338,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setDeploymentUrl(string $deploymentUrl) : self
+    public function setDeploymentUrl(string $deploymentUrl): self
     {
         $this->initialized['deploymentUrl'] = true;
         $this->deploymentUrl = $deploymentUrl;
@@ -349,7 +349,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoryUrl() : string
+    public function getRepositoryUrl(): string
     {
         return $this->repositoryUrl;
     }
@@ -360,7 +360,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryUrl(string $repositoryUrl) : self
+    public function setRepositoryUrl(string $repositoryUrl): self
     {
         $this->initialized['repositoryUrl'] = true;
         $this->repositoryUrl = $repositoryUrl;
@@ -371,7 +371,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getEnvironmentUrl() : string
+    public function getEnvironmentUrl(): string
     {
         return $this->environmentUrl;
     }
@@ -382,7 +382,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setEnvironmentUrl(string $environmentUrl) : self
+    public function setEnvironmentUrl(string $environmentUrl): self
     {
         $this->initialized['environmentUrl'] = true;
         $this->environmentUrl = $environmentUrl;
@@ -393,7 +393,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getLogUrl() : string
+    public function getLogUrl(): string
     {
         return $this->logUrl;
     }
@@ -404,7 +404,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setLogUrl(string $logUrl) : self
+    public function setLogUrl(string $logUrl): self
     {
         $this->initialized['logUrl'] = true;
         $this->logUrl = $logUrl;
@@ -415,7 +415,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return DeploymentStatusPerformedViaGithubApp|null
      */
-    public function getPerformedViaGithubApp() : ?DeploymentStatusPerformedViaGithubApp
+    public function getPerformedViaGithubApp(): ?DeploymentStatusPerformedViaGithubApp
     {
         return $this->performedViaGithubApp;
     }
@@ -426,7 +426,7 @@ class DeploymentStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setPerformedViaGithubApp(?DeploymentStatusPerformedViaGithubApp $performedViaGithubApp) : self
+    public function setPerformedViaGithubApp(?DeploymentStatusPerformedViaGithubApp $performedViaGithubApp): self
     {
         $this->initialized['performedViaGithubApp'] = true;
         $this->performedViaGithubApp = $performedViaGithubApp;

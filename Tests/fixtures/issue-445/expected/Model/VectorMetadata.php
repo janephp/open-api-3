@@ -8,7 +8,7 @@ class VectorMetadata extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -130,7 +130,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -152,7 +152,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setDescriptions($descriptions) : self
+    public function setDescriptions($descriptions): self
     {
         $this->initialized['descriptions'] = true;
         $this->descriptions = $descriptions;
@@ -163,7 +163,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileExtension() : ?string
+    public function getFileExtension(): ?string
     {
         return $this->fileExtension;
     }
@@ -174,7 +174,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileExtension(?string $fileExtension) : self
+    public function setFileExtension(?string $fileExtension): self
     {
         $this->initialized['fileExtension'] = true;
         $this->fileExtension = $fileExtension;
@@ -185,7 +185,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileName() : ?string
+    public function getFileName(): ?string
     {
         return $this->fileName;
     }
@@ -196,7 +196,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileName(?string $fileName) : self
+    public function setFileName(?string $fileName): self
     {
         $this->initialized['fileName'] = true;
         $this->fileName = $fileName;
@@ -207,7 +207,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFilePath() : ?string
+    public function getFilePath(): ?string
     {
         return $this->filePath;
     }
@@ -218,7 +218,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFilePath(?string $filePath) : self
+    public function setFilePath(?string $filePath): self
     {
         $this->initialized['filePath'] = true;
         $this->filePath = $filePath;
@@ -229,7 +229,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return int|null
      */
-    public function getFileSizeInBytes() : ?int
+    public function getFileSizeInBytes(): ?int
     {
         return $this->fileSizeInBytes;
     }
@@ -240,7 +240,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileSizeInBytes(?int $fileSizeInBytes) : self
+    public function setFileSizeInBytes(?int $fileSizeInBytes): self
     {
         $this->initialized['fileSizeInBytes'] = true;
         $this->fileSizeInBytes = $fileSizeInBytes;
@@ -251,7 +251,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSha1Hash() : ?string
+    public function getSha1Hash(): ?string
     {
         return $this->sha1Hash;
     }
@@ -262,7 +262,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setSha1Hash(?string $sha1Hash) : self
+    public function setSha1Hash(?string $sha1Hash): self
     {
         $this->initialized['sha1Hash'] = true;
         $this->sha1Hash = $sha1Hash;
@@ -284,7 +284,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setXmpMetadata($xmpMetadata) : self
+    public function setXmpMetadata($xmpMetadata): self
     {
         $this->initialized['xmpMetadata'] = true;
         $this->xmpMetadata = $xmpMetadata;
@@ -306,7 +306,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setExifMetadata($exifMetadata) : self
+    public function setExifMetadata($exifMetadata): self
     {
         $this->initialized['exifMetadata'] = true;
         $this->exifMetadata = $exifMetadata;
@@ -317,7 +317,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLanguage() : ?string
+    public function getLanguage(): ?string
     {
         return $this->language;
     }
@@ -328,7 +328,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(?string $language) : self
+    public function setLanguage(?string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -339,7 +339,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAuthor() : ?string
+    public function getAuthor(): ?string
     {
         return $this->author;
     }
@@ -350,7 +350,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(?string $author) : self
+    public function setAuthor(?string $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -361,7 +361,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCreator() : ?string
+    public function getCreator(): ?string
     {
         return $this->creator;
     }
@@ -372,7 +372,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setCreator(?string $creator) : self
+    public function setCreator(?string $creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;
@@ -383,7 +383,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPublisher() : ?string
+    public function getPublisher(): ?string
     {
         return $this->publisher;
     }
@@ -394,7 +394,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setPublisher(?string $publisher) : self
+    public function setPublisher(?string $publisher): self
     {
         $this->initialized['publisher'] = true;
         $this->publisher = $publisher;
@@ -405,7 +405,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCompany() : ?string
+    public function getCompany(): ?string
     {
         return $this->company;
     }
@@ -416,7 +416,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setCompany(?string $company) : self
+    public function setCompany(?string $company): self
     {
         $this->initialized['company'] = true;
         $this->company = $company;
@@ -427,7 +427,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTitle() : ?string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -438,7 +438,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(?string $title) : self
+    public function setTitle(?string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -449,7 +449,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getPageCount() : int
+    public function getPageCount(): int
     {
         return $this->pageCount;
     }
@@ -460,7 +460,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setPageCount(int $pageCount) : self
+    public function setPageCount(int $pageCount): self
     {
         $this->initialized['pageCount'] = true;
         $this->pageCount = $pageCount;
@@ -482,7 +482,7 @@ class VectorMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setEpsInfo($epsInfo) : self
+    public function setEpsInfo($epsInfo): self
     {
         $this->initialized['epsInfo'] = true;
         $this->epsInfo = $epsInfo;

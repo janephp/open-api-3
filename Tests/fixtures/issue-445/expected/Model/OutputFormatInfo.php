@@ -8,7 +8,7 @@ class OutputFormatInfo
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class OutputFormatInfo
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -40,7 +40,7 @@ class OutputFormatInfo
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -62,7 +62,7 @@ class OutputFormatInfo
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;

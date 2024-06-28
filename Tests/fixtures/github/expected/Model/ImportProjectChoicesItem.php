@@ -8,7 +8,7 @@ class ImportProjectChoicesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ImportProjectChoicesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getVcs() : string
+    public function getVcs(): string
     {
         return $this->vcs;
     }
@@ -46,7 +46,7 @@ class ImportProjectChoicesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setVcs(string $vcs) : self
+    public function setVcs(string $vcs): self
     {
         $this->initialized['vcs'] = true;
         $this->vcs = $vcs;
@@ -57,7 +57,7 @@ class ImportProjectChoicesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getTfvcProject() : string
+    public function getTfvcProject(): string
     {
         return $this->tfvcProject;
     }
@@ -68,7 +68,7 @@ class ImportProjectChoicesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTfvcProject(string $tfvcProject) : self
+    public function setTfvcProject(string $tfvcProject): self
     {
         $this->initialized['tfvcProject'] = true;
         $this->tfvcProject = $tfvcProject;
@@ -79,7 +79,7 @@ class ImportProjectChoicesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getHumanName() : string
+    public function getHumanName(): string
     {
         return $this->humanName;
     }
@@ -90,7 +90,7 @@ class ImportProjectChoicesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setHumanName(string $humanName) : self
+    public function setHumanName(string $humanName): self
     {
         $this->initialized['humanName'] = true;
         $this->humanName = $humanName;

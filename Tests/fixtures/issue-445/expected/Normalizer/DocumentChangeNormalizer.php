@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\DocumentChange::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\DocumentChange::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -62,11 +62,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setAction(null);
             }
             if (\array_key_exists('timeStamp', $data)) {
-                $object->setTimeStamp(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['timeStamp']));
+                $object->setTimeStamp(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['timeStamp']));
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('documentName') && null !== $object->getDocumentName()) {
@@ -79,10 +79,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('action') && null !== $object->getAction()) {
                 $data['action'] = $object->getAction();
             }
-            $data['timeStamp'] = $object->getTimeStamp()->format('Y-m-d\\TH:i:sP');
+            $data['timeStamp'] = $object->getTimeStamp()->format('Y-m-d\TH:i:sP');
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\DocumentChange::class => false];
         }
@@ -94,11 +94,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\DocumentChange::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\DocumentChange::class;
         }
@@ -139,7 +139,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setAction(null);
             }
             if (\array_key_exists('timeStamp', $data)) {
-                $object->setTimeStamp(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['timeStamp']));
+                $object->setTimeStamp(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['timeStamp']));
             }
             return $object;
         }
@@ -159,10 +159,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('action') && null !== $object->getAction()) {
                 $data['action'] = $object->getAction();
             }
-            $data['timeStamp'] = $object->getTimeStamp()->format('Y-m-d\\TH:i:sP');
+            $data['timeStamp'] = $object->getTimeStamp()->format('Y-m-d\TH:i:sP');
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\DocumentChange::class => false];
         }

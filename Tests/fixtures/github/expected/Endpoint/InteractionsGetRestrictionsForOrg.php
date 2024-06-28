@@ -15,19 +15,19 @@ class InteractionsGetRestrictionsForOrg extends \Github\Runtime\Client\BaseEndpo
         $this->org = $org;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{org}'], [$this->org], '/orgs/{org}/interaction-limits');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
@@ -42,10 +42,10 @@ class InteractionsGetRestrictionsForOrg extends \Github\Runtime\Client\BaseEndpo
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'Github\\Model\\InteractionLimit', 'json');
+            return $serializer->deserialize($body, 'Github\Model\InteractionLimit', 'json');
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

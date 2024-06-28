@@ -8,7 +8,7 @@ class CommitStats extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class CommitStats extends \ArrayObject
      *
      * @return int
      */
-    public function getAdditions() : int
+    public function getAdditions(): int
     {
         return $this->additions;
     }
@@ -46,7 +46,7 @@ class CommitStats extends \ArrayObject
      *
      * @return self
      */
-    public function setAdditions(int $additions) : self
+    public function setAdditions(int $additions): self
     {
         $this->initialized['additions'] = true;
         $this->additions = $additions;
@@ -57,7 +57,7 @@ class CommitStats extends \ArrayObject
      *
      * @return int
      */
-    public function getDeletions() : int
+    public function getDeletions(): int
     {
         return $this->deletions;
     }
@@ -68,7 +68,7 @@ class CommitStats extends \ArrayObject
      *
      * @return self
      */
-    public function setDeletions(int $deletions) : self
+    public function setDeletions(int $deletions): self
     {
         $this->initialized['deletions'] = true;
         $this->deletions = $deletions;
@@ -79,7 +79,7 @@ class CommitStats extends \ArrayObject
      *
      * @return int
      */
-    public function getTotal() : int
+    public function getTotal(): int
     {
         return $this->total;
     }
@@ -90,7 +90,7 @@ class CommitStats extends \ArrayObject
      *
      * @return self
      */
-    public function setTotal(int $total) : self
+    public function setTotal(int $total): self
     {
         $this->initialized['total'] = true;
         $this->total = $total;

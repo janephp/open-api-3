@@ -8,7 +8,7 @@ class FeedLinks extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return LinkWithType
      */
-    public function getTimeline() : LinkWithType
+    public function getTimeline(): LinkWithType
     {
         return $this->timeline;
     }
@@ -76,7 +76,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setTimeline(LinkWithType $timeline) : self
+    public function setTimeline(LinkWithType $timeline): self
     {
         $this->initialized['timeline'] = true;
         $this->timeline = $timeline;
@@ -87,7 +87,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return LinkWithType
      */
-    public function getUser() : LinkWithType
+    public function getUser(): LinkWithType
     {
         return $this->user;
     }
@@ -98,7 +98,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(LinkWithType $user) : self
+    public function setUser(LinkWithType $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -109,7 +109,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return LinkWithType
      */
-    public function getSecurityAdvisories() : LinkWithType
+    public function getSecurityAdvisories(): LinkWithType
     {
         return $this->securityAdvisories;
     }
@@ -120,7 +120,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setSecurityAdvisories(LinkWithType $securityAdvisories) : self
+    public function setSecurityAdvisories(LinkWithType $securityAdvisories): self
     {
         $this->initialized['securityAdvisories'] = true;
         $this->securityAdvisories = $securityAdvisories;
@@ -131,7 +131,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return LinkWithType
      */
-    public function getCurrentUser() : LinkWithType
+    public function getCurrentUser(): LinkWithType
     {
         return $this->currentUser;
     }
@@ -142,7 +142,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUser(LinkWithType $currentUser) : self
+    public function setCurrentUser(LinkWithType $currentUser): self
     {
         $this->initialized['currentUser'] = true;
         $this->currentUser = $currentUser;
@@ -153,7 +153,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return LinkWithType
      */
-    public function getCurrentUserPublic() : LinkWithType
+    public function getCurrentUserPublic(): LinkWithType
     {
         return $this->currentUserPublic;
     }
@@ -164,7 +164,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserPublic(LinkWithType $currentUserPublic) : self
+    public function setCurrentUserPublic(LinkWithType $currentUserPublic): self
     {
         $this->initialized['currentUserPublic'] = true;
         $this->currentUserPublic = $currentUserPublic;
@@ -175,7 +175,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return LinkWithType
      */
-    public function getCurrentUserActor() : LinkWithType
+    public function getCurrentUserActor(): LinkWithType
     {
         return $this->currentUserActor;
     }
@@ -186,7 +186,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserActor(LinkWithType $currentUserActor) : self
+    public function setCurrentUserActor(LinkWithType $currentUserActor): self
     {
         $this->initialized['currentUserActor'] = true;
         $this->currentUserActor = $currentUserActor;
@@ -197,7 +197,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return LinkWithType
      */
-    public function getCurrentUserOrganization() : LinkWithType
+    public function getCurrentUserOrganization(): LinkWithType
     {
         return $this->currentUserOrganization;
     }
@@ -208,7 +208,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserOrganization(LinkWithType $currentUserOrganization) : self
+    public function setCurrentUserOrganization(LinkWithType $currentUserOrganization): self
     {
         $this->initialized['currentUserOrganization'] = true;
         $this->currentUserOrganization = $currentUserOrganization;
@@ -219,7 +219,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return list<LinkWithType>
      */
-    public function getCurrentUserOrganizations() : array
+    public function getCurrentUserOrganizations(): array
     {
         return $this->currentUserOrganizations;
     }
@@ -230,7 +230,7 @@ class FeedLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserOrganizations(array $currentUserOrganizations) : self
+    public function setCurrentUserOrganizations(array $currentUserOrganizations): self
     {
         $this->initialized['currentUserOrganizations'] = true;
         $this->currentUserOrganizations = $currentUserOrganizations;

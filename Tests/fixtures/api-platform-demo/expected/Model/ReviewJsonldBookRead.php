@@ -8,7 +8,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -58,7 +58,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setContext($context) : self
+    public function setContext($context): self
     {
         $this->initialized['context'] = true;
         $this->context = $context;
@@ -69,7 +69,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -80,7 +80,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -91,7 +91,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -102,7 +102,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -113,7 +113,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId2() : ?string
+    public function getId2(): ?string
     {
         return $this->id2;
     }
@@ -124,7 +124,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setId2(?string $id2) : self
+    public function setId2(?string $id2): self
     {
         $this->initialized['id2'] = true;
         $this->id2 = $id2;
@@ -135,7 +135,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -146,7 +146,7 @@ class ReviewJsonldBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;

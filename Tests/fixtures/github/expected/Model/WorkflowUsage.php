@@ -8,7 +8,7 @@ class WorkflowUsage extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class WorkflowUsage extends \ArrayObject
      *
      * @return WorkflowUsageBillable
      */
-    public function getBillable() : WorkflowUsageBillable
+    public function getBillable(): WorkflowUsageBillable
     {
         return $this->billable;
     }
@@ -34,7 +34,7 @@ class WorkflowUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setBillable(WorkflowUsageBillable $billable) : self
+    public function setBillable(WorkflowUsageBillable $billable): self
     {
         $this->initialized['billable'] = true;
         $this->billable = $billable;

@@ -8,7 +8,7 @@ class ReposOwnerRepoCollaboratorsUsernamePutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -39,7 +39,7 @@ class ReposOwnerRepoCollaboratorsUsernamePutBody extends \ArrayObject
     *
     * @return string
     */
-    public function getPermission() : string
+    public function getPermission(): string
     {
         return $this->permission;
     }
@@ -55,7 +55,7 @@ class ReposOwnerRepoCollaboratorsUsernamePutBody extends \ArrayObject
     *
     * @return self
     */
-    public function setPermission(string $permission) : self
+    public function setPermission(string $permission): self
     {
         $this->initialized['permission'] = true;
         $this->permission = $permission;
@@ -66,7 +66,7 @@ class ReposOwnerRepoCollaboratorsUsernamePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPermissions() : string
+    public function getPermissions(): string
     {
         return $this->permissions;
     }
@@ -77,7 +77,7 @@ class ReposOwnerRepoCollaboratorsUsernamePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(string $permissions) : self
+    public function setPermissions(string $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;

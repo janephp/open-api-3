@@ -8,7 +8,7 @@ class FileTransferOutput
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class FileTransferOutput
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -46,7 +46,7 @@ class FileTransferOutput
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -57,7 +57,7 @@ class FileTransferOutput
      *
      * @return string|null
      */
-    public function getFilePath() : ?string
+    public function getFilePath(): ?string
     {
         return $this->filePath;
     }
@@ -68,7 +68,7 @@ class FileTransferOutput
      *
      * @return self
      */
-    public function setFilePath(?string $filePath) : self
+    public function setFilePath(?string $filePath): self
     {
         $this->initialized['filePath'] = true;
         $this->filePath = $filePath;
@@ -79,7 +79,7 @@ class FileTransferOutput
      *
      * @return string
      */
-    public function getOutputSource() : string
+    public function getOutputSource(): string
     {
         return $this->outputSource;
     }
@@ -90,7 +90,7 @@ class FileTransferOutput
      *
      * @return self
      */
-    public function setOutputSource(string $outputSource) : self
+    public function setOutputSource(string $outputSource): self
     {
         $this->initialized['outputSource'] = true;
         $this->outputSource = $outputSource;

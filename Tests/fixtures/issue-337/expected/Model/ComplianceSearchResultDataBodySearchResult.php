@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResult extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ComplianceSearchResultDataBodySearchResult extends \ArrayObject
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItem>
      */
-    public function getRecords() : array
+    public function getRecords(): array
     {
         return $this->records;
     }
@@ -40,7 +40,7 @@ class ComplianceSearchResultDataBodySearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setRecords(array $records) : self
+    public function setRecords(array $records): self
     {
         $this->initialized['records'] = true;
         $this->records = $records;
@@ -51,7 +51,7 @@ class ComplianceSearchResultDataBodySearchResult extends \ArrayObject
      *
      * @return string
      */
-    public function getSearchEngineVersion() : string
+    public function getSearchEngineVersion(): string
     {
         return $this->searchEngineVersion;
     }
@@ -62,7 +62,7 @@ class ComplianceSearchResultDataBodySearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchEngineVersion(string $searchEngineVersion) : self
+    public function setSearchEngineVersion(string $searchEngineVersion): self
     {
         $this->initialized['searchEngineVersion'] = true;
         $this->searchEngineVersion = $searchEngineVersion;

@@ -8,7 +8,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -94,7 +94,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -105,7 +105,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return int
      */
-    public function getSize() : int
+    public function getSize(): int
     {
         return $this->size;
     }
@@ -116,7 +116,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSize(int $size) : self
+    public function setSize(int $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;
@@ -127,7 +127,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -138,7 +138,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -149,7 +149,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -160,7 +160,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -171,7 +171,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getContent() : string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -182,7 +182,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setContent(string $content) : self
+    public function setContent(string $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -193,7 +193,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -204,7 +204,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -215,7 +215,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -226,7 +226,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -237,7 +237,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getGitUrl() : ?string
+    public function getGitUrl(): ?string
     {
         return $this->gitUrl;
     }
@@ -248,7 +248,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setGitUrl(?string $gitUrl) : self
+    public function setGitUrl(?string $gitUrl): self
     {
         $this->initialized['gitUrl'] = true;
         $this->gitUrl = $gitUrl;
@@ -259,7 +259,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getHtmlUrl() : ?string
+    public function getHtmlUrl(): ?string
     {
         return $this->htmlUrl;
     }
@@ -270,7 +270,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(?string $htmlUrl) : self
+    public function setHtmlUrl(?string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -281,7 +281,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDownloadUrl() : ?string
+    public function getDownloadUrl(): ?string
     {
         return $this->downloadUrl;
     }
@@ -292,7 +292,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDownloadUrl(?string $downloadUrl) : self
+    public function setDownloadUrl(?string $downloadUrl): self
     {
         $this->initialized['downloadUrl'] = true;
         $this->downloadUrl = $downloadUrl;
@@ -303,7 +303,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return ContentTreeEntriesItemLinks
      */
-    public function getLinks() : ContentTreeEntriesItemLinks
+    public function getLinks(): ContentTreeEntriesItemLinks
     {
         return $this->links;
     }
@@ -314,7 +314,7 @@ class ContentTreeEntriesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(ContentTreeEntriesItemLinks $links) : self
+    public function setLinks(ContentTreeEntriesItemLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;

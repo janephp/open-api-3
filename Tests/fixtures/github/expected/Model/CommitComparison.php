@@ -8,7 +8,7 @@ class CommitComparison extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -106,7 +106,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -117,7 +117,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -128,7 +128,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -139,7 +139,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return string
      */
-    public function getPermalinkUrl() : string
+    public function getPermalinkUrl(): string
     {
         return $this->permalinkUrl;
     }
@@ -150,7 +150,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setPermalinkUrl(string $permalinkUrl) : self
+    public function setPermalinkUrl(string $permalinkUrl): self
     {
         $this->initialized['permalinkUrl'] = true;
         $this->permalinkUrl = $permalinkUrl;
@@ -161,7 +161,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return string
      */
-    public function getDiffUrl() : string
+    public function getDiffUrl(): string
     {
         return $this->diffUrl;
     }
@@ -172,7 +172,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setDiffUrl(string $diffUrl) : self
+    public function setDiffUrl(string $diffUrl): self
     {
         $this->initialized['diffUrl'] = true;
         $this->diffUrl = $diffUrl;
@@ -183,7 +183,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return string
      */
-    public function getPatchUrl() : string
+    public function getPatchUrl(): string
     {
         return $this->patchUrl;
     }
@@ -194,7 +194,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setPatchUrl(string $patchUrl) : self
+    public function setPatchUrl(string $patchUrl): self
     {
         $this->initialized['patchUrl'] = true;
         $this->patchUrl = $patchUrl;
@@ -205,7 +205,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return Commit
      */
-    public function getBaseCommit() : Commit
+    public function getBaseCommit(): Commit
     {
         return $this->baseCommit;
     }
@@ -216,7 +216,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setBaseCommit(Commit $baseCommit) : self
+    public function setBaseCommit(Commit $baseCommit): self
     {
         $this->initialized['baseCommit'] = true;
         $this->baseCommit = $baseCommit;
@@ -227,7 +227,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return Commit
      */
-    public function getMergeBaseCommit() : Commit
+    public function getMergeBaseCommit(): Commit
     {
         return $this->mergeBaseCommit;
     }
@@ -238,7 +238,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setMergeBaseCommit(Commit $mergeBaseCommit) : self
+    public function setMergeBaseCommit(Commit $mergeBaseCommit): self
     {
         $this->initialized['mergeBaseCommit'] = true;
         $this->mergeBaseCommit = $mergeBaseCommit;
@@ -249,7 +249,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -260,7 +260,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -271,7 +271,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return int
      */
-    public function getAheadBy() : int
+    public function getAheadBy(): int
     {
         return $this->aheadBy;
     }
@@ -282,7 +282,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setAheadBy(int $aheadBy) : self
+    public function setAheadBy(int $aheadBy): self
     {
         $this->initialized['aheadBy'] = true;
         $this->aheadBy = $aheadBy;
@@ -293,7 +293,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return int
      */
-    public function getBehindBy() : int
+    public function getBehindBy(): int
     {
         return $this->behindBy;
     }
@@ -304,7 +304,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setBehindBy(int $behindBy) : self
+    public function setBehindBy(int $behindBy): self
     {
         $this->initialized['behindBy'] = true;
         $this->behindBy = $behindBy;
@@ -315,7 +315,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalCommits() : int
+    public function getTotalCommits(): int
     {
         return $this->totalCommits;
     }
@@ -326,7 +326,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalCommits(int $totalCommits) : self
+    public function setTotalCommits(int $totalCommits): self
     {
         $this->initialized['totalCommits'] = true;
         $this->totalCommits = $totalCommits;
@@ -337,7 +337,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return list<Commit>
      */
-    public function getCommits() : array
+    public function getCommits(): array
     {
         return $this->commits;
     }
@@ -348,7 +348,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setCommits(array $commits) : self
+    public function setCommits(array $commits): self
     {
         $this->initialized['commits'] = true;
         $this->commits = $commits;
@@ -359,7 +359,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return list<DiffEntry>
      */
-    public function getFiles() : array
+    public function getFiles(): array
     {
         return $this->files;
     }
@@ -370,7 +370,7 @@ class CommitComparison extends \ArrayObject
      *
      * @return self
      */
-    public function setFiles(array $files) : self
+    public function setFiles(array $files): self
     {
         $this->initialized['files'] = true;
         $this->files = $files;

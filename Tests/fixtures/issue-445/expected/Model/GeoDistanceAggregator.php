@@ -8,7 +8,7 @@ class GeoDistanceAggregator extends AggregatorBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GeoDistanceAggregator extends AggregatorBase
      *
      * @return string
      */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -46,7 +46,7 @@ class GeoDistanceAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -68,7 +68,7 @@ class GeoDistanceAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setLocation($location) : self
+    public function setLocation($location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -79,7 +79,7 @@ class GeoDistanceAggregator extends AggregatorBase
      *
      * @return list<GeoDistance>
      */
-    public function getRanges() : array
+    public function getRanges(): array
     {
         return $this->ranges;
     }
@@ -90,7 +90,7 @@ class GeoDistanceAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setRanges(array $ranges) : self
+    public function setRanges(array $ranges): self
     {
         $this->initialized['ranges'] = true;
         $this->ranges = $ranges;

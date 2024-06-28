@@ -8,7 +8,7 @@ class Schema
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class Schema
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -88,7 +88,7 @@ class Schema
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -99,7 +99,7 @@ class Schema
      *
      * @return string|null
      */
-    public function getParentSchemaId() : ?string
+    public function getParentSchemaId(): ?string
     {
         return $this->parentSchemaId;
     }
@@ -110,7 +110,7 @@ class Schema
      *
      * @return self
      */
-    public function setParentSchemaId(?string $parentSchemaId) : self
+    public function setParentSchemaId(?string $parentSchemaId): self
     {
         $this->initialized['parentSchemaId'] = true;
         $this->parentSchemaId = $parentSchemaId;
@@ -121,7 +121,7 @@ class Schema
      *
      * @return list<string>|null
      */
-    public function getTypes() : ?array
+    public function getTypes(): ?array
     {
         return $this->types;
     }
@@ -132,7 +132,7 @@ class Schema
      *
      * @return self
      */
-    public function setTypes(?array $types) : self
+    public function setTypes(?array $types): self
     {
         $this->initialized['types'] = true;
         $this->types = $types;
@@ -154,7 +154,7 @@ class Schema
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -176,7 +176,7 @@ class Schema
      *
      * @return self
      */
-    public function setDescriptions($descriptions) : self
+    public function setDescriptions($descriptions): self
     {
         $this->initialized['descriptions'] = true;
         $this->descriptions = $descriptions;
@@ -187,7 +187,7 @@ class Schema
      *
      * @return list<string>|null
      */
-    public function getLayerSchemaIds() : ?array
+    public function getLayerSchemaIds(): ?array
     {
         return $this->layerSchemaIds;
     }
@@ -198,7 +198,7 @@ class Schema
      *
      * @return self
      */
-    public function setLayerSchemaIds(?array $layerSchemaIds) : self
+    public function setLayerSchemaIds(?array $layerSchemaIds): self
     {
         $this->initialized['layerSchemaIds'] = true;
         $this->layerSchemaIds = $layerSchemaIds;
@@ -209,7 +209,7 @@ class Schema
      *
      * @return int
      */
-    public function getFieldCount() : int
+    public function getFieldCount(): int
     {
         return $this->fieldCount;
     }
@@ -220,7 +220,7 @@ class Schema
      *
      * @return self
      */
-    public function setFieldCount(int $fieldCount) : self
+    public function setFieldCount(int $fieldCount): self
     {
         $this->initialized['fieldCount'] = true;
         $this->fieldCount = $fieldCount;
@@ -231,7 +231,7 @@ class Schema
      *
      * @return int
      */
-    public function getChildCount() : int
+    public function getChildCount(): int
     {
         return $this->childCount;
     }
@@ -242,7 +242,7 @@ class Schema
      *
      * @return self
      */
-    public function setChildCount(int $childCount) : self
+    public function setChildCount(int $childCount): self
     {
         $this->initialized['childCount'] = true;
         $this->childCount = $childCount;
@@ -253,7 +253,7 @@ class Schema
      *
      * @return int
      */
-    public function getLevel() : int
+    public function getLevel(): int
     {
         return $this->level;
     }
@@ -264,7 +264,7 @@ class Schema
      *
      * @return self
      */
-    public function setLevel(int $level) : self
+    public function setLevel(int $level): self
     {
         $this->initialized['level'] = true;
         $this->level = $level;
@@ -275,7 +275,7 @@ class Schema
      *
      * @return bool
      */
-    public function getSystem() : bool
+    public function getSystem(): bool
     {
         return $this->system;
     }
@@ -286,7 +286,7 @@ class Schema
      *
      * @return self
      */
-    public function setSystem(bool $system) : self
+    public function setSystem(bool $system): self
     {
         $this->initialized['system'] = true;
         $this->system = $system;

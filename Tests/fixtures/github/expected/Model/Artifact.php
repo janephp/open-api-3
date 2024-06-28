@@ -8,7 +8,7 @@ class Artifact extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class Artifact extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -88,7 +88,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -99,7 +99,7 @@ class Artifact extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -110,7 +110,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -121,7 +121,7 @@ class Artifact extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -132,7 +132,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -143,7 +143,7 @@ class Artifact extends \ArrayObject
      *
      * @return int
      */
-    public function getSizeInBytes() : int
+    public function getSizeInBytes(): int
     {
         return $this->sizeInBytes;
     }
@@ -154,7 +154,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setSizeInBytes(int $sizeInBytes) : self
+    public function setSizeInBytes(int $sizeInBytes): self
     {
         $this->initialized['sizeInBytes'] = true;
         $this->sizeInBytes = $sizeInBytes;
@@ -165,7 +165,7 @@ class Artifact extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -176,7 +176,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -187,7 +187,7 @@ class Artifact extends \ArrayObject
      *
      * @return string
      */
-    public function getArchiveDownloadUrl() : string
+    public function getArchiveDownloadUrl(): string
     {
         return $this->archiveDownloadUrl;
     }
@@ -198,7 +198,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setArchiveDownloadUrl(string $archiveDownloadUrl) : self
+    public function setArchiveDownloadUrl(string $archiveDownloadUrl): self
     {
         $this->initialized['archiveDownloadUrl'] = true;
         $this->archiveDownloadUrl = $archiveDownloadUrl;
@@ -209,7 +209,7 @@ class Artifact extends \ArrayObject
      *
      * @return bool
      */
-    public function getExpired() : bool
+    public function getExpired(): bool
     {
         return $this->expired;
     }
@@ -220,7 +220,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setExpired(bool $expired) : self
+    public function setExpired(bool $expired): self
     {
         $this->initialized['expired'] = true;
         $this->expired = $expired;
@@ -231,7 +231,7 @@ class Artifact extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getCreatedAt() : ?\DateTime
+    public function getCreatedAt(): ?\DateTime
     {
         return $this->createdAt;
     }
@@ -242,7 +242,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(?\DateTime $createdAt) : self
+    public function setCreatedAt(?\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -253,7 +253,7 @@ class Artifact extends \ArrayObject
      *
      * @return string
      */
-    public function getExpiresAt() : string
+    public function getExpiresAt(): string
     {
         return $this->expiresAt;
     }
@@ -264,7 +264,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setExpiresAt(string $expiresAt) : self
+    public function setExpiresAt(string $expiresAt): self
     {
         $this->initialized['expiresAt'] = true;
         $this->expiresAt = $expiresAt;
@@ -275,7 +275,7 @@ class Artifact extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getUpdatedAt() : ?\DateTime
+    public function getUpdatedAt(): ?\DateTime
     {
         return $this->updatedAt;
     }
@@ -286,7 +286,7 @@ class Artifact extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(?\DateTime $updatedAt) : self
+    public function setUpdatedAt(?\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;

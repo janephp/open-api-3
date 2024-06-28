@@ -8,7 +8,7 @@ class FieldDate extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class FieldDate extends FieldBase
      *
      * @return string|null
      */
-    public function getFormat() : ?string
+    public function getFormat(): ?string
     {
         return $this->format;
     }
@@ -40,7 +40,7 @@ class FieldDate extends FieldBase
      *
      * @return self
      */
-    public function setFormat(?string $format) : self
+    public function setFormat(?string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -51,7 +51,7 @@ class FieldDate extends FieldBase
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -62,7 +62,7 @@ class FieldDate extends FieldBase
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;

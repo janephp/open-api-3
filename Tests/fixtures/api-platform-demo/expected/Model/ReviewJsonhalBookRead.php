@@ -8,7 +8,7 @@ class ReviewJsonhalBookRead extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ReviewJsonhalBookRead extends \ArrayObject
      *
      * @return ReviewJsonhalBookReadLinks
      */
-    public function getLinks() : ReviewJsonhalBookReadLinks
+    public function getLinks(): ReviewJsonhalBookReadLinks
     {
         return $this->links;
     }
@@ -46,7 +46,7 @@ class ReviewJsonhalBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(ReviewJsonhalBookReadLinks $links) : self
+    public function setLinks(ReviewJsonhalBookReadLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;
@@ -57,7 +57,7 @@ class ReviewJsonhalBookRead extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -68,7 +68,7 @@ class ReviewJsonhalBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -79,7 +79,7 @@ class ReviewJsonhalBookRead extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -90,7 +90,7 @@ class ReviewJsonhalBookRead extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;

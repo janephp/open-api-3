@@ -8,7 +8,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -107,7 +107,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -118,7 +118,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -129,7 +129,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -140,7 +140,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -151,7 +151,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getRegNo() : string
+    public function getRegNo(): string
     {
         return $this->regNo;
     }
@@ -162,7 +162,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRegNo(string $regNo) : self
+    public function setRegNo(string $regNo): self
     {
         $this->initialized['regNo'] = true;
         $this->regNo = $regNo;
@@ -173,7 +173,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return CompanySearchSuccessResultCompaniesItemVatNo
      */
-    public function getVatNo() : CompanySearchSuccessResultCompaniesItemVatNo
+    public function getVatNo(): CompanySearchSuccessResultCompaniesItemVatNo
     {
         return $this->vatNo;
     }
@@ -184,7 +184,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setVatNo(CompanySearchSuccessResultCompaniesItemVatNo $vatNo) : self
+    public function setVatNo(CompanySearchSuccessResultCompaniesItemVatNo $vatNo): self
     {
         $this->initialized['vatNo'] = true;
         $this->vatNo = $vatNo;
@@ -195,7 +195,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getSafeNo() : string
+    public function getSafeNo(): string
     {
         return $this->safeNo;
     }
@@ -206,7 +206,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSafeNo(string $safeNo) : self
+    public function setSafeNo(string $safeNo): self
     {
         $this->initialized['safeNo'] = true;
         $this->safeNo = $safeNo;
@@ -217,7 +217,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -228,7 +228,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -239,7 +239,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -250,7 +250,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -261,7 +261,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getOfficeType() : string
+    public function getOfficeType(): string
     {
         return $this->officeType;
     }
@@ -272,7 +272,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setOfficeType(string $officeType) : self
+    public function setOfficeType(string $officeType): self
     {
         $this->initialized['officeType'] = true;
         $this->officeType = $officeType;
@@ -283,7 +283,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -294,7 +294,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -305,7 +305,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getStatusDescription() : string
+    public function getStatusDescription(): string
     {
         return $this->statusDescription;
     }
@@ -316,7 +316,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setStatusDescription(string $statusDescription) : self
+    public function setStatusDescription(string $statusDescription): self
     {
         $this->initialized['statusDescription'] = true;
         $this->statusDescription = $statusDescription;
@@ -327,7 +327,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getActivityCode() : string
+    public function getActivityCode(): string
     {
         return $this->activityCode;
     }
@@ -338,7 +338,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setActivityCode(string $activityCode) : self
+    public function setActivityCode(string $activityCode): self
     {
         $this->initialized['activityCode'] = true;
         $this->activityCode = $activityCode;
@@ -349,7 +349,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return CompanySearchSuccessResultCompaniesItemTradingNames
      */
-    public function getTradingNames() : CompanySearchSuccessResultCompaniesItemTradingNames
+    public function getTradingNames(): CompanySearchSuccessResultCompaniesItemTradingNames
     {
         return $this->tradingNames;
     }
@@ -360,7 +360,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTradingNames(CompanySearchSuccessResultCompaniesItemTradingNames $tradingNames) : self
+    public function setTradingNames(CompanySearchSuccessResultCompaniesItemTradingNames $tradingNames): self
     {
         $this->initialized['tradingNames'] = true;
         $this->tradingNames = $tradingNames;
@@ -371,7 +371,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return CompanySearchSuccessResultCompaniesItemAddress
      */
-    public function getAddress() : CompanySearchSuccessResultCompaniesItemAddress
+    public function getAddress(): CompanySearchSuccessResultCompaniesItemAddress
     {
         return $this->address;
     }
@@ -382,7 +382,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress(CompanySearchSuccessResultCompaniesItemAddress $address) : self
+    public function setAddress(CompanySearchSuccessResultCompaniesItemAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -393,7 +393,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return CompanySearchSuccessResultCompaniesItemDateOfLatestChange
      */
-    public function getDateOfLatestChange() : CompanySearchSuccessResultCompaniesItemDateOfLatestChange
+    public function getDateOfLatestChange(): CompanySearchSuccessResultCompaniesItemDateOfLatestChange
     {
         return $this->dateOfLatestChange;
     }
@@ -404,7 +404,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDateOfLatestChange(CompanySearchSuccessResultCompaniesItemDateOfLatestChange $dateOfLatestChange) : self
+    public function setDateOfLatestChange(CompanySearchSuccessResultCompaniesItemDateOfLatestChange $dateOfLatestChange): self
     {
         $this->initialized['dateOfLatestChange'] = true;
         $this->dateOfLatestChange = $dateOfLatestChange;
@@ -415,7 +415,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts
      */
-    public function getDateOfLatestCAccounts() : CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts
+    public function getDateOfLatestCAccounts(): CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts
     {
         return $this->dateOfLatestCAccounts;
     }
@@ -426,7 +426,7 @@ class CompanySearchSuccessResultCompaniesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDateOfLatestCAccounts(CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts $dateOfLatestCAccounts) : self
+    public function setDateOfLatestCAccounts(CompanySearchSuccessResultCompaniesItemDateOfLatestCAccounts $dateOfLatestCAccounts): self
     {
         $this->initialized['dateOfLatestCAccounts'] = true;
         $this->dateOfLatestCAccounts = $dateOfLatestCAccounts;

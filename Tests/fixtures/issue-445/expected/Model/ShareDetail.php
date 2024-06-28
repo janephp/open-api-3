@@ -8,7 +8,7 @@ class ShareDetail
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class ShareDetail
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -106,7 +106,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -117,7 +117,7 @@ class ShareDetail
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -128,7 +128,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -139,7 +139,7 @@ class ShareDetail
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -150,7 +150,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -172,7 +172,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setCreator($creator) : self
+    public function setCreator($creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;
@@ -194,7 +194,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;
@@ -205,7 +205,7 @@ class ShareDetail
      *
      * @return list<ShareContentDetail>
      */
-    public function getContentSelections() : array
+    public function getContentSelections(): array
     {
         return $this->contentSelections;
     }
@@ -216,7 +216,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setContentSelections(array $contentSelections) : self
+    public function setContentSelections(array $contentSelections): self
     {
         $this->initialized['contentSelections'] = true;
         $this->contentSelections = $contentSelections;
@@ -227,7 +227,7 @@ class ShareDetail
      *
      * @return list<string>|null
      */
-    public function getLayerSchemaIds() : ?array
+    public function getLayerSchemaIds(): ?array
     {
         return $this->layerSchemaIds;
     }
@@ -238,7 +238,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setLayerSchemaIds(?array $layerSchemaIds) : self
+    public function setLayerSchemaIds(?array $layerSchemaIds): self
     {
         $this->initialized['layerSchemaIds'] = true;
         $this->layerSchemaIds = $layerSchemaIds;
@@ -260,7 +260,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setData($data) : self
+    public function setData($data): self
     {
         $this->initialized['data'] = true;
         $this->data = $data;
@@ -271,7 +271,7 @@ class ShareDetail
      *
      * @return \DateTime|null
      */
-    public function getExpirationDate() : ?\DateTime
+    public function getExpirationDate(): ?\DateTime
     {
         return $this->expirationDate;
     }
@@ -282,7 +282,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setExpirationDate(?\DateTime $expirationDate) : self
+    public function setExpirationDate(?\DateTime $expirationDate): self
     {
         $this->initialized['expirationDate'] = true;
         $this->expirationDate = $expirationDate;
@@ -293,7 +293,7 @@ class ShareDetail
      *
      * @return bool
      */
-    public function getExpired() : bool
+    public function getExpired(): bool
     {
         return $this->expired;
     }
@@ -304,7 +304,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setExpired(bool $expired) : self
+    public function setExpired(bool $expired): self
     {
         $this->initialized['expired'] = true;
         $this->expired = $expired;
@@ -326,7 +326,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setOutputAccess($outputAccess) : self
+    public function setOutputAccess($outputAccess): self
     {
         $this->initialized['outputAccess'] = true;
         $this->outputAccess = $outputAccess;
@@ -348,7 +348,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setShareType($shareType) : self
+    public function setShareType($shareType): self
     {
         $this->initialized['shareType'] = true;
         $this->shareType = $shareType;
@@ -359,7 +359,7 @@ class ShareDetail
      *
      * @return list<SchemaDetail>|null
      */
-    public function getSchemas() : ?array
+    public function getSchemas(): ?array
     {
         return $this->schemas;
     }
@@ -370,7 +370,7 @@ class ShareDetail
      *
      * @return self
      */
-    public function setSchemas(?array $schemas) : self
+    public function setSchemas(?array $schemas): self
     {
         $this->initialized['schemas'] = true;
         $this->schemas = $schemas;

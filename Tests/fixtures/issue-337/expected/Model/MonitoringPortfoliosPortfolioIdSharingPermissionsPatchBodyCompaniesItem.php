@@ -8,7 +8,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem ex
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem ex
      *
      * @return string
      */
-    public function getCsUserId() : string
+    public function getCsUserId(): string
     {
         return $this->csUserId;
     }
@@ -40,7 +40,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem ex
      *
      * @return self
      */
-    public function setCsUserId(string $csUserId) : self
+    public function setCsUserId(string $csUserId): self
     {
         $this->initialized['csUserId'] = true;
         $this->csUserId = $csUserId;
@@ -51,7 +51,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem ex
      *
      * @return string
      */
-    public function getPermissions() : string
+    public function getPermissions(): string
     {
         return $this->permissions;
     }
@@ -62,7 +62,7 @@ class MonitoringPortfoliosPortfolioIdSharingPermissionsPatchBodyCompaniesItem ex
      *
      * @return self
      */
-    public function setPermissions(string $permissions) : self
+    public function setPermissions(string $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;

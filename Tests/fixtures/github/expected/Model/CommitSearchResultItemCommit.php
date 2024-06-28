@@ -8,7 +8,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return CommitSearchResultItemCommitAuthor
      */
-    public function getAuthor() : CommitSearchResultItemCommitAuthor
+    public function getAuthor(): CommitSearchResultItemCommitAuthor
     {
         return $this->author;
     }
@@ -70,7 +70,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(CommitSearchResultItemCommitAuthor $author) : self
+    public function setAuthor(CommitSearchResultItemCommitAuthor $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -81,7 +81,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return CommitSearchResultItemCommitCommitter|null
      */
-    public function getCommitter() : ?CommitSearchResultItemCommitCommitter
+    public function getCommitter(): ?CommitSearchResultItemCommitCommitter
     {
         return $this->committer;
     }
@@ -92,7 +92,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitter(?CommitSearchResultItemCommitCommitter $committer) : self
+    public function setCommitter(?CommitSearchResultItemCommitCommitter $committer): self
     {
         $this->initialized['committer'] = true;
         $this->committer = $committer;
@@ -103,7 +103,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return int
      */
-    public function getCommentCount() : int
+    public function getCommentCount(): int
     {
         return $this->commentCount;
     }
@@ -114,7 +114,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setCommentCount(int $commentCount) : self
+    public function setCommentCount(int $commentCount): self
     {
         $this->initialized['commentCount'] = true;
         $this->commentCount = $commentCount;
@@ -125,7 +125,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -136,7 +136,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -147,7 +147,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return CommitSearchResultItemCommitTree
      */
-    public function getTree() : CommitSearchResultItemCommitTree
+    public function getTree(): CommitSearchResultItemCommitTree
     {
         return $this->tree;
     }
@@ -158,7 +158,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setTree(CommitSearchResultItemCommitTree $tree) : self
+    public function setTree(CommitSearchResultItemCommitTree $tree): self
     {
         $this->initialized['tree'] = true;
         $this->tree = $tree;
@@ -169,7 +169,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -180,7 +180,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -191,7 +191,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return Verification
      */
-    public function getVerification() : Verification
+    public function getVerification(): Verification
     {
         return $this->verification;
     }
@@ -202,7 +202,7 @@ class CommitSearchResultItemCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setVerification(Verification $verification) : self
+    public function setVerification(Verification $verification): self
     {
         $this->initialized['verification'] = true;
         $this->verification = $verification;

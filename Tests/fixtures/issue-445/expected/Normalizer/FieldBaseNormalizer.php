@@ -20,75 +20,75 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\FieldBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\FieldBase::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (array_key_exists('kind', $data) and 'FieldBoolean' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldBoolean', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldBoolean', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDate' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDate', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDate', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDateTime' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDateTime', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDateTime', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDateTimeArray' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDateTimeArray', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDateTimeArray', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDecimal' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDecimal', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDecimal', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDictionary' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDictionary', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDictionary', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDictionaryArray' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDictionaryArray', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDictionaryArray', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldGeoPoint' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldGeoPoint', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldGeoPoint', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldTrigger' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldTrigger', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldTrigger', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldLong' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldLong', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldLong', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldLongArray' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldLongArray', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldLongArray', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldSingleFieldset' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldSingleFieldset', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldSingleFieldset', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldMultiFieldset' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldMultiFieldset', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldMultiFieldset', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldSingleTagbox' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldSingleTagbox', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldSingleTagbox', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldMultiTagbox' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldMultiTagbox', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldMultiTagbox', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldString' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldString', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldString', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldStringArray' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldStringArray', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldStringArray', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldTranslatedString' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldTranslatedString', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldTranslatedString', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldSingleRelation' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldSingleRelation', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldSingleRelation', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldMultiRelation' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldMultiRelation', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldMultiRelation', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -147,7 +147,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if (null !== $object->getKind() and 'FieldBoolean' === $object->getKind()) {
@@ -231,7 +231,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\FieldBase::class => false];
         }
@@ -243,11 +243,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\FieldBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\FieldBase::class;
         }
@@ -257,64 +257,64 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function denormalize($data, $type, $format = null, array $context = [])
         {
             if (array_key_exists('kind', $data) and 'FieldBoolean' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldBoolean', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldBoolean', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDate' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDate', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDate', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDateTime' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDateTime', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDateTime', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDateTimeArray' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDateTimeArray', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDateTimeArray', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDecimal' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDecimal', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDecimal', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDictionary' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDictionary', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDictionary', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldDictionaryArray' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldDictionaryArray', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldDictionaryArray', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldGeoPoint' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldGeoPoint', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldGeoPoint', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldTrigger' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldTrigger', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldTrigger', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldLong' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldLong', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldLong', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldLongArray' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldLongArray', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldLongArray', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldSingleFieldset' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldSingleFieldset', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldSingleFieldset', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldMultiFieldset' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldMultiFieldset', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldMultiFieldset', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldSingleTagbox' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldSingleTagbox', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldSingleTagbox', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldMultiTagbox' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldMultiTagbox', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldMultiTagbox', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldString' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldString', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldString', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldStringArray' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldStringArray', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldStringArray', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldTranslatedString' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldTranslatedString', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldTranslatedString', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldSingleRelation' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldSingleRelation', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldSingleRelation', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'FieldMultiRelation' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\FieldMultiRelation', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\FieldMultiRelation', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -460,7 +460,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\FieldBase::class => false];
         }

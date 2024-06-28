@@ -18,11 +18,11 @@ class BusinessProcessWaitForCompletionConflictException extends ConflictExceptio
         $this->pictureparkConflictException = $pictureparkConflictException;
         $this->response = $response;
     }
-    public function getPictureparkConflictException() : \PicturePark\API\Model\PictureparkConflictException
+    public function getPictureparkConflictException(): \PicturePark\API\Model\PictureparkConflictException
     {
         return $this->pictureparkConflictException;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

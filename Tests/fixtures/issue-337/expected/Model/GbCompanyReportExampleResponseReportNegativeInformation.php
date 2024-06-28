@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportNegativeInformation extends \ArrayObje
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportNegativeInformation extends \ArrayObje
      *
      * @return GbCompanyReportExampleResponseReportNegativeInformationCcjSummary
      */
-    public function getCcjSummary() : GbCompanyReportExampleResponseReportNegativeInformationCcjSummary
+    public function getCcjSummary(): GbCompanyReportExampleResponseReportNegativeInformationCcjSummary
     {
         return $this->ccjSummary;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportNegativeInformation extends \ArrayObje
      *
      * @return self
      */
-    public function setCcjSummary(GbCompanyReportExampleResponseReportNegativeInformationCcjSummary $ccjSummary) : self
+    public function setCcjSummary(GbCompanyReportExampleResponseReportNegativeInformationCcjSummary $ccjSummary): self
     {
         $this->initialized['ccjSummary'] = true;
         $this->ccjSummary = $ccjSummary;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportNegativeInformation extends \ArrayObje
      *
      * @return GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgements
      */
-    public function getCountyCourtJudgements() : GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgements
+    public function getCountyCourtJudgements(): GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgements
     {
         return $this->countyCourtJudgements;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportNegativeInformation extends \ArrayObje
      *
      * @return self
      */
-    public function setCountyCourtJudgements(GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgements $countyCourtJudgements) : self
+    public function setCountyCourtJudgements(GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgements $countyCourtJudgements): self
     {
         $this->initialized['countyCourtJudgements'] = true;
         $this->countyCourtJudgements = $countyCourtJudgements;

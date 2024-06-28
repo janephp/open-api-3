@@ -8,7 +8,7 @@ class PullRequestMinimalBase extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PullRequestMinimalBase extends \ArrayObject
      *
      * @return string
      */
-    public function getRef() : string
+    public function getRef(): string
     {
         return $this->ref;
     }
@@ -46,7 +46,7 @@ class PullRequestMinimalBase extends \ArrayObject
      *
      * @return self
      */
-    public function setRef(string $ref) : self
+    public function setRef(string $ref): self
     {
         $this->initialized['ref'] = true;
         $this->ref = $ref;
@@ -57,7 +57,7 @@ class PullRequestMinimalBase extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -68,7 +68,7 @@ class PullRequestMinimalBase extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -79,7 +79,7 @@ class PullRequestMinimalBase extends \ArrayObject
      *
      * @return PullRequestMinimalBaseRepo
      */
-    public function getRepo() : PullRequestMinimalBaseRepo
+    public function getRepo(): PullRequestMinimalBaseRepo
     {
         return $this->repo;
     }
@@ -90,7 +90,7 @@ class PullRequestMinimalBase extends \ArrayObject
      *
      * @return self
      */
-    public function setRepo(PullRequestMinimalBaseRepo $repo) : self
+    public function setRepo(PullRequestMinimalBaseRepo $repo): self
     {
         $this->initialized['repo'] = true;
         $this->repo = $repo;

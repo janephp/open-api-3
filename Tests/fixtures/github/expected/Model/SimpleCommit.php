@@ -8,7 +8,7 @@ class SimpleCommit extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -64,7 +64,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -75,7 +75,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getTreeId() : string
+    public function getTreeId(): string
     {
         return $this->treeId;
     }
@@ -86,7 +86,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setTreeId(string $treeId) : self
+    public function setTreeId(string $treeId): self
     {
         $this->initialized['treeId'] = true;
         $this->treeId = $treeId;
@@ -97,7 +97,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -108,7 +108,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -119,7 +119,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getTimestamp() : \DateTime
+    public function getTimestamp(): \DateTime
     {
         return $this->timestamp;
     }
@@ -130,7 +130,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setTimestamp(\DateTime $timestamp) : self
+    public function setTimestamp(\DateTime $timestamp): self
     {
         $this->initialized['timestamp'] = true;
         $this->timestamp = $timestamp;
@@ -141,7 +141,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return SimpleCommitAuthor|null
      */
-    public function getAuthor() : ?SimpleCommitAuthor
+    public function getAuthor(): ?SimpleCommitAuthor
     {
         return $this->author;
     }
@@ -152,7 +152,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(?SimpleCommitAuthor $author) : self
+    public function setAuthor(?SimpleCommitAuthor $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -163,7 +163,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return SimpleCommitCommitter|null
      */
-    public function getCommitter() : ?SimpleCommitCommitter
+    public function getCommitter(): ?SimpleCommitCommitter
     {
         return $this->committer;
     }
@@ -174,7 +174,7 @@ class SimpleCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitter(?SimpleCommitCommitter $committer) : self
+    public function setCommitter(?SimpleCommitCommitter $committer): self
     {
         $this->initialized['committer'] = true;
         $this->committer = $committer;

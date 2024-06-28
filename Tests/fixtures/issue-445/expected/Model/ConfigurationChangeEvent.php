@@ -8,7 +8,7 @@ class ConfigurationChangeEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ConfigurationChangeEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getDocumentType() : ?string
+    public function getDocumentType(): ?string
     {
         return $this->documentType;
     }
@@ -34,7 +34,7 @@ class ConfigurationChangeEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setDocumentType(?string $documentType) : self
+    public function setDocumentType(?string $documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;

@@ -8,7 +8,7 @@ class HideReplyRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class HideReplyRequest extends \ArrayObject
      *
      * @return bool
      */
-    public function getHidden() : bool
+    public function getHidden(): bool
     {
         return $this->hidden;
     }
@@ -34,7 +34,7 @@ class HideReplyRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setHidden(bool $hidden) : self
+    public function setHidden(bool $hidden): self
     {
         $this->initialized['hidden'] = true;
         $this->hidden = $hidden;

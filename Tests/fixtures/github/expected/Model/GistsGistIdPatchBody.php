@@ -8,7 +8,7 @@ class GistsGistIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GistsGistIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -40,7 +40,7 @@ class GistsGistIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -51,7 +51,7 @@ class GistsGistIdPatchBody extends \ArrayObject
      *
      * @return array<string, GistsGistIdPatchBodyFilesItem>
      */
-    public function getFiles() : iterable
+    public function getFiles(): iterable
     {
         return $this->files;
     }
@@ -62,7 +62,7 @@ class GistsGistIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setFiles(iterable $files) : self
+    public function setFiles(iterable $files): self
     {
         $this->initialized['files'] = true;
         $this->files = $files;

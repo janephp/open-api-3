@@ -8,7 +8,7 @@ class ReposOwnerRepoStatusesShaPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -43,7 +43,7 @@ class ReposOwnerRepoStatusesShaPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -54,7 +54,7 @@ class ReposOwnerRepoStatusesShaPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -67,7 +67,7 @@ class ReposOwnerRepoStatusesShaPostBody extends \ArrayObject
     *
     * @return string
     */
-    public function getTargetUrl() : string
+    public function getTargetUrl(): string
     {
         return $this->targetUrl;
     }
@@ -80,7 +80,7 @@ class ReposOwnerRepoStatusesShaPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setTargetUrl(string $targetUrl) : self
+    public function setTargetUrl(string $targetUrl): self
     {
         $this->initialized['targetUrl'] = true;
         $this->targetUrl = $targetUrl;
@@ -91,7 +91,7 @@ class ReposOwnerRepoStatusesShaPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -102,7 +102,7 @@ class ReposOwnerRepoStatusesShaPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -113,7 +113,7 @@ class ReposOwnerRepoStatusesShaPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getContext() : string
+    public function getContext(): string
     {
         return $this->context;
     }
@@ -124,7 +124,7 @@ class ReposOwnerRepoStatusesShaPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setContext(string $context) : self
+    public function setContext(string $context): self
     {
         $this->initialized['context'] = true;
         $this->context = $context;

@@ -8,7 +8,7 @@ class NotificationsPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class NotificationsPutBody extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getLastReadAt() : \DateTime
+    public function getLastReadAt(): \DateTime
     {
         return $this->lastReadAt;
     }
@@ -40,7 +40,7 @@ class NotificationsPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLastReadAt(\DateTime $lastReadAt) : self
+    public function setLastReadAt(\DateTime $lastReadAt): self
     {
         $this->initialized['lastReadAt'] = true;
         $this->lastReadAt = $lastReadAt;
@@ -51,7 +51,7 @@ class NotificationsPutBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getRead() : bool
+    public function getRead(): bool
     {
         return $this->read;
     }
@@ -62,7 +62,7 @@ class NotificationsPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRead(bool $read) : self
+    public function setRead(bool $read): self
     {
         $this->initialized['read'] = true;
         $this->read = $read;

@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -107,7 +107,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getRevenue() : float
+    public function getRevenue(): float
     {
         return $this->revenue;
     }
@@ -118,7 +118,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setRevenue(float $revenue) : self
+    public function setRevenue(float $revenue): self
     {
         $this->initialized['revenue'] = true;
         $this->revenue = $revenue;
@@ -129,7 +129,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getOperatingCosts() : float
+    public function getOperatingCosts(): float
     {
         return $this->operatingCosts;
     }
@@ -140,7 +140,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setOperatingCosts(float $operatingCosts) : self
+    public function setOperatingCosts(float $operatingCosts): self
     {
         $this->initialized['operatingCosts'] = true;
         $this->operatingCosts = $operatingCosts;
@@ -151,7 +151,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getOperatingProfit() : float
+    public function getOperatingProfit(): float
     {
         return $this->operatingProfit;
     }
@@ -162,7 +162,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setOperatingProfit(float $operatingProfit) : self
+    public function setOperatingProfit(float $operatingProfit): self
     {
         $this->initialized['operatingProfit'] = true;
         $this->operatingProfit = $operatingProfit;
@@ -173,7 +173,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getWagesAndSalaries() : float
+    public function getWagesAndSalaries(): float
     {
         return $this->wagesAndSalaries;
     }
@@ -184,7 +184,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setWagesAndSalaries(float $wagesAndSalaries) : self
+    public function setWagesAndSalaries(float $wagesAndSalaries): self
     {
         $this->initialized['wagesAndSalaries'] = true;
         $this->wagesAndSalaries = $wagesAndSalaries;
@@ -195,7 +195,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getPensionCosts() : float
+    public function getPensionCosts(): float
     {
         return $this->pensionCosts;
     }
@@ -206,7 +206,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setPensionCosts(float $pensionCosts) : self
+    public function setPensionCosts(float $pensionCosts): self
     {
         $this->initialized['pensionCosts'] = true;
         $this->pensionCosts = $pensionCosts;
@@ -217,7 +217,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getDepreciation() : float
+    public function getDepreciation(): float
     {
         return $this->depreciation;
     }
@@ -228,7 +228,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setDepreciation(float $depreciation) : self
+    public function setDepreciation(float $depreciation): self
     {
         $this->initialized['depreciation'] = true;
         $this->depreciation = $depreciation;
@@ -239,7 +239,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getAmortisation() : float
+    public function getAmortisation(): float
     {
         return $this->amortisation;
     }
@@ -250,7 +250,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setAmortisation(float $amortisation) : self
+    public function setAmortisation(float $amortisation): self
     {
         $this->initialized['amortisation'] = true;
         $this->amortisation = $amortisation;
@@ -261,7 +261,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getFinancialExpenses() : float
+    public function getFinancialExpenses(): float
     {
         return $this->financialExpenses;
     }
@@ -272,7 +272,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setFinancialExpenses(float $financialExpenses) : self
+    public function setFinancialExpenses(float $financialExpenses): self
     {
         $this->initialized['financialExpenses'] = true;
         $this->financialExpenses = $financialExpenses;
@@ -283,7 +283,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getProfitBeforeTax() : float
+    public function getProfitBeforeTax(): float
     {
         return $this->profitBeforeTax;
     }
@@ -294,7 +294,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setProfitBeforeTax(float $profitBeforeTax) : self
+    public function setProfitBeforeTax(float $profitBeforeTax): self
     {
         $this->initialized['profitBeforeTax'] = true;
         $this->profitBeforeTax = $profitBeforeTax;
@@ -305,7 +305,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getTax() : float
+    public function getTax(): float
     {
         return $this->tax;
     }
@@ -316,7 +316,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setTax(float $tax) : self
+    public function setTax(float $tax): self
     {
         $this->initialized['tax'] = true;
         $this->tax = $tax;
@@ -327,7 +327,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getProfitAfterTax() : float
+    public function getProfitAfterTax(): float
     {
         return $this->profitAfterTax;
     }
@@ -338,7 +338,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setProfitAfterTax(float $profitAfterTax) : self
+    public function setProfitAfterTax(float $profitAfterTax): self
     {
         $this->initialized['profitAfterTax'] = true;
         $this->profitAfterTax = $profitAfterTax;
@@ -349,7 +349,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getDividends() : float
+    public function getDividends(): float
     {
         return $this->dividends;
     }
@@ -360,7 +360,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setDividends(float $dividends) : self
+    public function setDividends(float $dividends): self
     {
         $this->initialized['dividends'] = true;
         $this->dividends = $dividends;
@@ -371,7 +371,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getMinorityInterests() : float
+    public function getMinorityInterests(): float
     {
         return $this->minorityInterests;
     }
@@ -382,7 +382,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setMinorityInterests(float $minorityInterests) : self
+    public function setMinorityInterests(float $minorityInterests): self
     {
         $this->initialized['minorityInterests'] = true;
         $this->minorityInterests = $minorityInterests;
@@ -393,7 +393,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getOtherAppropriations() : float
+    public function getOtherAppropriations(): float
     {
         return $this->otherAppropriations;
     }
@@ -404,7 +404,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setOtherAppropriations(float $otherAppropriations) : self
+    public function setOtherAppropriations(float $otherAppropriations): self
     {
         $this->initialized['otherAppropriations'] = true;
         $this->otherAppropriations = $otherAppropriations;
@@ -415,7 +415,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return float
      */
-    public function getRetainedProfit() : float
+    public function getRetainedProfit(): float
     {
         return $this->retainedProfit;
     }
@@ -426,7 +426,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemProfitAndLoss e
      *
      * @return self
      */
-    public function setRetainedProfit(float $retainedProfit) : self
+    public function setRetainedProfit(float $retainedProfit): self
     {
         $this->initialized['retainedProfit'] = true;
         $this->retainedProfit = $retainedProfit;

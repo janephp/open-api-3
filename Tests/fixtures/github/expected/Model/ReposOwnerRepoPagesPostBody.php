@@ -8,7 +8,7 @@ class ReposOwnerRepoPagesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ReposOwnerRepoPagesPostBody extends \ArrayObject
      *
      * @return ReposOwnerRepoPagesPostBodySource
      */
-    public function getSource() : ReposOwnerRepoPagesPostBodySource
+    public function getSource(): ReposOwnerRepoPagesPostBodySource
     {
         return $this->source;
     }
@@ -34,7 +34,7 @@ class ReposOwnerRepoPagesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSource(ReposOwnerRepoPagesPostBodySource $source) : self
+    public function setSource(ReposOwnerRepoPagesPostBodySource $source): self
     {
         $this->initialized['source'] = true;
         $this->source = $source;

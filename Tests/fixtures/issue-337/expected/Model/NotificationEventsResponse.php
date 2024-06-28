@@ -8,7 +8,7 @@ class NotificationEventsResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class NotificationEventsResponse extends \ArrayObject
      *
      * @return float
      */
-    public function getTotalCount() : float
+    public function getTotalCount(): float
     {
         return $this->totalCount;
     }
@@ -46,7 +46,7 @@ class NotificationEventsResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalCount(float $totalCount) : self
+    public function setTotalCount(float $totalCount): self
     {
         $this->initialized['totalCount'] = true;
         $this->totalCount = $totalCount;
@@ -57,7 +57,7 @@ class NotificationEventsResponse extends \ArrayObject
      *
      * @return list<NotificationEvent>
      */
-    public function getData() : array
+    public function getData(): array
     {
         return $this->data;
     }
@@ -68,7 +68,7 @@ class NotificationEventsResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setData(array $data) : self
+    public function setData(array $data): self
     {
         $this->initialized['data'] = true;
         $this->data = $data;
@@ -79,7 +79,7 @@ class NotificationEventsResponse extends \ArrayObject
      *
      * @return Paging
      */
-    public function getPaging() : Paging
+    public function getPaging(): Paging
     {
         return $this->paging;
     }
@@ -90,7 +90,7 @@ class NotificationEventsResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setPaging(Paging $paging) : self
+    public function setPaging(Paging $paging): self
     {
         $this->initialized['paging'] = true;
         $this->paging = $paging;

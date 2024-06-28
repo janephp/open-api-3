@@ -8,7 +8,7 @@ class Hook extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class Hook extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -100,7 +100,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -111,7 +111,7 @@ class Hook extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -122,7 +122,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -133,7 +133,7 @@ class Hook extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -144,7 +144,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -155,7 +155,7 @@ class Hook extends \ArrayObject
      *
      * @return bool
      */
-    public function getActive() : bool
+    public function getActive(): bool
     {
         return $this->active;
     }
@@ -166,7 +166,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setActive(bool $active) : self
+    public function setActive(bool $active): self
     {
         $this->initialized['active'] = true;
         $this->active = $active;
@@ -177,7 +177,7 @@ class Hook extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getEvents() : array
+    public function getEvents(): array
     {
         return $this->events;
     }
@@ -188,7 +188,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setEvents(array $events) : self
+    public function setEvents(array $events): self
     {
         $this->initialized['events'] = true;
         $this->events = $events;
@@ -199,7 +199,7 @@ class Hook extends \ArrayObject
      *
      * @return HookConfig
      */
-    public function getConfig() : HookConfig
+    public function getConfig(): HookConfig
     {
         return $this->config;
     }
@@ -210,7 +210,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setConfig(HookConfig $config) : self
+    public function setConfig(HookConfig $config): self
     {
         $this->initialized['config'] = true;
         $this->config = $config;
@@ -221,7 +221,7 @@ class Hook extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -232,7 +232,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -243,7 +243,7 @@ class Hook extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -254,7 +254,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -265,7 +265,7 @@ class Hook extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -276,7 +276,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -287,7 +287,7 @@ class Hook extends \ArrayObject
      *
      * @return string
      */
-    public function getTestUrl() : string
+    public function getTestUrl(): string
     {
         return $this->testUrl;
     }
@@ -298,7 +298,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setTestUrl(string $testUrl) : self
+    public function setTestUrl(string $testUrl): self
     {
         $this->initialized['testUrl'] = true;
         $this->testUrl = $testUrl;
@@ -309,7 +309,7 @@ class Hook extends \ArrayObject
      *
      * @return string
      */
-    public function getPingUrl() : string
+    public function getPingUrl(): string
     {
         return $this->pingUrl;
     }
@@ -320,7 +320,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setPingUrl(string $pingUrl) : self
+    public function setPingUrl(string $pingUrl): self
     {
         $this->initialized['pingUrl'] = true;
         $this->pingUrl = $pingUrl;
@@ -331,7 +331,7 @@ class Hook extends \ArrayObject
      *
      * @return HookResponse
      */
-    public function getLastResponse() : HookResponse
+    public function getLastResponse(): HookResponse
     {
         return $this->lastResponse;
     }
@@ -342,7 +342,7 @@ class Hook extends \ArrayObject
      *
      * @return self
      */
-    public function setLastResponse(HookResponse $lastResponse) : self
+    public function setLastResponse(HookResponse $lastResponse): self
     {
         $this->initialized['lastResponse'] = true;
         $this->lastResponse = $lastResponse;

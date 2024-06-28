@@ -8,7 +8,7 @@ class IdentityProvider extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return list<IdpClaimToUserAttributeMapping>|null
      */
-    public function getClaimMapping() : ?array
+    public function getClaimMapping(): ?array
     {
         return $this->claimMapping;
     }
@@ -70,7 +70,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return self
      */
-    public function setClaimMapping(?array $claimMapping) : self
+    public function setClaimMapping(?array $claimMapping): self
     {
         $this->initialized['claimMapping'] = true;
         $this->claimMapping = $claimMapping;
@@ -81,7 +81,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return string|null
      */
-    public function getGroupClaimType() : ?string
+    public function getGroupClaimType(): ?string
     {
         return $this->groupClaimType;
     }
@@ -92,7 +92,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return self
      */
-    public function setGroupClaimType(?string $groupClaimType) : self
+    public function setGroupClaimType(?string $groupClaimType): self
     {
         $this->initialized['groupClaimType'] = true;
         $this->groupClaimType = $groupClaimType;
@@ -103,7 +103,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return list<IdpGroupToUserRoleMapping>|null
      */
-    public function getGroupMapping() : ?array
+    public function getGroupMapping(): ?array
     {
         return $this->groupMapping;
     }
@@ -114,7 +114,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return self
      */
-    public function setGroupMapping(?array $groupMapping) : self
+    public function setGroupMapping(?array $groupMapping): self
     {
         $this->initialized['groupMapping'] = true;
         $this->groupMapping = $groupMapping;
@@ -125,7 +125,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFallbackUserRoleId() : ?string
+    public function getFallbackUserRoleId(): ?string
     {
         return $this->fallbackUserRoleId;
     }
@@ -136,7 +136,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return self
      */
-    public function setFallbackUserRoleId(?string $fallbackUserRoleId) : self
+    public function setFallbackUserRoleId(?string $fallbackUserRoleId): self
     {
         $this->initialized['fallbackUserRoleId'] = true;
         $this->fallbackUserRoleId = $fallbackUserRoleId;
@@ -147,7 +147,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -158,7 +158,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -169,7 +169,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return string|null
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -180,7 +180,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return self
      */
-    public function setName(?string $name) : self
+    public function setName(?string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -191,7 +191,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDisplayName() : ?string
+    public function getDisplayName(): ?string
     {
         return $this->displayName;
     }
@@ -202,7 +202,7 @@ class IdentityProvider extends \ArrayObject
      *
      * @return self
      */
-    public function setDisplayName(?string $displayName) : self
+    public function setDisplayName(?string $displayName): self
     {
         $this->initialized['displayName'] = true;
         $this->displayName = $displayName;

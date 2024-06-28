@@ -18,11 +18,11 @@ class ReposCreateDeploymentConflictException extends ConflictException
         $this->reposOwnerRepoDeploymentsPostResponse409 = $reposOwnerRepoDeploymentsPostResponse409;
         $this->response = $response;
     }
-    public function getReposOwnerRepoDeploymentsPostResponse409() : \Github\Model\ReposOwnerRepoDeploymentsPostResponse409
+    public function getReposOwnerRepoDeploymentsPostResponse409(): \Github\Model\ReposOwnerRepoDeploymentsPostResponse409
     {
         return $this->reposOwnerRepoDeploymentsPostResponse409;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

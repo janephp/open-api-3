@@ -8,7 +8,7 @@ class ShareAggregationRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -52,7 +52,7 @@ class ShareAggregationRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -63,7 +63,7 @@ class ShareAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -74,7 +74,7 @@ class ShareAggregationRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getSearchBehaviors() : ?array
+    public function getSearchBehaviors(): ?array
     {
         return $this->searchBehaviors;
     }
@@ -85,7 +85,7 @@ class ShareAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchBehaviors(?array $searchBehaviors) : self
+    public function setSearchBehaviors(?array $searchBehaviors): self
     {
         $this->initialized['searchBehaviors'] = true;
         $this->searchBehaviors = $searchBehaviors;
@@ -107,7 +107,7 @@ class ShareAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -123,7 +123,7 @@ class ShareAggregationRequest extends \ArrayObject
     *
     * @return list<AggregationFilter>|null
     */
-    public function getAggregationFilters() : ?array
+    public function getAggregationFilters(): ?array
     {
         return $this->aggregationFilters;
     }
@@ -139,7 +139,7 @@ class ShareAggregationRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setAggregationFilters(?array $aggregationFilters) : self
+    public function setAggregationFilters(?array $aggregationFilters): self
     {
         $this->initialized['aggregationFilters'] = true;
         $this->aggregationFilters = $aggregationFilters;
@@ -150,7 +150,7 @@ class ShareAggregationRequest extends \ArrayObject
      *
      * @return list<AggregatorBase>
      */
-    public function getAggregators() : array
+    public function getAggregators(): array
     {
         return $this->aggregators;
     }
@@ -161,7 +161,7 @@ class ShareAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setAggregators(array $aggregators) : self
+    public function setAggregators(array $aggregators): self
     {
         $this->initialized['aggregators'] = true;
         $this->aggregators = $aggregators;

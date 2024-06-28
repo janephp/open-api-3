@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportOtherInformation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportOtherInformation extends \ArrayObject
      *
      * @return list<GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem>
      */
-    public function getAdvisors() : array
+    public function getAdvisors(): array
     {
         return $this->advisors;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportOtherInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setAdvisors(array $advisors) : self
+    public function setAdvisors(array $advisors): self
     {
         $this->initialized['advisors'] = true;
         $this->advisors = $advisors;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportOtherInformation extends \ArrayObject
      *
      * @return list<GbCompanyReportExampleResponseReportOtherInformationEmployeesInformationItem>
      */
-    public function getEmployeesInformation() : array
+    public function getEmployeesInformation(): array
     {
         return $this->employeesInformation;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportOtherInformation extends \ArrayObject
      *
      * @return self
      */
-    public function setEmployeesInformation(array $employeesInformation) : self
+    public function setEmployeesInformation(array $employeesInformation): self
     {
         $this->initialized['employeesInformation'] = true;
         $this->employeesInformation = $employeesInformation;

@@ -8,7 +8,7 @@ class HookResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class HookResponse extends \ArrayObject
      *
      * @return int|null
      */
-    public function getCode() : ?int
+    public function getCode(): ?int
     {
         return $this->code;
     }
@@ -46,7 +46,7 @@ class HookResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setCode(?int $code) : self
+    public function setCode(?int $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -57,7 +57,7 @@ class HookResponse extends \ArrayObject
      *
      * @return string|null
      */
-    public function getStatus() : ?string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -68,7 +68,7 @@ class HookResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(?string $status) : self
+    public function setStatus(?string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -79,7 +79,7 @@ class HookResponse extends \ArrayObject
      *
      * @return string|null
      */
-    public function getMessage() : ?string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -90,7 +90,7 @@ class HookResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(?string $message) : self
+    public function setMessage(?string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;

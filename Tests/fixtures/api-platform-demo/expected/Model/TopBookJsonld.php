@@ -8,7 +8,7 @@ class TopBookJsonld extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -82,7 +82,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setContext($context) : self
+    public function setContext($context): self
     {
         $this->initialized['context'] = true;
         $this->context = $context;
@@ -93,7 +93,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -104,7 +104,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -115,7 +115,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -126,7 +126,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -137,7 +137,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return int
      */
-    public function getId2() : int
+    public function getId2(): int
     {
         return $this->id2;
     }
@@ -148,7 +148,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setId2(int $id2) : self
+    public function setId2(int $id2): self
     {
         $this->initialized['id2'] = true;
         $this->id2 = $id2;
@@ -159,7 +159,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -170,7 +170,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -181,7 +181,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthor() : string
+    public function getAuthor(): string
     {
         return $this->author;
     }
@@ -192,7 +192,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(string $author) : self
+    public function setAuthor(string $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -203,7 +203,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getPart() : string
+    public function getPart(): string
     {
         return $this->part;
     }
@@ -214,7 +214,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setPart(string $part) : self
+    public function setPart(string $part): self
     {
         $this->initialized['part'] = true;
         $this->part = $part;
@@ -225,7 +225,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return string
      */
-    public function getPlace() : string
+    public function getPlace(): string
     {
         return $this->place;
     }
@@ -236,7 +236,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setPlace(string $place) : self
+    public function setPlace(string $place): self
     {
         $this->initialized['place'] = true;
         $this->place = $place;
@@ -247,7 +247,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return int
      */
-    public function getBorrowCount() : int
+    public function getBorrowCount(): int
     {
         return $this->borrowCount;
     }
@@ -258,7 +258,7 @@ class TopBookJsonld extends \ArrayObject
      *
      * @return self
      */
-    public function setBorrowCount(int $borrowCount) : self
+    public function setBorrowCount(int $borrowCount): self
     {
         $this->initialized['borrowCount'] = true;
         $this->borrowCount = $borrowCount;

@@ -8,7 +8,7 @@ class AudioMetadata extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -94,7 +94,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -116,7 +116,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setDescriptions($descriptions) : self
+    public function setDescriptions($descriptions): self
     {
         $this->initialized['descriptions'] = true;
         $this->descriptions = $descriptions;
@@ -127,7 +127,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileExtension() : ?string
+    public function getFileExtension(): ?string
     {
         return $this->fileExtension;
     }
@@ -138,7 +138,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileExtension(?string $fileExtension) : self
+    public function setFileExtension(?string $fileExtension): self
     {
         $this->initialized['fileExtension'] = true;
         $this->fileExtension = $fileExtension;
@@ -149,7 +149,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileName() : ?string
+    public function getFileName(): ?string
     {
         return $this->fileName;
     }
@@ -160,7 +160,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileName(?string $fileName) : self
+    public function setFileName(?string $fileName): self
     {
         $this->initialized['fileName'] = true;
         $this->fileName = $fileName;
@@ -171,7 +171,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFilePath() : ?string
+    public function getFilePath(): ?string
     {
         return $this->filePath;
     }
@@ -182,7 +182,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFilePath(?string $filePath) : self
+    public function setFilePath(?string $filePath): self
     {
         $this->initialized['filePath'] = true;
         $this->filePath = $filePath;
@@ -193,7 +193,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return int|null
      */
-    public function getFileSizeInBytes() : ?int
+    public function getFileSizeInBytes(): ?int
     {
         return $this->fileSizeInBytes;
     }
@@ -204,7 +204,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileSizeInBytes(?int $fileSizeInBytes) : self
+    public function setFileSizeInBytes(?int $fileSizeInBytes): self
     {
         $this->initialized['fileSizeInBytes'] = true;
         $this->fileSizeInBytes = $fileSizeInBytes;
@@ -215,7 +215,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSha1Hash() : ?string
+    public function getSha1Hash(): ?string
     {
         return $this->sha1Hash;
     }
@@ -226,7 +226,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setSha1Hash(?string $sha1Hash) : self
+    public function setSha1Hash(?string $sha1Hash): self
     {
         $this->initialized['sha1Hash'] = true;
         $this->sha1Hash = $sha1Hash;
@@ -248,7 +248,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setXmpMetadata($xmpMetadata) : self
+    public function setXmpMetadata($xmpMetadata): self
     {
         $this->initialized['xmpMetadata'] = true;
         $this->xmpMetadata = $xmpMetadata;
@@ -270,7 +270,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setExifMetadata($exifMetadata) : self
+    public function setExifMetadata($exifMetadata): self
     {
         $this->initialized['exifMetadata'] = true;
         $this->exifMetadata = $exifMetadata;
@@ -281,7 +281,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLanguage() : ?string
+    public function getLanguage(): ?string
     {
         return $this->language;
     }
@@ -292,7 +292,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(?string $language) : self
+    public function setLanguage(?string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -303,7 +303,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return list<AudioStream>|null
      */
-    public function getAudioStreams() : ?array
+    public function getAudioStreams(): ?array
     {
         return $this->audioStreams;
     }
@@ -314,7 +314,7 @@ class AudioMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setAudioStreams(?array $audioStreams) : self
+    public function setAudioStreams(?array $audioStreams): self
     {
         $this->initialized['audioStreams'] = true;
         $this->audioStreams = $audioStreams;

@@ -8,7 +8,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -106,7 +106,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -117,7 +117,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return int
      */
-    public function getPrimaryKeyId() : int
+    public function getPrimaryKeyId(): int
     {
         return $this->primaryKeyId;
     }
@@ -128,7 +128,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPrimaryKeyId(int $primaryKeyId) : self
+    public function setPrimaryKeyId(int $primaryKeyId): self
     {
         $this->initialized['primaryKeyId'] = true;
         $this->primaryKeyId = $primaryKeyId;
@@ -139,7 +139,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return string
      */
-    public function getKeyId() : string
+    public function getKeyId(): string
     {
         return $this->keyId;
     }
@@ -150,7 +150,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setKeyId(string $keyId) : self
+    public function setKeyId(string $keyId): self
     {
         $this->initialized['keyId'] = true;
         $this->keyId = $keyId;
@@ -161,7 +161,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return string
      */
-    public function getPublicKey() : string
+    public function getPublicKey(): string
     {
         return $this->publicKey;
     }
@@ -172,7 +172,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPublicKey(string $publicKey) : self
+    public function setPublicKey(string $publicKey): self
     {
         $this->initialized['publicKey'] = true;
         $this->publicKey = $publicKey;
@@ -183,7 +183,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getEmails() : array
+    public function getEmails(): array
     {
         return $this->emails;
     }
@@ -194,7 +194,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setEmails(array $emails) : self
+    public function setEmails(array $emails): self
     {
         $this->initialized['emails'] = true;
         $this->emails = $emails;
@@ -205,7 +205,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getSubkeys() : array
+    public function getSubkeys(): array
     {
         return $this->subkeys;
     }
@@ -216,7 +216,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSubkeys(array $subkeys) : self
+    public function setSubkeys(array $subkeys): self
     {
         $this->initialized['subkeys'] = true;
         $this->subkeys = $subkeys;
@@ -227,7 +227,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getCanSign() : bool
+    public function getCanSign(): bool
     {
         return $this->canSign;
     }
@@ -238,7 +238,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCanSign(bool $canSign) : self
+    public function setCanSign(bool $canSign): self
     {
         $this->initialized['canSign'] = true;
         $this->canSign = $canSign;
@@ -249,7 +249,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getCanEncryptComms() : bool
+    public function getCanEncryptComms(): bool
     {
         return $this->canEncryptComms;
     }
@@ -260,7 +260,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCanEncryptComms(bool $canEncryptComms) : self
+    public function setCanEncryptComms(bool $canEncryptComms): self
     {
         $this->initialized['canEncryptComms'] = true;
         $this->canEncryptComms = $canEncryptComms;
@@ -271,7 +271,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getCanEncryptStorage() : bool
+    public function getCanEncryptStorage(): bool
     {
         return $this->canEncryptStorage;
     }
@@ -282,7 +282,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCanEncryptStorage(bool $canEncryptStorage) : self
+    public function setCanEncryptStorage(bool $canEncryptStorage): self
     {
         $this->initialized['canEncryptStorage'] = true;
         $this->canEncryptStorage = $canEncryptStorage;
@@ -293,7 +293,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getCanCertify() : bool
+    public function getCanCertify(): bool
     {
         return $this->canCertify;
     }
@@ -304,7 +304,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCanCertify(bool $canCertify) : self
+    public function setCanCertify(bool $canCertify): self
     {
         $this->initialized['canCertify'] = true;
         $this->canCertify = $canCertify;
@@ -315,7 +315,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -326,7 +326,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -337,7 +337,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExpiresAt() : ?string
+    public function getExpiresAt(): ?string
     {
         return $this->expiresAt;
     }
@@ -348,7 +348,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setExpiresAt(?string $expiresAt) : self
+    public function setExpiresAt(?string $expiresAt): self
     {
         $this->initialized['expiresAt'] = true;
         $this->expiresAt = $expiresAt;
@@ -359,7 +359,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getRawKey() : ?string
+    public function getRawKey(): ?string
     {
         return $this->rawKey;
     }
@@ -370,7 +370,7 @@ class GpgKeySubkeysItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRawKey(?string $rawKey) : self
+    public function setRawKey(?string $rawKey): self
     {
         $this->initialized['rawKey'] = true;
         $this->rawKey = $rawKey;

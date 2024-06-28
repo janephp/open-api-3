@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPullNumberUpdateBranchPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ReposOwnerRepoPullsPullNumberUpdateBranchPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getExpectedHeadSha() : string
+    public function getExpectedHeadSha(): string
     {
         return $this->expectedHeadSha;
     }
@@ -34,7 +34,7 @@ class ReposOwnerRepoPullsPullNumberUpdateBranchPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setExpectedHeadSha(string $expectedHeadSha) : self
+    public function setExpectedHeadSha(string $expectedHeadSha): self
     {
         $this->initialized['expectedHeadSha'] = true;
         $this->expectedHeadSha = $expectedHeadSha;

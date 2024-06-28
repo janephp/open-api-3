@@ -8,7 +8,7 @@ class FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class FieldBase
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -102,7 +102,7 @@ class FieldBase
      *
      * @return string|null
      */
-    public function getIndexId() : ?string
+    public function getIndexId(): ?string
     {
         return $this->indexId;
     }
@@ -121,7 +121,7 @@ class FieldBase
      *
      * @return string|null
      */
-    public function getFieldNamespace() : ?string
+    public function getFieldNamespace(): ?string
     {
         return $this->fieldNamespace;
     }
@@ -178,7 +178,7 @@ class FieldBase
      *
      * @return bool
      */
-    public function getRequired() : bool
+    public function getRequired(): bool
     {
         return $this->required;
     }
@@ -197,7 +197,7 @@ class FieldBase
      *
      * @return bool
      */
-    public function getFixed() : bool
+    public function getFixed(): bool
     {
         return $this->fixed;
     }
@@ -216,7 +216,7 @@ class FieldBase
      *
      * @return bool
      */
-    public function getIndex() : bool
+    public function getIndex(): bool
     {
         return $this->index;
     }
@@ -235,7 +235,7 @@ class FieldBase
      *
      * @return bool
      */
-    public function getSimpleSearch() : bool
+    public function getSimpleSearch(): bool
     {
         return $this->simpleSearch;
     }
@@ -254,7 +254,7 @@ class FieldBase
      *
      * @return bool
      */
-    public function getSortable() : bool
+    public function getSortable(): bool
     {
         return $this->sortable;
     }
@@ -273,7 +273,7 @@ class FieldBase
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

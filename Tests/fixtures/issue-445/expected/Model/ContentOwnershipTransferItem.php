@@ -8,7 +8,7 @@ class ContentOwnershipTransferItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ContentOwnershipTransferItem extends \ArrayObject
      *
      * @return string
      */
-    public function getTransferUserId() : string
+    public function getTransferUserId(): string
     {
         return $this->transferUserId;
     }
@@ -40,7 +40,7 @@ class ContentOwnershipTransferItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTransferUserId(string $transferUserId) : self
+    public function setTransferUserId(string $transferUserId): self
     {
         $this->initialized['transferUserId'] = true;
         $this->transferUserId = $transferUserId;
@@ -51,7 +51,7 @@ class ContentOwnershipTransferItem extends \ArrayObject
      *
      * @return string
      */
-    public function getContentId() : string
+    public function getContentId(): string
     {
         return $this->contentId;
     }
@@ -62,7 +62,7 @@ class ContentOwnershipTransferItem extends \ArrayObject
      *
      * @return self
      */
-    public function setContentId(string $contentId) : self
+    public function setContentId(string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;

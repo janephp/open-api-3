@@ -8,7 +8,7 @@ class LiveStreamTraceJob
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class LiveStreamTraceJob
      *
      * @return string|null
      */
-    public function getTraceJobId() : ?string
+    public function getTraceJobId(): ?string
     {
         return $this->traceJobId;
     }
@@ -52,7 +52,7 @@ class LiveStreamTraceJob
      *
      * @return self
      */
-    public function setTraceJobId(?string $traceJobId) : self
+    public function setTraceJobId(?string $traceJobId): self
     {
         $this->initialized['traceJobId'] = true;
         $this->traceJobId = $traceJobId;
@@ -63,7 +63,7 @@ class LiveStreamTraceJob
      *
      * @return string|null
      */
-    public function getIpAddress() : ?string
+    public function getIpAddress(): ?string
     {
         return $this->ipAddress;
     }
@@ -74,7 +74,7 @@ class LiveStreamTraceJob
      *
      * @return self
      */
-    public function setIpAddress(?string $ipAddress) : self
+    public function setIpAddress(?string $ipAddress): self
     {
         $this->initialized['ipAddress'] = true;
         $this->ipAddress = $ipAddress;
@@ -85,7 +85,7 @@ class LiveStreamTraceJob
      *
      * @return string|null
      */
-    public function getUserId() : ?string
+    public function getUserId(): ?string
     {
         return $this->userId;
     }
@@ -96,7 +96,7 @@ class LiveStreamTraceJob
      *
      * @return self
      */
-    public function setUserId(?string $userId) : self
+    public function setUserId(?string $userId): self
     {
         $this->initialized['userId'] = true;
         $this->userId = $userId;
@@ -107,7 +107,7 @@ class LiveStreamTraceJob
      *
      * @return string|null
      */
-    public function getApiClientId() : ?string
+    public function getApiClientId(): ?string
     {
         return $this->apiClientId;
     }
@@ -118,7 +118,7 @@ class LiveStreamTraceJob
      *
      * @return self
      */
-    public function setApiClientId(?string $apiClientId) : self
+    public function setApiClientId(?string $apiClientId): self
     {
         $this->initialized['apiClientId'] = true;
         $this->apiClientId = $apiClientId;

@@ -8,7 +8,7 @@ class TopicSearchResultItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -113,7 +113,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -124,7 +124,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -135,7 +135,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDisplayName() : ?string
+    public function getDisplayName(): ?string
     {
         return $this->displayName;
     }
@@ -146,7 +146,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDisplayName(?string $displayName) : self
+    public function setDisplayName(?string $displayName): self
     {
         $this->initialized['displayName'] = true;
         $this->displayName = $displayName;
@@ -157,7 +157,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getShortDescription() : ?string
+    public function getShortDescription(): ?string
     {
         return $this->shortDescription;
     }
@@ -168,7 +168,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setShortDescription(?string $shortDescription) : self
+    public function setShortDescription(?string $shortDescription): self
     {
         $this->initialized['shortDescription'] = true;
         $this->shortDescription = $shortDescription;
@@ -179,7 +179,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -190,7 +190,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -201,7 +201,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCreatedBy() : ?string
+    public function getCreatedBy(): ?string
     {
         return $this->createdBy;
     }
@@ -212,7 +212,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedBy(?string $createdBy) : self
+    public function setCreatedBy(?string $createdBy): self
     {
         $this->initialized['createdBy'] = true;
         $this->createdBy = $createdBy;
@@ -223,7 +223,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getReleased() : ?string
+    public function getReleased(): ?string
     {
         return $this->released;
     }
@@ -234,7 +234,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setReleased(?string $released) : self
+    public function setReleased(?string $released): self
     {
         $this->initialized['released'] = true;
         $this->released = $released;
@@ -245,7 +245,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -256,7 +256,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -267,7 +267,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -278,7 +278,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -289,7 +289,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getFeatured() : bool
+    public function getFeatured(): bool
     {
         return $this->featured;
     }
@@ -300,7 +300,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setFeatured(bool $featured) : self
+    public function setFeatured(bool $featured): self
     {
         $this->initialized['featured'] = true;
         $this->featured = $featured;
@@ -311,7 +311,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getCurated() : bool
+    public function getCurated(): bool
     {
         return $this->curated;
     }
@@ -322,7 +322,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCurated(bool $curated) : self
+    public function setCurated(bool $curated): self
     {
         $this->initialized['curated'] = true;
         $this->curated = $curated;
@@ -333,7 +333,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return int
      */
-    public function getScore() : int
+    public function getScore(): int
     {
         return $this->score;
     }
@@ -344,7 +344,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setScore(int $score) : self
+    public function setScore(int $score): self
     {
         $this->initialized['score'] = true;
         $this->score = $score;
@@ -355,7 +355,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return int|null
      */
-    public function getRepositoryCount() : ?int
+    public function getRepositoryCount(): ?int
     {
         return $this->repositoryCount;
     }
@@ -366,7 +366,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryCount(?int $repositoryCount) : self
+    public function setRepositoryCount(?int $repositoryCount): self
     {
         $this->initialized['repositoryCount'] = true;
         $this->repositoryCount = $repositoryCount;
@@ -377,7 +377,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLogoUrl() : ?string
+    public function getLogoUrl(): ?string
     {
         return $this->logoUrl;
     }
@@ -388,7 +388,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLogoUrl(?string $logoUrl) : self
+    public function setLogoUrl(?string $logoUrl): self
     {
         $this->initialized['logoUrl'] = true;
         $this->logoUrl = $logoUrl;
@@ -399,7 +399,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return list<SearchResultTextMatchesItem>
      */
-    public function getTextMatches() : array
+    public function getTextMatches(): array
     {
         return $this->textMatches;
     }
@@ -410,7 +410,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTextMatches(array $textMatches) : self
+    public function setTextMatches(array $textMatches): self
     {
         $this->initialized['textMatches'] = true;
         $this->textMatches = $textMatches;
@@ -421,7 +421,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return list<TopicSearchResultItemRelatedItem>|null
      */
-    public function getRelated() : ?array
+    public function getRelated(): ?array
     {
         return $this->related;
     }
@@ -432,7 +432,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRelated(?array $related) : self
+    public function setRelated(?array $related): self
     {
         $this->initialized['related'] = true;
         $this->related = $related;
@@ -443,7 +443,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return list<TopicSearchResultItemAliasesItem>|null
      */
-    public function getAliases() : ?array
+    public function getAliases(): ?array
     {
         return $this->aliases;
     }
@@ -454,7 +454,7 @@ class TopicSearchResultItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAliases(?array $aliases) : self
+    public function setAliases(?array $aliases): self
     {
         $this->initialized['aliases'] = true;
         $this->aliases = $aliases;

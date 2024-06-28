@@ -8,7 +8,7 @@ class RepositoryInvitation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -82,7 +82,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -93,7 +93,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return MinimalRepository
      */
-    public function getRepository() : MinimalRepository
+    public function getRepository(): MinimalRepository
     {
         return $this->repository;
     }
@@ -104,7 +104,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setRepository(MinimalRepository $repository) : self
+    public function setRepository(MinimalRepository $repository): self
     {
         $this->initialized['repository'] = true;
         $this->repository = $repository;
@@ -115,7 +115,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return RepositoryInvitationInvitee|null
      */
-    public function getInvitee() : ?RepositoryInvitationInvitee
+    public function getInvitee(): ?RepositoryInvitationInvitee
     {
         return $this->invitee;
     }
@@ -126,7 +126,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setInvitee(?RepositoryInvitationInvitee $invitee) : self
+    public function setInvitee(?RepositoryInvitationInvitee $invitee): self
     {
         $this->initialized['invitee'] = true;
         $this->invitee = $invitee;
@@ -137,7 +137,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return RepositoryInvitationInviter|null
      */
-    public function getInviter() : ?RepositoryInvitationInviter
+    public function getInviter(): ?RepositoryInvitationInviter
     {
         return $this->inviter;
     }
@@ -148,7 +148,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setInviter(?RepositoryInvitationInviter $inviter) : self
+    public function setInviter(?RepositoryInvitationInviter $inviter): self
     {
         $this->initialized['inviter'] = true;
         $this->inviter = $inviter;
@@ -159,7 +159,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return string
      */
-    public function getPermissions() : string
+    public function getPermissions(): string
     {
         return $this->permissions;
     }
@@ -170,7 +170,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(string $permissions) : self
+    public function setPermissions(string $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;
@@ -181,7 +181,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -192,7 +192,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -203,7 +203,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -214,7 +214,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -225,7 +225,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -236,7 +236,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -247,7 +247,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -258,7 +258,7 @@ class RepositoryInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;

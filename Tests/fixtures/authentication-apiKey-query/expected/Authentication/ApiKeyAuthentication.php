@@ -9,7 +9,7 @@ class ApiKeyAuthentication implements \Jane\Component\OpenApiRuntime\Client\Auth
     {
         $this->{'apiKey'} = $apiKey;
     }
-    public function authentication(\Psr\Http\Message\RequestInterface $request) : \Psr\Http\Message\RequestInterface
+    public function authentication(\Psr\Http\Message\RequestInterface $request): \Psr\Http\Message\RequestInterface
     {
         $uri = $request->getUri();
         $query = $uri->getQuery();
@@ -21,7 +21,7 @@ class ApiKeyAuthentication implements \Jane\Component\OpenApiRuntime\Client\Auth
         $request = $request->withUri($uri);
         return $request;
     }
-    public function getScope() : string
+    public function getScope(): string
     {
         return 'ApiKey';
     }

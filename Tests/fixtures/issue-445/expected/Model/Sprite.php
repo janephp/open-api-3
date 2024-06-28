@@ -8,7 +8,7 @@ class Sprite
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class Sprite
      *
      * @return int
      */
-    public function getWidth() : int
+    public function getWidth(): int
     {
         return $this->width;
     }
@@ -64,7 +64,7 @@ class Sprite
      *
      * @return self
      */
-    public function setWidth(int $width) : self
+    public function setWidth(int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;
@@ -75,7 +75,7 @@ class Sprite
      *
      * @return int
      */
-    public function getHeight() : int
+    public function getHeight(): int
     {
         return $this->height;
     }
@@ -86,7 +86,7 @@ class Sprite
      *
      * @return self
      */
-    public function setHeight(int $height) : self
+    public function setHeight(int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -97,7 +97,7 @@ class Sprite
      *
      * @return int
      */
-    public function getY() : int
+    public function getY(): int
     {
         return $this->y;
     }
@@ -108,7 +108,7 @@ class Sprite
      *
      * @return self
      */
-    public function setY(int $y) : self
+    public function setY(int $y): self
     {
         $this->initialized['y'] = true;
         $this->y = $y;
@@ -119,7 +119,7 @@ class Sprite
      *
      * @return int
      */
-    public function getX() : int
+    public function getX(): int
     {
         return $this->x;
     }
@@ -130,7 +130,7 @@ class Sprite
      *
      * @return self
      */
-    public function setX(int $x) : self
+    public function setX(int $x): self
     {
         $this->initialized['x'] = true;
         $this->x = $x;
@@ -141,7 +141,7 @@ class Sprite
      *
      * @return string
      */
-    public function getStart() : string
+    public function getStart(): string
     {
         return $this->start;
     }
@@ -152,7 +152,7 @@ class Sprite
      *
      * @return self
      */
-    public function setStart(string $start) : self
+    public function setStart(string $start): self
     {
         $this->initialized['start'] = true;
         $this->start = $start;
@@ -163,7 +163,7 @@ class Sprite
      *
      * @return string
      */
-    public function getEnd() : string
+    public function getEnd(): string
     {
         return $this->end;
     }
@@ -174,7 +174,7 @@ class Sprite
      *
      * @return self
      */
-    public function setEnd(string $end) : self
+    public function setEnd(string $end): self
     {
         $this->initialized['end'] = true;
         $this->end = $end;

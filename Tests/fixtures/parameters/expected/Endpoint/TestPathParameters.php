@@ -21,15 +21,15 @@ class TestPathParameters extends \Jane\Component\OpenApi3\Tests\Expected\Runtime
         $this->testFloat = $testFloat;
     }
     use \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{testString}', '{testInteger}', '{testFloat}'], [$this->testString, $this->testInteger, $this->testFloat], '/test-path/{testString}/{testInteger}/{testFloat}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
@@ -47,7 +47,7 @@ class TestPathParameters extends \Jane\Component\OpenApi3\Tests\Expected\Runtime
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

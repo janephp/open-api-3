@@ -8,7 +8,7 @@ class ViewTraffic extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ViewTraffic extends \ArrayObject
      *
      * @return int
      */
-    public function getCount() : int
+    public function getCount(): int
     {
         return $this->count;
     }
@@ -46,7 +46,7 @@ class ViewTraffic extends \ArrayObject
      *
      * @return self
      */
-    public function setCount(int $count) : self
+    public function setCount(int $count): self
     {
         $this->initialized['count'] = true;
         $this->count = $count;
@@ -57,7 +57,7 @@ class ViewTraffic extends \ArrayObject
      *
      * @return int
      */
-    public function getUniques() : int
+    public function getUniques(): int
     {
         return $this->uniques;
     }
@@ -68,7 +68,7 @@ class ViewTraffic extends \ArrayObject
      *
      * @return self
      */
-    public function setUniques(int $uniques) : self
+    public function setUniques(int $uniques): self
     {
         $this->initialized['uniques'] = true;
         $this->uniques = $uniques;
@@ -79,7 +79,7 @@ class ViewTraffic extends \ArrayObject
      *
      * @return list<Traffic>
      */
-    public function getViews() : array
+    public function getViews(): array
     {
         return $this->views;
     }
@@ -90,7 +90,7 @@ class ViewTraffic extends \ArrayObject
      *
      * @return self
      */
-    public function setViews(array $views) : self
+    public function setViews(array $views): self
     {
         $this->initialized['views'] = true;
         $this->views = $views;

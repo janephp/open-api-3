@@ -8,7 +8,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -63,7 +63,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -74,7 +74,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -85,7 +85,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTargetUrl() : string
+    public function getTargetUrl(): string
     {
         return $this->targetUrl;
     }
@@ -96,7 +96,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTargetUrl(string $targetUrl) : self
+    public function setTargetUrl(string $targetUrl): self
     {
         $this->initialized['targetUrl'] = true;
         $this->targetUrl = $targetUrl;
@@ -108,7 +108,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
     *
     * @return string
     */
-    public function getLogUrl() : string
+    public function getLogUrl(): string
     {
         return $this->logUrl;
     }
@@ -120,7 +120,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setLogUrl(string $logUrl) : self
+    public function setLogUrl(string $logUrl): self
     {
         $this->initialized['logUrl'] = true;
         $this->logUrl = $logUrl;
@@ -131,7 +131,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -142,7 +142,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -153,7 +153,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEnvironment() : string
+    public function getEnvironment(): string
     {
         return $this->environment;
     }
@@ -164,7 +164,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEnvironment(string $environment) : self
+    public function setEnvironment(string $environment): self
     {
         $this->initialized['environment'] = true;
         $this->environment = $environment;
@@ -176,7 +176,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
     *
     * @return string
     */
-    public function getEnvironmentUrl() : string
+    public function getEnvironmentUrl(): string
     {
         return $this->environmentUrl;
     }
@@ -188,7 +188,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setEnvironmentUrl(string $environmentUrl) : self
+    public function setEnvironmentUrl(string $environmentUrl): self
     {
         $this->initialized['environmentUrl'] = true;
         $this->environmentUrl = $environmentUrl;
@@ -201,7 +201,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
     *
     * @return bool
     */
-    public function getAutoInactive() : bool
+    public function getAutoInactive(): bool
     {
         return $this->autoInactive;
     }
@@ -214,7 +214,7 @@ class ReposOwnerRepoDeploymentsDeploymentIdStatusesPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setAutoInactive(bool $autoInactive) : self
+    public function setAutoInactive(bool $autoInactive): self
     {
         $this->initialized['autoInactive'] = true;
         $this->autoInactive = $autoInactive;

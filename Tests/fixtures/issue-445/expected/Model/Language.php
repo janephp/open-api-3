@@ -8,7 +8,7 @@ class Language
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -58,7 +58,7 @@ class Language
      *
      * @return self
      */
-    public function setName($name) : self
+    public function setName($name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -69,7 +69,7 @@ class Language
      *
      * @return string
      */
-    public function getIetf() : string
+    public function getIetf(): string
     {
         return $this->ietf;
     }
@@ -80,7 +80,7 @@ class Language
      *
      * @return self
      */
-    public function setIetf(string $ietf) : self
+    public function setIetf(string $ietf): self
     {
         $this->initialized['ietf'] = true;
         $this->ietf = $ietf;
@@ -91,7 +91,7 @@ class Language
      *
      * @return string|null
      */
-    public function getTwoLetterISOLanguageName() : ?string
+    public function getTwoLetterISOLanguageName(): ?string
     {
         return $this->twoLetterISOLanguageName;
     }
@@ -102,7 +102,7 @@ class Language
      *
      * @return self
      */
-    public function setTwoLetterISOLanguageName(?string $twoLetterISOLanguageName) : self
+    public function setTwoLetterISOLanguageName(?string $twoLetterISOLanguageName): self
     {
         $this->initialized['twoLetterISOLanguageName'] = true;
         $this->twoLetterISOLanguageName = $twoLetterISOLanguageName;
@@ -113,7 +113,7 @@ class Language
      *
      * @return string|null
      */
-    public function getThreeLetterISOLanguageName() : ?string
+    public function getThreeLetterISOLanguageName(): ?string
     {
         return $this->threeLetterISOLanguageName;
     }
@@ -124,7 +124,7 @@ class Language
      *
      * @return self
      */
-    public function setThreeLetterISOLanguageName(?string $threeLetterISOLanguageName) : self
+    public function setThreeLetterISOLanguageName(?string $threeLetterISOLanguageName): self
     {
         $this->initialized['threeLetterISOLanguageName'] = true;
         $this->threeLetterISOLanguageName = $threeLetterISOLanguageName;
@@ -135,7 +135,7 @@ class Language
      *
      * @return string|null
      */
-    public function getRegionCode() : ?string
+    public function getRegionCode(): ?string
     {
         return $this->regionCode;
     }
@@ -146,7 +146,7 @@ class Language
      *
      * @return self
      */
-    public function setRegionCode(?string $regionCode) : self
+    public function setRegionCode(?string $regionCode): self
     {
         $this->initialized['regionCode'] = true;
         $this->regionCode = $regionCode;

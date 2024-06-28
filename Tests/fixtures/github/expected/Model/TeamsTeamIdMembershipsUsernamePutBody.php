@@ -8,7 +8,7 @@ class TeamsTeamIdMembershipsUsernamePutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -27,7 +27,7 @@ class TeamsTeamIdMembershipsUsernamePutBody extends \ArrayObject
     *
     * @return string
     */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -40,7 +40,7 @@ class TeamsTeamIdMembershipsUsernamePutBody extends \ArrayObject
     *
     * @return self
     */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;

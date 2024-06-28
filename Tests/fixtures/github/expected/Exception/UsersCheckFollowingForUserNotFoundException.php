@@ -13,7 +13,7 @@ class UsersCheckFollowingForUserNotFoundException extends NotFoundException
         parent::__construct('Response if the user does not follow the target user');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

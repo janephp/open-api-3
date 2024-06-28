@@ -8,7 +8,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -64,7 +64,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -75,7 +75,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return string
      */
-    public function getCountryIso2() : string
+    public function getCountryIso2(): string
     {
         return $this->countryIso2;
     }
@@ -86,7 +86,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return self
      */
-    public function setCountryIso2(string $countryIso2) : self
+    public function setCountryIso2(string $countryIso2): self
     {
         $this->initialized['countryIso2'] = true;
         $this->countryIso2 = $countryIso2;
@@ -97,7 +97,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return string
      */
-    public function getStartDate() : string
+    public function getStartDate(): string
     {
         return $this->startDate;
     }
@@ -108,7 +108,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return self
      */
-    public function setStartDate(string $startDate) : self
+    public function setStartDate(string $startDate): self
     {
         $this->initialized['startDate'] = true;
         $this->startDate = $startDate;
@@ -119,7 +119,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return string
      */
-    public function getExpireDate() : string
+    public function getExpireDate(): string
     {
         return $this->expireDate;
     }
@@ -130,7 +130,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return self
      */
-    public function setExpireDate(string $expireDate) : self
+    public function setExpireDate(string $expireDate): self
     {
         $this->initialized['expireDate'] = true;
         $this->expireDate = $expireDate;
@@ -141,7 +141,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return int
      */
-    public function getPaid() : int
+    public function getPaid(): int
     {
         return $this->paid;
     }
@@ -152,7 +152,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return self
      */
-    public function setPaid(int $paid) : self
+    public function setPaid(int $paid): self
     {
         $this->initialized['paid'] = true;
         $this->paid = $paid;
@@ -163,7 +163,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return int
      */
-    public function getUsed() : int
+    public function getUsed(): int
     {
         return $this->used;
     }
@@ -174,7 +174,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectOfflineReportsIte
      *
      * @return self
      */
-    public function setUsed(int $used) : self
+    public function setUsed(int $used): self
     {
         $this->initialized['used'] = true;
         $this->used = $used;

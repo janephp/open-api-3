@@ -8,7 +8,7 @@ class ExistsFilter extends FilterBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -25,7 +25,7 @@ class ExistsFilter extends FilterBase
     *
     * @return string
     */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -37,7 +37,7 @@ class ExistsFilter extends FilterBase
     *
     * @return self
     */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;

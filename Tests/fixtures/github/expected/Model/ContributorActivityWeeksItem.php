@@ -8,7 +8,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
      *
      * @return string
      */
-    public function getW() : string
+    public function getW(): string
     {
         return $this->w;
     }
@@ -52,7 +52,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
      *
      * @return self
      */
-    public function setW(string $w) : self
+    public function setW(string $w): self
     {
         $this->initialized['w'] = true;
         $this->w = $w;
@@ -63,7 +63,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
      *
      * @return int
      */
-    public function getA() : int
+    public function getA(): int
     {
         return $this->a;
     }
@@ -74,7 +74,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
      *
      * @return self
      */
-    public function setA(int $a) : self
+    public function setA(int $a): self
     {
         $this->initialized['a'] = true;
         $this->a = $a;
@@ -85,7 +85,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
      *
      * @return int
      */
-    public function getD() : int
+    public function getD(): int
     {
         return $this->d;
     }
@@ -96,7 +96,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
      *
      * @return self
      */
-    public function setD(int $d) : self
+    public function setD(int $d): self
     {
         $this->initialized['d'] = true;
         $this->d = $d;
@@ -107,7 +107,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
      *
      * @return int
      */
-    public function getC() : int
+    public function getC(): int
     {
         return $this->c;
     }
@@ -118,7 +118,7 @@ class ContributorActivityWeeksItem extends \ArrayObject
      *
      * @return self
      */
-    public function setC(int $c) : self
+    public function setC(int $c): self
     {
         $this->initialized['c'] = true;
         $this->c = $c;

@@ -8,7 +8,7 @@ class PublicUserPlan extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class PublicUserPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getCollaborators() : int
+    public function getCollaborators(): int
     {
         return $this->collaborators;
     }
@@ -52,7 +52,7 @@ class PublicUserPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setCollaborators(int $collaborators) : self
+    public function setCollaborators(int $collaborators): self
     {
         $this->initialized['collaborators'] = true;
         $this->collaborators = $collaborators;
@@ -63,7 +63,7 @@ class PublicUserPlan extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -74,7 +74,7 @@ class PublicUserPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -85,7 +85,7 @@ class PublicUserPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getSpace() : int
+    public function getSpace(): int
     {
         return $this->space;
     }
@@ -96,7 +96,7 @@ class PublicUserPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setSpace(int $space) : self
+    public function setSpace(int $space): self
     {
         $this->initialized['space'] = true;
         $this->space = $space;
@@ -107,7 +107,7 @@ class PublicUserPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getPrivateRepos() : int
+    public function getPrivateRepos(): int
     {
         return $this->privateRepos;
     }
@@ -118,7 +118,7 @@ class PublicUserPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivateRepos(int $privateRepos) : self
+    public function setPrivateRepos(int $privateRepos): self
     {
         $this->initialized['privateRepos'] = true;
         $this->privateRepos = $privateRepos;

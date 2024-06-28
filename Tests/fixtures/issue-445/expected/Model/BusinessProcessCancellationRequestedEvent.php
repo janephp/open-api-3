@@ -8,7 +8,7 @@ class BusinessProcessCancellationRequestedEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class BusinessProcessCancellationRequestedEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getBusinessProcessId() : ?string
+    public function getBusinessProcessId(): ?string
     {
         return $this->businessProcessId;
     }
@@ -34,7 +34,7 @@ class BusinessProcessCancellationRequestedEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setBusinessProcessId(?string $businessProcessId) : self
+    public function setBusinessProcessId(?string $businessProcessId): self
     {
         $this->initialized['businessProcessId'] = true;
         $this->businessProcessId = $businessProcessId;

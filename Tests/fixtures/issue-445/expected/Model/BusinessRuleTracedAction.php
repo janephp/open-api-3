@@ -8,7 +8,7 @@ class BusinessRuleTracedAction
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class BusinessRuleTracedAction
      *
      * @return string|null
      */
-    public function getTraceRefId() : ?string
+    public function getTraceRefId(): ?string
     {
         return $this->traceRefId;
     }
@@ -46,7 +46,7 @@ class BusinessRuleTracedAction
      *
      * @return self
      */
-    public function setTraceRefId(?string $traceRefId) : self
+    public function setTraceRefId(?string $traceRefId): self
     {
         $this->initialized['traceRefId'] = true;
         $this->traceRefId = $traceRefId;
@@ -57,7 +57,7 @@ class BusinessRuleTracedAction
      *
      * @return bool
      */
-    public function getDocumentModified() : bool
+    public function getDocumentModified(): bool
     {
         return $this->documentModified;
     }
@@ -68,7 +68,7 @@ class BusinessRuleTracedAction
      *
      * @return self
      */
-    public function setDocumentModified(bool $documentModified) : self
+    public function setDocumentModified(bool $documentModified): self
     {
         $this->initialized['documentModified'] = true;
         $this->documentModified = $documentModified;
@@ -79,7 +79,7 @@ class BusinessRuleTracedAction
      *
      * @return string|null
      */
-    public function getText() : ?string
+    public function getText(): ?string
     {
         return $this->text;
     }
@@ -90,7 +90,7 @@ class BusinessRuleTracedAction
      *
      * @return self
      */
-    public function setText(?string $text) : self
+    public function setText(?string $text): self
     {
         $this->initialized['text'] = true;
         $this->text = $text;

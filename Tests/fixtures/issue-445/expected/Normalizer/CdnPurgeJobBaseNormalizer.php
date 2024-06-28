@@ -20,21 +20,21 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\CdnPurgeJobBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\CdnPurgeJobBase::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (array_key_exists('kind', $data) and 'CdnPurgeJobByTag' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\CdnPurgeJobByTag', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\CdnPurgeJobByTag', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'CdnPurgeJobByUri' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\CdnPurgeJobByUri', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\CdnPurgeJobByUri', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -57,7 +57,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if (null !== $object->getKind() and 'CdnPurgeJobByTag' === $object->getKind()) {
@@ -71,7 +71,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\CdnPurgeJobBase::class => false];
         }
@@ -83,11 +83,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\CdnPurgeJobBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\CdnPurgeJobBase::class;
         }
@@ -97,10 +97,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function denormalize($data, $type, $format = null, array $context = [])
         {
             if (array_key_exists('kind', $data) and 'CdnPurgeJobByTag' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\CdnPurgeJobByTag', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\CdnPurgeJobByTag', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'CdnPurgeJobByUri' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\CdnPurgeJobByUri', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\CdnPurgeJobByUri', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -140,7 +140,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\CdnPurgeJobBase::class => false];
         }

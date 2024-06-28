@@ -8,7 +8,7 @@ class RepoSearchResultItemPermissions extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RepoSearchResultItemPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getAdmin() : bool
+    public function getAdmin(): bool
     {
         return $this->admin;
     }
@@ -46,7 +46,7 @@ class RepoSearchResultItemPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setAdmin(bool $admin) : self
+    public function setAdmin(bool $admin): self
     {
         $this->initialized['admin'] = true;
         $this->admin = $admin;
@@ -57,7 +57,7 @@ class RepoSearchResultItemPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getPull() : bool
+    public function getPull(): bool
     {
         return $this->pull;
     }
@@ -68,7 +68,7 @@ class RepoSearchResultItemPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setPull(bool $pull) : self
+    public function setPull(bool $pull): self
     {
         $this->initialized['pull'] = true;
         $this->pull = $pull;
@@ -79,7 +79,7 @@ class RepoSearchResultItemPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getPush() : bool
+    public function getPush(): bool
     {
         return $this->push;
     }
@@ -90,7 +90,7 @@ class RepoSearchResultItemPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setPush(bool $push) : self
+    public function setPush(bool $push): self
     {
         $this->initialized['push'] = true;
         $this->push = $push;

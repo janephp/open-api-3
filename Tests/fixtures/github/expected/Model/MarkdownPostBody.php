@@ -8,7 +8,7 @@ class MarkdownPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class MarkdownPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getText() : string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -46,7 +46,7 @@ class MarkdownPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setText(string $text) : self
+    public function setText(string $text): self
     {
         $this->initialized['text'] = true;
         $this->text = $text;
@@ -57,7 +57,7 @@ class MarkdownPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getMode() : string
+    public function getMode(): string
     {
         return $this->mode;
     }
@@ -68,7 +68,7 @@ class MarkdownPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMode(string $mode) : self
+    public function setMode(string $mode): self
     {
         $this->initialized['mode'] = true;
         $this->mode = $mode;
@@ -79,7 +79,7 @@ class MarkdownPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getContext() : string
+    public function getContext(): string
     {
         return $this->context;
     }
@@ -90,7 +90,7 @@ class MarkdownPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setContext(string $context) : self
+    public function setContext(string $context): self
     {
         $this->initialized['context'] = true;
         $this->context = $context;

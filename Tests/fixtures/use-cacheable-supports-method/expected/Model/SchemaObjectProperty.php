@@ -8,7 +8,7 @@ class SchemaObjectProperty extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class SchemaObjectProperty extends \ArrayObject
      *
      * @return string
      */
-    public function getStringProperty() : string
+    public function getStringProperty(): string
     {
         return $this->stringProperty;
     }
@@ -34,7 +34,7 @@ class SchemaObjectProperty extends \ArrayObject
      *
      * @return self
      */
-    public function setStringProperty(string $stringProperty) : self
+    public function setStringProperty(string $stringProperty): self
     {
         $this->initialized['stringProperty'] = true;
         $this->stringProperty = $stringProperty;

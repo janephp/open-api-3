@@ -8,7 +8,7 @@ class NGramTransformation extends BusinessRuleTransformation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -37,7 +37,7 @@ class NGramTransformation extends BusinessRuleTransformation
     *
     * @return int
     */
-    public function getSize() : int
+    public function getSize(): int
     {
         return $this->size;
     }
@@ -49,7 +49,7 @@ class NGramTransformation extends BusinessRuleTransformation
     *
     * @return self
     */
-    public function setSize(int $size) : self
+    public function setSize(int $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;
@@ -60,7 +60,7 @@ class NGramTransformation extends BusinessRuleTransformation
      *
      * @return int
      */
-    public function getMinWordLength() : int
+    public function getMinWordLength(): int
     {
         return $this->minWordLength;
     }
@@ -71,7 +71,7 @@ class NGramTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setMinWordLength(int $minWordLength) : self
+    public function setMinWordLength(int $minWordLength): self
     {
         $this->initialized['minWordLength'] = true;
         $this->minWordLength = $minWordLength;
@@ -82,7 +82,7 @@ class NGramTransformation extends BusinessRuleTransformation
      *
      * @return int|null
      */
-    public function getMaxWordLength() : ?int
+    public function getMaxWordLength(): ?int
     {
         return $this->maxWordLength;
     }
@@ -93,7 +93,7 @@ class NGramTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setMaxWordLength(?int $maxWordLength) : self
+    public function setMaxWordLength(?int $maxWordLength): self
     {
         $this->initialized['maxWordLength'] = true;
         $this->maxWordLength = $maxWordLength;

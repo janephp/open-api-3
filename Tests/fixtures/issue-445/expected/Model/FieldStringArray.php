@@ -8,7 +8,7 @@ class FieldStringArray extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -85,7 +85,7 @@ class FieldStringArray extends FieldBase
      *
      * @return string|null
      */
-    public function getTemplate() : ?string
+    public function getTemplate(): ?string
     {
         return $this->template;
     }
@@ -96,7 +96,7 @@ class FieldStringArray extends FieldBase
      *
      * @return self
      */
-    public function setTemplate(?string $template) : self
+    public function setTemplate(?string $template): self
     {
         $this->initialized['template'] = true;
         $this->template = $template;
@@ -107,7 +107,7 @@ class FieldStringArray extends FieldBase
      *
      * @return string|null
      */
-    public function getPattern() : ?string
+    public function getPattern(): ?string
     {
         return $this->pattern;
     }
@@ -118,7 +118,7 @@ class FieldStringArray extends FieldBase
      *
      * @return self
      */
-    public function setPattern(?string $pattern) : self
+    public function setPattern(?string $pattern): self
     {
         $this->initialized['pattern'] = true;
         $this->pattern = $pattern;
@@ -129,7 +129,7 @@ class FieldStringArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMinimumLength() : ?int
+    public function getMinimumLength(): ?int
     {
         return $this->minimumLength;
     }
@@ -140,7 +140,7 @@ class FieldStringArray extends FieldBase
      *
      * @return self
      */
-    public function setMinimumLength(?int $minimumLength) : self
+    public function setMinimumLength(?int $minimumLength): self
     {
         $this->initialized['minimumLength'] = true;
         $this->minimumLength = $minimumLength;
@@ -151,7 +151,7 @@ class FieldStringArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMaximumLength() : ?int
+    public function getMaximumLength(): ?int
     {
         return $this->maximumLength;
     }
@@ -162,7 +162,7 @@ class FieldStringArray extends FieldBase
      *
      * @return self
      */
-    public function setMaximumLength(?int $maximumLength) : self
+    public function setMaximumLength(?int $maximumLength): self
     {
         $this->initialized['maximumLength'] = true;
         $this->maximumLength = $maximumLength;
@@ -174,7 +174,7 @@ class FieldStringArray extends FieldBase
     *
     * @return list<AnalyzerBase>|null
     */
-    public function getIndexAnalyzers() : ?array
+    public function getIndexAnalyzers(): ?array
     {
         return $this->indexAnalyzers;
     }
@@ -186,7 +186,7 @@ class FieldStringArray extends FieldBase
     *
     * @return self
     */
-    public function setIndexAnalyzers(?array $indexAnalyzers) : self
+    public function setIndexAnalyzers(?array $indexAnalyzers): self
     {
         $this->initialized['indexAnalyzers'] = true;
         $this->indexAnalyzers = $indexAnalyzers;
@@ -198,7 +198,7 @@ class FieldStringArray extends FieldBase
     *
     * @return list<AnalyzerBase>|null
     */
-    public function getSimpleSearchAnalyzers() : ?array
+    public function getSimpleSearchAnalyzers(): ?array
     {
         return $this->simpleSearchAnalyzers;
     }
@@ -210,7 +210,7 @@ class FieldStringArray extends FieldBase
     *
     * @return self
     */
-    public function setSimpleSearchAnalyzers(?array $simpleSearchAnalyzers) : self
+    public function setSimpleSearchAnalyzers(?array $simpleSearchAnalyzers): self
     {
         $this->initialized['simpleSearchAnalyzers'] = true;
         $this->simpleSearchAnalyzers = $simpleSearchAnalyzers;
@@ -221,7 +221,7 @@ class FieldStringArray extends FieldBase
      *
      * @return bool
      */
-    public function getMultiLine() : bool
+    public function getMultiLine(): bool
     {
         return $this->multiLine;
     }
@@ -232,7 +232,7 @@ class FieldStringArray extends FieldBase
      *
      * @return self
      */
-    public function setMultiLine(bool $multiLine) : self
+    public function setMultiLine(bool $multiLine): self
     {
         $this->initialized['multiLine'] = true;
         $this->multiLine = $multiLine;
@@ -243,7 +243,7 @@ class FieldStringArray extends FieldBase
      *
      * @return list<string>|null
      */
-    public function getGrantedValues() : ?array
+    public function getGrantedValues(): ?array
     {
         return $this->grantedValues;
     }
@@ -254,7 +254,7 @@ class FieldStringArray extends FieldBase
      *
      * @return self
      */
-    public function setGrantedValues(?array $grantedValues) : self
+    public function setGrantedValues(?array $grantedValues): self
     {
         $this->initialized['grantedValues'] = true;
         $this->grantedValues = $grantedValues;
@@ -265,7 +265,7 @@ class FieldStringArray extends FieldBase
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -276,7 +276,7 @@ class FieldStringArray extends FieldBase
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;
@@ -287,7 +287,7 @@ class FieldStringArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMaximumItems() : ?int
+    public function getMaximumItems(): ?int
     {
         return $this->maximumItems;
     }
@@ -298,7 +298,7 @@ class FieldStringArray extends FieldBase
      *
      * @return self
      */
-    public function setMaximumItems(?int $maximumItems) : self
+    public function setMaximumItems(?int $maximumItems): self
     {
         $this->initialized['maximumItems'] = true;
         $this->maximumItems = $maximumItems;
@@ -309,7 +309,7 @@ class FieldStringArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMinimumItems() : ?int
+    public function getMinimumItems(): ?int
     {
         return $this->minimumItems;
     }
@@ -320,7 +320,7 @@ class FieldStringArray extends FieldBase
      *
      * @return self
      */
-    public function setMinimumItems(?int $minimumItems) : self
+    public function setMinimumItems(?int $minimumItems): self
     {
         $this->initialized['minimumItems'] = true;
         $this->minimumItems = $minimumItems;

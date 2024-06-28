@@ -8,7 +8,7 @@ class ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ApplicationEvent
      *
      * @return \DateTime
      */
-    public function getTimestamp() : \DateTime
+    public function getTimestamp(): \DateTime
     {
         return $this->timestamp;
     }
@@ -48,7 +48,7 @@ class ApplicationEvent
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

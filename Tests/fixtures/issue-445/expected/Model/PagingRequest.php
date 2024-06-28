@@ -8,7 +8,7 @@ class PagingRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class PagingRequest
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -40,7 +40,7 @@ class PagingRequest
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -51,7 +51,7 @@ class PagingRequest
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -62,7 +62,7 @@ class PagingRequest
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;

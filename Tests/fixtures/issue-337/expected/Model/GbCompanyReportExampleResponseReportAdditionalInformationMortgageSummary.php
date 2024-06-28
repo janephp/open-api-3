@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary e
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary e
      *
      * @return float
      */
-    public function getOutstanding() : float
+    public function getOutstanding(): float
     {
         return $this->outstanding;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary e
      *
      * @return self
      */
-    public function setOutstanding(float $outstanding) : self
+    public function setOutstanding(float $outstanding): self
     {
         $this->initialized['outstanding'] = true;
         $this->outstanding = $outstanding;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary e
      *
      * @return float
      */
-    public function getSatisfied() : float
+    public function getSatisfied(): float
     {
         return $this->satisfied;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary e
      *
      * @return self
      */
-    public function setSatisfied(float $satisfied) : self
+    public function setSatisfied(float $satisfied): self
     {
         $this->initialized['satisfied'] = true;
         $this->satisfied = $satisfied;

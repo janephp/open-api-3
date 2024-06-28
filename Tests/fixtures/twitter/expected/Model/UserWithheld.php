@@ -8,7 +8,7 @@ class UserWithheld extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class UserWithheld extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCountryCodes() : array
+    public function getCountryCodes(): array
     {
         return $this->countryCodes;
     }
@@ -40,7 +40,7 @@ class UserWithheld extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryCodes(array $countryCodes) : self
+    public function setCountryCodes(array $countryCodes): self
     {
         $this->initialized['countryCodes'] = true;
         $this->countryCodes = $countryCodes;
@@ -51,7 +51,7 @@ class UserWithheld extends \ArrayObject
      *
      * @return string
      */
-    public function getScope() : string
+    public function getScope(): string
     {
         return $this->scope;
     }
@@ -62,7 +62,7 @@ class UserWithheld extends \ArrayObject
      *
      * @return self
      */
-    public function setScope(string $scope) : self
+    public function setScope(string $scope): self
     {
         $this->initialized['scope'] = true;
         $this->scope = $scope;

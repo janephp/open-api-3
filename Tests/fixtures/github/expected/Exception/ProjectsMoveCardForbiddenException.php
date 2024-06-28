@@ -18,11 +18,11 @@ class ProjectsMoveCardForbiddenException extends ForbiddenException
         $this->projectsColumnsCardsCardIdMovesPostResponse403 = $projectsColumnsCardsCardIdMovesPostResponse403;
         $this->response = $response;
     }
-    public function getProjectsColumnsCardsCardIdMovesPostResponse403() : \Github\Model\ProjectsColumnsCardsCardIdMovesPostResponse403
+    public function getProjectsColumnsCardsCardIdMovesPostResponse403(): \Github\Model\ProjectsColumnsCardsCardIdMovesPostResponse403
     {
         return $this->projectsColumnsCardsCardIdMovesPostResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

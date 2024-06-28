@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist extends \Ar
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist extends \Ar
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem>
      */
-    public function getMatches() : array
+    public function getMatches(): array
     {
         return $this->matches;
     }
@@ -40,7 +40,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist extends \Ar
      *
      * @return self
      */
-    public function setMatches(array $matches) : self
+    public function setMatches(array $matches): self
     {
         $this->initialized['matches'] = true;
         $this->matches = $matches;
@@ -51,7 +51,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist extends \Ar
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -62,7 +62,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlist extends \Ar
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;

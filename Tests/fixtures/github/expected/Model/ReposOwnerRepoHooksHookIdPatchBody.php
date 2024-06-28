@@ -8,7 +8,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return ReposOwnerRepoHooksHookIdPatchBodyConfig
      */
-    public function getConfig() : ReposOwnerRepoHooksHookIdPatchBodyConfig
+    public function getConfig(): ReposOwnerRepoHooksHookIdPatchBodyConfig
     {
         return $this->config;
     }
@@ -58,7 +58,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setConfig(ReposOwnerRepoHooksHookIdPatchBodyConfig $config) : self
+    public function setConfig(ReposOwnerRepoHooksHookIdPatchBodyConfig $config): self
     {
         $this->initialized['config'] = true;
         $this->config = $config;
@@ -69,7 +69,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getEvents() : array
+    public function getEvents(): array
     {
         return $this->events;
     }
@@ -80,7 +80,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEvents(array $events) : self
+    public function setEvents(array $events): self
     {
         $this->initialized['events'] = true;
         $this->events = $events;
@@ -91,7 +91,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getAddEvents() : array
+    public function getAddEvents(): array
     {
         return $this->addEvents;
     }
@@ -102,7 +102,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAddEvents(array $addEvents) : self
+    public function setAddEvents(array $addEvents): self
     {
         $this->initialized['addEvents'] = true;
         $this->addEvents = $addEvents;
@@ -113,7 +113,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getRemoveEvents() : array
+    public function getRemoveEvents(): array
     {
         return $this->removeEvents;
     }
@@ -124,7 +124,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRemoveEvents(array $removeEvents) : self
+    public function setRemoveEvents(array $removeEvents): self
     {
         $this->initialized['removeEvents'] = true;
         $this->removeEvents = $removeEvents;
@@ -135,7 +135,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getActive() : bool
+    public function getActive(): bool
     {
         return $this->active;
     }
@@ -146,7 +146,7 @@ class ReposOwnerRepoHooksHookIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setActive(bool $active) : self
+    public function setActive(bool $active): self
     {
         $this->initialized['active'] = true;
         $this->active = $active;

@@ -8,7 +8,7 @@ class OutputFormatDeleteManyRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class OutputFormatDeleteManyRequest
      *
      * @return list<string>|null
      */
-    public function getIds() : ?array
+    public function getIds(): ?array
     {
         return $this->ids;
     }
@@ -34,7 +34,7 @@ class OutputFormatDeleteManyRequest
      *
      * @return self
      */
-    public function setIds(?array $ids) : self
+    public function setIds(?array $ids): self
     {
         $this->initialized['ids'] = true;
         $this->ids = $ids;

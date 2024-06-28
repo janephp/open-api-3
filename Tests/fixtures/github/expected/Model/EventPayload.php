@@ -8,7 +8,7 @@ class EventPayload extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class EventPayload extends \ArrayObject
      *
      * @return string
      */
-    public function getAction() : string
+    public function getAction(): string
     {
         return $this->action;
     }
@@ -52,7 +52,7 @@ class EventPayload extends \ArrayObject
      *
      * @return self
      */
-    public function setAction(string $action) : self
+    public function setAction(string $action): self
     {
         $this->initialized['action'] = true;
         $this->action = $action;
@@ -63,7 +63,7 @@ class EventPayload extends \ArrayObject
      *
      * @return IssueSimple
      */
-    public function getIssue() : IssueSimple
+    public function getIssue(): IssueSimple
     {
         return $this->issue;
     }
@@ -74,7 +74,7 @@ class EventPayload extends \ArrayObject
      *
      * @return self
      */
-    public function setIssue(IssueSimple $issue) : self
+    public function setIssue(IssueSimple $issue): self
     {
         $this->initialized['issue'] = true;
         $this->issue = $issue;
@@ -85,7 +85,7 @@ class EventPayload extends \ArrayObject
      *
      * @return IssueComment
      */
-    public function getComment() : IssueComment
+    public function getComment(): IssueComment
     {
         return $this->comment;
     }
@@ -96,7 +96,7 @@ class EventPayload extends \ArrayObject
      *
      * @return self
      */
-    public function setComment(IssueComment $comment) : self
+    public function setComment(IssueComment $comment): self
     {
         $this->initialized['comment'] = true;
         $this->comment = $comment;
@@ -107,7 +107,7 @@ class EventPayload extends \ArrayObject
      *
      * @return list<EventPayloadPagesItem>
      */
-    public function getPages() : array
+    public function getPages(): array
     {
         return $this->pages;
     }
@@ -118,7 +118,7 @@ class EventPayload extends \ArrayObject
      *
      * @return self
      */
-    public function setPages(array $pages) : self
+    public function setPages(array $pages): self
     {
         $this->initialized['pages'] = true;
         $this->pages = $pages;

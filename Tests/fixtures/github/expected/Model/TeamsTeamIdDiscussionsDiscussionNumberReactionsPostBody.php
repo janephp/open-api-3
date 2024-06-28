@@ -8,7 +8,7 @@ class TeamsTeamIdDiscussionsDiscussionNumberReactionsPostBody extends \ArrayObje
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class TeamsTeamIdDiscussionsDiscussionNumberReactionsPostBody extends \ArrayObje
      *
      * @return string
      */
-    public function getContent() : string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -34,7 +34,7 @@ class TeamsTeamIdDiscussionsDiscussionNumberReactionsPostBody extends \ArrayObje
      *
      * @return self
      */
-    public function setContent(string $content) : self
+    public function setContent(string $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;

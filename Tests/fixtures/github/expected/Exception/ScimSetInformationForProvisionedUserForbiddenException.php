@@ -18,11 +18,11 @@ class ScimSetInformationForProvisionedUserForbiddenException extends ForbiddenEx
         $this->scimError = $scimError;
         $this->response = $response;
     }
-    public function getScimError() : \Github\Model\ScimError
+    public function getScimError(): \Github\Model\ScimError
     {
         return $this->scimError;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class BusinessProcessStateChangeRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class BusinessProcessStateChangeRequest
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -46,7 +46,7 @@ class BusinessProcessStateChangeRequest
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -68,7 +68,7 @@ class BusinessProcessStateChangeRequest
      *
      * @return self
      */
-    public function setLifeCycle($lifeCycle) : self
+    public function setLifeCycle($lifeCycle): self
     {
         $this->initialized['lifeCycle'] = true;
         $this->lifeCycle = $lifeCycle;
@@ -90,7 +90,7 @@ class BusinessProcessStateChangeRequest
      *
      * @return self
      */
-    public function setNotification($notification) : self
+    public function setNotification($notification): self
     {
         $this->initialized['notification'] = true;
         $this->notification = $notification;

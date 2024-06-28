@@ -8,7 +8,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -46,7 +46,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -57,7 +57,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -68,7 +68,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;
@@ -79,7 +79,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
      *
      * @return bool
      */
-    public function getPrimary() : bool
+    public function getPrimary(): bool
     {
         return $this->primary;
     }
@@ -90,7 +90,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPutBodyEmailsItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setPrimary(bool $primary) : self
+    public function setPrimary(bool $primary): self
     {
         $this->initialized['primary'] = true;
         $this->primary = $primary;

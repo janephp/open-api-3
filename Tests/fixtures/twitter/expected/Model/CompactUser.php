@@ -8,7 +8,7 @@ class CompactUser extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class CompactUser extends \ArrayObject
      *
      * @return string
      */
-    public function getFormat() : string
+    public function getFormat(): string
     {
         return $this->format;
     }
@@ -82,7 +82,7 @@ class CompactUser extends \ArrayObject
      *
      * @return self
      */
-    public function setFormat(string $format) : self
+    public function setFormat(string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -93,7 +93,7 @@ class CompactUser extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -104,7 +104,7 @@ class CompactUser extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -115,7 +115,7 @@ class CompactUser extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -126,7 +126,7 @@ class CompactUser extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -137,7 +137,7 @@ class CompactUser extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -148,7 +148,7 @@ class CompactUser extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -159,7 +159,7 @@ class CompactUser extends \ArrayObject
      *
      * @return string
      */
-    public function getUsername() : string
+    public function getUsername(): string
     {
         return $this->username;
     }
@@ -170,7 +170,7 @@ class CompactUser extends \ArrayObject
      *
      * @return self
      */
-    public function setUsername(string $username) : self
+    public function setUsername(string $username): self
     {
         $this->initialized['username'] = true;
         $this->username = $username;
@@ -181,7 +181,7 @@ class CompactUser extends \ArrayObject
      *
      * @return bool
      */
-    public function getProtected() : bool
+    public function getProtected(): bool
     {
         return $this->protected;
     }
@@ -192,7 +192,7 @@ class CompactUser extends \ArrayObject
      *
      * @return self
      */
-    public function setProtected(bool $protected) : self
+    public function setProtected(bool $protected): self
     {
         $this->initialized['protected'] = true;
         $this->protected = $protected;
@@ -203,7 +203,7 @@ class CompactUser extends \ArrayObject
      *
      * @return bool
      */
-    public function getVerified() : bool
+    public function getVerified(): bool
     {
         return $this->verified;
     }
@@ -214,7 +214,7 @@ class CompactUser extends \ArrayObject
      *
      * @return self
      */
-    public function setVerified(bool $verified) : self
+    public function setVerified(bool $verified): self
     {
         $this->initialized['verified'] = true;
         $this->verified = $verified;
@@ -225,7 +225,7 @@ class CompactUser extends \ArrayObject
      *
      * @return UserWithheld
      */
-    public function getWithheld() : UserWithheld
+    public function getWithheld(): UserWithheld
     {
         return $this->withheld;
     }
@@ -236,7 +236,7 @@ class CompactUser extends \ArrayObject
      *
      * @return self
      */
-    public function setWithheld(UserWithheld $withheld) : self
+    public function setWithheld(UserWithheld $withheld): self
     {
         $this->initialized['withheld'] = true;
         $this->withheld = $withheld;
@@ -247,7 +247,7 @@ class CompactUser extends \ArrayObject
      *
      * @return string
      */
-    public function getProfileImageUrl() : string
+    public function getProfileImageUrl(): string
     {
         return $this->profileImageUrl;
     }
@@ -258,7 +258,7 @@ class CompactUser extends \ArrayObject
      *
      * @return self
      */
-    public function setProfileImageUrl(string $profileImageUrl) : self
+    public function setProfileImageUrl(string $profileImageUrl): self
     {
         $this->initialized['profileImageUrl'] = true;
         $this->profileImageUrl = $profileImageUrl;

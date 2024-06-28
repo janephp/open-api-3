@@ -8,7 +8,7 @@ class ReposOwnerRepoDispatchesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoDispatchesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEventType() : string
+    public function getEventType(): string
     {
         return $this->eventType;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoDispatchesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEventType(string $eventType) : self
+    public function setEventType(string $eventType): self
     {
         $this->initialized['eventType'] = true;
         $this->eventType = $eventType;
@@ -51,7 +51,7 @@ class ReposOwnerRepoDispatchesPostBody extends \ArrayObject
      *
      * @return array<string, mixed>
      */
-    public function getClientPayload() : iterable
+    public function getClientPayload(): iterable
     {
         return $this->clientPayload;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoDispatchesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setClientPayload(iterable $clientPayload) : self
+    public function setClientPayload(iterable $clientPayload): self
     {
         $this->initialized['clientPayload'] = true;
         $this->clientPayload = $clientPayload;

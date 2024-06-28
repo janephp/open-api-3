@@ -8,7 +8,7 @@ class BusinessRule
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class BusinessRule
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -97,7 +97,7 @@ class BusinessRule
      *
      * @return bool
      */
-    public function getIsEnabled() : bool
+    public function getIsEnabled(): bool
     {
         return $this->isEnabled;
     }
@@ -154,7 +154,7 @@ class BusinessRule
      *
      * @return bool
      */
-    public function getEnableTracing() : bool
+    public function getEnableTracing(): bool
     {
         return $this->enableTracing;
     }
@@ -173,7 +173,7 @@ class BusinessRule
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

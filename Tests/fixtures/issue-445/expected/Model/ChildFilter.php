@@ -8,7 +8,7 @@ class ChildFilter extends FilterBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ChildFilter extends FilterBase
      *
      * @return string
      */
-    public function getChildType() : string
+    public function getChildType(): string
     {
         return $this->childType;
     }
@@ -40,7 +40,7 @@ class ChildFilter extends FilterBase
      *
      * @return self
      */
-    public function setChildType(string $childType) : self
+    public function setChildType(string $childType): self
     {
         $this->initialized['childType'] = true;
         $this->childType = $childType;
@@ -62,7 +62,7 @@ class ChildFilter extends FilterBase
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;

@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return string
      */
-    public function getMortgageType() : string
+    public function getMortgageType(): string
     {
         return $this->mortgageType;
     }
@@ -70,7 +70,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return self
      */
-    public function setMortgageType(string $mortgageType) : self
+    public function setMortgageType(string $mortgageType): self
     {
         $this->initialized['mortgageType'] = true;
         $this->mortgageType = $mortgageType;
@@ -81,7 +81,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return string
      */
-    public function getDateChargeCreated() : string
+    public function getDateChargeCreated(): string
     {
         return $this->dateChargeCreated;
     }
@@ -92,7 +92,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return self
      */
-    public function setDateChargeCreated(string $dateChargeCreated) : self
+    public function setDateChargeCreated(string $dateChargeCreated): self
     {
         $this->initialized['dateChargeCreated'] = true;
         $this->dateChargeCreated = $dateChargeCreated;
@@ -103,7 +103,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return string
      */
-    public function getDateChargeRegistered() : string
+    public function getDateChargeRegistered(): string
     {
         return $this->dateChargeRegistered;
     }
@@ -114,7 +114,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return self
      */
-    public function setDateChargeRegistered(string $dateChargeRegistered) : self
+    public function setDateChargeRegistered(string $dateChargeRegistered): self
     {
         $this->initialized['dateChargeRegistered'] = true;
         $this->dateChargeRegistered = $dateChargeRegistered;
@@ -125,7 +125,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -136,7 +136,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -147,7 +147,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return string
      */
-    public function getPersonsEntitled() : string
+    public function getPersonsEntitled(): string
     {
         return $this->personsEntitled;
     }
@@ -158,7 +158,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return self
      */
-    public function setPersonsEntitled(string $personsEntitled) : self
+    public function setPersonsEntitled(string $personsEntitled): self
     {
         $this->initialized['personsEntitled'] = true;
         $this->personsEntitled = $personsEntitled;
@@ -169,7 +169,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return string
      */
-    public function getAmountSecured() : string
+    public function getAmountSecured(): string
     {
         return $this->amountSecured;
     }
@@ -180,7 +180,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return self
      */
-    public function setAmountSecured(string $amountSecured) : self
+    public function setAmountSecured(string $amountSecured): self
     {
         $this->initialized['amountSecured'] = true;
         $this->amountSecured = $amountSecured;
@@ -191,7 +191,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return string
      */
-    public function getDetails() : string
+    public function getDetails(): string
     {
         return $this->details;
     }
@@ -202,7 +202,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsIt
      *
      * @return self
      */
-    public function setDetails(string $details) : self
+    public function setDetails(string $details): self
     {
         $this->initialized['details'] = true;
         $this->details = $details;

@@ -18,15 +18,15 @@ class OrgsUnblockUser extends \Github\Runtime\Client\BaseEndpoint implements \Gi
         $this->username = $username;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'DELETE';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{org}', '{username}'], [$this->org, $this->username], '/orgs/{org}/blocks/{username}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
@@ -44,7 +44,7 @@ class OrgsUnblockUser extends \Github\Runtime\Client\BaseEndpoint implements \Gi
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

@@ -8,7 +8,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      *
      * @return string
      */
-    public function getCorrelationId() : string
+    public function getCorrelationId(): string
     {
         return $this->correlationId;
     }
@@ -52,7 +52,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      *
      * @return self
      */
-    public function setCorrelationId(string $correlationId) : self
+    public function setCorrelationId(string $correlationId): self
     {
         $this->initialized['correlationId'] = true;
         $this->correlationId = $correlationId;
@@ -63,7 +63,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -74,7 +74,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -85,7 +85,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      *
      * @return string
      */
-    public function getOrderID() : string
+    public function getOrderID(): string
     {
         return $this->orderID;
     }
@@ -96,7 +96,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      *
      * @return self
      */
-    public function setOrderID(string $orderID) : self
+    public function setOrderID(string $orderID): self
     {
         $this->initialized['orderID'] = true;
         $this->orderID = $orderID;
@@ -107,7 +107,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      *
      * @return string
      */
-    public function getTransactionID() : string
+    public function getTransactionID(): string
     {
         return $this->transactionID;
     }
@@ -118,7 +118,7 @@ class SubmittedFreshInvestigationRepsonse extends \ArrayObject
      *
      * @return self
      */
-    public function setTransactionID(string $transactionID) : self
+    public function setTransactionID(string $transactionID): self
     {
         $this->initialized['transactionID'] = true;
         $this->transactionID = $transactionID;

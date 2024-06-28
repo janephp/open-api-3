@@ -8,7 +8,7 @@ class Model extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class Model extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFoo() : ?string
+    public function getFoo(): ?string
     {
         return $this->foo;
     }
@@ -46,7 +46,7 @@ class Model extends \ArrayObject
      *
      * @return self
      */
-    public function setFoo(?string $foo) : self
+    public function setFoo(?string $foo): self
     {
         $this->initialized['foo'] = true;
         $this->foo = $foo;
@@ -57,7 +57,7 @@ class Model extends \ArrayObject
      *
      * @return string
      */
-    public function getBar() : string
+    public function getBar(): string
     {
         return $this->bar;
     }
@@ -68,7 +68,7 @@ class Model extends \ArrayObject
      *
      * @return self
      */
-    public function setBar(string $bar) : self
+    public function setBar(string $bar): self
     {
         $this->initialized['bar'] = true;
         $this->bar = $bar;
@@ -79,7 +79,7 @@ class Model extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getDate() : ?\DateTime
+    public function getDate(): ?\DateTime
     {
         return $this->date;
     }
@@ -90,7 +90,7 @@ class Model extends \ArrayObject
      *
      * @return self
      */
-    public function setDate(?\DateTime $date) : self
+    public function setDate(?\DateTime $date): self
     {
         $this->initialized['date'] = true;
         $this->date = $date;

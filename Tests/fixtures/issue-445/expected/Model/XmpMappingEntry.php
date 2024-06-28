@@ -8,7 +8,7 @@ class XmpMappingEntry extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -70,7 +70,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setDirection($direction) : self
+    public function setDirection($direction): self
     {
         $this->initialized['direction'] = true;
         $this->direction = $direction;
@@ -81,7 +81,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return int
      */
-    public function getPriority() : int
+    public function getPriority(): int
     {
         return $this->priority;
     }
@@ -92,7 +92,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setPriority(int $priority) : self
+    public function setPriority(int $priority): self
     {
         $this->initialized['priority'] = true;
         $this->priority = $priority;
@@ -103,7 +103,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return bool
      */
-    public function getStopProcessing() : bool
+    public function getStopProcessing(): bool
     {
         return $this->stopProcessing;
     }
@@ -114,7 +114,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setStopProcessing(bool $stopProcessing) : self
+    public function setStopProcessing(bool $stopProcessing): self
     {
         $this->initialized['stopProcessing'] = true;
         $this->stopProcessing = $stopProcessing;
@@ -125,7 +125,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getXmpPath() : string
+    public function getXmpPath(): string
     {
         return $this->xmpPath;
     }
@@ -136,7 +136,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setXmpPath(string $xmpPath) : self
+    public function setXmpPath(string $xmpPath): self
     {
         $this->initialized['xmpPath'] = true;
         $this->xmpPath = $xmpPath;
@@ -147,7 +147,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getMetadataPath() : string
+    public function getMetadataPath(): string
     {
         return $this->metadataPath;
     }
@@ -158,7 +158,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setMetadataPath(string $metadataPath) : self
+    public function setMetadataPath(string $metadataPath): self
     {
         $this->initialized['metadataPath'] = true;
         $this->metadataPath = $metadataPath;
@@ -180,7 +180,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setConfiguration($configuration) : self
+    public function setConfiguration($configuration): self
     {
         $this->initialized['configuration'] = true;
         $this->configuration = $configuration;
@@ -191,7 +191,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -202,7 +202,7 @@ class XmpMappingEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;

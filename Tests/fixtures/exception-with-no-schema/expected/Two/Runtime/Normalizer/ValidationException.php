@@ -13,7 +13,7 @@ class ValidationException extends RuntimeException
         $this->violationList = $violationList;
         parent::__construct(sprintf('Model validation failed with %d errors.', $violationList->count()), 400);
     }
-    public function getViolationList() : ConstraintViolationListInterface
+    public function getViolationList(): ConstraintViolationListInterface
     {
         return $this->violationList;
     }

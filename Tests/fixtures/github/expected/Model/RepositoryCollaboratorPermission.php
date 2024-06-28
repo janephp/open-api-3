@@ -8,7 +8,7 @@ class RepositoryCollaboratorPermission extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RepositoryCollaboratorPermission extends \ArrayObject
      *
      * @return string
      */
-    public function getPermission() : string
+    public function getPermission(): string
     {
         return $this->permission;
     }
@@ -40,7 +40,7 @@ class RepositoryCollaboratorPermission extends \ArrayObject
      *
      * @return self
      */
-    public function setPermission(string $permission) : self
+    public function setPermission(string $permission): self
     {
         $this->initialized['permission'] = true;
         $this->permission = $permission;
@@ -51,7 +51,7 @@ class RepositoryCollaboratorPermission extends \ArrayObject
      *
      * @return RepositoryCollaboratorPermissionUser|null
      */
-    public function getUser() : ?RepositoryCollaboratorPermissionUser
+    public function getUser(): ?RepositoryCollaboratorPermissionUser
     {
         return $this->user;
     }
@@ -62,7 +62,7 @@ class RepositoryCollaboratorPermission extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?RepositoryCollaboratorPermissionUser $user) : self
+    public function setUser(?RepositoryCollaboratorPermissionUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;

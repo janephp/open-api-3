@@ -8,7 +8,7 @@ class ReposOwnerRepoGitTreesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoGitTreesPostBody extends \ArrayObject
      *
      * @return list<ReposOwnerRepoGitTreesPostBodyTreeItem>
      */
-    public function getTree() : array
+    public function getTree(): array
     {
         return $this->tree;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoGitTreesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTree(array $tree) : self
+    public function setTree(array $tree): self
     {
         $this->initialized['tree'] = true;
         $this->tree = $tree;
@@ -51,7 +51,7 @@ class ReposOwnerRepoGitTreesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBaseTree() : string
+    public function getBaseTree(): string
     {
         return $this->baseTree;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoGitTreesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBaseTree(string $baseTree) : self
+    public function setBaseTree(string $baseTree): self
     {
         $this->initialized['baseTree'] = true;
         $this->baseTree = $baseTree;

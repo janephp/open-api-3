@@ -18,11 +18,11 @@ class PullsMergeConflictException extends ConflictException
         $this->reposOwnerRepoPullsPullNumberMergePutResponse409 = $reposOwnerRepoPullsPullNumberMergePutResponse409;
         $this->response = $response;
     }
-    public function getReposOwnerRepoPullsPullNumberMergePutResponse409() : \Github\Model\ReposOwnerRepoPullsPullNumberMergePutResponse409
+    public function getReposOwnerRepoPullsPullNumberMergePutResponse409(): \Github\Model\ReposOwnerRepoPullsPullNumberMergePutResponse409
     {
         return $this->reposOwnerRepoPullsPullNumberMergePutResponse409;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

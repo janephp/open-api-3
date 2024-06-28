@@ -8,7 +8,7 @@ class ProjectsColumnsCardsCardIdMovesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ProjectsColumnsCardsCardIdMovesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPosition() : string
+    public function getPosition(): string
     {
         return $this->position;
     }
@@ -40,7 +40,7 @@ class ProjectsColumnsCardsCardIdMovesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPosition(string $position) : self
+    public function setPosition(string $position): self
     {
         $this->initialized['position'] = true;
         $this->position = $position;
@@ -51,7 +51,7 @@ class ProjectsColumnsCardsCardIdMovesPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getColumnId() : int
+    public function getColumnId(): int
     {
         return $this->columnId;
     }
@@ -62,7 +62,7 @@ class ProjectsColumnsCardsCardIdMovesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setColumnId(int $columnId) : self
+    public function setColumnId(int $columnId): self
     {
         $this->initialized['columnId'] = true;
         $this->columnId = $columnId;

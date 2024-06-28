@@ -8,7 +8,7 @@ class ReposOwnerRepoCheckSuitesPreferencesPatchBodyAutoTriggerChecksItem extends
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoCheckSuitesPreferencesPatchBodyAutoTriggerChecksItem extends
      *
      * @return int
      */
-    public function getAppId() : int
+    public function getAppId(): int
     {
         return $this->appId;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoCheckSuitesPreferencesPatchBodyAutoTriggerChecksItem extends
      *
      * @return self
      */
-    public function setAppId(int $appId) : self
+    public function setAppId(int $appId): self
     {
         $this->initialized['appId'] = true;
         $this->appId = $appId;
@@ -51,7 +51,7 @@ class ReposOwnerRepoCheckSuitesPreferencesPatchBodyAutoTriggerChecksItem extends
      *
      * @return bool
      */
-    public function getSetting() : bool
+    public function getSetting(): bool
     {
         return $this->setting;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoCheckSuitesPreferencesPatchBodyAutoTriggerChecksItem extends
      *
      * @return self
      */
-    public function setSetting(bool $setting) : self
+    public function setSetting(bool $setting): self
     {
         $this->initialized['setting'] = true;
         $this->setting = $setting;

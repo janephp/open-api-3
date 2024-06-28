@@ -8,7 +8,7 @@ class PortfolioRequestEmails extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PortfolioRequestEmails extends \ArrayObject
      *
      * @return string
      */
-    public function getFirstName() : string
+    public function getFirstName(): string
     {
         return $this->firstName;
     }
@@ -46,7 +46,7 @@ class PortfolioRequestEmails extends \ArrayObject
      *
      * @return self
      */
-    public function setFirstName(string $firstName) : self
+    public function setFirstName(string $firstName): self
     {
         $this->initialized['firstName'] = true;
         $this->firstName = $firstName;
@@ -57,7 +57,7 @@ class PortfolioRequestEmails extends \ArrayObject
      *
      * @return string
      */
-    public function getLastName() : string
+    public function getLastName(): string
     {
         return $this->lastName;
     }
@@ -68,7 +68,7 @@ class PortfolioRequestEmails extends \ArrayObject
      *
      * @return self
      */
-    public function setLastName(string $lastName) : self
+    public function setLastName(string $lastName): self
     {
         $this->initialized['lastName'] = true;
         $this->lastName = $lastName;
@@ -79,7 +79,7 @@ class PortfolioRequestEmails extends \ArrayObject
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -90,7 +90,7 @@ class PortfolioRequestEmails extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;

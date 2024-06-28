@@ -8,7 +8,7 @@ class Key extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class Key extends \ArrayObject
      *
      * @return string
      */
-    public function getKeyId() : string
+    public function getKeyId(): string
     {
         return $this->keyId;
     }
@@ -76,7 +76,7 @@ class Key extends \ArrayObject
      *
      * @return self
      */
-    public function setKeyId(string $keyId) : self
+    public function setKeyId(string $keyId): self
     {
         $this->initialized['keyId'] = true;
         $this->keyId = $keyId;
@@ -87,7 +87,7 @@ class Key extends \ArrayObject
      *
      * @return string
      */
-    public function getKey() : string
+    public function getKey(): string
     {
         return $this->key;
     }
@@ -98,7 +98,7 @@ class Key extends \ArrayObject
      *
      * @return self
      */
-    public function setKey(string $key) : self
+    public function setKey(string $key): self
     {
         $this->initialized['key'] = true;
         $this->key = $key;
@@ -109,7 +109,7 @@ class Key extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -120,7 +120,7 @@ class Key extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -131,7 +131,7 @@ class Key extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -142,7 +142,7 @@ class Key extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -153,7 +153,7 @@ class Key extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -164,7 +164,7 @@ class Key extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -175,7 +175,7 @@ class Key extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -186,7 +186,7 @@ class Key extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -197,7 +197,7 @@ class Key extends \ArrayObject
      *
      * @return bool
      */
-    public function getVerified() : bool
+    public function getVerified(): bool
     {
         return $this->verified;
     }
@@ -208,7 +208,7 @@ class Key extends \ArrayObject
      *
      * @return self
      */
-    public function setVerified(bool $verified) : self
+    public function setVerified(bool $verified): self
     {
         $this->initialized['verified'] = true;
         $this->verified = $verified;
@@ -219,7 +219,7 @@ class Key extends \ArrayObject
      *
      * @return bool
      */
-    public function getReadOnly() : bool
+    public function getReadOnly(): bool
     {
         return $this->readOnly;
     }
@@ -230,7 +230,7 @@ class Key extends \ArrayObject
      *
      * @return self
      */
-    public function setReadOnly(bool $readOnly) : self
+    public function setReadOnly(bool $readOnly): self
     {
         $this->initialized['readOnly'] = true;
         $this->readOnly = $readOnly;

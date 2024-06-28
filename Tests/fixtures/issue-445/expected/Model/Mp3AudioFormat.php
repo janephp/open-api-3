@@ -8,7 +8,7 @@ class Mp3AudioFormat extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -36,7 +36,7 @@ class Mp3AudioFormat extends FormatBase
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -47,7 +47,7 @@ class Mp3AudioFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;
@@ -58,7 +58,7 @@ class Mp3AudioFormat extends FormatBase
      *
      * @return int|null
      */
-    public function getBitrate() : ?int
+    public function getBitrate(): ?int
     {
         return $this->bitrate;
     }
@@ -69,7 +69,7 @@ class Mp3AudioFormat extends FormatBase
      *
      * @return self
      */
-    public function setBitrate(?int $bitrate) : self
+    public function setBitrate(?int $bitrate): self
     {
         $this->initialized['bitrate'] = true;
         $this->bitrate = $bitrate;
@@ -81,7 +81,7 @@ class Mp3AudioFormat extends FormatBase
     *
     * @return int|null
     */
-    public function getQuality() : ?int
+    public function getQuality(): ?int
     {
         return $this->quality;
     }
@@ -93,7 +93,7 @@ class Mp3AudioFormat extends FormatBase
     *
     * @return self
     */
-    public function setQuality(?int $quality) : self
+    public function setQuality(?int $quality): self
     {
         $this->initialized['quality'] = true;
         $this->quality = $quality;

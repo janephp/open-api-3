@@ -13,7 +13,7 @@ class OrgsCheckMembershipForUserNotFoundException extends NotFoundException
         parent::__construct('Response if requester is an organization member and user is not a member');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

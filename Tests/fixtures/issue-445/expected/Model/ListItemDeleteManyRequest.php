@@ -8,7 +8,7 @@ class ListItemDeleteManyRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ListItemDeleteManyRequest
      *
      * @return list<string>
      */
-    public function getListItemIds() : array
+    public function getListItemIds(): array
     {
         return $this->listItemIds;
     }
@@ -46,7 +46,7 @@ class ListItemDeleteManyRequest
      *
      * @return self
      */
-    public function setListItemIds(array $listItemIds) : self
+    public function setListItemIds(array $listItemIds): self
     {
         $this->initialized['listItemIds'] = true;
         $this->listItemIds = $listItemIds;
@@ -57,7 +57,7 @@ class ListItemDeleteManyRequest
      *
      * @return bool
      */
-    public function getForceReferenceRemoval() : bool
+    public function getForceReferenceRemoval(): bool
     {
         return $this->forceReferenceRemoval;
     }
@@ -68,7 +68,7 @@ class ListItemDeleteManyRequest
      *
      * @return self
      */
-    public function setForceReferenceRemoval(bool $forceReferenceRemoval) : self
+    public function setForceReferenceRemoval(bool $forceReferenceRemoval): self
     {
         $this->initialized['forceReferenceRemoval'] = true;
         $this->forceReferenceRemoval = $forceReferenceRemoval;
@@ -79,7 +79,7 @@ class ListItemDeleteManyRequest
      *
      * @return bool
      */
-    public function getNotifyProgress() : bool
+    public function getNotifyProgress(): bool
     {
         return $this->notifyProgress;
     }
@@ -90,7 +90,7 @@ class ListItemDeleteManyRequest
      *
      * @return self
      */
-    public function setNotifyProgress(bool $notifyProgress) : self
+    public function setNotifyProgress(bool $notifyProgress): self
     {
         $this->initialized['notifyProgress'] = true;
         $this->notifyProgress = $notifyProgress;

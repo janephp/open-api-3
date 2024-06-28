@@ -8,7 +8,7 @@ class BranchWithProtectionLinks extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class BranchWithProtectionLinks extends \ArrayObject
      *
      * @return string
      */
-    public function getHtml() : string
+    public function getHtml(): string
     {
         return $this->html;
     }
@@ -40,7 +40,7 @@ class BranchWithProtectionLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setHtml(string $html) : self
+    public function setHtml(string $html): self
     {
         $this->initialized['html'] = true;
         $this->html = $html;
@@ -51,7 +51,7 @@ class BranchWithProtectionLinks extends \ArrayObject
      *
      * @return string
      */
-    public function getSelf() : string
+    public function getSelf(): string
     {
         return $this->self;
     }
@@ -62,7 +62,7 @@ class BranchWithProtectionLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setSelf(string $self) : self
+    public function setSelf(string $self): self
     {
         $this->initialized['self'] = true;
         $this->self = $self;

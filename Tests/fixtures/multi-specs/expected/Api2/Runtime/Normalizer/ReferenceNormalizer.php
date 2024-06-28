@@ -11,7 +11,7 @@ if (Kernel::MAJOR_VERSION >= 7 || Kernel::MAJOR_VERSION === 6 && Kernel::MINOR_V
         /**
          * {@inheritdoc}
          */
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $ref = [];
             $ref['$ref'] = (string) $object->getReferenceUri();
@@ -20,7 +20,7 @@ if (Kernel::MAJOR_VERSION >= 7 || Kernel::MAJOR_VERSION === 6 && Kernel::MINOR_V
         /**
          * {@inheritdoc}
          */
-        public function supportsNormalization($data, $format = null) : bool
+        public function supportsNormalization($data, $format = null): bool
         {
             return $data instanceof Reference;
         }
@@ -40,7 +40,7 @@ if (Kernel::MAJOR_VERSION >= 7 || Kernel::MAJOR_VERSION === 6 && Kernel::MINOR_V
         /**
          * {@inheritdoc}
          */
-        public function supportsNormalization($data, $format = null) : bool
+        public function supportsNormalization($data, $format = null): bool
         {
             return $data instanceof Reference;
         }

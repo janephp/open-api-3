@@ -8,7 +8,7 @@ class URLImage extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class URLImage extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -46,7 +46,7 @@ class URLImage extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -57,7 +57,7 @@ class URLImage extends \ArrayObject
      *
      * @return int
      */
-    public function getHeight() : int
+    public function getHeight(): int
     {
         return $this->height;
     }
@@ -68,7 +68,7 @@ class URLImage extends \ArrayObject
      *
      * @return self
      */
-    public function setHeight(int $height) : self
+    public function setHeight(int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -79,7 +79,7 @@ class URLImage extends \ArrayObject
      *
      * @return int
      */
-    public function getWidth() : int
+    public function getWidth(): int
     {
         return $this->width;
     }
@@ -90,7 +90,7 @@ class URLImage extends \ArrayObject
      *
      * @return self
      */
-    public function setWidth(int $width) : self
+    public function setWidth(int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;

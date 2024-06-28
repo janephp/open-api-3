@@ -8,7 +8,7 @@ class Reaction extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class Reaction extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -58,7 +58,7 @@ class Reaction extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -69,7 +69,7 @@ class Reaction extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -80,7 +80,7 @@ class Reaction extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -91,7 +91,7 @@ class Reaction extends \ArrayObject
      *
      * @return ReactionUser|null
      */
-    public function getUser() : ?ReactionUser
+    public function getUser(): ?ReactionUser
     {
         return $this->user;
     }
@@ -102,7 +102,7 @@ class Reaction extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?ReactionUser $user) : self
+    public function setUser(?ReactionUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -113,7 +113,7 @@ class Reaction extends \ArrayObject
      *
      * @return string
      */
-    public function getContent() : string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -124,7 +124,7 @@ class Reaction extends \ArrayObject
      *
      * @return self
      */
-    public function setContent(string $content) : self
+    public function setContent(string $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -135,7 +135,7 @@ class Reaction extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -146,7 +146,7 @@ class Reaction extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;

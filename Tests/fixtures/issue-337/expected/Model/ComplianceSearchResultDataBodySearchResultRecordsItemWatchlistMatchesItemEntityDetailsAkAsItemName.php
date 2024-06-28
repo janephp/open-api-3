@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return string
      */
-    public function getFull() : string
+    public function getFull(): string
     {
         return $this->full;
     }
@@ -34,7 +34,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemE
      *
      * @return self
      */
-    public function setFull(string $full) : self
+    public function setFull(string $full): self
     {
         $this->initialized['full'] = true;
         $this->full = $full;

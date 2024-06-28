@@ -33,22 +33,22 @@ class TeamsAddOrUpdateMembershipForUserInOrg extends \Github\Runtime\Client\Base
         $this->body = $requestBody;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'PUT';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{org}', '{team_slug}', '{username}'], [$this->org, $this->team_slug, $this->username], '/orgs/{org}/teams/{team_slug}/memberships/{username}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \Github\Model\OrgsOrgTeamsTeamSlugMembershipsUsernamePutBody) {
             return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
@@ -65,16 +65,16 @@ class TeamsAddOrUpdateMembershipForUserInOrg extends \Github\Runtime\Client\Base
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'Github\\Model\\TeamMembership', 'json');
+            return $serializer->deserialize($body, 'Github\Model\TeamMembership', 'json');
         }
         if (403 === $status) {
             throw new \Github\Exception\TeamsAddOrUpdateMembershipForUserInOrgForbiddenException($response);
         }
         if (is_null($contentType) === false && (422 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            throw new \Github\Exception\TeamsAddOrUpdateMembershipForUserInOrgUnprocessableEntityException($serializer->deserialize($body, 'Github\\Model\\OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422', 'json'), $response);
+            throw new \Github\Exception\TeamsAddOrUpdateMembershipForUserInOrgUnprocessableEntityException($serializer->deserialize($body, 'Github\Model\OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422', 'json'), $response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

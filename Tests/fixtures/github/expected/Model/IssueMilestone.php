@@ -8,7 +8,7 @@ class IssueMilestone extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -113,7 +113,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -124,7 +124,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -135,7 +135,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -146,7 +146,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -157,7 +157,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelsUrl() : string
+    public function getLabelsUrl(): string
     {
         return $this->labelsUrl;
     }
@@ -168,7 +168,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelsUrl(string $labelsUrl) : self
+    public function setLabelsUrl(string $labelsUrl): self
     {
         $this->initialized['labelsUrl'] = true;
         $this->labelsUrl = $labelsUrl;
@@ -179,7 +179,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -190,7 +190,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -201,7 +201,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -212,7 +212,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -223,7 +223,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -234,7 +234,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -245,7 +245,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -256,7 +256,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -267,7 +267,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -278,7 +278,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -289,7 +289,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -300,7 +300,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -311,7 +311,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return MilestoneCreator|null
      */
-    public function getCreator() : ?MilestoneCreator
+    public function getCreator(): ?MilestoneCreator
     {
         return $this->creator;
     }
@@ -322,7 +322,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setCreator(?MilestoneCreator $creator) : self
+    public function setCreator(?MilestoneCreator $creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;
@@ -333,7 +333,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return int
      */
-    public function getOpenIssues() : int
+    public function getOpenIssues(): int
     {
         return $this->openIssues;
     }
@@ -344,7 +344,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setOpenIssues(int $openIssues) : self
+    public function setOpenIssues(int $openIssues): self
     {
         $this->initialized['openIssues'] = true;
         $this->openIssues = $openIssues;
@@ -355,7 +355,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return int
      */
-    public function getClosedIssues() : int
+    public function getClosedIssues(): int
     {
         return $this->closedIssues;
     }
@@ -366,7 +366,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setClosedIssues(int $closedIssues) : self
+    public function setClosedIssues(int $closedIssues): self
     {
         $this->initialized['closedIssues'] = true;
         $this->closedIssues = $closedIssues;
@@ -377,7 +377,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -388,7 +388,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -399,7 +399,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -410,7 +410,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -421,7 +421,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getClosedAt() : ?\DateTime
+    public function getClosedAt(): ?\DateTime
     {
         return $this->closedAt;
     }
@@ -432,7 +432,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setClosedAt(?\DateTime $closedAt) : self
+    public function setClosedAt(?\DateTime $closedAt): self
     {
         $this->initialized['closedAt'] = true;
         $this->closedAt = $closedAt;
@@ -443,7 +443,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getDueOn() : ?\DateTime
+    public function getDueOn(): ?\DateTime
     {
         return $this->dueOn;
     }
@@ -454,7 +454,7 @@ class IssueMilestone extends \ArrayObject
      *
      * @return self
      */
-    public function setDueOn(?\DateTime $dueOn) : self
+    public function setDueOn(?\DateTime $dueOn): self
     {
         $this->initialized['dueOn'] = true;
         $this->dueOn = $dueOn;

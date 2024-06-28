@@ -8,7 +8,7 @@ class ReposOwnerRepoImportLfsPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ReposOwnerRepoImportLfsPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getUseLfs() : string
+    public function getUseLfs(): string
     {
         return $this->useLfs;
     }
@@ -34,7 +34,7 @@ class ReposOwnerRepoImportLfsPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setUseLfs(string $useLfs) : self
+    public function setUseLfs(string $useLfs): self
     {
         $this->initialized['useLfs'] = true;
         $this->useLfs = $useLfs;

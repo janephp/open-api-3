@@ -8,7 +8,7 @@ class ParchmentsGetLdjsonResponse200HydraSearch extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ParchmentsGetLdjsonResponse200HydraSearch extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -52,7 +52,7 @@ class ParchmentsGetLdjsonResponse200HydraSearch extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -63,7 +63,7 @@ class ParchmentsGetLdjsonResponse200HydraSearch extends \ArrayObject
      *
      * @return string
      */
-    public function getHydraTemplate() : string
+    public function getHydraTemplate(): string
     {
         return $this->hydraTemplate;
     }
@@ -74,7 +74,7 @@ class ParchmentsGetLdjsonResponse200HydraSearch extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraTemplate(string $hydraTemplate) : self
+    public function setHydraTemplate(string $hydraTemplate): self
     {
         $this->initialized['hydraTemplate'] = true;
         $this->hydraTemplate = $hydraTemplate;
@@ -85,7 +85,7 @@ class ParchmentsGetLdjsonResponse200HydraSearch extends \ArrayObject
      *
      * @return string
      */
-    public function getHydraVariableRepresentation() : string
+    public function getHydraVariableRepresentation(): string
     {
         return $this->hydraVariableRepresentation;
     }
@@ -96,7 +96,7 @@ class ParchmentsGetLdjsonResponse200HydraSearch extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraVariableRepresentation(string $hydraVariableRepresentation) : self
+    public function setHydraVariableRepresentation(string $hydraVariableRepresentation): self
     {
         $this->initialized['hydraVariableRepresentation'] = true;
         $this->hydraVariableRepresentation = $hydraVariableRepresentation;
@@ -107,7 +107,7 @@ class ParchmentsGetLdjsonResponse200HydraSearch extends \ArrayObject
      *
      * @return list<ParchmentsGetLdjsonResponse200HydraSearchHydraMappingItem>
      */
-    public function getHydraMapping() : array
+    public function getHydraMapping(): array
     {
         return $this->hydraMapping;
     }
@@ -118,7 +118,7 @@ class ParchmentsGetLdjsonResponse200HydraSearch extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraMapping(array $hydraMapping) : self
+    public function setHydraMapping(array $hydraMapping): self
     {
         $this->initialized['hydraMapping'] = true;
         $this->hydraMapping = $hydraMapping;

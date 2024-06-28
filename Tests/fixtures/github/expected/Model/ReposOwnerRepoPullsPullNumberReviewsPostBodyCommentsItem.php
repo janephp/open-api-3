@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -70,7 +70,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -81,7 +81,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return int
      */
-    public function getPosition() : int
+    public function getPosition(): int
     {
         return $this->position;
     }
@@ -92,7 +92,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return self
      */
-    public function setPosition(int $position) : self
+    public function setPosition(int $position): self
     {
         $this->initialized['position'] = true;
         $this->position = $position;
@@ -103,7 +103,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -114,7 +114,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -125,7 +125,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return int
      */
-    public function getLine() : int
+    public function getLine(): int
     {
         return $this->line;
     }
@@ -136,7 +136,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return self
      */
-    public function setLine(int $line) : self
+    public function setLine(int $line): self
     {
         $this->initialized['line'] = true;
         $this->line = $line;
@@ -147,7 +147,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return string
      */
-    public function getSide() : string
+    public function getSide(): string
     {
         return $this->side;
     }
@@ -158,7 +158,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return self
      */
-    public function setSide(string $side) : self
+    public function setSide(string $side): self
     {
         $this->initialized['side'] = true;
         $this->side = $side;
@@ -169,7 +169,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return int
      */
-    public function getStartLine() : int
+    public function getStartLine(): int
     {
         return $this->startLine;
     }
@@ -180,7 +180,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return self
      */
-    public function setStartLine(int $startLine) : self
+    public function setStartLine(int $startLine): self
     {
         $this->initialized['startLine'] = true;
         $this->startLine = $startLine;
@@ -191,7 +191,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return string
      */
-    public function getStartSide() : string
+    public function getStartSide(): string
     {
         return $this->startSide;
     }
@@ -202,7 +202,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem extends \ArrayObj
      *
      * @return self
      */
-    public function setStartSide(string $startSide) : self
+    public function setStartSide(string $startSide): self
     {
         $this->initialized['startSide'] = true;
         $this->startSide = $startSide;

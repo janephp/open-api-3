@@ -8,7 +8,7 @@ class ThreadSubscription extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return bool
      */
-    public function getSubscribed() : bool
+    public function getSubscribed(): bool
     {
         return $this->subscribed;
     }
@@ -70,7 +70,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setSubscribed(bool $subscribed) : self
+    public function setSubscribed(bool $subscribed): self
     {
         $this->initialized['subscribed'] = true;
         $this->subscribed = $subscribed;
@@ -81,7 +81,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return bool
      */
-    public function getIgnored() : bool
+    public function getIgnored(): bool
     {
         return $this->ignored;
     }
@@ -92,7 +92,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setIgnored(bool $ignored) : self
+    public function setIgnored(bool $ignored): self
     {
         $this->initialized['ignored'] = true;
         $this->ignored = $ignored;
@@ -103,7 +103,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return string|null
      */
-    public function getReason() : ?string
+    public function getReason(): ?string
     {
         return $this->reason;
     }
@@ -114,7 +114,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setReason(?string $reason) : self
+    public function setReason(?string $reason): self
     {
         $this->initialized['reason'] = true;
         $this->reason = $reason;
@@ -125,7 +125,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getCreatedAt() : ?\DateTime
+    public function getCreatedAt(): ?\DateTime
     {
         return $this->createdAt;
     }
@@ -136,7 +136,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(?\DateTime $createdAt) : self
+    public function setCreatedAt(?\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -147,7 +147,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -158,7 +158,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -169,7 +169,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return string
      */
-    public function getThreadUrl() : string
+    public function getThreadUrl(): string
     {
         return $this->threadUrl;
     }
@@ -180,7 +180,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setThreadUrl(string $threadUrl) : self
+    public function setThreadUrl(string $threadUrl): self
     {
         $this->initialized['threadUrl'] = true;
         $this->threadUrl = $threadUrl;
@@ -191,7 +191,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoryUrl() : string
+    public function getRepositoryUrl(): string
     {
         return $this->repositoryUrl;
     }
@@ -202,7 +202,7 @@ class ThreadSubscription extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryUrl(string $repositoryUrl) : self
+    public function setRepositoryUrl(string $repositoryUrl): self
     {
         $this->initialized['repositoryUrl'] = true;
         $this->repositoryUrl = $repositoryUrl;

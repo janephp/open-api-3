@@ -8,7 +8,7 @@ class IssueEventLabel extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class IssueEventLabel extends \ArrayObject
      *
      * @return string|null
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -40,7 +40,7 @@ class IssueEventLabel extends \ArrayObject
      *
      * @return self
      */
-    public function setName(?string $name) : self
+    public function setName(?string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -51,7 +51,7 @@ class IssueEventLabel extends \ArrayObject
      *
      * @return string|null
      */
-    public function getColor() : ?string
+    public function getColor(): ?string
     {
         return $this->color;
     }
@@ -62,7 +62,7 @@ class IssueEventLabel extends \ArrayObject
      *
      * @return self
      */
-    public function setColor(?string $color) : self
+    public function setColor(?string $color): self
     {
         $this->initialized['color'] = true;
         $this->color = $color;

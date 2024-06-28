@@ -8,7 +8,7 @@ class OutputFormatRenderPreviewRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class OutputFormatRenderPreviewRequest
      *
      * @return string|null
      */
-    public function getContentId() : ?string
+    public function getContentId(): ?string
     {
         return $this->contentId;
     }
@@ -40,7 +40,7 @@ class OutputFormatRenderPreviewRequest
      *
      * @return self
      */
-    public function setContentId(?string $contentId) : self
+    public function setContentId(?string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;
@@ -62,7 +62,7 @@ class OutputFormatRenderPreviewRequest
      *
      * @return self
      */
-    public function setOutputFormat($outputFormat) : self
+    public function setOutputFormat($outputFormat): self
     {
         $this->initialized['outputFormat'] = true;
         $this->outputFormat = $outputFormat;

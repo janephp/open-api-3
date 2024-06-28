@@ -8,7 +8,7 @@ class PermissionSetDetailOfContentRight
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -70,7 +70,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -92,7 +92,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -103,7 +103,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return list<PermissionUserRoleRightsOfContentRight>|null
      */
-    public function getUserRolesRights() : ?array
+    public function getUserRolesRights(): ?array
     {
         return $this->userRolesRights;
     }
@@ -114,7 +114,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return self
      */
-    public function setUserRolesRights(?array $userRolesRights) : self
+    public function setUserRolesRights(?array $userRolesRights): self
     {
         $this->initialized['userRolesRights'] = true;
         $this->userRolesRights = $userRolesRights;
@@ -125,7 +125,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return list<PermissionUserRoleRightsOfPermissionSetRight>|null
      */
-    public function getUserRolesPermissionSetRights() : ?array
+    public function getUserRolesPermissionSetRights(): ?array
     {
         return $this->userRolesPermissionSetRights;
     }
@@ -136,7 +136,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return self
      */
-    public function setUserRolesPermissionSetRights(?array $userRolesPermissionSetRights) : self
+    public function setUserRolesPermissionSetRights(?array $userRolesPermissionSetRights): self
     {
         $this->initialized['userRolesPermissionSetRights'] = true;
         $this->userRolesPermissionSetRights = $userRolesPermissionSetRights;
@@ -147,7 +147,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return bool
      */
-    public function getExclusive() : bool
+    public function getExclusive(): bool
     {
         return $this->exclusive;
     }
@@ -158,7 +158,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return self
      */
-    public function setExclusive(bool $exclusive) : self
+    public function setExclusive(bool $exclusive): self
     {
         $this->initialized['exclusive'] = true;
         $this->exclusive = $exclusive;
@@ -169,7 +169,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return string
      */
-    public function getOwnerTokenId() : string
+    public function getOwnerTokenId(): string
     {
         return $this->ownerTokenId;
     }
@@ -180,7 +180,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return self
      */
-    public function setOwnerTokenId(string $ownerTokenId) : self
+    public function setOwnerTokenId(string $ownerTokenId): self
     {
         $this->initialized['ownerTokenId'] = true;
         $this->ownerTokenId = $ownerTokenId;
@@ -202,7 +202,7 @@ class PermissionSetDetailOfContentRight
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;

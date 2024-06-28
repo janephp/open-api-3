@@ -8,7 +8,7 @@ class PngFormat extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -76,7 +76,7 @@ class PngFormat extends FormatBase
      *
      * @return self
      */
-    public function setColorProfile($colorProfile) : self
+    public function setColorProfile($colorProfile): self
     {
         $this->initialized['colorProfile'] = true;
         $this->colorProfile = $colorProfile;
@@ -98,7 +98,7 @@ class PngFormat extends FormatBase
      *
      * @return self
      */
-    public function setColorTransformationIntent($colorTransformationIntent) : self
+    public function setColorTransformationIntent($colorTransformationIntent): self
     {
         $this->initialized['colorTransformationIntent'] = true;
         $this->colorTransformationIntent = $colorTransformationIntent;
@@ -109,7 +109,7 @@ class PngFormat extends FormatBase
      *
      * @return float|null
      */
-    public function getHorizontalResolution() : ?float
+    public function getHorizontalResolution(): ?float
     {
         return $this->horizontalResolution;
     }
@@ -120,7 +120,7 @@ class PngFormat extends FormatBase
      *
      * @return self
      */
-    public function setHorizontalResolution(?float $horizontalResolution) : self
+    public function setHorizontalResolution(?float $horizontalResolution): self
     {
         $this->initialized['horizontalResolution'] = true;
         $this->horizontalResolution = $horizontalResolution;
@@ -131,7 +131,7 @@ class PngFormat extends FormatBase
      *
      * @return float|null
      */
-    public function getVerticalResolution() : ?float
+    public function getVerticalResolution(): ?float
     {
         return $this->verticalResolution;
     }
@@ -142,7 +142,7 @@ class PngFormat extends FormatBase
      *
      * @return self
      */
-    public function setVerticalResolution(?float $verticalResolution) : self
+    public function setVerticalResolution(?float $verticalResolution): self
     {
         $this->initialized['verticalResolution'] = true;
         $this->verticalResolution = $verticalResolution;
@@ -153,7 +153,7 @@ class PngFormat extends FormatBase
      *
      * @return bool
      */
-    public function getKeepClippingPath() : bool
+    public function getKeepClippingPath(): bool
     {
         return $this->keepClippingPath;
     }
@@ -164,7 +164,7 @@ class PngFormat extends FormatBase
      *
      * @return self
      */
-    public function setKeepClippingPath(bool $keepClippingPath) : self
+    public function setKeepClippingPath(bool $keepClippingPath): self
     {
         $this->initialized['keepClippingPath'] = true;
         $this->keepClippingPath = $keepClippingPath;
@@ -186,7 +186,7 @@ class PngFormat extends FormatBase
      *
      * @return self
      */
-    public function setResizeAction($resizeAction) : self
+    public function setResizeAction($resizeAction): self
     {
         $this->initialized['resizeAction'] = true;
         $this->resizeAction = $resizeAction;
@@ -197,7 +197,7 @@ class PngFormat extends FormatBase
      *
      * @return list<ImageActionBase>|null
      */
-    public function getActions() : ?array
+    public function getActions(): ?array
     {
         return $this->actions;
     }
@@ -208,7 +208,7 @@ class PngFormat extends FormatBase
      *
      * @return self
      */
-    public function setActions(?array $actions) : self
+    public function setActions(?array $actions): self
     {
         $this->initialized['actions'] = true;
         $this->actions = $actions;
@@ -219,7 +219,7 @@ class PngFormat extends FormatBase
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -230,7 +230,7 @@ class PngFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;

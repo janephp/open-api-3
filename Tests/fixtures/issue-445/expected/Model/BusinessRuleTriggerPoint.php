@@ -8,7 +8,7 @@ class BusinessRuleTriggerPoint
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class BusinessRuleTriggerPoint
      *
      * @return self
      */
-    public function setExecutionScope($executionScope) : self
+    public function setExecutionScope($executionScope): self
     {
         $this->initialized['executionScope'] = true;
         $this->executionScope = $executionScope;
@@ -68,7 +68,7 @@ class BusinessRuleTriggerPoint
      *
      * @return self
      */
-    public function setDocumentType($documentType) : self
+    public function setDocumentType($documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;
@@ -90,7 +90,7 @@ class BusinessRuleTriggerPoint
      *
      * @return self
      */
-    public function setAction($action) : self
+    public function setAction($action): self
     {
         $this->initialized['action'] = true;
         $this->action = $action;

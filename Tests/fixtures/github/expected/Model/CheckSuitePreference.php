@@ -8,7 +8,7 @@ class CheckSuitePreference extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class CheckSuitePreference extends \ArrayObject
      *
      * @return CheckSuitePreferencePreferences
      */
-    public function getPreferences() : CheckSuitePreferencePreferences
+    public function getPreferences(): CheckSuitePreferencePreferences
     {
         return $this->preferences;
     }
@@ -40,7 +40,7 @@ class CheckSuitePreference extends \ArrayObject
      *
      * @return self
      */
-    public function setPreferences(CheckSuitePreferencePreferences $preferences) : self
+    public function setPreferences(CheckSuitePreferencePreferences $preferences): self
     {
         $this->initialized['preferences'] = true;
         $this->preferences = $preferences;
@@ -51,7 +51,7 @@ class CheckSuitePreference extends \ArrayObject
      *
      * @return Repository
      */
-    public function getRepository() : Repository
+    public function getRepository(): Repository
     {
         return $this->repository;
     }
@@ -62,7 +62,7 @@ class CheckSuitePreference extends \ArrayObject
      *
      * @return self
      */
-    public function setRepository(Repository $repository) : self
+    public function setRepository(Repository $repository): self
     {
         $this->initialized['repository'] = true;
         $this->repository = $repository;

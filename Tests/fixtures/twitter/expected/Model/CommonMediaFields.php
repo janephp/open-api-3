@@ -8,7 +8,7 @@ class CommonMediaFields extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class CommonMediaFields extends \ArrayObject
      *
      * @return string
      */
-    public function getMediaKey() : string
+    public function getMediaKey(): string
     {
         return $this->mediaKey;
     }
@@ -46,7 +46,7 @@ class CommonMediaFields extends \ArrayObject
      *
      * @return self
      */
-    public function setMediaKey(string $mediaKey) : self
+    public function setMediaKey(string $mediaKey): self
     {
         $this->initialized['mediaKey'] = true;
         $this->mediaKey = $mediaKey;
@@ -57,7 +57,7 @@ class CommonMediaFields extends \ArrayObject
      *
      * @return int
      */
-    public function getHeight() : int
+    public function getHeight(): int
     {
         return $this->height;
     }
@@ -68,7 +68,7 @@ class CommonMediaFields extends \ArrayObject
      *
      * @return self
      */
-    public function setHeight(int $height) : self
+    public function setHeight(int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -79,7 +79,7 @@ class CommonMediaFields extends \ArrayObject
      *
      * @return int
      */
-    public function getWidth() : int
+    public function getWidth(): int
     {
         return $this->width;
     }
@@ -90,7 +90,7 @@ class CommonMediaFields extends \ArrayObject
      *
      * @return self
      */
-    public function setWidth(int $width) : self
+    public function setWidth(int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;

@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\Job::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\Job::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -86,11 +86,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setConclusion(null);
             }
             if (\array_key_exists('started_at', $data)) {
-                $object->setStartedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['started_at']));
+                $object->setStartedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['started_at']));
                 unset($data['started_at']);
             }
             if (\array_key_exists('completed_at', $data) && $data['completed_at'] !== null) {
-                $object->setCompletedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['completed_at']));
+                $object->setCompletedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['completed_at']));
                 unset($data['completed_at']);
             }
             elseif (\array_key_exists('completed_at', $data) && $data['completed_at'] === null) {
@@ -119,7 +119,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['id'] = $object->getId();
@@ -131,8 +131,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['html_url'] = $object->getHtmlUrl();
             $data['status'] = $object->getStatus();
             $data['conclusion'] = $object->getConclusion();
-            $data['started_at'] = $object->getStartedAt()->format('Y-m-d\\TH:i:sP');
-            $data['completed_at'] = $object->getCompletedAt()->format('Y-m-d\\TH:i:sP');
+            $data['started_at'] = $object->getStartedAt()->format('Y-m-d\TH:i:sP');
+            $data['completed_at'] = $object->getCompletedAt()->format('Y-m-d\TH:i:sP');
             $data['name'] = $object->getName();
             if ($object->isInitialized('steps') && null !== $object->getSteps()) {
                 $values = [];
@@ -152,7 +152,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\Job::class => false];
         }
@@ -164,11 +164,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\Job::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\Job::class;
         }
@@ -233,11 +233,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setConclusion(null);
             }
             if (\array_key_exists('started_at', $data)) {
-                $object->setStartedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['started_at']));
+                $object->setStartedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['started_at']));
                 unset($data['started_at']);
             }
             if (\array_key_exists('completed_at', $data) && $data['completed_at'] !== null) {
-                $object->setCompletedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['completed_at']));
+                $object->setCompletedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['completed_at']));
                 unset($data['completed_at']);
             }
             elseif (\array_key_exists('completed_at', $data) && $data['completed_at'] === null) {
@@ -281,8 +281,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['html_url'] = $object->getHtmlUrl();
             $data['status'] = $object->getStatus();
             $data['conclusion'] = $object->getConclusion();
-            $data['started_at'] = $object->getStartedAt()->format('Y-m-d\\TH:i:sP');
-            $data['completed_at'] = $object->getCompletedAt()->format('Y-m-d\\TH:i:sP');
+            $data['started_at'] = $object->getStartedAt()->format('Y-m-d\TH:i:sP');
+            $data['completed_at'] = $object->getCompletedAt()->format('Y-m-d\TH:i:sP');
             $data['name'] = $object->getName();
             if ($object->isInitialized('steps') && null !== $object->getSteps()) {
                 $values = [];
@@ -302,7 +302,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\Job::class => false];
         }

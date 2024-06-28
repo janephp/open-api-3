@@ -8,7 +8,7 @@ class AacAudioFormat extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class AacAudioFormat extends FormatBase
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -58,7 +58,7 @@ class AacAudioFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;
@@ -80,7 +80,7 @@ class AacAudioFormat extends FormatBase
      *
      * @return self
      */
-    public function setProfile($profile) : self
+    public function setProfile($profile): self
     {
         $this->initialized['profile'] = true;
         $this->profile = $profile;
@@ -102,7 +102,7 @@ class AacAudioFormat extends FormatBase
      *
      * @return self
      */
-    public function setCoder($coder) : self
+    public function setCoder($coder): self
     {
         $this->initialized['coder'] = true;
         $this->coder = $coder;
@@ -113,7 +113,7 @@ class AacAudioFormat extends FormatBase
      *
      * @return int|null
      */
-    public function getBitrate() : ?int
+    public function getBitrate(): ?int
     {
         return $this->bitrate;
     }
@@ -124,7 +124,7 @@ class AacAudioFormat extends FormatBase
      *
      * @return self
      */
-    public function setBitrate(?int $bitrate) : self
+    public function setBitrate(?int $bitrate): self
     {
         $this->initialized['bitrate'] = true;
         $this->bitrate = $bitrate;
@@ -135,7 +135,7 @@ class AacAudioFormat extends FormatBase
      *
      * @return int|null
      */
-    public function getVariableBitRate() : ?int
+    public function getVariableBitRate(): ?int
     {
         return $this->variableBitRate;
     }
@@ -146,7 +146,7 @@ class AacAudioFormat extends FormatBase
      *
      * @return self
      */
-    public function setVariableBitRate(?int $variableBitRate) : self
+    public function setVariableBitRate(?int $variableBitRate): self
     {
         $this->initialized['variableBitRate'] = true;
         $this->variableBitRate = $variableBitRate;

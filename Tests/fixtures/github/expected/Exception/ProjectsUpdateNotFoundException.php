@@ -13,7 +13,7 @@ class ProjectsUpdateNotFoundException extends NotFoundException
         parent::__construct('Response if the authenticated user does not have access to the project');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

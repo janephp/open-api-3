@@ -8,7 +8,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyD
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyD
      *
      * @return list<string>
      */
-    public function getUsers() : array
+    public function getUsers(): array
     {
         return $this->users;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyD
      *
      * @return self
      */
-    public function setUsers(array $users) : self
+    public function setUsers(array $users): self
     {
         $this->initialized['users'] = true;
         $this->users = $users;
@@ -51,7 +51,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyD
      *
      * @return list<string>
      */
-    public function getTeams() : array
+    public function getTeams(): array
     {
         return $this->teams;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyD
      *
      * @return self
      */
-    public function setTeams(array $teams) : self
+    public function setTeams(array $teams): self
     {
         $this->initialized['teams'] = true;
         $this->teams = $teams;

@@ -8,7 +8,7 @@ class TweetSearchResponseMeta extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TweetSearchResponseMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getNewestId() : string
+    public function getNewestId(): string
     {
         return $this->newestId;
     }
@@ -52,7 +52,7 @@ class TweetSearchResponseMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setNewestId(string $newestId) : self
+    public function setNewestId(string $newestId): self
     {
         $this->initialized['newestId'] = true;
         $this->newestId = $newestId;
@@ -63,7 +63,7 @@ class TweetSearchResponseMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getOldestId() : string
+    public function getOldestId(): string
     {
         return $this->oldestId;
     }
@@ -74,7 +74,7 @@ class TweetSearchResponseMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setOldestId(string $oldestId) : self
+    public function setOldestId(string $oldestId): self
     {
         $this->initialized['oldestId'] = true;
         $this->oldestId = $oldestId;
@@ -85,7 +85,7 @@ class TweetSearchResponseMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getNextToken() : string
+    public function getNextToken(): string
     {
         return $this->nextToken;
     }
@@ -96,7 +96,7 @@ class TweetSearchResponseMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setNextToken(string $nextToken) : self
+    public function setNextToken(string $nextToken): self
     {
         $this->initialized['nextToken'] = true;
         $this->nextToken = $nextToken;
@@ -107,7 +107,7 @@ class TweetSearchResponseMeta extends \ArrayObject
      *
      * @return int
      */
-    public function getResultCount() : int
+    public function getResultCount(): int
     {
         return $this->resultCount;
     }
@@ -118,7 +118,7 @@ class TweetSearchResponseMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setResultCount(int $resultCount) : self
+    public function setResultCount(int $resultCount): self
     {
         $this->initialized['resultCount'] = true;
         $this->resultCount = $resultCount;

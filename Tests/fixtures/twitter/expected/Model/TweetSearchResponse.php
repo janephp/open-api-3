@@ -8,7 +8,7 @@ class TweetSearchResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class TweetSearchResponse extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getData() : array
+    public function getData(): array
     {
         return $this->data;
     }
@@ -52,7 +52,7 @@ class TweetSearchResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setData(array $data) : self
+    public function setData(array $data): self
     {
         $this->initialized['data'] = true;
         $this->data = $data;
@@ -63,7 +63,7 @@ class TweetSearchResponse extends \ArrayObject
      *
      * @return Expansions
      */
-    public function getIncludes() : Expansions
+    public function getIncludes(): Expansions
     {
         return $this->includes;
     }
@@ -74,7 +74,7 @@ class TweetSearchResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludes(Expansions $includes) : self
+    public function setIncludes(Expansions $includes): self
     {
         $this->initialized['includes'] = true;
         $this->includes = $includes;
@@ -85,7 +85,7 @@ class TweetSearchResponse extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getErrors() : array
+    public function getErrors(): array
     {
         return $this->errors;
     }
@@ -96,7 +96,7 @@ class TweetSearchResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setErrors(array $errors) : self
+    public function setErrors(array $errors): self
     {
         $this->initialized['errors'] = true;
         $this->errors = $errors;
@@ -107,7 +107,7 @@ class TweetSearchResponse extends \ArrayObject
      *
      * @return TweetSearchResponseMeta
      */
-    public function getMeta() : TweetSearchResponseMeta
+    public function getMeta(): TweetSearchResponseMeta
     {
         return $this->meta;
     }
@@ -118,7 +118,7 @@ class TweetSearchResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setMeta(TweetSearchResponseMeta $meta) : self
+    public function setMeta(TweetSearchResponseMeta $meta): self
     {
         $this->initialized['meta'] = true;
         $this->meta = $meta;

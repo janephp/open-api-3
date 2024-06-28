@@ -8,7 +8,7 @@ class SystemStatus
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class SystemStatus
      *
      * @return list<StatusOfSearchIndexState>|null
      */
-    public function getSearchIndicesStatus() : ?array
+    public function getSearchIndicesStatus(): ?array
     {
         return $this->searchIndicesStatus;
     }
@@ -46,7 +46,7 @@ class SystemStatus
      *
      * @return self
      */
-    public function setSearchIndicesStatus(?array $searchIndicesStatus) : self
+    public function setSearchIndicesStatus(?array $searchIndicesStatus): self
     {
         $this->initialized['searchIndicesStatus'] = true;
         $this->searchIndicesStatus = $searchIndicesStatus;
@@ -57,7 +57,7 @@ class SystemStatus
      *
      * @return list<StatusOfDisplayValuesState>|null
      */
-    public function getDisplayValuesStatus() : ?array
+    public function getDisplayValuesStatus(): ?array
     {
         return $this->displayValuesStatus;
     }
@@ -68,7 +68,7 @@ class SystemStatus
      *
      * @return self
      */
-    public function setDisplayValuesStatus(?array $displayValuesStatus) : self
+    public function setDisplayValuesStatus(?array $displayValuesStatus): self
     {
         $this->initialized['displayValuesStatus'] = true;
         $this->displayValuesStatus = $displayValuesStatus;
@@ -79,7 +79,7 @@ class SystemStatus
      *
      * @return list<StatusOfMetadataState>|null
      */
-    public function getMetadataStatus() : ?array
+    public function getMetadataStatus(): ?array
     {
         return $this->metadataStatus;
     }
@@ -90,7 +90,7 @@ class SystemStatus
      *
      * @return self
      */
-    public function setMetadataStatus(?array $metadataStatus) : self
+    public function setMetadataStatus(?array $metadataStatus): self
     {
         $this->initialized['metadataStatus'] = true;
         $this->metadataStatus = $metadataStatus;

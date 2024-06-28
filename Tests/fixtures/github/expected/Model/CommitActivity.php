@@ -8,7 +8,7 @@ class CommitActivity extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class CommitActivity extends \ArrayObject
      *
      * @return list<int>
      */
-    public function getDays() : array
+    public function getDays(): array
     {
         return $this->days;
     }
@@ -46,7 +46,7 @@ class CommitActivity extends \ArrayObject
      *
      * @return self
      */
-    public function setDays(array $days) : self
+    public function setDays(array $days): self
     {
         $this->initialized['days'] = true;
         $this->days = $days;
@@ -57,7 +57,7 @@ class CommitActivity extends \ArrayObject
      *
      * @return int
      */
-    public function getTotal() : int
+    public function getTotal(): int
     {
         return $this->total;
     }
@@ -68,7 +68,7 @@ class CommitActivity extends \ArrayObject
      *
      * @return self
      */
-    public function setTotal(int $total) : self
+    public function setTotal(int $total): self
     {
         $this->initialized['total'] = true;
         $this->total = $total;
@@ -79,7 +79,7 @@ class CommitActivity extends \ArrayObject
      *
      * @return int
      */
-    public function getWeek() : int
+    public function getWeek(): int
     {
         return $this->week;
     }
@@ -90,7 +90,7 @@ class CommitActivity extends \ArrayObject
      *
      * @return self
      */
-    public function setWeek(int $week) : self
+    public function setWeek(int $week): self
     {
         $this->initialized['week'] = true;
         $this->week = $week;

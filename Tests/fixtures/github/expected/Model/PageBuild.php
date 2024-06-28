@@ -8,7 +8,7 @@ class PageBuild extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class PageBuild extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -76,7 +76,7 @@ class PageBuild extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -87,7 +87,7 @@ class PageBuild extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -98,7 +98,7 @@ class PageBuild extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -109,7 +109,7 @@ class PageBuild extends \ArrayObject
      *
      * @return PageBuildError
      */
-    public function getError() : PageBuildError
+    public function getError(): PageBuildError
     {
         return $this->error;
     }
@@ -120,7 +120,7 @@ class PageBuild extends \ArrayObject
      *
      * @return self
      */
-    public function setError(PageBuildError $error) : self
+    public function setError(PageBuildError $error): self
     {
         $this->initialized['error'] = true;
         $this->error = $error;
@@ -131,7 +131,7 @@ class PageBuild extends \ArrayObject
      *
      * @return PageBuildPusher|null
      */
-    public function getPusher() : ?PageBuildPusher
+    public function getPusher(): ?PageBuildPusher
     {
         return $this->pusher;
     }
@@ -142,7 +142,7 @@ class PageBuild extends \ArrayObject
      *
      * @return self
      */
-    public function setPusher(?PageBuildPusher $pusher) : self
+    public function setPusher(?PageBuildPusher $pusher): self
     {
         $this->initialized['pusher'] = true;
         $this->pusher = $pusher;
@@ -153,7 +153,7 @@ class PageBuild extends \ArrayObject
      *
      * @return string
      */
-    public function getCommit() : string
+    public function getCommit(): string
     {
         return $this->commit;
     }
@@ -164,7 +164,7 @@ class PageBuild extends \ArrayObject
      *
      * @return self
      */
-    public function setCommit(string $commit) : self
+    public function setCommit(string $commit): self
     {
         $this->initialized['commit'] = true;
         $this->commit = $commit;
@@ -175,7 +175,7 @@ class PageBuild extends \ArrayObject
      *
      * @return int
      */
-    public function getDuration() : int
+    public function getDuration(): int
     {
         return $this->duration;
     }
@@ -186,7 +186,7 @@ class PageBuild extends \ArrayObject
      *
      * @return self
      */
-    public function setDuration(int $duration) : self
+    public function setDuration(int $duration): self
     {
         $this->initialized['duration'] = true;
         $this->duration = $duration;
@@ -197,7 +197,7 @@ class PageBuild extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -208,7 +208,7 @@ class PageBuild extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -219,7 +219,7 @@ class PageBuild extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -230,7 +230,7 @@ class PageBuild extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;

@@ -8,7 +8,7 @@ class ListCompanyImagesDataItemCompany extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ListCompanyImagesDataItemCompany extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -52,7 +52,7 @@ class ListCompanyImagesDataItemCompany extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -63,7 +63,7 @@ class ListCompanyImagesDataItemCompany extends \ArrayObject
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -74,7 +74,7 @@ class ListCompanyImagesDataItemCompany extends \ArrayObject
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -85,7 +85,7 @@ class ListCompanyImagesDataItemCompany extends \ArrayObject
      *
      * @return string
      */
-    public function getLocalId() : string
+    public function getLocalId(): string
     {
         return $this->localId;
     }
@@ -96,7 +96,7 @@ class ListCompanyImagesDataItemCompany extends \ArrayObject
      *
      * @return self
      */
-    public function setLocalId(string $localId) : self
+    public function setLocalId(string $localId): self
     {
         $this->initialized['localId'] = true;
         $this->localId = $localId;
@@ -107,7 +107,7 @@ class ListCompanyImagesDataItemCompany extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -118,7 +118,7 @@ class ListCompanyImagesDataItemCompany extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;

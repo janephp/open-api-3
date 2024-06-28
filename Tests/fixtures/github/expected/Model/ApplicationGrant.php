@@ -8,7 +8,7 @@ class ApplicationGrant extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -70,7 +70,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -81,7 +81,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -92,7 +92,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -103,7 +103,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return ApplicationGrantApp
      */
-    public function getApp() : ApplicationGrantApp
+    public function getApp(): ApplicationGrantApp
     {
         return $this->app;
     }
@@ -114,7 +114,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return self
      */
-    public function setApp(ApplicationGrantApp $app) : self
+    public function setApp(ApplicationGrantApp $app): self
     {
         $this->initialized['app'] = true;
         $this->app = $app;
@@ -125,7 +125,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -136,7 +136,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -147,7 +147,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -158,7 +158,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -169,7 +169,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getScopes() : array
+    public function getScopes(): array
     {
         return $this->scopes;
     }
@@ -180,7 +180,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return self
      */
-    public function setScopes(array $scopes) : self
+    public function setScopes(array $scopes): self
     {
         $this->initialized['scopes'] = true;
         $this->scopes = $scopes;
@@ -191,7 +191,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return ApplicationGrantUser|null
      */
-    public function getUser() : ?ApplicationGrantUser
+    public function getUser(): ?ApplicationGrantUser
     {
         return $this->user;
     }
@@ -202,7 +202,7 @@ class ApplicationGrant extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?ApplicationGrantUser $user) : self
+    public function setUser(?ApplicationGrantUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;

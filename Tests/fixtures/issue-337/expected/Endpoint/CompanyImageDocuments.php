@@ -22,23 +22,23 @@ class CompanyImageDocuments extends \CreditSafe\API\Runtime\Client\BaseEndpoint 
         $this->headerParameters = $headerParameters;
     }
     use \CreditSafe\API\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/images/companies';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
-    protected function getQueryOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getQueryOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getQueryOptionsResolver();
         $optionsResolver->setDefined(['Id', 'olderThan', 'newerThan']);
@@ -49,7 +49,7 @@ class CompanyImageDocuments extends \CreditSafe\API\Runtime\Client\BaseEndpoint 
         $optionsResolver->addAllowedTypes('newerThan', ['string']);
         return $optionsResolver;
     }
-    protected function getHeadersOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getHeadersOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getHeadersOptionsResolver();
         $optionsResolver->setDefined(['Authorization']);
@@ -71,7 +71,7 @@ class CompanyImageDocuments extends \CreditSafe\API\Runtime\Client\BaseEndpoint 
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'CreditSafe\\API\\Model\\ListCompanyImages', 'json');
+            return $serializer->deserialize($body, 'CreditSafe\API\Model\ListCompanyImages', 'json');
         }
         if (is_null($contentType) === false && (401 === $status && mb_strpos($contentType, 'application/json') !== false)) {
             throw new \CreditSafe\API\Exception\CompanyImageDocumentsUnauthorizedException($response);
@@ -80,7 +80,7 @@ class CompanyImageDocuments extends \CreditSafe\API\Runtime\Client\BaseEndpoint 
             throw new \CreditSafe\API\Exception\CompanyImageDocumentsNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return ['bearerAuth'];
     }

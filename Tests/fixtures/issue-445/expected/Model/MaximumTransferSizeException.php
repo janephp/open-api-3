@@ -8,7 +8,7 @@ class MaximumTransferSizeException extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return string
      */
-    public function getTraceLevel() : string
+    public function getTraceLevel(): string
     {
         return $this->traceLevel;
     }
@@ -82,7 +82,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceLevel(string $traceLevel) : self
+    public function setTraceLevel(string $traceLevel): self
     {
         $this->initialized['traceLevel'] = true;
         $this->traceLevel = $traceLevel;
@@ -93,7 +93,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceId() : ?string
+    public function getTraceId(): ?string
     {
         return $this->traceId;
     }
@@ -104,7 +104,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceId(?string $traceId) : self
+    public function setTraceId(?string $traceId): self
     {
         $this->initialized['traceId'] = true;
         $this->traceId = $traceId;
@@ -115,7 +115,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceJobId() : ?string
+    public function getTraceJobId(): ?string
     {
         return $this->traceJobId;
     }
@@ -126,7 +126,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceJobId(?string $traceJobId) : self
+    public function setTraceJobId(?string $traceJobId): self
     {
         $this->initialized['traceJobId'] = true;
         $this->traceJobId = $traceJobId;
@@ -137,7 +137,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return int
      */
-    public function getHttpStatusCode() : int
+    public function getHttpStatusCode(): int
     {
         return $this->httpStatusCode;
     }
@@ -148,7 +148,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return self
      */
-    public function setHttpStatusCode(int $httpStatusCode) : self
+    public function setHttpStatusCode(int $httpStatusCode): self
     {
         $this->initialized['httpStatusCode'] = true;
         $this->httpStatusCode = $httpStatusCode;
@@ -159,7 +159,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExceptionMessage() : ?string
+    public function getExceptionMessage(): ?string
     {
         return $this->exceptionMessage;
     }
@@ -170,7 +170,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return self
      */
-    public function setExceptionMessage(?string $exceptionMessage) : self
+    public function setExceptionMessage(?string $exceptionMessage): self
     {
         $this->initialized['exceptionMessage'] = true;
         $this->exceptionMessage = $exceptionMessage;
@@ -181,7 +181,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }
@@ -192,7 +192,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return self
      */
-    public function setKind(string $kind) : self
+    public function setKind(string $kind): self
     {
         $this->initialized['kind'] = true;
         $this->kind = $kind;
@@ -203,7 +203,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return int
      */
-    public function getTransferSize() : int
+    public function getTransferSize(): int
     {
         return $this->transferSize;
     }
@@ -214,7 +214,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return self
      */
-    public function setTransferSize(int $transferSize) : self
+    public function setTransferSize(int $transferSize): self
     {
         $this->initialized['transferSize'] = true;
         $this->transferSize = $transferSize;
@@ -225,7 +225,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return int
      */
-    public function getMaximumTransferSize() : int
+    public function getMaximumTransferSize(): int
     {
         return $this->maximumTransferSize;
     }
@@ -236,7 +236,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return self
      */
-    public function setMaximumTransferSize(int $maximumTransferSize) : self
+    public function setMaximumTransferSize(int $maximumTransferSize): self
     {
         $this->initialized['maximumTransferSize'] = true;
         $this->maximumTransferSize = $maximumTransferSize;
@@ -247,7 +247,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTransferId() : ?string
+    public function getTransferId(): ?string
     {
         return $this->transferId;
     }
@@ -258,7 +258,7 @@ class MaximumTransferSizeException extends \ArrayObject
      *
      * @return self
      */
-    public function setTransferId(?string $transferId) : self
+    public function setTransferId(?string $transferId): self
     {
         $this->initialized['transferId'] = true;
         $this->transferId = $transferId;

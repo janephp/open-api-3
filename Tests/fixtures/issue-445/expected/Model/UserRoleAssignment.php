@@ -8,7 +8,7 @@ class UserRoleAssignment
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class UserRoleAssignment
      *
      * @return self
      */
-    public function setUserRole($userRole) : self
+    public function setUserRole($userRole): self
     {
         $this->initialized['userRole'] = true;
         $this->userRole = $userRole;
@@ -51,7 +51,7 @@ class UserRoleAssignment
      *
      * @return bool
      */
-    public function getIsFederated() : bool
+    public function getIsFederated(): bool
     {
         return $this->isFederated;
     }
@@ -62,7 +62,7 @@ class UserRoleAssignment
      *
      * @return self
      */
-    public function setIsFederated(bool $isFederated) : self
+    public function setIsFederated(bool $isFederated): self
     {
         $this->initialized['isFederated'] = true;
         $this->isFederated = $isFederated;

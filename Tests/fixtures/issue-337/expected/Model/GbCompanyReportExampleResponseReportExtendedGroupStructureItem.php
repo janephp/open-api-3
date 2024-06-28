@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -76,7 +76,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -87,7 +87,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -98,7 +98,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -109,7 +109,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return string
      */
-    public function getSafeNumber() : string
+    public function getSafeNumber(): string
     {
         return $this->safeNumber;
     }
@@ -120,7 +120,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return self
      */
-    public function setSafeNumber(string $safeNumber) : self
+    public function setSafeNumber(string $safeNumber): self
     {
         $this->initialized['safeNumber'] = true;
         $this->safeNumber = $safeNumber;
@@ -131,7 +131,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return string
      */
-    public function getCompanyName() : string
+    public function getCompanyName(): string
     {
         return $this->companyName;
     }
@@ -142,7 +142,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return self
      */
-    public function setCompanyName(string $companyName) : self
+    public function setCompanyName(string $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;
@@ -153,7 +153,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return string
      */
-    public function getRegisteredNumber() : string
+    public function getRegisteredNumber(): string
     {
         return $this->registeredNumber;
     }
@@ -164,7 +164,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return self
      */
-    public function setRegisteredNumber(string $registeredNumber) : self
+    public function setRegisteredNumber(string $registeredNumber): self
     {
         $this->initialized['registeredNumber'] = true;
         $this->registeredNumber = $registeredNumber;
@@ -175,7 +175,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return string
      */
-    public function getLatestAnnualAccounts() : string
+    public function getLatestAnnualAccounts(): string
     {
         return $this->latestAnnualAccounts;
     }
@@ -186,7 +186,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return self
      */
-    public function setLatestAnnualAccounts(string $latestAnnualAccounts) : self
+    public function setLatestAnnualAccounts(string $latestAnnualAccounts): self
     {
         $this->initialized['latestAnnualAccounts'] = true;
         $this->latestAnnualAccounts = $latestAnnualAccounts;
@@ -197,7 +197,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return float
      */
-    public function getLevel() : float
+    public function getLevel(): float
     {
         return $this->level;
     }
@@ -208,7 +208,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return self
      */
-    public function setLevel(float $level) : self
+    public function setLevel(float $level): self
     {
         $this->initialized['level'] = true;
         $this->level = $level;
@@ -219,7 +219,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -230,7 +230,7 @@ class GbCompanyReportExampleResponseReportExtendedGroupStructureItem extends \Ar
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;

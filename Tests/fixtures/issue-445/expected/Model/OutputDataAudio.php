@@ -8,7 +8,7 @@ class OutputDataAudio extends OutputDataBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class OutputDataAudio extends OutputDataBase
      *
      * @return float|null
      */
-    public function getDurationInSeconds() : ?float
+    public function getDurationInSeconds(): ?float
     {
         return $this->durationInSeconds;
     }
@@ -34,7 +34,7 @@ class OutputDataAudio extends OutputDataBase
      *
      * @return self
      */
-    public function setDurationInSeconds(?float $durationInSeconds) : self
+    public function setDurationInSeconds(?float $durationInSeconds): self
     {
         $this->initialized['durationInSeconds'] = true;
         $this->durationInSeconds = $durationInSeconds;

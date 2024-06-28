@@ -8,7 +8,7 @@ class ReposOwnerRepoMergesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ReposOwnerRepoMergesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBase() : string
+    public function getBase(): string
     {
         return $this->base;
     }
@@ -46,7 +46,7 @@ class ReposOwnerRepoMergesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBase(string $base) : self
+    public function setBase(string $base): self
     {
         $this->initialized['base'] = true;
         $this->base = $base;
@@ -57,7 +57,7 @@ class ReposOwnerRepoMergesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getHead() : string
+    public function getHead(): string
     {
         return $this->head;
     }
@@ -68,7 +68,7 @@ class ReposOwnerRepoMergesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHead(string $head) : self
+    public function setHead(string $head): self
     {
         $this->initialized['head'] = true;
         $this->head = $head;
@@ -79,7 +79,7 @@ class ReposOwnerRepoMergesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitMessage() : string
+    public function getCommitMessage(): string
     {
         return $this->commitMessage;
     }
@@ -90,7 +90,7 @@ class ReposOwnerRepoMergesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitMessage(string $commitMessage) : self
+    public function setCommitMessage(string $commitMessage): self
     {
         $this->initialized['commitMessage'] = true;
         $this->commitMessage = $commitMessage;

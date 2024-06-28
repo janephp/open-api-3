@@ -8,7 +8,7 @@ class GbImageTypesResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbImageTypesResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -40,7 +40,7 @@ class GbImageTypesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -51,7 +51,7 @@ class GbImageTypesResponse extends \ArrayObject
      *
      * @return list<GbImageTypesResponseAvailableTypesItem>
      */
-    public function getAvailableTypes() : array
+    public function getAvailableTypes(): array
     {
         return $this->availableTypes;
     }
@@ -62,7 +62,7 @@ class GbImageTypesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setAvailableTypes(array $availableTypes) : self
+    public function setAvailableTypes(array $availableTypes): self
     {
         $this->initialized['availableTypes'] = true;
         $this->availableTypes = $availableTypes;

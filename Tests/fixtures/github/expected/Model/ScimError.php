@@ -8,7 +8,7 @@ class ScimError extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ScimError extends \ArrayObject
      *
      * @return string|null
      */
-    public function getMessage() : ?string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -64,7 +64,7 @@ class ScimError extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(?string $message) : self
+    public function setMessage(?string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -75,7 +75,7 @@ class ScimError extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDocumentationUrl() : ?string
+    public function getDocumentationUrl(): ?string
     {
         return $this->documentationUrl;
     }
@@ -86,7 +86,7 @@ class ScimError extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentationUrl(?string $documentationUrl) : self
+    public function setDocumentationUrl(?string $documentationUrl): self
     {
         $this->initialized['documentationUrl'] = true;
         $this->documentationUrl = $documentationUrl;
@@ -97,7 +97,7 @@ class ScimError extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDetail() : ?string
+    public function getDetail(): ?string
     {
         return $this->detail;
     }
@@ -108,7 +108,7 @@ class ScimError extends \ArrayObject
      *
      * @return self
      */
-    public function setDetail(?string $detail) : self
+    public function setDetail(?string $detail): self
     {
         $this->initialized['detail'] = true;
         $this->detail = $detail;
@@ -119,7 +119,7 @@ class ScimError extends \ArrayObject
      *
      * @return int
      */
-    public function getStatus() : int
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -130,7 +130,7 @@ class ScimError extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(int $status) : self
+    public function setStatus(int $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -141,7 +141,7 @@ class ScimError extends \ArrayObject
      *
      * @return string|null
      */
-    public function getScimType() : ?string
+    public function getScimType(): ?string
     {
         return $this->scimType;
     }
@@ -152,7 +152,7 @@ class ScimError extends \ArrayObject
      *
      * @return self
      */
-    public function setScimType(?string $scimType) : self
+    public function setScimType(?string $scimType): self
     {
         $this->initialized['scimType'] = true;
         $this->scimType = $scimType;
@@ -163,7 +163,7 @@ class ScimError extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getSchemas() : array
+    public function getSchemas(): array
     {
         return $this->schemas;
     }
@@ -174,7 +174,7 @@ class ScimError extends \ArrayObject
      *
      * @return self
      */
-    public function setSchemas(array $schemas) : self
+    public function setSchemas(array $schemas): self
     {
         $this->initialized['schemas'] = true;
         $this->schemas = $schemas;

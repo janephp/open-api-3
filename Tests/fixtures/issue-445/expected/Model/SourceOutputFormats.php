@@ -8,7 +8,7 @@ class SourceOutputFormats
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class SourceOutputFormats
      *
      * @return string|null
      */
-    public function getImage() : ?string
+    public function getImage(): ?string
     {
         return $this->image;
     }
@@ -58,7 +58,7 @@ class SourceOutputFormats
      *
      * @return self
      */
-    public function setImage(?string $image) : self
+    public function setImage(?string $image): self
     {
         $this->initialized['image'] = true;
         $this->image = $image;
@@ -69,7 +69,7 @@ class SourceOutputFormats
      *
      * @return string|null
      */
-    public function getVideo() : ?string
+    public function getVideo(): ?string
     {
         return $this->video;
     }
@@ -80,7 +80,7 @@ class SourceOutputFormats
      *
      * @return self
      */
-    public function setVideo(?string $video) : self
+    public function setVideo(?string $video): self
     {
         $this->initialized['video'] = true;
         $this->video = $video;
@@ -91,7 +91,7 @@ class SourceOutputFormats
      *
      * @return string|null
      */
-    public function getDocument() : ?string
+    public function getDocument(): ?string
     {
         return $this->document;
     }
@@ -102,7 +102,7 @@ class SourceOutputFormats
      *
      * @return self
      */
-    public function setDocument(?string $document) : self
+    public function setDocument(?string $document): self
     {
         $this->initialized['document'] = true;
         $this->document = $document;
@@ -113,7 +113,7 @@ class SourceOutputFormats
      *
      * @return string|null
      */
-    public function getAudio() : ?string
+    public function getAudio(): ?string
     {
         return $this->audio;
     }
@@ -124,7 +124,7 @@ class SourceOutputFormats
      *
      * @return self
      */
-    public function setAudio(?string $audio) : self
+    public function setAudio(?string $audio): self
     {
         $this->initialized['audio'] = true;
         $this->audio = $audio;
@@ -135,7 +135,7 @@ class SourceOutputFormats
      *
      * @return string|null
      */
-    public function getVector() : ?string
+    public function getVector(): ?string
     {
         return $this->vector;
     }
@@ -146,7 +146,7 @@ class SourceOutputFormats
      *
      * @return self
      */
-    public function setVector(?string $vector) : self
+    public function setVector(?string $vector): self
     {
         $this->initialized['vector'] = true;
         $this->vector = $vector;

@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem extends \
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem extends \
      *
      * @return string
      */
-    public function getAuditorName() : string
+    public function getAuditorName(): string
     {
         return $this->auditorName;
     }
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportOtherInformationAdvisorsItem extends \
      *
      * @return self
      */
-    public function setAuditorName(string $auditorName) : self
+    public function setAuditorName(string $auditorName): self
     {
         $this->initialized['auditorName'] = true;
         $this->auditorName = $auditorName;

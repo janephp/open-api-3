@@ -8,7 +8,7 @@ class SearchUsersGetResponse200 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class SearchUsersGetResponse200 extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalCount() : int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -46,7 +46,7 @@ class SearchUsersGetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalCount(int $totalCount) : self
+    public function setTotalCount(int $totalCount): self
     {
         $this->initialized['totalCount'] = true;
         $this->totalCount = $totalCount;
@@ -57,7 +57,7 @@ class SearchUsersGetResponse200 extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncompleteResults() : bool
+    public function getIncompleteResults(): bool
     {
         return $this->incompleteResults;
     }
@@ -68,7 +68,7 @@ class SearchUsersGetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setIncompleteResults(bool $incompleteResults) : self
+    public function setIncompleteResults(bool $incompleteResults): self
     {
         $this->initialized['incompleteResults'] = true;
         $this->incompleteResults = $incompleteResults;
@@ -79,7 +79,7 @@ class SearchUsersGetResponse200 extends \ArrayObject
      *
      * @return list<UserSearchResultItem>
      */
-    public function getItems() : array
+    public function getItems(): array
     {
         return $this->items;
     }
@@ -90,7 +90,7 @@ class SearchUsersGetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setItems(array $items) : self
+    public function setItems(array $items): self
     {
         $this->initialized['items'] = true;
         $this->items = $items;

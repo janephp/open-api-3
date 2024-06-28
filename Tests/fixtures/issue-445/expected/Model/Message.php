@@ -8,7 +8,7 @@ class Message
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class Message
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -66,7 +66,7 @@ class Message
      *
      * @return int
      */
-    public function getRetries() : int
+    public function getRetries(): int
     {
         return $this->retries;
     }
@@ -85,7 +85,7 @@ class Message
      *
      * @return int
      */
-    public function getPriority() : int
+    public function getPriority(): int
     {
         return $this->priority;
     }
@@ -104,7 +104,7 @@ class Message
      *
      * @return bool
      */
-    public function getDeduplicate() : bool
+    public function getDeduplicate(): bool
     {
         return $this->deduplicate;
     }
@@ -123,7 +123,7 @@ class Message
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

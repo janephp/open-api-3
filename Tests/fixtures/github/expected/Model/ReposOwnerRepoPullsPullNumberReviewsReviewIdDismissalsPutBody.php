@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdDismissalsPutBody extends \Arr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdDismissalsPutBody extends \Arr
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdDismissalsPutBody extends \Arr
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -51,7 +51,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdDismissalsPutBody extends \Arr
      *
      * @return string
      */
-    public function getEvent() : string
+    public function getEvent(): string
     {
         return $this->event;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdDismissalsPutBody extends \Arr
      *
      * @return self
      */
-    public function setEvent(string $event) : self
+    public function setEvent(string $event): self
     {
         $this->initialized['event'] = true;
         $this->event = $event;

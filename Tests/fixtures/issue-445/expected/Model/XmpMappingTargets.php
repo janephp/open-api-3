@@ -8,7 +8,7 @@ class XmpMappingTargets
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class XmpMappingTargets
      *
      * @return list<XmpField>
      */
-    public function getXmpFields() : array
+    public function getXmpFields(): array
     {
         return $this->xmpFields;
     }
@@ -40,7 +40,7 @@ class XmpMappingTargets
      *
      * @return self
      */
-    public function setXmpFields(array $xmpFields) : self
+    public function setXmpFields(array $xmpFields): self
     {
         $this->initialized['xmpFields'] = true;
         $this->xmpFields = $xmpFields;
@@ -51,7 +51,7 @@ class XmpMappingTargets
      *
      * @return list<MetadataField>
      */
-    public function getMetadataFields() : array
+    public function getMetadataFields(): array
     {
         return $this->metadataFields;
     }
@@ -62,7 +62,7 @@ class XmpMappingTargets
      *
      * @return self
      */
-    public function setMetadataFields(array $metadataFields) : self
+    public function setMetadataFields(array $metadataFields): self
     {
         $this->initialized['metadataFields'] = true;
         $this->metadataFields = $metadataFields;

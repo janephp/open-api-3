@@ -8,7 +8,7 @@ class StatsGetResponse200 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class StatsGetResponse200 extends \ArrayObject
      *
      * @return int
      */
-    public function getBooksCount() : int
+    public function getBooksCount(): int
     {
         return $this->booksCount;
     }
@@ -40,7 +40,7 @@ class StatsGetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setBooksCount(int $booksCount) : self
+    public function setBooksCount(int $booksCount): self
     {
         $this->initialized['booksCount'] = true;
         $this->booksCount = $booksCount;
@@ -51,7 +51,7 @@ class StatsGetResponse200 extends \ArrayObject
      *
      * @return int
      */
-    public function getTopbooksCount() : int
+    public function getTopbooksCount(): int
     {
         return $this->topbooksCount;
     }
@@ -62,7 +62,7 @@ class StatsGetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setTopbooksCount(int $topbooksCount) : self
+    public function setTopbooksCount(int $topbooksCount): self
     {
         $this->initialized['topbooksCount'] = true;
         $this->topbooksCount = $topbooksCount;

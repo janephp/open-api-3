@@ -8,7 +8,7 @@ class IssueSimple extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -197,7 +197,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -208,7 +208,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -219,7 +219,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -230,7 +230,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -241,7 +241,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -252,7 +252,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -263,7 +263,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoryUrl() : string
+    public function getRepositoryUrl(): string
     {
         return $this->repositoryUrl;
     }
@@ -274,7 +274,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryUrl(string $repositoryUrl) : self
+    public function setRepositoryUrl(string $repositoryUrl): self
     {
         $this->initialized['repositoryUrl'] = true;
         $this->repositoryUrl = $repositoryUrl;
@@ -285,7 +285,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelsUrl() : string
+    public function getLabelsUrl(): string
     {
         return $this->labelsUrl;
     }
@@ -296,7 +296,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelsUrl(string $labelsUrl) : self
+    public function setLabelsUrl(string $labelsUrl): self
     {
         $this->initialized['labelsUrl'] = true;
         $this->labelsUrl = $labelsUrl;
@@ -307,7 +307,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getCommentsUrl() : string
+    public function getCommentsUrl(): string
     {
         return $this->commentsUrl;
     }
@@ -318,7 +318,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setCommentsUrl(string $commentsUrl) : self
+    public function setCommentsUrl(string $commentsUrl): self
     {
         $this->initialized['commentsUrl'] = true;
         $this->commentsUrl = $commentsUrl;
@@ -329,7 +329,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getEventsUrl() : string
+    public function getEventsUrl(): string
     {
         return $this->eventsUrl;
     }
@@ -340,7 +340,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setEventsUrl(string $eventsUrl) : self
+    public function setEventsUrl(string $eventsUrl): self
     {
         $this->initialized['eventsUrl'] = true;
         $this->eventsUrl = $eventsUrl;
@@ -351,7 +351,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -362,7 +362,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -373,7 +373,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -384,7 +384,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -395,7 +395,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -406,7 +406,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -417,7 +417,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -428,7 +428,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -439,7 +439,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -450,7 +450,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -461,7 +461,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return IssueSimpleUser|null
      */
-    public function getUser() : ?IssueSimpleUser
+    public function getUser(): ?IssueSimpleUser
     {
         return $this->user;
     }
@@ -472,7 +472,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?IssueSimpleUser $user) : self
+    public function setUser(?IssueSimpleUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -483,7 +483,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return list<IssueSimpleLabelsItem>
      */
-    public function getLabels() : array
+    public function getLabels(): array
     {
         return $this->labels;
     }
@@ -494,7 +494,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setLabels(array $labels) : self
+    public function setLabels(array $labels): self
     {
         $this->initialized['labels'] = true;
         $this->labels = $labels;
@@ -505,7 +505,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return IssueSimpleAssignee|null
      */
-    public function getAssignee() : ?IssueSimpleAssignee
+    public function getAssignee(): ?IssueSimpleAssignee
     {
         return $this->assignee;
     }
@@ -516,7 +516,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setAssignee(?IssueSimpleAssignee $assignee) : self
+    public function setAssignee(?IssueSimpleAssignee $assignee): self
     {
         $this->initialized['assignee'] = true;
         $this->assignee = $assignee;
@@ -527,7 +527,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return list<SimpleUser>|null
      */
-    public function getAssignees() : ?array
+    public function getAssignees(): ?array
     {
         return $this->assignees;
     }
@@ -538,7 +538,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setAssignees(?array $assignees) : self
+    public function setAssignees(?array $assignees): self
     {
         $this->initialized['assignees'] = true;
         $this->assignees = $assignees;
@@ -549,7 +549,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return IssueSimpleMilestone|null
      */
-    public function getMilestone() : ?IssueSimpleMilestone
+    public function getMilestone(): ?IssueSimpleMilestone
     {
         return $this->milestone;
     }
@@ -560,7 +560,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setMilestone(?IssueSimpleMilestone $milestone) : self
+    public function setMilestone(?IssueSimpleMilestone $milestone): self
     {
         $this->initialized['milestone'] = true;
         $this->milestone = $milestone;
@@ -571,7 +571,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return bool
      */
-    public function getLocked() : bool
+    public function getLocked(): bool
     {
         return $this->locked;
     }
@@ -582,7 +582,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setLocked(bool $locked) : self
+    public function setLocked(bool $locked): self
     {
         $this->initialized['locked'] = true;
         $this->locked = $locked;
@@ -593,7 +593,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string|null
      */
-    public function getActiveLockReason() : ?string
+    public function getActiveLockReason(): ?string
     {
         return $this->activeLockReason;
     }
@@ -604,7 +604,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setActiveLockReason(?string $activeLockReason) : self
+    public function setActiveLockReason(?string $activeLockReason): self
     {
         $this->initialized['activeLockReason'] = true;
         $this->activeLockReason = $activeLockReason;
@@ -615,7 +615,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return int
      */
-    public function getComments() : int
+    public function getComments(): int
     {
         return $this->comments;
     }
@@ -626,7 +626,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setComments(int $comments) : self
+    public function setComments(int $comments): self
     {
         $this->initialized['comments'] = true;
         $this->comments = $comments;
@@ -637,7 +637,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return IssueSimplePullRequest
      */
-    public function getPullRequest() : IssueSimplePullRequest
+    public function getPullRequest(): IssueSimplePullRequest
     {
         return $this->pullRequest;
     }
@@ -648,7 +648,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequest(IssueSimplePullRequest $pullRequest) : self
+    public function setPullRequest(IssueSimplePullRequest $pullRequest): self
     {
         $this->initialized['pullRequest'] = true;
         $this->pullRequest = $pullRequest;
@@ -659,7 +659,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getClosedAt() : ?\DateTime
+    public function getClosedAt(): ?\DateTime
     {
         return $this->closedAt;
     }
@@ -670,7 +670,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setClosedAt(?\DateTime $closedAt) : self
+    public function setClosedAt(?\DateTime $closedAt): self
     {
         $this->initialized['closedAt'] = true;
         $this->closedAt = $closedAt;
@@ -681,7 +681,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -692,7 +692,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -703,7 +703,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -714,7 +714,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -725,7 +725,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorAssociation() : string
+    public function getAuthorAssociation(): string
     {
         return $this->authorAssociation;
     }
@@ -736,7 +736,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorAssociation(string $authorAssociation) : self
+    public function setAuthorAssociation(string $authorAssociation): self
     {
         $this->initialized['authorAssociation'] = true;
         $this->authorAssociation = $authorAssociation;
@@ -747,7 +747,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getBodyHtml() : string
+    public function getBodyHtml(): string
     {
         return $this->bodyHtml;
     }
@@ -758,7 +758,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setBodyHtml(string $bodyHtml) : self
+    public function setBodyHtml(string $bodyHtml): self
     {
         $this->initialized['bodyHtml'] = true;
         $this->bodyHtml = $bodyHtml;
@@ -769,7 +769,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getBodyText() : string
+    public function getBodyText(): string
     {
         return $this->bodyText;
     }
@@ -780,7 +780,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setBodyText(string $bodyText) : self
+    public function setBodyText(string $bodyText): self
     {
         $this->initialized['bodyText'] = true;
         $this->bodyText = $bodyText;
@@ -791,7 +791,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getTimelineUrl() : string
+    public function getTimelineUrl(): string
     {
         return $this->timelineUrl;
     }
@@ -802,7 +802,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setTimelineUrl(string $timelineUrl) : self
+    public function setTimelineUrl(string $timelineUrl): self
     {
         $this->initialized['timelineUrl'] = true;
         $this->timelineUrl = $timelineUrl;
@@ -813,7 +813,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return Repository
      */
-    public function getRepository() : Repository
+    public function getRepository(): Repository
     {
         return $this->repository;
     }
@@ -824,7 +824,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setRepository(Repository $repository) : self
+    public function setRepository(Repository $repository): self
     {
         $this->initialized['repository'] = true;
         $this->repository = $repository;
@@ -835,7 +835,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return IssueSimplePerformedViaGithubApp|null
      */
-    public function getPerformedViaGithubApp() : ?IssueSimplePerformedViaGithubApp
+    public function getPerformedViaGithubApp(): ?IssueSimplePerformedViaGithubApp
     {
         return $this->performedViaGithubApp;
     }
@@ -846,7 +846,7 @@ class IssueSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setPerformedViaGithubApp(?IssueSimplePerformedViaGithubApp $performedViaGithubApp) : self
+    public function setPerformedViaGithubApp(?IssueSimplePerformedViaGithubApp $performedViaGithubApp): self
     {
         $this->initialized['performedViaGithubApp'] = true;
         $this->performedViaGithubApp = $performedViaGithubApp;

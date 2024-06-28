@@ -8,7 +8,7 @@ class UserPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -76,7 +76,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -87,7 +87,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -98,7 +98,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -109,7 +109,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBlog() : string
+    public function getBlog(): string
     {
         return $this->blog;
     }
@@ -120,7 +120,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBlog(string $blog) : self
+    public function setBlog(string $blog): self
     {
         $this->initialized['blog'] = true;
         $this->blog = $blog;
@@ -131,7 +131,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTwitterUsername() : ?string
+    public function getTwitterUsername(): ?string
     {
         return $this->twitterUsername;
     }
@@ -142,7 +142,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTwitterUsername(?string $twitterUsername) : self
+    public function setTwitterUsername(?string $twitterUsername): self
     {
         $this->initialized['twitterUsername'] = true;
         $this->twitterUsername = $twitterUsername;
@@ -153,7 +153,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCompany() : string
+    public function getCompany(): string
     {
         return $this->company;
     }
@@ -164,7 +164,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCompany(string $company) : self
+    public function setCompany(string $company): self
     {
         $this->initialized['company'] = true;
         $this->company = $company;
@@ -175,7 +175,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLocation() : string
+    public function getLocation(): string
     {
         return $this->location;
     }
@@ -186,7 +186,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLocation(string $location) : self
+    public function setLocation(string $location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -197,7 +197,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getHireable() : bool
+    public function getHireable(): bool
     {
         return $this->hireable;
     }
@@ -208,7 +208,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHireable(bool $hireable) : self
+    public function setHireable(bool $hireable): self
     {
         $this->initialized['hireable'] = true;
         $this->hireable = $hireable;
@@ -219,7 +219,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBio() : string
+    public function getBio(): string
     {
         return $this->bio;
     }
@@ -230,7 +230,7 @@ class UserPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBio(string $bio) : self
+    public function setBio(string $bio): self
     {
         $this->initialized['bio'] = true;
         $this->bio = $bio;

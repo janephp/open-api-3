@@ -8,7 +8,7 @@ class GitTreeTreeItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -64,7 +64,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -75,7 +75,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return string
      */
-    public function getMode() : string
+    public function getMode(): string
     {
         return $this->mode;
     }
@@ -86,7 +86,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setMode(string $mode) : self
+    public function setMode(string $mode): self
     {
         $this->initialized['mode'] = true;
         $this->mode = $mode;
@@ -97,7 +97,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -108,7 +108,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -119,7 +119,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -130,7 +130,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -141,7 +141,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return int
      */
-    public function getSize() : int
+    public function getSize(): int
     {
         return $this->size;
     }
@@ -152,7 +152,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSize(int $size) : self
+    public function setSize(int $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;
@@ -163,7 +163,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -174,7 +174,7 @@ class GitTreeTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;

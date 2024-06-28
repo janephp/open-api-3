@@ -8,7 +8,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -64,7 +64,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -75,7 +75,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsDefault() : bool
+    public function getIsDefault(): bool
     {
         return $this->isDefault;
     }
@@ -86,7 +86,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIsDefault(bool $isDefault) : self
+    public function setIsDefault(bool $isDefault): self
     {
         $this->initialized['isDefault'] = true;
         $this->isDefault = $isDefault;
@@ -97,7 +97,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return MonitoringPortfoliosPostBodyEmails
      */
-    public function getEmails() : MonitoringPortfoliosPostBodyEmails
+    public function getEmails(): MonitoringPortfoliosPostBodyEmails
     {
         return $this->emails;
     }
@@ -108,7 +108,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmails(MonitoringPortfoliosPostBodyEmails $emails) : self
+    public function setEmails(MonitoringPortfoliosPostBodyEmails $emails): self
     {
         $this->initialized['emails'] = true;
         $this->emails = $emails;
@@ -119,7 +119,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmailSubject() : string
+    public function getEmailSubject(): string
     {
         return $this->emailSubject;
     }
@@ -130,7 +130,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailSubject(string $emailSubject) : self
+    public function setEmailSubject(string $emailSubject): self
     {
         $this->initialized['emailSubject'] = true;
         $this->emailSubject = $emailSubject;
@@ -141,7 +141,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmailLanguage() : string
+    public function getEmailLanguage(): string
     {
         return $this->emailLanguage;
     }
@@ -152,7 +152,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailLanguage(string $emailLanguage) : self
+    public function setEmailLanguage(string $emailLanguage): self
     {
         $this->initialized['emailLanguage'] = true;
         $this->emailLanguage = $emailLanguage;
@@ -163,7 +163,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getFrequency() : string
+    public function getFrequency(): string
     {
         return $this->frequency;
     }
@@ -174,7 +174,7 @@ class MonitoringPortfoliosPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setFrequency(string $frequency) : self
+    public function setFrequency(string $frequency): self
     {
         $this->initialized['frequency'] = true;
         $this->frequency = $frequency;

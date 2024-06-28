@@ -8,7 +8,7 @@ class InstallationPermissions extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getDeployments() : string
+    public function getDeployments(): string
     {
         return $this->deployments;
     }
@@ -76,7 +76,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setDeployments(string $deployments) : self
+    public function setDeployments(string $deployments): self
     {
         $this->initialized['deployments'] = true;
         $this->deployments = $deployments;
@@ -87,7 +87,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getChecks() : string
+    public function getChecks(): string
     {
         return $this->checks;
     }
@@ -98,7 +98,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setChecks(string $checks) : self
+    public function setChecks(string $checks): self
     {
         $this->initialized['checks'] = true;
         $this->checks = $checks;
@@ -109,7 +109,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getMetadata() : string
+    public function getMetadata(): string
     {
         return $this->metadata;
     }
@@ -120,7 +120,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setMetadata(string $metadata) : self
+    public function setMetadata(string $metadata): self
     {
         $this->initialized['metadata'] = true;
         $this->metadata = $metadata;
@@ -131,7 +131,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getContents() : string
+    public function getContents(): string
     {
         return $this->contents;
     }
@@ -142,7 +142,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setContents(string $contents) : self
+    public function setContents(string $contents): self
     {
         $this->initialized['contents'] = true;
         $this->contents = $contents;
@@ -153,7 +153,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getPullRequests() : string
+    public function getPullRequests(): string
     {
         return $this->pullRequests;
     }
@@ -164,7 +164,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequests(string $pullRequests) : self
+    public function setPullRequests(string $pullRequests): self
     {
         $this->initialized['pullRequests'] = true;
         $this->pullRequests = $pullRequests;
@@ -175,7 +175,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getStatuses() : string
+    public function getStatuses(): string
     {
         return $this->statuses;
     }
@@ -186,7 +186,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setStatuses(string $statuses) : self
+    public function setStatuses(string $statuses): self
     {
         $this->initialized['statuses'] = true;
         $this->statuses = $statuses;
@@ -197,7 +197,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getIssues() : string
+    public function getIssues(): string
     {
         return $this->issues;
     }
@@ -208,7 +208,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setIssues(string $issues) : self
+    public function setIssues(string $issues): self
     {
         $this->initialized['issues'] = true;
         $this->issues = $issues;
@@ -219,7 +219,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationAdministration() : string
+    public function getOrganizationAdministration(): string
     {
         return $this->organizationAdministration;
     }
@@ -230,7 +230,7 @@ class InstallationPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationAdministration(string $organizationAdministration) : self
+    public function setOrganizationAdministration(string $organizationAdministration): self
     {
         $this->initialized['organizationAdministration'] = true;
         $this->organizationAdministration = $organizationAdministration;

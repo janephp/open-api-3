@@ -8,7 +8,7 @@ class ClarifaiTaggingOptions extends TaggingOptionsBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ClarifaiTaggingOptions extends TaggingOptionsBase
      *
      * @return string|null
      */
-    public function getModel() : ?string
+    public function getModel(): ?string
     {
         return $this->model;
     }
@@ -46,7 +46,7 @@ class ClarifaiTaggingOptions extends TaggingOptionsBase
      *
      * @return self
      */
-    public function setModel(?string $model) : self
+    public function setModel(?string $model): self
     {
         $this->initialized['model'] = true;
         $this->model = $model;
@@ -57,7 +57,7 @@ class ClarifaiTaggingOptions extends TaggingOptionsBase
      *
      * @return string|null
      */
-    public function getLanguage() : ?string
+    public function getLanguage(): ?string
     {
         return $this->language;
     }
@@ -68,7 +68,7 @@ class ClarifaiTaggingOptions extends TaggingOptionsBase
      *
      * @return self
      */
-    public function setLanguage(?string $language) : self
+    public function setLanguage(?string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -79,7 +79,7 @@ class ClarifaiTaggingOptions extends TaggingOptionsBase
      *
      * @return string|null
      */
-    public function getMinimumValue() : ?string
+    public function getMinimumValue(): ?string
     {
         return $this->minimumValue;
     }
@@ -90,7 +90,7 @@ class ClarifaiTaggingOptions extends TaggingOptionsBase
      *
      * @return self
      */
-    public function setMinimumValue(?string $minimumValue) : self
+    public function setMinimumValue(?string $minimumValue): self
     {
         $this->initialized['minimumValue'] = true;
         $this->minimumValue = $minimumValue;

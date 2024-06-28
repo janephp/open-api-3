@@ -8,7 +8,7 @@ class ReposOwnerRepoMilestonesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ReposOwnerRepoMilestonesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -52,7 +52,7 @@ class ReposOwnerRepoMilestonesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -63,7 +63,7 @@ class ReposOwnerRepoMilestonesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -74,7 +74,7 @@ class ReposOwnerRepoMilestonesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -85,7 +85,7 @@ class ReposOwnerRepoMilestonesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -96,7 +96,7 @@ class ReposOwnerRepoMilestonesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -107,7 +107,7 @@ class ReposOwnerRepoMilestonesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDueOn() : string
+    public function getDueOn(): string
     {
         return $this->dueOn;
     }
@@ -118,7 +118,7 @@ class ReposOwnerRepoMilestonesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDueOn(string $dueOn) : self
+    public function setDueOn(string $dueOn): self
     {
         $this->initialized['dueOn'] = true;
         $this->dueOn = $dueOn;

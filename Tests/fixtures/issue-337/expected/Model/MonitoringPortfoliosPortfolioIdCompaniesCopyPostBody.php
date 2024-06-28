@@ -8,7 +8,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesCopyPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesCopyPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getPortfolios() : array
+    public function getPortfolios(): array
     {
         return $this->portfolios;
     }
@@ -40,7 +40,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesCopyPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPortfolios(array $portfolios) : self
+    public function setPortfolios(array $portfolios): self
     {
         $this->initialized['portfolios'] = true;
         $this->portfolios = $portfolios;
@@ -51,7 +51,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesCopyPostBody extends \ArrayObject
      *
      * @return list<MonitoringPortfoliosPortfolioIdCompaniesCopyPostBodyCompaniesItem>
      */
-    public function getCompanies() : array
+    public function getCompanies(): array
     {
         return $this->companies;
     }
@@ -62,7 +62,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesCopyPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanies(array $companies) : self
+    public function setCompanies(array $companies): self
     {
         $this->initialized['companies'] = true;
         $this->companies = $companies;

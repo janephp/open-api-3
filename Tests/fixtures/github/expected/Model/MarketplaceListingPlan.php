@@ -8,7 +8,7 @@ class MarketplaceListingPlan extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -106,7 +106,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -117,7 +117,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return string
      */
-    public function getAccountsUrl() : string
+    public function getAccountsUrl(): string
     {
         return $this->accountsUrl;
     }
@@ -128,7 +128,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountsUrl(string $accountsUrl) : self
+    public function setAccountsUrl(string $accountsUrl): self
     {
         $this->initialized['accountsUrl'] = true;
         $this->accountsUrl = $accountsUrl;
@@ -139,7 +139,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -150,7 +150,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -161,7 +161,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -172,7 +172,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -183,7 +183,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -194,7 +194,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -205,7 +205,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -216,7 +216,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -227,7 +227,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getMonthlyPriceInCents() : int
+    public function getMonthlyPriceInCents(): int
     {
         return $this->monthlyPriceInCents;
     }
@@ -238,7 +238,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setMonthlyPriceInCents(int $monthlyPriceInCents) : self
+    public function setMonthlyPriceInCents(int $monthlyPriceInCents): self
     {
         $this->initialized['monthlyPriceInCents'] = true;
         $this->monthlyPriceInCents = $monthlyPriceInCents;
@@ -249,7 +249,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return int
      */
-    public function getYearlyPriceInCents() : int
+    public function getYearlyPriceInCents(): int
     {
         return $this->yearlyPriceInCents;
     }
@@ -260,7 +260,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setYearlyPriceInCents(int $yearlyPriceInCents) : self
+    public function setYearlyPriceInCents(int $yearlyPriceInCents): self
     {
         $this->initialized['yearlyPriceInCents'] = true;
         $this->yearlyPriceInCents = $yearlyPriceInCents;
@@ -271,7 +271,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return string
      */
-    public function getPriceModel() : string
+    public function getPriceModel(): string
     {
         return $this->priceModel;
     }
@@ -282,7 +282,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setPriceModel(string $priceModel) : self
+    public function setPriceModel(string $priceModel): self
     {
         $this->initialized['priceModel'] = true;
         $this->priceModel = $priceModel;
@@ -293,7 +293,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasFreeTrial() : bool
+    public function getHasFreeTrial(): bool
     {
         return $this->hasFreeTrial;
     }
@@ -304,7 +304,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setHasFreeTrial(bool $hasFreeTrial) : self
+    public function setHasFreeTrial(bool $hasFreeTrial): self
     {
         $this->initialized['hasFreeTrial'] = true;
         $this->hasFreeTrial = $hasFreeTrial;
@@ -315,7 +315,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUnitName() : ?string
+    public function getUnitName(): ?string
     {
         return $this->unitName;
     }
@@ -326,7 +326,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setUnitName(?string $unitName) : self
+    public function setUnitName(?string $unitName): self
     {
         $this->initialized['unitName'] = true;
         $this->unitName = $unitName;
@@ -337,7 +337,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -348,7 +348,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -359,7 +359,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getBullets() : array
+    public function getBullets(): array
     {
         return $this->bullets;
     }
@@ -370,7 +370,7 @@ class MarketplaceListingPlan extends \ArrayObject
      *
      * @return self
      */
-    public function setBullets(array $bullets) : self
+    public function setBullets(array $bullets): self
     {
         $this->initialized['bullets'] = true;
         $this->bullets = $bullets;

@@ -8,7 +8,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -58,7 +58,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -69,7 +69,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return string
      */
-    public function getSummary() : string
+    public function getSummary(): string
     {
         return $this->summary;
     }
@@ -80,7 +80,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setSummary(string $summary) : self
+    public function setSummary(string $summary): self
     {
         $this->initialized['summary'] = true;
         $this->summary = $summary;
@@ -91,7 +91,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return string
      */
-    public function getText() : string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -102,7 +102,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setText(string $text) : self
+    public function setText(string $text): self
     {
         $this->initialized['text'] = true;
         $this->text = $text;
@@ -113,7 +113,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return list<ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutputAnnotationsItem>
      */
-    public function getAnnotations() : array
+    public function getAnnotations(): array
     {
         return $this->annotations;
     }
@@ -124,7 +124,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setAnnotations(array $annotations) : self
+    public function setAnnotations(array $annotations): self
     {
         $this->initialized['annotations'] = true;
         $this->annotations = $annotations;
@@ -135,7 +135,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return list<ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutputImagesItem>
      */
-    public function getImages() : array
+    public function getImages(): array
     {
         return $this->images;
     }
@@ -146,7 +146,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setImages(array $images) : self
+    public function setImages(array $images): self
     {
         $this->initialized['images'] = true;
         $this->images = $images;

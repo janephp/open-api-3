@@ -8,7 +8,7 @@ class PermissionSetOwnershipTransferItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class PermissionSetOwnershipTransferItem extends \ArrayObject
      *
      * @return string
      */
-    public function getTransferUserId() : string
+    public function getTransferUserId(): string
     {
         return $this->transferUserId;
     }
@@ -40,7 +40,7 @@ class PermissionSetOwnershipTransferItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTransferUserId(string $transferUserId) : self
+    public function setTransferUserId(string $transferUserId): self
     {
         $this->initialized['transferUserId'] = true;
         $this->transferUserId = $transferUserId;
@@ -51,7 +51,7 @@ class PermissionSetOwnershipTransferItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPermissionSetId() : ?string
+    public function getPermissionSetId(): ?string
     {
         return $this->permissionSetId;
     }
@@ -62,7 +62,7 @@ class PermissionSetOwnershipTransferItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissionSetId(?string $permissionSetId) : self
+    public function setPermissionSetId(?string $permissionSetId): self
     {
         $this->initialized['permissionSetId'] = true;
         $this->permissionSetId = $permissionSetId;

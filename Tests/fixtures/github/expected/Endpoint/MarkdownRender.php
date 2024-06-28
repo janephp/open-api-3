@@ -14,15 +14,15 @@ class MarkdownRender extends \Github\Runtime\Client\BaseEndpoint implements \Git
         $this->body = $requestBody;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'POST';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/markdown';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \Github\Model\MarkdownPostBody) {
             return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
@@ -46,7 +46,7 @@ class MarkdownRender extends \Github\Runtime\Client\BaseEndpoint implements \Git
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

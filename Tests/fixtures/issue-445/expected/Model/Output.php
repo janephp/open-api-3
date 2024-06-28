@@ -8,7 +8,7 @@ class Output
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class Output
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -96,7 +96,7 @@ class Output
      *
      * @return string
      */
-    public function getOutputFormatId() : string
+    public function getOutputFormatId(): string
     {
         return $this->outputFormatId;
     }
@@ -115,7 +115,7 @@ class Output
      *
      * @return string
      */
-    public function getContentId() : string
+    public function getContentId(): string
     {
         return $this->contentId;
     }
@@ -172,7 +172,7 @@ class Output
      *
      * @return \DateTime|null
      */
-    public function getBackupTimestamp() : ?\DateTime
+    public function getBackupTimestamp(): ?\DateTime
     {
         return $this->backupTimestamp;
     }
@@ -191,7 +191,7 @@ class Output
      *
      * @return int
      */
-    public function getAttemptsLeft() : int
+    public function getAttemptsLeft(): int
     {
         return $this->attemptsLeft;
     }
@@ -210,7 +210,7 @@ class Output
      *
      * @return int
      */
-    public function getFileVersion() : int
+    public function getFileVersion(): int
     {
         return $this->fileVersion;
     }
@@ -229,7 +229,7 @@ class Output
      *
      * @return bool
      */
-    public function getDynamicRendering() : bool
+    public function getDynamicRendering(): bool
     {
         return $this->dynamicRendering;
     }
@@ -248,7 +248,7 @@ class Output
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

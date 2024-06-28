@@ -8,7 +8,7 @@ class Schema extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class Schema extends \ArrayObject
      *
      * @return string
      */
-    public function getAttribute1() : string
+    public function getAttribute1(): string
     {
         return $this->attribute1;
     }
@@ -100,7 +100,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setAttribute1(string $attribute1) : self
+    public function setAttribute1(string $attribute1): self
     {
         $this->initialized['attribute1'] = true;
         $this->attribute1 = $attribute1;
@@ -111,7 +111,7 @@ class Schema extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAttribute2() : ?string
+    public function getAttribute2(): ?string
     {
         return $this->attribute2;
     }
@@ -122,7 +122,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setAttribute2(?string $attribute2) : self
+    public function setAttribute2(?string $attribute2): self
     {
         $this->initialized['attribute2'] = true;
         $this->attribute2 = $attribute2;
@@ -133,7 +133,7 @@ class Schema extends \ArrayObject
      *
      * @return string
      */
-    public function getAttribute3() : string
+    public function getAttribute3(): string
     {
         return $this->attribute3;
     }
@@ -144,7 +144,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setAttribute3(string $attribute3) : self
+    public function setAttribute3(string $attribute3): self
     {
         $this->initialized['attribute3'] = true;
         $this->attribute3 = $attribute3;
@@ -155,7 +155,7 @@ class Schema extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAttribute4() : ?string
+    public function getAttribute4(): ?string
     {
         return $this->attribute4;
     }
@@ -166,7 +166,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setAttribute4(?string $attribute4) : self
+    public function setAttribute4(?string $attribute4): self
     {
         $this->initialized['attribute4'] = true;
         $this->attribute4 = $attribute4;
@@ -177,7 +177,7 @@ class Schema extends \ArrayObject
      *
      * @return string
      */
-    public function getStringProperty() : string
+    public function getStringProperty(): string
     {
         return $this->stringProperty;
     }
@@ -188,7 +188,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setStringProperty(string $stringProperty) : self
+    public function setStringProperty(string $stringProperty): self
     {
         $this->initialized['stringProperty'] = true;
         $this->stringProperty = $stringProperty;
@@ -199,7 +199,7 @@ class Schema extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getDateProperty() : \DateTime
+    public function getDateProperty(): \DateTime
     {
         return $this->dateProperty;
     }
@@ -210,7 +210,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setDateProperty(\DateTime $dateProperty) : self
+    public function setDateProperty(\DateTime $dateProperty): self
     {
         $this->initialized['dateProperty'] = true;
         $this->dateProperty = $dateProperty;
@@ -221,7 +221,7 @@ class Schema extends \ArrayObject
      *
      * @return int
      */
-    public function getIntegerProperty() : int
+    public function getIntegerProperty(): int
     {
         return $this->integerProperty;
     }
@@ -232,7 +232,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setIntegerProperty(int $integerProperty) : self
+    public function setIntegerProperty(int $integerProperty): self
     {
         $this->initialized['integerProperty'] = true;
         $this->integerProperty = $integerProperty;
@@ -243,7 +243,7 @@ class Schema extends \ArrayObject
      *
      * @return float
      */
-    public function getFloatProperty() : float
+    public function getFloatProperty(): float
     {
         return $this->floatProperty;
     }
@@ -254,7 +254,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setFloatProperty(float $floatProperty) : self
+    public function setFloatProperty(float $floatProperty): self
     {
         $this->initialized['floatProperty'] = true;
         $this->floatProperty = $floatProperty;
@@ -265,7 +265,7 @@ class Schema extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getArrayProperty() : array
+    public function getArrayProperty(): array
     {
         return $this->arrayProperty;
     }
@@ -276,7 +276,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setArrayProperty(array $arrayProperty) : self
+    public function setArrayProperty(array $arrayProperty): self
     {
         $this->initialized['arrayProperty'] = true;
         $this->arrayProperty = $arrayProperty;
@@ -287,7 +287,7 @@ class Schema extends \ArrayObject
      *
      * @return array<string, string>
      */
-    public function getMapProperty() : iterable
+    public function getMapProperty(): iterable
     {
         return $this->mapProperty;
     }
@@ -298,7 +298,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setMapProperty(iterable $mapProperty) : self
+    public function setMapProperty(iterable $mapProperty): self
     {
         $this->initialized['mapProperty'] = true;
         $this->mapProperty = $mapProperty;
@@ -309,7 +309,7 @@ class Schema extends \ArrayObject
      *
      * @return SchemaObjectProperty
      */
-    public function getObjectProperty() : SchemaObjectProperty
+    public function getObjectProperty(): SchemaObjectProperty
     {
         return $this->objectProperty;
     }
@@ -320,7 +320,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setObjectProperty(SchemaObjectProperty $objectProperty) : self
+    public function setObjectProperty(SchemaObjectProperty $objectProperty): self
     {
         $this->initialized['objectProperty'] = true;
         $this->objectProperty = $objectProperty;
@@ -331,7 +331,7 @@ class Schema extends \ArrayObject
      *
      * @return Schema
      */
-    public function getObjectRefProperty() : Schema
+    public function getObjectRefProperty(): Schema
     {
         return $this->objectRefProperty;
     }
@@ -342,7 +342,7 @@ class Schema extends \ArrayObject
      *
      * @return self
      */
-    public function setObjectRefProperty(Schema $objectRefProperty) : self
+    public function setObjectRefProperty(Schema $objectRefProperty): self
     {
         $this->initialized['objectRefProperty'] = true;
         $this->objectRefProperty = $objectRefProperty;

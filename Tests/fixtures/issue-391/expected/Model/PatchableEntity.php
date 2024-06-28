@@ -8,7 +8,7 @@ class PatchableEntity extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class PatchableEntity extends \ArrayObject
      *
      * @return string|null
      */
-    public function getNullableProperty() : ?string
+    public function getNullableProperty(): ?string
     {
         return $this->nullableProperty;
     }
@@ -40,7 +40,7 @@ class PatchableEntity extends \ArrayObject
      *
      * @return self
      */
-    public function setNullableProperty(?string $nullableProperty) : self
+    public function setNullableProperty(?string $nullableProperty): self
     {
         $this->initialized['nullableProperty'] = true;
         $this->nullableProperty = $nullableProperty;
@@ -51,7 +51,7 @@ class PatchableEntity extends \ArrayObject
      *
      * @return string|null
      */
-    public function getNullableAndRequiredProperty() : ?string
+    public function getNullableAndRequiredProperty(): ?string
     {
         return $this->nullableAndRequiredProperty;
     }
@@ -62,7 +62,7 @@ class PatchableEntity extends \ArrayObject
      *
      * @return self
      */
-    public function setNullableAndRequiredProperty(?string $nullableAndRequiredProperty) : self
+    public function setNullableAndRequiredProperty(?string $nullableAndRequiredProperty): self
     {
         $this->initialized['nullableAndRequiredProperty'] = true;
         $this->nullableAndRequiredProperty = $nullableAndRequiredProperty;

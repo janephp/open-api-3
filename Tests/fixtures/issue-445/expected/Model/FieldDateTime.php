@@ -8,7 +8,7 @@ class FieldDateTime extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class FieldDateTime extends FieldBase
      *
      * @return string|null
      */
-    public function getFormat() : ?string
+    public function getFormat(): ?string
     {
         return $this->format;
     }
@@ -46,7 +46,7 @@ class FieldDateTime extends FieldBase
      *
      * @return self
      */
-    public function setFormat(?string $format) : self
+    public function setFormat(?string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -57,7 +57,7 @@ class FieldDateTime extends FieldBase
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -68,7 +68,7 @@ class FieldDateTime extends FieldBase
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;
@@ -79,7 +79,7 @@ class FieldDateTime extends FieldBase
      *
      * @return bool
      */
-    public function getInitializeOnItemCreation() : bool
+    public function getInitializeOnItemCreation(): bool
     {
         return $this->initializeOnItemCreation;
     }
@@ -90,7 +90,7 @@ class FieldDateTime extends FieldBase
      *
      * @return self
      */
-    public function setInitializeOnItemCreation(bool $initializeOnItemCreation) : self
+    public function setInitializeOnItemCreation(bool $initializeOnItemCreation): self
     {
         $this->initialized['initializeOnItemCreation'] = true;
         $this->initializeOnItemCreation = $initializeOnItemCreation;

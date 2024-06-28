@@ -8,7 +8,7 @@ class SharePageViewEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class SharePageViewEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getShareToken() : ?string
+    public function getShareToken(): ?string
     {
         return $this->shareToken;
     }
@@ -34,7 +34,7 @@ class SharePageViewEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setShareToken(?string $shareToken) : self
+    public function setShareToken(?string $shareToken): self
     {
         $this->initialized['shareToken'] = true;
         $this->shareToken = $shareToken;

@@ -8,7 +8,7 @@ class FieldDictionaryArray extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class FieldDictionaryArray extends FieldBase
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -46,7 +46,7 @@ class FieldDictionaryArray extends FieldBase
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;
@@ -57,7 +57,7 @@ class FieldDictionaryArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMaximumItems() : ?int
+    public function getMaximumItems(): ?int
     {
         return $this->maximumItems;
     }
@@ -68,7 +68,7 @@ class FieldDictionaryArray extends FieldBase
      *
      * @return self
      */
-    public function setMaximumItems(?int $maximumItems) : self
+    public function setMaximumItems(?int $maximumItems): self
     {
         $this->initialized['maximumItems'] = true;
         $this->maximumItems = $maximumItems;
@@ -79,7 +79,7 @@ class FieldDictionaryArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMinimumItems() : ?int
+    public function getMinimumItems(): ?int
     {
         return $this->minimumItems;
     }
@@ -90,7 +90,7 @@ class FieldDictionaryArray extends FieldBase
      *
      * @return self
      */
-    public function setMinimumItems(?int $minimumItems) : self
+    public function setMinimumItems(?int $minimumItems): self
     {
         $this->initialized['minimumItems'] = true;
         $this->minimumItems = $minimumItems;

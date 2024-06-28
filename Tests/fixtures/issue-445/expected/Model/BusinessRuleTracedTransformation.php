@@ -8,7 +8,7 @@ class BusinessRuleTracedTransformation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class BusinessRuleTracedTransformation
      *
      * @return string|null
      */
-    public function getTraceRefId() : ?string
+    public function getTraceRefId(): ?string
     {
         return $this->traceRefId;
     }
@@ -46,7 +46,7 @@ class BusinessRuleTracedTransformation
      *
      * @return self
      */
-    public function setTraceRefId(?string $traceRefId) : self
+    public function setTraceRefId(?string $traceRefId): self
     {
         $this->initialized['traceRefId'] = true;
         $this->traceRefId = $traceRefId;
@@ -57,7 +57,7 @@ class BusinessRuleTracedTransformation
      *
      * @return string|null
      */
-    public function getInput() : ?string
+    public function getInput(): ?string
     {
         return $this->input;
     }
@@ -68,7 +68,7 @@ class BusinessRuleTracedTransformation
      *
      * @return self
      */
-    public function setInput(?string $input) : self
+    public function setInput(?string $input): self
     {
         $this->initialized['input'] = true;
         $this->input = $input;
@@ -79,7 +79,7 @@ class BusinessRuleTracedTransformation
      *
      * @return string|null
      */
-    public function getOutput() : ?string
+    public function getOutput(): ?string
     {
         return $this->output;
     }
@@ -90,7 +90,7 @@ class BusinessRuleTracedTransformation
      *
      * @return self
      */
-    public function setOutput(?string $output) : self
+    public function setOutput(?string $output): self
     {
         $this->initialized['output'] = true;
         $this->output = $output;

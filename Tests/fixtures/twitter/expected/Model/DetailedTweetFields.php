@@ -8,7 +8,7 @@ class DetailedTweetFields extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return DetailedTweetFieldsStats
      */
-    public function getStats() : DetailedTweetFieldsStats
+    public function getStats(): DetailedTweetFieldsStats
     {
         return $this->stats;
     }
@@ -58,7 +58,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return self
      */
-    public function setStats(DetailedTweetFieldsStats $stats) : self
+    public function setStats(DetailedTweetFieldsStats $stats): self
     {
         $this->initialized['stats'] = true;
         $this->stats = $stats;
@@ -69,7 +69,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return list<ContextAnnotation>
      */
-    public function getContextAnnotation() : array
+    public function getContextAnnotation(): array
     {
         return $this->contextAnnotation;
     }
@@ -80,7 +80,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return self
      */
-    public function setContextAnnotation(array $contextAnnotation) : self
+    public function setContextAnnotation(array $contextAnnotation): self
     {
         $this->initialized['contextAnnotation'] = true;
         $this->contextAnnotation = $contextAnnotation;
@@ -91,7 +91,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return bool
      */
-    public function getPossiblySensitive() : bool
+    public function getPossiblySensitive(): bool
     {
         return $this->possiblySensitive;
     }
@@ -102,7 +102,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return self
      */
-    public function setPossiblySensitive(bool $possiblySensitive) : self
+    public function setPossiblySensitive(bool $possiblySensitive): self
     {
         $this->initialized['possiblySensitive'] = true;
         $this->possiblySensitive = $possiblySensitive;
@@ -113,7 +113,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return string
      */
-    public function getLang() : string
+    public function getLang(): string
     {
         return $this->lang;
     }
@@ -124,7 +124,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return self
      */
-    public function setLang(string $lang) : self
+    public function setLang(string $lang): self
     {
         $this->initialized['lang'] = true;
         $this->lang = $lang;
@@ -135,7 +135,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return string
      */
-    public function getSource() : string
+    public function getSource(): string
     {
         return $this->source;
     }
@@ -146,7 +146,7 @@ class DetailedTweetFields extends \ArrayObject
      *
      * @return self
      */
-    public function setSource(string $source) : self
+    public function setSource(string $source): self
     {
         $this->initialized['source'] = true;
         $this->source = $source;

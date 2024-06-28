@@ -8,7 +8,7 @@ class DeleteRulesResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class DeleteRulesResponse extends \ArrayObject
      *
      * @return RulesResponseMetadata
      */
-    public function getMeta() : RulesResponseMetadata
+    public function getMeta(): RulesResponseMetadata
     {
         return $this->meta;
     }
@@ -34,7 +34,7 @@ class DeleteRulesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setMeta(RulesResponseMetadata $meta) : self
+    public function setMeta(RulesResponseMetadata $meta): self
     {
         $this->initialized['meta'] = true;
         $this->meta = $meta;

@@ -8,7 +8,7 @@ class Mp4VideoFormat extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -52,7 +52,7 @@ class Mp4VideoFormat extends FormatBase
      *
      * @return self
      */
-    public function setResizeAction($resizeAction) : self
+    public function setResizeAction($resizeAction): self
     {
         $this->initialized['resizeAction'] = true;
         $this->resizeAction = $resizeAction;
@@ -74,7 +74,7 @@ class Mp4VideoFormat extends FormatBase
      *
      * @return self
      */
-    public function setAudioCodec($audioCodec) : self
+    public function setAudioCodec($audioCodec): self
     {
         $this->initialized['audioCodec'] = true;
         $this->audioCodec = $audioCodec;
@@ -96,7 +96,7 @@ class Mp4VideoFormat extends FormatBase
      *
      * @return self
      */
-    public function setPreset($preset) : self
+    public function setPreset($preset): self
     {
         $this->initialized['preset'] = true;
         $this->preset = $preset;
@@ -107,7 +107,7 @@ class Mp4VideoFormat extends FormatBase
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -118,7 +118,7 @@ class Mp4VideoFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;

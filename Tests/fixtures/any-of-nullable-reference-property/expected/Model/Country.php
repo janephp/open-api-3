@@ -8,7 +8,7 @@ class Country extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class Country extends \ArrayObject
      *
      * @return string
      */
-    public function getIso() : string
+    public function getIso(): string
     {
         return $this->iso;
     }
@@ -40,7 +40,7 @@ class Country extends \ArrayObject
      *
      * @return self
      */
-    public function setIso(string $iso) : self
+    public function setIso(string $iso): self
     {
         $this->initialized['iso'] = true;
         $this->iso = $iso;
@@ -51,7 +51,7 @@ class Country extends \ArrayObject
      *
      * @return string
      */
-    public function getPrintableName() : string
+    public function getPrintableName(): string
     {
         return $this->printableName;
     }
@@ -62,7 +62,7 @@ class Country extends \ArrayObject
      *
      * @return self
      */
-    public function setPrintableName(string $printableName) : self
+    public function setPrintableName(string $printableName): self
     {
         $this->initialized['printableName'] = true;
         $this->printableName = $printableName;

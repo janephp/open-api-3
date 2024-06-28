@@ -8,7 +8,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -58,7 +58,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -69,7 +69,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -80,7 +80,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -91,7 +91,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBranch() : string
+    public function getBranch(): string
     {
         return $this->branch;
     }
@@ -102,7 +102,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBranch(string $branch) : self
+    public function setBranch(string $branch): self
     {
         $this->initialized['branch'] = true;
         $this->branch = $branch;
@@ -113,7 +113,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return ReposOwnerRepoContentsPathDeleteBodyCommitter
      */
-    public function getCommitter() : ReposOwnerRepoContentsPathDeleteBodyCommitter
+    public function getCommitter(): ReposOwnerRepoContentsPathDeleteBodyCommitter
     {
         return $this->committer;
     }
@@ -124,7 +124,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitter(ReposOwnerRepoContentsPathDeleteBodyCommitter $committer) : self
+    public function setCommitter(ReposOwnerRepoContentsPathDeleteBodyCommitter $committer): self
     {
         $this->initialized['committer'] = true;
         $this->committer = $committer;
@@ -135,7 +135,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return ReposOwnerRepoContentsPathDeleteBodyAuthor
      */
-    public function getAuthor() : ReposOwnerRepoContentsPathDeleteBodyAuthor
+    public function getAuthor(): ReposOwnerRepoContentsPathDeleteBodyAuthor
     {
         return $this->author;
     }
@@ -146,7 +146,7 @@ class ReposOwnerRepoContentsPathDeleteBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(ReposOwnerRepoContentsPathDeleteBodyAuthor $author) : self
+    public function setAuthor(ReposOwnerRepoContentsPathDeleteBodyAuthor $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;

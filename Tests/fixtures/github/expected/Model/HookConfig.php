@@ -8,7 +8,7 @@ class HookConfig extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -88,7 +88,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -99,7 +99,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getPassword() : string
+    public function getPassword(): string
     {
         return $this->password;
     }
@@ -110,7 +110,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setPassword(string $password) : self
+    public function setPassword(string $password): self
     {
         $this->initialized['password'] = true;
         $this->password = $password;
@@ -121,7 +121,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getRoom() : string
+    public function getRoom(): string
     {
         return $this->room;
     }
@@ -132,7 +132,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setRoom(string $room) : self
+    public function setRoom(string $room): self
     {
         $this->initialized['room'] = true;
         $this->room = $room;
@@ -143,7 +143,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getSubdomain() : string
+    public function getSubdomain(): string
     {
         return $this->subdomain;
     }
@@ -154,7 +154,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setSubdomain(string $subdomain) : self
+    public function setSubdomain(string $subdomain): self
     {
         $this->initialized['subdomain'] = true;
         $this->subdomain = $subdomain;
@@ -165,7 +165,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -176,7 +176,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -187,7 +187,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getInsecureSsl() : string
+    public function getInsecureSsl(): string
     {
         return $this->insecureSsl;
     }
@@ -198,7 +198,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setInsecureSsl(string $insecureSsl) : self
+    public function setInsecureSsl(string $insecureSsl): self
     {
         $this->initialized['insecureSsl'] = true;
         $this->insecureSsl = $insecureSsl;
@@ -209,7 +209,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getContentType() : string
+    public function getContentType(): string
     {
         return $this->contentType;
     }
@@ -220,7 +220,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setContentType(string $contentType) : self
+    public function setContentType(string $contentType): self
     {
         $this->initialized['contentType'] = true;
         $this->contentType = $contentType;
@@ -231,7 +231,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getDigest() : string
+    public function getDigest(): string
     {
         return $this->digest;
     }
@@ -242,7 +242,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setDigest(string $digest) : self
+    public function setDigest(string $digest): self
     {
         $this->initialized['digest'] = true;
         $this->digest = $digest;
@@ -253,7 +253,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getSecret() : string
+    public function getSecret(): string
     {
         return $this->secret;
     }
@@ -264,7 +264,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setSecret(string $secret) : self
+    public function setSecret(string $secret): self
     {
         $this->initialized['secret'] = true;
         $this->secret = $secret;
@@ -275,7 +275,7 @@ class HookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getToken() : string
+    public function getToken(): string
     {
         return $this->token;
     }
@@ -286,7 +286,7 @@ class HookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setToken(string $token) : self
+    public function setToken(string $token): self
     {
         $this->initialized['token'] = true;
         $this->token = $token;

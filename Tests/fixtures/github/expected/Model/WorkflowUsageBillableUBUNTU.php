@@ -8,7 +8,7 @@ class WorkflowUsageBillableUBUNTU extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class WorkflowUsageBillableUBUNTU extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalMs() : int
+    public function getTotalMs(): int
     {
         return $this->totalMs;
     }
@@ -34,7 +34,7 @@ class WorkflowUsageBillableUBUNTU extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalMs(int $totalMs) : self
+    public function setTotalMs(int $totalMs): self
     {
         $this->initialized['totalMs'] = true;
         $this->totalMs = $totalMs;

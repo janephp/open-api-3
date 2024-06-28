@@ -8,7 +8,7 @@ class VideoStillFormat extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class VideoStillFormat extends FormatBase
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -40,7 +40,7 @@ class VideoStillFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;
@@ -51,7 +51,7 @@ class VideoStillFormat extends FormatBase
      *
      * @return int
      */
-    public function getPositionInSeconds() : int
+    public function getPositionInSeconds(): int
     {
         return $this->positionInSeconds;
     }
@@ -62,7 +62,7 @@ class VideoStillFormat extends FormatBase
      *
      * @return self
      */
-    public function setPositionInSeconds(int $positionInSeconds) : self
+    public function setPositionInSeconds(int $positionInSeconds): self
     {
         $this->initialized['positionInSeconds'] = true;
         $this->positionInSeconds = $positionInSeconds;

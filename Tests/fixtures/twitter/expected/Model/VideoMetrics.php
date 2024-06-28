@@ -8,7 +8,7 @@ class VideoMetrics extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return string
      */
-    public function getMediaKey() : string
+    public function getMediaKey(): string
     {
         return $this->mediaKey;
     }
@@ -70,7 +70,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setMediaKey(string $mediaKey) : self
+    public function setMediaKey(string $mediaKey): self
     {
         $this->initialized['mediaKey'] = true;
         $this->mediaKey = $mediaKey;
@@ -81,7 +81,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getViewCount() : int
+    public function getViewCount(): int
     {
         return $this->viewCount;
     }
@@ -92,7 +92,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setViewCount(int $viewCount) : self
+    public function setViewCount(int $viewCount): self
     {
         $this->initialized['viewCount'] = true;
         $this->viewCount = $viewCount;
@@ -103,7 +103,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getPlayback0Count() : int
+    public function getPlayback0Count(): int
     {
         return $this->playback0Count;
     }
@@ -114,7 +114,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setPlayback0Count(int $playback0Count) : self
+    public function setPlayback0Count(int $playback0Count): self
     {
         $this->initialized['playback0Count'] = true;
         $this->playback0Count = $playback0Count;
@@ -125,7 +125,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getPlayback25Count() : int
+    public function getPlayback25Count(): int
     {
         return $this->playback25Count;
     }
@@ -136,7 +136,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setPlayback25Count(int $playback25Count) : self
+    public function setPlayback25Count(int $playback25Count): self
     {
         $this->initialized['playback25Count'] = true;
         $this->playback25Count = $playback25Count;
@@ -147,7 +147,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getPlayback50Count() : int
+    public function getPlayback50Count(): int
     {
         return $this->playback50Count;
     }
@@ -158,7 +158,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setPlayback50Count(int $playback50Count) : self
+    public function setPlayback50Count(int $playback50Count): self
     {
         $this->initialized['playback50Count'] = true;
         $this->playback50Count = $playback50Count;
@@ -169,7 +169,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getPlayback75Count() : int
+    public function getPlayback75Count(): int
     {
         return $this->playback75Count;
     }
@@ -180,7 +180,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setPlayback75Count(int $playback75Count) : self
+    public function setPlayback75Count(int $playback75Count): self
     {
         $this->initialized['playback75Count'] = true;
         $this->playback75Count = $playback75Count;
@@ -191,7 +191,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getPlayback100Count() : int
+    public function getPlayback100Count(): int
     {
         return $this->playback100Count;
     }
@@ -202,7 +202,7 @@ class VideoMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setPlayback100Count(int $playback100Count) : self
+    public function setPlayback100Count(int $playback100Count): self
     {
         $this->initialized['playback100Count'] = true;
         $this->playback100Count = $playback100Count;

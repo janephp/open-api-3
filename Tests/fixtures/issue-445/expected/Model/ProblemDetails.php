@@ -8,7 +8,7 @@ class ProblemDetails
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ProblemDetails
      *
      * @return string|null
      */
-    public function getType() : ?string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -64,7 +64,7 @@ class ProblemDetails
      *
      * @return self
      */
-    public function setType(?string $type) : self
+    public function setType(?string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -75,7 +75,7 @@ class ProblemDetails
      *
      * @return string|null
      */
-    public function getTitle() : ?string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -86,7 +86,7 @@ class ProblemDetails
      *
      * @return self
      */
-    public function setTitle(?string $title) : self
+    public function setTitle(?string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -97,7 +97,7 @@ class ProblemDetails
      *
      * @return int|null
      */
-    public function getStatus() : ?int
+    public function getStatus(): ?int
     {
         return $this->status;
     }
@@ -108,7 +108,7 @@ class ProblemDetails
      *
      * @return self
      */
-    public function setStatus(?int $status) : self
+    public function setStatus(?int $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -119,7 +119,7 @@ class ProblemDetails
      *
      * @return string|null
      */
-    public function getDetail() : ?string
+    public function getDetail(): ?string
     {
         return $this->detail;
     }
@@ -130,7 +130,7 @@ class ProblemDetails
      *
      * @return self
      */
-    public function setDetail(?string $detail) : self
+    public function setDetail(?string $detail): self
     {
         $this->initialized['detail'] = true;
         $this->detail = $detail;
@@ -141,7 +141,7 @@ class ProblemDetails
      *
      * @return string|null
      */
-    public function getInstance() : ?string
+    public function getInstance(): ?string
     {
         return $this->instance;
     }
@@ -152,7 +152,7 @@ class ProblemDetails
      *
      * @return self
      */
-    public function setInstance(?string $instance) : self
+    public function setInstance(?string $instance): self
     {
         $this->initialized['instance'] = true;
         $this->instance = $instance;
@@ -163,7 +163,7 @@ class ProblemDetails
      *
      * @return array<string, mixed>|null
      */
-    public function getExtensions() : ?iterable
+    public function getExtensions(): ?iterable
     {
         return $this->extensions;
     }
@@ -174,7 +174,7 @@ class ProblemDetails
      *
      * @return self
      */
-    public function setExtensions(?iterable $extensions) : self
+    public function setExtensions(?iterable $extensions): self
     {
         $this->initialized['extensions'] = true;
         $this->extensions = $extensions;

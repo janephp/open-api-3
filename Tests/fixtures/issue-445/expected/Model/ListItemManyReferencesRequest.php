@@ -8,7 +8,7 @@ class ListItemManyReferencesRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ListItemManyReferencesRequest
      *
      * @return list<string>
      */
-    public function getListItemIds() : array
+    public function getListItemIds(): array
     {
         return $this->listItemIds;
     }
@@ -40,7 +40,7 @@ class ListItemManyReferencesRequest
      *
      * @return self
      */
-    public function setListItemIds(array $listItemIds) : self
+    public function setListItemIds(array $listItemIds): self
     {
         $this->initialized['listItemIds'] = true;
         $this->listItemIds = $listItemIds;
@@ -62,7 +62,7 @@ class ListItemManyReferencesRequest
      *
      * @return self
      */
-    public function setReferences($references) : self
+    public function setReferences($references): self
     {
         $this->initialized['references'] = true;
         $this->references = $references;

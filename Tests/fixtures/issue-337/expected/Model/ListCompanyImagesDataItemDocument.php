@@ -8,7 +8,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getImageType() : string
+    public function getImageType(): string
     {
         return $this->imageType;
     }
@@ -46,7 +46,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setImageType(string $imageType) : self
+    public function setImageType(string $imageType): self
     {
         $this->initialized['imageType'] = true;
         $this->imageType = $imageType;
@@ -57,7 +57,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getImageCode() : string
+    public function getImageCode(): string
     {
         return $this->imageCode;
     }
@@ -68,7 +68,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setImageCode(string $imageCode) : self
+    public function setImageCode(string $imageCode): self
     {
         $this->initialized['imageCode'] = true;
         $this->imageCode = $imageCode;
@@ -79,7 +79,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -90,7 +90,7 @@ class ListCompanyImagesDataItemDocument extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

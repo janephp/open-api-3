@@ -8,7 +8,7 @@ class IssueEventDismissedReview extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class IssueEventDismissedReview extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -52,7 +52,7 @@ class IssueEventDismissedReview extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -63,7 +63,7 @@ class IssueEventDismissedReview extends \ArrayObject
      *
      * @return int
      */
-    public function getReviewId() : int
+    public function getReviewId(): int
     {
         return $this->reviewId;
     }
@@ -74,7 +74,7 @@ class IssueEventDismissedReview extends \ArrayObject
      *
      * @return self
      */
-    public function setReviewId(int $reviewId) : self
+    public function setReviewId(int $reviewId): self
     {
         $this->initialized['reviewId'] = true;
         $this->reviewId = $reviewId;
@@ -85,7 +85,7 @@ class IssueEventDismissedReview extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDismissalMessage() : ?string
+    public function getDismissalMessage(): ?string
     {
         return $this->dismissalMessage;
     }
@@ -96,7 +96,7 @@ class IssueEventDismissedReview extends \ArrayObject
      *
      * @return self
      */
-    public function setDismissalMessage(?string $dismissalMessage) : self
+    public function setDismissalMessage(?string $dismissalMessage): self
     {
         $this->initialized['dismissalMessage'] = true;
         $this->dismissalMessage = $dismissalMessage;
@@ -107,7 +107,7 @@ class IssueEventDismissedReview extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDismissalCommitId() : ?string
+    public function getDismissalCommitId(): ?string
     {
         return $this->dismissalCommitId;
     }
@@ -118,7 +118,7 @@ class IssueEventDismissedReview extends \ArrayObject
      *
      * @return self
      */
-    public function setDismissalCommitId(?string $dismissalCommitId) : self
+    public function setDismissalCommitId(?string $dismissalCommitId): self
     {
         $this->initialized['dismissalCommitId'] = true;
         $this->dismissalCommitId = $dismissalCommitId;

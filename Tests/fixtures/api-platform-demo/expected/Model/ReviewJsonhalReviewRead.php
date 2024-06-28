@@ -8,7 +8,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -67,7 +67,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return ReviewJsonhalReviewReadLinks
      */
-    public function getLinks() : ReviewJsonhalReviewReadLinks
+    public function getLinks(): ReviewJsonhalReviewReadLinks
     {
         return $this->links;
     }
@@ -78,7 +78,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(ReviewJsonhalReviewReadLinks $links) : self
+    public function setLinks(ReviewJsonhalReviewReadLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;
@@ -89,7 +89,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -100,7 +100,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -111,7 +111,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -122,7 +122,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -133,7 +133,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return int
      */
-    public function getRating() : int
+    public function getRating(): int
     {
         return $this->rating;
     }
@@ -144,7 +144,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setRating(int $rating) : self
+    public function setRating(int $rating): self
     {
         $this->initialized['rating'] = true;
         $this->rating = $rating;
@@ -157,7 +157,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLetter() : ?string
+    public function getLetter(): ?string
     {
         return $this->letter;
     }
@@ -170,7 +170,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setLetter(?string $letter) : self
+    public function setLetter(?string $letter): self
     {
         $this->initialized['letter'] = true;
         $this->letter = $letter;
@@ -181,7 +181,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return BookJsonhalReviewRead
      */
-    public function getBook() : BookJsonhalReviewRead
+    public function getBook(): BookJsonhalReviewRead
     {
         return $this->book;
     }
@@ -192,7 +192,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setBook(BookJsonhalReviewRead $book) : self
+    public function setBook(BookJsonhalReviewRead $book): self
     {
         $this->initialized['book'] = true;
         $this->book = $book;
@@ -203,7 +203,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAuthor() : ?string
+    public function getAuthor(): ?string
     {
         return $this->author;
     }
@@ -214,7 +214,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(?string $author) : self
+    public function setAuthor(?string $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -225,7 +225,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getPublicationDate() : ?\DateTime
+    public function getPublicationDate(): ?\DateTime
     {
         return $this->publicationDate;
     }
@@ -236,7 +236,7 @@ class ReviewJsonhalReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setPublicationDate(?\DateTime $publicationDate) : self
+    public function setPublicationDate(?\DateTime $publicationDate): self
     {
         $this->initialized['publicationDate'] = true;
         $this->publicationDate = $publicationDate;

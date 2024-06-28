@@ -8,7 +8,7 @@ class GroupMapping extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return list<GroupMappingGroupsItem>
      */
-    public function getGroups() : array
+    public function getGroups(): array
     {
         return $this->groups;
     }
@@ -64,7 +64,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return self
      */
-    public function setGroups(array $groups) : self
+    public function setGroups(array $groups): self
     {
         $this->initialized['groups'] = true;
         $this->groups = $groups;
@@ -75,7 +75,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return string
      */
-    public function getGroupId() : string
+    public function getGroupId(): string
     {
         return $this->groupId;
     }
@@ -86,7 +86,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return self
      */
-    public function setGroupId(string $groupId) : self
+    public function setGroupId(string $groupId): self
     {
         $this->initialized['groupId'] = true;
         $this->groupId = $groupId;
@@ -97,7 +97,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return string
      */
-    public function getGroupName() : string
+    public function getGroupName(): string
     {
         return $this->groupName;
     }
@@ -108,7 +108,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return self
      */
-    public function setGroupName(string $groupName) : self
+    public function setGroupName(string $groupName): self
     {
         $this->initialized['groupName'] = true;
         $this->groupName = $groupName;
@@ -119,7 +119,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return string
      */
-    public function getGroupDescription() : string
+    public function getGroupDescription(): string
     {
         return $this->groupDescription;
     }
@@ -130,7 +130,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return self
      */
-    public function setGroupDescription(string $groupDescription) : self
+    public function setGroupDescription(string $groupDescription): self
     {
         $this->initialized['groupDescription'] = true;
         $this->groupDescription = $groupDescription;
@@ -141,7 +141,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -152,7 +152,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -163,7 +163,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return string
      */
-    public function getSyncedAt() : string
+    public function getSyncedAt(): string
     {
         return $this->syncedAt;
     }
@@ -174,7 +174,7 @@ class GroupMapping extends \ArrayObject
      *
      * @return self
      */
-    public function setSyncedAt(string $syncedAt) : self
+    public function setSyncedAt(string $syncedAt): self
     {
         $this->initialized['syncedAt'] = true;
         $this->syncedAt = $syncedAt;

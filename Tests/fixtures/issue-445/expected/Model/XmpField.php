@@ -8,7 +8,7 @@ class XmpField
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class XmpField
      *
      * @return string|null
      */
-    public function getPath() : ?string
+    public function getPath(): ?string
     {
         return $this->path;
     }
@@ -46,7 +46,7 @@ class XmpField
      *
      * @return self
      */
-    public function setPath(?string $path) : self
+    public function setPath(?string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -57,7 +57,7 @@ class XmpField
      *
      * @return bool
      */
-    public function getIsWritable() : bool
+    public function getIsWritable(): bool
     {
         return $this->isWritable;
     }
@@ -68,7 +68,7 @@ class XmpField
      *
      * @return self
      */
-    public function setIsWritable(bool $isWritable) : self
+    public function setIsWritable(bool $isWritable): self
     {
         $this->initialized['isWritable'] = true;
         $this->isWritable = $isWritable;
@@ -90,7 +90,7 @@ class XmpField
      *
      * @return self
      */
-    public function setDataType($dataType) : self
+    public function setDataType($dataType): self
     {
         $this->initialized['dataType'] = true;
         $this->dataType = $dataType;

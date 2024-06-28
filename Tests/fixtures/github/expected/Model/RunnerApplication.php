@@ -8,7 +8,7 @@ class RunnerApplication extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class RunnerApplication extends \ArrayObject
      *
      * @return string
      */
-    public function getOs() : string
+    public function getOs(): string
     {
         return $this->os;
     }
@@ -52,7 +52,7 @@ class RunnerApplication extends \ArrayObject
      *
      * @return self
      */
-    public function setOs(string $os) : self
+    public function setOs(string $os): self
     {
         $this->initialized['os'] = true;
         $this->os = $os;
@@ -63,7 +63,7 @@ class RunnerApplication extends \ArrayObject
      *
      * @return string
      */
-    public function getArchitecture() : string
+    public function getArchitecture(): string
     {
         return $this->architecture;
     }
@@ -74,7 +74,7 @@ class RunnerApplication extends \ArrayObject
      *
      * @return self
      */
-    public function setArchitecture(string $architecture) : self
+    public function setArchitecture(string $architecture): self
     {
         $this->initialized['architecture'] = true;
         $this->architecture = $architecture;
@@ -85,7 +85,7 @@ class RunnerApplication extends \ArrayObject
      *
      * @return string
      */
-    public function getDownloadUrl() : string
+    public function getDownloadUrl(): string
     {
         return $this->downloadUrl;
     }
@@ -96,7 +96,7 @@ class RunnerApplication extends \ArrayObject
      *
      * @return self
      */
-    public function setDownloadUrl(string $downloadUrl) : self
+    public function setDownloadUrl(string $downloadUrl): self
     {
         $this->initialized['downloadUrl'] = true;
         $this->downloadUrl = $downloadUrl;
@@ -107,7 +107,7 @@ class RunnerApplication extends \ArrayObject
      *
      * @return string
      */
-    public function getFilename() : string
+    public function getFilename(): string
     {
         return $this->filename;
     }
@@ -118,7 +118,7 @@ class RunnerApplication extends \ArrayObject
      *
      * @return self
      */
-    public function setFilename(string $filename) : self
+    public function setFilename(string $filename): self
     {
         $this->initialized['filename'] = true;
         $this->filename = $filename;

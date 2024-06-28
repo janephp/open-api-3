@@ -8,7 +8,7 @@ class ApiStatisticsEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ApiStatisticsEvent extends ApplicationEvent
      *
      * @return array<string, int>|null
      */
-    public function getRequestsPerClient() : ?iterable
+    public function getRequestsPerClient(): ?iterable
     {
         return $this->requestsPerClient;
     }
@@ -34,7 +34,7 @@ class ApiStatisticsEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setRequestsPerClient(?iterable $requestsPerClient) : self
+    public function setRequestsPerClient(?iterable $requestsPerClient): self
     {
         $this->initialized['requestsPerClient'] = true;
         $this->requestsPerClient = $requestsPerClient;

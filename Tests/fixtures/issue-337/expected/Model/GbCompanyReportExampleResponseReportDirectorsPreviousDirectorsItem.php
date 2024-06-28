@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -58,7 +58,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -69,7 +69,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -80,7 +80,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -91,7 +91,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return string
      */
-    public function getGender() : string
+    public function getGender(): string
     {
         return $this->gender;
     }
@@ -102,7 +102,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return self
      */
-    public function setGender(string $gender) : self
+    public function setGender(string $gender): self
     {
         $this->initialized['gender'] = true;
         $this->gender = $gender;
@@ -113,7 +113,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return string
      */
-    public function getDirectorType() : string
+    public function getDirectorType(): string
     {
         return $this->directorType;
     }
@@ -124,7 +124,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return self
      */
-    public function setDirectorType(string $directorType) : self
+    public function setDirectorType(string $directorType): self
     {
         $this->initialized['directorType'] = true;
         $this->directorType = $directorType;
@@ -135,7 +135,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return list<string>
      */
-    public function getPositions() : array
+    public function getPositions(): array
     {
         return $this->positions;
     }
@@ -146,7 +146,7 @@ class GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem extends
      *
      * @return self
      */
-    public function setPositions(array $positions) : self
+    public function setPositions(array $positions): self
     {
         $this->initialized['positions'] = true;
         $this->positions = $positions;

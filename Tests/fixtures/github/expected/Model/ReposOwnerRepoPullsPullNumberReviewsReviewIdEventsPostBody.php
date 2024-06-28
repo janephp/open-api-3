@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdEventsPostBody extends \ArrayO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdEventsPostBody extends \ArrayO
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdEventsPostBody extends \ArrayO
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -51,7 +51,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdEventsPostBody extends \ArrayO
      *
      * @return string
      */
-    public function getEvent() : string
+    public function getEvent(): string
     {
         return $this->event;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoPullsPullNumberReviewsReviewIdEventsPostBody extends \ArrayO
      *
      * @return self
      */
-    public function setEvent(string $event) : self
+    public function setEvent(string $event): self
     {
         $this->initialized['event'] = true;
         $this->event = $event;

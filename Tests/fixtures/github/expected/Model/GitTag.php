@@ -8,7 +8,7 @@ class GitTag extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class GitTag extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -76,7 +76,7 @@ class GitTag extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -87,7 +87,7 @@ class GitTag extends \ArrayObject
      *
      * @return string
      */
-    public function getTag() : string
+    public function getTag(): string
     {
         return $this->tag;
     }
@@ -98,7 +98,7 @@ class GitTag extends \ArrayObject
      *
      * @return self
      */
-    public function setTag(string $tag) : self
+    public function setTag(string $tag): self
     {
         $this->initialized['tag'] = true;
         $this->tag = $tag;
@@ -109,7 +109,7 @@ class GitTag extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -120,7 +120,7 @@ class GitTag extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -131,7 +131,7 @@ class GitTag extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -142,7 +142,7 @@ class GitTag extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -153,7 +153,7 @@ class GitTag extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -164,7 +164,7 @@ class GitTag extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -175,7 +175,7 @@ class GitTag extends \ArrayObject
      *
      * @return GitTagTagger
      */
-    public function getTagger() : GitTagTagger
+    public function getTagger(): GitTagTagger
     {
         return $this->tagger;
     }
@@ -186,7 +186,7 @@ class GitTag extends \ArrayObject
      *
      * @return self
      */
-    public function setTagger(GitTagTagger $tagger) : self
+    public function setTagger(GitTagTagger $tagger): self
     {
         $this->initialized['tagger'] = true;
         $this->tagger = $tagger;
@@ -197,7 +197,7 @@ class GitTag extends \ArrayObject
      *
      * @return GitTagObject
      */
-    public function getObject() : GitTagObject
+    public function getObject(): GitTagObject
     {
         return $this->object;
     }
@@ -208,7 +208,7 @@ class GitTag extends \ArrayObject
      *
      * @return self
      */
-    public function setObject(GitTagObject $object) : self
+    public function setObject(GitTagObject $object): self
     {
         $this->initialized['object'] = true;
         $this->object = $object;
@@ -219,7 +219,7 @@ class GitTag extends \ArrayObject
      *
      * @return Verification
      */
-    public function getVerification() : Verification
+    public function getVerification(): Verification
     {
         return $this->verification;
     }
@@ -230,7 +230,7 @@ class GitTag extends \ArrayObject
      *
      * @return self
      */
-    public function setVerification(Verification $verification) : self
+    public function setVerification(Verification $verification): self
     {
         $this->initialized['verification'] = true;
         $this->verification = $verification;

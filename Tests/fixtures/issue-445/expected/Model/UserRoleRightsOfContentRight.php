@@ -8,7 +8,7 @@ class UserRoleRightsOfContentRight
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class UserRoleRightsOfContentRight
      *
      * @return string|null
      */
-    public function getUserRoleId() : ?string
+    public function getUserRoleId(): ?string
     {
         return $this->userRoleId;
     }
@@ -40,7 +40,7 @@ class UserRoleRightsOfContentRight
      *
      * @return self
      */
-    public function setUserRoleId(?string $userRoleId) : self
+    public function setUserRoleId(?string $userRoleId): self
     {
         $this->initialized['userRoleId'] = true;
         $this->userRoleId = $userRoleId;
@@ -51,7 +51,7 @@ class UserRoleRightsOfContentRight
      *
      * @return list<string>|null
      */
-    public function getRights() : ?array
+    public function getRights(): ?array
     {
         return $this->rights;
     }
@@ -62,7 +62,7 @@ class UserRoleRightsOfContentRight
      *
      * @return self
      */
-    public function setRights(?array $rights) : self
+    public function setRights(?array $rights): self
     {
         $this->initialized['rights'] = true;
         $this->rights = $rights;

@@ -21,15 +21,15 @@ class ActionsRemoveSelectedRepoFromOrgSecret extends \Github\Runtime\Client\Base
         $this->repository_id = $repositoryId;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'DELETE';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{org}', '{secret_name}', '{repository_id}'], [$this->org, $this->secret_name, $this->repository_id], '/orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
@@ -51,7 +51,7 @@ class ActionsRemoveSelectedRepoFromOrgSecret extends \Github\Runtime\Client\Base
             throw new \Github\Exception\ActionsRemoveSelectedRepoFromOrgSecretConflictException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

@@ -8,7 +8,7 @@ class Geo extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class Geo extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -52,7 +52,7 @@ class Geo extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -63,7 +63,7 @@ class Geo extends \ArrayObject
      *
      * @return list<float>
      */
-    public function getBbox() : array
+    public function getBbox(): array
     {
         return $this->bbox;
     }
@@ -74,7 +74,7 @@ class Geo extends \ArrayObject
      *
      * @return self
      */
-    public function setBbox(array $bbox) : self
+    public function setBbox(array $bbox): self
     {
         $this->initialized['bbox'] = true;
         $this->bbox = $bbox;
@@ -85,7 +85,7 @@ class Geo extends \ArrayObject
      *
      * @return Point
      */
-    public function getGeometry() : Point
+    public function getGeometry(): Point
     {
         return $this->geometry;
     }
@@ -96,7 +96,7 @@ class Geo extends \ArrayObject
      *
      * @return self
      */
-    public function setGeometry(Point $geometry) : self
+    public function setGeometry(Point $geometry): self
     {
         $this->initialized['geometry'] = true;
         $this->geometry = $geometry;
@@ -107,7 +107,7 @@ class Geo extends \ArrayObject
      *
      * @return array<string, mixed>
      */
-    public function getProperties() : iterable
+    public function getProperties(): iterable
     {
         return $this->properties;
     }
@@ -118,7 +118,7 @@ class Geo extends \ArrayObject
      *
      * @return self
      */
-    public function setProperties(iterable $properties) : self
+    public function setProperties(iterable $properties): self
     {
         $this->initialized['properties'] = true;
         $this->properties = $properties;

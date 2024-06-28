@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return bool
      */
-    public function getAddressConflict() : bool
+    public function getAddressConflict(): bool
     {
         return $this->addressConflict;
     }
@@ -76,7 +76,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return self
      */
-    public function setAddressConflict(bool $addressConflict) : self
+    public function setAddressConflict(bool $addressConflict): self
     {
         $this->initialized['addressConflict'] = true;
         $this->addressConflict = $addressConflict;
@@ -87,7 +87,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return bool
      */
-    public function getCitizenshipConflict() : bool
+    public function getCitizenshipConflict(): bool
     {
         return $this->citizenshipConflict;
     }
@@ -98,7 +98,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return self
      */
-    public function setCitizenshipConflict(bool $citizenshipConflict) : self
+    public function setCitizenshipConflict(bool $citizenshipConflict): self
     {
         $this->initialized['citizenshipConflict'] = true;
         $this->citizenshipConflict = $citizenshipConflict;
@@ -109,7 +109,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return bool
      */
-    public function getCountryConflict() : bool
+    public function getCountryConflict(): bool
     {
         return $this->countryConflict;
     }
@@ -120,7 +120,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return self
      */
-    public function setCountryConflict(bool $countryConflict) : self
+    public function setCountryConflict(bool $countryConflict): self
     {
         $this->initialized['countryConflict'] = true;
         $this->countryConflict = $countryConflict;
@@ -131,7 +131,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return bool
      */
-    public function getDobConflict() : bool
+    public function getDobConflict(): bool
     {
         return $this->dobConflict;
     }
@@ -142,7 +142,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return self
      */
-    public function setDobConflict(bool $dobConflict) : self
+    public function setDobConflict(bool $dobConflict): self
     {
         $this->initialized['dobConflict'] = true;
         $this->dobConflict = $dobConflict;
@@ -153,7 +153,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return bool
      */
-    public function getEntityTypeConflict() : bool
+    public function getEntityTypeConflict(): bool
     {
         return $this->entityTypeConflict;
     }
@@ -164,7 +164,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return self
      */
-    public function setEntityTypeConflict(bool $entityTypeConflict) : self
+    public function setEntityTypeConflict(bool $entityTypeConflict): self
     {
         $this->initialized['entityTypeConflict'] = true;
         $this->entityTypeConflict = $entityTypeConflict;
@@ -175,7 +175,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return bool
      */
-    public function getGenderConflict() : bool
+    public function getGenderConflict(): bool
     {
         return $this->genderConflict;
     }
@@ -186,7 +186,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return self
      */
-    public function setGenderConflict(bool $genderConflict) : self
+    public function setGenderConflict(bool $genderConflict): self
     {
         $this->initialized['genderConflict'] = true;
         $this->genderConflict = $genderConflict;
@@ -197,7 +197,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return bool
      */
-    public function getIdConflict() : bool
+    public function getIdConflict(): bool
     {
         return $this->idConflict;
     }
@@ -208,7 +208,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return self
      */
-    public function setIdConflict(bool $idConflict) : self
+    public function setIdConflict(bool $idConflict): self
     {
         $this->initialized['idConflict'] = true;
         $this->idConflict = $idConflict;
@@ -219,7 +219,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return bool
      */
-    public function getPhoneConflict() : bool
+    public function getPhoneConflict(): bool
     {
         return $this->phoneConflict;
     }
@@ -230,7 +230,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemC
      *
      * @return self
      */
-    public function setPhoneConflict(bool $phoneConflict) : self
+    public function setPhoneConflict(bool $phoneConflict): self
     {
         $this->initialized['phoneConflict'] = true;
         $this->phoneConflict = $phoneConflict;

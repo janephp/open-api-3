@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\PublicUser::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\PublicUser::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -161,16 +161,16 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setFollowing($data['following']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
             }
             if (\array_key_exists('plan', $data)) {
                 $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\PublicUserPlan::class, 'json', $context));
             }
             if (\array_key_exists('suspended_at', $data) && $data['suspended_at'] !== null) {
-                $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['suspended_at']));
+                $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['suspended_at']));
             }
             elseif (\array_key_exists('suspended_at', $data) && $data['suspended_at'] === null) {
                 $object->setSuspendedAt(null);
@@ -192,7 +192,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['login'] = $object->getLogin();
@@ -227,13 +227,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['public_gists'] = $object->getPublicGists();
             $data['followers'] = $object->getFollowers();
             $data['following'] = $object->getFollowing();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('plan') && null !== $object->getPlan()) {
                 $data['plan'] = $this->normalizer->normalize($object->getPlan(), 'json', $context);
             }
             if ($object->isInitialized('suspendedAt') && null !== $object->getSuspendedAt()) {
-                $data['suspended_at'] = $object->getSuspendedAt()->format('Y-m-d\\TH:i:sP');
+                $data['suspended_at'] = $object->getSuspendedAt()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('privateGists') && null !== $object->getPrivateGists()) {
                 $data['private_gists'] = $object->getPrivateGists();
@@ -255,7 +255,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\PublicUser::class => false];
         }
@@ -267,11 +267,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\PublicUser::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\PublicUser::class;
         }
@@ -411,16 +411,16 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setFollowing($data['following']);
             }
             if (\array_key_exists('created_at', $data)) {
-                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created_at']));
+                $object->setCreatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created_at']));
             }
             if (\array_key_exists('updated_at', $data)) {
-                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['updated_at']));
+                $object->setUpdatedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['updated_at']));
             }
             if (\array_key_exists('plan', $data)) {
                 $object->setPlan($this->denormalizer->denormalize($data['plan'], \Github\Model\PublicUserPlan::class, 'json', $context));
             }
             if (\array_key_exists('suspended_at', $data) && $data['suspended_at'] !== null) {
-                $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['suspended_at']));
+                $object->setSuspendedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['suspended_at']));
             }
             elseif (\array_key_exists('suspended_at', $data) && $data['suspended_at'] === null) {
                 $object->setSuspendedAt(null);
@@ -480,13 +480,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['public_gists'] = $object->getPublicGists();
             $data['followers'] = $object->getFollowers();
             $data['following'] = $object->getFollowing();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('plan') && null !== $object->getPlan()) {
                 $data['plan'] = $this->normalizer->normalize($object->getPlan(), 'json', $context);
             }
             if ($object->isInitialized('suspendedAt') && null !== $object->getSuspendedAt()) {
-                $data['suspended_at'] = $object->getSuspendedAt()->format('Y-m-d\\TH:i:sP');
+                $data['suspended_at'] = $object->getSuspendedAt()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('privateGists') && null !== $object->getPrivateGists()) {
                 $data['private_gists'] = $object->getPrivateGists();
@@ -508,7 +508,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\PublicUser::class => false];
         }

@@ -8,7 +8,7 @@ class ChannelCreateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class ChannelCreateRequest
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -100,7 +100,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -111,7 +111,7 @@ class ChannelCreateRequest
      *
      * @return list<SortInfo>|null
      */
-    public function getSort() : ?array
+    public function getSort(): ?array
     {
         return $this->sort;
     }
@@ -122,7 +122,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setSort(?array $sort) : self
+    public function setSort(?array $sort): self
     {
         $this->initialized['sort'] = true;
         $this->sort = $sort;
@@ -133,7 +133,7 @@ class ChannelCreateRequest
      *
      * @return int
      */
-    public function getSortOrder() : int
+    public function getSortOrder(): int
     {
         return $this->sortOrder;
     }
@@ -144,7 +144,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setSortOrder(int $sortOrder) : self
+    public function setSortOrder(int $sortOrder): self
     {
         $this->initialized['sortOrder'] = true;
         $this->sortOrder = $sortOrder;
@@ -155,7 +155,7 @@ class ChannelCreateRequest
      *
      * @return list<SortField>
      */
-    public function getSortFields() : array
+    public function getSortFields(): array
     {
         return $this->sortFields;
     }
@@ -166,7 +166,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setSortFields(array $sortFields) : self
+    public function setSortFields(array $sortFields): self
     {
         $this->initialized['sortFields'] = true;
         $this->sortFields = $sortFields;
@@ -188,7 +188,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -199,7 +199,7 @@ class ChannelCreateRequest
      *
      * @return string|null
      */
-    public function getSearchIndexId() : ?string
+    public function getSearchIndexId(): ?string
     {
         return $this->searchIndexId;
     }
@@ -210,7 +210,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setSearchIndexId(?string $searchIndexId) : self
+    public function setSearchIndexId(?string $searchIndexId): self
     {
         $this->initialized['searchIndexId'] = true;
         $this->searchIndexId = $searchIndexId;
@@ -221,7 +221,7 @@ class ChannelCreateRequest
      *
      * @return list<string>|null
      */
-    public function getGrantedUserRoleIds() : ?array
+    public function getGrantedUserRoleIds(): ?array
     {
         return $this->grantedUserRoleIds;
     }
@@ -232,7 +232,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setGrantedUserRoleIds(?array $grantedUserRoleIds) : self
+    public function setGrantedUserRoleIds(?array $grantedUserRoleIds): self
     {
         $this->initialized['grantedUserRoleIds'] = true;
         $this->grantedUserRoleIds = $grantedUserRoleIds;
@@ -243,7 +243,7 @@ class ChannelCreateRequest
      *
      * @return list<AggregatorBase>|null
      */
-    public function getAggregations() : ?array
+    public function getAggregations(): ?array
     {
         return $this->aggregations;
     }
@@ -254,7 +254,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setAggregations(?array $aggregations) : self
+    public function setAggregations(?array $aggregations): self
     {
         $this->initialized['aggregations'] = true;
         $this->aggregations = $aggregations;
@@ -276,7 +276,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -287,7 +287,7 @@ class ChannelCreateRequest
      *
      * @return list<string>|null
      */
-    public function getExtendedSimpleSearchFields() : ?array
+    public function getExtendedSimpleSearchFields(): ?array
     {
         return $this->extendedSimpleSearchFields;
     }
@@ -298,7 +298,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setExtendedSimpleSearchFields(?array $extendedSimpleSearchFields) : self
+    public function setExtendedSimpleSearchFields(?array $extendedSimpleSearchFields): self
     {
         $this->initialized['extendedSimpleSearchFields'] = true;
         $this->extendedSimpleSearchFields = $extendedSimpleSearchFields;
@@ -320,7 +320,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setMissingResultsDisplayPatterns($missingResultsDisplayPatterns) : self
+    public function setMissingResultsDisplayPatterns($missingResultsDisplayPatterns): self
     {
         $this->initialized['missingResultsDisplayPatterns'] = true;
         $this->missingResultsDisplayPatterns = $missingResultsDisplayPatterns;
@@ -331,7 +331,7 @@ class ChannelCreateRequest
      *
      * @return bool
      */
-    public function getViewForAll() : bool
+    public function getViewForAll(): bool
     {
         return $this->viewForAll;
     }
@@ -342,7 +342,7 @@ class ChannelCreateRequest
      *
      * @return self
      */
-    public function setViewForAll(bool $viewForAll) : self
+    public function setViewForAll(bool $viewForAll): self
     {
         $this->initialized['viewForAll'] = true;
         $this->viewForAll = $viewForAll;

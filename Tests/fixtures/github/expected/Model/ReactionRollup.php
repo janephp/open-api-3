@@ -8,7 +8,7 @@ class ReactionRollup extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -88,7 +88,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -99,7 +99,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalCount() : int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -110,7 +110,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalCount(int $totalCount) : self
+    public function setTotalCount(int $totalCount): self
     {
         $this->initialized['totalCount'] = true;
         $this->totalCount = $totalCount;
@@ -121,7 +121,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return int
      */
-    public function get1() : int
+    public function get1(): int
     {
         return $this->n1;
     }
@@ -132,7 +132,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function set1(int $n1) : self
+    public function set1(int $n1): self
     {
         $this->initialized['n1'] = true;
         $this->n1 = $n1;
@@ -143,7 +143,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return int
      */
-    public function get12() : int
+    public function get12(): int
     {
         return $this->n12;
     }
@@ -154,7 +154,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function set12(int $n12) : self
+    public function set12(int $n12): self
     {
         $this->initialized['n12'] = true;
         $this->n12 = $n12;
@@ -165,7 +165,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return int
      */
-    public function getLaugh() : int
+    public function getLaugh(): int
     {
         return $this->laugh;
     }
@@ -176,7 +176,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function setLaugh(int $laugh) : self
+    public function setLaugh(int $laugh): self
     {
         $this->initialized['laugh'] = true;
         $this->laugh = $laugh;
@@ -187,7 +187,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return int
      */
-    public function getConfused() : int
+    public function getConfused(): int
     {
         return $this->confused;
     }
@@ -198,7 +198,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function setConfused(int $confused) : self
+    public function setConfused(int $confused): self
     {
         $this->initialized['confused'] = true;
         $this->confused = $confused;
@@ -209,7 +209,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return int
      */
-    public function getHeart() : int
+    public function getHeart(): int
     {
         return $this->heart;
     }
@@ -220,7 +220,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function setHeart(int $heart) : self
+    public function setHeart(int $heart): self
     {
         $this->initialized['heart'] = true;
         $this->heart = $heart;
@@ -231,7 +231,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return int
      */
-    public function getHooray() : int
+    public function getHooray(): int
     {
         return $this->hooray;
     }
@@ -242,7 +242,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function setHooray(int $hooray) : self
+    public function setHooray(int $hooray): self
     {
         $this->initialized['hooray'] = true;
         $this->hooray = $hooray;
@@ -253,7 +253,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return int
      */
-    public function getEyes() : int
+    public function getEyes(): int
     {
         return $this->eyes;
     }
@@ -264,7 +264,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function setEyes(int $eyes) : self
+    public function setEyes(int $eyes): self
     {
         $this->initialized['eyes'] = true;
         $this->eyes = $eyes;
@@ -275,7 +275,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return int
      */
-    public function getRocket() : int
+    public function getRocket(): int
     {
         return $this->rocket;
     }
@@ -286,7 +286,7 @@ class ReactionRollup extends \ArrayObject
      *
      * @return self
      */
-    public function setRocket(int $rocket) : self
+    public function setRocket(int $rocket): self
     {
         $this->initialized['rocket'] = true;
         $this->rocket = $rocket;

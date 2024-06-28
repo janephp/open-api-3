@@ -8,7 +8,7 @@ class BooksGetHaljsonResponse200 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class BooksGetHaljsonResponse200 extends \ArrayObject
      *
      * @return list<BookJsonhalBookRead>
      */
-    public function getEmbedded() : array
+    public function getEmbedded(): array
     {
         return $this->embedded;
     }
@@ -52,7 +52,7 @@ class BooksGetHaljsonResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setEmbedded(array $embedded) : self
+    public function setEmbedded(array $embedded): self
     {
         $this->initialized['embedded'] = true;
         $this->embedded = $embedded;
@@ -63,7 +63,7 @@ class BooksGetHaljsonResponse200 extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalItems() : int
+    public function getTotalItems(): int
     {
         return $this->totalItems;
     }
@@ -74,7 +74,7 @@ class BooksGetHaljsonResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalItems(int $totalItems) : self
+    public function setTotalItems(int $totalItems): self
     {
         $this->initialized['totalItems'] = true;
         $this->totalItems = $totalItems;
@@ -85,7 +85,7 @@ class BooksGetHaljsonResponse200 extends \ArrayObject
      *
      * @return int
      */
-    public function getItemsPerPage() : int
+    public function getItemsPerPage(): int
     {
         return $this->itemsPerPage;
     }
@@ -96,7 +96,7 @@ class BooksGetHaljsonResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setItemsPerPage(int $itemsPerPage) : self
+    public function setItemsPerPage(int $itemsPerPage): self
     {
         $this->initialized['itemsPerPage'] = true;
         $this->itemsPerPage = $itemsPerPage;
@@ -107,7 +107,7 @@ class BooksGetHaljsonResponse200 extends \ArrayObject
      *
      * @return BooksGetHaljsonResponse200Links
      */
-    public function getLinks() : BooksGetHaljsonResponse200Links
+    public function getLinks(): BooksGetHaljsonResponse200Links
     {
         return $this->links;
     }
@@ -118,7 +118,7 @@ class BooksGetHaljsonResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(BooksGetHaljsonResponse200Links $links) : self
+    public function setLinks(BooksGetHaljsonResponse200Links $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;

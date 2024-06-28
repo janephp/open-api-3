@@ -8,7 +8,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getRepositories() : array
+    public function getRepositories(): array
     {
         return $this->repositories;
     }
@@ -52,7 +52,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositories(array $repositories) : self
+    public function setRepositories(array $repositories): self
     {
         $this->initialized['repositories'] = true;
         $this->repositories = $repositories;
@@ -63,7 +63,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getLockRepositories() : bool
+    public function getLockRepositories(): bool
     {
         return $this->lockRepositories;
     }
@@ -74,7 +74,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLockRepositories(bool $lockRepositories) : self
+    public function setLockRepositories(bool $lockRepositories): self
     {
         $this->initialized['lockRepositories'] = true;
         $this->lockRepositories = $lockRepositories;
@@ -85,7 +85,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getExcludeAttachments() : bool
+    public function getExcludeAttachments(): bool
     {
         return $this->excludeAttachments;
     }
@@ -96,7 +96,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setExcludeAttachments(bool $excludeAttachments) : self
+    public function setExcludeAttachments(bool $excludeAttachments): self
     {
         $this->initialized['excludeAttachments'] = true;
         $this->excludeAttachments = $excludeAttachments;
@@ -107,7 +107,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getExclude() : array
+    public function getExclude(): array
     {
         return $this->exclude;
     }
@@ -118,7 +118,7 @@ class OrgsOrgMigrationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setExclude(array $exclude) : self
+    public function setExclude(array $exclude): self
     {
         $this->initialized['exclude'] = true;
         $this->exclude = $exclude;

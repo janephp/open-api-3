@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorshipsCurrentItemPosition extends \Array
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbPeopleReportReponseReportDirectorshipsCurrentItemPosition extends \Array
      *
      * @return string
      */
-    public function getDateAppointed() : string
+    public function getDateAppointed(): string
     {
         return $this->dateAppointed;
     }
@@ -40,7 +40,7 @@ class GbPeopleReportReponseReportDirectorshipsCurrentItemPosition extends \Array
      *
      * @return self
      */
-    public function setDateAppointed(string $dateAppointed) : self
+    public function setDateAppointed(string $dateAppointed): self
     {
         $this->initialized['dateAppointed'] = true;
         $this->dateAppointed = $dateAppointed;
@@ -51,7 +51,7 @@ class GbPeopleReportReponseReportDirectorshipsCurrentItemPosition extends \Array
      *
      * @return string
      */
-    public function getPositionName() : string
+    public function getPositionName(): string
     {
         return $this->positionName;
     }
@@ -62,7 +62,7 @@ class GbPeopleReportReponseReportDirectorshipsCurrentItemPosition extends \Array
      *
      * @return self
      */
-    public function setPositionName(string $positionName) : self
+    public function setPositionName(string $positionName): self
     {
         $this->initialized['positionName'] = true;
         $this->positionName = $positionName;

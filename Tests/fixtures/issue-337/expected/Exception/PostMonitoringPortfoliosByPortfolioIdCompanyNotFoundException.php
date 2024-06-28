@@ -13,7 +13,7 @@ class PostMonitoringPortfoliosByPortfolioIdCompanyNotFoundException extends NotF
         parent::__construct('Not Found');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

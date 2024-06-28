@@ -27,26 +27,26 @@ class RunDecisionTree extends \CreditSafe\API\Runtime\Client\BaseEndpoint implem
         $this->headerParameters = $headerParameters;
     }
     use \CreditSafe\API\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'POST';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{provenirId}'], [$this->provenirId], '/decisionEngine/{provenirId}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \stdClass) {
             return [['Content-Type' => ['application/json']], json_encode($this->body)];
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
-    protected function getQueryOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getQueryOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getQueryOptionsResolver();
         $optionsResolver->setDefined(['companyId', 'originationId', 'callRef']);
@@ -57,7 +57,7 @@ class RunDecisionTree extends \CreditSafe\API\Runtime\Client\BaseEndpoint implem
         $optionsResolver->addAllowedTypes('callRef', ['string']);
         return $optionsResolver;
     }
-    protected function getHeadersOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getHeadersOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getHeadersOptionsResolver();
         $optionsResolver->setDefined(['Authorization']);
@@ -96,7 +96,7 @@ class RunDecisionTree extends \CreditSafe\API\Runtime\Client\BaseEndpoint implem
             throw new \CreditSafe\API\Exception\RunDecisionTreeNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return ['bearerAuth'];
     }

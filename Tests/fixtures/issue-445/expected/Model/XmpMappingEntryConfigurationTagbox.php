@@ -8,7 +8,7 @@ class XmpMappingEntryConfigurationTagbox extends XmpMappingEntryConfigurationBas
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class XmpMappingEntryConfigurationTagbox extends XmpMappingEntryConfigurationBas
      *
      * @return list<string>
      */
-    public function getKeyFieldIds() : array
+    public function getKeyFieldIds(): array
     {
         return $this->keyFieldIds;
     }
@@ -46,7 +46,7 @@ class XmpMappingEntryConfigurationTagbox extends XmpMappingEntryConfigurationBas
      *
      * @return self
      */
-    public function setKeyFieldIds(array $keyFieldIds) : self
+    public function setKeyFieldIds(array $keyFieldIds): self
     {
         $this->initialized['keyFieldIds'] = true;
         $this->keyFieldIds = $keyFieldIds;
@@ -57,7 +57,7 @@ class XmpMappingEntryConfigurationTagbox extends XmpMappingEntryConfigurationBas
      *
      * @return bool
      */
-    public function getCaseSensitive() : bool
+    public function getCaseSensitive(): bool
     {
         return $this->caseSensitive;
     }
@@ -68,7 +68,7 @@ class XmpMappingEntryConfigurationTagbox extends XmpMappingEntryConfigurationBas
      *
      * @return self
      */
-    public function setCaseSensitive(bool $caseSensitive) : self
+    public function setCaseSensitive(bool $caseSensitive): self
     {
         $this->initialized['caseSensitive'] = true;
         $this->caseSensitive = $caseSensitive;
@@ -79,7 +79,7 @@ class XmpMappingEntryConfigurationTagbox extends XmpMappingEntryConfigurationBas
      *
      * @return bool
      */
-    public function getIncludeAllSchemaChildren() : bool
+    public function getIncludeAllSchemaChildren(): bool
     {
         return $this->includeAllSchemaChildren;
     }
@@ -90,7 +90,7 @@ class XmpMappingEntryConfigurationTagbox extends XmpMappingEntryConfigurationBas
      *
      * @return self
      */
-    public function setIncludeAllSchemaChildren(bool $includeAllSchemaChildren) : self
+    public function setIncludeAllSchemaChildren(bool $includeAllSchemaChildren): self
     {
         $this->initialized['includeAllSchemaChildren'] = true;
         $this->includeAllSchemaChildren = $includeAllSchemaChildren;

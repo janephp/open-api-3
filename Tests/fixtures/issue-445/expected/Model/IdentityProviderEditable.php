@@ -8,7 +8,7 @@ class IdentityProviderEditable
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class IdentityProviderEditable
      *
      * @return list<IdpClaimToUserAttributeMapping>|null
      */
-    public function getClaimMapping() : ?array
+    public function getClaimMapping(): ?array
     {
         return $this->claimMapping;
     }
@@ -52,7 +52,7 @@ class IdentityProviderEditable
      *
      * @return self
      */
-    public function setClaimMapping(?array $claimMapping) : self
+    public function setClaimMapping(?array $claimMapping): self
     {
         $this->initialized['claimMapping'] = true;
         $this->claimMapping = $claimMapping;
@@ -63,7 +63,7 @@ class IdentityProviderEditable
      *
      * @return string|null
      */
-    public function getGroupClaimType() : ?string
+    public function getGroupClaimType(): ?string
     {
         return $this->groupClaimType;
     }
@@ -74,7 +74,7 @@ class IdentityProviderEditable
      *
      * @return self
      */
-    public function setGroupClaimType(?string $groupClaimType) : self
+    public function setGroupClaimType(?string $groupClaimType): self
     {
         $this->initialized['groupClaimType'] = true;
         $this->groupClaimType = $groupClaimType;
@@ -85,7 +85,7 @@ class IdentityProviderEditable
      *
      * @return list<IdpGroupToUserRoleMapping>|null
      */
-    public function getGroupMapping() : ?array
+    public function getGroupMapping(): ?array
     {
         return $this->groupMapping;
     }
@@ -96,7 +96,7 @@ class IdentityProviderEditable
      *
      * @return self
      */
-    public function setGroupMapping(?array $groupMapping) : self
+    public function setGroupMapping(?array $groupMapping): self
     {
         $this->initialized['groupMapping'] = true;
         $this->groupMapping = $groupMapping;
@@ -107,7 +107,7 @@ class IdentityProviderEditable
      *
      * @return string|null
      */
-    public function getFallbackUserRoleId() : ?string
+    public function getFallbackUserRoleId(): ?string
     {
         return $this->fallbackUserRoleId;
     }
@@ -118,7 +118,7 @@ class IdentityProviderEditable
      *
      * @return self
      */
-    public function setFallbackUserRoleId(?string $fallbackUserRoleId) : self
+    public function setFallbackUserRoleId(?string $fallbackUserRoleId): self
     {
         $this->initialized['fallbackUserRoleId'] = true;
         $this->fallbackUserRoleId = $fallbackUserRoleId;

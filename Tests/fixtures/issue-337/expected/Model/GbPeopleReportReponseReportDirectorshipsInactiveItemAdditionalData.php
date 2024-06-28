@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData extends
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData extends
      *
      * @return string
      */
-    public function getOccupation() : string
+    public function getOccupation(): string
     {
         return $this->occupation;
     }
@@ -46,7 +46,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData extends
      *
      * @return self
      */
-    public function setOccupation(string $occupation) : self
+    public function setOccupation(string $occupation): self
     {
         $this->initialized['occupation'] = true;
         $this->occupation = $occupation;
@@ -57,7 +57,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData extends
      *
      * @return string
      */
-    public function getStatusDescription() : string
+    public function getStatusDescription(): string
     {
         return $this->statusDescription;
     }
@@ -68,7 +68,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData extends
      *
      * @return self
      */
-    public function setStatusDescription(string $statusDescription) : self
+    public function setStatusDescription(string $statusDescription): self
     {
         $this->initialized['statusDescription'] = true;
         $this->statusDescription = $statusDescription;
@@ -79,7 +79,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData extends
      *
      * @return float
      */
-    public function getGearing() : float
+    public function getGearing(): float
     {
         return $this->gearing;
     }
@@ -90,7 +90,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemAdditionalData extends
      *
      * @return self
      */
-    public function setGearing(float $gearing) : self
+    public function setGearing(float $gearing): self
     {
         $this->initialized['gearing'] = true;
         $this->gearing = $gearing;

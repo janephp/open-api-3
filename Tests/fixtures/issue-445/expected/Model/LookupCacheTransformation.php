@@ -8,7 +8,7 @@ class LookupCacheTransformation extends BusinessRuleTransformation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class LookupCacheTransformation extends BusinessRuleTransformation
      *
      * @return string|null
      */
-    public function getNamedCache() : ?string
+    public function getNamedCache(): ?string
     {
         return $this->namedCache;
     }
@@ -34,7 +34,7 @@ class LookupCacheTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setNamedCache(?string $namedCache) : self
+    public function setNamedCache(?string $namedCache): self
     {
         $this->initialized['namedCache'] = true;
         $this->namedCache = $namedCache;

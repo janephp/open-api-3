@@ -8,7 +8,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string
      */
-    public function getTraceLevel() : string
+    public function getTraceLevel(): string
     {
         return $this->traceLevel;
     }
@@ -100,7 +100,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceLevel(string $traceLevel) : self
+    public function setTraceLevel(string $traceLevel): self
     {
         $this->initialized['traceLevel'] = true;
         $this->traceLevel = $traceLevel;
@@ -111,7 +111,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceId() : ?string
+    public function getTraceId(): ?string
     {
         return $this->traceId;
     }
@@ -122,7 +122,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceId(?string $traceId) : self
+    public function setTraceId(?string $traceId): self
     {
         $this->initialized['traceId'] = true;
         $this->traceId = $traceId;
@@ -133,7 +133,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceJobId() : ?string
+    public function getTraceJobId(): ?string
     {
         return $this->traceJobId;
     }
@@ -144,7 +144,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceJobId(?string $traceJobId) : self
+    public function setTraceJobId(?string $traceJobId): self
     {
         $this->initialized['traceJobId'] = true;
         $this->traceJobId = $traceJobId;
@@ -155,7 +155,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return int
      */
-    public function getHttpStatusCode() : int
+    public function getHttpStatusCode(): int
     {
         return $this->httpStatusCode;
     }
@@ -166,7 +166,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setHttpStatusCode(int $httpStatusCode) : self
+    public function setHttpStatusCode(int $httpStatusCode): self
     {
         $this->initialized['httpStatusCode'] = true;
         $this->httpStatusCode = $httpStatusCode;
@@ -177,7 +177,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExceptionMessage() : ?string
+    public function getExceptionMessage(): ?string
     {
         return $this->exceptionMessage;
     }
@@ -188,7 +188,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setExceptionMessage(?string $exceptionMessage) : self
+    public function setExceptionMessage(?string $exceptionMessage): self
     {
         $this->initialized['exceptionMessage'] = true;
         $this->exceptionMessage = $exceptionMessage;
@@ -199,7 +199,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }
@@ -210,7 +210,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setKind(string $kind) : self
+    public function setKind(string $kind): self
     {
         $this->initialized['kind'] = true;
         $this->kind = $kind;
@@ -221,7 +221,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCustomerId() : ?string
+    public function getCustomerId(): ?string
     {
         return $this->customerId;
     }
@@ -232,7 +232,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerId(?string $customerId) : self
+    public function setCustomerId(?string $customerId): self
     {
         $this->initialized['customerId'] = true;
         $this->customerId = $customerId;
@@ -243,7 +243,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCustomerAlias() : ?string
+    public function getCustomerAlias(): ?string
     {
         return $this->customerAlias;
     }
@@ -254,7 +254,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerAlias(?string $customerAlias) : self
+    public function setCustomerAlias(?string $customerAlias): self
     {
         $this->initialized['customerAlias'] = true;
         $this->customerAlias = $customerAlias;
@@ -265,7 +265,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUserId() : ?string
+    public function getUserId(): ?string
     {
         return $this->userId;
     }
@@ -276,7 +276,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setUserId(?string $userId) : self
+    public function setUserId(?string $userId): self
     {
         $this->initialized['userId'] = true;
         $this->userId = $userId;
@@ -287,7 +287,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -298,7 +298,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;
@@ -309,7 +309,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFormatKind() : ?string
+    public function getFormatKind(): ?string
     {
         return $this->formatKind;
     }
@@ -320,7 +320,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setFormatKind(?string $formatKind) : self
+    public function setFormatKind(?string $formatKind): self
     {
         $this->initialized['formatKind'] = true;
         $this->formatKind = $formatKind;
@@ -331,7 +331,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getOutputFormatId() : ?string
+    public function getOutputFormatId(): ?string
     {
         return $this->outputFormatId;
     }
@@ -342,7 +342,7 @@ class NotSupportedFileExtensionForFormatException extends \ArrayObject
      *
      * @return self
      */
-    public function setOutputFormatId(?string $outputFormatId) : self
+    public function setOutputFormatId(?string $outputFormatId): self
     {
         $this->initialized['outputFormatId'] = true;
         $this->outputFormatId = $outputFormatId;

@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -88,7 +88,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -99,7 +99,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -110,7 +110,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -121,7 +121,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -132,7 +132,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -143,7 +143,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return string
      */
-    public function getFirstName() : string
+    public function getFirstName(): string
     {
         return $this->firstName;
     }
@@ -154,7 +154,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setFirstName(string $firstName) : self
+    public function setFirstName(string $firstName): self
     {
         $this->initialized['firstName'] = true;
         $this->firstName = $firstName;
@@ -165,7 +165,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return string
      */
-    public function getSurname() : string
+    public function getSurname(): string
     {
         return $this->surname;
     }
@@ -176,7 +176,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setSurname(string $surname) : self
+    public function setSurname(string $surname): self
     {
         $this->initialized['surname'] = true;
         $this->surname = $surname;
@@ -187,7 +187,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress
      */
-    public function getAddress() : GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress
+    public function getAddress(): GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress
     {
         return $this->address;
     }
@@ -198,7 +198,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setAddress(GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress $address) : self
+    public function setAddress(GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -209,7 +209,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return string
      */
-    public function getGender() : string
+    public function getGender(): string
     {
         return $this->gender;
     }
@@ -220,7 +220,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setGender(string $gender) : self
+    public function setGender(string $gender): self
     {
         $this->initialized['gender'] = true;
         $this->gender = $gender;
@@ -231,7 +231,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return string
      */
-    public function getDateOfBirth() : string
+    public function getDateOfBirth(): string
     {
         return $this->dateOfBirth;
     }
@@ -242,7 +242,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setDateOfBirth(string $dateOfBirth) : self
+    public function setDateOfBirth(string $dateOfBirth): self
     {
         $this->initialized['dateOfBirth'] = true;
         $this->dateOfBirth = $dateOfBirth;
@@ -253,7 +253,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return string
      */
-    public function getDirectorType() : string
+    public function getDirectorType(): string
     {
         return $this->directorType;
     }
@@ -264,7 +264,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setDirectorType(string $directorType) : self
+    public function setDirectorType(string $directorType): self
     {
         $this->initialized['directorType'] = true;
         $this->directorType = $directorType;
@@ -275,7 +275,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return list<GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemPositionsItem>
      */
-    public function getPositions() : array
+    public function getPositions(): array
     {
         return $this->positions;
     }
@@ -286,7 +286,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem extends 
      *
      * @return self
      */
-    public function setPositions(array $positions) : self
+    public function setPositions(array $positions): self
     {
         $this->initialized['positions'] = true;
         $this->positions = $positions;

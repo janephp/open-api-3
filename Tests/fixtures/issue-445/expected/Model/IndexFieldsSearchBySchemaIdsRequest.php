@@ -8,7 +8,7 @@ class IndexFieldsSearchBySchemaIdsRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -31,7 +31,7 @@ class IndexFieldsSearchBySchemaIdsRequest
      *
      * @return list<string>|null
      */
-    public function getSchemaIds() : ?array
+    public function getSchemaIds(): ?array
     {
         return $this->schemaIds;
     }
@@ -42,7 +42,7 @@ class IndexFieldsSearchBySchemaIdsRequest
      *
      * @return self
      */
-    public function setSchemaIds(?array $schemaIds) : self
+    public function setSchemaIds(?array $schemaIds): self
     {
         $this->initialized['schemaIds'] = true;
         $this->schemaIds = $schemaIds;
@@ -68,7 +68,7 @@ class IndexFieldsSearchBySchemaIdsRequest
     *
     * @return self
     */
-    public function setSearchMode($searchMode) : self
+    public function setSearchMode($searchMode): self
     {
         $this->initialized['searchMode'] = true;
         $this->searchMode = $searchMode;

@@ -8,7 +8,7 @@ class ValidationErrorSimple extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ValidationErrorSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -46,7 +46,7 @@ class ValidationErrorSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -57,7 +57,7 @@ class ValidationErrorSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getDocumentationUrl() : string
+    public function getDocumentationUrl(): string
     {
         return $this->documentationUrl;
     }
@@ -68,7 +68,7 @@ class ValidationErrorSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentationUrl(string $documentationUrl) : self
+    public function setDocumentationUrl(string $documentationUrl): self
     {
         $this->initialized['documentationUrl'] = true;
         $this->documentationUrl = $documentationUrl;
@@ -79,7 +79,7 @@ class ValidationErrorSimple extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getErrors() : array
+    public function getErrors(): array
     {
         return $this->errors;
     }
@@ -90,7 +90,7 @@ class ValidationErrorSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setErrors(array $errors) : self
+    public function setErrors(array $errors): self
     {
         $this->initialized['errors'] = true;
         $this->errors = $errors;

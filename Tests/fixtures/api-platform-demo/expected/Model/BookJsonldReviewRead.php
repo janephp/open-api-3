@@ -8,7 +8,7 @@ class BookJsonldReviewRead extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -52,7 +52,7 @@ class BookJsonldReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setContext($context) : self
+    public function setContext($context): self
     {
         $this->initialized['context'] = true;
         $this->context = $context;
@@ -63,7 +63,7 @@ class BookJsonldReviewRead extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -74,7 +74,7 @@ class BookJsonldReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -85,7 +85,7 @@ class BookJsonldReviewRead extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -96,7 +96,7 @@ class BookJsonldReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -107,7 +107,7 @@ class BookJsonldReviewRead extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -118,7 +118,7 @@ class BookJsonldReviewRead extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;

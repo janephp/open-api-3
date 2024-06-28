@@ -8,7 +8,7 @@ class GistFullforksItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return GistFullforksItemUser
      */
-    public function getUser() : GistFullforksItemUser
+    public function getUser(): GistFullforksItemUser
     {
         return $this->user;
     }
@@ -58,7 +58,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(GistFullforksItemUser $user) : self
+    public function setUser(GistFullforksItemUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -69,7 +69,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -80,7 +80,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -91,7 +91,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -102,7 +102,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -113,7 +113,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -124,7 +124,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -135,7 +135,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUpdatedAt() : string
+    public function getUpdatedAt(): string
     {
         return $this->updatedAt;
     }
@@ -146,7 +146,7 @@ class GistFullforksItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(string $updatedAt) : self
+    public function setUpdatedAt(string $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;

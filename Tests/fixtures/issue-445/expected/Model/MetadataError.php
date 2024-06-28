@@ -8,7 +8,7 @@ class MetadataError
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class MetadataError
      *
      * @return string|null
      */
-    public function getErrorType() : ?string
+    public function getErrorType(): ?string
     {
         return $this->errorType;
     }
@@ -64,7 +64,7 @@ class MetadataError
      *
      * @return self
      */
-    public function setErrorType(?string $errorType) : self
+    public function setErrorType(?string $errorType): self
     {
         $this->initialized['errorType'] = true;
         $this->errorType = $errorType;
@@ -75,7 +75,7 @@ class MetadataError
      *
      * @return int
      */
-    public function getLineNumber() : int
+    public function getLineNumber(): int
     {
         return $this->lineNumber;
     }
@@ -86,7 +86,7 @@ class MetadataError
      *
      * @return self
      */
-    public function setLineNumber(int $lineNumber) : self
+    public function setLineNumber(int $lineNumber): self
     {
         $this->initialized['lineNumber'] = true;
         $this->lineNumber = $lineNumber;
@@ -97,7 +97,7 @@ class MetadataError
      *
      * @return int
      */
-    public function getLinePosition() : int
+    public function getLinePosition(): int
     {
         return $this->linePosition;
     }
@@ -108,7 +108,7 @@ class MetadataError
      *
      * @return self
      */
-    public function setLinePosition(int $linePosition) : self
+    public function setLinePosition(int $linePosition): self
     {
         $this->initialized['linePosition'] = true;
         $this->linePosition = $linePosition;
@@ -119,7 +119,7 @@ class MetadataError
      *
      * @return string|null
      */
-    public function getPath() : ?string
+    public function getPath(): ?string
     {
         return $this->path;
     }
@@ -130,7 +130,7 @@ class MetadataError
      *
      * @return self
      */
-    public function setPath(?string $path) : self
+    public function setPath(?string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -141,7 +141,7 @@ class MetadataError
      *
      * @return string|null
      */
-    public function getMessage() : ?string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -152,7 +152,7 @@ class MetadataError
      *
      * @return self
      */
-    public function setMessage(?string $message) : self
+    public function setMessage(?string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -163,7 +163,7 @@ class MetadataError
      *
      * @return string|null
      */
-    public function getSchemaId() : ?string
+    public function getSchemaId(): ?string
     {
         return $this->schemaId;
     }
@@ -174,7 +174,7 @@ class MetadataError
      *
      * @return self
      */
-    public function setSchemaId(?string $schemaId) : self
+    public function setSchemaId(?string $schemaId): self
     {
         $this->initialized['schemaId'] = true;
         $this->schemaId = $schemaId;

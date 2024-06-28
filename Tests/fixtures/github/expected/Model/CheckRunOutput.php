@@ -8,7 +8,7 @@ class CheckRunOutput extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTitle() : ?string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -58,7 +58,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(?string $title) : self
+    public function setTitle(?string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -69,7 +69,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSummary() : ?string
+    public function getSummary(): ?string
     {
         return $this->summary;
     }
@@ -80,7 +80,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setSummary(?string $summary) : self
+    public function setSummary(?string $summary): self
     {
         $this->initialized['summary'] = true;
         $this->summary = $summary;
@@ -91,7 +91,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return string|null
      */
-    public function getText() : ?string
+    public function getText(): ?string
     {
         return $this->text;
     }
@@ -102,7 +102,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setText(?string $text) : self
+    public function setText(?string $text): self
     {
         $this->initialized['text'] = true;
         $this->text = $text;
@@ -113,7 +113,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return int
      */
-    public function getAnnotationsCount() : int
+    public function getAnnotationsCount(): int
     {
         return $this->annotationsCount;
     }
@@ -124,7 +124,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setAnnotationsCount(int $annotationsCount) : self
+    public function setAnnotationsCount(int $annotationsCount): self
     {
         $this->initialized['annotationsCount'] = true;
         $this->annotationsCount = $annotationsCount;
@@ -135,7 +135,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return string
      */
-    public function getAnnotationsUrl() : string
+    public function getAnnotationsUrl(): string
     {
         return $this->annotationsUrl;
     }
@@ -146,7 +146,7 @@ class CheckRunOutput extends \ArrayObject
      *
      * @return self
      */
-    public function setAnnotationsUrl(string $annotationsUrl) : self
+    public function setAnnotationsUrl(string $annotationsUrl): self
     {
         $this->initialized['annotationsUrl'] = true;
         $this->annotationsUrl = $annotationsUrl;

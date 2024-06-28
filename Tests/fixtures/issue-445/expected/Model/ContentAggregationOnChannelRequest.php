@@ -8,7 +8,7 @@ class ContentAggregationOnChannelRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -84,7 +84,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -95,7 +95,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -106,7 +106,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return list<string>|null
      */
-    public function getSearchBehaviors() : ?array
+    public function getSearchBehaviors(): ?array
     {
         return $this->searchBehaviors;
     }
@@ -117,7 +117,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return self
      */
-    public function setSearchBehaviors(?array $searchBehaviors) : self
+    public function setSearchBehaviors(?array $searchBehaviors): self
     {
         $this->initialized['searchBehaviors'] = true;
         $this->searchBehaviors = $searchBehaviors;
@@ -139,7 +139,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -155,7 +155,7 @@ class ContentAggregationOnChannelRequest
     *
     * @return list<AggregationFilter>|null
     */
-    public function getAggregationFilters() : ?array
+    public function getAggregationFilters(): ?array
     {
         return $this->aggregationFilters;
     }
@@ -171,7 +171,7 @@ class ContentAggregationOnChannelRequest
     *
     * @return self
     */
-    public function setAggregationFilters(?array $aggregationFilters) : self
+    public function setAggregationFilters(?array $aggregationFilters): self
     {
         $this->initialized['aggregationFilters'] = true;
         $this->aggregationFilters = $aggregationFilters;
@@ -183,7 +183,7 @@ class ContentAggregationOnChannelRequest
     *
     * @return string|null
     */
-    public function getChannelId() : ?string
+    public function getChannelId(): ?string
     {
         return $this->channelId;
     }
@@ -195,7 +195,7 @@ class ContentAggregationOnChannelRequest
     *
     * @return self
     */
-    public function setChannelId(?string $channelId) : self
+    public function setChannelId(?string $channelId): self
     {
         $this->initialized['channelId'] = true;
         $this->channelId = $channelId;
@@ -207,7 +207,7 @@ class ContentAggregationOnChannelRequest
     *
     * @return list<string>|null
     */
-    public function getSearchLanguages() : ?array
+    public function getSearchLanguages(): ?array
     {
         return $this->searchLanguages;
     }
@@ -219,7 +219,7 @@ class ContentAggregationOnChannelRequest
     *
     * @return self
     */
-    public function setSearchLanguages(?array $searchLanguages) : self
+    public function setSearchLanguages(?array $searchLanguages): self
     {
         $this->initialized['searchLanguages'] = true;
         $this->searchLanguages = $searchLanguages;
@@ -230,7 +230,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return string|null
      */
-    public function getCollectionId() : ?string
+    public function getCollectionId(): ?string
     {
         return $this->collectionId;
     }
@@ -241,7 +241,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return self
      */
-    public function setCollectionId(?string $collectionId) : self
+    public function setCollectionId(?string $collectionId): self
     {
         $this->initialized['collectionId'] = true;
         $this->collectionId = $collectionId;
@@ -263,7 +263,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return self
      */
-    public function setLifeCycleFilter($lifeCycleFilter) : self
+    public function setLifeCycleFilter($lifeCycleFilter): self
     {
         $this->initialized['lifeCycleFilter'] = true;
         $this->lifeCycleFilter = $lifeCycleFilter;
@@ -285,7 +285,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return self
      */
-    public function setBrokenDependenciesFilter($brokenDependenciesFilter) : self
+    public function setBrokenDependenciesFilter($brokenDependenciesFilter): self
     {
         $this->initialized['brokenDependenciesFilter'] = true;
         $this->brokenDependenciesFilter = $brokenDependenciesFilter;
@@ -307,7 +307,7 @@ class ContentAggregationOnChannelRequest
      *
      * @return self
      */
-    public function setSearchType($searchType) : self
+    public function setSearchType($searchType): self
     {
         $this->initialized['searchType'] = true;
         $this->searchType = $searchType;

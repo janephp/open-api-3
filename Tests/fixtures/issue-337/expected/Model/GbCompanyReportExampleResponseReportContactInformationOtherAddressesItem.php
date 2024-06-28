@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem e
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem e
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -52,7 +52,7 @@ class GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem e
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -63,7 +63,7 @@ class GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem e
      *
      * @return string
      */
-    public function getSimpleValue() : string
+    public function getSimpleValue(): string
     {
         return $this->simpleValue;
     }
@@ -74,7 +74,7 @@ class GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem e
      *
      * @return self
      */
-    public function setSimpleValue(string $simpleValue) : self
+    public function setSimpleValue(string $simpleValue): self
     {
         $this->initialized['simpleValue'] = true;
         $this->simpleValue = $simpleValue;
@@ -85,7 +85,7 @@ class GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem e
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -96,7 +96,7 @@ class GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem e
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;
@@ -107,7 +107,7 @@ class GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem e
      *
      * @return string
      */
-    public function getTelephone() : string
+    public function getTelephone(): string
     {
         return $this->telephone;
     }
@@ -118,7 +118,7 @@ class GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem e
      *
      * @return self
      */
-    public function setTelephone(string $telephone) : self
+    public function setTelephone(string $telephone): self
     {
         $this->initialized['telephone'] = true;
         $this->telephone = $telephone;

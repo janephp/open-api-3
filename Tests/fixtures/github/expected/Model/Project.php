@@ -8,7 +8,7 @@ class Project extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -119,7 +119,7 @@ class Project extends \ArrayObject
      *
      * @return string
      */
-    public function getOwnerUrl() : string
+    public function getOwnerUrl(): string
     {
         return $this->ownerUrl;
     }
@@ -130,7 +130,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setOwnerUrl(string $ownerUrl) : self
+    public function setOwnerUrl(string $ownerUrl): self
     {
         $this->initialized['ownerUrl'] = true;
         $this->ownerUrl = $ownerUrl;
@@ -141,7 +141,7 @@ class Project extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -152,7 +152,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -163,7 +163,7 @@ class Project extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -174,7 +174,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -185,7 +185,7 @@ class Project extends \ArrayObject
      *
      * @return string
      */
-    public function getColumnsUrl() : string
+    public function getColumnsUrl(): string
     {
         return $this->columnsUrl;
     }
@@ -196,7 +196,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setColumnsUrl(string $columnsUrl) : self
+    public function setColumnsUrl(string $columnsUrl): self
     {
         $this->initialized['columnsUrl'] = true;
         $this->columnsUrl = $columnsUrl;
@@ -207,7 +207,7 @@ class Project extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -218,7 +218,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -229,7 +229,7 @@ class Project extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -240,7 +240,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -251,7 +251,7 @@ class Project extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -262,7 +262,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -273,7 +273,7 @@ class Project extends \ArrayObject
      *
      * @return string|null
      */
-    public function getBody() : ?string
+    public function getBody(): ?string
     {
         return $this->body;
     }
@@ -284,7 +284,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(?string $body) : self
+    public function setBody(?string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -295,7 +295,7 @@ class Project extends \ArrayObject
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -306,7 +306,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -317,7 +317,7 @@ class Project extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -328,7 +328,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -339,7 +339,7 @@ class Project extends \ArrayObject
      *
      * @return ProjectCreator|null
      */
-    public function getCreator() : ?ProjectCreator
+    public function getCreator(): ?ProjectCreator
     {
         return $this->creator;
     }
@@ -350,7 +350,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setCreator(?ProjectCreator $creator) : self
+    public function setCreator(?ProjectCreator $creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;
@@ -361,7 +361,7 @@ class Project extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -372,7 +372,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -383,7 +383,7 @@ class Project extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -394,7 +394,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -405,7 +405,7 @@ class Project extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationPermission() : string
+    public function getOrganizationPermission(): string
     {
         return $this->organizationPermission;
     }
@@ -416,7 +416,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationPermission(string $organizationPermission) : self
+    public function setOrganizationPermission(string $organizationPermission): self
     {
         $this->initialized['organizationPermission'] = true;
         $this->organizationPermission = $organizationPermission;
@@ -427,7 +427,7 @@ class Project extends \ArrayObject
      *
      * @return bool
      */
-    public function getPrivate() : bool
+    public function getPrivate(): bool
     {
         return $this->private;
     }
@@ -438,7 +438,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivate(bool $private) : self
+    public function setPrivate(bool $private): self
     {
         $this->initialized['private'] = true;
         $this->private = $private;
@@ -449,7 +449,7 @@ class Project extends \ArrayObject
      *
      * @return string
      */
-    public function getCardsUrl() : string
+    public function getCardsUrl(): string
     {
         return $this->cardsUrl;
     }
@@ -460,7 +460,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setCardsUrl(string $cardsUrl) : self
+    public function setCardsUrl(string $cardsUrl): self
     {
         $this->initialized['cardsUrl'] = true;
         $this->cardsUrl = $cardsUrl;
@@ -471,7 +471,7 @@ class Project extends \ArrayObject
      *
      * @return ProjectPermissions
      */
-    public function getPermissions() : ProjectPermissions
+    public function getPermissions(): ProjectPermissions
     {
         return $this->permissions;
     }
@@ -482,7 +482,7 @@ class Project extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(ProjectPermissions $permissions) : self
+    public function setPermissions(ProjectPermissions $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;

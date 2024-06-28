@@ -8,7 +8,7 @@ class BusinessProcess
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -107,7 +107,7 @@ class BusinessProcess
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -126,7 +126,7 @@ class BusinessProcess
      *
      * @return string
      */
-    public function getProcessDefinitionId() : string
+    public function getProcessDefinitionId(): string
     {
         return $this->processDefinitionId;
     }
@@ -145,7 +145,7 @@ class BusinessProcess
      *
      * @return string|null
      */
-    public function getReferenceId() : ?string
+    public function getReferenceId(): ?string
     {
         return $this->referenceId;
     }
@@ -164,7 +164,7 @@ class BusinessProcess
      *
      * @return string|null
      */
-    public function getReferenceDocType() : ?string
+    public function getReferenceDocType(): ?string
     {
         return $this->referenceDocType;
     }
@@ -183,7 +183,7 @@ class BusinessProcess
      *
      * @return bool
      */
-    public function getSupportsCancellation() : bool
+    public function getSupportsCancellation(): bool
     {
         return $this->supportsCancellation;
     }
@@ -240,7 +240,7 @@ class BusinessProcess
      *
      * @return \DateTime
      */
-    public function getStartDate() : \DateTime
+    public function getStartDate(): \DateTime
     {
         return $this->startDate;
     }
@@ -259,7 +259,7 @@ class BusinessProcess
      *
      * @return \DateTime
      */
-    public function getEndDate() : \DateTime
+    public function getEndDate(): \DateTime
     {
         return $this->endDate;
     }
@@ -278,7 +278,7 @@ class BusinessProcess
      *
      * @return bool
      */
-    public function getFinished() : bool
+    public function getFinished(): bool
     {
         return $this->finished;
     }
@@ -297,7 +297,7 @@ class BusinessProcess
      *
      * @return list<BusinessProcessState>|null
      */
-    public function getStateHistory() : ?array
+    public function getStateHistory(): ?array
     {
         return $this->stateHistory;
     }
@@ -316,7 +316,7 @@ class BusinessProcess
      *
      * @return string|null
      */
-    public function getCurrentState() : ?string
+    public function getCurrentState(): ?string
     {
         return $this->currentState;
     }
@@ -335,7 +335,7 @@ class BusinessProcess
      *
      * @return \DateTime|null
      */
-    public function getLastReportedProgress() : ?\DateTime
+    public function getLastReportedProgress(): ?\DateTime
     {
         return $this->lastReportedProgress;
     }
@@ -354,7 +354,7 @@ class BusinessProcess
      *
      * @return string|null
      */
-    public function getContinuationBusinessProcessId() : ?string
+    public function getContinuationBusinessProcessId(): ?string
     {
         return $this->continuationBusinessProcessId;
     }
@@ -373,7 +373,7 @@ class BusinessProcess
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

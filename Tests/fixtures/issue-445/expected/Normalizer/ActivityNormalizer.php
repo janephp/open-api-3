@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\Activity::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\Activity::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -41,31 +41,31 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('creationDate', $data) && $data['creationDate'] !== null) {
-                $object->setCreationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['creationDate']));
+                $object->setCreationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['creationDate']));
             }
             elseif (\array_key_exists('creationDate', $data) && $data['creationDate'] === null) {
                 $object->setCreationDate(null);
             }
             if (\array_key_exists('modificationDate', $data) && $data['modificationDate'] !== null) {
-                $object->setModificationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['modificationDate']));
+                $object->setModificationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['modificationDate']));
             }
             elseif (\array_key_exists('modificationDate', $data) && $data['modificationDate'] === null) {
                 $object->setModificationDate(null);
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('creationDate') && null !== $object->getCreationDate()) {
-                $data['creationDate'] = $object->getCreationDate()->format('Y-m-d\\TH:i:sP');
+                $data['creationDate'] = $object->getCreationDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('modificationDate') && null !== $object->getModificationDate()) {
-                $data['modificationDate'] = $object->getModificationDate()->format('Y-m-d\\TH:i:sP');
+                $data['modificationDate'] = $object->getModificationDate()->format('Y-m-d\TH:i:sP');
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\Activity::class => false];
         }
@@ -77,11 +77,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\Activity::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\Activity::class;
         }
@@ -101,13 +101,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 return $object;
             }
             if (\array_key_exists('creationDate', $data) && $data['creationDate'] !== null) {
-                $object->setCreationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['creationDate']));
+                $object->setCreationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['creationDate']));
             }
             elseif (\array_key_exists('creationDate', $data) && $data['creationDate'] === null) {
                 $object->setCreationDate(null);
             }
             if (\array_key_exists('modificationDate', $data) && $data['modificationDate'] !== null) {
-                $object->setModificationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['modificationDate']));
+                $object->setModificationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['modificationDate']));
             }
             elseif (\array_key_exists('modificationDate', $data) && $data['modificationDate'] === null) {
                 $object->setModificationDate(null);
@@ -121,14 +121,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             if ($object->isInitialized('creationDate') && null !== $object->getCreationDate()) {
-                $data['creationDate'] = $object->getCreationDate()->format('Y-m-d\\TH:i:sP');
+                $data['creationDate'] = $object->getCreationDate()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('modificationDate') && null !== $object->getModificationDate()) {
-                $data['modificationDate'] = $object->getModificationDate()->format('Y-m-d\\TH:i:sP');
+                $data['modificationDate'] = $object->getModificationDate()->format('Y-m-d\TH:i:sP');
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\Activity::class => false];
         }

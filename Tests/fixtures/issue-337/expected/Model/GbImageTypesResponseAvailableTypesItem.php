@@ -8,7 +8,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -52,7 +52,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -63,7 +63,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getImageType() : string
+    public function getImageType(): string
     {
         return $this->imageType;
     }
@@ -74,7 +74,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setImageType(string $imageType) : self
+    public function setImageType(string $imageType): self
     {
         $this->initialized['imageType'] = true;
         $this->imageType = $imageType;
@@ -85,7 +85,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -96,7 +96,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -107,7 +107,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getAvailableFormats() : array
+    public function getAvailableFormats(): array
     {
         return $this->availableFormats;
     }
@@ -118,7 +118,7 @@ class GbImageTypesResponseAvailableTypesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAvailableFormats(array $availableFormats) : self
+    public function setAvailableFormats(array $availableFormats): self
     {
         $this->initialized['availableFormats'] = true;
         $this->availableFormats = $availableFormats;

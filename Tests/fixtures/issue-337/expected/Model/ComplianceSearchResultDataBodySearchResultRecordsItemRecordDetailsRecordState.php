@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return bool
      */
-    public function getAddedToAcceptList() : bool
+    public function getAddedToAcceptList(): bool
     {
         return $this->addedToAcceptList;
     }
@@ -70,7 +70,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return self
      */
-    public function setAddedToAcceptList(bool $addedToAcceptList) : self
+    public function setAddedToAcceptList(bool $addedToAcceptList): self
     {
         $this->initialized['addedToAcceptList'] = true;
         $this->addedToAcceptList = $addedToAcceptList;
@@ -81,7 +81,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return string
      */
-    public function getAlertState() : string
+    public function getAlertState(): string
     {
         return $this->alertState;
     }
@@ -92,7 +92,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return self
      */
-    public function setAlertState(string $alertState) : self
+    public function setAlertState(string $alertState): self
     {
         $this->initialized['alertState'] = true;
         $this->alertState = $alertState;
@@ -103,7 +103,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return list<string>
      */
-    public function getAssignedTo() : array
+    public function getAssignedTo(): array
     {
         return $this->assignedTo;
     }
@@ -114,7 +114,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return self
      */
-    public function setAssignedTo(array $assignedTo) : self
+    public function setAssignedTo(array $assignedTo): self
     {
         $this->initialized['assignedTo'] = true;
         $this->assignedTo = $assignedTo;
@@ -125,7 +125,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return string
      */
-    public function getAssignmentType() : string
+    public function getAssignmentType(): string
     {
         return $this->assignmentType;
     }
@@ -136,7 +136,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return self
      */
-    public function setAssignmentType(string $assignmentType) : self
+    public function setAssignmentType(string $assignmentType): self
     {
         $this->initialized['assignmentType'] = true;
         $this->assignmentType = $assignmentType;
@@ -147,7 +147,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return string
      */
-    public function getDivision() : string
+    public function getDivision(): string
     {
         return $this->division;
     }
@@ -158,7 +158,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return self
      */
-    public function setDivision(string $division) : self
+    public function setDivision(string $division): self
     {
         $this->initialized['division'] = true;
         $this->division = $division;
@@ -169,7 +169,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordStateHistoryItem>
      */
-    public function getHistory() : array
+    public function getHistory(): array
     {
         return $this->history;
     }
@@ -180,7 +180,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return self
      */
-    public function setHistory(array $history) : self
+    public function setHistory(array $history): self
     {
         $this->initialized['history'] = true;
         $this->history = $history;
@@ -191,7 +191,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordStateMatchStatesItem>
      */
-    public function getMatchStates() : array
+    public function getMatchStates(): array
     {
         return $this->matchStates;
     }
@@ -202,7 +202,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordSt
      *
      * @return self
      */
-    public function setMatchStates(array $matchStates) : self
+    public function setMatchStates(array $matchStates): self
     {
         $this->initialized['matchStates'] = true;
         $this->matchStates = $matchStates;

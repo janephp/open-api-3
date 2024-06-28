@@ -8,7 +8,7 @@ class MetadataValuesSchemaItemRemoveCommand extends MetadataValuesChangeCommandB
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -37,7 +37,7 @@ class MetadataValuesSchemaItemRemoveCommand extends MetadataValuesChangeCommandB
     *
     * @return string
     */
-    public function getFieldPath() : string
+    public function getFieldPath(): string
     {
         return $this->fieldPath;
     }
@@ -49,7 +49,7 @@ class MetadataValuesSchemaItemRemoveCommand extends MetadataValuesChangeCommandB
     *
     * @return self
     */
-    public function setFieldPath(string $fieldPath) : self
+    public function setFieldPath(string $fieldPath): self
     {
         $this->initialized['fieldPath'] = true;
         $this->fieldPath = $fieldPath;
@@ -60,7 +60,7 @@ class MetadataValuesSchemaItemRemoveCommand extends MetadataValuesChangeCommandB
      *
      * @return string
      */
-    public function getFieldNamespace() : string
+    public function getFieldNamespace(): string
     {
         return $this->fieldNamespace;
     }
@@ -71,7 +71,7 @@ class MetadataValuesSchemaItemRemoveCommand extends MetadataValuesChangeCommandB
      *
      * @return self
      */
-    public function setFieldNamespace(string $fieldNamespace) : self
+    public function setFieldNamespace(string $fieldNamespace): self
     {
         $this->initialized['fieldNamespace'] = true;
         $this->fieldNamespace = $fieldNamespace;
@@ -82,7 +82,7 @@ class MetadataValuesSchemaItemRemoveCommand extends MetadataValuesChangeCommandB
      *
      * @return string
      */
-    public function getReferenceId() : string
+    public function getReferenceId(): string
     {
         return $this->referenceId;
     }
@@ -93,7 +93,7 @@ class MetadataValuesSchemaItemRemoveCommand extends MetadataValuesChangeCommandB
      *
      * @return self
      */
-    public function setReferenceId(string $referenceId) : self
+    public function setReferenceId(string $referenceId): self
     {
         $this->initialized['referenceId'] = true;
         $this->referenceId = $referenceId;

@@ -8,7 +8,7 @@ class PullRequestMergeResult extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PullRequestMergeResult extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -46,7 +46,7 @@ class PullRequestMergeResult extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -57,7 +57,7 @@ class PullRequestMergeResult extends \ArrayObject
      *
      * @return bool
      */
-    public function getMerged() : bool
+    public function getMerged(): bool
     {
         return $this->merged;
     }
@@ -68,7 +68,7 @@ class PullRequestMergeResult extends \ArrayObject
      *
      * @return self
      */
-    public function setMerged(bool $merged) : self
+    public function setMerged(bool $merged): self
     {
         $this->initialized['merged'] = true;
         $this->merged = $merged;
@@ -79,7 +79,7 @@ class PullRequestMergeResult extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -90,7 +90,7 @@ class PullRequestMergeResult extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;

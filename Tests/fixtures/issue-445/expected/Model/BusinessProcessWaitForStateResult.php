@@ -8,7 +8,7 @@ class BusinessProcessWaitForStateResult
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class BusinessProcessWaitForStateResult
      *
      * @return string|null
      */
-    public function getStateHit() : ?string
+    public function getStateHit(): ?string
     {
         return $this->stateHit;
     }
@@ -40,7 +40,7 @@ class BusinessProcessWaitForStateResult
      *
      * @return self
      */
-    public function setStateHit(?string $stateHit) : self
+    public function setStateHit(?string $stateHit): self
     {
         $this->initialized['stateHit'] = true;
         $this->stateHit = $stateHit;
@@ -62,7 +62,7 @@ class BusinessProcessWaitForStateResult
      *
      * @return self
      */
-    public function setBusinessProcess($businessProcess) : self
+    public function setBusinessProcess($businessProcess): self
     {
         $this->initialized['businessProcess'] = true;
         $this->businessProcess = $businessProcess;

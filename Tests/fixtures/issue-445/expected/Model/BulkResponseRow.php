@@ -8,7 +8,7 @@ class BulkResponseRow
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class BulkResponseRow
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -64,7 +64,7 @@ class BulkResponseRow
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -75,7 +75,7 @@ class BulkResponseRow
      *
      * @return int
      */
-    public function getVersion() : int
+    public function getVersion(): int
     {
         return $this->version;
     }
@@ -86,7 +86,7 @@ class BulkResponseRow
      *
      * @return self
      */
-    public function setVersion(int $version) : self
+    public function setVersion(int $version): self
     {
         $this->initialized['version'] = true;
         $this->version = $version;
@@ -97,7 +97,7 @@ class BulkResponseRow
      *
      * @return string|null
      */
-    public function getError() : ?string
+    public function getError(): ?string
     {
         return $this->error;
     }
@@ -108,7 +108,7 @@ class BulkResponseRow
      *
      * @return self
      */
-    public function setError(?string $error) : self
+    public function setError(?string $error): self
     {
         $this->initialized['error'] = true;
         $this->error = $error;
@@ -119,7 +119,7 @@ class BulkResponseRow
      *
      * @return bool
      */
-    public function getSucceeded() : bool
+    public function getSucceeded(): bool
     {
         return $this->succeeded;
     }
@@ -130,7 +130,7 @@ class BulkResponseRow
      *
      * @return self
      */
-    public function setSucceeded(bool $succeeded) : self
+    public function setSucceeded(bool $succeeded): self
     {
         $this->initialized['succeeded'] = true;
         $this->succeeded = $succeeded;
@@ -141,7 +141,7 @@ class BulkResponseRow
      *
      * @return int
      */
-    public function getStatus() : int
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -152,7 +152,7 @@ class BulkResponseRow
      *
      * @return self
      */
-    public function setStatus(int $status) : self
+    public function setStatus(int $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -163,7 +163,7 @@ class BulkResponseRow
      *
      * @return string|null
      */
-    public function getRequestId() : ?string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -174,7 +174,7 @@ class BulkResponseRow
      *
      * @return self
      */
-    public function setRequestId(?string $requestId) : self
+    public function setRequestId(?string $requestId): self
     {
         $this->initialized['requestId'] = true;
         $this->requestId = $requestId;

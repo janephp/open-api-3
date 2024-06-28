@@ -8,7 +8,7 @@ class SearchNoResultsErrorMessages extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class SearchNoResultsErrorMessages extends \ArrayObject
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -46,7 +46,7 @@ class SearchNoResultsErrorMessages extends \ArrayObject
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -57,7 +57,7 @@ class SearchNoResultsErrorMessages extends \ArrayObject
      *
      * @return string
      */
-    public function getText() : string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -68,7 +68,7 @@ class SearchNoResultsErrorMessages extends \ArrayObject
      *
      * @return self
      */
-    public function setText(string $text) : self
+    public function setText(string $text): self
     {
         $this->initialized['text'] = true;
         $this->text = $text;
@@ -79,7 +79,7 @@ class SearchNoResultsErrorMessages extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -90,7 +90,7 @@ class SearchNoResultsErrorMessages extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

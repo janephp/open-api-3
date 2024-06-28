@@ -8,7 +8,7 @@ class LiveStreamMessage extends Message
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class LiveStreamMessage extends Message
      *
      * @return string|null
      */
-    public function getCustomerId() : ?string
+    public function getCustomerId(): ?string
     {
         return $this->customerId;
     }
@@ -64,7 +64,7 @@ class LiveStreamMessage extends Message
      *
      * @return self
      */
-    public function setCustomerId(?string $customerId) : self
+    public function setCustomerId(?string $customerId): self
     {
         $this->initialized['customerId'] = true;
         $this->customerId = $customerId;
@@ -75,7 +75,7 @@ class LiveStreamMessage extends Message
      *
      * @return string|null
      */
-    public function getCustomerAlias() : ?string
+    public function getCustomerAlias(): ?string
     {
         return $this->customerAlias;
     }
@@ -86,7 +86,7 @@ class LiveStreamMessage extends Message
      *
      * @return self
      */
-    public function setCustomerAlias(?string $customerAlias) : self
+    public function setCustomerAlias(?string $customerAlias): self
     {
         $this->initialized['customerAlias'] = true;
         $this->customerAlias = $customerAlias;
@@ -97,7 +97,7 @@ class LiveStreamMessage extends Message
      *
      * @return \DateTime
      */
-    public function getTimestamp() : \DateTime
+    public function getTimestamp(): \DateTime
     {
         return $this->timestamp;
     }
@@ -108,7 +108,7 @@ class LiveStreamMessage extends Message
      *
      * @return self
      */
-    public function setTimestamp(\DateTime $timestamp) : self
+    public function setTimestamp(\DateTime $timestamp): self
     {
         $this->initialized['timestamp'] = true;
         $this->timestamp = $timestamp;
@@ -119,7 +119,7 @@ class LiveStreamMessage extends Message
      *
      * @return string|null
      */
-    public function getScope() : ?string
+    public function getScope(): ?string
     {
         return $this->scope;
     }
@@ -130,7 +130,7 @@ class LiveStreamMessage extends Message
      *
      * @return self
      */
-    public function setScope(?string $scope) : self
+    public function setScope(?string $scope): self
     {
         $this->initialized['scope'] = true;
         $this->scope = $scope;
@@ -152,7 +152,7 @@ class LiveStreamMessage extends Message
      *
      * @return self
      */
-    public function setDocumentChange($documentChange) : self
+    public function setDocumentChange($documentChange): self
     {
         $this->initialized['documentChange'] = true;
         $this->documentChange = $documentChange;
@@ -174,7 +174,7 @@ class LiveStreamMessage extends Message
      *
      * @return self
      */
-    public function setApplicationEvent($applicationEvent) : self
+    public function setApplicationEvent($applicationEvent): self
     {
         $this->initialized['applicationEvent'] = true;
         $this->applicationEvent = $applicationEvent;

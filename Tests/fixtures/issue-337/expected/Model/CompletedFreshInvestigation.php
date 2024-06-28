@@ -8,7 +8,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return string
      */
-    public function getChargeReference() : string
+    public function getChargeReference(): string
     {
         return $this->chargeReference;
     }
@@ -88,7 +88,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setChargeReference(string $chargeReference) : self
+    public function setChargeReference(string $chargeReference): self
     {
         $this->initialized['chargeReference'] = true;
         $this->chargeReference = $chargeReference;
@@ -99,7 +99,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return CompletedFreshInvestigationContactDetails
      */
-    public function getContactDetails() : CompletedFreshInvestigationContactDetails
+    public function getContactDetails(): CompletedFreshInvestigationContactDetails
     {
         return $this->contactDetails;
     }
@@ -110,7 +110,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setContactDetails(CompletedFreshInvestigationContactDetails $contactDetails) : self
+    public function setContactDetails(CompletedFreshInvestigationContactDetails $contactDetails): self
     {
         $this->initialized['contactDetails'] = true;
         $this->contactDetails = $contactDetails;
@@ -121,7 +121,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return string
      */
-    public function getCreationDate() : string
+    public function getCreationDate(): string
     {
         return $this->creationDate;
     }
@@ -132,7 +132,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setCreationDate(string $creationDate) : self
+    public function setCreationDate(string $creationDate): self
     {
         $this->initialized['creationDate'] = true;
         $this->creationDate = $creationDate;
@@ -143,7 +143,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return string
      */
-    public function getLastStatusChangeDate() : string
+    public function getLastStatusChangeDate(): string
     {
         return $this->lastStatusChangeDate;
     }
@@ -154,7 +154,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setLastStatusChangeDate(string $lastStatusChangeDate) : self
+    public function setLastStatusChangeDate(string $lastStatusChangeDate): self
     {
         $this->initialized['lastStatusChangeDate'] = true;
         $this->lastStatusChangeDate = $lastStatusChangeDate;
@@ -165,7 +165,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return int
      */
-    public function getOrderID() : int
+    public function getOrderID(): int
     {
         return $this->orderID;
     }
@@ -176,7 +176,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setOrderID(int $orderID) : self
+    public function setOrderID(int $orderID): self
     {
         $this->initialized['orderID'] = true;
         $this->orderID = $orderID;
@@ -187,7 +187,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return string
      */
-    public function getReportDate() : string
+    public function getReportDate(): string
     {
         return $this->reportDate;
     }
@@ -198,7 +198,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setReportDate(string $reportDate) : self
+    public function setReportDate(string $reportDate): self
     {
         $this->initialized['reportDate'] = true;
         $this->reportDate = $reportDate;
@@ -209,7 +209,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return CompletedFreshInvestigationSearchCriteria
      */
-    public function getSearchCriteria() : CompletedFreshInvestigationSearchCriteria
+    public function getSearchCriteria(): CompletedFreshInvestigationSearchCriteria
     {
         return $this->searchCriteria;
     }
@@ -220,7 +220,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchCriteria(CompletedFreshInvestigationSearchCriteria $searchCriteria) : self
+    public function setSearchCriteria(CompletedFreshInvestigationSearchCriteria $searchCriteria): self
     {
         $this->initialized['searchCriteria'] = true;
         $this->searchCriteria = $searchCriteria;
@@ -231,7 +231,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getSections() : array
+    public function getSections(): array
     {
         return $this->sections;
     }
@@ -242,7 +242,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setSections(array $sections) : self
+    public function setSections(array $sections): self
     {
         $this->initialized['sections'] = true;
         $this->sections = $sections;
@@ -253,7 +253,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return CompletedFreshInvestigationStatus
      */
-    public function getStatus() : CompletedFreshInvestigationStatus
+    public function getStatus(): CompletedFreshInvestigationStatus
     {
         return $this->status;
     }
@@ -264,7 +264,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(CompletedFreshInvestigationStatus $status) : self
+    public function setStatus(CompletedFreshInvestigationStatus $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -275,7 +275,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return int
      */
-    public function getTransactionID() : int
+    public function getTransactionID(): int
     {
         return $this->transactionID;
     }
@@ -286,7 +286,7 @@ class CompletedFreshInvestigation extends \ArrayObject
      *
      * @return self
      */
-    public function setTransactionID(int $transactionID) : self
+    public function setTransactionID(int $transactionID): self
     {
         $this->initialized['transactionID'] = true;
         $this->transactionID = $transactionID;

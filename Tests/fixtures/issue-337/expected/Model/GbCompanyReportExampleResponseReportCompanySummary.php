@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return string
      */
-    public function getBusinessName() : string
+    public function getBusinessName(): string
     {
         return $this->businessName;
     }
@@ -82,7 +82,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return self
      */
-    public function setBusinessName(string $businessName) : self
+    public function setBusinessName(string $businessName): self
     {
         $this->initialized['businessName'] = true;
         $this->businessName = $businessName;
@@ -93,7 +93,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -104,7 +104,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -115,7 +115,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return string
      */
-    public function getCompanyNumber() : string
+    public function getCompanyNumber(): string
     {
         return $this->companyNumber;
     }
@@ -126,7 +126,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyNumber(string $companyNumber) : self
+    public function setCompanyNumber(string $companyNumber): self
     {
         $this->initialized['companyNumber'] = true;
         $this->companyNumber = $companyNumber;
@@ -137,7 +137,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return string
      */
-    public function getCompanyRegistrationNumber() : string
+    public function getCompanyRegistrationNumber(): string
     {
         return $this->companyRegistrationNumber;
     }
@@ -148,7 +148,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyRegistrationNumber(string $companyRegistrationNumber) : self
+    public function setCompanyRegistrationNumber(string $companyRegistrationNumber): self
     {
         $this->initialized['companyRegistrationNumber'] = true;
         $this->companyRegistrationNumber = $companyRegistrationNumber;
@@ -159,7 +159,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryMainActivity
      */
-    public function getMainActivity() : GbCompanyReportExampleResponseReportCompanySummaryMainActivity
+    public function getMainActivity(): GbCompanyReportExampleResponseReportCompanySummaryMainActivity
     {
         return $this->mainActivity;
     }
@@ -170,7 +170,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return self
      */
-    public function setMainActivity(GbCompanyReportExampleResponseReportCompanySummaryMainActivity $mainActivity) : self
+    public function setMainActivity(GbCompanyReportExampleResponseReportCompanySummaryMainActivity $mainActivity): self
     {
         $this->initialized['mainActivity'] = true;
         $this->mainActivity = $mainActivity;
@@ -181,7 +181,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus
      */
-    public function getCompanyStatus() : GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus
+    public function getCompanyStatus(): GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus
     {
         return $this->companyStatus;
     }
@@ -192,7 +192,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyStatus(GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus $companyStatus) : self
+    public function setCompanyStatus(GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus $companyStatus): self
     {
         $this->initialized['companyStatus'] = true;
         $this->companyStatus = $companyStatus;
@@ -203,7 +203,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure
      */
-    public function getLatestTurnoverFigure() : GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure
+    public function getLatestTurnoverFigure(): GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure
     {
         return $this->latestTurnoverFigure;
     }
@@ -214,7 +214,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return self
      */
-    public function setLatestTurnoverFigure(GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure $latestTurnoverFigure) : self
+    public function setLatestTurnoverFigure(GbCompanyReportExampleResponseReportCompanySummaryLatestTurnoverFigure $latestTurnoverFigure): self
     {
         $this->initialized['latestTurnoverFigure'] = true;
         $this->latestTurnoverFigure = $latestTurnoverFigure;
@@ -225,7 +225,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryLatestShareholdersEquityFigure
      */
-    public function getLatestShareholdersEquityFigure() : GbCompanyReportExampleResponseReportCompanySummaryLatestShareholdersEquityFigure
+    public function getLatestShareholdersEquityFigure(): GbCompanyReportExampleResponseReportCompanySummaryLatestShareholdersEquityFigure
     {
         return $this->latestShareholdersEquityFigure;
     }
@@ -236,7 +236,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return self
      */
-    public function setLatestShareholdersEquityFigure(GbCompanyReportExampleResponseReportCompanySummaryLatestShareholdersEquityFigure $latestShareholdersEquityFigure) : self
+    public function setLatestShareholdersEquityFigure(GbCompanyReportExampleResponseReportCompanySummaryLatestShareholdersEquityFigure $latestShareholdersEquityFigure): self
     {
         $this->initialized['latestShareholdersEquityFigure'] = true;
         $this->latestShareholdersEquityFigure = $latestShareholdersEquityFigure;
@@ -247,7 +247,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryCreditRating
      */
-    public function getCreditRating() : GbCompanyReportExampleResponseReportCompanySummaryCreditRating
+    public function getCreditRating(): GbCompanyReportExampleResponseReportCompanySummaryCreditRating
     {
         return $this->creditRating;
     }
@@ -258,7 +258,7 @@ class GbCompanyReportExampleResponseReportCompanySummary extends \ArrayObject
      *
      * @return self
      */
-    public function setCreditRating(GbCompanyReportExampleResponseReportCompanySummaryCreditRating $creditRating) : self
+    public function setCreditRating(GbCompanyReportExampleResponseReportCompanySummaryCreditRating $creditRating): self
     {
         $this->initialized['creditRating'] = true;
         $this->creditRating = $creditRating;

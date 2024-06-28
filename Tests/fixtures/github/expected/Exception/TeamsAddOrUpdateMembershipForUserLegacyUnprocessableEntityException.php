@@ -18,11 +18,11 @@ class TeamsAddOrUpdateMembershipForUserLegacyUnprocessableEntityException extend
         $this->teamsTeamIdMembershipsUsernamePutResponse422 = $teamsTeamIdMembershipsUsernamePutResponse422;
         $this->response = $response;
     }
-    public function getTeamsTeamIdMembershipsUsernamePutResponse422() : \Github\Model\TeamsTeamIdMembershipsUsernamePutResponse422
+    public function getTeamsTeamIdMembershipsUsernamePutResponse422(): \Github\Model\TeamsTeamIdMembershipsUsernamePutResponse422
     {
         return $this->teamsTeamIdMembershipsUsernamePutResponse422;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

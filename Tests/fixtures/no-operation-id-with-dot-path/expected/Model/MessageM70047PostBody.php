@@ -8,7 +8,7 @@ class MessageM70047PostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class MessageM70047PostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBar() : string
+    public function getBar(): string
     {
         return $this->bar;
     }
@@ -34,7 +34,7 @@ class MessageM70047PostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBar(string $bar) : self
+    public function setBar(string $bar): self
     {
         $this->initialized['bar'] = true;
         $this->bar = $bar;

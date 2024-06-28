@@ -8,7 +8,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBodyGroupsItem extends \Arra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBodyGroupsItem extends \Arra
      *
      * @return string
      */
-    public function getGroupId() : string
+    public function getGroupId(): string
     {
         return $this->groupId;
     }
@@ -46,7 +46,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBodyGroupsItem extends \Arra
      *
      * @return self
      */
-    public function setGroupId(string $groupId) : self
+    public function setGroupId(string $groupId): self
     {
         $this->initialized['groupId'] = true;
         $this->groupId = $groupId;
@@ -57,7 +57,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBodyGroupsItem extends \Arra
      *
      * @return string
      */
-    public function getGroupName() : string
+    public function getGroupName(): string
     {
         return $this->groupName;
     }
@@ -68,7 +68,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBodyGroupsItem extends \Arra
      *
      * @return self
      */
-    public function setGroupName(string $groupName) : self
+    public function setGroupName(string $groupName): self
     {
         $this->initialized['groupName'] = true;
         $this->groupName = $groupName;
@@ -79,7 +79,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBodyGroupsItem extends \Arra
      *
      * @return string
      */
-    public function getGroupDescription() : string
+    public function getGroupDescription(): string
     {
         return $this->groupDescription;
     }
@@ -90,7 +90,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBodyGroupsItem extends \Arra
      *
      * @return self
      */
-    public function setGroupDescription(string $groupDescription) : self
+    public function setGroupDescription(string $groupDescription): self
     {
         $this->initialized['groupDescription'] = true;
         $this->groupDescription = $groupDescription;

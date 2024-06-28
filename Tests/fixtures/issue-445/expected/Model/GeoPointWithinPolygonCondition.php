@@ -8,7 +8,7 @@ class GeoPointWithinPolygonCondition extends BusinessRuleCondition
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -30,7 +30,7 @@ class GeoPointWithinPolygonCondition extends BusinessRuleCondition
      *
      * @return string|null
      */
-    public function getFieldPath() : ?string
+    public function getFieldPath(): ?string
     {
         return $this->fieldPath;
     }
@@ -41,7 +41,7 @@ class GeoPointWithinPolygonCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setFieldPath(?string $fieldPath) : self
+    public function setFieldPath(?string $fieldPath): self
     {
         $this->initialized['fieldPath'] = true;
         $this->fieldPath = $fieldPath;
@@ -53,7 +53,7 @@ class GeoPointWithinPolygonCondition extends BusinessRuleCondition
     *
     * @return list<LatLon>|null
     */
-    public function getPolygon() : ?array
+    public function getPolygon(): ?array
     {
         return $this->polygon;
     }
@@ -65,7 +65,7 @@ class GeoPointWithinPolygonCondition extends BusinessRuleCondition
     *
     * @return self
     */
-    public function setPolygon(?array $polygon) : self
+    public function setPolygon(?array $polygon): self
     {
         $this->initialized['polygon'] = true;
         $this->polygon = $polygon;

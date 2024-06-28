@@ -8,7 +8,7 @@ class ContentDownloadRequestItem
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ContentDownloadRequestItem
      *
      * @return string
      */
-    public function getContentId() : string
+    public function getContentId(): string
     {
         return $this->contentId;
     }
@@ -40,7 +40,7 @@ class ContentDownloadRequestItem
      *
      * @return self
      */
-    public function setContentId(string $contentId) : self
+    public function setContentId(string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;
@@ -51,7 +51,7 @@ class ContentDownloadRequestItem
      *
      * @return string
      */
-    public function getOutputFormatId() : string
+    public function getOutputFormatId(): string
     {
         return $this->outputFormatId;
     }
@@ -62,7 +62,7 @@ class ContentDownloadRequestItem
      *
      * @return self
      */
-    public function setOutputFormatId(string $outputFormatId) : self
+    public function setOutputFormatId(string $outputFormatId): self
     {
         $this->initialized['outputFormatId'] = true;
         $this->outputFormatId = $outputFormatId;

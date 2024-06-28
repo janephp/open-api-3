@@ -8,7 +8,7 @@ class GuidSuccessResponseGUIDListItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class GuidSuccessResponseGUIDListItem extends \ArrayObject
      *
      * @return string
      */
-    public function getFriendlyName() : string
+    public function getFriendlyName(): string
     {
         return $this->friendlyName;
     }
@@ -52,7 +52,7 @@ class GuidSuccessResponseGUIDListItem extends \ArrayObject
      *
      * @return self
      */
-    public function setFriendlyName(string $friendlyName) : self
+    public function setFriendlyName(string $friendlyName): self
     {
         $this->initialized['friendlyName'] = true;
         $this->friendlyName = $friendlyName;
@@ -63,7 +63,7 @@ class GuidSuccessResponseGUIDListItem extends \ArrayObject
      *
      * @return string
      */
-    public function getGUID() : string
+    public function getGUID(): string
     {
         return $this->gUID;
     }
@@ -74,7 +74,7 @@ class GuidSuccessResponseGUIDListItem extends \ArrayObject
      *
      * @return self
      */
-    public function setGUID(string $gUID) : self
+    public function setGUID(string $gUID): self
     {
         $this->initialized['gUID'] = true;
         $this->gUID = $gUID;
@@ -85,7 +85,7 @@ class GuidSuccessResponseGUIDListItem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -96,7 +96,7 @@ class GuidSuccessResponseGUIDListItem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -107,7 +107,7 @@ class GuidSuccessResponseGUIDListItem extends \ArrayObject
      *
      * @return string
      */
-    public function getServiceLine() : string
+    public function getServiceLine(): string
     {
         return $this->serviceLine;
     }
@@ -118,7 +118,7 @@ class GuidSuccessResponseGUIDListItem extends \ArrayObject
      *
      * @return self
      */
-    public function setServiceLine(string $serviceLine) : self
+    public function setServiceLine(string $serviceLine): self
     {
         $this->initialized['serviceLine'] = true;
         $this->serviceLine = $serviceLine;

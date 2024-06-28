@@ -8,7 +8,7 @@ class ReposOwnerRepoCommitsCommitShaCommentsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ReposOwnerRepoCommitsCommitShaCommentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -52,7 +52,7 @@ class ReposOwnerRepoCommitsCommitShaCommentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -63,7 +63,7 @@ class ReposOwnerRepoCommitsCommitShaCommentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -74,7 +74,7 @@ class ReposOwnerRepoCommitsCommitShaCommentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -85,7 +85,7 @@ class ReposOwnerRepoCommitsCommitShaCommentsPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getPosition() : int
+    public function getPosition(): int
     {
         return $this->position;
     }
@@ -96,7 +96,7 @@ class ReposOwnerRepoCommitsCommitShaCommentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPosition(int $position) : self
+    public function setPosition(int $position): self
     {
         $this->initialized['position'] = true;
         $this->position = $position;
@@ -107,7 +107,7 @@ class ReposOwnerRepoCommitsCommitShaCommentsPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getLine() : int
+    public function getLine(): int
     {
         return $this->line;
     }
@@ -118,7 +118,7 @@ class ReposOwnerRepoCommitsCommitShaCommentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLine(int $line) : self
+    public function setLine(int $line): self
     {
         $this->initialized['line'] = true;
         $this->line = $line;

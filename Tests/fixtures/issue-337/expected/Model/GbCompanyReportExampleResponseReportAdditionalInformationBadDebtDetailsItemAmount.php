@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return self
      */
-    public function setCurrency(string $currency) : self
+    public function setCurrency(string $currency): self
     {
         $this->initialized['currency'] = true;
         $this->currency = $currency;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return float
      */
-    public function getValue() : float
+    public function getValue(): float
     {
         return $this->value;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return self
      */
-    public function setValue(float $value) : self
+    public function setValue(float $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

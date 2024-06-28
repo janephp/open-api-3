@@ -18,11 +18,11 @@ class TeamsAddMemberLegacyUnprocessableEntityException extends UnprocessableEnti
         $this->teamsTeamIdMembersUsernamePutResponse422 = $teamsTeamIdMembersUsernamePutResponse422;
         $this->response = $response;
     }
-    public function getTeamsTeamIdMembersUsernamePutResponse422() : \Github\Model\TeamsTeamIdMembersUsernamePutResponse422
+    public function getTeamsTeamIdMembersUsernamePutResponse422(): \Github\Model\TeamsTeamIdMembersUsernamePutResponse422
     {
         return $this->teamsTeamIdMembersUsernamePutResponse422;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

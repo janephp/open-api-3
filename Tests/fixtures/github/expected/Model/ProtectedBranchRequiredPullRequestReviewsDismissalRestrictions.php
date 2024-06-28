@@ -8,7 +8,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -58,7 +58,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -69,7 +69,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return string
      */
-    public function getUsersUrl() : string
+    public function getUsersUrl(): string
     {
         return $this->usersUrl;
     }
@@ -80,7 +80,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return self
      */
-    public function setUsersUrl(string $usersUrl) : self
+    public function setUsersUrl(string $usersUrl): self
     {
         $this->initialized['usersUrl'] = true;
         $this->usersUrl = $usersUrl;
@@ -91,7 +91,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return string
      */
-    public function getTeamsUrl() : string
+    public function getTeamsUrl(): string
     {
         return $this->teamsUrl;
     }
@@ -102,7 +102,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return self
      */
-    public function setTeamsUrl(string $teamsUrl) : self
+    public function setTeamsUrl(string $teamsUrl): self
     {
         $this->initialized['teamsUrl'] = true;
         $this->teamsUrl = $teamsUrl;
@@ -113,7 +113,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return list<SimpleUser>
      */
-    public function getUsers() : array
+    public function getUsers(): array
     {
         return $this->users;
     }
@@ -124,7 +124,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return self
      */
-    public function setUsers(array $users) : self
+    public function setUsers(array $users): self
     {
         $this->initialized['users'] = true;
         $this->users = $users;
@@ -135,7 +135,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return list<Team>
      */
-    public function getTeams() : array
+    public function getTeams(): array
     {
         return $this->teams;
     }
@@ -146,7 +146,7 @@ class ProtectedBranchRequiredPullRequestReviewsDismissalRestrictions extends \Ar
      *
      * @return self
      */
-    public function setTeams(array $teams) : self
+    public function setTeams(array $teams): self
     {
         $this->initialized['teams'] = true;
         $this->teams = $teams;

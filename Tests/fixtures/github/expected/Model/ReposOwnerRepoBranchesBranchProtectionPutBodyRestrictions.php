@@ -8,7 +8,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions extends \ArrayOb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions extends \ArrayOb
      *
      * @return list<string>
      */
-    public function getUsers() : array
+    public function getUsers(): array
     {
         return $this->users;
     }
@@ -46,7 +46,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions extends \ArrayOb
      *
      * @return self
      */
-    public function setUsers(array $users) : self
+    public function setUsers(array $users): self
     {
         $this->initialized['users'] = true;
         $this->users = $users;
@@ -57,7 +57,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions extends \ArrayOb
      *
      * @return list<string>
      */
-    public function getTeams() : array
+    public function getTeams(): array
     {
         return $this->teams;
     }
@@ -68,7 +68,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions extends \ArrayOb
      *
      * @return self
      */
-    public function setTeams(array $teams) : self
+    public function setTeams(array $teams): self
     {
         $this->initialized['teams'] = true;
         $this->teams = $teams;
@@ -79,7 +79,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions extends \ArrayOb
      *
      * @return list<string>
      */
-    public function getApps() : array
+    public function getApps(): array
     {
         return $this->apps;
     }
@@ -90,7 +90,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions extends \ArrayOb
      *
      * @return self
      */
-    public function setApps(array $apps) : self
+    public function setApps(array $apps): self
     {
         $this->initialized['apps'] = true;
         $this->apps = $apps;

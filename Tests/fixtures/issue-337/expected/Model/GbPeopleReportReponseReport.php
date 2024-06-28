@@ -8,7 +8,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return string
      */
-    public function getDirectorId() : string
+    public function getDirectorId(): string
     {
         return $this->directorId;
     }
@@ -58,7 +58,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return self
      */
-    public function setDirectorId(string $directorId) : self
+    public function setDirectorId(string $directorId): self
     {
         $this->initialized['directorId'] = true;
         $this->directorId = $directorId;
@@ -69,7 +69,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return GbPeopleReportReponseReportDirectorSummary
      */
-    public function getDirectorSummary() : GbPeopleReportReponseReportDirectorSummary
+    public function getDirectorSummary(): GbPeopleReportReponseReportDirectorSummary
     {
         return $this->directorSummary;
     }
@@ -80,7 +80,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return self
      */
-    public function setDirectorSummary(GbPeopleReportReponseReportDirectorSummary $directorSummary) : self
+    public function setDirectorSummary(GbPeopleReportReponseReportDirectorSummary $directorSummary): self
     {
         $this->initialized['directorSummary'] = true;
         $this->directorSummary = $directorSummary;
@@ -91,7 +91,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return GbPeopleReportReponseReportDirectorDetails
      */
-    public function getDirectorDetails() : GbPeopleReportReponseReportDirectorDetails
+    public function getDirectorDetails(): GbPeopleReportReponseReportDirectorDetails
     {
         return $this->directorDetails;
     }
@@ -102,7 +102,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return self
      */
-    public function setDirectorDetails(GbPeopleReportReponseReportDirectorDetails $directorDetails) : self
+    public function setDirectorDetails(GbPeopleReportReponseReportDirectorDetails $directorDetails): self
     {
         $this->initialized['directorDetails'] = true;
         $this->directorDetails = $directorDetails;
@@ -113,7 +113,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return list<GbPeopleReportReponseReportOtherAddressesItem>
      */
-    public function getOtherAddresses() : array
+    public function getOtherAddresses(): array
     {
         return $this->otherAddresses;
     }
@@ -124,7 +124,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return self
      */
-    public function setOtherAddresses(array $otherAddresses) : self
+    public function setOtherAddresses(array $otherAddresses): self
     {
         $this->initialized['otherAddresses'] = true;
         $this->otherAddresses = $otherAddresses;
@@ -135,7 +135,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return GbPeopleReportReponseReportDirectorships
      */
-    public function getDirectorships() : GbPeopleReportReponseReportDirectorships
+    public function getDirectorships(): GbPeopleReportReponseReportDirectorships
     {
         return $this->directorships;
     }
@@ -146,7 +146,7 @@ class GbPeopleReportReponseReport extends \ArrayObject
      *
      * @return self
      */
-    public function setDirectorships(GbPeopleReportReponseReportDirectorships $directorships) : self
+    public function setDirectorships(GbPeopleReportReponseReportDirectorships $directorships): self
     {
         $this->initialized['directorships'] = true;
         $this->directorships = $directorships;

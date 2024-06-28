@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegistered
      */
-    public function getRegistered() : GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegistered
+    public function getRegistered(): GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegistered
     {
         return $this->registered;
     }
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return self
      */
-    public function setRegistered(GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegistered $registered) : self
+    public function setRegistered(GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegistered $registered): self
     {
         $this->initialized['registered'] = true;
         $this->registered = $registered;

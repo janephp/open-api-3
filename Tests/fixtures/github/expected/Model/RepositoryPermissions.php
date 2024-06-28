@@ -8,7 +8,7 @@ class RepositoryPermissions extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getAdmin() : bool
+    public function getAdmin(): bool
     {
         return $this->admin;
     }
@@ -58,7 +58,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setAdmin(bool $admin) : self
+    public function setAdmin(bool $admin): self
     {
         $this->initialized['admin'] = true;
         $this->admin = $admin;
@@ -69,7 +69,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getPull() : bool
+    public function getPull(): bool
     {
         return $this->pull;
     }
@@ -80,7 +80,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setPull(bool $pull) : self
+    public function setPull(bool $pull): self
     {
         $this->initialized['pull'] = true;
         $this->pull = $pull;
@@ -91,7 +91,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getTriage() : bool
+    public function getTriage(): bool
     {
         return $this->triage;
     }
@@ -102,7 +102,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setTriage(bool $triage) : self
+    public function setTriage(bool $triage): self
     {
         $this->initialized['triage'] = true;
         $this->triage = $triage;
@@ -113,7 +113,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getPush() : bool
+    public function getPush(): bool
     {
         return $this->push;
     }
@@ -124,7 +124,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setPush(bool $push) : self
+    public function setPush(bool $push): self
     {
         $this->initialized['push'] = true;
         $this->push = $push;
@@ -135,7 +135,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getMaintain() : bool
+    public function getMaintain(): bool
     {
         return $this->maintain;
     }
@@ -146,7 +146,7 @@ class RepositoryPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setMaintain(bool $maintain) : self
+    public function setMaintain(bool $maintain): self
     {
         $this->initialized['maintain'] = true;
         $this->maintain = $maintain;

@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -94,7 +94,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -105,7 +105,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return string
      */
-    public function getYearEndDate() : string
+    public function getYearEndDate(): string
     {
         return $this->yearEndDate;
     }
@@ -116,7 +116,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setYearEndDate(string $yearEndDate) : self
+    public function setYearEndDate(string $yearEndDate): self
     {
         $this->initialized['yearEndDate'] = true;
         $this->yearEndDate = $yearEndDate;
@@ -127,7 +127,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return float
      */
-    public function getNumberOfWeeks() : float
+    public function getNumberOfWeeks(): float
     {
         return $this->numberOfWeeks;
     }
@@ -138,7 +138,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setNumberOfWeeks(float $numberOfWeeks) : self
+    public function setNumberOfWeeks(float $numberOfWeeks): self
     {
         $this->initialized['numberOfWeeks'] = true;
         $this->numberOfWeeks = $numberOfWeeks;
@@ -149,7 +149,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -160,7 +160,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setCurrency(string $currency) : self
+    public function setCurrency(string $currency): self
     {
         $this->initialized['currency'] = true;
         $this->currency = $currency;
@@ -171,7 +171,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return bool
      */
-    public function getConsolidatedAccounts() : bool
+    public function getConsolidatedAccounts(): bool
     {
         return $this->consolidatedAccounts;
     }
@@ -182,7 +182,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setConsolidatedAccounts(bool $consolidatedAccounts) : self
+    public function setConsolidatedAccounts(bool $consolidatedAccounts): self
     {
         $this->initialized['consolidatedAccounts'] = true;
         $this->consolidatedAccounts = $consolidatedAccounts;
@@ -193,7 +193,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return string
      */
-    public function getAuditQualification() : string
+    public function getAuditQualification(): string
     {
         return $this->auditQualification;
     }
@@ -204,7 +204,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setAuditQualification(string $auditQualification) : self
+    public function setAuditQualification(string $auditQualification): self
     {
         $this->initialized['auditQualification'] = true;
         $this->auditQualification = $auditQualification;
@@ -215,7 +215,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemProfitAndLoss
      */
-    public function getProfitAndLoss() : GbCompanyReportExampleResponseReportLocalFinancialStatementsItemProfitAndLoss
+    public function getProfitAndLoss(): GbCompanyReportExampleResponseReportLocalFinancialStatementsItemProfitAndLoss
     {
         return $this->profitAndLoss;
     }
@@ -226,7 +226,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setProfitAndLoss(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemProfitAndLoss $profitAndLoss) : self
+    public function setProfitAndLoss(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemProfitAndLoss $profitAndLoss): self
     {
         $this->initialized['profitAndLoss'] = true;
         $this->profitAndLoss = $profitAndLoss;
@@ -237,7 +237,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceSheet
      */
-    public function getBalanceSheet() : GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceSheet
+    public function getBalanceSheet(): GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceSheet
     {
         return $this->balanceSheet;
     }
@@ -248,7 +248,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setBalanceSheet(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceSheet $balanceSheet) : self
+    public function setBalanceSheet(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceSheet $balanceSheet): self
     {
         $this->initialized['balanceSheet'] = true;
         $this->balanceSheet = $balanceSheet;
@@ -259,7 +259,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow
      */
-    public function getCashFlow() : GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow
+    public function getCashFlow(): GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow
     {
         return $this->cashFlow;
     }
@@ -270,7 +270,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setCashFlow(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow $cashFlow) : self
+    public function setCashFlow(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemCashFlow $cashFlow): self
     {
         $this->initialized['cashFlow'] = true;
         $this->cashFlow = $cashFlow;
@@ -281,7 +281,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinancials
      */
-    public function getOtherFinancials() : GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinancials
+    public function getOtherFinancials(): GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinancials
     {
         return $this->otherFinancials;
     }
@@ -292,7 +292,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setOtherFinancials(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinancials $otherFinancials) : self
+    public function setOtherFinancials(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinancials $otherFinancials): self
     {
         $this->initialized['otherFinancials'] = true;
         $this->otherFinancials = $otherFinancials;
@@ -303,7 +303,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return GbCompanyReportExampleResponseReportLocalFinancialStatementsItemRatios
      */
-    public function getRatios() : GbCompanyReportExampleResponseReportLocalFinancialStatementsItemRatios
+    public function getRatios(): GbCompanyReportExampleResponseReportLocalFinancialStatementsItemRatios
     {
         return $this->ratios;
     }
@@ -314,7 +314,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItem extends \
      *
      * @return self
      */
-    public function setRatios(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemRatios $ratios) : self
+    public function setRatios(GbCompanyReportExampleResponseReportLocalFinancialStatementsItemRatios $ratios): self
     {
         $this->initialized['ratios'] = true;
         $this->ratios = $ratios;

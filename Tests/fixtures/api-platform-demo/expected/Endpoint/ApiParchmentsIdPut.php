@@ -20,15 +20,15 @@ class ApiParchmentsIdPut extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoint i
         $this->accept = $accept;
     }
     use \ApiPlatform\Demo\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'PUT';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{id}'], [$this->id], '/parchments/{id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \ApiPlatform\Demo\Model\ParchmentJsonld) {
             return [['Content-Type' => ['application/ld+json']], $serializer->serialize($this->body, 'json')];
@@ -59,7 +59,7 @@ class ApiParchmentsIdPut extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoint i
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         if (empty($this->accept)) {
             return ['Accept' => ['application/ld+json', 'application/hal+json', 'application/vnd.api+json', 'application/json', 'application/xml', 'text/xml', 'application/x-yaml', 'text/csv']];
@@ -81,16 +81,16 @@ class ApiParchmentsIdPut extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoint i
         $body = (string) $response->getBody();
         if (200 === $status) {
             if (mb_strpos($contentType, 'application/ld+json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\ParchmentJsonld', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\ParchmentJsonld', 'json');
             }
             if (mb_strpos($contentType, 'application/hal+json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\ParchmentJsonhal', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\ParchmentJsonhal', 'json');
             }
             if (mb_strpos($contentType, 'application/vnd.api+json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\Parchment', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\Parchment', 'json');
             }
             if (mb_strpos($contentType, 'application/json') !== false) {
-                return $serializer->deserialize($body, 'ApiPlatform\\Demo\\Model\\Parchment', 'json');
+                return $serializer->deserialize($body, 'ApiPlatform\Demo\Model\Parchment', 'json');
             }
         }
         if (400 === $status) {
@@ -103,7 +103,7 @@ class ApiParchmentsIdPut extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoint i
             throw new \ApiPlatform\Demo\Exception\ApiParchmentsIdPutNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return ['apiKey'];
     }

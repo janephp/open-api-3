@@ -8,7 +8,7 @@ class SubBaz extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class SubBaz extends \ArrayObject
      *
      * @return Baz
      */
-    public function getParent() : Baz
+    public function getParent(): Baz
     {
         return $this->parent;
     }
@@ -34,7 +34,7 @@ class SubBaz extends \ArrayObject
      *
      * @return self
      */
-    public function setParent(Baz $parent) : self
+    public function setParent(Baz $parent): self
     {
         $this->initialized['parent'] = true;
         $this->parent = $parent;

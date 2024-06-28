@@ -8,7 +8,7 @@ class JobStepsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -64,7 +64,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -75,7 +75,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getConclusion() : ?string
+    public function getConclusion(): ?string
     {
         return $this->conclusion;
     }
@@ -86,7 +86,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setConclusion(?string $conclusion) : self
+    public function setConclusion(?string $conclusion): self
     {
         $this->initialized['conclusion'] = true;
         $this->conclusion = $conclusion;
@@ -97,7 +97,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -108,7 +108,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -119,7 +119,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -130,7 +130,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -141,7 +141,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getStartedAt() : ?\DateTime
+    public function getStartedAt(): ?\DateTime
     {
         return $this->startedAt;
     }
@@ -152,7 +152,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setStartedAt(?\DateTime $startedAt) : self
+    public function setStartedAt(?\DateTime $startedAt): self
     {
         $this->initialized['startedAt'] = true;
         $this->startedAt = $startedAt;
@@ -163,7 +163,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getCompletedAt() : ?\DateTime
+    public function getCompletedAt(): ?\DateTime
     {
         return $this->completedAt;
     }
@@ -174,7 +174,7 @@ class JobStepsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCompletedAt(?\DateTime $completedAt) : self
+    public function setCompletedAt(?\DateTime $completedAt): self
     {
         $this->initialized['completedAt'] = true;
         $this->completedAt = $completedAt;

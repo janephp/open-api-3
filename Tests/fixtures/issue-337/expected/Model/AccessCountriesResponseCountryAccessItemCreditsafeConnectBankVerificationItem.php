@@ -8,7 +8,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -58,7 +58,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -69,7 +69,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return string
      */
-    public function getStartDate() : string
+    public function getStartDate(): string
     {
         return $this->startDate;
     }
@@ -80,7 +80,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return self
      */
-    public function setStartDate(string $startDate) : self
+    public function setStartDate(string $startDate): self
     {
         $this->initialized['startDate'] = true;
         $this->startDate = $startDate;
@@ -91,7 +91,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return string
      */
-    public function getExpireDate() : string
+    public function getExpireDate(): string
     {
         return $this->expireDate;
     }
@@ -102,7 +102,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return self
      */
-    public function setExpireDate(string $expireDate) : self
+    public function setExpireDate(string $expireDate): self
     {
         $this->initialized['expireDate'] = true;
         $this->expireDate = $expireDate;
@@ -113,7 +113,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return int
      */
-    public function getPaid() : int
+    public function getPaid(): int
     {
         return $this->paid;
     }
@@ -124,7 +124,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return self
      */
-    public function setPaid(int $paid) : self
+    public function setPaid(int $paid): self
     {
         $this->initialized['paid'] = true;
         $this->paid = $paid;
@@ -135,7 +135,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return int
      */
-    public function getUsed() : int
+    public function getUsed(): int
     {
         return $this->used;
     }
@@ -146,7 +146,7 @@ class AccessCountriesResponseCountryAccessItemCreditsafeConnectBankVerificationI
      *
      * @return self
      */
-    public function setUsed(int $used) : self
+    public function setUsed(int $used): self
     {
         $this->initialized['used'] = true;
         $this->used = $used;

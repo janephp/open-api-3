@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return string
      */
-    public function getBuild() : string
+    public function getBuild(): string
     {
         return $this->build;
     }
@@ -64,7 +64,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return self
      */
-    public function setBuild(string $build) : self
+    public function setBuild(string $build): self
     {
         $this->initialized['build'] = true;
         $this->build = $build;
@@ -75,7 +75,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return bool
      */
-    public function getCustom() : bool
+    public function getCustom(): bool
     {
         return $this->custom;
     }
@@ -86,7 +86,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return self
      */
-    public function setCustom(bool $custom) : self
+    public function setCustom(bool $custom): self
     {
         $this->initialized['custom'] = true;
         $this->custom = $custom;
@@ -97,7 +97,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -108,7 +108,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -119,7 +119,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -130,7 +130,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -141,7 +141,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return string
      */
-    public function getPublished() : string
+    public function getPublished(): string
     {
         return $this->published;
     }
@@ -152,7 +152,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return self
      */
-    public function setPublished(string $published) : self
+    public function setPublished(string $published): self
     {
         $this->initialized['published'] = true;
         $this->published = $published;
@@ -163,7 +163,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -174,7 +174,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemF
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

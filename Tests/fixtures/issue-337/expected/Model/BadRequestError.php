@@ -8,7 +8,7 @@ class BadRequestError extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class BadRequestError extends \ArrayObject
      *
      * @return string
      */
-    public function getCorrelationId() : string
+    public function getCorrelationId(): string
     {
         return $this->correlationId;
     }
@@ -46,7 +46,7 @@ class BadRequestError extends \ArrayObject
      *
      * @return self
      */
-    public function setCorrelationId(string $correlationId) : self
+    public function setCorrelationId(string $correlationId): self
     {
         $this->initialized['correlationId'] = true;
         $this->correlationId = $correlationId;
@@ -57,7 +57,7 @@ class BadRequestError extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -68,7 +68,7 @@ class BadRequestError extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -79,7 +79,7 @@ class BadRequestError extends \ArrayObject
      *
      * @return string
      */
-    public function getDetails() : string
+    public function getDetails(): string
     {
         return $this->details;
     }
@@ -90,7 +90,7 @@ class BadRequestError extends \ArrayObject
      *
      * @return self
      */
-    public function setDetails(string $details) : self
+    public function setDetails(string $details): self
     {
         $this->initialized['details'] = true;
         $this->details = $details;

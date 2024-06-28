@@ -8,7 +8,7 @@ class User
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class User
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -58,7 +58,7 @@ class User
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -69,7 +69,7 @@ class User
      *
      * @return string|null
      */
-    public function getFirstName() : ?string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
@@ -80,7 +80,7 @@ class User
      *
      * @return self
      */
-    public function setFirstName(?string $firstName) : self
+    public function setFirstName(?string $firstName): self
     {
         $this->initialized['firstName'] = true;
         $this->firstName = $firstName;
@@ -91,7 +91,7 @@ class User
      *
      * @return string|null
      */
-    public function getLastName() : ?string
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
@@ -102,7 +102,7 @@ class User
      *
      * @return self
      */
-    public function setLastName(?string $lastName) : self
+    public function setLastName(?string $lastName): self
     {
         $this->initialized['lastName'] = true;
         $this->lastName = $lastName;
@@ -113,7 +113,7 @@ class User
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -124,7 +124,7 @@ class User
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -135,7 +135,7 @@ class User
      *
      * @return bool
      */
-    public function getIsDeleted() : bool
+    public function getIsDeleted(): bool
     {
         return $this->isDeleted;
     }
@@ -146,7 +146,7 @@ class User
      *
      * @return self
      */
-    public function setIsDeleted(bool $isDeleted) : self
+    public function setIsDeleted(bool $isDeleted): self
     {
         $this->initialized['isDeleted'] = true;
         $this->isDeleted = $isDeleted;

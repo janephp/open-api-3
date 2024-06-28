@@ -8,7 +8,7 @@ class IdpGroupToUserRoleMapping
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class IdpGroupToUserRoleMapping
      *
      * @return string|null
      */
-    public function getGroup() : ?string
+    public function getGroup(): ?string
     {
         return $this->group;
     }
@@ -40,7 +40,7 @@ class IdpGroupToUserRoleMapping
      *
      * @return self
      */
-    public function setGroup(?string $group) : self
+    public function setGroup(?string $group): self
     {
         $this->initialized['group'] = true;
         $this->group = $group;
@@ -51,7 +51,7 @@ class IdpGroupToUserRoleMapping
      *
      * @return string|null
      */
-    public function getUserRoleId() : ?string
+    public function getUserRoleId(): ?string
     {
         return $this->userRoleId;
     }
@@ -62,7 +62,7 @@ class IdpGroupToUserRoleMapping
      *
      * @return self
      */
-    public function setUserRoleId(?string $userRoleId) : self
+    public function setUserRoleId(?string $userRoleId): self
     {
         $this->initialized['userRoleId'] = true;
         $this->userRoleId = $userRoleId;

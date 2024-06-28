@@ -8,7 +8,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -61,7 +61,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return ReviewJsonhalReviewWriteLinks
      */
-    public function getLinks() : ReviewJsonhalReviewWriteLinks
+    public function getLinks(): ReviewJsonhalReviewWriteLinks
     {
         return $this->links;
     }
@@ -72,7 +72,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(ReviewJsonhalReviewWriteLinks $links) : self
+    public function setLinks(ReviewJsonhalReviewWriteLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;
@@ -83,7 +83,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -94,7 +94,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -105,7 +105,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return int
      */
-    public function getRating() : int
+    public function getRating(): int
     {
         return $this->rating;
     }
@@ -116,7 +116,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return self
      */
-    public function setRating(int $rating) : self
+    public function setRating(int $rating): self
     {
         $this->initialized['rating'] = true;
         $this->rating = $rating;
@@ -129,7 +129,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLetter() : ?string
+    public function getLetter(): ?string
     {
         return $this->letter;
     }
@@ -142,7 +142,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return self
      */
-    public function setLetter(?string $letter) : self
+    public function setLetter(?string $letter): self
     {
         $this->initialized['letter'] = true;
         $this->letter = $letter;
@@ -153,7 +153,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return string
      */
-    public function getBook() : string
+    public function getBook(): string
     {
         return $this->book;
     }
@@ -164,7 +164,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return self
      */
-    public function setBook(string $book) : self
+    public function setBook(string $book): self
     {
         $this->initialized['book'] = true;
         $this->book = $book;
@@ -175,7 +175,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAuthor() : ?string
+    public function getAuthor(): ?string
     {
         return $this->author;
     }
@@ -186,7 +186,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(?string $author) : self
+    public function setAuthor(?string $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -197,7 +197,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getPublicationDate() : ?\DateTime
+    public function getPublicationDate(): ?\DateTime
     {
         return $this->publicationDate;
     }
@@ -208,7 +208,7 @@ class ReviewJsonhalReviewWrite extends \ArrayObject
      *
      * @return self
      */
-    public function setPublicationDate(?\DateTime $publicationDate) : self
+    public function setPublicationDate(?\DateTime $publicationDate): self
     {
         $this->initialized['publicationDate'] = true;
         $this->publicationDate = $publicationDate;

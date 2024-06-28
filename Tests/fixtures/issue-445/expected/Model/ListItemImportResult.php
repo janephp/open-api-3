@@ -8,7 +8,7 @@ class ListItemImportResult
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ListItemImportResult
      *
      * @return int
      */
-    public function getImportedListItemCount() : int
+    public function getImportedListItemCount(): int
     {
         return $this->importedListItemCount;
     }
@@ -58,7 +58,7 @@ class ListItemImportResult
      *
      * @return self
      */
-    public function setImportedListItemCount(int $importedListItemCount) : self
+    public function setImportedListItemCount(int $importedListItemCount): self
     {
         $this->initialized['importedListItemCount'] = true;
         $this->importedListItemCount = $importedListItemCount;
@@ -69,7 +69,7 @@ class ListItemImportResult
      *
      * @return int
      */
-    public function getSkippedListItemCount() : int
+    public function getSkippedListItemCount(): int
     {
         return $this->skippedListItemCount;
     }
@@ -80,7 +80,7 @@ class ListItemImportResult
      *
      * @return self
      */
-    public function setSkippedListItemCount(int $skippedListItemCount) : self
+    public function setSkippedListItemCount(int $skippedListItemCount): self
     {
         $this->initialized['skippedListItemCount'] = true;
         $this->skippedListItemCount = $skippedListItemCount;
@@ -91,7 +91,7 @@ class ListItemImportResult
      *
      * @return int
      */
-    public function getTotalListItemCount() : int
+    public function getTotalListItemCount(): int
     {
         return $this->totalListItemCount;
     }
@@ -102,7 +102,7 @@ class ListItemImportResult
      *
      * @return self
      */
-    public function setTotalListItemCount(int $totalListItemCount) : self
+    public function setTotalListItemCount(int $totalListItemCount): self
     {
         $this->initialized['totalListItemCount'] = true;
         $this->totalListItemCount = $totalListItemCount;
@@ -113,7 +113,7 @@ class ListItemImportResult
      *
      * @return list<string>|null
      */
-    public function getSkippedListItemIds() : ?array
+    public function getSkippedListItemIds(): ?array
     {
         return $this->skippedListItemIds;
     }
@@ -124,7 +124,7 @@ class ListItemImportResult
      *
      * @return self
      */
-    public function setSkippedListItemIds(?array $skippedListItemIds) : self
+    public function setSkippedListItemIds(?array $skippedListItemIds): self
     {
         $this->initialized['skippedListItemIds'] = true;
         $this->skippedListItemIds = $skippedListItemIds;
@@ -135,7 +135,7 @@ class ListItemImportResult
      *
      * @return list<string>|null
      */
-    public function getImportedListItemIds() : ?array
+    public function getImportedListItemIds(): ?array
     {
         return $this->importedListItemIds;
     }
@@ -146,7 +146,7 @@ class ListItemImportResult
      *
      * @return self
      */
-    public function setImportedListItemIds(?array $importedListItemIds) : self
+    public function setImportedListItemIds(?array $importedListItemIds): self
     {
         $this->initialized['importedListItemIds'] = true;
         $this->importedListItemIds = $importedListItemIds;

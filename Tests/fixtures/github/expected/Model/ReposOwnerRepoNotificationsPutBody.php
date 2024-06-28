@@ -8,7 +8,7 @@ class ReposOwnerRepoNotificationsPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ReposOwnerRepoNotificationsPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLastReadAt() : string
+    public function getLastReadAt(): string
     {
         return $this->lastReadAt;
     }
@@ -34,7 +34,7 @@ class ReposOwnerRepoNotificationsPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLastReadAt(string $lastReadAt) : self
+    public function setLastReadAt(string $lastReadAt): self
     {
         $this->initialized['lastReadAt'] = true;
         $this->lastReadAt = $lastReadAt;

@@ -8,7 +8,7 @@ class OutputFormatEditable extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class OutputFormatEditable extends \ArrayObject
      *
      * @return self
      */
-    public function setSourceOutputFormats($sourceOutputFormats) : self
+    public function setSourceOutputFormats($sourceOutputFormats): self
     {
         $this->initialized['sourceOutputFormats'] = true;
         $this->sourceOutputFormats = $sourceOutputFormats;
@@ -93,7 +93,7 @@ class OutputFormatEditable extends \ArrayObject
      *
      * @return self
      */
-    public function setFormat($format) : self
+    public function setFormat($format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -115,7 +115,7 @@ class OutputFormatEditable extends \ArrayObject
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -126,7 +126,7 @@ class OutputFormatEditable extends \ArrayObject
      *
      * @return string
      */
-    public function getRetentionTime() : string
+    public function getRetentionTime(): string
     {
         return $this->retentionTime;
     }
@@ -137,7 +137,7 @@ class OutputFormatEditable extends \ArrayObject
      *
      * @return self
      */
-    public function setRetentionTime(string $retentionTime) : self
+    public function setRetentionTime(string $retentionTime): self
     {
         $this->initialized['retentionTime'] = true;
         $this->retentionTime = $retentionTime;
@@ -161,7 +161,7 @@ class OutputFormatEditable extends \ArrayObject
     *
     * @return self
     */
-    public function setDownloadFileNamePatterns($downloadFileNamePatterns) : self
+    public function setDownloadFileNamePatterns($downloadFileNamePatterns): self
     {
         $this->initialized['downloadFileNamePatterns'] = true;
         $this->downloadFileNamePatterns = $downloadFileNamePatterns;
@@ -172,7 +172,7 @@ class OutputFormatEditable extends \ArrayObject
      *
      * @return bool
      */
-    public function getViewForAll() : bool
+    public function getViewForAll(): bool
     {
         return $this->viewForAll;
     }
@@ -183,7 +183,7 @@ class OutputFormatEditable extends \ArrayObject
      *
      * @return self
      */
-    public function setViewForAll(bool $viewForAll) : self
+    public function setViewForAll(bool $viewForAll): self
     {
         $this->initialized['viewForAll'] = true;
         $this->viewForAll = $viewForAll;
@@ -194,7 +194,7 @@ class OutputFormatEditable extends \ArrayObject
      *
      * @return bool
      */
-    public function getEnableXmpWriteback() : bool
+    public function getEnableXmpWriteback(): bool
     {
         return $this->enableXmpWriteback;
     }
@@ -205,7 +205,7 @@ class OutputFormatEditable extends \ArrayObject
      *
      * @return self
      */
-    public function setEnableXmpWriteback(bool $enableXmpWriteback) : self
+    public function setEnableXmpWriteback(bool $enableXmpWriteback): self
     {
         $this->initialized['enableXmpWriteback'] = true;
         $this->enableXmpWriteback = $enableXmpWriteback;

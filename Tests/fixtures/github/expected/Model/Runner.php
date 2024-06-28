@@ -8,7 +8,7 @@ class Runner extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class Runner extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -52,7 +52,7 @@ class Runner extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -63,7 +63,7 @@ class Runner extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -74,7 +74,7 @@ class Runner extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -85,7 +85,7 @@ class Runner extends \ArrayObject
      *
      * @return string
      */
-    public function getOs() : string
+    public function getOs(): string
     {
         return $this->os;
     }
@@ -96,7 +96,7 @@ class Runner extends \ArrayObject
      *
      * @return self
      */
-    public function setOs(string $os) : self
+    public function setOs(string $os): self
     {
         $this->initialized['os'] = true;
         $this->os = $os;
@@ -107,7 +107,7 @@ class Runner extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -118,7 +118,7 @@ class Runner extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;

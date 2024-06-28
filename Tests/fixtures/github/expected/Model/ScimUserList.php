@@ -8,7 +8,7 @@ class ScimUserList extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getSchemas() : array
+    public function getSchemas(): array
     {
         return $this->schemas;
     }
@@ -58,7 +58,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return self
      */
-    public function setSchemas(array $schemas) : self
+    public function setSchemas(array $schemas): self
     {
         $this->initialized['schemas'] = true;
         $this->schemas = $schemas;
@@ -69,7 +69,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalResults() : int
+    public function getTotalResults(): int
     {
         return $this->totalResults;
     }
@@ -80,7 +80,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalResults(int $totalResults) : self
+    public function setTotalResults(int $totalResults): self
     {
         $this->initialized['totalResults'] = true;
         $this->totalResults = $totalResults;
@@ -91,7 +91,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return int
      */
-    public function getItemsPerPage() : int
+    public function getItemsPerPage(): int
     {
         return $this->itemsPerPage;
     }
@@ -102,7 +102,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return self
      */
-    public function setItemsPerPage(int $itemsPerPage) : self
+    public function setItemsPerPage(int $itemsPerPage): self
     {
         $this->initialized['itemsPerPage'] = true;
         $this->itemsPerPage = $itemsPerPage;
@@ -113,7 +113,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return int
      */
-    public function getStartIndex() : int
+    public function getStartIndex(): int
     {
         return $this->startIndex;
     }
@@ -124,7 +124,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return self
      */
-    public function setStartIndex(int $startIndex) : self
+    public function setStartIndex(int $startIndex): self
     {
         $this->initialized['startIndex'] = true;
         $this->startIndex = $startIndex;
@@ -135,7 +135,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return list<ScimUser>
      */
-    public function getResources() : array
+    public function getResources(): array
     {
         return $this->resources;
     }
@@ -146,7 +146,7 @@ class ScimUserList extends \ArrayObject
      *
      * @return self
      */
-    public function setResources(array $resources) : self
+    public function setResources(array $resources): self
     {
         $this->initialized['resources'] = true;
         $this->resources = $resources;

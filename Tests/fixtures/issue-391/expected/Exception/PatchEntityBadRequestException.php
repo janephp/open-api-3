@@ -13,7 +13,7 @@ class PatchEntityBadRequestException extends BadRequestException
         parent::__construct('Invalid request');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -64,7 +64,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -75,7 +75,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -86,7 +86,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -97,7 +97,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return string
      */
-    public function getHydraFirst() : string
+    public function getHydraFirst(): string
     {
         return $this->hydraFirst;
     }
@@ -108,7 +108,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraFirst(string $hydraFirst) : self
+    public function setHydraFirst(string $hydraFirst): self
     {
         $this->initialized['hydraFirst'] = true;
         $this->hydraFirst = $hydraFirst;
@@ -119,7 +119,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return string
      */
-    public function getHydraLast() : string
+    public function getHydraLast(): string
     {
         return $this->hydraLast;
     }
@@ -130,7 +130,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraLast(string $hydraLast) : self
+    public function setHydraLast(string $hydraLast): self
     {
         $this->initialized['hydraLast'] = true;
         $this->hydraLast = $hydraLast;
@@ -141,7 +141,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return string
      */
-    public function getHydraPrevious() : string
+    public function getHydraPrevious(): string
     {
         return $this->hydraPrevious;
     }
@@ -152,7 +152,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraPrevious(string $hydraPrevious) : self
+    public function setHydraPrevious(string $hydraPrevious): self
     {
         $this->initialized['hydraPrevious'] = true;
         $this->hydraPrevious = $hydraPrevious;
@@ -163,7 +163,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return string
      */
-    public function getHydraNext() : string
+    public function getHydraNext(): string
     {
         return $this->hydraNext;
     }
@@ -174,7 +174,7 @@ class TopBooksGetLdjsonResponse200HydraView extends \ArrayObject
      *
      * @return self
      */
-    public function setHydraNext(string $hydraNext) : self
+    public function setHydraNext(string $hydraNext): self
     {
         $this->initialized['hydraNext'] = true;
         $this->hydraNext = $hydraNext;

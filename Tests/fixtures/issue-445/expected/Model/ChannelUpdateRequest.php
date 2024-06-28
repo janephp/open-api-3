@@ -8,7 +8,7 @@ class ChannelUpdateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class ChannelUpdateRequest
      *
      * @return list<SortInfo>|null
      */
-    public function getSort() : ?array
+    public function getSort(): ?array
     {
         return $this->sort;
     }
@@ -94,7 +94,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setSort(?array $sort) : self
+    public function setSort(?array $sort): self
     {
         $this->initialized['sort'] = true;
         $this->sort = $sort;
@@ -105,7 +105,7 @@ class ChannelUpdateRequest
      *
      * @return int
      */
-    public function getSortOrder() : int
+    public function getSortOrder(): int
     {
         return $this->sortOrder;
     }
@@ -116,7 +116,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setSortOrder(int $sortOrder) : self
+    public function setSortOrder(int $sortOrder): self
     {
         $this->initialized['sortOrder'] = true;
         $this->sortOrder = $sortOrder;
@@ -127,7 +127,7 @@ class ChannelUpdateRequest
      *
      * @return list<SortField>
      */
-    public function getSortFields() : array
+    public function getSortFields(): array
     {
         return $this->sortFields;
     }
@@ -138,7 +138,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setSortFields(array $sortFields) : self
+    public function setSortFields(array $sortFields): self
     {
         $this->initialized['sortFields'] = true;
         $this->sortFields = $sortFields;
@@ -149,7 +149,7 @@ class ChannelUpdateRequest
      *
      * @return array<string, string>
      */
-    public function getNames() : iterable
+    public function getNames(): iterable
     {
         return $this->names;
     }
@@ -160,7 +160,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setNames(iterable $names) : self
+    public function setNames(iterable $names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -171,7 +171,7 @@ class ChannelUpdateRequest
      *
      * @return string|null
      */
-    public function getSearchIndexId() : ?string
+    public function getSearchIndexId(): ?string
     {
         return $this->searchIndexId;
     }
@@ -182,7 +182,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setSearchIndexId(?string $searchIndexId) : self
+    public function setSearchIndexId(?string $searchIndexId): self
     {
         $this->initialized['searchIndexId'] = true;
         $this->searchIndexId = $searchIndexId;
@@ -193,7 +193,7 @@ class ChannelUpdateRequest
      *
      * @return list<string>|null
      */
-    public function getGrantedUserRoleIds() : ?array
+    public function getGrantedUserRoleIds(): ?array
     {
         return $this->grantedUserRoleIds;
     }
@@ -204,7 +204,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setGrantedUserRoleIds(?array $grantedUserRoleIds) : self
+    public function setGrantedUserRoleIds(?array $grantedUserRoleIds): self
     {
         $this->initialized['grantedUserRoleIds'] = true;
         $this->grantedUserRoleIds = $grantedUserRoleIds;
@@ -215,7 +215,7 @@ class ChannelUpdateRequest
      *
      * @return list<AggregatorBase>|null
      */
-    public function getAggregations() : ?array
+    public function getAggregations(): ?array
     {
         return $this->aggregations;
     }
@@ -226,7 +226,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setAggregations(?array $aggregations) : self
+    public function setAggregations(?array $aggregations): self
     {
         $this->initialized['aggregations'] = true;
         $this->aggregations = $aggregations;
@@ -248,7 +248,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -259,7 +259,7 @@ class ChannelUpdateRequest
      *
      * @return list<string>|null
      */
-    public function getExtendedSimpleSearchFields() : ?array
+    public function getExtendedSimpleSearchFields(): ?array
     {
         return $this->extendedSimpleSearchFields;
     }
@@ -270,7 +270,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setExtendedSimpleSearchFields(?array $extendedSimpleSearchFields) : self
+    public function setExtendedSimpleSearchFields(?array $extendedSimpleSearchFields): self
     {
         $this->initialized['extendedSimpleSearchFields'] = true;
         $this->extendedSimpleSearchFields = $extendedSimpleSearchFields;
@@ -292,7 +292,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setMissingResultsDisplayPatterns($missingResultsDisplayPatterns) : self
+    public function setMissingResultsDisplayPatterns($missingResultsDisplayPatterns): self
     {
         $this->initialized['missingResultsDisplayPatterns'] = true;
         $this->missingResultsDisplayPatterns = $missingResultsDisplayPatterns;
@@ -303,7 +303,7 @@ class ChannelUpdateRequest
      *
      * @return bool
      */
-    public function getViewForAll() : bool
+    public function getViewForAll(): bool
     {
         return $this->viewForAll;
     }
@@ -314,7 +314,7 @@ class ChannelUpdateRequest
      *
      * @return self
      */
-    public function setViewForAll(bool $viewForAll) : self
+    public function setViewForAll(bool $viewForAll): self
     {
         $this->initialized['viewForAll'] = true;
         $this->viewForAll = $viewForAll;

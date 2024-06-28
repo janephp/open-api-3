@@ -8,7 +8,7 @@ class PrefixFilter extends FilterBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -31,7 +31,7 @@ class PrefixFilter extends FilterBase
     *
     * @return string
     */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -43,7 +43,7 @@ class PrefixFilter extends FilterBase
     *
     * @return self
     */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -54,7 +54,7 @@ class PrefixFilter extends FilterBase
      *
      * @return string
      */
-    public function getPrefix() : string
+    public function getPrefix(): string
     {
         return $this->prefix;
     }
@@ -65,7 +65,7 @@ class PrefixFilter extends FilterBase
      *
      * @return self
      */
-    public function setPrefix(string $prefix) : self
+    public function setPrefix(string $prefix): self
     {
         $this->initialized['prefix'] = true;
         $this->prefix = $prefix;

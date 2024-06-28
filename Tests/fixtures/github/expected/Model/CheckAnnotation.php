@@ -8,7 +8,7 @@ class CheckAnnotation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -88,7 +88,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -99,7 +99,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return int
      */
-    public function getStartLine() : int
+    public function getStartLine(): int
     {
         return $this->startLine;
     }
@@ -110,7 +110,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setStartLine(int $startLine) : self
+    public function setStartLine(int $startLine): self
     {
         $this->initialized['startLine'] = true;
         $this->startLine = $startLine;
@@ -121,7 +121,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return int
      */
-    public function getEndLine() : int
+    public function getEndLine(): int
     {
         return $this->endLine;
     }
@@ -132,7 +132,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setEndLine(int $endLine) : self
+    public function setEndLine(int $endLine): self
     {
         $this->initialized['endLine'] = true;
         $this->endLine = $endLine;
@@ -143,7 +143,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return int|null
      */
-    public function getStartColumn() : ?int
+    public function getStartColumn(): ?int
     {
         return $this->startColumn;
     }
@@ -154,7 +154,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setStartColumn(?int $startColumn) : self
+    public function setStartColumn(?int $startColumn): self
     {
         $this->initialized['startColumn'] = true;
         $this->startColumn = $startColumn;
@@ -165,7 +165,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return int|null
      */
-    public function getEndColumn() : ?int
+    public function getEndColumn(): ?int
     {
         return $this->endColumn;
     }
@@ -176,7 +176,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setEndColumn(?int $endColumn) : self
+    public function setEndColumn(?int $endColumn): self
     {
         $this->initialized['endColumn'] = true;
         $this->endColumn = $endColumn;
@@ -187,7 +187,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAnnotationLevel() : ?string
+    public function getAnnotationLevel(): ?string
     {
         return $this->annotationLevel;
     }
@@ -198,7 +198,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setAnnotationLevel(?string $annotationLevel) : self
+    public function setAnnotationLevel(?string $annotationLevel): self
     {
         $this->initialized['annotationLevel'] = true;
         $this->annotationLevel = $annotationLevel;
@@ -209,7 +209,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTitle() : ?string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -220,7 +220,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(?string $title) : self
+    public function setTitle(?string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -231,7 +231,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return string|null
      */
-    public function getMessage() : ?string
+    public function getMessage(): ?string
     {
         return $this->message;
     }
@@ -242,7 +242,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(?string $message) : self
+    public function setMessage(?string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -253,7 +253,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return string|null
      */
-    public function getRawDetails() : ?string
+    public function getRawDetails(): ?string
     {
         return $this->rawDetails;
     }
@@ -264,7 +264,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setRawDetails(?string $rawDetails) : self
+    public function setRawDetails(?string $rawDetails): self
     {
         $this->initialized['rawDetails'] = true;
         $this->rawDetails = $rawDetails;
@@ -275,7 +275,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return string
      */
-    public function getBlobHref() : string
+    public function getBlobHref(): string
     {
         return $this->blobHref;
     }
@@ -286,7 +286,7 @@ class CheckAnnotation extends \ArrayObject
      *
      * @return self
      */
-    public function setBlobHref(string $blobHref) : self
+    public function setBlobHref(string $blobHref): self
     {
         $this->initialized['blobHref'] = true;
         $this->blobHref = $blobHref;

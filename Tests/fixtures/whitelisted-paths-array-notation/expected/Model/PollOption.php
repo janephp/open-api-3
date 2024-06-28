@@ -8,7 +8,7 @@ class PollOption extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PollOption extends \ArrayObject
      *
      * @return int
      */
-    public function getPosition() : int
+    public function getPosition(): int
     {
         return $this->position;
     }
@@ -46,7 +46,7 @@ class PollOption extends \ArrayObject
      *
      * @return self
      */
-    public function setPosition(int $position) : self
+    public function setPosition(int $position): self
     {
         $this->initialized['position'] = true;
         $this->position = $position;
@@ -57,7 +57,7 @@ class PollOption extends \ArrayObject
      *
      * @return string
      */
-    public function getLabel() : string
+    public function getLabel(): string
     {
         return $this->label;
     }
@@ -68,7 +68,7 @@ class PollOption extends \ArrayObject
      *
      * @return self
      */
-    public function setLabel(string $label) : self
+    public function setLabel(string $label): self
     {
         $this->initialized['label'] = true;
         $this->label = $label;
@@ -79,7 +79,7 @@ class PollOption extends \ArrayObject
      *
      * @return int
      */
-    public function getVotes() : int
+    public function getVotes(): int
     {
         return $this->votes;
     }
@@ -90,7 +90,7 @@ class PollOption extends \ArrayObject
      *
      * @return self
      */
-    public function setVotes(int $votes) : self
+    public function setVotes(int $votes): self
     {
         $this->initialized['votes'] = true;
         $this->votes = $votes;

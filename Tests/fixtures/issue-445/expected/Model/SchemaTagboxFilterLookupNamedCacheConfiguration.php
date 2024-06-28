@@ -8,7 +8,7 @@ class SchemaTagboxFilterLookupNamedCacheConfiguration extends NamedCacheConfigur
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class SchemaTagboxFilterLookupNamedCacheConfiguration extends NamedCacheConfigur
      *
      * @return string|null
      */
-    public function getSchemaId() : ?string
+    public function getSchemaId(): ?string
     {
         return $this->schemaId;
     }
@@ -34,7 +34,7 @@ class SchemaTagboxFilterLookupNamedCacheConfiguration extends NamedCacheConfigur
      *
      * @return self
      */
-    public function setSchemaId(?string $schemaId) : self
+    public function setSchemaId(?string $schemaId): self
     {
         $this->initialized['schemaId'] = true;
         $this->schemaId = $schemaId;

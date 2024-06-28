@@ -18,11 +18,11 @@ class ContentTransferOwnershipManyBadRequestException extends BadRequestExceptio
         $this->pictureparkValidationException = $pictureparkValidationException;
         $this->response = $response;
     }
-    public function getPictureparkValidationException() : \PicturePark\API\Model\PictureparkValidationException
+    public function getPictureparkValidationException(): \PicturePark\API\Model\PictureparkValidationException
     {
         return $this->pictureparkValidationException;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

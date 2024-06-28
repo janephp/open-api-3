@@ -8,7 +8,7 @@ class XmpMappingEntrySearchRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -76,7 +76,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return bool
      */
-    public function getDebugMode() : bool
+    public function getDebugMode(): bool
     {
         return $this->debugMode;
     }
@@ -87,7 +87,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return self
      */
-    public function setDebugMode(bool $debugMode) : self
+    public function setDebugMode(bool $debugMode): self
     {
         $this->initialized['debugMode'] = true;
         $this->debugMode = $debugMode;
@@ -103,7 +103,7 @@ class XmpMappingEntrySearchRequest
     *
     * @return list<AggregationFilter>|null
     */
-    public function getAggregationFilters() : ?array
+    public function getAggregationFilters(): ?array
     {
         return $this->aggregationFilters;
     }
@@ -119,7 +119,7 @@ class XmpMappingEntrySearchRequest
     *
     * @return self
     */
-    public function setAggregationFilters(?array $aggregationFilters) : self
+    public function setAggregationFilters(?array $aggregationFilters): self
     {
         $this->initialized['aggregationFilters'] = true;
         $this->aggregationFilters = $aggregationFilters;
@@ -130,7 +130,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return list<AggregatorBase>|null
      */
-    public function getAggregators() : ?array
+    public function getAggregators(): ?array
     {
         return $this->aggregators;
     }
@@ -141,7 +141,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return self
      */
-    public function setAggregators(?array $aggregators) : self
+    public function setAggregators(?array $aggregators): self
     {
         $this->initialized['aggregators'] = true;
         $this->aggregators = $aggregators;
@@ -163,7 +163,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -174,7 +174,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -185,7 +185,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -196,7 +196,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -207,7 +207,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;
@@ -218,7 +218,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -229,7 +229,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -240,7 +240,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return list<string>|null
      */
-    public function getSearchBehaviors() : ?array
+    public function getSearchBehaviors(): ?array
     {
         return $this->searchBehaviors;
     }
@@ -251,7 +251,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return self
      */
-    public function setSearchBehaviors(?array $searchBehaviors) : self
+    public function setSearchBehaviors(?array $searchBehaviors): self
     {
         $this->initialized['searchBehaviors'] = true;
         $this->searchBehaviors = $searchBehaviors;
@@ -262,7 +262,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return list<SortInfo>|null
      */
-    public function getSort() : ?array
+    public function getSort(): ?array
     {
         return $this->sort;
     }
@@ -273,7 +273,7 @@ class XmpMappingEntrySearchRequest
      *
      * @return self
      */
-    public function setSort(?array $sort) : self
+    public function setSort(?array $sort): self
     {
         $this->initialized['sort'] = true;
         $this->sort = $sort;

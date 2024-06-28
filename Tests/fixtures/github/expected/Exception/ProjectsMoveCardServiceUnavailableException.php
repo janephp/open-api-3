@@ -18,11 +18,11 @@ class ProjectsMoveCardServiceUnavailableException extends ServiceUnavailableExce
         $this->projectsColumnsCardsCardIdMovesPostResponse503 = $projectsColumnsCardsCardIdMovesPostResponse503;
         $this->response = $response;
     }
-    public function getProjectsColumnsCardsCardIdMovesPostResponse503() : \Github\Model\ProjectsColumnsCardsCardIdMovesPostResponse503
+    public function getProjectsColumnsCardsCardIdMovesPostResponse503(): \Github\Model\ProjectsColumnsCardsCardIdMovesPostResponse503
     {
         return $this->projectsColumnsCardsCardIdMovesPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

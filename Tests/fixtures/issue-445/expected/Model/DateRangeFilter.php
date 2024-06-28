@@ -8,7 +8,7 @@ class DateRangeFilter extends FilterBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -31,7 +31,7 @@ class DateRangeFilter extends FilterBase
     *
     * @return string
     */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -43,7 +43,7 @@ class DateRangeFilter extends FilterBase
     *
     * @return self
     */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -65,7 +65,7 @@ class DateRangeFilter extends FilterBase
      *
      * @return self
      */
-    public function setRange($range) : self
+    public function setRange($range): self
     {
         $this->initialized['range'] = true;
         $this->range = $range;

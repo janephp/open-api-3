@@ -18,11 +18,11 @@ class GistsCheckIsStarredNotFoundException extends NotFoundException
         $this->gistsGistIdStarGetResponse404 = $gistsGistIdStarGetResponse404;
         $this->response = $response;
     }
-    public function getGistsGistIdStarGetResponse404() : \Github\Model\GistsGistIdStarGetResponse404
+    public function getGistsGistIdStarGetResponse404(): \Github\Model\GistsGistIdStarGetResponse404
     {
         return $this->gistsGistIdStarGetResponse404;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

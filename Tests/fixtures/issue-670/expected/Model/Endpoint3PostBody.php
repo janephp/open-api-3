@@ -8,7 +8,7 @@ class Endpoint3PostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class Endpoint3PostBody extends \ArrayObject
      *
      * @return Endpoint3PostBodyPostField3
      */
-    public function getPostField3() : Endpoint3PostBodyPostField3
+    public function getPostField3(): Endpoint3PostBodyPostField3
     {
         return $this->postField3;
     }
@@ -34,7 +34,7 @@ class Endpoint3PostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPostField3(Endpoint3PostBodyPostField3 $postField3) : self
+    public function setPostField3(Endpoint3PostBodyPostField3 $postField3): self
     {
         $this->initialized['postField3'] = true;
         $this->postField3 = $postField3;

@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportDirectors extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportDirectors extends \ArrayObject
      *
      * @return list<GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItem>
      */
-    public function getCurrentDirectors() : array
+    public function getCurrentDirectors(): array
     {
         return $this->currentDirectors;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportDirectors extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentDirectors(array $currentDirectors) : self
+    public function setCurrentDirectors(array $currentDirectors): self
     {
         $this->initialized['currentDirectors'] = true;
         $this->currentDirectors = $currentDirectors;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportDirectors extends \ArrayObject
      *
      * @return list<GbCompanyReportExampleResponseReportDirectorsPreviousDirectorsItem>
      */
-    public function getPreviousDirectors() : array
+    public function getPreviousDirectors(): array
     {
         return $this->previousDirectors;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportDirectors extends \ArrayObject
      *
      * @return self
      */
-    public function setPreviousDirectors(array $previousDirectors) : self
+    public function setPreviousDirectors(array $previousDirectors): self
     {
         $this->initialized['previousDirectors'] = true;
         $this->previousDirectors = $previousDirectors;

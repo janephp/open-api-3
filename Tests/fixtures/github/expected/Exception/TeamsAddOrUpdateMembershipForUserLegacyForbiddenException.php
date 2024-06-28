@@ -13,7 +13,7 @@ class TeamsAddOrUpdateMembershipForUserLegacyForbiddenException extends Forbidde
         parent::__construct('Response if team synchronization is set up');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

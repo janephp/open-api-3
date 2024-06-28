@@ -8,7 +8,7 @@ class DocumentHistory
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class DocumentHistory
      *
      * @return string|null
      */
-    public function getDocumentId() : ?string
+    public function getDocumentId(): ?string
     {
         return $this->documentId;
     }
@@ -82,7 +82,7 @@ class DocumentHistory
      *
      * @return self
      */
-    public function setDocumentId(?string $documentId) : self
+    public function setDocumentId(?string $documentId): self
     {
         $this->initialized['documentId'] = true;
         $this->documentId = $documentId;
@@ -93,7 +93,7 @@ class DocumentHistory
      *
      * @return int
      */
-    public function getDocumentVersion() : int
+    public function getDocumentVersion(): int
     {
         return $this->documentVersion;
     }
@@ -104,7 +104,7 @@ class DocumentHistory
      *
      * @return self
      */
-    public function setDocumentVersion(int $documentVersion) : self
+    public function setDocumentVersion(int $documentVersion): self
     {
         $this->initialized['documentVersion'] = true;
         $this->documentVersion = $documentVersion;
@@ -115,7 +115,7 @@ class DocumentHistory
      *
      * @return string|null
      */
-    public function getDocumentType() : ?string
+    public function getDocumentType(): ?string
     {
         return $this->documentType;
     }
@@ -126,7 +126,7 @@ class DocumentHistory
      *
      * @return self
      */
-    public function setDocumentType(?string $documentType) : self
+    public function setDocumentType(?string $documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;
@@ -137,7 +137,7 @@ class DocumentHistory
      *
      * @return \DateTime
      */
-    public function getDocumentDate() : \DateTime
+    public function getDocumentDate(): \DateTime
     {
         return $this->documentDate;
     }
@@ -148,7 +148,7 @@ class DocumentHistory
      *
      * @return self
      */
-    public function setDocumentDate(\DateTime $documentDate) : self
+    public function setDocumentDate(\DateTime $documentDate): self
     {
         $this->initialized['documentDate'] = true;
         $this->documentDate = $documentDate;
@@ -159,7 +159,7 @@ class DocumentHistory
      *
      * @return string|null
      */
-    public function getDocument() : ?string
+    public function getDocument(): ?string
     {
         return $this->document;
     }
@@ -170,7 +170,7 @@ class DocumentHistory
      *
      * @return self
      */
-    public function setDocument(?string $document) : self
+    public function setDocument(?string $document): self
     {
         $this->initialized['document'] = true;
         $this->document = $document;
@@ -181,7 +181,7 @@ class DocumentHistory
      *
      * @return \DateTime
      */
-    public function getTimestamp() : \DateTime
+    public function getTimestamp(): \DateTime
     {
         return $this->timestamp;
     }
@@ -192,7 +192,7 @@ class DocumentHistory
      *
      * @return self
      */
-    public function setTimestamp(\DateTime $timestamp) : self
+    public function setTimestamp(\DateTime $timestamp): self
     {
         $this->initialized['timestamp'] = true;
         $this->timestamp = $timestamp;
@@ -214,7 +214,7 @@ class DocumentHistory
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;
@@ -225,7 +225,7 @@ class DocumentHistory
      *
      * @return bool
      */
-    public function getDeleted() : bool
+    public function getDeleted(): bool
     {
         return $this->deleted;
     }
@@ -236,7 +236,7 @@ class DocumentHistory
      *
      * @return self
      */
-    public function setDeleted(bool $deleted) : self
+    public function setDeleted(bool $deleted): self
     {
         $this->initialized['deleted'] = true;
         $this->deleted = $deleted;
@@ -247,7 +247,7 @@ class DocumentHistory
      *
      * @return string
      */
-    public function getAction() : string
+    public function getAction(): string
     {
         return $this->action;
     }
@@ -258,7 +258,7 @@ class DocumentHistory
      *
      * @return self
      */
-    public function setAction(string $action) : self
+    public function setAction(string $action): self
     {
         $this->initialized['action'] = true;
         $this->action = $action;

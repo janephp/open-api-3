@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -161,7 +161,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTangibleAssets() : float
+    public function getTangibleAssets(): float
     {
         return $this->tangibleAssets;
     }
@@ -172,7 +172,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTangibleAssets(float $tangibleAssets) : self
+    public function setTangibleAssets(float $tangibleAssets): self
     {
         $this->initialized['tangibleAssets'] = true;
         $this->tangibleAssets = $tangibleAssets;
@@ -183,7 +183,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getIntangibleAssets() : float
+    public function getIntangibleAssets(): float
     {
         return $this->intangibleAssets;
     }
@@ -194,7 +194,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setIntangibleAssets(float $intangibleAssets) : self
+    public function setIntangibleAssets(float $intangibleAssets): self
     {
         $this->initialized['intangibleAssets'] = true;
         $this->intangibleAssets = $intangibleAssets;
@@ -205,7 +205,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTotalFixedAssets() : float
+    public function getTotalFixedAssets(): float
     {
         return $this->totalFixedAssets;
     }
@@ -216,7 +216,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTotalFixedAssets(float $totalFixedAssets) : self
+    public function setTotalFixedAssets(float $totalFixedAssets): self
     {
         $this->initialized['totalFixedAssets'] = true;
         $this->totalFixedAssets = $totalFixedAssets;
@@ -227,7 +227,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getStock() : float
+    public function getStock(): float
     {
         return $this->stock;
     }
@@ -238,7 +238,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setStock(float $stock) : self
+    public function setStock(float $stock): self
     {
         $this->initialized['stock'] = true;
         $this->stock = $stock;
@@ -249,7 +249,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTradeDebtors() : float
+    public function getTradeDebtors(): float
     {
         return $this->tradeDebtors;
     }
@@ -260,7 +260,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTradeDebtors(float $tradeDebtors) : self
+    public function setTradeDebtors(float $tradeDebtors): self
     {
         $this->initialized['tradeDebtors'] = true;
         $this->tradeDebtors = $tradeDebtors;
@@ -271,7 +271,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getOtherDebtors() : float
+    public function getOtherDebtors(): float
     {
         return $this->otherDebtors;
     }
@@ -282,7 +282,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setOtherDebtors(float $otherDebtors) : self
+    public function setOtherDebtors(float $otherDebtors): self
     {
         $this->initialized['otherDebtors'] = true;
         $this->otherDebtors = $otherDebtors;
@@ -293,7 +293,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getCash() : float
+    public function getCash(): float
     {
         return $this->cash;
     }
@@ -304,7 +304,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setCash(float $cash) : self
+    public function setCash(float $cash): self
     {
         $this->initialized['cash'] = true;
         $this->cash = $cash;
@@ -315,7 +315,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getMiscCurrentAssets() : float
+    public function getMiscCurrentAssets(): float
     {
         return $this->miscCurrentAssets;
     }
@@ -326,7 +326,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setMiscCurrentAssets(float $miscCurrentAssets) : self
+    public function setMiscCurrentAssets(float $miscCurrentAssets): self
     {
         $this->initialized['miscCurrentAssets'] = true;
         $this->miscCurrentAssets = $miscCurrentAssets;
@@ -337,7 +337,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTotalCurrentAssets() : float
+    public function getTotalCurrentAssets(): float
     {
         return $this->totalCurrentAssets;
     }
@@ -348,7 +348,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTotalCurrentAssets(float $totalCurrentAssets) : self
+    public function setTotalCurrentAssets(float $totalCurrentAssets): self
     {
         $this->initialized['totalCurrentAssets'] = true;
         $this->totalCurrentAssets = $totalCurrentAssets;
@@ -359,7 +359,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTotalAssets() : float
+    public function getTotalAssets(): float
     {
         return $this->totalAssets;
     }
@@ -370,7 +370,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTotalAssets(float $totalAssets) : self
+    public function setTotalAssets(float $totalAssets): self
     {
         $this->initialized['totalAssets'] = true;
         $this->totalAssets = $totalAssets;
@@ -381,7 +381,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTradeCreditors() : float
+    public function getTradeCreditors(): float
     {
         return $this->tradeCreditors;
     }
@@ -392,7 +392,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTradeCreditors(float $tradeCreditors) : self
+    public function setTradeCreditors(float $tradeCreditors): self
     {
         $this->initialized['tradeCreditors'] = true;
         $this->tradeCreditors = $tradeCreditors;
@@ -403,7 +403,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getBankBorrowingsCurrent() : float
+    public function getBankBorrowingsCurrent(): float
     {
         return $this->bankBorrowingsCurrent;
     }
@@ -414,7 +414,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setBankBorrowingsCurrent(float $bankBorrowingsCurrent) : self
+    public function setBankBorrowingsCurrent(float $bankBorrowingsCurrent): self
     {
         $this->initialized['bankBorrowingsCurrent'] = true;
         $this->bankBorrowingsCurrent = $bankBorrowingsCurrent;
@@ -425,7 +425,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getOtherShortTermFinance() : float
+    public function getOtherShortTermFinance(): float
     {
         return $this->otherShortTermFinance;
     }
@@ -436,7 +436,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setOtherShortTermFinance(float $otherShortTermFinance) : self
+    public function setOtherShortTermFinance(float $otherShortTermFinance): self
     {
         $this->initialized['otherShortTermFinance'] = true;
         $this->otherShortTermFinance = $otherShortTermFinance;
@@ -447,7 +447,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getMiscCurrentLiabilities() : float
+    public function getMiscCurrentLiabilities(): float
     {
         return $this->miscCurrentLiabilities;
     }
@@ -458,7 +458,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setMiscCurrentLiabilities(float $miscCurrentLiabilities) : self
+    public function setMiscCurrentLiabilities(float $miscCurrentLiabilities): self
     {
         $this->initialized['miscCurrentLiabilities'] = true;
         $this->miscCurrentLiabilities = $miscCurrentLiabilities;
@@ -469,7 +469,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTotalCurrentLiabilities() : float
+    public function getTotalCurrentLiabilities(): float
     {
         return $this->totalCurrentLiabilities;
     }
@@ -480,7 +480,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTotalCurrentLiabilities(float $totalCurrentLiabilities) : self
+    public function setTotalCurrentLiabilities(float $totalCurrentLiabilities): self
     {
         $this->initialized['totalCurrentLiabilities'] = true;
         $this->totalCurrentLiabilities = $totalCurrentLiabilities;
@@ -491,7 +491,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getOtherLongTermFinance() : float
+    public function getOtherLongTermFinance(): float
     {
         return $this->otherLongTermFinance;
     }
@@ -502,7 +502,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setOtherLongTermFinance(float $otherLongTermFinance) : self
+    public function setOtherLongTermFinance(float $otherLongTermFinance): self
     {
         $this->initialized['otherLongTermFinance'] = true;
         $this->otherLongTermFinance = $otherLongTermFinance;
@@ -513,7 +513,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTotalLongTermLiabilities() : float
+    public function getTotalLongTermLiabilities(): float
     {
         return $this->totalLongTermLiabilities;
     }
@@ -524,7 +524,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTotalLongTermLiabilities(float $totalLongTermLiabilities) : self
+    public function setTotalLongTermLiabilities(float $totalLongTermLiabilities): self
     {
         $this->initialized['totalLongTermLiabilities'] = true;
         $this->totalLongTermLiabilities = $totalLongTermLiabilities;
@@ -535,7 +535,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTotalLiabilities() : float
+    public function getTotalLiabilities(): float
     {
         return $this->totalLiabilities;
     }
@@ -546,7 +546,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTotalLiabilities(float $totalLiabilities) : self
+    public function setTotalLiabilities(float $totalLiabilities): self
     {
         $this->initialized['totalLiabilities'] = true;
         $this->totalLiabilities = $totalLiabilities;
@@ -557,7 +557,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getNetAssets() : float
+    public function getNetAssets(): float
     {
         return $this->netAssets;
     }
@@ -568,7 +568,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setNetAssets(float $netAssets) : self
+    public function setNetAssets(float $netAssets): self
     {
         $this->initialized['netAssets'] = true;
         $this->netAssets = $netAssets;
@@ -579,7 +579,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getIssuedShareCapital() : float
+    public function getIssuedShareCapital(): float
     {
         return $this->issuedShareCapital;
     }
@@ -590,7 +590,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setIssuedShareCapital(float $issuedShareCapital) : self
+    public function setIssuedShareCapital(float $issuedShareCapital): self
     {
         $this->initialized['issuedShareCapital'] = true;
         $this->issuedShareCapital = $issuedShareCapital;
@@ -601,7 +601,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getRevaluationReserve() : float
+    public function getRevaluationReserve(): float
     {
         return $this->revaluationReserve;
     }
@@ -612,7 +612,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setRevaluationReserve(float $revaluationReserve) : self
+    public function setRevaluationReserve(float $revaluationReserve): self
     {
         $this->initialized['revaluationReserve'] = true;
         $this->revaluationReserve = $revaluationReserve;
@@ -623,7 +623,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getRevenueReserves() : float
+    public function getRevenueReserves(): float
     {
         return $this->revenueReserves;
     }
@@ -634,7 +634,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setRevenueReserves(float $revenueReserves) : self
+    public function setRevenueReserves(float $revenueReserves): self
     {
         $this->initialized['revenueReserves'] = true;
         $this->revenueReserves = $revenueReserves;
@@ -645,7 +645,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getOtherReserves() : float
+    public function getOtherReserves(): float
     {
         return $this->otherReserves;
     }
@@ -656,7 +656,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setOtherReserves(float $otherReserves) : self
+    public function setOtherReserves(float $otherReserves): self
     {
         $this->initialized['otherReserves'] = true;
         $this->otherReserves = $otherReserves;
@@ -667,7 +667,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return float
      */
-    public function getTotalShareholdersEquity() : float
+    public function getTotalShareholdersEquity(): float
     {
         return $this->totalShareholdersEquity;
     }
@@ -678,7 +678,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemBalanceShe
      *
      * @return self
      */
-    public function setTotalShareholdersEquity(float $totalShareholdersEquity) : self
+    public function setTotalShareholdersEquity(float $totalShareholdersEquity): self
     {
         $this->initialized['totalShareholdersEquity'] = true;
         $this->totalShareholdersEquity = $totalShareholdersEquity;

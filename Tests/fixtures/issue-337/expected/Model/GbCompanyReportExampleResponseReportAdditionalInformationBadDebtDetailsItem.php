@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return string
      */
-    public function getStatementDate() : string
+    public function getStatementDate(): string
     {
         return $this->statementDate;
     }
@@ -52,7 +52,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return self
      */
-    public function setStatementDate(string $statementDate) : self
+    public function setStatementDate(string $statementDate): self
     {
         $this->initialized['statementDate'] = true;
         $this->statementDate = $statementDate;
@@ -63,7 +63,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return string
      */
-    public function getRegistrationNumber() : string
+    public function getRegistrationNumber(): string
     {
         return $this->registrationNumber;
     }
@@ -74,7 +74,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return self
      */
-    public function setRegistrationNumber(string $registrationNumber) : self
+    public function setRegistrationNumber(string $registrationNumber): self
     {
         $this->initialized['registrationNumber'] = true;
         $this->registrationNumber = $registrationNumber;
@@ -85,7 +85,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return string
      */
-    public function getCompanyName() : string
+    public function getCompanyName(): string
     {
         return $this->companyName;
     }
@@ -96,7 +96,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return self
      */
-    public function setCompanyName(string $companyName) : self
+    public function setCompanyName(string $companyName): self
     {
         $this->initialized['companyName'] = true;
         $this->companyName = $companyName;
@@ -107,7 +107,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItemAmount
      */
-    public function getAmount() : GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItemAmount
+    public function getAmount(): GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItemAmount
     {
         return $this->amount;
     }
@@ -118,7 +118,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsIte
      *
      * @return self
      */
-    public function setAmount(GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItemAmount $amount) : self
+    public function setAmount(GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItemAmount $amount): self
     {
         $this->initialized['amount'] = true;
         $this->amount = $amount;

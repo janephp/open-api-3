@@ -8,7 +8,7 @@ class ProjectCard extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -94,7 +94,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -105,7 +105,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -116,7 +116,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -127,7 +127,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -138,7 +138,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -149,7 +149,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return string|null
      */
-    public function getNote() : ?string
+    public function getNote(): ?string
     {
         return $this->note;
     }
@@ -160,7 +160,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setNote(?string $note) : self
+    public function setNote(?string $note): self
     {
         $this->initialized['note'] = true;
         $this->note = $note;
@@ -171,7 +171,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return ProjectCardCreator|null
      */
-    public function getCreator() : ?ProjectCardCreator
+    public function getCreator(): ?ProjectCardCreator
     {
         return $this->creator;
     }
@@ -182,7 +182,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setCreator(?ProjectCardCreator $creator) : self
+    public function setCreator(?ProjectCardCreator $creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;
@@ -193,7 +193,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -204,7 +204,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -215,7 +215,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -226,7 +226,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -237,7 +237,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return bool
      */
-    public function getArchived() : bool
+    public function getArchived(): bool
     {
         return $this->archived;
     }
@@ -248,7 +248,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setArchived(bool $archived) : self
+    public function setArchived(bool $archived): self
     {
         $this->initialized['archived'] = true;
         $this->archived = $archived;
@@ -259,7 +259,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return string
      */
-    public function getColumnUrl() : string
+    public function getColumnUrl(): string
     {
         return $this->columnUrl;
     }
@@ -270,7 +270,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setColumnUrl(string $columnUrl) : self
+    public function setColumnUrl(string $columnUrl): self
     {
         $this->initialized['columnUrl'] = true;
         $this->columnUrl = $columnUrl;
@@ -281,7 +281,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return string
      */
-    public function getContentUrl() : string
+    public function getContentUrl(): string
     {
         return $this->contentUrl;
     }
@@ -292,7 +292,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setContentUrl(string $contentUrl) : self
+    public function setContentUrl(string $contentUrl): self
     {
         $this->initialized['contentUrl'] = true;
         $this->contentUrl = $contentUrl;
@@ -303,7 +303,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return string
      */
-    public function getProjectUrl() : string
+    public function getProjectUrl(): string
     {
         return $this->projectUrl;
     }
@@ -314,7 +314,7 @@ class ProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setProjectUrl(string $projectUrl) : self
+    public function setProjectUrl(string $projectUrl): self
     {
         $this->initialized['projectUrl'] = true;
         $this->projectUrl = $projectUrl;

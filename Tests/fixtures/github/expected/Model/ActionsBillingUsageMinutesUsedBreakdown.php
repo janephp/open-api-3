@@ -8,7 +8,7 @@ class ActionsBillingUsageMinutesUsedBreakdown extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ActionsBillingUsageMinutesUsedBreakdown extends \ArrayObject
      *
      * @return int
      */
-    public function getUBUNTU() : int
+    public function getUBUNTU(): int
     {
         return $this->uBUNTU;
     }
@@ -46,7 +46,7 @@ class ActionsBillingUsageMinutesUsedBreakdown extends \ArrayObject
      *
      * @return self
      */
-    public function setUBUNTU(int $uBUNTU) : self
+    public function setUBUNTU(int $uBUNTU): self
     {
         $this->initialized['uBUNTU'] = true;
         $this->uBUNTU = $uBUNTU;
@@ -57,7 +57,7 @@ class ActionsBillingUsageMinutesUsedBreakdown extends \ArrayObject
      *
      * @return int
      */
-    public function getMACOS() : int
+    public function getMACOS(): int
     {
         return $this->mACOS;
     }
@@ -68,7 +68,7 @@ class ActionsBillingUsageMinutesUsedBreakdown extends \ArrayObject
      *
      * @return self
      */
-    public function setMACOS(int $mACOS) : self
+    public function setMACOS(int $mACOS): self
     {
         $this->initialized['mACOS'] = true;
         $this->mACOS = $mACOS;
@@ -79,7 +79,7 @@ class ActionsBillingUsageMinutesUsedBreakdown extends \ArrayObject
      *
      * @return int
      */
-    public function getWINDOWS() : int
+    public function getWINDOWS(): int
     {
         return $this->wINDOWS;
     }
@@ -90,7 +90,7 @@ class ActionsBillingUsageMinutesUsedBreakdown extends \ArrayObject
      *
      * @return self
      */
-    public function setWINDOWS(int $wINDOWS) : self
+    public function setWINDOWS(int $wINDOWS): self
     {
         $this->initialized['wINDOWS'] = true;
         $this->wINDOWS = $wINDOWS;

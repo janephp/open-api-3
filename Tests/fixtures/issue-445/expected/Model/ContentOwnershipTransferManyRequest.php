@@ -8,7 +8,7 @@ class ContentOwnershipTransferManyRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ContentOwnershipTransferManyRequest
      *
      * @return list<ContentOwnershipTransferItem>
      */
-    public function getItems() : array
+    public function getItems(): array
     {
         return $this->items;
     }
@@ -34,7 +34,7 @@ class ContentOwnershipTransferManyRequest
      *
      * @return self
      */
-    public function setItems(array $items) : self
+    public function setItems(array $items): self
     {
         $this->initialized['items'] = true;
         $this->items = $items;

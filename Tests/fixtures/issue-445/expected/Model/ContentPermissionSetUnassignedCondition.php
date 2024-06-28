@@ -8,7 +8,7 @@ class ContentPermissionSetUnassignedCondition extends BusinessRuleCondition
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ContentPermissionSetUnassignedCondition extends BusinessRuleCondition
      *
      * @return string|null
      */
-    public function getPermissionSetId() : ?string
+    public function getPermissionSetId(): ?string
     {
         return $this->permissionSetId;
     }
@@ -34,7 +34,7 @@ class ContentPermissionSetUnassignedCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setPermissionSetId(?string $permissionSetId) : self
+    public function setPermissionSetId(?string $permissionSetId): self
     {
         $this->initialized['permissionSetId'] = true;
         $this->permissionSetId = $permissionSetId;

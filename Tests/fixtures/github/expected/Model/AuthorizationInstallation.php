@@ -8,7 +8,7 @@ class AuthorizationInstallation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return array<string, mixed>
      */
-    public function getPermissions() : iterable
+    public function getPermissions(): iterable
     {
         return $this->permissions;
     }
@@ -58,7 +58,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(iterable $permissions) : self
+    public function setPermissions(iterable $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;
@@ -69,7 +69,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositorySelection() : string
+    public function getRepositorySelection(): string
     {
         return $this->repositorySelection;
     }
@@ -80,7 +80,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositorySelection(string $repositorySelection) : self
+    public function setRepositorySelection(string $repositorySelection): self
     {
         $this->initialized['repositorySelection'] = true;
         $this->repositorySelection = $repositorySelection;
@@ -91,7 +91,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSingleFileName() : ?string
+    public function getSingleFileName(): ?string
     {
         return $this->singleFileName;
     }
@@ -102,7 +102,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return self
      */
-    public function setSingleFileName(?string $singleFileName) : self
+    public function setSingleFileName(?string $singleFileName): self
     {
         $this->initialized['singleFileName'] = true;
         $this->singleFileName = $singleFileName;
@@ -113,7 +113,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoriesUrl() : string
+    public function getRepositoriesUrl(): string
     {
         return $this->repositoriesUrl;
     }
@@ -124,7 +124,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoriesUrl(string $repositoriesUrl) : self
+    public function setRepositoriesUrl(string $repositoriesUrl): self
     {
         $this->initialized['repositoriesUrl'] = true;
         $this->repositoriesUrl = $repositoriesUrl;
@@ -135,7 +135,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return SimpleUser|null
      */
-    public function getAccount() : ?SimpleUser
+    public function getAccount(): ?SimpleUser
     {
         return $this->account;
     }
@@ -146,7 +146,7 @@ class AuthorizationInstallation extends \ArrayObject
      *
      * @return self
      */
-    public function setAccount(?SimpleUser $account) : self
+    public function setAccount(?SimpleUser $account): self
     {
         $this->initialized['account'] = true;
         $this->account = $account;

@@ -8,7 +8,7 @@ class OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422 extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -40,7 +40,7 @@ class OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422 extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -51,7 +51,7 @@ class OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422 extends \ArrayObject
      *
      * @return list<OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422ErrorsItem>
      */
-    public function getErrors() : array
+    public function getErrors(): array
     {
         return $this->errors;
     }
@@ -62,7 +62,7 @@ class OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422 extends \ArrayObject
      *
      * @return self
      */
-    public function setErrors(array $errors) : self
+    public function setErrors(array $errors): self
     {
         $this->initialized['errors'] = true;
         $this->errors = $errors;

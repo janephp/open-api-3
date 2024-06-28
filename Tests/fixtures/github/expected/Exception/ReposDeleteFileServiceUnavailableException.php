@@ -18,11 +18,11 @@ class ReposDeleteFileServiceUnavailableException extends ServiceUnavailableExcep
         $this->responseServiceUnavailable = $responseServiceUnavailable;
         $this->response = $response;
     }
-    public function getResponseServiceUnavailable() : \Github\Model\ResponseServiceUnavailable
+    public function getResponseServiceUnavailable(): \Github\Model\ResponseServiceUnavailable
     {
         return $this->responseServiceUnavailable;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

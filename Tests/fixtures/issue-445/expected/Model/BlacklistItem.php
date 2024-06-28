@@ -8,7 +8,7 @@ class BlacklistItem
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class BlacklistItem
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -40,7 +40,7 @@ class BlacklistItem
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -51,7 +51,7 @@ class BlacklistItem
      *
      * @return string
      */
-    public function getMatch() : string
+    public function getMatch(): string
     {
         return $this->match;
     }
@@ -62,7 +62,7 @@ class BlacklistItem
      *
      * @return self
      */
-    public function setMatch(string $match) : self
+    public function setMatch(string $match): self
     {
         $this->initialized['match'] = true;
         $this->match = $match;

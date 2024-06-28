@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorships extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbPeopleReportReponseReportDirectorships extends \ArrayObject
      *
      * @return list<GbPeopleReportReponseReportDirectorshipsCurrentItem>
      */
-    public function getCurrent() : array
+    public function getCurrent(): array
     {
         return $this->current;
     }
@@ -46,7 +46,7 @@ class GbPeopleReportReponseReportDirectorships extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrent(array $current) : self
+    public function setCurrent(array $current): self
     {
         $this->initialized['current'] = true;
         $this->current = $current;
@@ -57,7 +57,7 @@ class GbPeopleReportReponseReportDirectorships extends \ArrayObject
      *
      * @return list<GbPeopleReportReponseReportDirectorshipsInactiveItem>
      */
-    public function getInactive() : array
+    public function getInactive(): array
     {
         return $this->inactive;
     }
@@ -68,7 +68,7 @@ class GbPeopleReportReponseReportDirectorships extends \ArrayObject
      *
      * @return self
      */
-    public function setInactive(array $inactive) : self
+    public function setInactive(array $inactive): self
     {
         $this->initialized['inactive'] = true;
         $this->inactive = $inactive;
@@ -79,7 +79,7 @@ class GbPeopleReportReponseReportDirectorships extends \ArrayObject
      *
      * @return list<GbPeopleReportReponseReportDirectorshipsPreviousItem>
      */
-    public function getPrevious() : array
+    public function getPrevious(): array
     {
         return $this->previous;
     }
@@ -90,7 +90,7 @@ class GbPeopleReportReponseReportDirectorships extends \ArrayObject
      *
      * @return self
      */
-    public function setPrevious(array $previous) : self
+    public function setPrevious(array $previous): self
     {
         $this->initialized['previous'] = true;
         $this->previous = $previous;

@@ -8,7 +8,7 @@ class LiveStreamSearchRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class LiveStreamSearchRequest
      *
      * @return \DateTime
      */
-    public function getFrom() : \DateTime
+    public function getFrom(): \DateTime
     {
         return $this->from;
     }
@@ -64,7 +64,7 @@ class LiveStreamSearchRequest
      *
      * @return self
      */
-    public function setFrom(\DateTime $from) : self
+    public function setFrom(\DateTime $from): self
     {
         $this->initialized['from'] = true;
         $this->from = $from;
@@ -75,7 +75,7 @@ class LiveStreamSearchRequest
      *
      * @return \DateTime
      */
-    public function getTo() : \DateTime
+    public function getTo(): \DateTime
     {
         return $this->to;
     }
@@ -86,7 +86,7 @@ class LiveStreamSearchRequest
      *
      * @return self
      */
-    public function setTo(\DateTime $to) : self
+    public function setTo(\DateTime $to): self
     {
         $this->initialized['to'] = true;
         $this->to = $to;
@@ -97,7 +97,7 @@ class LiveStreamSearchRequest
      *
      * @return string|null
      */
-    public function getScopeType() : ?string
+    public function getScopeType(): ?string
     {
         return $this->scopeType;
     }
@@ -108,7 +108,7 @@ class LiveStreamSearchRequest
      *
      * @return self
      */
-    public function setScopeType(?string $scopeType) : self
+    public function setScopeType(?string $scopeType): self
     {
         $this->initialized['scopeType'] = true;
         $this->scopeType = $scopeType;
@@ -130,7 +130,7 @@ class LiveStreamSearchRequest
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -141,7 +141,7 @@ class LiveStreamSearchRequest
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -152,7 +152,7 @@ class LiveStreamSearchRequest
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -163,7 +163,7 @@ class LiveStreamSearchRequest
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -174,7 +174,7 @@ class LiveStreamSearchRequest
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;

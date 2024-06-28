@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\CredentialAuthorization::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\CredentialAuthorization::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -60,7 +60,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['token_last_eight']);
             }
             if (\array_key_exists('credential_authorized_at', $data)) {
-                $object->setCredentialAuthorizedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['credential_authorized_at']));
+                $object->setCredentialAuthorizedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['credential_authorized_at']));
                 unset($data['credential_authorized_at']);
             }
             if (\array_key_exists('scopes', $data)) {
@@ -76,7 +76,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['fingerprint']);
             }
             if (\array_key_exists('credential_accessed_at', $data) && $data['credential_accessed_at'] !== null) {
-                $object->setCredentialAccessedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['credential_accessed_at']));
+                $object->setCredentialAccessedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['credential_accessed_at']));
                 unset($data['credential_accessed_at']);
             }
             elseif (\array_key_exists('credential_accessed_at', $data) && $data['credential_accessed_at'] === null) {
@@ -89,7 +89,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['login'] = $object->getLogin();
@@ -98,7 +98,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('tokenLastEight') && null !== $object->getTokenLastEight()) {
                 $data['token_last_eight'] = $object->getTokenLastEight();
             }
-            $data['credential_authorized_at'] = $object->getCredentialAuthorizedAt()->format('Y-m-d\\TH:i:sP');
+            $data['credential_authorized_at'] = $object->getCredentialAuthorizedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('scopes') && null !== $object->getScopes()) {
                 $values = [];
                 foreach ($object->getScopes() as $value) {
@@ -110,7 +110,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['fingerprint'] = $object->getFingerprint();
             }
             if ($object->isInitialized('credentialAccessedAt') && null !== $object->getCredentialAccessedAt()) {
-                $data['credential_accessed_at'] = $object->getCredentialAccessedAt()->format('Y-m-d\\TH:i:sP');
+                $data['credential_accessed_at'] = $object->getCredentialAccessedAt()->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value_1) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -122,7 +122,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\CredentialAuthorization::class => false];
         }
@@ -134,11 +134,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\CredentialAuthorization::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\CredentialAuthorization::class;
         }
@@ -177,7 +177,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['token_last_eight']);
             }
             if (\array_key_exists('credential_authorized_at', $data)) {
-                $object->setCredentialAuthorizedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['credential_authorized_at']));
+                $object->setCredentialAuthorizedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['credential_authorized_at']));
                 unset($data['credential_authorized_at']);
             }
             if (\array_key_exists('scopes', $data)) {
@@ -193,7 +193,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['fingerprint']);
             }
             if (\array_key_exists('credential_accessed_at', $data) && $data['credential_accessed_at'] !== null) {
-                $object->setCredentialAccessedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['credential_accessed_at']));
+                $object->setCredentialAccessedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['credential_accessed_at']));
                 unset($data['credential_accessed_at']);
             }
             elseif (\array_key_exists('credential_accessed_at', $data) && $data['credential_accessed_at'] === null) {
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('tokenLastEight') && null !== $object->getTokenLastEight()) {
                 $data['token_last_eight'] = $object->getTokenLastEight();
             }
-            $data['credential_authorized_at'] = $object->getCredentialAuthorizedAt()->format('Y-m-d\\TH:i:sP');
+            $data['credential_authorized_at'] = $object->getCredentialAuthorizedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('scopes') && null !== $object->getScopes()) {
                 $values = [];
                 foreach ($object->getScopes() as $value) {
@@ -230,7 +230,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['fingerprint'] = $object->getFingerprint();
             }
             if ($object->isInitialized('credentialAccessedAt') && null !== $object->getCredentialAccessedAt()) {
-                $data['credential_accessed_at'] = $object->getCredentialAccessedAt()->format('Y-m-d\\TH:i:sP');
+                $data['credential_accessed_at'] = $object->getCredentialAccessedAt()->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value_1) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -242,7 +242,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\CredentialAuthorization::class => false];
         }

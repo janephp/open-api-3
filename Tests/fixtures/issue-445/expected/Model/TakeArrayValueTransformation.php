@@ -8,7 +8,7 @@ class TakeArrayValueTransformation extends BusinessRuleTransformation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class TakeArrayValueTransformation extends BusinessRuleTransformation
      *
      * @return string|null
      */
-    public function getIndex() : ?string
+    public function getIndex(): ?string
     {
         return $this->index;
     }
@@ -34,7 +34,7 @@ class TakeArrayValueTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setIndex(?string $index) : self
+    public function setIndex(?string $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;

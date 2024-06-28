@@ -8,7 +8,7 @@ class UserAuditHistory
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class UserAuditHistory
      *
      * @return \DateTime
      */
-    public function getModificationDate() : \DateTime
+    public function getModificationDate(): \DateTime
     {
         return $this->modificationDate;
     }
@@ -40,7 +40,7 @@ class UserAuditHistory
      *
      * @return self
      */
-    public function setModificationDate(\DateTime $modificationDate) : self
+    public function setModificationDate(\DateTime $modificationDate): self
     {
         $this->initialized['modificationDate'] = true;
         $this->modificationDate = $modificationDate;
@@ -51,7 +51,7 @@ class UserAuditHistory
      *
      * @return string|null
      */
-    public function getModifiedByUser() : ?string
+    public function getModifiedByUser(): ?string
     {
         return $this->modifiedByUser;
     }
@@ -62,7 +62,7 @@ class UserAuditHistory
      *
      * @return self
      */
-    public function setModifiedByUser(?string $modifiedByUser) : self
+    public function setModifiedByUser(?string $modifiedByUser): self
     {
         $this->initialized['modifiedByUser'] = true;
         $this->modifiedByUser = $modifiedByUser;

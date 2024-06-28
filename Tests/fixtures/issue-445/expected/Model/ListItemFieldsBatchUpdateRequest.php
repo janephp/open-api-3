@@ -8,7 +8,7 @@ class ListItemFieldsBatchUpdateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ListItemFieldsBatchUpdateRequest
      *
      * @return list<string>
      */
-    public function getListItemIds() : array
+    public function getListItemIds(): array
     {
         return $this->listItemIds;
     }
@@ -52,7 +52,7 @@ class ListItemFieldsBatchUpdateRequest
      *
      * @return self
      */
-    public function setListItemIds(array $listItemIds) : self
+    public function setListItemIds(array $listItemIds): self
     {
         $this->initialized['listItemIds'] = true;
         $this->listItemIds = $listItemIds;
@@ -63,7 +63,7 @@ class ListItemFieldsBatchUpdateRequest
      *
      * @return list<MetadataValuesChangeCommandBase>
      */
-    public function getChangeCommands() : array
+    public function getChangeCommands(): array
     {
         return $this->changeCommands;
     }
@@ -74,7 +74,7 @@ class ListItemFieldsBatchUpdateRequest
      *
      * @return self
      */
-    public function setChangeCommands(array $changeCommands) : self
+    public function setChangeCommands(array $changeCommands): self
     {
         $this->initialized['changeCommands'] = true;
         $this->changeCommands = $changeCommands;
@@ -85,7 +85,7 @@ class ListItemFieldsBatchUpdateRequest
      *
      * @return bool
      */
-    public function getAllowMissingDependencies() : bool
+    public function getAllowMissingDependencies(): bool
     {
         return $this->allowMissingDependencies;
     }
@@ -96,7 +96,7 @@ class ListItemFieldsBatchUpdateRequest
      *
      * @return self
      */
-    public function setAllowMissingDependencies(bool $allowMissingDependencies) : self
+    public function setAllowMissingDependencies(bool $allowMissingDependencies): self
     {
         $this->initialized['allowMissingDependencies'] = true;
         $this->allowMissingDependencies = $allowMissingDependencies;
@@ -107,7 +107,7 @@ class ListItemFieldsBatchUpdateRequest
      *
      * @return bool
      */
-    public function getNotifyProgress() : bool
+    public function getNotifyProgress(): bool
     {
         return $this->notifyProgress;
     }
@@ -118,7 +118,7 @@ class ListItemFieldsBatchUpdateRequest
      *
      * @return self
      */
-    public function setNotifyProgress(bool $notifyProgress) : self
+    public function setNotifyProgress(bool $notifyProgress): self
     {
         $this->initialized['notifyProgress'] = true;
         $this->notifyProgress = $notifyProgress;

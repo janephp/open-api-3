@@ -8,7 +8,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getStart() : int
+    public function getStart(): int
     {
         return $this->start;
     }
@@ -58,7 +58,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setStart(int $start) : self
+    public function setStart(int $start): self
     {
         $this->initialized['start'] = true;
         $this->start = $start;
@@ -69,7 +69,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return int
      */
-    public function getEnd() : int
+    public function getEnd(): int
     {
         return $this->end;
     }
@@ -80,7 +80,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setEnd(int $end) : self
+    public function setEnd(int $end): self
     {
         $this->initialized['end'] = true;
         $this->end = $end;
@@ -91,7 +91,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return float
      */
-    public function getProbability() : float
+    public function getProbability(): float
     {
         return $this->probability;
     }
@@ -102,7 +102,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setProbability(float $probability) : self
+    public function setProbability(float $probability): self
     {
         $this->initialized['probability'] = true;
         $this->probability = $probability;
@@ -113,7 +113,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -124,7 +124,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -135,7 +135,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getNormalizedText() : string
+    public function getNormalizedText(): string
     {
         return $this->normalizedText;
     }
@@ -146,7 +146,7 @@ class FullTextEntitiesAnnotationsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setNormalizedText(string $normalizedText) : self
+    public function setNormalizedText(string $normalizedText): self
     {
         $this->initialized['normalizedText'] = true;
         $this->normalizedText = $normalizedText;

@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return bool
      */
-    public function getContingentLiabilities() : bool
+    public function getContingentLiabilities(): bool
     {
         return $this->contingentLiabilities;
     }
@@ -58,7 +58,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return self
      */
-    public function setContingentLiabilities(bool $contingentLiabilities) : self
+    public function setContingentLiabilities(bool $contingentLiabilities): self
     {
         $this->initialized['contingentLiabilities'] = true;
         $this->contingentLiabilities = $contingentLiabilities;
@@ -69,7 +69,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return float
      */
-    public function getBankOverdraftAndLTL() : float
+    public function getBankOverdraftAndLTL(): float
     {
         return $this->bankOverdraftAndLTL;
     }
@@ -80,7 +80,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return self
      */
-    public function setBankOverdraftAndLTL(float $bankOverdraftAndLTL) : self
+    public function setBankOverdraftAndLTL(float $bankOverdraftAndLTL): self
     {
         $this->initialized['bankOverdraftAndLTL'] = true;
         $this->bankOverdraftAndLTL = $bankOverdraftAndLTL;
@@ -91,7 +91,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return float
      */
-    public function getWorkingCapital() : float
+    public function getWorkingCapital(): float
     {
         return $this->workingCapital;
     }
@@ -102,7 +102,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return self
      */
-    public function setWorkingCapital(float $workingCapital) : self
+    public function setWorkingCapital(float $workingCapital): self
     {
         $this->initialized['workingCapital'] = true;
         $this->workingCapital = $workingCapital;
@@ -113,7 +113,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return float
      */
-    public function getCapitalEmployed() : float
+    public function getCapitalEmployed(): float
     {
         return $this->capitalEmployed;
     }
@@ -124,7 +124,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return self
      */
-    public function setCapitalEmployed(float $capitalEmployed) : self
+    public function setCapitalEmployed(float $capitalEmployed): self
     {
         $this->initialized['capitalEmployed'] = true;
         $this->capitalEmployed = $capitalEmployed;
@@ -135,7 +135,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return float
      */
-    public function getNetWorth() : float
+    public function getNetWorth(): float
     {
         return $this->netWorth;
     }
@@ -146,7 +146,7 @@ class GbCompanyReportExampleResponseReportLocalFinancialStatementsItemOtherFinan
      *
      * @return self
      */
-    public function setNetWorth(float $netWorth) : self
+    public function setNetWorth(float $netWorth): self
     {
         $this->initialized['netWorth'] = true;
         $this->netWorth = $netWorth;

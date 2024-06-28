@@ -8,7 +8,7 @@ class OrgHookConfig extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class OrgHookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -52,7 +52,7 @@ class OrgHookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -63,7 +63,7 @@ class OrgHookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getInsecureSsl() : string
+    public function getInsecureSsl(): string
     {
         return $this->insecureSsl;
     }
@@ -74,7 +74,7 @@ class OrgHookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setInsecureSsl(string $insecureSsl) : self
+    public function setInsecureSsl(string $insecureSsl): self
     {
         $this->initialized['insecureSsl'] = true;
         $this->insecureSsl = $insecureSsl;
@@ -85,7 +85,7 @@ class OrgHookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getContentType() : string
+    public function getContentType(): string
     {
         return $this->contentType;
     }
@@ -96,7 +96,7 @@ class OrgHookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setContentType(string $contentType) : self
+    public function setContentType(string $contentType): self
     {
         $this->initialized['contentType'] = true;
         $this->contentType = $contentType;
@@ -107,7 +107,7 @@ class OrgHookConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getSecret() : string
+    public function getSecret(): string
     {
         return $this->secret;
     }
@@ -118,7 +118,7 @@ class OrgHookConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setSecret(string $secret) : self
+    public function setSecret(string $secret): self
     {
         $this->initialized['secret'] = true;
         $this->secret = $secret;

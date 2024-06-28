@@ -8,7 +8,7 @@ class ListItemFilterRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -54,7 +54,7 @@ class ListItemFilterRequest
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -65,7 +65,7 @@ class ListItemFilterRequest
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -87,7 +87,7 @@ class ListItemFilterRequest
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -98,7 +98,7 @@ class ListItemFilterRequest
      *
      * @return bool
      */
-    public function getIncludeAllSchemaChildren() : bool
+    public function getIncludeAllSchemaChildren(): bool
     {
         return $this->includeAllSchemaChildren;
     }
@@ -109,7 +109,7 @@ class ListItemFilterRequest
      *
      * @return self
      */
-    public function setIncludeAllSchemaChildren(bool $includeAllSchemaChildren) : self
+    public function setIncludeAllSchemaChildren(bool $includeAllSchemaChildren): self
     {
         $this->initialized['includeAllSchemaChildren'] = true;
         $this->includeAllSchemaChildren = $includeAllSchemaChildren;
@@ -120,7 +120,7 @@ class ListItemFilterRequest
      *
      * @return list<string>|null
      */
-    public function getSchemaIds() : ?array
+    public function getSchemaIds(): ?array
     {
         return $this->schemaIds;
     }
@@ -131,7 +131,7 @@ class ListItemFilterRequest
      *
      * @return self
      */
-    public function setSchemaIds(?array $schemaIds) : self
+    public function setSchemaIds(?array $schemaIds): self
     {
         $this->initialized['schemaIds'] = true;
         $this->schemaIds = $schemaIds;
@@ -143,7 +143,7 @@ class ListItemFilterRequest
     *
     * @return list<string>|null
     */
-    public function getSearchLanguages() : ?array
+    public function getSearchLanguages(): ?array
     {
         return $this->searchLanguages;
     }
@@ -155,7 +155,7 @@ class ListItemFilterRequest
     *
     * @return self
     */
-    public function setSearchLanguages(?array $searchLanguages) : self
+    public function setSearchLanguages(?array $searchLanguages): self
     {
         $this->initialized['searchLanguages'] = true;
         $this->searchLanguages = $searchLanguages;
@@ -177,7 +177,7 @@ class ListItemFilterRequest
      *
      * @return self
      */
-    public function setBrokenDependenciesFilter($brokenDependenciesFilter) : self
+    public function setBrokenDependenciesFilter($brokenDependenciesFilter): self
     {
         $this->initialized['brokenDependenciesFilter'] = true;
         $this->brokenDependenciesFilter = $brokenDependenciesFilter;

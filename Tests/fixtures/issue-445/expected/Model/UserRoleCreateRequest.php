@@ -8,7 +8,7 @@ class UserRoleCreateRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -48,7 +48,7 @@ class UserRoleCreateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -59,7 +59,7 @@ class UserRoleCreateRequest extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getUserRights() : array
+    public function getUserRights(): array
     {
         return $this->userRights;
     }
@@ -70,7 +70,7 @@ class UserRoleCreateRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUserRights(array $userRights) : self
+    public function setUserRights(array $userRights): self
     {
         $this->initialized['userRights'] = true;
         $this->userRights = $userRights;
@@ -83,7 +83,7 @@ class UserRoleCreateRequest extends \ArrayObject
     *
     * @return string|null
     */
-    public function getRequestId() : ?string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -96,7 +96,7 @@ class UserRoleCreateRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setRequestId(?string $requestId) : self
+    public function setRequestId(?string $requestId): self
     {
         $this->initialized['requestId'] = true;
         $this->requestId = $requestId;

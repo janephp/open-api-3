@@ -25,19 +25,19 @@ class TeamsCheckPermissionsForRepoLegacy extends \Github\Runtime\Client\BaseEndp
         $this->repo = $repo;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{team_id}', '{owner}', '{repo}'], [$this->team_id, $this->owner, $this->repo], '/teams/{team_id}/repos/{owner}/{repo}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/vnd.github.v3.repository+json']];
     }
@@ -61,7 +61,7 @@ class TeamsCheckPermissionsForRepoLegacy extends \Github\Runtime\Client\BaseEndp
             throw new \Github\Exception\TeamsCheckPermissionsForRepoLegacyNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

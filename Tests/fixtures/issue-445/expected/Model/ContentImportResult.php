@@ -8,7 +8,7 @@ class ContentImportResult
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ContentImportResult
      *
      * @return string
      */
-    public function getFileTransferId() : string
+    public function getFileTransferId(): string
     {
         return $this->fileTransferId;
     }
@@ -58,7 +58,7 @@ class ContentImportResult
      *
      * @return self
      */
-    public function setFileTransferId(string $fileTransferId) : self
+    public function setFileTransferId(string $fileTransferId): self
     {
         $this->initialized['fileTransferId'] = true;
         $this->fileTransferId = $fileTransferId;
@@ -69,7 +69,7 @@ class ContentImportResult
      *
      * @return string|null
      */
-    public function getContentId() : ?string
+    public function getContentId(): ?string
     {
         return $this->contentId;
     }
@@ -80,7 +80,7 @@ class ContentImportResult
      *
      * @return self
      */
-    public function setContentId(?string $contentId) : self
+    public function setContentId(?string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;
@@ -91,7 +91,7 @@ class ContentImportResult
      *
      * @return string|null
      */
-    public function getState() : ?string
+    public function getState(): ?string
     {
         return $this->state;
     }
@@ -102,7 +102,7 @@ class ContentImportResult
      *
      * @return self
      */
-    public function setState(?string $state) : self
+    public function setState(?string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -113,7 +113,7 @@ class ContentImportResult
      *
      * @return bool
      */
-    public function getSucceeded() : bool
+    public function getSucceeded(): bool
     {
         return $this->succeeded;
     }
@@ -124,7 +124,7 @@ class ContentImportResult
      *
      * @return self
      */
-    public function setSucceeded(bool $succeeded) : self
+    public function setSucceeded(bool $succeeded): self
     {
         $this->initialized['succeeded'] = true;
         $this->succeeded = $succeeded;
@@ -146,7 +146,7 @@ class ContentImportResult
      *
      * @return self
      */
-    public function setError($error) : self
+    public function setError($error): self
     {
         $this->initialized['error'] = true;
         $this->error = $error;

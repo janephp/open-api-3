@@ -20,36 +20,36 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\AggregatorBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\AggregatorBase::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (array_key_exists('kind', $data) and 'DateRangeAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\DateRangeAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\DateRangeAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'GeoDistanceAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\GeoDistanceAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\GeoDistanceAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NestedAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NestedAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NestedAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NumericRangeAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NumericRangeAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NumericRangeAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermsAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermsAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermsAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermsRelationAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermsRelationAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermsRelationAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermsEnumAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermsEnumAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermsEnumAggregator', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if (null !== $object->getKind() and 'DateRangeAggregator' === $object->getKind()) {
@@ -132,7 +132,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\AggregatorBase::class => false];
         }
@@ -144,11 +144,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\AggregatorBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\AggregatorBase::class;
         }
@@ -158,25 +158,25 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function denormalize($data, $type, $format = null, array $context = [])
         {
             if (array_key_exists('kind', $data) and 'DateRangeAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\DateRangeAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\DateRangeAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'GeoDistanceAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\GeoDistanceAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\GeoDistanceAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NestedAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NestedAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NestedAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NumericRangeAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NumericRangeAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NumericRangeAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermsAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermsAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermsAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermsRelationAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermsRelationAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermsRelationAggregator', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermsEnumAggregator' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermsEnumAggregator', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermsEnumAggregator', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -262,7 +262,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\AggregatorBase::class => false];
         }

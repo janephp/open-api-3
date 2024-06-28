@@ -8,7 +8,7 @@ class Poll extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class Poll extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -58,7 +58,7 @@ class Poll extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -69,7 +69,7 @@ class Poll extends \ArrayObject
      *
      * @return list<PollOption>
      */
-    public function getOptions() : array
+    public function getOptions(): array
     {
         return $this->options;
     }
@@ -80,7 +80,7 @@ class Poll extends \ArrayObject
      *
      * @return self
      */
-    public function setOptions(array $options) : self
+    public function setOptions(array $options): self
     {
         $this->initialized['options'] = true;
         $this->options = $options;
@@ -91,7 +91,7 @@ class Poll extends \ArrayObject
      *
      * @return string
      */
-    public function getVotingStatus() : string
+    public function getVotingStatus(): string
     {
         return $this->votingStatus;
     }
@@ -102,7 +102,7 @@ class Poll extends \ArrayObject
      *
      * @return self
      */
-    public function setVotingStatus(string $votingStatus) : self
+    public function setVotingStatus(string $votingStatus): self
     {
         $this->initialized['votingStatus'] = true;
         $this->votingStatus = $votingStatus;
@@ -113,7 +113,7 @@ class Poll extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getEndDatetime() : \DateTime
+    public function getEndDatetime(): \DateTime
     {
         return $this->endDatetime;
     }
@@ -124,7 +124,7 @@ class Poll extends \ArrayObject
      *
      * @return self
      */
-    public function setEndDatetime(\DateTime $endDatetime) : self
+    public function setEndDatetime(\DateTime $endDatetime): self
     {
         $this->initialized['endDatetime'] = true;
         $this->endDatetime = $endDatetime;
@@ -135,7 +135,7 @@ class Poll extends \ArrayObject
      *
      * @return int
      */
-    public function getDurationMinutes() : int
+    public function getDurationMinutes(): int
     {
         return $this->durationMinutes;
     }
@@ -146,7 +146,7 @@ class Poll extends \ArrayObject
      *
      * @return self
      */
-    public function setDurationMinutes(int $durationMinutes) : self
+    public function setDurationMinutes(int $durationMinutes): self
     {
         $this->initialized['durationMinutes'] = true;
         $this->durationMinutes = $durationMinutes;

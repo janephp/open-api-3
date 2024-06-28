@@ -8,7 +8,7 @@ class ComplianceSearchResultData extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ComplianceSearchResultData extends \ArrayObject
      *
      * @return ComplianceSearchResultDataBody
      */
-    public function getBody() : ComplianceSearchResultDataBody
+    public function getBody(): ComplianceSearchResultDataBody
     {
         return $this->body;
     }
@@ -34,7 +34,7 @@ class ComplianceSearchResultData extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(ComplianceSearchResultDataBody $body) : self
+    public function setBody(ComplianceSearchResultDataBody $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;

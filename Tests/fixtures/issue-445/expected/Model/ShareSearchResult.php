@@ -8,7 +8,7 @@ class ShareSearchResult extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalResults() : int
+    public function getTotalResults(): int
     {
         return $this->totalResults;
     }
@@ -76,7 +76,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalResults(int $totalResults) : self
+    public function setTotalResults(int $totalResults): self
     {
         $this->initialized['totalResults'] = true;
         $this->totalResults = $totalResults;
@@ -87,7 +87,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return list<Share>
      */
-    public function getResults() : array
+    public function getResults(): array
     {
         return $this->results;
     }
@@ -98,7 +98,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setResults(array $results) : self
+    public function setResults(array $results): self
     {
         $this->initialized['results'] = true;
         $this->results = $results;
@@ -109,7 +109,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return int
      */
-    public function getElapsedMilliseconds() : int
+    public function getElapsedMilliseconds(): int
     {
         return $this->elapsedMilliseconds;
     }
@@ -120,7 +120,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setElapsedMilliseconds(int $elapsedMilliseconds) : self
+    public function setElapsedMilliseconds(int $elapsedMilliseconds): self
     {
         $this->initialized['elapsedMilliseconds'] = true;
         $this->elapsedMilliseconds = $elapsedMilliseconds;
@@ -131,7 +131,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -142,7 +142,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;
@@ -153,7 +153,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -164,7 +164,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -175,7 +175,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsSearchStringRewritten() : bool
+    public function getIsSearchStringRewritten(): bool
     {
         return $this->isSearchStringRewritten;
     }
@@ -186,7 +186,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setIsSearchStringRewritten(bool $isSearchStringRewritten) : self
+    public function setIsSearchStringRewritten(bool $isSearchStringRewritten): self
     {
         $this->initialized['isSearchStringRewritten'] = true;
         $this->isSearchStringRewritten = $isSearchStringRewritten;
@@ -197,7 +197,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return list<QueryDebugInformation>|null
      */
-    public function getQueryDebugInformation() : ?array
+    public function getQueryDebugInformation(): ?array
     {
         return $this->queryDebugInformation;
     }
@@ -208,7 +208,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setQueryDebugInformation(?array $queryDebugInformation) : self
+    public function setQueryDebugInformation(?array $queryDebugInformation): self
     {
         $this->initialized['queryDebugInformation'] = true;
         $this->queryDebugInformation = $queryDebugInformation;
@@ -219,7 +219,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return list<AggregationResult>|null
      */
-    public function getAggregationResults() : ?array
+    public function getAggregationResults(): ?array
     {
         return $this->aggregationResults;
     }
@@ -230,7 +230,7 @@ class ShareSearchResult extends \ArrayObject
      *
      * @return self
      */
-    public function setAggregationResults(?array $aggregationResults) : self
+    public function setAggregationResults(?array $aggregationResults): self
     {
         $this->initialized['aggregationResults'] = true;
         $this->aggregationResults = $aggregationResults;

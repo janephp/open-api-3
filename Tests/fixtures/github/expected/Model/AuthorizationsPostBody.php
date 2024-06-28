@@ -8,7 +8,7 @@ class AuthorizationsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getScopes() : ?array
+    public function getScopes(): ?array
     {
         return $this->scopes;
     }
@@ -64,7 +64,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setScopes(?array $scopes) : self
+    public function setScopes(?array $scopes): self
     {
         $this->initialized['scopes'] = true;
         $this->scopes = $scopes;
@@ -75,7 +75,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getNote() : string
+    public function getNote(): string
     {
         return $this->note;
     }
@@ -86,7 +86,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNote(string $note) : self
+    public function setNote(string $note): self
     {
         $this->initialized['note'] = true;
         $this->note = $note;
@@ -97,7 +97,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getNoteUrl() : string
+    public function getNoteUrl(): string
     {
         return $this->noteUrl;
     }
@@ -108,7 +108,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNoteUrl(string $noteUrl) : self
+    public function setNoteUrl(string $noteUrl): self
     {
         $this->initialized['noteUrl'] = true;
         $this->noteUrl = $noteUrl;
@@ -119,7 +119,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getClientId() : string
+    public function getClientId(): string
     {
         return $this->clientId;
     }
@@ -130,7 +130,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setClientId(string $clientId) : self
+    public function setClientId(string $clientId): self
     {
         $this->initialized['clientId'] = true;
         $this->clientId = $clientId;
@@ -141,7 +141,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getClientSecret() : string
+    public function getClientSecret(): string
     {
         return $this->clientSecret;
     }
@@ -152,7 +152,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setClientSecret(string $clientSecret) : self
+    public function setClientSecret(string $clientSecret): self
     {
         $this->initialized['clientSecret'] = true;
         $this->clientSecret = $clientSecret;
@@ -163,7 +163,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getFingerprint() : string
+    public function getFingerprint(): string
     {
         return $this->fingerprint;
     }
@@ -174,7 +174,7 @@ class AuthorizationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setFingerprint(string $fingerprint) : self
+    public function setFingerprint(string $fingerprint): self
     {
         $this->initialized['fingerprint'] = true;
         $this->fingerprint = $fingerprint;

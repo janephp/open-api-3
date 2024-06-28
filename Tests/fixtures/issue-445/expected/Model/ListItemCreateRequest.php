@@ -8,7 +8,7 @@ class ListItemCreateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -37,7 +37,7 @@ class ListItemCreateRequest
      *
      * @return string
      */
-    public function getContentSchemaId() : string
+    public function getContentSchemaId(): string
     {
         return $this->contentSchemaId;
     }
@@ -48,7 +48,7 @@ class ListItemCreateRequest
      *
      * @return self
      */
-    public function setContentSchemaId(string $contentSchemaId) : self
+    public function setContentSchemaId(string $contentSchemaId): self
     {
         $this->initialized['contentSchemaId'] = true;
         $this->contentSchemaId = $contentSchemaId;
@@ -59,7 +59,7 @@ class ListItemCreateRequest
      *
      * @return array<string, mixed>|null
      */
-    public function getContent() : ?iterable
+    public function getContent(): ?iterable
     {
         return $this->content;
     }
@@ -70,7 +70,7 @@ class ListItemCreateRequest
      *
      * @return self
      */
-    public function setContent(?iterable $content) : self
+    public function setContent(?iterable $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -83,7 +83,7 @@ class ListItemCreateRequest
     *
     * @return string|null
     */
-    public function getRequestId() : ?string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -96,7 +96,7 @@ class ListItemCreateRequest
     *
     * @return self
     */
-    public function setRequestId(?string $requestId) : self
+    public function setRequestId(?string $requestId): self
     {
         $this->initialized['requestId'] = true;
         $this->requestId = $requestId;

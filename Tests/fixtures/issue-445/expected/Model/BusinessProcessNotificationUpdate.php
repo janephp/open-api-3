@@ -8,7 +8,7 @@ class BusinessProcessNotificationUpdate
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class BusinessProcessNotificationUpdate
      *
      * @return self
      */
-    public function setTitle($title) : self
+    public function setTitle($title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -75,7 +75,7 @@ class BusinessProcessNotificationUpdate
      *
      * @return self
      */
-    public function setMessage($message) : self
+    public function setMessage($message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -87,7 +87,7 @@ class BusinessProcessNotificationUpdate
     *
     * @return string|null
     */
-    public function getNavigationLink() : ?string
+    public function getNavigationLink(): ?string
     {
         return $this->navigationLink;
     }
@@ -99,7 +99,7 @@ class BusinessProcessNotificationUpdate
     *
     * @return self
     */
-    public function setNavigationLink(?string $navigationLink) : self
+    public function setNavigationLink(?string $navigationLink): self
     {
         $this->initialized['navigationLink'] = true;
         $this->navigationLink = $navigationLink;
@@ -121,7 +121,7 @@ class BusinessProcessNotificationUpdate
      *
      * @return self
      */
-    public function setEventType($eventType) : self
+    public function setEventType($eventType): self
     {
         $this->initialized['eventType'] = true;
         $this->eventType = $eventType;

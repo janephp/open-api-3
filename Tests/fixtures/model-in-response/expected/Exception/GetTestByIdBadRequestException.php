@@ -18,11 +18,11 @@ class GetTestByIdBadRequestException extends BadRequestException
         $this->error = $error;
         $this->response = $response;
     }
-    public function getError() : \Jane\Component\OpenApi3\Tests\Expected\Model\Error
+    public function getError(): \Jane\Component\OpenApi3\Tests\Expected\Model\Error
     {
         return $this->error;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

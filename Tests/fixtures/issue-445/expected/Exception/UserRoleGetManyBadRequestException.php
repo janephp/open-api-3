@@ -18,11 +18,11 @@ class UserRoleGetManyBadRequestException extends BadRequestException
         $this->requestSizeLimitExceededException = $requestSizeLimitExceededException;
         $this->response = $response;
     }
-    public function getRequestSizeLimitExceededException() : \PicturePark\API\Model\RequestSizeLimitExceededException
+    public function getRequestSizeLimitExceededException(): \PicturePark\API\Model\RequestSizeLimitExceededException
     {
         return $this->requestSizeLimitExceededException;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

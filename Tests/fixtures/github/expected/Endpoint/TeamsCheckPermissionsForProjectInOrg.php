@@ -22,19 +22,19 @@ class TeamsCheckPermissionsForProjectInOrg extends \Github\Runtime\Client\BaseEn
         $this->project_id = $projectId;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{org}', '{team_slug}', '{project_id}'], [$this->org, $this->team_slug, $this->project_id], '/orgs/{org}/teams/{team_slug}/projects/{project_id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
@@ -50,13 +50,13 @@ class TeamsCheckPermissionsForProjectInOrg extends \Github\Runtime\Client\BaseEn
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'Github\\Model\\TeamProject', 'json');
+            return $serializer->deserialize($body, 'Github\Model\TeamProject', 'json');
         }
         if (404 === $status) {
             throw new \Github\Exception\TeamsCheckPermissionsForProjectInOrgNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

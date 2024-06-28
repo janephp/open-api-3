@@ -8,7 +8,7 @@ class OutputDataDocument extends OutputDataBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class OutputDataDocument extends OutputDataBase
      *
      * @return int
      */
-    public function getPageCount() : int
+    public function getPageCount(): int
     {
         return $this->pageCount;
     }
@@ -34,7 +34,7 @@ class OutputDataDocument extends OutputDataBase
      *
      * @return self
      */
-    public function setPageCount(int $pageCount) : self
+    public function setPageCount(int $pageCount): self
     {
         $this->initialized['pageCount'] = true;
         $this->pageCount = $pageCount;

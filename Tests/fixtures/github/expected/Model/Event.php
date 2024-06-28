@@ -8,7 +8,7 @@ class Event extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class Event extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -76,7 +76,7 @@ class Event extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -87,7 +87,7 @@ class Event extends \ArrayObject
      *
      * @return string|null
      */
-    public function getType() : ?string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -98,7 +98,7 @@ class Event extends \ArrayObject
      *
      * @return self
      */
-    public function setType(?string $type) : self
+    public function setType(?string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -109,7 +109,7 @@ class Event extends \ArrayObject
      *
      * @return Actor
      */
-    public function getActor() : Actor
+    public function getActor(): Actor
     {
         return $this->actor;
     }
@@ -120,7 +120,7 @@ class Event extends \ArrayObject
      *
      * @return self
      */
-    public function setActor(Actor $actor) : self
+    public function setActor(Actor $actor): self
     {
         $this->initialized['actor'] = true;
         $this->actor = $actor;
@@ -131,7 +131,7 @@ class Event extends \ArrayObject
      *
      * @return EventRepo
      */
-    public function getRepo() : EventRepo
+    public function getRepo(): EventRepo
     {
         return $this->repo;
     }
@@ -142,7 +142,7 @@ class Event extends \ArrayObject
      *
      * @return self
      */
-    public function setRepo(EventRepo $repo) : self
+    public function setRepo(EventRepo $repo): self
     {
         $this->initialized['repo'] = true;
         $this->repo = $repo;
@@ -153,7 +153,7 @@ class Event extends \ArrayObject
      *
      * @return Actor
      */
-    public function getOrg() : Actor
+    public function getOrg(): Actor
     {
         return $this->org;
     }
@@ -164,7 +164,7 @@ class Event extends \ArrayObject
      *
      * @return self
      */
-    public function setOrg(Actor $org) : self
+    public function setOrg(Actor $org): self
     {
         $this->initialized['org'] = true;
         $this->org = $org;
@@ -175,7 +175,7 @@ class Event extends \ArrayObject
      *
      * @return EventPayload
      */
-    public function getPayload() : EventPayload
+    public function getPayload(): EventPayload
     {
         return $this->payload;
     }
@@ -186,7 +186,7 @@ class Event extends \ArrayObject
      *
      * @return self
      */
-    public function setPayload(EventPayload $payload) : self
+    public function setPayload(EventPayload $payload): self
     {
         $this->initialized['payload'] = true;
         $this->payload = $payload;
@@ -197,7 +197,7 @@ class Event extends \ArrayObject
      *
      * @return bool
      */
-    public function getPublic() : bool
+    public function getPublic(): bool
     {
         return $this->public;
     }
@@ -208,7 +208,7 @@ class Event extends \ArrayObject
      *
      * @return self
      */
-    public function setPublic(bool $public) : self
+    public function setPublic(bool $public): self
     {
         $this->initialized['public'] = true;
         $this->public = $public;
@@ -219,7 +219,7 @@ class Event extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getCreatedAt() : ?\DateTime
+    public function getCreatedAt(): ?\DateTime
     {
         return $this->createdAt;
     }
@@ -230,7 +230,7 @@ class Event extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(?\DateTime $createdAt) : self
+    public function setCreatedAt(?\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;

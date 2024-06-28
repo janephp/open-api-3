@@ -8,7 +8,7 @@ class FieldSingleRelation extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class FieldSingleRelation extends FieldBase
      *
      * @return string
      */
-    public function getSchemaId() : string
+    public function getSchemaId(): string
     {
         return $this->schemaId;
     }
@@ -46,7 +46,7 @@ class FieldSingleRelation extends FieldBase
      *
      * @return self
      */
-    public function setSchemaId(string $schemaId) : self
+    public function setSchemaId(string $schemaId): self
     {
         $this->initialized['schemaId'] = true;
         $this->schemaId = $schemaId;
@@ -68,7 +68,7 @@ class FieldSingleRelation extends FieldBase
      *
      * @return self
      */
-    public function setSchemaIndexingInfo($schemaIndexingInfo) : self
+    public function setSchemaIndexingInfo($schemaIndexingInfo): self
     {
         $this->initialized['schemaIndexingInfo'] = true;
         $this->schemaIndexingInfo = $schemaIndexingInfo;
@@ -79,7 +79,7 @@ class FieldSingleRelation extends FieldBase
      *
      * @return list<RelationType>
      */
-    public function getRelationTypes() : array
+    public function getRelationTypes(): array
     {
         return $this->relationTypes;
     }
@@ -90,7 +90,7 @@ class FieldSingleRelation extends FieldBase
      *
      * @return self
      */
-    public function setRelationTypes(array $relationTypes) : self
+    public function setRelationTypes(array $relationTypes): self
     {
         $this->initialized['relationTypes'] = true;
         $this->relationTypes = $relationTypes;

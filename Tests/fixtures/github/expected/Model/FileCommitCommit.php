@@ -8,7 +8,7 @@ class FileCommitCommit extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -88,7 +88,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -99,7 +99,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -110,7 +110,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -121,7 +121,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -132,7 +132,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -143,7 +143,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -154,7 +154,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -165,7 +165,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return FileCommitCommitAuthor
      */
-    public function getAuthor() : FileCommitCommitAuthor
+    public function getAuthor(): FileCommitCommitAuthor
     {
         return $this->author;
     }
@@ -176,7 +176,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(FileCommitCommitAuthor $author) : self
+    public function setAuthor(FileCommitCommitAuthor $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -187,7 +187,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return FileCommitCommitCommitter
      */
-    public function getCommitter() : FileCommitCommitCommitter
+    public function getCommitter(): FileCommitCommitCommitter
     {
         return $this->committer;
     }
@@ -198,7 +198,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitter(FileCommitCommitCommitter $committer) : self
+    public function setCommitter(FileCommitCommitCommitter $committer): self
     {
         $this->initialized['committer'] = true;
         $this->committer = $committer;
@@ -209,7 +209,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -220,7 +220,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -231,7 +231,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return FileCommitCommitTree
      */
-    public function getTree() : FileCommitCommitTree
+    public function getTree(): FileCommitCommitTree
     {
         return $this->tree;
     }
@@ -242,7 +242,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setTree(FileCommitCommitTree $tree) : self
+    public function setTree(FileCommitCommitTree $tree): self
     {
         $this->initialized['tree'] = true;
         $this->tree = $tree;
@@ -253,7 +253,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return list<FileCommitCommitParentsItem>
      */
-    public function getParents() : array
+    public function getParents(): array
     {
         return $this->parents;
     }
@@ -264,7 +264,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setParents(array $parents) : self
+    public function setParents(array $parents): self
     {
         $this->initialized['parents'] = true;
         $this->parents = $parents;
@@ -275,7 +275,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return FileCommitCommitVerification
      */
-    public function getVerification() : FileCommitCommitVerification
+    public function getVerification(): FileCommitCommitVerification
     {
         return $this->verification;
     }
@@ -286,7 +286,7 @@ class FileCommitCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setVerification(FileCommitCommitVerification $verification) : self
+    public function setVerification(FileCommitCommitVerification $verification): self
     {
         $this->initialized['verification'] = true;
         $this->verification = $verification;

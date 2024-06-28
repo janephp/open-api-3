@@ -8,7 +8,7 @@ class ContentDetail
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -132,7 +132,7 @@ class ContentDetail
     *
     * @return string
     */
-    public function getContentSchemaId() : string
+    public function getContentSchemaId(): string
     {
         return $this->contentSchemaId;
     }
@@ -144,7 +144,7 @@ class ContentDetail
     *
     * @return self
     */
-    public function setContentSchemaId(string $contentSchemaId) : self
+    public function setContentSchemaId(string $contentSchemaId): self
     {
         $this->initialized['contentSchemaId'] = true;
         $this->contentSchemaId = $contentSchemaId;
@@ -156,7 +156,7 @@ class ContentDetail
     *
     * @return list<string>|null
     */
-    public function getLayerSchemaIds() : ?array
+    public function getLayerSchemaIds(): ?array
     {
         return $this->layerSchemaIds;
     }
@@ -168,7 +168,7 @@ class ContentDetail
     *
     * @return self
     */
-    public function setLayerSchemaIds(?array $layerSchemaIds) : self
+    public function setLayerSchemaIds(?array $layerSchemaIds): self
     {
         $this->initialized['layerSchemaIds'] = true;
         $this->layerSchemaIds = $layerSchemaIds;
@@ -179,7 +179,7 @@ class ContentDetail
      *
      * @return list<string>|null
      */
-    public function getBrokenReferenceIds() : ?array
+    public function getBrokenReferenceIds(): ?array
     {
         return $this->brokenReferenceIds;
     }
@@ -190,7 +190,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setBrokenReferenceIds(?array $brokenReferenceIds) : self
+    public function setBrokenReferenceIds(?array $brokenReferenceIds): self
     {
         $this->initialized['brokenReferenceIds'] = true;
         $this->brokenReferenceIds = $brokenReferenceIds;
@@ -202,7 +202,7 @@ class ContentDetail
     *
     * @return list<string>|null
     */
-    public function getBrokenIndirectReferenceIds() : ?array
+    public function getBrokenIndirectReferenceIds(): ?array
     {
         return $this->brokenIndirectReferenceIds;
     }
@@ -214,7 +214,7 @@ class ContentDetail
     *
     * @return self
     */
-    public function setBrokenIndirectReferenceIds(?array $brokenIndirectReferenceIds) : self
+    public function setBrokenIndirectReferenceIds(?array $brokenIndirectReferenceIds): self
     {
         $this->initialized['brokenIndirectReferenceIds'] = true;
         $this->brokenIndirectReferenceIds = $brokenIndirectReferenceIds;
@@ -225,7 +225,7 @@ class ContentDetail
      *
      * @return list<string>|null
      */
-    public function getBrokenRelationTargetIds() : ?array
+    public function getBrokenRelationTargetIds(): ?array
     {
         return $this->brokenRelationTargetIds;
     }
@@ -236,7 +236,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setBrokenRelationTargetIds(?array $brokenRelationTargetIds) : self
+    public function setBrokenRelationTargetIds(?array $brokenRelationTargetIds): self
     {
         $this->initialized['brokenRelationTargetIds'] = true;
         $this->brokenRelationTargetIds = $brokenRelationTargetIds;
@@ -248,7 +248,7 @@ class ContentDetail
     *
     * @return array<string, mixed>|null
     */
-    public function getContent() : ?iterable
+    public function getContent(): ?iterable
     {
         return $this->content;
     }
@@ -260,7 +260,7 @@ class ContentDetail
     *
     * @return self
     */
-    public function setContent(?iterable $content) : self
+    public function setContent(?iterable $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -272,7 +272,7 @@ class ContentDetail
     *
     * @return array<string, mixed>|null
     */
-    public function getMetadata() : ?iterable
+    public function getMetadata(): ?iterable
     {
         return $this->metadata;
     }
@@ -284,7 +284,7 @@ class ContentDetail
     *
     * @return self
     */
-    public function setMetadata(?iterable $metadata) : self
+    public function setMetadata(?iterable $metadata): self
     {
         $this->initialized['metadata'] = true;
         $this->metadata = $metadata;
@@ -295,7 +295,7 @@ class ContentDetail
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -306,7 +306,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -317,7 +317,7 @@ class ContentDetail
      *
      * @return list<string>|null
      */
-    public function getContentPermissionSetIds() : ?array
+    public function getContentPermissionSetIds(): ?array
     {
         return $this->contentPermissionSetIds;
     }
@@ -328,7 +328,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setContentPermissionSetIds(?array $contentPermissionSetIds) : self
+    public function setContentPermissionSetIds(?array $contentPermissionSetIds): self
     {
         $this->initialized['contentPermissionSetIds'] = true;
         $this->contentPermissionSetIds = $contentPermissionSetIds;
@@ -340,7 +340,7 @@ class ContentDetail
     *
     * @return list<Output>|null
     */
-    public function getOutputs() : ?array
+    public function getOutputs(): ?array
     {
         return $this->outputs;
     }
@@ -352,7 +352,7 @@ class ContentDetail
     *
     * @return self
     */
-    public function setOutputs(?array $outputs) : self
+    public function setOutputs(?array $outputs): self
     {
         $this->initialized['outputs'] = true;
         $this->outputs = $outputs;
@@ -374,7 +374,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;
@@ -385,7 +385,7 @@ class ContentDetail
      *
      * @return string
      */
-    public function getOwnerTokenId() : string
+    public function getOwnerTokenId(): string
     {
         return $this->ownerTokenId;
     }
@@ -396,7 +396,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setOwnerTokenId(string $ownerTokenId) : self
+    public function setOwnerTokenId(string $ownerTokenId): self
     {
         $this->initialized['ownerTokenId'] = true;
         $this->ownerTokenId = $ownerTokenId;
@@ -418,7 +418,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setOwner($owner) : self
+    public function setOwner($owner): self
     {
         $this->initialized['owner'] = true;
         $this->owner = $owner;
@@ -440,7 +440,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setContentType($contentType) : self
+    public function setContentType($contentType): self
     {
         $this->initialized['contentType'] = true;
         $this->contentType = $contentType;
@@ -462,7 +462,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setDisplayValues($displayValues) : self
+    public function setDisplayValues($displayValues): self
     {
         $this->initialized['displayValues'] = true;
         $this->displayValues = $displayValues;
@@ -484,7 +484,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setLifeCycle($lifeCycle) : self
+    public function setLifeCycle($lifeCycle): self
     {
         $this->initialized['lifeCycle'] = true;
         $this->lifeCycle = $lifeCycle;
@@ -495,7 +495,7 @@ class ContentDetail
      *
      * @return list<string>|null
      */
-    public function getContentRights() : ?array
+    public function getContentRights(): ?array
     {
         return $this->contentRights;
     }
@@ -506,7 +506,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setContentRights(?array $contentRights) : self
+    public function setContentRights(?array $contentRights): self
     {
         $this->initialized['contentRights'] = true;
         $this->contentRights = $contentRights;
@@ -528,7 +528,7 @@ class ContentDetail
      *
      * @return self
      */
-    public function setActivity($activity) : self
+    public function setActivity($activity): self
     {
         $this->initialized['activity'] = true;
         $this->activity = $activity;

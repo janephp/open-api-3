@@ -20,60 +20,60 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\FilterBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\FilterBase::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (array_key_exists('kind', $data) and 'AndFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\AndFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\AndFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OrFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OrFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OrFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NotFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NotFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NotFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'DateRangeFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\DateRangeFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\DateRangeFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ExistsFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ExistsFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ExistsFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'GeoBoundingBoxFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\GeoBoundingBoxFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\GeoBoundingBoxFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'GeoDistanceFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\GeoDistanceFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\GeoDistanceFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NestedFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NestedFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NestedFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NumericRangeFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NumericRangeFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NumericRangeFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'PrefixFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\PrefixFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\PrefixFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermsFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermsFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermsFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'AggregationFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\AggregationFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\AggregationFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ChildFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ChildFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ChildFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ParentFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ParentFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ParentFilter', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -90,7 +90,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if (null !== $object->getKind() and 'AndFilter' === $object->getKind()) {
@@ -141,7 +141,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\FilterBase::class => false];
         }
@@ -153,11 +153,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\FilterBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\FilterBase::class;
         }
@@ -167,49 +167,49 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function denormalize($data, $type, $format = null, array $context = [])
         {
             if (array_key_exists('kind', $data) and 'AndFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\AndFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\AndFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OrFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OrFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OrFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NotFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NotFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NotFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'DateRangeFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\DateRangeFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\DateRangeFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ExistsFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ExistsFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ExistsFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'GeoBoundingBoxFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\GeoBoundingBoxFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\GeoBoundingBoxFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'GeoDistanceFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\GeoDistanceFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\GeoDistanceFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NestedFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NestedFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NestedFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'NumericRangeFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\NumericRangeFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\NumericRangeFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'PrefixFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\PrefixFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\PrefixFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'TermsFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\TermsFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\TermsFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'AggregationFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\AggregationFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\AggregationFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ChildFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ChildFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ChildFilter', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'ParentFilter' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\ParentFilter', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\ParentFilter', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -280,7 +280,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\FilterBase::class => false];
         }

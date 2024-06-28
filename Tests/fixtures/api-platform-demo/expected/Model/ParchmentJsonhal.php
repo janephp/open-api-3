@@ -12,7 +12,7 @@ class ParchmentJsonhal extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -45,7 +45,7 @@ class ParchmentJsonhal extends \ArrayObject
      *
      * @return ParchmentJsonhalLinks
      */
-    public function getLinks() : ParchmentJsonhalLinks
+    public function getLinks(): ParchmentJsonhalLinks
     {
         return $this->links;
     }
@@ -56,7 +56,7 @@ class ParchmentJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(ParchmentJsonhalLinks $links) : self
+    public function setLinks(ParchmentJsonhalLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;
@@ -67,7 +67,7 @@ class ParchmentJsonhal extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -78,7 +78,7 @@ class ParchmentJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -89,7 +89,7 @@ class ParchmentJsonhal extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -100,7 +100,7 @@ class ParchmentJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -111,7 +111,7 @@ class ParchmentJsonhal extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -122,7 +122,7 @@ class ParchmentJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

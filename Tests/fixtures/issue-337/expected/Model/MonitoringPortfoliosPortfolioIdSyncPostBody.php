@@ -8,7 +8,7 @@ class MonitoringPortfoliosPortfolioIdSyncPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class MonitoringPortfoliosPortfolioIdSyncPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getImportCsv() : string
+    public function getImportCsv(): string
     {
         return $this->importCsv;
     }
@@ -40,7 +40,7 @@ class MonitoringPortfoliosPortfolioIdSyncPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setImportCsv(string $importCsv) : self
+    public function setImportCsv(string $importCsv): self
     {
         $this->initialized['importCsv'] = true;
         $this->importCsv = $importCsv;
@@ -51,7 +51,7 @@ class MonitoringPortfoliosPortfolioIdSyncPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -62,7 +62,7 @@ class MonitoringPortfoliosPortfolioIdSyncPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;

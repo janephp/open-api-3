@@ -8,7 +8,7 @@ class VersionInfo
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class VersionInfo
      *
      * @return string|null
      */
-    public function getFileVersion() : ?string
+    public function getFileVersion(): ?string
     {
         return $this->fileVersion;
     }
@@ -52,7 +52,7 @@ class VersionInfo
      *
      * @return self
      */
-    public function setFileVersion(?string $fileVersion) : self
+    public function setFileVersion(?string $fileVersion): self
     {
         $this->initialized['fileVersion'] = true;
         $this->fileVersion = $fileVersion;
@@ -63,7 +63,7 @@ class VersionInfo
      *
      * @return string|null
      */
-    public function getFileProductVersion() : ?string
+    public function getFileProductVersion(): ?string
     {
         return $this->fileProductVersion;
     }
@@ -74,7 +74,7 @@ class VersionInfo
      *
      * @return self
      */
-    public function setFileProductVersion(?string $fileProductVersion) : self
+    public function setFileProductVersion(?string $fileProductVersion): self
     {
         $this->initialized['fileProductVersion'] = true;
         $this->fileProductVersion = $fileProductVersion;
@@ -85,7 +85,7 @@ class VersionInfo
      *
      * @return string|null
      */
-    public function getContractVersion() : ?string
+    public function getContractVersion(): ?string
     {
         return $this->contractVersion;
     }
@@ -96,7 +96,7 @@ class VersionInfo
      *
      * @return self
      */
-    public function setContractVersion(?string $contractVersion) : self
+    public function setContractVersion(?string $contractVersion): self
     {
         $this->initialized['contractVersion'] = true;
         $this->contractVersion = $contractVersion;
@@ -107,7 +107,7 @@ class VersionInfo
      *
      * @return string|null
      */
-    public function getRelease() : ?string
+    public function getRelease(): ?string
     {
         return $this->release;
     }
@@ -118,7 +118,7 @@ class VersionInfo
      *
      * @return self
      */
-    public function setRelease(?string $release) : self
+    public function setRelease(?string $release): self
     {
         $this->initialized['release'] = true;
         $this->release = $release;

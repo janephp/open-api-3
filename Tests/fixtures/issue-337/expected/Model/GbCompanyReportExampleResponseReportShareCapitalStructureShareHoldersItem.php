@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -64,7 +64,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -75,7 +75,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return string
      */
-    public function getShareholderType() : string
+    public function getShareholderType(): string
     {
         return $this->shareholderType;
     }
@@ -86,7 +86,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return self
      */
-    public function setShareholderType(string $shareholderType) : self
+    public function setShareholderType(string $shareholderType): self
     {
         $this->initialized['shareholderType'] = true;
         $this->shareholderType = $shareholderType;
@@ -97,7 +97,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return string
      */
-    public function getShareType() : string
+    public function getShareType(): string
     {
         return $this->shareType;
     }
@@ -108,7 +108,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return self
      */
-    public function setShareType(string $shareType) : self
+    public function setShareType(string $shareType): self
     {
         $this->initialized['shareType'] = true;
         $this->shareType = $shareType;
@@ -119,7 +119,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -130,7 +130,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return self
      */
-    public function setCurrency(string $currency) : self
+    public function setCurrency(string $currency): self
     {
         $this->initialized['currency'] = true;
         $this->currency = $currency;
@@ -141,7 +141,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return float
      */
-    public function getTotalNumberOfSharesOwned() : float
+    public function getTotalNumberOfSharesOwned(): float
     {
         return $this->totalNumberOfSharesOwned;
     }
@@ -152,7 +152,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return self
      */
-    public function setTotalNumberOfSharesOwned(float $totalNumberOfSharesOwned) : self
+    public function setTotalNumberOfSharesOwned(float $totalNumberOfSharesOwned): self
     {
         $this->initialized['totalNumberOfSharesOwned'] = true;
         $this->totalNumberOfSharesOwned = $totalNumberOfSharesOwned;
@@ -163,7 +163,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return float
      */
-    public function getPercentSharesHeld() : float
+    public function getPercentSharesHeld(): float
     {
         return $this->percentSharesHeld;
     }
@@ -174,7 +174,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem 
      *
      * @return self
      */
-    public function setPercentSharesHeld(float $percentSharesHeld) : self
+    public function setPercentSharesHeld(float $percentSharesHeld): self
     {
         $this->initialized['percentSharesHeld'] = true;
         $this->percentSharesHeld = $percentSharesHeld;

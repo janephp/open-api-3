@@ -18,11 +18,11 @@ class ProjectsCreateCardServiceUnavailableException extends ServiceUnavailableEx
         $this->projectsColumnsColumnIdCardsPostResponse503 = $projectsColumnsColumnIdCardsPostResponse503;
         $this->response = $response;
     }
-    public function getProjectsColumnsColumnIdCardsPostResponse503() : \Github\Model\ProjectsColumnsColumnIdCardsPostResponse503
+    public function getProjectsColumnsColumnIdCardsPostResponse503(): \Github\Model\ProjectsColumnsColumnIdCardsPostResponse503
     {
         return $this->projectsColumnsColumnIdCardsPostResponse503;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

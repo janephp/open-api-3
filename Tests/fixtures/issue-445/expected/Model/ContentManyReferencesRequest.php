@@ -8,7 +8,7 @@ class ContentManyReferencesRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ContentManyReferencesRequest
      *
      * @return list<string>
      */
-    public function getContentIds() : array
+    public function getContentIds(): array
     {
         return $this->contentIds;
     }
@@ -46,7 +46,7 @@ class ContentManyReferencesRequest
      *
      * @return self
      */
-    public function setContentIds(array $contentIds) : self
+    public function setContentIds(array $contentIds): self
     {
         $this->initialized['contentIds'] = true;
         $this->contentIds = $contentIds;
@@ -68,7 +68,7 @@ class ContentManyReferencesRequest
      *
      * @return self
      */
-    public function setReferences($references) : self
+    public function setReferences($references): self
     {
         $this->initialized['references'] = true;
         $this->references = $references;
@@ -90,7 +90,7 @@ class ContentManyReferencesRequest
      *
      * @return self
      */
-    public function setShares($shares) : self
+    public function setShares($shares): self
     {
         $this->initialized['shares'] = true;
         $this->shares = $shares;

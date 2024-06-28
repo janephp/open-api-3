@@ -8,7 +8,7 @@ class SubLevel3 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class SubLevel3 extends \ArrayObject
      *
      * @return string
      */
-    public function getEnd() : string
+    public function getEnd(): string
     {
         return $this->end;
     }
@@ -34,7 +34,7 @@ class SubLevel3 extends \ArrayObject
      *
      * @return self
      */
-    public function setEnd(string $end) : self
+    public function setEnd(string $end): self
     {
         $this->initialized['end'] = true;
         $this->end = $end;

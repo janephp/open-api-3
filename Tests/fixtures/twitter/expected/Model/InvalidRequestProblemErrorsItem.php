@@ -8,7 +8,7 @@ class InvalidRequestProblemErrorsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class InvalidRequestProblemErrorsItem extends \ArrayObject
      *
      * @return array<string, list<string>>
      */
-    public function getParameters() : iterable
+    public function getParameters(): iterable
     {
         return $this->parameters;
     }
@@ -40,7 +40,7 @@ class InvalidRequestProblemErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setParameters(iterable $parameters) : self
+    public function setParameters(iterable $parameters): self
     {
         $this->initialized['parameters'] = true;
         $this->parameters = $parameters;
@@ -51,7 +51,7 @@ class InvalidRequestProblemErrorsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -62,7 +62,7 @@ class InvalidRequestProblemErrorsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;

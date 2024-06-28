@@ -8,7 +8,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -78,7 +78,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
     *
     * @return list<string>|null
     */
-    public function getLayerSchemaIds() : ?array
+    public function getLayerSchemaIds(): ?array
     {
         return $this->layerSchemaIds;
     }
@@ -90,7 +90,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
     *
     * @return self
     */
-    public function setLayerSchemaIds(?array $layerSchemaIds) : self
+    public function setLayerSchemaIds(?array $layerSchemaIds): self
     {
         $this->initialized['layerSchemaIds'] = true;
         $this->layerSchemaIds = $layerSchemaIds;
@@ -104,7 +104,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
     *
     * @return array<string, mixed>|null
     */
-    public function getContent() : ?iterable
+    public function getContent(): ?iterable
     {
         return $this->content;
     }
@@ -118,7 +118,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
     *
     * @return self
     */
-    public function setContent(?iterable $content) : self
+    public function setContent(?iterable $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -132,7 +132,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
     *
     * @return array<string, mixed>|null
     */
-    public function getMetadata() : ?iterable
+    public function getMetadata(): ?iterable
     {
         return $this->metadata;
     }
@@ -146,7 +146,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
     *
     * @return self
     */
-    public function setMetadata(?iterable $metadata) : self
+    public function setMetadata(?iterable $metadata): self
     {
         $this->initialized['metadata'] = true;
         $this->metadata = $metadata;
@@ -178,7 +178,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
     *
     * @return self
     */
-    public function setLayerSchemasUpdateOptions($layerSchemasUpdateOptions) : self
+    public function setLayerSchemasUpdateOptions($layerSchemasUpdateOptions): self
     {
         $this->initialized['layerSchemasUpdateOptions'] = true;
         $this->layerSchemasUpdateOptions = $layerSchemasUpdateOptions;
@@ -206,7 +206,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
     *
     * @return self
     */
-    public function setLayerFieldsUpdateOptions($layerFieldsUpdateOptions) : self
+    public function setLayerFieldsUpdateOptions($layerFieldsUpdateOptions): self
     {
         $this->initialized['layerFieldsUpdateOptions'] = true;
         $this->layerFieldsUpdateOptions = $layerFieldsUpdateOptions;
@@ -234,7 +234,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
     *
     * @return self
     */
-    public function setContentFieldsUpdateOptions($contentFieldsUpdateOptions) : self
+    public function setContentFieldsUpdateOptions($contentFieldsUpdateOptions): self
     {
         $this->initialized['contentFieldsUpdateOptions'] = true;
         $this->contentFieldsUpdateOptions = $contentFieldsUpdateOptions;
@@ -245,7 +245,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -256,7 +256,7 @@ class ContentMetadataUpdateItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;

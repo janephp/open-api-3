@@ -8,7 +8,7 @@ class Contributor extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -143,7 +143,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getLogin() : string
+    public function getLogin(): string
     {
         return $this->login;
     }
@@ -154,7 +154,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setLogin(string $login) : self
+    public function setLogin(string $login): self
     {
         $this->initialized['login'] = true;
         $this->login = $login;
@@ -165,7 +165,7 @@ class Contributor extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -176,7 +176,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -187,7 +187,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -198,7 +198,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -209,7 +209,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getAvatarUrl() : string
+    public function getAvatarUrl(): string
     {
         return $this->avatarUrl;
     }
@@ -220,7 +220,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setAvatarUrl(string $avatarUrl) : self
+    public function setAvatarUrl(string $avatarUrl): self
     {
         $this->initialized['avatarUrl'] = true;
         $this->avatarUrl = $avatarUrl;
@@ -231,7 +231,7 @@ class Contributor extends \ArrayObject
      *
      * @return string|null
      */
-    public function getGravatarId() : ?string
+    public function getGravatarId(): ?string
     {
         return $this->gravatarId;
     }
@@ -242,7 +242,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setGravatarId(?string $gravatarId) : self
+    public function setGravatarId(?string $gravatarId): self
     {
         $this->initialized['gravatarId'] = true;
         $this->gravatarId = $gravatarId;
@@ -253,7 +253,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -264,7 +264,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -275,7 +275,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -286,7 +286,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -297,7 +297,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getFollowersUrl() : string
+    public function getFollowersUrl(): string
     {
         return $this->followersUrl;
     }
@@ -308,7 +308,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowersUrl(string $followersUrl) : self
+    public function setFollowersUrl(string $followersUrl): self
     {
         $this->initialized['followersUrl'] = true;
         $this->followersUrl = $followersUrl;
@@ -319,7 +319,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getFollowingUrl() : string
+    public function getFollowingUrl(): string
     {
         return $this->followingUrl;
     }
@@ -330,7 +330,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowingUrl(string $followingUrl) : self
+    public function setFollowingUrl(string $followingUrl): self
     {
         $this->initialized['followingUrl'] = true;
         $this->followingUrl = $followingUrl;
@@ -341,7 +341,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getGistsUrl() : string
+    public function getGistsUrl(): string
     {
         return $this->gistsUrl;
     }
@@ -352,7 +352,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setGistsUrl(string $gistsUrl) : self
+    public function setGistsUrl(string $gistsUrl): self
     {
         $this->initialized['gistsUrl'] = true;
         $this->gistsUrl = $gistsUrl;
@@ -363,7 +363,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getStarredUrl() : string
+    public function getStarredUrl(): string
     {
         return $this->starredUrl;
     }
@@ -374,7 +374,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setStarredUrl(string $starredUrl) : self
+    public function setStarredUrl(string $starredUrl): self
     {
         $this->initialized['starredUrl'] = true;
         $this->starredUrl = $starredUrl;
@@ -385,7 +385,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getSubscriptionsUrl() : string
+    public function getSubscriptionsUrl(): string
     {
         return $this->subscriptionsUrl;
     }
@@ -396,7 +396,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setSubscriptionsUrl(string $subscriptionsUrl) : self
+    public function setSubscriptionsUrl(string $subscriptionsUrl): self
     {
         $this->initialized['subscriptionsUrl'] = true;
         $this->subscriptionsUrl = $subscriptionsUrl;
@@ -407,7 +407,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationsUrl() : string
+    public function getOrganizationsUrl(): string
     {
         return $this->organizationsUrl;
     }
@@ -418,7 +418,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationsUrl(string $organizationsUrl) : self
+    public function setOrganizationsUrl(string $organizationsUrl): self
     {
         $this->initialized['organizationsUrl'] = true;
         $this->organizationsUrl = $organizationsUrl;
@@ -429,7 +429,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getReposUrl() : string
+    public function getReposUrl(): string
     {
         return $this->reposUrl;
     }
@@ -440,7 +440,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setReposUrl(string $reposUrl) : self
+    public function setReposUrl(string $reposUrl): self
     {
         $this->initialized['reposUrl'] = true;
         $this->reposUrl = $reposUrl;
@@ -451,7 +451,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getEventsUrl() : string
+    public function getEventsUrl(): string
     {
         return $this->eventsUrl;
     }
@@ -462,7 +462,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setEventsUrl(string $eventsUrl) : self
+    public function setEventsUrl(string $eventsUrl): self
     {
         $this->initialized['eventsUrl'] = true;
         $this->eventsUrl = $eventsUrl;
@@ -473,7 +473,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getReceivedEventsUrl() : string
+    public function getReceivedEventsUrl(): string
     {
         return $this->receivedEventsUrl;
     }
@@ -484,7 +484,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setReceivedEventsUrl(string $receivedEventsUrl) : self
+    public function setReceivedEventsUrl(string $receivedEventsUrl): self
     {
         $this->initialized['receivedEventsUrl'] = true;
         $this->receivedEventsUrl = $receivedEventsUrl;
@@ -495,7 +495,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -506,7 +506,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -517,7 +517,7 @@ class Contributor extends \ArrayObject
      *
      * @return bool
      */
-    public function getSiteAdmin() : bool
+    public function getSiteAdmin(): bool
     {
         return $this->siteAdmin;
     }
@@ -528,7 +528,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setSiteAdmin(bool $siteAdmin) : self
+    public function setSiteAdmin(bool $siteAdmin): self
     {
         $this->initialized['siteAdmin'] = true;
         $this->siteAdmin = $siteAdmin;
@@ -539,7 +539,7 @@ class Contributor extends \ArrayObject
      *
      * @return int
      */
-    public function getContributions() : int
+    public function getContributions(): int
     {
         return $this->contributions;
     }
@@ -550,7 +550,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setContributions(int $contributions) : self
+    public function setContributions(int $contributions): self
     {
         $this->initialized['contributions'] = true;
         $this->contributions = $contributions;
@@ -561,7 +561,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -572,7 +572,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -583,7 +583,7 @@ class Contributor extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -594,7 +594,7 @@ class Contributor extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;

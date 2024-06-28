@@ -8,7 +8,7 @@ class MatchRegexCondition extends BusinessRuleCondition
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class MatchRegexCondition extends BusinessRuleCondition
      *
      * @return string|null
      */
-    public function getFieldPath() : ?string
+    public function getFieldPath(): ?string
     {
         return $this->fieldPath;
     }
@@ -46,7 +46,7 @@ class MatchRegexCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setFieldPath(?string $fieldPath) : self
+    public function setFieldPath(?string $fieldPath): self
     {
         $this->initialized['fieldPath'] = true;
         $this->fieldPath = $fieldPath;
@@ -57,7 +57,7 @@ class MatchRegexCondition extends BusinessRuleCondition
      *
      * @return string|null
      */
-    public function getRegex() : ?string
+    public function getRegex(): ?string
     {
         return $this->regex;
     }
@@ -68,7 +68,7 @@ class MatchRegexCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setRegex(?string $regex) : self
+    public function setRegex(?string $regex): self
     {
         $this->initialized['regex'] = true;
         $this->regex = $regex;
@@ -79,7 +79,7 @@ class MatchRegexCondition extends BusinessRuleCondition
      *
      * @return string|null
      */
-    public function getStoreIn() : ?string
+    public function getStoreIn(): ?string
     {
         return $this->storeIn;
     }
@@ -90,7 +90,7 @@ class MatchRegexCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setStoreIn(?string $storeIn) : self
+    public function setStoreIn(?string $storeIn): self
     {
         $this->initialized['storeIn'] = true;
         $this->storeIn = $storeIn;

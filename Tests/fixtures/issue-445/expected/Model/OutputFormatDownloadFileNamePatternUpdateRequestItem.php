@@ -8,7 +8,7 @@ class OutputFormatDownloadFileNamePatternUpdateRequestItem
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -30,7 +30,7 @@ class OutputFormatDownloadFileNamePatternUpdateRequestItem
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -41,7 +41,7 @@ class OutputFormatDownloadFileNamePatternUpdateRequestItem
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -65,7 +65,7 @@ class OutputFormatDownloadFileNamePatternUpdateRequestItem
     *
     * @return self
     */
-    public function setPatterns($patterns) : self
+    public function setPatterns($patterns): self
     {
         $this->initialized['patterns'] = true;
         $this->patterns = $patterns;

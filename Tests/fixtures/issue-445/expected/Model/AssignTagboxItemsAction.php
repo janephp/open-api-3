@@ -8,7 +8,7 @@ class AssignTagboxItemsAction extends BusinessRuleAction
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -42,7 +42,7 @@ class AssignTagboxItemsAction extends BusinessRuleAction
      *
      * @return string|null
      */
-    public function getPath() : ?string
+    public function getPath(): ?string
     {
         return $this->path;
     }
@@ -53,7 +53,7 @@ class AssignTagboxItemsAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setPath(?string $path) : self
+    public function setPath(?string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -64,7 +64,7 @@ class AssignTagboxItemsAction extends BusinessRuleAction
      *
      * @return string|null
      */
-    public function getFieldId() : ?string
+    public function getFieldId(): ?string
     {
         return $this->fieldId;
     }
@@ -75,7 +75,7 @@ class AssignTagboxItemsAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setFieldId(?string $fieldId) : self
+    public function setFieldId(?string $fieldId): self
     {
         $this->initialized['fieldId'] = true;
         $this->fieldId = $fieldId;
@@ -97,7 +97,7 @@ class AssignTagboxItemsAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setRefIds($refIds) : self
+    public function setRefIds($refIds): self
     {
         $this->initialized['refIds'] = true;
         $this->refIds = $refIds;
@@ -109,7 +109,7 @@ class AssignTagboxItemsAction extends BusinessRuleAction
     *
     * @return bool
     */
-    public function getReplace() : bool
+    public function getReplace(): bool
     {
         return $this->replace;
     }
@@ -121,7 +121,7 @@ class AssignTagboxItemsAction extends BusinessRuleAction
     *
     * @return self
     */
-    public function setReplace(bool $replace) : self
+    public function setReplace(bool $replace): self
     {
         $this->initialized['replace'] = true;
         $this->replace = $replace;

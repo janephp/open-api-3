@@ -8,7 +8,7 @@ class BookJsonhalReviewReadLinks extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class BookJsonhalReviewReadLinks extends \ArrayObject
      *
      * @return BookJsonhalReviewReadLinksSelf
      */
-    public function getSelf() : BookJsonhalReviewReadLinksSelf
+    public function getSelf(): BookJsonhalReviewReadLinksSelf
     {
         return $this->self;
     }
@@ -34,7 +34,7 @@ class BookJsonhalReviewReadLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setSelf(BookJsonhalReviewReadLinksSelf $self) : self
+    public function setSelf(BookJsonhalReviewReadLinksSelf $self): self
     {
         $this->initialized['self'] = true;
         $this->self = $self;

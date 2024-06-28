@@ -8,7 +8,7 @@ class TeamsTeamIdReposOwnerRepoPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -33,7 +33,7 @@ class TeamsTeamIdReposOwnerRepoPutBody extends \ArrayObject
     *
     * @return string
     */
-    public function getPermission() : string
+    public function getPermission(): string
     {
         return $this->permission;
     }
@@ -49,7 +49,7 @@ class TeamsTeamIdReposOwnerRepoPutBody extends \ArrayObject
     *
     * @return self
     */
-    public function setPermission(string $permission) : self
+    public function setPermission(string $permission): self
     {
         $this->initialized['permission'] = true;
         $this->permission = $permission;

@@ -8,7 +8,7 @@ class ScimUser extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class ScimUser extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getSchemas() : array
+    public function getSchemas(): array
     {
         return $this->schemas;
     }
@@ -94,7 +94,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setSchemas(array $schemas) : self
+    public function setSchemas(array $schemas): self
     {
         $this->initialized['schemas'] = true;
         $this->schemas = $schemas;
@@ -105,7 +105,7 @@ class ScimUser extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -116,7 +116,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -127,7 +127,7 @@ class ScimUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExternalId() : ?string
+    public function getExternalId(): ?string
     {
         return $this->externalId;
     }
@@ -138,7 +138,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setExternalId(?string $externalId) : self
+    public function setExternalId(?string $externalId): self
     {
         $this->initialized['externalId'] = true;
         $this->externalId = $externalId;
@@ -149,7 +149,7 @@ class ScimUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUserName() : ?string
+    public function getUserName(): ?string
     {
         return $this->userName;
     }
@@ -160,7 +160,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setUserName(?string $userName) : self
+    public function setUserName(?string $userName): self
     {
         $this->initialized['userName'] = true;
         $this->userName = $userName;
@@ -171,7 +171,7 @@ class ScimUser extends \ArrayObject
      *
      * @return ScimUserName
      */
-    public function getName() : ScimUserName
+    public function getName(): ScimUserName
     {
         return $this->name;
     }
@@ -182,7 +182,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setName(ScimUserName $name) : self
+    public function setName(ScimUserName $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -193,7 +193,7 @@ class ScimUser extends \ArrayObject
      *
      * @return list<ScimUserEmailsItem>
      */
-    public function getEmails() : array
+    public function getEmails(): array
     {
         return $this->emails;
     }
@@ -204,7 +204,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setEmails(array $emails) : self
+    public function setEmails(array $emails): self
     {
         $this->initialized['emails'] = true;
         $this->emails = $emails;
@@ -215,7 +215,7 @@ class ScimUser extends \ArrayObject
      *
      * @return bool
      */
-    public function getActive() : bool
+    public function getActive(): bool
     {
         return $this->active;
     }
@@ -226,7 +226,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setActive(bool $active) : self
+    public function setActive(bool $active): self
     {
         $this->initialized['active'] = true;
         $this->active = $active;
@@ -237,7 +237,7 @@ class ScimUser extends \ArrayObject
      *
      * @return ScimUserMeta
      */
-    public function getMeta() : ScimUserMeta
+    public function getMeta(): ScimUserMeta
     {
         return $this->meta;
     }
@@ -248,7 +248,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setMeta(ScimUserMeta $meta) : self
+    public function setMeta(ScimUserMeta $meta): self
     {
         $this->initialized['meta'] = true;
         $this->meta = $meta;
@@ -259,7 +259,7 @@ class ScimUser extends \ArrayObject
      *
      * @return int
      */
-    public function getOrganizationId() : int
+    public function getOrganizationId(): int
     {
         return $this->organizationId;
     }
@@ -270,7 +270,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationId(int $organizationId) : self
+    public function setOrganizationId(int $organizationId): self
     {
         $this->initialized['organizationId'] = true;
         $this->organizationId = $organizationId;
@@ -281,7 +281,7 @@ class ScimUser extends \ArrayObject
      *
      * @return list<ScimUserOperationsItem>
      */
-    public function getOperations() : array
+    public function getOperations(): array
     {
         return $this->operations;
     }
@@ -292,7 +292,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setOperations(array $operations) : self
+    public function setOperations(array $operations): self
     {
         $this->initialized['operations'] = true;
         $this->operations = $operations;
@@ -303,7 +303,7 @@ class ScimUser extends \ArrayObject
      *
      * @return list<ScimUserGroupsItem>
      */
-    public function getGroups() : array
+    public function getGroups(): array
     {
         return $this->groups;
     }
@@ -314,7 +314,7 @@ class ScimUser extends \ArrayObject
      *
      * @return self
      */
-    public function setGroups(array $groups) : self
+    public function setGroups(array $groups): self
     {
         $this->initialized['groups'] = true;
         $this->groups = $groups;

@@ -8,7 +8,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return string
      */
-    public function getKey() : string
+    public function getKey(): string
     {
         return $this->key;
     }
@@ -64,7 +64,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return self
      */
-    public function setKey(string $key) : self
+    public function setKey(string $key): self
     {
         $this->initialized['key'] = true;
         $this->key = $key;
@@ -75,7 +75,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -86,7 +86,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -97,7 +97,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUrl() : ?string
+    public function getUrl(): ?string
     {
         return $this->url;
     }
@@ -108,7 +108,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(?string $url) : self
+    public function setUrl(?string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -119,7 +119,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSpdxId() : ?string
+    public function getSpdxId(): ?string
     {
         return $this->spdxId;
     }
@@ -130,7 +130,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return self
      */
-    public function setSpdxId(?string $spdxId) : self
+    public function setSpdxId(?string $spdxId): self
     {
         $this->initialized['spdxId'] = true;
         $this->spdxId = $spdxId;
@@ -141,7 +141,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -152,7 +152,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -163,7 +163,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -174,7 +174,7 @@ class PullRequestBaseRepoLicense extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;

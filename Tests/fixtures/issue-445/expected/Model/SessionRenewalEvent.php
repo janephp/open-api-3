@@ -8,7 +8,7 @@ class SessionRenewalEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class SessionRenewalEvent extends ApplicationEvent
      *
      * @return string
      */
-    public function getAuthorizationState() : string
+    public function getAuthorizationState(): string
     {
         return $this->authorizationState;
     }
@@ -34,7 +34,7 @@ class SessionRenewalEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setAuthorizationState(string $authorizationState) : self
+    public function setAuthorizationState(string $authorizationState): self
     {
         $this->initialized['authorizationState'] = true;
         $this->authorizationState = $authorizationState;

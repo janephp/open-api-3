@@ -8,7 +8,7 @@ class FooBarWithMapping extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -34,7 +34,7 @@ class FooBarWithMapping extends \ArrayObject
      *
      * @return self
      */
-    public function setWhat($what) : self
+    public function setWhat($what): self
     {
         $this->initialized['what'] = true;
         $this->what = $what;

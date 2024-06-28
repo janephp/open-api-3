@@ -8,7 +8,7 @@ class ShareUser
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ShareUser
      *
      * @return string
      */
-    public function getDisplayName() : string
+    public function getDisplayName(): string
     {
         return $this->displayName;
     }
@@ -40,7 +40,7 @@ class ShareUser
      *
      * @return self
      */
-    public function setDisplayName(string $displayName) : self
+    public function setDisplayName(string $displayName): self
     {
         $this->initialized['displayName'] = true;
         $this->displayName = $displayName;
@@ -51,7 +51,7 @@ class ShareUser
      *
      * @return string
      */
-    public function getEmailHash() : string
+    public function getEmailHash(): string
     {
         return $this->emailHash;
     }
@@ -62,7 +62,7 @@ class ShareUser
      *
      * @return self
      */
-    public function setEmailHash(string $emailHash) : self
+    public function setEmailHash(string $emailHash): self
     {
         $this->initialized['emailHash'] = true;
         $this->emailHash = $emailHash;

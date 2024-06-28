@@ -8,7 +8,7 @@ class DisplayPattern
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class DisplayPattern
      *
      * @return self
      */
-    public function setTemplateEngine($templateEngine) : self
+    public function setTemplateEngine($templateEngine): self
     {
         $this->initialized['templateEngine'] = true;
         $this->templateEngine = $templateEngine;
@@ -68,7 +68,7 @@ class DisplayPattern
      *
      * @return self
      */
-    public function setDisplayPatternType($displayPatternType) : self
+    public function setDisplayPatternType($displayPatternType): self
     {
         $this->initialized['displayPatternType'] = true;
         $this->displayPatternType = $displayPatternType;
@@ -90,7 +90,7 @@ class DisplayPattern
      *
      * @return self
      */
-    public function setTemplates($templates) : self
+    public function setTemplates($templates): self
     {
         $this->initialized['templates'] = true;
         $this->templates = $templates;

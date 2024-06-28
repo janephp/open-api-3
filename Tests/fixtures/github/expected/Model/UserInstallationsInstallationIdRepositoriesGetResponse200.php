@@ -8,7 +8,7 @@ class UserInstallationsInstallationIdRepositoriesGetResponse200 extends \ArrayOb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class UserInstallationsInstallationIdRepositoriesGetResponse200 extends \ArrayOb
      *
      * @return int
      */
-    public function getTotalCount() : int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -46,7 +46,7 @@ class UserInstallationsInstallationIdRepositoriesGetResponse200 extends \ArrayOb
      *
      * @return self
      */
-    public function setTotalCount(int $totalCount) : self
+    public function setTotalCount(int $totalCount): self
     {
         $this->initialized['totalCount'] = true;
         $this->totalCount = $totalCount;
@@ -57,7 +57,7 @@ class UserInstallationsInstallationIdRepositoriesGetResponse200 extends \ArrayOb
      *
      * @return string
      */
-    public function getRepositorySelection() : string
+    public function getRepositorySelection(): string
     {
         return $this->repositorySelection;
     }
@@ -68,7 +68,7 @@ class UserInstallationsInstallationIdRepositoriesGetResponse200 extends \ArrayOb
      *
      * @return self
      */
-    public function setRepositorySelection(string $repositorySelection) : self
+    public function setRepositorySelection(string $repositorySelection): self
     {
         $this->initialized['repositorySelection'] = true;
         $this->repositorySelection = $repositorySelection;
@@ -79,7 +79,7 @@ class UserInstallationsInstallationIdRepositoriesGetResponse200 extends \ArrayOb
      *
      * @return list<Repository>
      */
-    public function getRepositories() : array
+    public function getRepositories(): array
     {
         return $this->repositories;
     }
@@ -90,7 +90,7 @@ class UserInstallationsInstallationIdRepositoriesGetResponse200 extends \ArrayOb
      *
      * @return self
      */
-    public function setRepositories(array $repositories) : self
+    public function setRepositories(array $repositories): self
     {
         $this->initialized['repositories'] = true;
         $this->repositories = $repositories;

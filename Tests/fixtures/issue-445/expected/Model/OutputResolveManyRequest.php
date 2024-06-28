@@ -8,7 +8,7 @@ class OutputResolveManyRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class OutputResolveManyRequest
      *
      * @return list<string>
      */
-    public function getContentIds() : array
+    public function getContentIds(): array
     {
         return $this->contentIds;
     }
@@ -34,7 +34,7 @@ class OutputResolveManyRequest
      *
      * @return self
      */
-    public function setContentIds(array $contentIds) : self
+    public function setContentIds(array $contentIds): self
     {
         $this->initialized['contentIds'] = true;
         $this->contentIds = $contentIds;

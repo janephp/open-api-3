@@ -8,7 +8,7 @@ class ReposOwnerRepoPagesPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoPagesPutBody extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCname() : ?string
+    public function getCname(): ?string
     {
         return $this->cname;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoPagesPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCname(?string $cname) : self
+    public function setCname(?string $cname): self
     {
         $this->initialized['cname'] = true;
         $this->cname = $cname;
@@ -62,7 +62,7 @@ class ReposOwnerRepoPagesPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSource($source) : self
+    public function setSource($source): self
     {
         $this->initialized['source'] = true;
         $this->source = $source;

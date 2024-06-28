@@ -8,7 +8,7 @@ class OrganizationSimple extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -89,7 +89,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getLogin() : string
+    public function getLogin(): string
     {
         return $this->login;
     }
@@ -100,7 +100,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setLogin(string $login) : self
+    public function setLogin(string $login): self
     {
         $this->initialized['login'] = true;
         $this->login = $login;
@@ -111,7 +111,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -122,7 +122,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -133,7 +133,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -144,7 +144,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -155,7 +155,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -166,7 +166,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -177,7 +177,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getReposUrl() : string
+    public function getReposUrl(): string
     {
         return $this->reposUrl;
     }
@@ -188,7 +188,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setReposUrl(string $reposUrl) : self
+    public function setReposUrl(string $reposUrl): self
     {
         $this->initialized['reposUrl'] = true;
         $this->reposUrl = $reposUrl;
@@ -199,7 +199,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getEventsUrl() : string
+    public function getEventsUrl(): string
     {
         return $this->eventsUrl;
     }
@@ -210,7 +210,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setEventsUrl(string $eventsUrl) : self
+    public function setEventsUrl(string $eventsUrl): self
     {
         $this->initialized['eventsUrl'] = true;
         $this->eventsUrl = $eventsUrl;
@@ -221,7 +221,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getHooksUrl() : string
+    public function getHooksUrl(): string
     {
         return $this->hooksUrl;
     }
@@ -232,7 +232,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setHooksUrl(string $hooksUrl) : self
+    public function setHooksUrl(string $hooksUrl): self
     {
         $this->initialized['hooksUrl'] = true;
         $this->hooksUrl = $hooksUrl;
@@ -243,7 +243,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getIssuesUrl() : string
+    public function getIssuesUrl(): string
     {
         return $this->issuesUrl;
     }
@@ -254,7 +254,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setIssuesUrl(string $issuesUrl) : self
+    public function setIssuesUrl(string $issuesUrl): self
     {
         $this->initialized['issuesUrl'] = true;
         $this->issuesUrl = $issuesUrl;
@@ -265,7 +265,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getMembersUrl() : string
+    public function getMembersUrl(): string
     {
         return $this->membersUrl;
     }
@@ -276,7 +276,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setMembersUrl(string $membersUrl) : self
+    public function setMembersUrl(string $membersUrl): self
     {
         $this->initialized['membersUrl'] = true;
         $this->membersUrl = $membersUrl;
@@ -287,7 +287,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getPublicMembersUrl() : string
+    public function getPublicMembersUrl(): string
     {
         return $this->publicMembersUrl;
     }
@@ -298,7 +298,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setPublicMembersUrl(string $publicMembersUrl) : self
+    public function setPublicMembersUrl(string $publicMembersUrl): self
     {
         $this->initialized['publicMembersUrl'] = true;
         $this->publicMembersUrl = $publicMembersUrl;
@@ -309,7 +309,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string
      */
-    public function getAvatarUrl() : string
+    public function getAvatarUrl(): string
     {
         return $this->avatarUrl;
     }
@@ -320,7 +320,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setAvatarUrl(string $avatarUrl) : self
+    public function setAvatarUrl(string $avatarUrl): self
     {
         $this->initialized['avatarUrl'] = true;
         $this->avatarUrl = $avatarUrl;
@@ -331,7 +331,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -342,7 +342,7 @@ class OrganizationSimple extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

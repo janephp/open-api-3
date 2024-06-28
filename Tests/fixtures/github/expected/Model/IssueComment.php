@@ -8,7 +8,7 @@ class IssueComment extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class IssueComment extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -112,7 +112,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -123,7 +123,7 @@ class IssueComment extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -134,7 +134,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -145,7 +145,7 @@ class IssueComment extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -156,7 +156,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -167,7 +167,7 @@ class IssueComment extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -178,7 +178,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -189,7 +189,7 @@ class IssueComment extends \ArrayObject
      *
      * @return string
      */
-    public function getBodyText() : string
+    public function getBodyText(): string
     {
         return $this->bodyText;
     }
@@ -200,7 +200,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setBodyText(string $bodyText) : self
+    public function setBodyText(string $bodyText): self
     {
         $this->initialized['bodyText'] = true;
         $this->bodyText = $bodyText;
@@ -211,7 +211,7 @@ class IssueComment extends \ArrayObject
      *
      * @return string
      */
-    public function getBodyHtml() : string
+    public function getBodyHtml(): string
     {
         return $this->bodyHtml;
     }
@@ -222,7 +222,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setBodyHtml(string $bodyHtml) : self
+    public function setBodyHtml(string $bodyHtml): self
     {
         $this->initialized['bodyHtml'] = true;
         $this->bodyHtml = $bodyHtml;
@@ -233,7 +233,7 @@ class IssueComment extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -244,7 +244,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -255,7 +255,7 @@ class IssueComment extends \ArrayObject
      *
      * @return IssueCommentUser|null
      */
-    public function getUser() : ?IssueCommentUser
+    public function getUser(): ?IssueCommentUser
     {
         return $this->user;
     }
@@ -266,7 +266,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?IssueCommentUser $user) : self
+    public function setUser(?IssueCommentUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -277,7 +277,7 @@ class IssueComment extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -288,7 +288,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -299,7 +299,7 @@ class IssueComment extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -310,7 +310,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -321,7 +321,7 @@ class IssueComment extends \ArrayObject
      *
      * @return string
      */
-    public function getIssueUrl() : string
+    public function getIssueUrl(): string
     {
         return $this->issueUrl;
     }
@@ -332,7 +332,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setIssueUrl(string $issueUrl) : self
+    public function setIssueUrl(string $issueUrl): self
     {
         $this->initialized['issueUrl'] = true;
         $this->issueUrl = $issueUrl;
@@ -343,7 +343,7 @@ class IssueComment extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorAssociation() : string
+    public function getAuthorAssociation(): string
     {
         return $this->authorAssociation;
     }
@@ -354,7 +354,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorAssociation(string $authorAssociation) : self
+    public function setAuthorAssociation(string $authorAssociation): self
     {
         $this->initialized['authorAssociation'] = true;
         $this->authorAssociation = $authorAssociation;
@@ -365,7 +365,7 @@ class IssueComment extends \ArrayObject
      *
      * @return IssueCommentPerformedViaGithubApp|null
      */
-    public function getPerformedViaGithubApp() : ?IssueCommentPerformedViaGithubApp
+    public function getPerformedViaGithubApp(): ?IssueCommentPerformedViaGithubApp
     {
         return $this->performedViaGithubApp;
     }
@@ -376,7 +376,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setPerformedViaGithubApp(?IssueCommentPerformedViaGithubApp $performedViaGithubApp) : self
+    public function setPerformedViaGithubApp(?IssueCommentPerformedViaGithubApp $performedViaGithubApp): self
     {
         $this->initialized['performedViaGithubApp'] = true;
         $this->performedViaGithubApp = $performedViaGithubApp;
@@ -387,7 +387,7 @@ class IssueComment extends \ArrayObject
      *
      * @return ReactionRollup
      */
-    public function getReactions() : ReactionRollup
+    public function getReactions(): ReactionRollup
     {
         return $this->reactions;
     }
@@ -398,7 +398,7 @@ class IssueComment extends \ArrayObject
      *
      * @return self
      */
-    public function setReactions(ReactionRollup $reactions) : self
+    public function setReactions(ReactionRollup $reactions): self
     {
         $this->initialized['reactions'] = true;
         $this->reactions = $reactions;

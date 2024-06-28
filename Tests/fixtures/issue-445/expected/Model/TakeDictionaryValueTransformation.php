@@ -8,7 +8,7 @@ class TakeDictionaryValueTransformation extends BusinessRuleTransformation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class TakeDictionaryValueTransformation extends BusinessRuleTransformation
      *
      * @return string|null
      */
-    public function getKey() : ?string
+    public function getKey(): ?string
     {
         return $this->key;
     }
@@ -34,7 +34,7 @@ class TakeDictionaryValueTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setKey(?string $key) : self
+    public function setKey(?string $key): self
     {
         $this->initialized['key'] = true;
         $this->key = $key;

@@ -8,7 +8,7 @@ class OrgMembership extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -70,7 +70,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -81,7 +81,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -92,7 +92,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -103,7 +103,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return string
      */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -114,7 +114,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return self
      */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;
@@ -125,7 +125,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationUrl() : string
+    public function getOrganizationUrl(): string
     {
         return $this->organizationUrl;
     }
@@ -136,7 +136,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationUrl(string $organizationUrl) : self
+    public function setOrganizationUrl(string $organizationUrl): self
     {
         $this->initialized['organizationUrl'] = true;
         $this->organizationUrl = $organizationUrl;
@@ -147,7 +147,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return OrganizationSimple
      */
-    public function getOrganization() : OrganizationSimple
+    public function getOrganization(): OrganizationSimple
     {
         return $this->organization;
     }
@@ -158,7 +158,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganization(OrganizationSimple $organization) : self
+    public function setOrganization(OrganizationSimple $organization): self
     {
         $this->initialized['organization'] = true;
         $this->organization = $organization;
@@ -169,7 +169,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return OrgMembershipUser|null
      */
-    public function getUser() : ?OrgMembershipUser
+    public function getUser(): ?OrgMembershipUser
     {
         return $this->user;
     }
@@ -180,7 +180,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?OrgMembershipUser $user) : self
+    public function setUser(?OrgMembershipUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -191,7 +191,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return OrgMembershipPermissions
      */
-    public function getPermissions() : OrgMembershipPermissions
+    public function getPermissions(): OrgMembershipPermissions
     {
         return $this->permissions;
     }
@@ -202,7 +202,7 @@ class OrgMembership extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(OrgMembershipPermissions $permissions) : self
+    public function setPermissions(OrgMembershipPermissions $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;

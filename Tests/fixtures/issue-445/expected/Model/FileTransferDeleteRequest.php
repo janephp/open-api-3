@@ -8,7 +8,7 @@ class FileTransferDeleteRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class FileTransferDeleteRequest
      *
      * @return string
      */
-    public function getTransferId() : string
+    public function getTransferId(): string
     {
         return $this->transferId;
     }
@@ -40,7 +40,7 @@ class FileTransferDeleteRequest
      *
      * @return self
      */
-    public function setTransferId(string $transferId) : self
+    public function setTransferId(string $transferId): self
     {
         $this->initialized['transferId'] = true;
         $this->transferId = $transferId;
@@ -51,7 +51,7 @@ class FileTransferDeleteRequest
      *
      * @return list<string>
      */
-    public function getFileTransferIds() : array
+    public function getFileTransferIds(): array
     {
         return $this->fileTransferIds;
     }
@@ -62,7 +62,7 @@ class FileTransferDeleteRequest
      *
      * @return self
      */
-    public function setFileTransferIds(array $fileTransferIds) : self
+    public function setFileTransferIds(array $fileTransferIds): self
     {
         $this->initialized['fileTransferIds'] = true;
         $this->fileTransferIds = $fileTransferIds;

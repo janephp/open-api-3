@@ -8,7 +8,7 @@ class GpgKeyEmailsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GpgKeyEmailsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -40,7 +40,7 @@ class GpgKeyEmailsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -51,7 +51,7 @@ class GpgKeyEmailsItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getVerified() : bool
+    public function getVerified(): bool
     {
         return $this->verified;
     }
@@ -62,7 +62,7 @@ class GpgKeyEmailsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setVerified(bool $verified) : self
+    public function setVerified(bool $verified): self
     {
         $this->initialized['verified'] = true;
         $this->verified = $verified;

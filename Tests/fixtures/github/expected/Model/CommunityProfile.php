@@ -8,7 +8,7 @@ class CommunityProfile extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return int
      */
-    public function getHealthPercentage() : int
+    public function getHealthPercentage(): int
     {
         return $this->healthPercentage;
     }
@@ -58,7 +58,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return self
      */
-    public function setHealthPercentage(int $healthPercentage) : self
+    public function setHealthPercentage(int $healthPercentage): self
     {
         $this->initialized['healthPercentage'] = true;
         $this->healthPercentage = $healthPercentage;
@@ -69,7 +69,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -80,7 +80,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -91,7 +91,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDocumentation() : ?string
+    public function getDocumentation(): ?string
     {
         return $this->documentation;
     }
@@ -102,7 +102,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentation(?string $documentation) : self
+    public function setDocumentation(?string $documentation): self
     {
         $this->initialized['documentation'] = true;
         $this->documentation = $documentation;
@@ -113,7 +113,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return CommunityProfileFiles
      */
-    public function getFiles() : CommunityProfileFiles
+    public function getFiles(): CommunityProfileFiles
     {
         return $this->files;
     }
@@ -124,7 +124,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return self
      */
-    public function setFiles(CommunityProfileFiles $files) : self
+    public function setFiles(CommunityProfileFiles $files): self
     {
         $this->initialized['files'] = true;
         $this->files = $files;
@@ -135,7 +135,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getUpdatedAt() : ?\DateTime
+    public function getUpdatedAt(): ?\DateTime
     {
         return $this->updatedAt;
     }
@@ -146,7 +146,7 @@ class CommunityProfile extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(?\DateTime $updatedAt) : self
+    public function setUpdatedAt(?\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;

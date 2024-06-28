@@ -8,7 +8,7 @@ class FileCommit extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class FileCommit extends \ArrayObject
      *
      * @return FileCommitContent|null
      */
-    public function getContent() : ?FileCommitContent
+    public function getContent(): ?FileCommitContent
     {
         return $this->content;
     }
@@ -40,7 +40,7 @@ class FileCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setContent(?FileCommitContent $content) : self
+    public function setContent(?FileCommitContent $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -51,7 +51,7 @@ class FileCommit extends \ArrayObject
      *
      * @return FileCommitCommit
      */
-    public function getCommit() : FileCommitCommit
+    public function getCommit(): FileCommitCommit
     {
         return $this->commit;
     }
@@ -62,7 +62,7 @@ class FileCommit extends \ArrayObject
      *
      * @return self
      */
-    public function setCommit(FileCommitCommit $commit) : self
+    public function setCommit(FileCommitCommit $commit): self
     {
         $this->initialized['commit'] = true;
         $this->commit = $commit;

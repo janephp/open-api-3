@@ -8,7 +8,7 @@ class UserAddress
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class UserAddress
      *
      * @return string|null
      */
-    public function getCompany() : ?string
+    public function getCompany(): ?string
     {
         return $this->company;
     }
@@ -76,7 +76,7 @@ class UserAddress
      *
      * @return self
      */
-    public function setCompany(?string $company) : self
+    public function setCompany(?string $company): self
     {
         $this->initialized['company'] = true;
         $this->company = $company;
@@ -87,7 +87,7 @@ class UserAddress
      *
      * @return string|null
      */
-    public function getDepartment() : ?string
+    public function getDepartment(): ?string
     {
         return $this->department;
     }
@@ -98,7 +98,7 @@ class UserAddress
      *
      * @return self
      */
-    public function setDepartment(?string $department) : self
+    public function setDepartment(?string $department): self
     {
         $this->initialized['department'] = true;
         $this->department = $department;
@@ -109,7 +109,7 @@ class UserAddress
      *
      * @return string|null
      */
-    public function getAddress() : ?string
+    public function getAddress(): ?string
     {
         return $this->address;
     }
@@ -120,7 +120,7 @@ class UserAddress
      *
      * @return self
      */
-    public function setAddress(?string $address) : self
+    public function setAddress(?string $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -131,7 +131,7 @@ class UserAddress
      *
      * @return string|null
      */
-    public function getAlternativeAddress() : ?string
+    public function getAlternativeAddress(): ?string
     {
         return $this->alternativeAddress;
     }
@@ -142,7 +142,7 @@ class UserAddress
      *
      * @return self
      */
-    public function setAlternativeAddress(?string $alternativeAddress) : self
+    public function setAlternativeAddress(?string $alternativeAddress): self
     {
         $this->initialized['alternativeAddress'] = true;
         $this->alternativeAddress = $alternativeAddress;
@@ -153,7 +153,7 @@ class UserAddress
      *
      * @return string|null
      */
-    public function getZip() : ?string
+    public function getZip(): ?string
     {
         return $this->zip;
     }
@@ -164,7 +164,7 @@ class UserAddress
      *
      * @return self
      */
-    public function setZip(?string $zip) : self
+    public function setZip(?string $zip): self
     {
         $this->initialized['zip'] = true;
         $this->zip = $zip;
@@ -175,7 +175,7 @@ class UserAddress
      *
      * @return string|null
      */
-    public function getCity() : ?string
+    public function getCity(): ?string
     {
         return $this->city;
     }
@@ -186,7 +186,7 @@ class UserAddress
      *
      * @return self
      */
-    public function setCity(?string $city) : self
+    public function setCity(?string $city): self
     {
         $this->initialized['city'] = true;
         $this->city = $city;
@@ -197,7 +197,7 @@ class UserAddress
      *
      * @return string|null
      */
-    public function getPhone() : ?string
+    public function getPhone(): ?string
     {
         return $this->phone;
     }
@@ -208,7 +208,7 @@ class UserAddress
      *
      * @return self
      */
-    public function setPhone(?string $phone) : self
+    public function setPhone(?string $phone): self
     {
         $this->initialized['phone'] = true;
         $this->phone = $phone;
@@ -219,7 +219,7 @@ class UserAddress
      *
      * @return string|null
      */
-    public function getCountryCode() : ?string
+    public function getCountryCode(): ?string
     {
         return $this->countryCode;
     }
@@ -230,7 +230,7 @@ class UserAddress
      *
      * @return self
      */
-    public function setCountryCode(?string $countryCode) : self
+    public function setCountryCode(?string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;

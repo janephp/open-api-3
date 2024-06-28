@@ -8,7 +8,7 @@ class AlphaHandlingAction extends ImageActionBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class AlphaHandlingAction extends ImageActionBase
      *
      * @return self
      */
-    public function setAlphaHandling($alphaHandling) : self
+    public function setAlphaHandling($alphaHandling): self
     {
         $this->initialized['alphaHandling'] = true;
         $this->alphaHandling = $alphaHandling;
@@ -51,7 +51,7 @@ class AlphaHandlingAction extends ImageActionBase
      *
      * @return string|null
      */
-    public function getReplacementRgbColorHexCode() : ?string
+    public function getReplacementRgbColorHexCode(): ?string
     {
         return $this->replacementRgbColorHexCode;
     }
@@ -62,7 +62,7 @@ class AlphaHandlingAction extends ImageActionBase
      *
      * @return self
      */
-    public function setReplacementRgbColorHexCode(?string $replacementRgbColorHexCode) : self
+    public function setReplacementRgbColorHexCode(?string $replacementRgbColorHexCode): self
     {
         $this->initialized['replacementRgbColorHexCode'] = true;
         $this->replacementRgbColorHexCode = $replacementRgbColorHexCode;

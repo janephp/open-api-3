@@ -8,7 +8,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -79,7 +79,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getRef() : string
+    public function getRef(): string
     {
         return $this->ref;
     }
@@ -90,7 +90,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRef(string $ref) : self
+    public function setRef(string $ref): self
     {
         $this->initialized['ref'] = true;
         $this->ref = $ref;
@@ -101,7 +101,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTask() : string
+    public function getTask(): string
     {
         return $this->task;
     }
@@ -112,7 +112,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTask(string $task) : self
+    public function setTask(string $task): self
     {
         $this->initialized['task'] = true;
         $this->task = $task;
@@ -123,7 +123,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getAutoMerge() : bool
+    public function getAutoMerge(): bool
     {
         return $this->autoMerge;
     }
@@ -134,7 +134,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAutoMerge(bool $autoMerge) : self
+    public function setAutoMerge(bool $autoMerge): self
     {
         $this->initialized['autoMerge'] = true;
         $this->autoMerge = $autoMerge;
@@ -145,7 +145,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getRequiredContexts() : array
+    public function getRequiredContexts(): array
     {
         return $this->requiredContexts;
     }
@@ -156,7 +156,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredContexts(array $requiredContexts) : self
+    public function setRequiredContexts(array $requiredContexts): self
     {
         $this->initialized['requiredContexts'] = true;
         $this->requiredContexts = $requiredContexts;
@@ -167,7 +167,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPayload() : string
+    public function getPayload(): string
     {
         return $this->payload;
     }
@@ -178,7 +178,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPayload(string $payload) : self
+    public function setPayload(string $payload): self
     {
         $this->initialized['payload'] = true;
         $this->payload = $payload;
@@ -189,7 +189,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEnvironment() : string
+    public function getEnvironment(): string
     {
         return $this->environment;
     }
@@ -200,7 +200,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEnvironment(string $environment) : self
+    public function setEnvironment(string $environment): self
     {
         $this->initialized['environment'] = true;
         $this->environment = $environment;
@@ -211,7 +211,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -222,7 +222,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -234,7 +234,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
     *
     * @return bool
     */
-    public function getTransientEnvironment() : bool
+    public function getTransientEnvironment(): bool
     {
         return $this->transientEnvironment;
     }
@@ -246,7 +246,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setTransientEnvironment(bool $transientEnvironment) : self
+    public function setTransientEnvironment(bool $transientEnvironment): self
     {
         $this->initialized['transientEnvironment'] = true;
         $this->transientEnvironment = $transientEnvironment;
@@ -258,7 +258,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
     *
     * @return bool
     */
-    public function getProductionEnvironment() : bool
+    public function getProductionEnvironment(): bool
     {
         return $this->productionEnvironment;
     }
@@ -270,7 +270,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setProductionEnvironment(bool $productionEnvironment) : self
+    public function setProductionEnvironment(bool $productionEnvironment): self
     {
         $this->initialized['productionEnvironment'] = true;
         $this->productionEnvironment = $productionEnvironment;
@@ -281,7 +281,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -292,7 +292,7 @@ class ReposOwnerRepoDeploymentsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;

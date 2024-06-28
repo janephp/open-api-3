@@ -8,7 +8,7 @@ class Tag extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class Tag extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -58,7 +58,7 @@ class Tag extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -69,7 +69,7 @@ class Tag extends \ArrayObject
      *
      * @return TagCommit
      */
-    public function getCommit() : TagCommit
+    public function getCommit(): TagCommit
     {
         return $this->commit;
     }
@@ -80,7 +80,7 @@ class Tag extends \ArrayObject
      *
      * @return self
      */
-    public function setCommit(TagCommit $commit) : self
+    public function setCommit(TagCommit $commit): self
     {
         $this->initialized['commit'] = true;
         $this->commit = $commit;
@@ -91,7 +91,7 @@ class Tag extends \ArrayObject
      *
      * @return string
      */
-    public function getZipballUrl() : string
+    public function getZipballUrl(): string
     {
         return $this->zipballUrl;
     }
@@ -102,7 +102,7 @@ class Tag extends \ArrayObject
      *
      * @return self
      */
-    public function setZipballUrl(string $zipballUrl) : self
+    public function setZipballUrl(string $zipballUrl): self
     {
         $this->initialized['zipballUrl'] = true;
         $this->zipballUrl = $zipballUrl;
@@ -113,7 +113,7 @@ class Tag extends \ArrayObject
      *
      * @return string
      */
-    public function getTarballUrl() : string
+    public function getTarballUrl(): string
     {
         return $this->tarballUrl;
     }
@@ -124,7 +124,7 @@ class Tag extends \ArrayObject
      *
      * @return self
      */
-    public function setTarballUrl(string $tarballUrl) : self
+    public function setTarballUrl(string $tarballUrl): self
     {
         $this->initialized['tarballUrl'] = true;
         $this->tarballUrl = $tarballUrl;
@@ -135,7 +135,7 @@ class Tag extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -146,7 +146,7 @@ class Tag extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;

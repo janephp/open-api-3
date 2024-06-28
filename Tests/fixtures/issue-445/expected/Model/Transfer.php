@@ -8,7 +8,7 @@ class Transfer
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class Transfer
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -70,7 +70,7 @@ class Transfer
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -81,7 +81,7 @@ class Transfer
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -92,7 +92,7 @@ class Transfer
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -114,7 +114,7 @@ class Transfer
      *
      * @return self
      */
-    public function setState($state) : self
+    public function setState($state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -136,7 +136,7 @@ class Transfer
      *
      * @return self
      */
-    public function setTransferType($transferType) : self
+    public function setTransferType($transferType): self
     {
         $this->initialized['transferType'] = true;
         $this->transferType = $transferType;
@@ -147,7 +147,7 @@ class Transfer
      *
      * @return string|null
      */
-    public function getBusinessProcessId() : ?string
+    public function getBusinessProcessId(): ?string
     {
         return $this->businessProcessId;
     }
@@ -158,7 +158,7 @@ class Transfer
      *
      * @return self
      */
-    public function setBusinessProcessId(?string $businessProcessId) : self
+    public function setBusinessProcessId(?string $businessProcessId): self
     {
         $this->initialized['businessProcessId'] = true;
         $this->businessProcessId = $businessProcessId;
@@ -169,7 +169,7 @@ class Transfer
      *
      * @return int
      */
-    public function getFileTransferCount() : int
+    public function getFileTransferCount(): int
     {
         return $this->fileTransferCount;
     }
@@ -180,7 +180,7 @@ class Transfer
      *
      * @return self
      */
-    public function setFileTransferCount(int $fileTransferCount) : self
+    public function setFileTransferCount(int $fileTransferCount): self
     {
         $this->initialized['fileTransferCount'] = true;
         $this->fileTransferCount = $fileTransferCount;
@@ -191,7 +191,7 @@ class Transfer
      *
      * @return string|null
      */
-    public function getCollectionId() : ?string
+    public function getCollectionId(): ?string
     {
         return $this->collectionId;
     }
@@ -202,7 +202,7 @@ class Transfer
      *
      * @return self
      */
-    public function setCollectionId(?string $collectionId) : self
+    public function setCollectionId(?string $collectionId): self
     {
         $this->initialized['collectionId'] = true;
         $this->collectionId = $collectionId;

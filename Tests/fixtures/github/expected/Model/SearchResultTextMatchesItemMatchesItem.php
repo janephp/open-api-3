@@ -8,7 +8,7 @@ class SearchResultTextMatchesItemMatchesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class SearchResultTextMatchesItemMatchesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getText() : string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -40,7 +40,7 @@ class SearchResultTextMatchesItemMatchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setText(string $text) : self
+    public function setText(string $text): self
     {
         $this->initialized['text'] = true;
         $this->text = $text;
@@ -51,7 +51,7 @@ class SearchResultTextMatchesItemMatchesItem extends \ArrayObject
      *
      * @return list<int>
      */
-    public function getIndices() : array
+    public function getIndices(): array
     {
         return $this->indices;
     }
@@ -62,7 +62,7 @@ class SearchResultTextMatchesItemMatchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setIndices(array $indices) : self
+    public function setIndices(array $indices): self
     {
         $this->initialized['indices'] = true;
         $this->indices = $indices;

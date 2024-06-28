@@ -8,7 +8,7 @@ class UserAggregationRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -88,7 +88,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -99,7 +99,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getSearchBehaviors() : ?array
+    public function getSearchBehaviors(): ?array
     {
         return $this->searchBehaviors;
     }
@@ -110,7 +110,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchBehaviors(?array $searchBehaviors) : self
+    public function setSearchBehaviors(?array $searchBehaviors): self
     {
         $this->initialized['searchBehaviors'] = true;
         $this->searchBehaviors = $searchBehaviors;
@@ -132,7 +132,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -154,7 +154,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setLifeCycleFilter($lifeCycleFilter) : self
+    public function setLifeCycleFilter($lifeCycleFilter): self
     {
         $this->initialized['lifeCycleFilter'] = true;
         $this->lifeCycleFilter = $lifeCycleFilter;
@@ -165,7 +165,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getUserRightsFilter() : ?array
+    public function getUserRightsFilter(): ?array
     {
         return $this->userRightsFilter;
     }
@@ -176,7 +176,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUserRightsFilter(?array $userRightsFilter) : self
+    public function setUserRightsFilter(?array $userRightsFilter): self
     {
         $this->initialized['userRightsFilter'] = true;
         $this->userRightsFilter = $userRightsFilter;
@@ -192,7 +192,7 @@ class UserAggregationRequest extends \ArrayObject
     *
     * @return list<AggregationFilter>|null
     */
-    public function getAggregationFilters() : ?array
+    public function getAggregationFilters(): ?array
     {
         return $this->aggregationFilters;
     }
@@ -208,7 +208,7 @@ class UserAggregationRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setAggregationFilters(?array $aggregationFilters) : self
+    public function setAggregationFilters(?array $aggregationFilters): self
     {
         $this->initialized['aggregationFilters'] = true;
         $this->aggregationFilters = $aggregationFilters;
@@ -219,7 +219,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncludeServiceUser() : bool
+    public function getIncludeServiceUser(): bool
     {
         return $this->includeServiceUser;
     }
@@ -230,7 +230,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludeServiceUser(bool $includeServiceUser) : self
+    public function setIncludeServiceUser(bool $includeServiceUser): self
     {
         $this->initialized['includeServiceUser'] = true;
         $this->includeServiceUser = $includeServiceUser;
@@ -242,7 +242,7 @@ class UserAggregationRequest extends \ArrayObject
     *
     * @return bool
     */
-    public function getEditableOnly() : bool
+    public function getEditableOnly(): bool
     {
         return $this->editableOnly;
     }
@@ -254,7 +254,7 @@ class UserAggregationRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setEditableOnly(bool $editableOnly) : self
+    public function setEditableOnly(bool $editableOnly): self
     {
         $this->initialized['editableOnly'] = true;
         $this->editableOnly = $editableOnly;
@@ -265,7 +265,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return list<AggregatorBase>
      */
-    public function getAggregators() : array
+    public function getAggregators(): array
     {
         return $this->aggregators;
     }
@@ -276,7 +276,7 @@ class UserAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setAggregators(array $aggregators) : self
+    public function setAggregators(array $aggregators): self
     {
         $this->initialized['aggregators'] = true;
         $this->aggregators = $aggregators;

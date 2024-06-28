@@ -8,7 +8,7 @@ class ProjectionTransformation extends BusinessRuleTransformation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ProjectionTransformation extends BusinessRuleTransformation
      *
      * @return list<BusinessRuleTransformation>|null
      */
-    public function getTransformations() : ?array
+    public function getTransformations(): ?array
     {
         return $this->transformations;
     }
@@ -34,7 +34,7 @@ class ProjectionTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setTransformations(?array $transformations) : self
+    public function setTransformations(?array $transformations): self
     {
         $this->initialized['transformations'] = true;
         $this->transformations = $transformations;

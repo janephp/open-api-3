@@ -8,7 +8,7 @@ class TestPostResponse201 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class TestPostResponse201 extends \ArrayObject
      *
      * @return string
      */
-    public function getFoo() : string
+    public function getFoo(): string
     {
         return $this->foo;
     }
@@ -34,7 +34,7 @@ class TestPostResponse201 extends \ArrayObject
      *
      * @return self
      */
-    public function setFoo(string $foo) : self
+    public function setFoo(string $foo): self
     {
         $this->initialized['foo'] = true;
         $this->foo = $foo;

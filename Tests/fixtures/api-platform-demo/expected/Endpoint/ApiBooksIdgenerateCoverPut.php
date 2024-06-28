@@ -20,15 +20,15 @@ class ApiBooksIdgenerateCoverPut extends \ApiPlatform\Demo\Runtime\Client\BaseEn
         $this->accept = $accept;
     }
     use \ApiPlatform\Demo\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'PUT';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{id}'], [$this->id], '/books/{id}/generate-cover');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \ApiPlatform\Demo\Model\BookJsonld) {
             return [['Content-Type' => ['application/ld+json']], $serializer->serialize($this->body, 'json')];
@@ -59,7 +59,7 @@ class ApiBooksIdgenerateCoverPut extends \ApiPlatform\Demo\Runtime\Client\BaseEn
         }
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         if (empty($this->accept)) {
             return ['Accept' => ['application/ld+json', 'application/hal+json', 'application/vnd.api+json', 'application/json', 'application/xml', 'text/xml', 'application/x-yaml', 'text/csv']];
@@ -103,7 +103,7 @@ class ApiBooksIdgenerateCoverPut extends \ApiPlatform\Demo\Runtime\Client\BaseEn
             throw new \ApiPlatform\Demo\Exception\ApiBooksIdgenerateCoverPutNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return ['apiKey'];
     }

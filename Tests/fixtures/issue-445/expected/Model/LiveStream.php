@@ -8,7 +8,7 @@ class LiveStream
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class LiveStream
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -64,7 +64,7 @@ class LiveStream
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -75,7 +75,7 @@ class LiveStream
      *
      * @return string|null
      */
-    public function getDocument() : ?string
+    public function getDocument(): ?string
     {
         return $this->document;
     }
@@ -86,7 +86,7 @@ class LiveStream
      *
      * @return self
      */
-    public function setDocument(?string $document) : self
+    public function setDocument(?string $document): self
     {
         $this->initialized['document'] = true;
         $this->document = $document;
@@ -97,7 +97,7 @@ class LiveStream
      *
      * @return string|null
      */
-    public function getScopeType() : ?string
+    public function getScopeType(): ?string
     {
         return $this->scopeType;
     }
@@ -108,7 +108,7 @@ class LiveStream
      *
      * @return self
      */
-    public function setScopeType(?string $scopeType) : self
+    public function setScopeType(?string $scopeType): self
     {
         $this->initialized['scopeType'] = true;
         $this->scopeType = $scopeType;
@@ -119,7 +119,7 @@ class LiveStream
      *
      * @return \DateTime
      */
-    public function getTimestamp() : \DateTime
+    public function getTimestamp(): \DateTime
     {
         return $this->timestamp;
     }
@@ -130,7 +130,7 @@ class LiveStream
      *
      * @return self
      */
-    public function setTimestamp(\DateTime $timestamp) : self
+    public function setTimestamp(\DateTime $timestamp): self
     {
         $this->initialized['timestamp'] = true;
         $this->timestamp = $timestamp;
@@ -152,7 +152,7 @@ class LiveStream
      *
      * @return self
      */
-    public function setTraceJob($traceJob) : self
+    public function setTraceJob($traceJob): self
     {
         $this->initialized['traceJob'] = true;
         $this->traceJob = $traceJob;
@@ -174,7 +174,7 @@ class LiveStream
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;

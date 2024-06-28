@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return string
      */
-    public function getBusinessName() : string
+    public function getBusinessName(): string
     {
         return $this->businessName;
     }
@@ -82,7 +82,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return self
      */
-    public function setBusinessName(string $businessName) : self
+    public function setBusinessName(string $businessName): self
     {
         $this->initialized['businessName'] = true;
         $this->businessName = $businessName;
@@ -93,7 +93,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return string
      */
-    public function getRegisteredCompanyName() : string
+    public function getRegisteredCompanyName(): string
     {
         return $this->registeredCompanyName;
     }
@@ -104,7 +104,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return self
      */
-    public function setRegisteredCompanyName(string $registeredCompanyName) : self
+    public function setRegisteredCompanyName(string $registeredCompanyName): self
     {
         $this->initialized['registeredCompanyName'] = true;
         $this->registeredCompanyName = $registeredCompanyName;
@@ -115,7 +115,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return string
      */
-    public function getCompanyRegistrationNumber() : string
+    public function getCompanyRegistrationNumber(): string
     {
         return $this->companyRegistrationNumber;
     }
@@ -126,7 +126,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return self
      */
-    public function setCompanyRegistrationNumber(string $companyRegistrationNumber) : self
+    public function setCompanyRegistrationNumber(string $companyRegistrationNumber): self
     {
         $this->initialized['companyRegistrationNumber'] = true;
         $this->companyRegistrationNumber = $companyRegistrationNumber;
@@ -137,7 +137,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -148,7 +148,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -159,7 +159,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return string
      */
-    public function getCompanyRegistrationDate() : string
+    public function getCompanyRegistrationDate(): string
     {
         return $this->companyRegistrationDate;
     }
@@ -170,7 +170,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return self
      */
-    public function setCompanyRegistrationDate(string $companyRegistrationDate) : self
+    public function setCompanyRegistrationDate(string $companyRegistrationDate): self
     {
         $this->initialized['companyRegistrationDate'] = true;
         $this->companyRegistrationDate = $companyRegistrationDate;
@@ -181,7 +181,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationLegalForm
      */
-    public function getLegalForm() : GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationLegalForm
+    public function getLegalForm(): GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationLegalForm
     {
         return $this->legalForm;
     }
@@ -192,7 +192,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return self
      */
-    public function setLegalForm(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationLegalForm $legalForm) : self
+    public function setLegalForm(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationLegalForm $legalForm): self
     {
         $this->initialized['legalForm'] = true;
         $this->legalForm = $legalForm;
@@ -203,7 +203,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationCompanyStatus
      */
-    public function getCompanyStatus() : GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationCompanyStatus
+    public function getCompanyStatus(): GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationCompanyStatus
     {
         return $this->companyStatus;
     }
@@ -214,7 +214,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return self
      */
-    public function setCompanyStatus(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationCompanyStatus $companyStatus) : self
+    public function setCompanyStatus(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationCompanyStatus $companyStatus): self
     {
         $this->initialized['companyStatus'] = true;
         $this->companyStatus = $companyStatus;
@@ -225,7 +225,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationPrincipalActivity
      */
-    public function getPrincipalActivity() : GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationPrincipalActivity
+    public function getPrincipalActivity(): GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationPrincipalActivity
     {
         return $this->principalActivity;
     }
@@ -236,7 +236,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return self
      */
-    public function setPrincipalActivity(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationPrincipalActivity $principalActivity) : self
+    public function setPrincipalActivity(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationPrincipalActivity $principalActivity): self
     {
         $this->initialized['principalActivity'] = true;
         $this->principalActivity = $principalActivity;
@@ -247,7 +247,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationContactAddress
      */
-    public function getContactAddress() : GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationContactAddress
+    public function getContactAddress(): GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationContactAddress
     {
         return $this->contactAddress;
     }
@@ -258,7 +258,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation 
      *
      * @return self
      */
-    public function setContactAddress(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationContactAddress $contactAddress) : self
+    public function setContactAddress(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformationContactAddress $contactAddress): self
     {
         $this->initialized['contactAddress'] = true;
         $this->contactAddress = $contactAddress;

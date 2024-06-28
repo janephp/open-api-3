@@ -8,7 +8,7 @@ class DocumentChange
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class DocumentChange
      *
      * @return string|null
      */
-    public function getDocumentName() : ?string
+    public function getDocumentName(): ?string
     {
         return $this->documentName;
     }
@@ -58,7 +58,7 @@ class DocumentChange
      *
      * @return self
      */
-    public function setDocumentName(?string $documentName) : self
+    public function setDocumentName(?string $documentName): self
     {
         $this->initialized['documentName'] = true;
         $this->documentName = $documentName;
@@ -69,7 +69,7 @@ class DocumentChange
      *
      * @return string|null
      */
-    public function getDocumentId() : ?string
+    public function getDocumentId(): ?string
     {
         return $this->documentId;
     }
@@ -80,7 +80,7 @@ class DocumentChange
      *
      * @return self
      */
-    public function setDocumentId(?string $documentId) : self
+    public function setDocumentId(?string $documentId): self
     {
         $this->initialized['documentId'] = true;
         $this->documentId = $documentId;
@@ -91,7 +91,7 @@ class DocumentChange
      *
      * @return int
      */
-    public function getVersion() : int
+    public function getVersion(): int
     {
         return $this->version;
     }
@@ -102,7 +102,7 @@ class DocumentChange
      *
      * @return self
      */
-    public function setVersion(int $version) : self
+    public function setVersion(int $version): self
     {
         $this->initialized['version'] = true;
         $this->version = $version;
@@ -113,7 +113,7 @@ class DocumentChange
      *
      * @return string|null
      */
-    public function getAction() : ?string
+    public function getAction(): ?string
     {
         return $this->action;
     }
@@ -124,7 +124,7 @@ class DocumentChange
      *
      * @return self
      */
-    public function setAction(?string $action) : self
+    public function setAction(?string $action): self
     {
         $this->initialized['action'] = true;
         $this->action = $action;
@@ -135,7 +135,7 @@ class DocumentChange
      *
      * @return \DateTime
      */
-    public function getTimeStamp() : \DateTime
+    public function getTimeStamp(): \DateTime
     {
         return $this->timeStamp;
     }
@@ -146,7 +146,7 @@ class DocumentChange
      *
      * @return self
      */
-    public function setTimeStamp(\DateTime $timeStamp) : self
+    public function setTimeStamp(\DateTime $timeStamp): self
     {
         $this->initialized['timeStamp'] = true;
         $this->timeStamp = $timeStamp;

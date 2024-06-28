@@ -8,7 +8,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -82,7 +82,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
     *
     * @return self
     */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -93,7 +93,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
      *
      * @return bool
      */
-    public function getOverwriteFilter() : bool
+    public function getOverwriteFilter(): bool
     {
         return $this->overwriteFilter;
     }
@@ -104,7 +104,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
      *
      * @return self
      */
-    public function setOverwriteFilter(bool $overwriteFilter) : self
+    public function setOverwriteFilter(bool $overwriteFilter): self
     {
         $this->initialized['overwriteFilter'] = true;
         $this->overwriteFilter = $overwriteFilter;
@@ -116,7 +116,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
     *
     * @return string|null
     */
-    public function getListItemCreateTemplate() : ?string
+    public function getListItemCreateTemplate(): ?string
     {
         return $this->listItemCreateTemplate;
     }
@@ -128,7 +128,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
     *
     * @return self
     */
-    public function setListItemCreateTemplate(?string $listItemCreateTemplate) : self
+    public function setListItemCreateTemplate(?string $listItemCreateTemplate): self
     {
         $this->initialized['listItemCreateTemplate'] = true;
         $this->listItemCreateTemplate = $listItemCreateTemplate;
@@ -139,7 +139,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
      *
      * @return bool
      */
-    public function getOverwriteListItemCreateTemplate() : bool
+    public function getOverwriteListItemCreateTemplate(): bool
     {
         return $this->overwriteListItemCreateTemplate;
     }
@@ -150,7 +150,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
      *
      * @return self
      */
-    public function setOverwriteListItemCreateTemplate(bool $overwriteListItemCreateTemplate) : self
+    public function setOverwriteListItemCreateTemplate(bool $overwriteListItemCreateTemplate): self
     {
         $this->initialized['overwriteListItemCreateTemplate'] = true;
         $this->overwriteListItemCreateTemplate = $overwriteListItemCreateTemplate;
@@ -162,7 +162,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
     *
     * @return int|null
     */
-    public function getMaximumItems() : ?int
+    public function getMaximumItems(): ?int
     {
         return $this->maximumItems;
     }
@@ -174,7 +174,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
     *
     * @return self
     */
-    public function setMaximumItems(?int $maximumItems) : self
+    public function setMaximumItems(?int $maximumItems): self
     {
         $this->initialized['maximumItems'] = true;
         $this->maximumItems = $maximumItems;
@@ -185,7 +185,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
      *
      * @return bool
      */
-    public function getOverwriteMaximumItems() : bool
+    public function getOverwriteMaximumItems(): bool
     {
         return $this->overwriteMaximumItems;
     }
@@ -196,7 +196,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
      *
      * @return self
      */
-    public function setOverwriteMaximumItems(bool $overwriteMaximumItems) : self
+    public function setOverwriteMaximumItems(bool $overwriteMaximumItems): self
     {
         $this->initialized['overwriteMaximumItems'] = true;
         $this->overwriteMaximumItems = $overwriteMaximumItems;
@@ -208,7 +208,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
     *
     * @return int|null
     */
-    public function getMinimumItems() : ?int
+    public function getMinimumItems(): ?int
     {
         return $this->minimumItems;
     }
@@ -220,7 +220,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
     *
     * @return self
     */
-    public function setMinimumItems(?int $minimumItems) : self
+    public function setMinimumItems(?int $minimumItems): self
     {
         $this->initialized['minimumItems'] = true;
         $this->minimumItems = $minimumItems;
@@ -231,7 +231,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
      *
      * @return bool
      */
-    public function getOverwriteMinimumItems() : bool
+    public function getOverwriteMinimumItems(): bool
     {
         return $this->overwriteMinimumItems;
     }
@@ -242,7 +242,7 @@ class FieldOverwriteMultiTagbox extends FieldOverwriteBase
      *
      * @return self
      */
-    public function setOverwriteMinimumItems(bool $overwriteMinimumItems) : self
+    public function setOverwriteMinimumItems(bool $overwriteMinimumItems): self
     {
         $this->initialized['overwriteMinimumItems'] = true;
         $this->overwriteMinimumItems = $overwriteMinimumItems;

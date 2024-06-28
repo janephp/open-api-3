@@ -8,7 +8,7 @@ class Account extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class Account extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -64,7 +64,7 @@ class Account extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -75,7 +75,7 @@ class Account extends \ArrayObject
      *
      * @return string
      */
-    public function getFirstname() : string
+    public function getFirstname(): string
     {
         return $this->firstname;
     }
@@ -86,7 +86,7 @@ class Account extends \ArrayObject
      *
      * @return self
      */
-    public function setFirstname(string $firstname) : self
+    public function setFirstname(string $firstname): self
     {
         $this->initialized['firstname'] = true;
         $this->firstname = $firstname;
@@ -97,7 +97,7 @@ class Account extends \ArrayObject
      *
      * @return string
      */
-    public function getLastname() : string
+    public function getLastname(): string
     {
         return $this->lastname;
     }
@@ -108,7 +108,7 @@ class Account extends \ArrayObject
      *
      * @return self
      */
-    public function setLastname(string $lastname) : self
+    public function setLastname(string $lastname): self
     {
         $this->initialized['lastname'] = true;
         $this->lastname = $lastname;
@@ -119,7 +119,7 @@ class Account extends \ArrayObject
      *
      * @return Country|null
      */
-    public function getCountryOfBirth() : ?Country
+    public function getCountryOfBirth(): ?Country
     {
         return $this->countryOfBirth;
     }
@@ -130,7 +130,7 @@ class Account extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryOfBirth(?Country $countryOfBirth) : self
+    public function setCountryOfBirth(?Country $countryOfBirth): self
     {
         $this->initialized['countryOfBirth'] = true;
         $this->countryOfBirth = $countryOfBirth;
@@ -141,7 +141,7 @@ class Account extends \ArrayObject
      *
      * @return Country
      */
-    public function getCountry() : Country
+    public function getCountry(): Country
     {
         return $this->country;
     }
@@ -152,7 +152,7 @@ class Account extends \ArrayObject
      *
      * @return self
      */
-    public function setCountry(Country $country) : self
+    public function setCountry(Country $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -174,7 +174,7 @@ class Account extends \ArrayObject
      *
      * @return self
      */
-    public function setNationality($nationality) : self
+    public function setNationality($nationality): self
     {
         $this->initialized['nationality'] = true;
         $this->nationality = $nationality;

@@ -8,7 +8,7 @@ class RateLimit extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class RateLimit extends \ArrayObject
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -46,7 +46,7 @@ class RateLimit extends \ArrayObject
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -57,7 +57,7 @@ class RateLimit extends \ArrayObject
      *
      * @return int
      */
-    public function getRemaining() : int
+    public function getRemaining(): int
     {
         return $this->remaining;
     }
@@ -68,7 +68,7 @@ class RateLimit extends \ArrayObject
      *
      * @return self
      */
-    public function setRemaining(int $remaining) : self
+    public function setRemaining(int $remaining): self
     {
         $this->initialized['remaining'] = true;
         $this->remaining = $remaining;
@@ -79,7 +79,7 @@ class RateLimit extends \ArrayObject
      *
      * @return int
      */
-    public function getReset() : int
+    public function getReset(): int
     {
         return $this->reset;
     }
@@ -90,7 +90,7 @@ class RateLimit extends \ArrayObject
      *
      * @return self
      */
-    public function setReset(int $reset) : self
+    public function setReset(int $reset): self
     {
         $this->initialized['reset'] = true;
         $this->reset = $reset;

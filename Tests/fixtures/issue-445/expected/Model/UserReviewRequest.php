@@ -8,7 +8,7 @@ class UserReviewRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -25,7 +25,7 @@ class UserReviewRequest
     *
     * @return bool
     */
-    public function getReviewed() : bool
+    public function getReviewed(): bool
     {
         return $this->reviewed;
     }
@@ -37,7 +37,7 @@ class UserReviewRequest
     *
     * @return self
     */
-    public function setReviewed(bool $reviewed) : self
+    public function setReviewed(bool $reviewed): self
     {
         $this->initialized['reviewed'] = true;
         $this->reviewed = $reviewed;

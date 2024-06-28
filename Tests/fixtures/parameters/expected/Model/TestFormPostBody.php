@@ -8,7 +8,7 @@ class TestFormPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTestString() : string
+    public function getTestString(): string
     {
         return $this->testString;
     }
@@ -64,7 +64,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTestString(string $testString) : self
+    public function setTestString(string $testString): self
     {
         $this->initialized['testString'] = true;
         $this->testString = $testString;
@@ -75,7 +75,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getTestInteger() : int
+    public function getTestInteger(): int
     {
         return $this->testInteger;
     }
@@ -86,7 +86,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTestInteger(int $testInteger) : self
+    public function setTestInteger(int $testInteger): self
     {
         $this->initialized['testInteger'] = true;
         $this->testInteger = $testInteger;
@@ -97,7 +97,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return float
      */
-    public function getTestFloat() : float
+    public function getTestFloat(): float
     {
         return $this->testFloat;
     }
@@ -108,7 +108,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTestFloat(float $testFloat) : self
+    public function setTestFloat(float $testFloat): self
     {
         $this->initialized['testFloat'] = true;
         $this->testFloat = $testFloat;
@@ -119,7 +119,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getTestArray() : array
+    public function getTestArray(): array
     {
         return $this->testArray;
     }
@@ -130,7 +130,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTestArray(array $testArray) : self
+    public function setTestArray(array $testArray): self
     {
         $this->initialized['testArray'] = true;
         $this->testArray = $testArray;
@@ -141,7 +141,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTestRequired() : string
+    public function getTestRequired(): string
     {
         return $this->testRequired;
     }
@@ -152,7 +152,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTestRequired(string $testRequired) : self
+    public function setTestRequired(string $testRequired): self
     {
         $this->initialized['testRequired'] = true;
         $this->testRequired = $testRequired;
@@ -163,7 +163,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTestDefault() : string
+    public function getTestDefault(): string
     {
         return $this->testDefault;
     }
@@ -174,7 +174,7 @@ class TestFormPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTestDefault(string $testDefault) : self
+    public function setTestDefault(string $testDefault): self
     {
         $this->initialized['testDefault'] = true;
         $this->testDefault = $testDefault;

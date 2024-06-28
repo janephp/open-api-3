@@ -8,7 +8,7 @@ class PermissionSetUserPermissionRights
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class PermissionSetUserPermissionRights
      *
      * @return string|null
      */
-    public function getPermissionSetId() : ?string
+    public function getPermissionSetId(): ?string
     {
         return $this->permissionSetId;
     }
@@ -40,7 +40,7 @@ class PermissionSetUserPermissionRights
      *
      * @return self
      */
-    public function setPermissionSetId(?string $permissionSetId) : self
+    public function setPermissionSetId(?string $permissionSetId): self
     {
         $this->initialized['permissionSetId'] = true;
         $this->permissionSetId = $permissionSetId;
@@ -51,7 +51,7 @@ class PermissionSetUserPermissionRights
      *
      * @return list<string>|null
      */
-    public function getPermissionSetRights() : ?array
+    public function getPermissionSetRights(): ?array
     {
         return $this->permissionSetRights;
     }
@@ -62,7 +62,7 @@ class PermissionSetUserPermissionRights
      *
      * @return self
      */
-    public function setPermissionSetRights(?array $permissionSetRights) : self
+    public function setPermissionSetRights(?array $permissionSetRights): self
     {
         $this->initialized['permissionSetRights'] = true;
         $this->permissionSetRights = $permissionSetRights;

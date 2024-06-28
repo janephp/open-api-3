@@ -8,7 +8,7 @@ class UserEmailVisibilityPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class UserEmailVisibilityPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -40,7 +40,7 @@ class UserEmailVisibilityPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -51,7 +51,7 @@ class UserEmailVisibilityPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getVisibility() : string
+    public function getVisibility(): string
     {
         return $this->visibility;
     }
@@ -62,7 +62,7 @@ class UserEmailVisibilityPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setVisibility(string $visibility) : self
+    public function setVisibility(string $visibility): self
     {
         $this->initialized['visibility'] = true;
         $this->visibility = $visibility;

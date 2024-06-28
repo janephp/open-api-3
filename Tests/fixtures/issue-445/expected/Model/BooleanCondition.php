@@ -8,7 +8,7 @@ class BooleanCondition extends BusinessRuleCondition
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class BooleanCondition extends BusinessRuleCondition
      *
      * @return list<BusinessRuleCondition>|null
      */
-    public function getConditions() : ?array
+    public function getConditions(): ?array
     {
         return $this->conditions;
     }
@@ -34,7 +34,7 @@ class BooleanCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setConditions(?array $conditions) : self
+    public function setConditions(?array $conditions): self
     {
         $this->initialized['conditions'] = true;
         $this->conditions = $conditions;

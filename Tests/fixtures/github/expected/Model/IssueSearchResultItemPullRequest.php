@@ -8,7 +8,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getMergedAt() : ?\DateTime
+    public function getMergedAt(): ?\DateTime
     {
         return $this->mergedAt;
     }
@@ -58,7 +58,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setMergedAt(?\DateTime $mergedAt) : self
+    public function setMergedAt(?\DateTime $mergedAt): self
     {
         $this->initialized['mergedAt'] = true;
         $this->mergedAt = $mergedAt;
@@ -69,7 +69,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDiffUrl() : ?string
+    public function getDiffUrl(): ?string
     {
         return $this->diffUrl;
     }
@@ -80,7 +80,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setDiffUrl(?string $diffUrl) : self
+    public function setDiffUrl(?string $diffUrl): self
     {
         $this->initialized['diffUrl'] = true;
         $this->diffUrl = $diffUrl;
@@ -91,7 +91,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getHtmlUrl() : ?string
+    public function getHtmlUrl(): ?string
     {
         return $this->htmlUrl;
     }
@@ -102,7 +102,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(?string $htmlUrl) : self
+    public function setHtmlUrl(?string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -113,7 +113,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPatchUrl() : ?string
+    public function getPatchUrl(): ?string
     {
         return $this->patchUrl;
     }
@@ -124,7 +124,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setPatchUrl(?string $patchUrl) : self
+    public function setPatchUrl(?string $patchUrl): self
     {
         $this->initialized['patchUrl'] = true;
         $this->patchUrl = $patchUrl;
@@ -135,7 +135,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUrl() : ?string
+    public function getUrl(): ?string
     {
         return $this->url;
     }
@@ -146,7 +146,7 @@ class IssueSearchResultItemPullRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(?string $url) : self
+    public function setUrl(?string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;

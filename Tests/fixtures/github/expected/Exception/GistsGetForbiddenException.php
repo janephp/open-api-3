@@ -18,11 +18,11 @@ class GistsGetForbiddenException extends ForbiddenException
         $this->responseForbiddenGist = $responseForbiddenGist;
         $this->response = $response;
     }
-    public function getResponseForbiddenGist() : \Github\Model\ResponseForbiddenGist
+    public function getResponseForbiddenGist(): \Github\Model\ResponseForbiddenGist
     {
         return $this->responseForbiddenGist;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

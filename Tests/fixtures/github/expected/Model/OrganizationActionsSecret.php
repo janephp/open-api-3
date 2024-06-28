@@ -8,7 +8,7 @@ class OrganizationActionsSecret extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -58,7 +58,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -69,7 +69,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -80,7 +80,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -91,7 +91,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -102,7 +102,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -113,7 +113,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return string
      */
-    public function getVisibility() : string
+    public function getVisibility(): string
     {
         return $this->visibility;
     }
@@ -124,7 +124,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return self
      */
-    public function setVisibility(string $visibility) : self
+    public function setVisibility(string $visibility): self
     {
         $this->initialized['visibility'] = true;
         $this->visibility = $visibility;
@@ -135,7 +135,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return string
      */
-    public function getSelectedRepositoriesUrl() : string
+    public function getSelectedRepositoriesUrl(): string
     {
         return $this->selectedRepositoriesUrl;
     }
@@ -146,7 +146,7 @@ class OrganizationActionsSecret extends \ArrayObject
      *
      * @return self
      */
-    public function setSelectedRepositoriesUrl(string $selectedRepositoriesUrl) : self
+    public function setSelectedRepositoriesUrl(string $selectedRepositoriesUrl): self
     {
         $this->initialized['selectedRepositoriesUrl'] = true;
         $this->selectedRepositoriesUrl = $selectedRepositoriesUrl;

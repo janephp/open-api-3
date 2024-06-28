@@ -18,11 +18,11 @@ class TeamsAddOrUpdateMembershipForUserInOrgUnprocessableEntityException extends
         $this->orgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422 = $orgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422;
         $this->response = $response;
     }
-    public function getOrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422() : \Github\Model\OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422
+    public function getOrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422(): \Github\Model\OrgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422
     {
         return $this->orgsOrgTeamsTeamSlugMembershipsUsernamePutResponse422;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem extends \ArrayObjec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem extends \ArrayObjec
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -46,7 +46,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -57,7 +57,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem extends \ArrayObjec
      *
      * @return string
      */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -68,7 +68,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -79,7 +79,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem extends \ArrayObjec
      *
      * @return string
      */
-    public function getResource() : string
+    public function getResource(): string
     {
         return $this->resource;
     }
@@ -90,7 +90,7 @@ class TeamsTeamIdMembershipsUsernamePutResponse422ErrorsItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setResource(string $resource) : self
+    public function setResource(string $resource): self
     {
         $this->initialized['resource'] = true;
         $this->resource = $resource;

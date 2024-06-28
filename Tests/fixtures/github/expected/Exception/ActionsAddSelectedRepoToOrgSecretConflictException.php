@@ -13,7 +13,7 @@ class ActionsAddSelectedRepoToOrgSecretConflictException extends ConflictExcepti
         parent::__construct('Response when visibility type is not set to selected');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

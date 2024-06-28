@@ -8,7 +8,7 @@ class ReposOwnerRepoCheckSuitesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ReposOwnerRepoCheckSuitesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getHeadSha() : string
+    public function getHeadSha(): string
     {
         return $this->headSha;
     }
@@ -34,7 +34,7 @@ class ReposOwnerRepoCheckSuitesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHeadSha(string $headSha) : self
+    public function setHeadSha(string $headSha): self
     {
         $this->initialized['headSha'] = true;
         $this->headSha = $headSha;

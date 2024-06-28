@@ -8,7 +8,7 @@ class ShortBranch extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -58,7 +58,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -69,7 +69,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return ShortBranchCommit
      */
-    public function getCommit() : ShortBranchCommit
+    public function getCommit(): ShortBranchCommit
     {
         return $this->commit;
     }
@@ -80,7 +80,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setCommit(ShortBranchCommit $commit) : self
+    public function setCommit(ShortBranchCommit $commit): self
     {
         $this->initialized['commit'] = true;
         $this->commit = $commit;
@@ -91,7 +91,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return bool
      */
-    public function getProtected() : bool
+    public function getProtected(): bool
     {
         return $this->protected;
     }
@@ -102,7 +102,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setProtected(bool $protected) : self
+    public function setProtected(bool $protected): self
     {
         $this->initialized['protected'] = true;
         $this->protected = $protected;
@@ -113,7 +113,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return BranchProtection
      */
-    public function getProtection() : BranchProtection
+    public function getProtection(): BranchProtection
     {
         return $this->protection;
     }
@@ -124,7 +124,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setProtection(BranchProtection $protection) : self
+    public function setProtection(BranchProtection $protection): self
     {
         $this->initialized['protection'] = true;
         $this->protection = $protection;
@@ -135,7 +135,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return string
      */
-    public function getProtectionUrl() : string
+    public function getProtectionUrl(): string
     {
         return $this->protectionUrl;
     }
@@ -146,7 +146,7 @@ class ShortBranch extends \ArrayObject
      *
      * @return self
      */
-    public function setProtectionUrl(string $protectionUrl) : self
+    public function setProtectionUrl(string $protectionUrl): self
     {
         $this->initialized['protectionUrl'] = true;
         $this->protectionUrl = $protectionUrl;

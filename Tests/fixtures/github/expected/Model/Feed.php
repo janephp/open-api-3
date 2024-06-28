@@ -8,7 +8,7 @@ class Feed extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class Feed extends \ArrayObject
      *
      * @return string
      */
-    public function getTimelineUrl() : string
+    public function getTimelineUrl(): string
     {
         return $this->timelineUrl;
     }
@@ -82,7 +82,7 @@ class Feed extends \ArrayObject
      *
      * @return self
      */
-    public function setTimelineUrl(string $timelineUrl) : self
+    public function setTimelineUrl(string $timelineUrl): self
     {
         $this->initialized['timelineUrl'] = true;
         $this->timelineUrl = $timelineUrl;
@@ -93,7 +93,7 @@ class Feed extends \ArrayObject
      *
      * @return string
      */
-    public function getUserUrl() : string
+    public function getUserUrl(): string
     {
         return $this->userUrl;
     }
@@ -104,7 +104,7 @@ class Feed extends \ArrayObject
      *
      * @return self
      */
-    public function setUserUrl(string $userUrl) : self
+    public function setUserUrl(string $userUrl): self
     {
         $this->initialized['userUrl'] = true;
         $this->userUrl = $userUrl;
@@ -115,7 +115,7 @@ class Feed extends \ArrayObject
      *
      * @return string
      */
-    public function getCurrentUserPublicUrl() : string
+    public function getCurrentUserPublicUrl(): string
     {
         return $this->currentUserPublicUrl;
     }
@@ -126,7 +126,7 @@ class Feed extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserPublicUrl(string $currentUserPublicUrl) : self
+    public function setCurrentUserPublicUrl(string $currentUserPublicUrl): self
     {
         $this->initialized['currentUserPublicUrl'] = true;
         $this->currentUserPublicUrl = $currentUserPublicUrl;
@@ -137,7 +137,7 @@ class Feed extends \ArrayObject
      *
      * @return string
      */
-    public function getCurrentUserUrl() : string
+    public function getCurrentUserUrl(): string
     {
         return $this->currentUserUrl;
     }
@@ -148,7 +148,7 @@ class Feed extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserUrl(string $currentUserUrl) : self
+    public function setCurrentUserUrl(string $currentUserUrl): self
     {
         $this->initialized['currentUserUrl'] = true;
         $this->currentUserUrl = $currentUserUrl;
@@ -159,7 +159,7 @@ class Feed extends \ArrayObject
      *
      * @return string
      */
-    public function getCurrentUserActorUrl() : string
+    public function getCurrentUserActorUrl(): string
     {
         return $this->currentUserActorUrl;
     }
@@ -170,7 +170,7 @@ class Feed extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserActorUrl(string $currentUserActorUrl) : self
+    public function setCurrentUserActorUrl(string $currentUserActorUrl): self
     {
         $this->initialized['currentUserActorUrl'] = true;
         $this->currentUserActorUrl = $currentUserActorUrl;
@@ -181,7 +181,7 @@ class Feed extends \ArrayObject
      *
      * @return string
      */
-    public function getCurrentUserOrganizationUrl() : string
+    public function getCurrentUserOrganizationUrl(): string
     {
         return $this->currentUserOrganizationUrl;
     }
@@ -192,7 +192,7 @@ class Feed extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserOrganizationUrl(string $currentUserOrganizationUrl) : self
+    public function setCurrentUserOrganizationUrl(string $currentUserOrganizationUrl): self
     {
         $this->initialized['currentUserOrganizationUrl'] = true;
         $this->currentUserOrganizationUrl = $currentUserOrganizationUrl;
@@ -203,7 +203,7 @@ class Feed extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getCurrentUserOrganizationUrls() : array
+    public function getCurrentUserOrganizationUrls(): array
     {
         return $this->currentUserOrganizationUrls;
     }
@@ -214,7 +214,7 @@ class Feed extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserOrganizationUrls(array $currentUserOrganizationUrls) : self
+    public function setCurrentUserOrganizationUrls(array $currentUserOrganizationUrls): self
     {
         $this->initialized['currentUserOrganizationUrls'] = true;
         $this->currentUserOrganizationUrls = $currentUserOrganizationUrls;
@@ -225,7 +225,7 @@ class Feed extends \ArrayObject
      *
      * @return string
      */
-    public function getSecurityAdvisoriesUrl() : string
+    public function getSecurityAdvisoriesUrl(): string
     {
         return $this->securityAdvisoriesUrl;
     }
@@ -236,7 +236,7 @@ class Feed extends \ArrayObject
      *
      * @return self
      */
-    public function setSecurityAdvisoriesUrl(string $securityAdvisoriesUrl) : self
+    public function setSecurityAdvisoriesUrl(string $securityAdvisoriesUrl): self
     {
         $this->initialized['securityAdvisoriesUrl'] = true;
         $this->securityAdvisoriesUrl = $securityAdvisoriesUrl;
@@ -247,7 +247,7 @@ class Feed extends \ArrayObject
      *
      * @return FeedLinks
      */
-    public function getLinks() : FeedLinks
+    public function getLinks(): FeedLinks
     {
         return $this->links;
     }
@@ -258,7 +258,7 @@ class Feed extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(FeedLinks $links) : self
+    public function setLinks(FeedLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;

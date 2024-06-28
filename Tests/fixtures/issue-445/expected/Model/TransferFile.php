@@ -8,7 +8,7 @@ class TransferFile
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -33,7 +33,7 @@ class TransferFile
      *
      * @return string|null
      */
-    public function getIdentifier() : ?string
+    public function getIdentifier(): ?string
     {
         return $this->identifier;
     }
@@ -46,7 +46,7 @@ class TransferFile
      *
      * @return self
      */
-    public function setIdentifier(?string $identifier) : self
+    public function setIdentifier(?string $identifier): self
     {
         $this->initialized['identifier'] = true;
         $this->identifier = $identifier;
@@ -57,7 +57,7 @@ class TransferFile
      *
      * @return string|null
      */
-    public function getRequestId() : ?string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -68,7 +68,7 @@ class TransferFile
      *
      * @return self
      */
-    public function setRequestId(?string $requestId) : self
+    public function setRequestId(?string $requestId): self
     {
         $this->initialized['requestId'] = true;
         $this->requestId = $requestId;

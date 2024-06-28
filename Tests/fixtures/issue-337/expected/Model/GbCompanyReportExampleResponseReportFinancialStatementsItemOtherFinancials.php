@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
      *
      * @return string
      */
-    public function getContingentLiabilities() : string
+    public function getContingentLiabilities(): string
     {
         return $this->contingentLiabilities;
     }
@@ -46,7 +46,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
      *
      * @return self
      */
-    public function setContingentLiabilities(string $contingentLiabilities) : self
+    public function setContingentLiabilities(string $contingentLiabilities): self
     {
         $this->initialized['contingentLiabilities'] = true;
         $this->contingentLiabilities = $contingentLiabilities;
@@ -57,7 +57,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
      *
      * @return float
      */
-    public function getWorkingCapital() : float
+    public function getWorkingCapital(): float
     {
         return $this->workingCapital;
     }
@@ -68,7 +68,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
      *
      * @return self
      */
-    public function setWorkingCapital(float $workingCapital) : self
+    public function setWorkingCapital(float $workingCapital): self
     {
         $this->initialized['workingCapital'] = true;
         $this->workingCapital = $workingCapital;
@@ -79,7 +79,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
      *
      * @return float
      */
-    public function getNetWorth() : float
+    public function getNetWorth(): float
     {
         return $this->netWorth;
     }
@@ -90,7 +90,7 @@ class GbCompanyReportExampleResponseReportFinancialStatementsItemOtherFinancials
      *
      * @return self
      */
-    public function setNetWorth(float $netWorth) : self
+    public function setNetWorth(float $netWorth): self
     {
         $this->initialized['netWorth'] = true;
         $this->netWorth = $netWorth;

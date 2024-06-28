@@ -8,7 +8,7 @@ class BranchWithProtection extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -76,7 +76,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -87,7 +87,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return Commit
      */
-    public function getCommit() : Commit
+    public function getCommit(): Commit
     {
         return $this->commit;
     }
@@ -98,7 +98,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return self
      */
-    public function setCommit(Commit $commit) : self
+    public function setCommit(Commit $commit): self
     {
         $this->initialized['commit'] = true;
         $this->commit = $commit;
@@ -109,7 +109,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return BranchWithProtectionLinks
      */
-    public function getLinks() : BranchWithProtectionLinks
+    public function getLinks(): BranchWithProtectionLinks
     {
         return $this->links;
     }
@@ -120,7 +120,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(BranchWithProtectionLinks $links) : self
+    public function setLinks(BranchWithProtectionLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;
@@ -131,7 +131,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return bool
      */
-    public function getProtected() : bool
+    public function getProtected(): bool
     {
         return $this->protected;
     }
@@ -142,7 +142,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return self
      */
-    public function setProtected(bool $protected) : self
+    public function setProtected(bool $protected): self
     {
         $this->initialized['protected'] = true;
         $this->protected = $protected;
@@ -153,7 +153,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return BranchProtection
      */
-    public function getProtection() : BranchProtection
+    public function getProtection(): BranchProtection
     {
         return $this->protection;
     }
@@ -164,7 +164,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return self
      */
-    public function setProtection(BranchProtection $protection) : self
+    public function setProtection(BranchProtection $protection): self
     {
         $this->initialized['protection'] = true;
         $this->protection = $protection;
@@ -175,7 +175,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return string
      */
-    public function getProtectionUrl() : string
+    public function getProtectionUrl(): string
     {
         return $this->protectionUrl;
     }
@@ -186,7 +186,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return self
      */
-    public function setProtectionUrl(string $protectionUrl) : self
+    public function setProtectionUrl(string $protectionUrl): self
     {
         $this->initialized['protectionUrl'] = true;
         $this->protectionUrl = $protectionUrl;
@@ -197,7 +197,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return string
      */
-    public function getPattern() : string
+    public function getPattern(): string
     {
         return $this->pattern;
     }
@@ -208,7 +208,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return self
      */
-    public function setPattern(string $pattern) : self
+    public function setPattern(string $pattern): self
     {
         $this->initialized['pattern'] = true;
         $this->pattern = $pattern;
@@ -219,7 +219,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return int
      */
-    public function getRequiredApprovingReviewCount() : int
+    public function getRequiredApprovingReviewCount(): int
     {
         return $this->requiredApprovingReviewCount;
     }
@@ -230,7 +230,7 @@ class BranchWithProtection extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredApprovingReviewCount(int $requiredApprovingReviewCount) : self
+    public function setRequiredApprovingReviewCount(int $requiredApprovingReviewCount): self
     {
         $this->initialized['requiredApprovingReviewCount'] = true;
         $this->requiredApprovingReviewCount = $requiredApprovingReviewCount;

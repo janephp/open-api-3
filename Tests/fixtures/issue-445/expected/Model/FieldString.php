@@ -8,7 +8,7 @@ class FieldString extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -73,7 +73,7 @@ class FieldString extends FieldBase
      *
      * @return string|null
      */
-    public function getTemplate() : ?string
+    public function getTemplate(): ?string
     {
         return $this->template;
     }
@@ -84,7 +84,7 @@ class FieldString extends FieldBase
      *
      * @return self
      */
-    public function setTemplate(?string $template) : self
+    public function setTemplate(?string $template): self
     {
         $this->initialized['template'] = true;
         $this->template = $template;
@@ -95,7 +95,7 @@ class FieldString extends FieldBase
      *
      * @return string|null
      */
-    public function getPattern() : ?string
+    public function getPattern(): ?string
     {
         return $this->pattern;
     }
@@ -106,7 +106,7 @@ class FieldString extends FieldBase
      *
      * @return self
      */
-    public function setPattern(?string $pattern) : self
+    public function setPattern(?string $pattern): self
     {
         $this->initialized['pattern'] = true;
         $this->pattern = $pattern;
@@ -117,7 +117,7 @@ class FieldString extends FieldBase
      *
      * @return int|null
      */
-    public function getMinimumLength() : ?int
+    public function getMinimumLength(): ?int
     {
         return $this->minimumLength;
     }
@@ -128,7 +128,7 @@ class FieldString extends FieldBase
      *
      * @return self
      */
-    public function setMinimumLength(?int $minimumLength) : self
+    public function setMinimumLength(?int $minimumLength): self
     {
         $this->initialized['minimumLength'] = true;
         $this->minimumLength = $minimumLength;
@@ -139,7 +139,7 @@ class FieldString extends FieldBase
      *
      * @return int|null
      */
-    public function getMaximumLength() : ?int
+    public function getMaximumLength(): ?int
     {
         return $this->maximumLength;
     }
@@ -150,7 +150,7 @@ class FieldString extends FieldBase
      *
      * @return self
      */
-    public function setMaximumLength(?int $maximumLength) : self
+    public function setMaximumLength(?int $maximumLength): self
     {
         $this->initialized['maximumLength'] = true;
         $this->maximumLength = $maximumLength;
@@ -162,7 +162,7 @@ class FieldString extends FieldBase
     *
     * @return list<AnalyzerBase>|null
     */
-    public function getIndexAnalyzers() : ?array
+    public function getIndexAnalyzers(): ?array
     {
         return $this->indexAnalyzers;
     }
@@ -174,7 +174,7 @@ class FieldString extends FieldBase
     *
     * @return self
     */
-    public function setIndexAnalyzers(?array $indexAnalyzers) : self
+    public function setIndexAnalyzers(?array $indexAnalyzers): self
     {
         $this->initialized['indexAnalyzers'] = true;
         $this->indexAnalyzers = $indexAnalyzers;
@@ -186,7 +186,7 @@ class FieldString extends FieldBase
     *
     * @return list<AnalyzerBase>|null
     */
-    public function getSimpleSearchAnalyzers() : ?array
+    public function getSimpleSearchAnalyzers(): ?array
     {
         return $this->simpleSearchAnalyzers;
     }
@@ -198,7 +198,7 @@ class FieldString extends FieldBase
     *
     * @return self
     */
-    public function setSimpleSearchAnalyzers(?array $simpleSearchAnalyzers) : self
+    public function setSimpleSearchAnalyzers(?array $simpleSearchAnalyzers): self
     {
         $this->initialized['simpleSearchAnalyzers'] = true;
         $this->simpleSearchAnalyzers = $simpleSearchAnalyzers;
@@ -209,7 +209,7 @@ class FieldString extends FieldBase
      *
      * @return bool
      */
-    public function getMultiLine() : bool
+    public function getMultiLine(): bool
     {
         return $this->multiLine;
     }
@@ -220,7 +220,7 @@ class FieldString extends FieldBase
      *
      * @return self
      */
-    public function setMultiLine(bool $multiLine) : self
+    public function setMultiLine(bool $multiLine): self
     {
         $this->initialized['multiLine'] = true;
         $this->multiLine = $multiLine;
@@ -231,7 +231,7 @@ class FieldString extends FieldBase
      *
      * @return list<string>|null
      */
-    public function getGrantedValues() : ?array
+    public function getGrantedValues(): ?array
     {
         return $this->grantedValues;
     }
@@ -242,7 +242,7 @@ class FieldString extends FieldBase
      *
      * @return self
      */
-    public function setGrantedValues(?array $grantedValues) : self
+    public function setGrantedValues(?array $grantedValues): self
     {
         $this->initialized['grantedValues'] = true;
         $this->grantedValues = $grantedValues;
@@ -253,7 +253,7 @@ class FieldString extends FieldBase
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -264,7 +264,7 @@ class FieldString extends FieldBase
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;

@@ -8,7 +8,7 @@ class Repository extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -539,7 +539,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -550,7 +550,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -561,7 +561,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -572,7 +572,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -583,7 +583,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -594,7 +594,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -605,7 +605,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getFullName() : string
+    public function getFullName(): string
     {
         return $this->fullName;
     }
@@ -616,7 +616,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setFullName(string $fullName) : self
+    public function setFullName(string $fullName): self
     {
         $this->initialized['fullName'] = true;
         $this->fullName = $fullName;
@@ -627,7 +627,7 @@ class Repository extends \ArrayObject
      *
      * @return RepositoryLicense|null
      */
-    public function getLicense() : ?RepositoryLicense
+    public function getLicense(): ?RepositoryLicense
     {
         return $this->license;
     }
@@ -638,7 +638,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setLicense(?RepositoryLicense $license) : self
+    public function setLicense(?RepositoryLicense $license): self
     {
         $this->initialized['license'] = true;
         $this->license = $license;
@@ -649,7 +649,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getForks() : int
+    public function getForks(): int
     {
         return $this->forks;
     }
@@ -660,7 +660,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setForks(int $forks) : self
+    public function setForks(int $forks): self
     {
         $this->initialized['forks'] = true;
         $this->forks = $forks;
@@ -671,7 +671,7 @@ class Repository extends \ArrayObject
      *
      * @return RepositoryPermissions
      */
-    public function getPermissions() : RepositoryPermissions
+    public function getPermissions(): RepositoryPermissions
     {
         return $this->permissions;
     }
@@ -682,7 +682,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(RepositoryPermissions $permissions) : self
+    public function setPermissions(RepositoryPermissions $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;
@@ -693,7 +693,7 @@ class Repository extends \ArrayObject
      *
      * @return RepositoryOwner|null
      */
-    public function getOwner() : ?RepositoryOwner
+    public function getOwner(): ?RepositoryOwner
     {
         return $this->owner;
     }
@@ -704,7 +704,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setOwner(?RepositoryOwner $owner) : self
+    public function setOwner(?RepositoryOwner $owner): self
     {
         $this->initialized['owner'] = true;
         $this->owner = $owner;
@@ -715,7 +715,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getPrivate() : bool
+    public function getPrivate(): bool
     {
         return $this->private;
     }
@@ -726,7 +726,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivate(bool $private) : self
+    public function setPrivate(bool $private): self
     {
         $this->initialized['private'] = true;
         $this->private = $private;
@@ -737,7 +737,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -748,7 +748,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -759,7 +759,7 @@ class Repository extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -770,7 +770,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -781,7 +781,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getFork() : bool
+    public function getFork(): bool
     {
         return $this->fork;
     }
@@ -792,7 +792,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setFork(bool $fork) : self
+    public function setFork(bool $fork): self
     {
         $this->initialized['fork'] = true;
         $this->fork = $fork;
@@ -803,7 +803,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -814,7 +814,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -825,7 +825,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getArchiveUrl() : string
+    public function getArchiveUrl(): string
     {
         return $this->archiveUrl;
     }
@@ -836,7 +836,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setArchiveUrl(string $archiveUrl) : self
+    public function setArchiveUrl(string $archiveUrl): self
     {
         $this->initialized['archiveUrl'] = true;
         $this->archiveUrl = $archiveUrl;
@@ -847,7 +847,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getAssigneesUrl() : string
+    public function getAssigneesUrl(): string
     {
         return $this->assigneesUrl;
     }
@@ -858,7 +858,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setAssigneesUrl(string $assigneesUrl) : self
+    public function setAssigneesUrl(string $assigneesUrl): self
     {
         $this->initialized['assigneesUrl'] = true;
         $this->assigneesUrl = $assigneesUrl;
@@ -869,7 +869,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getBlobsUrl() : string
+    public function getBlobsUrl(): string
     {
         return $this->blobsUrl;
     }
@@ -880,7 +880,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setBlobsUrl(string $blobsUrl) : self
+    public function setBlobsUrl(string $blobsUrl): self
     {
         $this->initialized['blobsUrl'] = true;
         $this->blobsUrl = $blobsUrl;
@@ -891,7 +891,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getBranchesUrl() : string
+    public function getBranchesUrl(): string
     {
         return $this->branchesUrl;
     }
@@ -902,7 +902,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setBranchesUrl(string $branchesUrl) : self
+    public function setBranchesUrl(string $branchesUrl): self
     {
         $this->initialized['branchesUrl'] = true;
         $this->branchesUrl = $branchesUrl;
@@ -913,7 +913,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getCollaboratorsUrl() : string
+    public function getCollaboratorsUrl(): string
     {
         return $this->collaboratorsUrl;
     }
@@ -924,7 +924,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setCollaboratorsUrl(string $collaboratorsUrl) : self
+    public function setCollaboratorsUrl(string $collaboratorsUrl): self
     {
         $this->initialized['collaboratorsUrl'] = true;
         $this->collaboratorsUrl = $collaboratorsUrl;
@@ -935,7 +935,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getCommentsUrl() : string
+    public function getCommentsUrl(): string
     {
         return $this->commentsUrl;
     }
@@ -946,7 +946,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setCommentsUrl(string $commentsUrl) : self
+    public function setCommentsUrl(string $commentsUrl): self
     {
         $this->initialized['commentsUrl'] = true;
         $this->commentsUrl = $commentsUrl;
@@ -957,7 +957,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitsUrl() : string
+    public function getCommitsUrl(): string
     {
         return $this->commitsUrl;
     }
@@ -968,7 +968,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitsUrl(string $commitsUrl) : self
+    public function setCommitsUrl(string $commitsUrl): self
     {
         $this->initialized['commitsUrl'] = true;
         $this->commitsUrl = $commitsUrl;
@@ -979,7 +979,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getCompareUrl() : string
+    public function getCompareUrl(): string
     {
         return $this->compareUrl;
     }
@@ -990,7 +990,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setCompareUrl(string $compareUrl) : self
+    public function setCompareUrl(string $compareUrl): self
     {
         $this->initialized['compareUrl'] = true;
         $this->compareUrl = $compareUrl;
@@ -1001,7 +1001,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getContentsUrl() : string
+    public function getContentsUrl(): string
     {
         return $this->contentsUrl;
     }
@@ -1012,7 +1012,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setContentsUrl(string $contentsUrl) : self
+    public function setContentsUrl(string $contentsUrl): self
     {
         $this->initialized['contentsUrl'] = true;
         $this->contentsUrl = $contentsUrl;
@@ -1023,7 +1023,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getContributorsUrl() : string
+    public function getContributorsUrl(): string
     {
         return $this->contributorsUrl;
     }
@@ -1034,7 +1034,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setContributorsUrl(string $contributorsUrl) : self
+    public function setContributorsUrl(string $contributorsUrl): self
     {
         $this->initialized['contributorsUrl'] = true;
         $this->contributorsUrl = $contributorsUrl;
@@ -1045,7 +1045,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getDeploymentsUrl() : string
+    public function getDeploymentsUrl(): string
     {
         return $this->deploymentsUrl;
     }
@@ -1056,7 +1056,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setDeploymentsUrl(string $deploymentsUrl) : self
+    public function setDeploymentsUrl(string $deploymentsUrl): self
     {
         $this->initialized['deploymentsUrl'] = true;
         $this->deploymentsUrl = $deploymentsUrl;
@@ -1067,7 +1067,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getDownloadsUrl() : string
+    public function getDownloadsUrl(): string
     {
         return $this->downloadsUrl;
     }
@@ -1078,7 +1078,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setDownloadsUrl(string $downloadsUrl) : self
+    public function setDownloadsUrl(string $downloadsUrl): self
     {
         $this->initialized['downloadsUrl'] = true;
         $this->downloadsUrl = $downloadsUrl;
@@ -1089,7 +1089,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getEventsUrl() : string
+    public function getEventsUrl(): string
     {
         return $this->eventsUrl;
     }
@@ -1100,7 +1100,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setEventsUrl(string $eventsUrl) : self
+    public function setEventsUrl(string $eventsUrl): self
     {
         $this->initialized['eventsUrl'] = true;
         $this->eventsUrl = $eventsUrl;
@@ -1111,7 +1111,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getForksUrl() : string
+    public function getForksUrl(): string
     {
         return $this->forksUrl;
     }
@@ -1122,7 +1122,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setForksUrl(string $forksUrl) : self
+    public function setForksUrl(string $forksUrl): self
     {
         $this->initialized['forksUrl'] = true;
         $this->forksUrl = $forksUrl;
@@ -1133,7 +1133,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getGitCommitsUrl() : string
+    public function getGitCommitsUrl(): string
     {
         return $this->gitCommitsUrl;
     }
@@ -1144,7 +1144,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setGitCommitsUrl(string $gitCommitsUrl) : self
+    public function setGitCommitsUrl(string $gitCommitsUrl): self
     {
         $this->initialized['gitCommitsUrl'] = true;
         $this->gitCommitsUrl = $gitCommitsUrl;
@@ -1155,7 +1155,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getGitRefsUrl() : string
+    public function getGitRefsUrl(): string
     {
         return $this->gitRefsUrl;
     }
@@ -1166,7 +1166,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setGitRefsUrl(string $gitRefsUrl) : self
+    public function setGitRefsUrl(string $gitRefsUrl): self
     {
         $this->initialized['gitRefsUrl'] = true;
         $this->gitRefsUrl = $gitRefsUrl;
@@ -1177,7 +1177,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getGitTagsUrl() : string
+    public function getGitTagsUrl(): string
     {
         return $this->gitTagsUrl;
     }
@@ -1188,7 +1188,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setGitTagsUrl(string $gitTagsUrl) : self
+    public function setGitTagsUrl(string $gitTagsUrl): self
     {
         $this->initialized['gitTagsUrl'] = true;
         $this->gitTagsUrl = $gitTagsUrl;
@@ -1199,7 +1199,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getGitUrl() : string
+    public function getGitUrl(): string
     {
         return $this->gitUrl;
     }
@@ -1210,7 +1210,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setGitUrl(string $gitUrl) : self
+    public function setGitUrl(string $gitUrl): self
     {
         $this->initialized['gitUrl'] = true;
         $this->gitUrl = $gitUrl;
@@ -1221,7 +1221,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getIssueCommentUrl() : string
+    public function getIssueCommentUrl(): string
     {
         return $this->issueCommentUrl;
     }
@@ -1232,7 +1232,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setIssueCommentUrl(string $issueCommentUrl) : self
+    public function setIssueCommentUrl(string $issueCommentUrl): self
     {
         $this->initialized['issueCommentUrl'] = true;
         $this->issueCommentUrl = $issueCommentUrl;
@@ -1243,7 +1243,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getIssueEventsUrl() : string
+    public function getIssueEventsUrl(): string
     {
         return $this->issueEventsUrl;
     }
@@ -1254,7 +1254,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setIssueEventsUrl(string $issueEventsUrl) : self
+    public function setIssueEventsUrl(string $issueEventsUrl): self
     {
         $this->initialized['issueEventsUrl'] = true;
         $this->issueEventsUrl = $issueEventsUrl;
@@ -1265,7 +1265,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getIssuesUrl() : string
+    public function getIssuesUrl(): string
     {
         return $this->issuesUrl;
     }
@@ -1276,7 +1276,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setIssuesUrl(string $issuesUrl) : self
+    public function setIssuesUrl(string $issuesUrl): self
     {
         $this->initialized['issuesUrl'] = true;
         $this->issuesUrl = $issuesUrl;
@@ -1287,7 +1287,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getKeysUrl() : string
+    public function getKeysUrl(): string
     {
         return $this->keysUrl;
     }
@@ -1298,7 +1298,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setKeysUrl(string $keysUrl) : self
+    public function setKeysUrl(string $keysUrl): self
     {
         $this->initialized['keysUrl'] = true;
         $this->keysUrl = $keysUrl;
@@ -1309,7 +1309,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelsUrl() : string
+    public function getLabelsUrl(): string
     {
         return $this->labelsUrl;
     }
@@ -1320,7 +1320,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelsUrl(string $labelsUrl) : self
+    public function setLabelsUrl(string $labelsUrl): self
     {
         $this->initialized['labelsUrl'] = true;
         $this->labelsUrl = $labelsUrl;
@@ -1331,7 +1331,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getLanguagesUrl() : string
+    public function getLanguagesUrl(): string
     {
         return $this->languagesUrl;
     }
@@ -1342,7 +1342,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguagesUrl(string $languagesUrl) : self
+    public function setLanguagesUrl(string $languagesUrl): self
     {
         $this->initialized['languagesUrl'] = true;
         $this->languagesUrl = $languagesUrl;
@@ -1353,7 +1353,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getMergesUrl() : string
+    public function getMergesUrl(): string
     {
         return $this->mergesUrl;
     }
@@ -1364,7 +1364,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setMergesUrl(string $mergesUrl) : self
+    public function setMergesUrl(string $mergesUrl): self
     {
         $this->initialized['mergesUrl'] = true;
         $this->mergesUrl = $mergesUrl;
@@ -1375,7 +1375,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getMilestonesUrl() : string
+    public function getMilestonesUrl(): string
     {
         return $this->milestonesUrl;
     }
@@ -1386,7 +1386,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setMilestonesUrl(string $milestonesUrl) : self
+    public function setMilestonesUrl(string $milestonesUrl): self
     {
         $this->initialized['milestonesUrl'] = true;
         $this->milestonesUrl = $milestonesUrl;
@@ -1397,7 +1397,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getNotificationsUrl() : string
+    public function getNotificationsUrl(): string
     {
         return $this->notificationsUrl;
     }
@@ -1408,7 +1408,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setNotificationsUrl(string $notificationsUrl) : self
+    public function setNotificationsUrl(string $notificationsUrl): self
     {
         $this->initialized['notificationsUrl'] = true;
         $this->notificationsUrl = $notificationsUrl;
@@ -1419,7 +1419,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getPullsUrl() : string
+    public function getPullsUrl(): string
     {
         return $this->pullsUrl;
     }
@@ -1430,7 +1430,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setPullsUrl(string $pullsUrl) : self
+    public function setPullsUrl(string $pullsUrl): self
     {
         $this->initialized['pullsUrl'] = true;
         $this->pullsUrl = $pullsUrl;
@@ -1441,7 +1441,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getReleasesUrl() : string
+    public function getReleasesUrl(): string
     {
         return $this->releasesUrl;
     }
@@ -1452,7 +1452,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setReleasesUrl(string $releasesUrl) : self
+    public function setReleasesUrl(string $releasesUrl): self
     {
         $this->initialized['releasesUrl'] = true;
         $this->releasesUrl = $releasesUrl;
@@ -1463,7 +1463,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getSshUrl() : string
+    public function getSshUrl(): string
     {
         return $this->sshUrl;
     }
@@ -1474,7 +1474,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setSshUrl(string $sshUrl) : self
+    public function setSshUrl(string $sshUrl): self
     {
         $this->initialized['sshUrl'] = true;
         $this->sshUrl = $sshUrl;
@@ -1485,7 +1485,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getStargazersUrl() : string
+    public function getStargazersUrl(): string
     {
         return $this->stargazersUrl;
     }
@@ -1496,7 +1496,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setStargazersUrl(string $stargazersUrl) : self
+    public function setStargazersUrl(string $stargazersUrl): self
     {
         $this->initialized['stargazersUrl'] = true;
         $this->stargazersUrl = $stargazersUrl;
@@ -1507,7 +1507,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getStatusesUrl() : string
+    public function getStatusesUrl(): string
     {
         return $this->statusesUrl;
     }
@@ -1518,7 +1518,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setStatusesUrl(string $statusesUrl) : self
+    public function setStatusesUrl(string $statusesUrl): self
     {
         $this->initialized['statusesUrl'] = true;
         $this->statusesUrl = $statusesUrl;
@@ -1529,7 +1529,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getSubscribersUrl() : string
+    public function getSubscribersUrl(): string
     {
         return $this->subscribersUrl;
     }
@@ -1540,7 +1540,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setSubscribersUrl(string $subscribersUrl) : self
+    public function setSubscribersUrl(string $subscribersUrl): self
     {
         $this->initialized['subscribersUrl'] = true;
         $this->subscribersUrl = $subscribersUrl;
@@ -1551,7 +1551,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getSubscriptionUrl() : string
+    public function getSubscriptionUrl(): string
     {
         return $this->subscriptionUrl;
     }
@@ -1562,7 +1562,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setSubscriptionUrl(string $subscriptionUrl) : self
+    public function setSubscriptionUrl(string $subscriptionUrl): self
     {
         $this->initialized['subscriptionUrl'] = true;
         $this->subscriptionUrl = $subscriptionUrl;
@@ -1573,7 +1573,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getTagsUrl() : string
+    public function getTagsUrl(): string
     {
         return $this->tagsUrl;
     }
@@ -1584,7 +1584,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setTagsUrl(string $tagsUrl) : self
+    public function setTagsUrl(string $tagsUrl): self
     {
         $this->initialized['tagsUrl'] = true;
         $this->tagsUrl = $tagsUrl;
@@ -1595,7 +1595,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getTeamsUrl() : string
+    public function getTeamsUrl(): string
     {
         return $this->teamsUrl;
     }
@@ -1606,7 +1606,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setTeamsUrl(string $teamsUrl) : self
+    public function setTeamsUrl(string $teamsUrl): self
     {
         $this->initialized['teamsUrl'] = true;
         $this->teamsUrl = $teamsUrl;
@@ -1617,7 +1617,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getTreesUrl() : string
+    public function getTreesUrl(): string
     {
         return $this->treesUrl;
     }
@@ -1628,7 +1628,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setTreesUrl(string $treesUrl) : self
+    public function setTreesUrl(string $treesUrl): self
     {
         $this->initialized['treesUrl'] = true;
         $this->treesUrl = $treesUrl;
@@ -1639,7 +1639,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getCloneUrl() : string
+    public function getCloneUrl(): string
     {
         return $this->cloneUrl;
     }
@@ -1650,7 +1650,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setCloneUrl(string $cloneUrl) : self
+    public function setCloneUrl(string $cloneUrl): self
     {
         $this->initialized['cloneUrl'] = true;
         $this->cloneUrl = $cloneUrl;
@@ -1661,7 +1661,7 @@ class Repository extends \ArrayObject
      *
      * @return string|null
      */
-    public function getMirrorUrl() : ?string
+    public function getMirrorUrl(): ?string
     {
         return $this->mirrorUrl;
     }
@@ -1672,7 +1672,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setMirrorUrl(?string $mirrorUrl) : self
+    public function setMirrorUrl(?string $mirrorUrl): self
     {
         $this->initialized['mirrorUrl'] = true;
         $this->mirrorUrl = $mirrorUrl;
@@ -1683,7 +1683,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getHooksUrl() : string
+    public function getHooksUrl(): string
     {
         return $this->hooksUrl;
     }
@@ -1694,7 +1694,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setHooksUrl(string $hooksUrl) : self
+    public function setHooksUrl(string $hooksUrl): self
     {
         $this->initialized['hooksUrl'] = true;
         $this->hooksUrl = $hooksUrl;
@@ -1705,7 +1705,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getSvnUrl() : string
+    public function getSvnUrl(): string
     {
         return $this->svnUrl;
     }
@@ -1716,7 +1716,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setSvnUrl(string $svnUrl) : self
+    public function setSvnUrl(string $svnUrl): self
     {
         $this->initialized['svnUrl'] = true;
         $this->svnUrl = $svnUrl;
@@ -1727,7 +1727,7 @@ class Repository extends \ArrayObject
      *
      * @return string|null
      */
-    public function getHomepage() : ?string
+    public function getHomepage(): ?string
     {
         return $this->homepage;
     }
@@ -1738,7 +1738,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setHomepage(?string $homepage) : self
+    public function setHomepage(?string $homepage): self
     {
         $this->initialized['homepage'] = true;
         $this->homepage = $homepage;
@@ -1749,7 +1749,7 @@ class Repository extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLanguage() : ?string
+    public function getLanguage(): ?string
     {
         return $this->language;
     }
@@ -1760,7 +1760,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(?string $language) : self
+    public function setLanguage(?string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -1771,7 +1771,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getForksCount() : int
+    public function getForksCount(): int
     {
         return $this->forksCount;
     }
@@ -1782,7 +1782,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setForksCount(int $forksCount) : self
+    public function setForksCount(int $forksCount): self
     {
         $this->initialized['forksCount'] = true;
         $this->forksCount = $forksCount;
@@ -1793,7 +1793,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getStargazersCount() : int
+    public function getStargazersCount(): int
     {
         return $this->stargazersCount;
     }
@@ -1804,7 +1804,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setStargazersCount(int $stargazersCount) : self
+    public function setStargazersCount(int $stargazersCount): self
     {
         $this->initialized['stargazersCount'] = true;
         $this->stargazersCount = $stargazersCount;
@@ -1815,7 +1815,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getWatchersCount() : int
+    public function getWatchersCount(): int
     {
         return $this->watchersCount;
     }
@@ -1826,7 +1826,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setWatchersCount(int $watchersCount) : self
+    public function setWatchersCount(int $watchersCount): self
     {
         $this->initialized['watchersCount'] = true;
         $this->watchersCount = $watchersCount;
@@ -1837,7 +1837,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getSize() : int
+    public function getSize(): int
     {
         return $this->size;
     }
@@ -1848,7 +1848,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setSize(int $size) : self
+    public function setSize(int $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;
@@ -1859,7 +1859,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getDefaultBranch() : string
+    public function getDefaultBranch(): string
     {
         return $this->defaultBranch;
     }
@@ -1870,7 +1870,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setDefaultBranch(string $defaultBranch) : self
+    public function setDefaultBranch(string $defaultBranch): self
     {
         $this->initialized['defaultBranch'] = true;
         $this->defaultBranch = $defaultBranch;
@@ -1881,7 +1881,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getOpenIssuesCount() : int
+    public function getOpenIssuesCount(): int
     {
         return $this->openIssuesCount;
     }
@@ -1892,7 +1892,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setOpenIssuesCount(int $openIssuesCount) : self
+    public function setOpenIssuesCount(int $openIssuesCount): self
     {
         $this->initialized['openIssuesCount'] = true;
         $this->openIssuesCount = $openIssuesCount;
@@ -1903,7 +1903,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsTemplate() : bool
+    public function getIsTemplate(): bool
     {
         return $this->isTemplate;
     }
@@ -1914,7 +1914,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setIsTemplate(bool $isTemplate) : self
+    public function setIsTemplate(bool $isTemplate): self
     {
         $this->initialized['isTemplate'] = true;
         $this->isTemplate = $isTemplate;
@@ -1925,7 +1925,7 @@ class Repository extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getTopics() : array
+    public function getTopics(): array
     {
         return $this->topics;
     }
@@ -1936,7 +1936,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setTopics(array $topics) : self
+    public function setTopics(array $topics): self
     {
         $this->initialized['topics'] = true;
         $this->topics = $topics;
@@ -1947,7 +1947,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasIssues() : bool
+    public function getHasIssues(): bool
     {
         return $this->hasIssues;
     }
@@ -1958,7 +1958,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setHasIssues(bool $hasIssues) : self
+    public function setHasIssues(bool $hasIssues): self
     {
         $this->initialized['hasIssues'] = true;
         $this->hasIssues = $hasIssues;
@@ -1969,7 +1969,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasProjects() : bool
+    public function getHasProjects(): bool
     {
         return $this->hasProjects;
     }
@@ -1980,7 +1980,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setHasProjects(bool $hasProjects) : self
+    public function setHasProjects(bool $hasProjects): self
     {
         $this->initialized['hasProjects'] = true;
         $this->hasProjects = $hasProjects;
@@ -1991,7 +1991,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasWiki() : bool
+    public function getHasWiki(): bool
     {
         return $this->hasWiki;
     }
@@ -2002,7 +2002,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setHasWiki(bool $hasWiki) : self
+    public function setHasWiki(bool $hasWiki): self
     {
         $this->initialized['hasWiki'] = true;
         $this->hasWiki = $hasWiki;
@@ -2013,7 +2013,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasPages() : bool
+    public function getHasPages(): bool
     {
         return $this->hasPages;
     }
@@ -2024,7 +2024,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setHasPages(bool $hasPages) : self
+    public function setHasPages(bool $hasPages): self
     {
         $this->initialized['hasPages'] = true;
         $this->hasPages = $hasPages;
@@ -2035,7 +2035,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasDownloads() : bool
+    public function getHasDownloads(): bool
     {
         return $this->hasDownloads;
     }
@@ -2046,7 +2046,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setHasDownloads(bool $hasDownloads) : self
+    public function setHasDownloads(bool $hasDownloads): self
     {
         $this->initialized['hasDownloads'] = true;
         $this->hasDownloads = $hasDownloads;
@@ -2057,7 +2057,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getArchived() : bool
+    public function getArchived(): bool
     {
         return $this->archived;
     }
@@ -2068,7 +2068,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setArchived(bool $archived) : self
+    public function setArchived(bool $archived): self
     {
         $this->initialized['archived'] = true;
         $this->archived = $archived;
@@ -2079,7 +2079,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getDisabled() : bool
+    public function getDisabled(): bool
     {
         return $this->disabled;
     }
@@ -2090,7 +2090,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setDisabled(bool $disabled) : self
+    public function setDisabled(bool $disabled): self
     {
         $this->initialized['disabled'] = true;
         $this->disabled = $disabled;
@@ -2101,7 +2101,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getVisibility() : string
+    public function getVisibility(): string
     {
         return $this->visibility;
     }
@@ -2112,7 +2112,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setVisibility(string $visibility) : self
+    public function setVisibility(string $visibility): self
     {
         $this->initialized['visibility'] = true;
         $this->visibility = $visibility;
@@ -2123,7 +2123,7 @@ class Repository extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getPushedAt() : ?\DateTime
+    public function getPushedAt(): ?\DateTime
     {
         return $this->pushedAt;
     }
@@ -2134,7 +2134,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setPushedAt(?\DateTime $pushedAt) : self
+    public function setPushedAt(?\DateTime $pushedAt): self
     {
         $this->initialized['pushedAt'] = true;
         $this->pushedAt = $pushedAt;
@@ -2145,7 +2145,7 @@ class Repository extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getCreatedAt() : ?\DateTime
+    public function getCreatedAt(): ?\DateTime
     {
         return $this->createdAt;
     }
@@ -2156,7 +2156,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(?\DateTime $createdAt) : self
+    public function setCreatedAt(?\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -2167,7 +2167,7 @@ class Repository extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getUpdatedAt() : ?\DateTime
+    public function getUpdatedAt(): ?\DateTime
     {
         return $this->updatedAt;
     }
@@ -2178,7 +2178,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(?\DateTime $updatedAt) : self
+    public function setUpdatedAt(?\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -2189,7 +2189,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getAllowRebaseMerge() : bool
+    public function getAllowRebaseMerge(): bool
     {
         return $this->allowRebaseMerge;
     }
@@ -2200,7 +2200,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowRebaseMerge(bool $allowRebaseMerge) : self
+    public function setAllowRebaseMerge(bool $allowRebaseMerge): self
     {
         $this->initialized['allowRebaseMerge'] = true;
         $this->allowRebaseMerge = $allowRebaseMerge;
@@ -2211,7 +2211,7 @@ class Repository extends \ArrayObject
      *
      * @return RepositoryTemplateRepository|null
      */
-    public function getTemplateRepository() : ?RepositoryTemplateRepository
+    public function getTemplateRepository(): ?RepositoryTemplateRepository
     {
         return $this->templateRepository;
     }
@@ -2222,7 +2222,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setTemplateRepository(?RepositoryTemplateRepository $templateRepository) : self
+    public function setTemplateRepository(?RepositoryTemplateRepository $templateRepository): self
     {
         $this->initialized['templateRepository'] = true;
         $this->templateRepository = $templateRepository;
@@ -2233,7 +2233,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getTempCloneToken() : string
+    public function getTempCloneToken(): string
     {
         return $this->tempCloneToken;
     }
@@ -2244,7 +2244,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setTempCloneToken(string $tempCloneToken) : self
+    public function setTempCloneToken(string $tempCloneToken): self
     {
         $this->initialized['tempCloneToken'] = true;
         $this->tempCloneToken = $tempCloneToken;
@@ -2255,7 +2255,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getAllowSquashMerge() : bool
+    public function getAllowSquashMerge(): bool
     {
         return $this->allowSquashMerge;
     }
@@ -2266,7 +2266,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowSquashMerge(bool $allowSquashMerge) : self
+    public function setAllowSquashMerge(bool $allowSquashMerge): self
     {
         $this->initialized['allowSquashMerge'] = true;
         $this->allowSquashMerge = $allowSquashMerge;
@@ -2277,7 +2277,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getDeleteBranchOnMerge() : bool
+    public function getDeleteBranchOnMerge(): bool
     {
         return $this->deleteBranchOnMerge;
     }
@@ -2288,7 +2288,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setDeleteBranchOnMerge(bool $deleteBranchOnMerge) : self
+    public function setDeleteBranchOnMerge(bool $deleteBranchOnMerge): self
     {
         $this->initialized['deleteBranchOnMerge'] = true;
         $this->deleteBranchOnMerge = $deleteBranchOnMerge;
@@ -2299,7 +2299,7 @@ class Repository extends \ArrayObject
      *
      * @return bool
      */
-    public function getAllowMergeCommit() : bool
+    public function getAllowMergeCommit(): bool
     {
         return $this->allowMergeCommit;
     }
@@ -2310,7 +2310,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowMergeCommit(bool $allowMergeCommit) : self
+    public function setAllowMergeCommit(bool $allowMergeCommit): self
     {
         $this->initialized['allowMergeCommit'] = true;
         $this->allowMergeCommit = $allowMergeCommit;
@@ -2321,7 +2321,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getSubscribersCount() : int
+    public function getSubscribersCount(): int
     {
         return $this->subscribersCount;
     }
@@ -2332,7 +2332,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setSubscribersCount(int $subscribersCount) : self
+    public function setSubscribersCount(int $subscribersCount): self
     {
         $this->initialized['subscribersCount'] = true;
         $this->subscribersCount = $subscribersCount;
@@ -2343,7 +2343,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getNetworkCount() : int
+    public function getNetworkCount(): int
     {
         return $this->networkCount;
     }
@@ -2354,7 +2354,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setNetworkCount(int $networkCount) : self
+    public function setNetworkCount(int $networkCount): self
     {
         $this->initialized['networkCount'] = true;
         $this->networkCount = $networkCount;
@@ -2365,7 +2365,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getOpenIssues() : int
+    public function getOpenIssues(): int
     {
         return $this->openIssues;
     }
@@ -2376,7 +2376,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setOpenIssues(int $openIssues) : self
+    public function setOpenIssues(int $openIssues): self
     {
         $this->initialized['openIssues'] = true;
         $this->openIssues = $openIssues;
@@ -2387,7 +2387,7 @@ class Repository extends \ArrayObject
      *
      * @return int
      */
-    public function getWatchers() : int
+    public function getWatchers(): int
     {
         return $this->watchers;
     }
@@ -2398,7 +2398,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setWatchers(int $watchers) : self
+    public function setWatchers(int $watchers): self
     {
         $this->initialized['watchers'] = true;
         $this->watchers = $watchers;
@@ -2409,7 +2409,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getMasterBranch() : string
+    public function getMasterBranch(): string
     {
         return $this->masterBranch;
     }
@@ -2420,7 +2420,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setMasterBranch(string $masterBranch) : self
+    public function setMasterBranch(string $masterBranch): self
     {
         $this->initialized['masterBranch'] = true;
         $this->masterBranch = $masterBranch;
@@ -2431,7 +2431,7 @@ class Repository extends \ArrayObject
      *
      * @return string
      */
-    public function getStarredAt() : string
+    public function getStarredAt(): string
     {
         return $this->starredAt;
     }
@@ -2442,7 +2442,7 @@ class Repository extends \ArrayObject
      *
      * @return self
      */
-    public function setStarredAt(string $starredAt) : self
+    public function setStarredAt(string $starredAt): self
     {
         $this->initialized['starredAt'] = true;
         $this->starredAt = $starredAt;

@@ -8,7 +8,7 @@ class PeopleSearchSuccessResult extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class PeopleSearchSuccessResult extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalSize() : int
+    public function getTotalSize(): int
     {
         return $this->totalSize;
     }
@@ -40,7 +40,7 @@ class PeopleSearchSuccessResult extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalSize(int $totalSize) : self
+    public function setTotalSize(int $totalSize): self
     {
         $this->initialized['totalSize'] = true;
         $this->totalSize = $totalSize;
@@ -51,7 +51,7 @@ class PeopleSearchSuccessResult extends \ArrayObject
      *
      * @return list<PeopleSearchSuccessResultDirectorsItem>
      */
-    public function getDirectors() : array
+    public function getDirectors(): array
     {
         return $this->directors;
     }
@@ -62,7 +62,7 @@ class PeopleSearchSuccessResult extends \ArrayObject
      *
      * @return self
      */
-    public function setDirectors(array $directors) : self
+    public function setDirectors(array $directors): self
     {
         $this->initialized['directors'] = true;
         $this->directors = $directors;

@@ -8,7 +8,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTagName() : string
+    public function getTagName(): string
     {
         return $this->tagName;
     }
@@ -64,7 +64,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTagName(string $tagName) : self
+    public function setTagName(string $tagName): self
     {
         $this->initialized['tagName'] = true;
         $this->tagName = $tagName;
@@ -75,7 +75,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTargetCommitish() : string
+    public function getTargetCommitish(): string
     {
         return $this->targetCommitish;
     }
@@ -86,7 +86,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTargetCommitish(string $targetCommitish) : self
+    public function setTargetCommitish(string $targetCommitish): self
     {
         $this->initialized['targetCommitish'] = true;
         $this->targetCommitish = $targetCommitish;
@@ -97,7 +97,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -108,7 +108,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -119,7 +119,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -130,7 +130,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -141,7 +141,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getDraft() : bool
+    public function getDraft(): bool
     {
         return $this->draft;
     }
@@ -152,7 +152,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDraft(bool $draft) : self
+    public function setDraft(bool $draft): self
     {
         $this->initialized['draft'] = true;
         $this->draft = $draft;
@@ -163,7 +163,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getPrerelease() : bool
+    public function getPrerelease(): bool
     {
         return $this->prerelease;
     }
@@ -174,7 +174,7 @@ class ReposOwnerRepoReleasesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPrerelease(bool $prerelease) : self
+    public function setPrerelease(bool $prerelease): self
     {
         $this->initialized['prerelease'] = true;
         $this->prerelease = $prerelease;

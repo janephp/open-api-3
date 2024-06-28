@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
      *
      * @return GbCompanyReportExampleResponseReportContactInformationMainAddress
      */
-    public function getMainAddress() : GbCompanyReportExampleResponseReportContactInformationMainAddress
+    public function getMainAddress(): GbCompanyReportExampleResponseReportContactInformationMainAddress
     {
         return $this->mainAddress;
     }
@@ -46,7 +46,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
      *
      * @return self
      */
-    public function setMainAddress(GbCompanyReportExampleResponseReportContactInformationMainAddress $mainAddress) : self
+    public function setMainAddress(GbCompanyReportExampleResponseReportContactInformationMainAddress $mainAddress): self
     {
         $this->initialized['mainAddress'] = true;
         $this->mainAddress = $mainAddress;
@@ -57,7 +57,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
      *
      * @return list<GbCompanyReportExampleResponseReportContactInformationOtherAddressesItem>
      */
-    public function getOtherAddresses() : array
+    public function getOtherAddresses(): array
     {
         return $this->otherAddresses;
     }
@@ -68,7 +68,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
      *
      * @return self
      */
-    public function setOtherAddresses(array $otherAddresses) : self
+    public function setOtherAddresses(array $otherAddresses): self
     {
         $this->initialized['otherAddresses'] = true;
         $this->otherAddresses = $otherAddresses;
@@ -79,7 +79,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
      *
      * @return list<string>
      */
-    public function getWebsites() : array
+    public function getWebsites(): array
     {
         return $this->websites;
     }
@@ -90,7 +90,7 @@ class GbCompanyReportExampleResponseReportContactInformation extends \ArrayObjec
      *
      * @return self
      */
-    public function setWebsites(array $websites) : self
+    public function setWebsites(array $websites): self
     {
         $this->initialized['websites'] = true;
         $this->websites = $websites;

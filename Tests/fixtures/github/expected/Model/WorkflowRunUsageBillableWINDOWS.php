@@ -8,7 +8,7 @@ class WorkflowRunUsageBillableWINDOWS extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class WorkflowRunUsageBillableWINDOWS extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalMs() : int
+    public function getTotalMs(): int
     {
         return $this->totalMs;
     }
@@ -40,7 +40,7 @@ class WorkflowRunUsageBillableWINDOWS extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalMs(int $totalMs) : self
+    public function setTotalMs(int $totalMs): self
     {
         $this->initialized['totalMs'] = true;
         $this->totalMs = $totalMs;
@@ -51,7 +51,7 @@ class WorkflowRunUsageBillableWINDOWS extends \ArrayObject
      *
      * @return int
      */
-    public function getJobs() : int
+    public function getJobs(): int
     {
         return $this->jobs;
     }
@@ -62,7 +62,7 @@ class WorkflowRunUsageBillableWINDOWS extends \ArrayObject
      *
      * @return self
      */
-    public function setJobs(int $jobs) : self
+    public function setJobs(int $jobs): self
     {
         $this->initialized['jobs'] = true;
         $this->jobs = $jobs;

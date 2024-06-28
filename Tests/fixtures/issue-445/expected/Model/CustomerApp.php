@@ -8,7 +8,7 @@ class CustomerApp
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class CustomerApp
      *
      * @return string|null
      */
-    public function getAppId() : ?string
+    public function getAppId(): ?string
     {
         return $this->appId;
     }
@@ -52,7 +52,7 @@ class CustomerApp
      *
      * @return self
      */
-    public function setAppId(?string $appId) : self
+    public function setAppId(?string $appId): self
     {
         $this->initialized['appId'] = true;
         $this->appId = $appId;
@@ -74,7 +74,7 @@ class CustomerApp
      *
      * @return self
      */
-    public function setName($name) : self
+    public function setName($name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -96,7 +96,7 @@ class CustomerApp
      *
      * @return self
      */
-    public function setDescription($description) : self
+    public function setDescription($description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -107,7 +107,7 @@ class CustomerApp
      *
      * @return string|null
      */
-    public function getIcon() : ?string
+    public function getIcon(): ?string
     {
         return $this->icon;
     }
@@ -118,7 +118,7 @@ class CustomerApp
      *
      * @return self
      */
-    public function setIcon(?string $icon) : self
+    public function setIcon(?string $icon): self
     {
         $this->initialized['icon'] = true;
         $this->icon = $icon;

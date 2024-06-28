@@ -18,11 +18,11 @@ class ReposListInvitationsForAuthenticatedUserNotFoundException extends NotFound
         $this->basicError = $basicError;
         $this->response = $response;
     }
-    public function getBasicError() : \Github\Model\BasicError
+    public function getBasicError(): \Github\Model\BasicError
     {
         return $this->basicError;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

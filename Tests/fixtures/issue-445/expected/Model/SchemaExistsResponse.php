@@ -8,7 +8,7 @@ class SchemaExistsResponse
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class SchemaExistsResponse
      *
      * @return bool
      */
-    public function getExists() : bool
+    public function getExists(): bool
     {
         return $this->exists;
     }
@@ -34,7 +34,7 @@ class SchemaExistsResponse
      *
      * @return self
      */
-    public function setExists(bool $exists) : self
+    public function setExists(bool $exists): self
     {
         $this->initialized['exists'] = true;
         $this->exists = $exists;

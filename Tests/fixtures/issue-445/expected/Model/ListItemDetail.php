@@ -8,7 +8,7 @@ class ListItemDetail
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -73,7 +73,7 @@ class ListItemDetail
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -84,7 +84,7 @@ class ListItemDetail
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -95,7 +95,7 @@ class ListItemDetail
      *
      * @return string
      */
-    public function getContentSchemaId() : string
+    public function getContentSchemaId(): string
     {
         return $this->contentSchemaId;
     }
@@ -106,7 +106,7 @@ class ListItemDetail
      *
      * @return self
      */
-    public function setContentSchemaId(string $contentSchemaId) : self
+    public function setContentSchemaId(string $contentSchemaId): self
     {
         $this->initialized['contentSchemaId'] = true;
         $this->contentSchemaId = $contentSchemaId;
@@ -118,7 +118,7 @@ class ListItemDetail
     *
     * @return array<string, mixed>|null
     */
-    public function getContent() : ?iterable
+    public function getContent(): ?iterable
     {
         return $this->content;
     }
@@ -130,7 +130,7 @@ class ListItemDetail
     *
     * @return self
     */
-    public function setContent(?iterable $content) : self
+    public function setContent(?iterable $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -152,7 +152,7 @@ class ListItemDetail
      *
      * @return self
      */
-    public function setDisplayValues($displayValues) : self
+    public function setDisplayValues($displayValues): self
     {
         $this->initialized['displayValues'] = true;
         $this->displayValues = $displayValues;
@@ -163,7 +163,7 @@ class ListItemDetail
      *
      * @return list<string>|null
      */
-    public function getBrokenReferenceIds() : ?array
+    public function getBrokenReferenceIds(): ?array
     {
         return $this->brokenReferenceIds;
     }
@@ -174,7 +174,7 @@ class ListItemDetail
      *
      * @return self
      */
-    public function setBrokenReferenceIds(?array $brokenReferenceIds) : self
+    public function setBrokenReferenceIds(?array $brokenReferenceIds): self
     {
         $this->initialized['brokenReferenceIds'] = true;
         $this->brokenReferenceIds = $brokenReferenceIds;
@@ -185,7 +185,7 @@ class ListItemDetail
      *
      * @return list<string>|null
      */
-    public function getBrokenRelationTargetIds() : ?array
+    public function getBrokenRelationTargetIds(): ?array
     {
         return $this->brokenRelationTargetIds;
     }
@@ -196,7 +196,7 @@ class ListItemDetail
      *
      * @return self
      */
-    public function setBrokenRelationTargetIds(?array $brokenRelationTargetIds) : self
+    public function setBrokenRelationTargetIds(?array $brokenRelationTargetIds): self
     {
         $this->initialized['brokenRelationTargetIds'] = true;
         $this->brokenRelationTargetIds = $brokenRelationTargetIds;
@@ -208,7 +208,7 @@ class ListItemDetail
     *
     * @return list<string>|null
     */
-    public function getBrokenIndirectReferenceIds() : ?array
+    public function getBrokenIndirectReferenceIds(): ?array
     {
         return $this->brokenIndirectReferenceIds;
     }
@@ -220,7 +220,7 @@ class ListItemDetail
     *
     * @return self
     */
-    public function setBrokenIndirectReferenceIds(?array $brokenIndirectReferenceIds) : self
+    public function setBrokenIndirectReferenceIds(?array $brokenIndirectReferenceIds): self
     {
         $this->initialized['brokenIndirectReferenceIds'] = true;
         $this->brokenIndirectReferenceIds = $brokenIndirectReferenceIds;
@@ -242,7 +242,7 @@ class ListItemDetail
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;
@@ -264,7 +264,7 @@ class ListItemDetail
      *
      * @return self
      */
-    public function setActivity($activity) : self
+    public function setActivity($activity): self
     {
         $this->initialized['activity'] = true;
         $this->activity = $activity;

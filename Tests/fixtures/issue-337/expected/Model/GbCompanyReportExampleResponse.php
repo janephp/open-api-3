@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getOrderId() : string
+    public function getOrderId(): string
     {
         return $this->orderId;
     }
@@ -64,7 +64,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setOrderId(string $orderId) : self
+    public function setOrderId(string $orderId): self
     {
         $this->initialized['orderId'] = true;
         $this->orderId = $orderId;
@@ -75,7 +75,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getCompanyId() : string
+    public function getCompanyId(): string
     {
         return $this->companyId;
     }
@@ -86,7 +86,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setCompanyId(string $companyId) : self
+    public function setCompanyId(string $companyId): self
     {
         $this->initialized['companyId'] = true;
         $this->companyId = $companyId;
@@ -97,7 +97,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getDateOfOrder() : string
+    public function getDateOfOrder(): string
     {
         return $this->dateOfOrder;
     }
@@ -108,7 +108,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setDateOfOrder(string $dateOfOrder) : self
+    public function setDateOfOrder(string $dateOfOrder): self
     {
         $this->initialized['dateOfOrder'] = true;
         $this->dateOfOrder = $dateOfOrder;
@@ -119,7 +119,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getLanguage() : string
+    public function getLanguage(): string
     {
         return $this->language;
     }
@@ -130,7 +130,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(string $language) : self
+    public function setLanguage(string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -141,7 +141,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getUserId() : string
+    public function getUserId(): string
     {
         return $this->userId;
     }
@@ -152,7 +152,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setUserId(string $userId) : self
+    public function setUserId(string $userId): self
     {
         $this->initialized['userId'] = true;
         $this->userId = $userId;
@@ -163,7 +163,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return GbCompanyReportExampleResponseReport
      */
-    public function getReport() : GbCompanyReportExampleResponseReport
+    public function getReport(): GbCompanyReportExampleResponseReport
     {
         return $this->report;
     }
@@ -174,7 +174,7 @@ class GbCompanyReportExampleResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setReport(GbCompanyReportExampleResponseReport $report) : self
+    public function setReport(GbCompanyReportExampleResponseReport $report): self
     {
         $this->initialized['report'] = true;
         $this->report = $report;

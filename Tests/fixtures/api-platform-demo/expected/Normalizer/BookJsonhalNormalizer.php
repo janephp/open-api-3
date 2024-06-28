@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \ApiPlatform\Demo\Model\BookJsonhal::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === ApiPlatform\Demo\Model\BookJsonhal::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -71,7 +71,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['author']);
             }
             if (\array_key_exists('publicationDate', $data)) {
-                $object->setPublicationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['publicationDate']));
+                $object->setPublicationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['publicationDate']));
                 unset($data['publicationDate']);
             }
             if (\array_key_exists('reviews', $data)) {
@@ -90,7 +90,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setCover(null);
             }
             if (\array_key_exists('archivedAt', $data) && $data['archivedAt'] !== null) {
-                $object->setArchivedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['archivedAt']));
+                $object->setArchivedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['archivedAt']));
                 unset($data['archivedAt']);
             }
             elseif (\array_key_exists('archivedAt', $data) && $data['archivedAt'] === null) {
@@ -103,7 +103,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('links') && null !== $object->getLinks()) {
@@ -115,7 +115,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['title'] = $object->getTitle();
             $data['description'] = $object->getDescription();
             $data['author'] = $object->getAuthor();
-            $data['publicationDate'] = $object->getPublicationDate()->format('Y-m-d\\TH:i:sP');
+            $data['publicationDate'] = $object->getPublicationDate()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('reviews') && null !== $object->getReviews()) {
                 $values = [];
                 foreach ($object->getReviews() as $value) {
@@ -127,7 +127,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['cover'] = $object->getCover();
             }
             if ($object->isInitialized('archivedAt') && null !== $object->getArchivedAt()) {
-                $data['archivedAt'] = $object->getArchivedAt()->format('Y-m-d\\TH:i:sP');
+                $data['archivedAt'] = $object->getArchivedAt()->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value_1) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -136,7 +136,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\ApiPlatform\Demo\Model\BookJsonhal::class => false];
         }
@@ -148,11 +148,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \ApiPlatform\Demo\Model\BookJsonhal::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === ApiPlatform\Demo\Model\BookJsonhal::class;
         }
@@ -202,7 +202,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['author']);
             }
             if (\array_key_exists('publicationDate', $data)) {
-                $object->setPublicationDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['publicationDate']));
+                $object->setPublicationDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['publicationDate']));
                 unset($data['publicationDate']);
             }
             if (\array_key_exists('reviews', $data)) {
@@ -221,7 +221,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $object->setCover(null);
             }
             if (\array_key_exists('archivedAt', $data) && $data['archivedAt'] !== null) {
-                $object->setArchivedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['archivedAt']));
+                $object->setArchivedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['archivedAt']));
                 unset($data['archivedAt']);
             }
             elseif (\array_key_exists('archivedAt', $data) && $data['archivedAt'] === null) {
@@ -249,7 +249,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['title'] = $object->getTitle();
             $data['description'] = $object->getDescription();
             $data['author'] = $object->getAuthor();
-            $data['publicationDate'] = $object->getPublicationDate()->format('Y-m-d\\TH:i:sP');
+            $data['publicationDate'] = $object->getPublicationDate()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('reviews') && null !== $object->getReviews()) {
                 $values = [];
                 foreach ($object->getReviews() as $value) {
@@ -261,7 +261,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['cover'] = $object->getCover();
             }
             if ($object->isInitialized('archivedAt') && null !== $object->getArchivedAt()) {
-                $data['archivedAt'] = $object->getArchivedAt()->format('Y-m-d\\TH:i:sP');
+                $data['archivedAt'] = $object->getArchivedAt()->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value_1) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -270,7 +270,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\ApiPlatform\Demo\Model\BookJsonhal::class => false];
         }

@@ -8,7 +8,7 @@ class Hovercard extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class Hovercard extends \ArrayObject
      *
      * @return list<HovercardContextsItem>
      */
-    public function getContexts() : array
+    public function getContexts(): array
     {
         return $this->contexts;
     }
@@ -34,7 +34,7 @@ class Hovercard extends \ArrayObject
      *
      * @return self
      */
-    public function setContexts(array $contexts) : self
+    public function setContexts(array $contexts): self
     {
         $this->initialized['contexts'] = true;
         $this->contexts = $contexts;

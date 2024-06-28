@@ -8,7 +8,7 @@ class DetailedPlaceFields extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class DetailedPlaceFields extends \ArrayObject
      *
      * @return Geo
      */
-    public function getGeo() : Geo
+    public function getGeo(): Geo
     {
         return $this->geo;
     }
@@ -34,7 +34,7 @@ class DetailedPlaceFields extends \ArrayObject
      *
      * @return self
      */
-    public function setGeo(Geo $geo) : self
+    public function setGeo(Geo $geo): self
     {
         $this->initialized['geo'] = true;
         $this->geo = $geo;

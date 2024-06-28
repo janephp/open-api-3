@@ -8,7 +8,7 @@ class TeamProject extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -113,7 +113,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getOwnerUrl() : string
+    public function getOwnerUrl(): string
     {
         return $this->ownerUrl;
     }
@@ -124,7 +124,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setOwnerUrl(string $ownerUrl) : self
+    public function setOwnerUrl(string $ownerUrl): self
     {
         $this->initialized['ownerUrl'] = true;
         $this->ownerUrl = $ownerUrl;
@@ -135,7 +135,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -146,7 +146,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -157,7 +157,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -168,7 +168,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -179,7 +179,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getColumnsUrl() : string
+    public function getColumnsUrl(): string
     {
         return $this->columnsUrl;
     }
@@ -190,7 +190,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setColumnsUrl(string $columnsUrl) : self
+    public function setColumnsUrl(string $columnsUrl): self
     {
         $this->initialized['columnsUrl'] = true;
         $this->columnsUrl = $columnsUrl;
@@ -201,7 +201,7 @@ class TeamProject extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -212,7 +212,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -223,7 +223,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -234,7 +234,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -245,7 +245,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -256,7 +256,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -267,7 +267,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string|null
      */
-    public function getBody() : ?string
+    public function getBody(): ?string
     {
         return $this->body;
     }
@@ -278,7 +278,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(?string $body) : self
+    public function setBody(?string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -289,7 +289,7 @@ class TeamProject extends \ArrayObject
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -300,7 +300,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -311,7 +311,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -322,7 +322,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -333,7 +333,7 @@ class TeamProject extends \ArrayObject
      *
      * @return SimpleUser|null
      */
-    public function getCreator() : ?SimpleUser
+    public function getCreator(): ?SimpleUser
     {
         return $this->creator;
     }
@@ -344,7 +344,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setCreator(?SimpleUser $creator) : self
+    public function setCreator(?SimpleUser $creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;
@@ -355,7 +355,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -366,7 +366,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -377,7 +377,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getUpdatedAt() : string
+    public function getUpdatedAt(): string
     {
         return $this->updatedAt;
     }
@@ -388,7 +388,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(string $updatedAt) : self
+    public function setUpdatedAt(string $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -399,7 +399,7 @@ class TeamProject extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationPermission() : string
+    public function getOrganizationPermission(): string
     {
         return $this->organizationPermission;
     }
@@ -410,7 +410,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationPermission(string $organizationPermission) : self
+    public function setOrganizationPermission(string $organizationPermission): self
     {
         $this->initialized['organizationPermission'] = true;
         $this->organizationPermission = $organizationPermission;
@@ -421,7 +421,7 @@ class TeamProject extends \ArrayObject
      *
      * @return bool
      */
-    public function getPrivate() : bool
+    public function getPrivate(): bool
     {
         return $this->private;
     }
@@ -432,7 +432,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivate(bool $private) : self
+    public function setPrivate(bool $private): self
     {
         $this->initialized['private'] = true;
         $this->private = $private;
@@ -443,7 +443,7 @@ class TeamProject extends \ArrayObject
      *
      * @return TeamProjectPermissions
      */
-    public function getPermissions() : TeamProjectPermissions
+    public function getPermissions(): TeamProjectPermissions
     {
         return $this->permissions;
     }
@@ -454,7 +454,7 @@ class TeamProject extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(TeamProjectPermissions $permissions) : self
+    public function setPermissions(TeamProjectPermissions $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;

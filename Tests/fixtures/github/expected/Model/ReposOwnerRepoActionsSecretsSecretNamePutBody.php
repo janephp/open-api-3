@@ -8,7 +8,7 @@ class ReposOwnerRepoActionsSecretsSecretNamePutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEncryptedValue() : string
+    public function getEncryptedValue(): string
     {
         return $this->encryptedValue;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEncryptedValue(string $encryptedValue) : self
+    public function setEncryptedValue(string $encryptedValue): self
     {
         $this->initialized['encryptedValue'] = true;
         $this->encryptedValue = $encryptedValue;
@@ -51,7 +51,7 @@ class ReposOwnerRepoActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getKeyId() : string
+    public function getKeyId(): string
     {
         return $this->keyId;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setKeyId(string $keyId) : self
+    public function setKeyId(string $keyId): self
     {
         $this->initialized['keyId'] = true;
         $this->keyId = $keyId;

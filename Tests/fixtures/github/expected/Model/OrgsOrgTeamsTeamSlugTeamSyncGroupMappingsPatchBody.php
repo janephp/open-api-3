@@ -8,7 +8,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBody extends \ArrayObject
      *
      * @return list<OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBodyGroupsItem>
      */
-    public function getGroups() : array
+    public function getGroups(): array
     {
         return $this->groups;
     }
@@ -34,7 +34,7 @@ class OrgsOrgTeamsTeamSlugTeamSyncGroupMappingsPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setGroups(array $groups) : self
+    public function setGroups(array $groups): self
     {
         $this->initialized['groups'] = true;
         $this->groups = $groups;

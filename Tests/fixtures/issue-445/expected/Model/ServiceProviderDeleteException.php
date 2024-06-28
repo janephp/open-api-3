@@ -8,7 +8,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return string
      */
-    public function getTraceLevel() : string
+    public function getTraceLevel(): string
     {
         return $this->traceLevel;
     }
@@ -76,7 +76,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceLevel(string $traceLevel) : self
+    public function setTraceLevel(string $traceLevel): self
     {
         $this->initialized['traceLevel'] = true;
         $this->traceLevel = $traceLevel;
@@ -87,7 +87,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceId() : ?string
+    public function getTraceId(): ?string
     {
         return $this->traceId;
     }
@@ -98,7 +98,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceId(?string $traceId) : self
+    public function setTraceId(?string $traceId): self
     {
         $this->initialized['traceId'] = true;
         $this->traceId = $traceId;
@@ -109,7 +109,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceJobId() : ?string
+    public function getTraceJobId(): ?string
     {
         return $this->traceJobId;
     }
@@ -120,7 +120,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceJobId(?string $traceJobId) : self
+    public function setTraceJobId(?string $traceJobId): self
     {
         $this->initialized['traceJobId'] = true;
         $this->traceJobId = $traceJobId;
@@ -131,7 +131,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return int
      */
-    public function getHttpStatusCode() : int
+    public function getHttpStatusCode(): int
     {
         return $this->httpStatusCode;
     }
@@ -142,7 +142,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return self
      */
-    public function setHttpStatusCode(int $httpStatusCode) : self
+    public function setHttpStatusCode(int $httpStatusCode): self
     {
         $this->initialized['httpStatusCode'] = true;
         $this->httpStatusCode = $httpStatusCode;
@@ -153,7 +153,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExceptionMessage() : ?string
+    public function getExceptionMessage(): ?string
     {
         return $this->exceptionMessage;
     }
@@ -164,7 +164,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return self
      */
-    public function setExceptionMessage(?string $exceptionMessage) : self
+    public function setExceptionMessage(?string $exceptionMessage): self
     {
         $this->initialized['exceptionMessage'] = true;
         $this->exceptionMessage = $exceptionMessage;
@@ -175,7 +175,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }
@@ -186,7 +186,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return self
      */
-    public function setKind(string $kind) : self
+    public function setKind(string $kind): self
     {
         $this->initialized['kind'] = true;
         $this->kind = $kind;
@@ -197,7 +197,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getServiceProviderId() : ?string
+    public function getServiceProviderId(): ?string
     {
         return $this->serviceProviderId;
     }
@@ -208,7 +208,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return self
      */
-    public function setServiceProviderId(?string $serviceProviderId) : self
+    public function setServiceProviderId(?string $serviceProviderId): self
     {
         $this->initialized['serviceProviderId'] = true;
         $this->serviceProviderId = $serviceProviderId;
@@ -219,7 +219,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDetailedErrorMessage() : ?string
+    public function getDetailedErrorMessage(): ?string
     {
         return $this->detailedErrorMessage;
     }
@@ -230,7 +230,7 @@ class ServiceProviderDeleteException extends \ArrayObject
      *
      * @return self
      */
-    public function setDetailedErrorMessage(?string $detailedErrorMessage) : self
+    public function setDetailedErrorMessage(?string $detailedErrorMessage): self
     {
         $this->initialized['detailedErrorMessage'] = true;
         $this->detailedErrorMessage = $detailedErrorMessage;

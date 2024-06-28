@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\ScimUserMeta::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\ScimUserMeta::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -48,11 +48,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['resourceType']);
             }
             if (\array_key_exists('created', $data)) {
-                $object->setCreated(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created']));
+                $object->setCreated(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created']));
                 unset($data['created']);
             }
             if (\array_key_exists('lastModified', $data)) {
-                $object->setLastModified(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastModified']));
+                $object->setLastModified(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastModified']));
                 unset($data['lastModified']);
             }
             if (\array_key_exists('location', $data)) {
@@ -66,17 +66,17 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('resourceType') && null !== $object->getResourceType()) {
                 $data['resourceType'] = $object->getResourceType();
             }
             if ($object->isInitialized('created') && null !== $object->getCreated()) {
-                $data['created'] = $object->getCreated()->format('Y-m-d\\TH:i:sP');
+                $data['created'] = $object->getCreated()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('lastModified') && null !== $object->getLastModified()) {
-                $data['lastModified'] = $object->getLastModified()->format('Y-m-d\\TH:i:sP');
+                $data['lastModified'] = $object->getLastModified()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('location') && null !== $object->getLocation()) {
                 $data['location'] = $object->getLocation();
@@ -91,7 +91,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\ScimUserMeta::class => false];
         }
@@ -103,11 +103,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\ScimUserMeta::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\ScimUserMeta::class;
         }
@@ -134,11 +134,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['resourceType']);
             }
             if (\array_key_exists('created', $data)) {
-                $object->setCreated(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['created']));
+                $object->setCreated(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['created']));
                 unset($data['created']);
             }
             if (\array_key_exists('lastModified', $data)) {
-                $object->setLastModified(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastModified']));
+                $object->setLastModified(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastModified']));
                 unset($data['lastModified']);
             }
             if (\array_key_exists('location', $data)) {
@@ -162,10 +162,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['resourceType'] = $object->getResourceType();
             }
             if ($object->isInitialized('created') && null !== $object->getCreated()) {
-                $data['created'] = $object->getCreated()->format('Y-m-d\\TH:i:sP');
+                $data['created'] = $object->getCreated()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('lastModified') && null !== $object->getLastModified()) {
-                $data['lastModified'] = $object->getLastModified()->format('Y-m-d\\TH:i:sP');
+                $data['lastModified'] = $object->getLastModified()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('location') && null !== $object->getLocation()) {
                 $data['location'] = $object->getLocation();
@@ -180,7 +180,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\ScimUserMeta::class => false];
         }

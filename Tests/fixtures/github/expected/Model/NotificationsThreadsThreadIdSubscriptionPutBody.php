@@ -8,7 +8,7 @@ class NotificationsThreadsThreadIdSubscriptionPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class NotificationsThreadsThreadIdSubscriptionPutBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getIgnored() : bool
+    public function getIgnored(): bool
     {
         return $this->ignored;
     }
@@ -34,7 +34,7 @@ class NotificationsThreadsThreadIdSubscriptionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIgnored(bool $ignored) : self
+    public function setIgnored(bool $ignored): self
     {
         $this->initialized['ignored'] = true;
         $this->ignored = $ignored;

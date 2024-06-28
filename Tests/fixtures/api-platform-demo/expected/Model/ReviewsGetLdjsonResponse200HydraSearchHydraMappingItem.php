@@ -8,7 +8,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -52,7 +52,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -63,7 +63,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
      *
      * @return string
      */
-    public function getVariable() : string
+    public function getVariable(): string
     {
         return $this->variable;
     }
@@ -74,7 +74,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setVariable(string $variable) : self
+    public function setVariable(string $variable): self
     {
         $this->initialized['variable'] = true;
         $this->variable = $variable;
@@ -85,7 +85,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
      *
      * @return string|null
      */
-    public function getProperty() : ?string
+    public function getProperty(): ?string
     {
         return $this->property;
     }
@@ -96,7 +96,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setProperty(?string $property) : self
+    public function setProperty(?string $property): self
     {
         $this->initialized['property'] = true;
         $this->property = $property;
@@ -107,7 +107,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
      *
      * @return bool
      */
-    public function getRequired() : bool
+    public function getRequired(): bool
     {
         return $this->required;
     }
@@ -118,7 +118,7 @@ class ReviewsGetLdjsonResponse200HydraSearchHydraMappingItem extends \ArrayObjec
      *
      * @return self
      */
-    public function setRequired(bool $required) : self
+    public function setRequired(bool $required): self
     {
         $this->initialized['required'] = true;
         $this->required = $required;

@@ -8,7 +8,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -52,7 +52,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -63,7 +63,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPersonalReference() : string
+    public function getPersonalReference(): string
     {
         return $this->personalReference;
     }
@@ -74,7 +74,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPersonalReference(string $personalReference) : self
+    public function setPersonalReference(string $personalReference): self
     {
         $this->initialized['personalReference'] = true;
         $this->personalReference = $personalReference;
@@ -85,7 +85,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getFreeText() : string
+    public function getFreeText(): string
     {
         return $this->freeText;
     }
@@ -96,7 +96,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setFreeText(string $freeText) : self
+    public function setFreeText(string $freeText): self
     {
         $this->initialized['freeText'] = true;
         $this->freeText = $freeText;
@@ -107,7 +107,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getPersonalLimit() : string
+    public function getPersonalLimit(): string
     {
         return $this->personalLimit;
     }
@@ -118,7 +118,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPersonalLimit(string $personalLimit) : self
+    public function setPersonalLimit(string $personalLimit): self
     {
         $this->initialized['personalLimit'] = true;
         $this->personalLimit = $personalLimit;

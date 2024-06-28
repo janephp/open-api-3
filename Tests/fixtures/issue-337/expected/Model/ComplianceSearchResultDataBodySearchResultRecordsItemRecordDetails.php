@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return int
      */
-    public function getAcceptListID() : int
+    public function getAcceptListID(): int
     {
         return $this->acceptListID;
     }
@@ -106,7 +106,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setAcceptListID(int $acceptListID) : self
+    public function setAcceptListID(int $acceptListID): self
     {
         $this->initialized['acceptListID'] = true;
         $this->acceptListID = $acceptListID;
@@ -117,7 +117,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return bool
      */
-    public function getAddedToAcceptList() : bool
+    public function getAddedToAcceptList(): bool
     {
         return $this->addedToAcceptList;
     }
@@ -128,7 +128,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setAddedToAcceptList(bool $addedToAcceptList) : self
+    public function setAddedToAcceptList(bool $addedToAcceptList): self
     {
         $this->initialized['addedToAcceptList'] = true;
         $this->addedToAcceptList = $addedToAcceptList;
@@ -139,7 +139,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return string
      */
-    public function getDivision() : string
+    public function getDivision(): string
     {
         return $this->division;
     }
@@ -150,7 +150,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setDivision(string $division) : self
+    public function setDivision(string $division): self
     {
         $this->initialized['division'] = true;
         $this->division = $division;
@@ -161,7 +161,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return string
      */
-    public function getDppa() : string
+    public function getDppa(): string
     {
         return $this->dppa;
     }
@@ -172,7 +172,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setDppa(string $dppa) : self
+    public function setDppa(string $dppa): self
     {
         $this->initialized['dppa'] = true;
         $this->dppa = $dppa;
@@ -183,7 +183,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return string
      */
-    public function getEftType() : string
+    public function getEftType(): string
     {
         return $this->eftType;
     }
@@ -194,7 +194,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setEftType(string $eftType) : self
+    public function setEftType(string $eftType): self
     {
         $this->initialized['eftType'] = true;
         $this->eftType = $eftType;
@@ -205,7 +205,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return string
      */
-    public function getEntityType() : string
+    public function getEntityType(): string
     {
         return $this->entityType;
     }
@@ -216,7 +216,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setEntityType(string $entityType) : self
+    public function setEntityType(string $entityType): self
     {
         $this->initialized['entityType'] = true;
         $this->entityType = $entityType;
@@ -227,7 +227,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return string
      */
-    public function getGender() : string
+    public function getGender(): string
     {
         return $this->gender;
     }
@@ -238,7 +238,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setGender(string $gender) : self
+    public function setGender(string $gender): self
     {
         $this->initialized['gender'] = true;
         $this->gender = $gender;
@@ -249,7 +249,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return int
      */
-    public function getGlb() : int
+    public function getGlb(): int
     {
         return $this->glb;
     }
@@ -260,7 +260,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setGlb(int $glb) : self
+    public function setGlb(int $glb): self
     {
         $this->initialized['glb'] = true;
         $this->glb = $glb;
@@ -271,7 +271,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return list<ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsIDsItem>
      */
-    public function getIDs() : array
+    public function getIDs(): array
     {
         return $this->iDs;
     }
@@ -282,7 +282,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setIDs(array $iDs) : self
+    public function setIDs(array $iDs): self
     {
         $this->initialized['iDs'] = true;
         $this->iDs = $iDs;
@@ -293,7 +293,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return string
      */
-    public function getLastUpdatedDate() : string
+    public function getLastUpdatedDate(): string
     {
         return $this->lastUpdatedDate;
     }
@@ -304,7 +304,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setLastUpdatedDate(string $lastUpdatedDate) : self
+    public function setLastUpdatedDate(string $lastUpdatedDate): self
     {
         $this->initialized['lastUpdatedDate'] = true;
         $this->lastUpdatedDate = $lastUpdatedDate;
@@ -315,7 +315,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsName
      */
-    public function getName() : ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsName
+    public function getName(): ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsName
     {
         return $this->name;
     }
@@ -326,7 +326,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setName(ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsName $name) : self
+    public function setName(ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsName $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -337,7 +337,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordState
      */
-    public function getRecordState() : ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordState
+    public function getRecordState(): ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordState
     {
         return $this->recordState;
     }
@@ -348,7 +348,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setRecordState(ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordState $recordState) : self
+    public function setRecordState(ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetailsRecordState $recordState): self
     {
         $this->initialized['recordState'] = true;
         $this->recordState = $recordState;
@@ -359,7 +359,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return string
      */
-    public function getSearchDate() : string
+    public function getSearchDate(): string
     {
         return $this->searchDate;
     }
@@ -370,7 +370,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemRecordDetails extends
      *
      * @return self
      */
-    public function setSearchDate(string $searchDate) : self
+    public function setSearchDate(string $searchDate): self
     {
         $this->initialized['searchDate'] = true;
         $this->searchDate = $searchDate;

@@ -8,7 +8,7 @@ class PeopleSearchSuccessResultDirectorsItemAddress extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class PeopleSearchSuccessResultDirectorsItemAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getSimpleValue() : string
+    public function getSimpleValue(): string
     {
         return $this->simpleValue;
     }
@@ -52,7 +52,7 @@ class PeopleSearchSuccessResultDirectorsItemAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setSimpleValue(string $simpleValue) : self
+    public function setSimpleValue(string $simpleValue): self
     {
         $this->initialized['simpleValue'] = true;
         $this->simpleValue = $simpleValue;
@@ -63,7 +63,7 @@ class PeopleSearchSuccessResultDirectorsItemAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getHouseNo() : string
+    public function getHouseNo(): string
     {
         return $this->houseNo;
     }
@@ -74,7 +74,7 @@ class PeopleSearchSuccessResultDirectorsItemAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setHouseNo(string $houseNo) : self
+    public function setHouseNo(string $houseNo): self
     {
         $this->initialized['houseNo'] = true;
         $this->houseNo = $houseNo;
@@ -85,7 +85,7 @@ class PeopleSearchSuccessResultDirectorsItemAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getCity() : string
+    public function getCity(): string
     {
         return $this->city;
     }
@@ -96,7 +96,7 @@ class PeopleSearchSuccessResultDirectorsItemAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setCity(string $city) : self
+    public function setCity(string $city): self
     {
         $this->initialized['city'] = true;
         $this->city = $city;
@@ -107,7 +107,7 @@ class PeopleSearchSuccessResultDirectorsItemAddress extends \ArrayObject
      *
      * @return string
      */
-    public function getPostCode() : string
+    public function getPostCode(): string
     {
         return $this->postCode;
     }
@@ -118,7 +118,7 @@ class PeopleSearchSuccessResultDirectorsItemAddress extends \ArrayObject
      *
      * @return self
      */
-    public function setPostCode(string $postCode) : self
+    public function setPostCode(string $postCode): self
     {
         $this->initialized['postCode'] = true;
         $this->postCode = $postCode;

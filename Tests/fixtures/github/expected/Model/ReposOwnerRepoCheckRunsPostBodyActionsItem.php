@@ -8,7 +8,7 @@ class ReposOwnerRepoCheckRunsPostBodyActionsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ReposOwnerRepoCheckRunsPostBodyActionsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getLabel() : string
+    public function getLabel(): string
     {
         return $this->label;
     }
@@ -46,7 +46,7 @@ class ReposOwnerRepoCheckRunsPostBodyActionsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLabel(string $label) : self
+    public function setLabel(string $label): self
     {
         $this->initialized['label'] = true;
         $this->label = $label;
@@ -57,7 +57,7 @@ class ReposOwnerRepoCheckRunsPostBodyActionsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -68,7 +68,7 @@ class ReposOwnerRepoCheckRunsPostBodyActionsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -79,7 +79,7 @@ class ReposOwnerRepoCheckRunsPostBodyActionsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getIdentifier() : string
+    public function getIdentifier(): string
     {
         return $this->identifier;
     }
@@ -90,7 +90,7 @@ class ReposOwnerRepoCheckRunsPostBodyActionsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setIdentifier(string $identifier) : self
+    public function setIdentifier(string $identifier): self
     {
         $this->initialized['identifier'] = true;
         $this->identifier = $identifier;

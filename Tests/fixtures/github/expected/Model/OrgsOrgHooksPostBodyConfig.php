@@ -8,7 +8,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -64,7 +64,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -75,7 +75,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getContentType() : string
+    public function getContentType(): string
     {
         return $this->contentType;
     }
@@ -86,7 +86,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setContentType(string $contentType) : self
+    public function setContentType(string $contentType): self
     {
         $this->initialized['contentType'] = true;
         $this->contentType = $contentType;
@@ -97,7 +97,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getSecret() : string
+    public function getSecret(): string
     {
         return $this->secret;
     }
@@ -108,7 +108,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setSecret(string $secret) : self
+    public function setSecret(string $secret): self
     {
         $this->initialized['secret'] = true;
         $this->secret = $secret;
@@ -119,7 +119,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getInsecureSsl() : string
+    public function getInsecureSsl(): string
     {
         return $this->insecureSsl;
     }
@@ -130,7 +130,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setInsecureSsl(string $insecureSsl) : self
+    public function setInsecureSsl(string $insecureSsl): self
     {
         $this->initialized['insecureSsl'] = true;
         $this->insecureSsl = $insecureSsl;
@@ -141,7 +141,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getUsername() : string
+    public function getUsername(): string
     {
         return $this->username;
     }
@@ -152,7 +152,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setUsername(string $username) : self
+    public function setUsername(string $username): self
     {
         $this->initialized['username'] = true;
         $this->username = $username;
@@ -163,7 +163,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return string
      */
-    public function getPassword() : string
+    public function getPassword(): string
     {
         return $this->password;
     }
@@ -174,7 +174,7 @@ class OrgsOrgHooksPostBodyConfig extends \ArrayObject
      *
      * @return self
      */
-    public function setPassword(string $password) : self
+    public function setPassword(string $password): self
     {
         $this->initialized['password'] = true;
         $this->password = $password;

@@ -8,7 +8,7 @@ class OutputSearchRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class OutputSearchRequest
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -64,7 +64,7 @@ class OutputSearchRequest
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -75,7 +75,7 @@ class OutputSearchRequest
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -86,7 +86,7 @@ class OutputSearchRequest
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;
@@ -97,7 +97,7 @@ class OutputSearchRequest
      *
      * @return list<string>|null
      */
-    public function getContentIds() : ?array
+    public function getContentIds(): ?array
     {
         return $this->contentIds;
     }
@@ -108,7 +108,7 @@ class OutputSearchRequest
      *
      * @return self
      */
-    public function setContentIds(?array $contentIds) : self
+    public function setContentIds(?array $contentIds): self
     {
         $this->initialized['contentIds'] = true;
         $this->contentIds = $contentIds;
@@ -119,7 +119,7 @@ class OutputSearchRequest
      *
      * @return list<string>|null
      */
-    public function getRenderingStates() : ?array
+    public function getRenderingStates(): ?array
     {
         return $this->renderingStates;
     }
@@ -130,7 +130,7 @@ class OutputSearchRequest
      *
      * @return self
      */
-    public function setRenderingStates(?array $renderingStates) : self
+    public function setRenderingStates(?array $renderingStates): self
     {
         $this->initialized['renderingStates'] = true;
         $this->renderingStates = $renderingStates;
@@ -141,7 +141,7 @@ class OutputSearchRequest
      *
      * @return list<string>|null
      */
-    public function getFileExtensions() : ?array
+    public function getFileExtensions(): ?array
     {
         return $this->fileExtensions;
     }
@@ -152,7 +152,7 @@ class OutputSearchRequest
      *
      * @return self
      */
-    public function setFileExtensions(?array $fileExtensions) : self
+    public function setFileExtensions(?array $fileExtensions): self
     {
         $this->initialized['fileExtensions'] = true;
         $this->fileExtensions = $fileExtensions;
@@ -163,7 +163,7 @@ class OutputSearchRequest
      *
      * @return list<string>|null
      */
-    public function getOutputFormatIds() : ?array
+    public function getOutputFormatIds(): ?array
     {
         return $this->outputFormatIds;
     }
@@ -174,7 +174,7 @@ class OutputSearchRequest
      *
      * @return self
      */
-    public function setOutputFormatIds(?array $outputFormatIds) : self
+    public function setOutputFormatIds(?array $outputFormatIds): self
     {
         $this->initialized['outputFormatIds'] = true;
         $this->outputFormatIds = $outputFormatIds;

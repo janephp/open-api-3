@@ -8,7 +8,7 @@ class PermissionSetUpdateRequestOfMetadataRight
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class PermissionSetUpdateRequestOfMetadataRight
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -57,7 +57,7 @@ class PermissionSetUpdateRequestOfMetadataRight
      *
      * @return list<UserRoleRightsOfMetadataRight>|null
      */
-    public function getUserRolesRights() : ?array
+    public function getUserRolesRights(): ?array
     {
         return $this->userRolesRights;
     }
@@ -68,7 +68,7 @@ class PermissionSetUpdateRequestOfMetadataRight
      *
      * @return self
      */
-    public function setUserRolesRights(?array $userRolesRights) : self
+    public function setUserRolesRights(?array $userRolesRights): self
     {
         $this->initialized['userRolesRights'] = true;
         $this->userRolesRights = $userRolesRights;
@@ -79,7 +79,7 @@ class PermissionSetUpdateRequestOfMetadataRight
      *
      * @return list<UserRoleRightsOfPermissionSetRight>|null
      */
-    public function getUserRolesPermissionSetRights() : ?array
+    public function getUserRolesPermissionSetRights(): ?array
     {
         return $this->userRolesPermissionSetRights;
     }
@@ -90,7 +90,7 @@ class PermissionSetUpdateRequestOfMetadataRight
      *
      * @return self
      */
-    public function setUserRolesPermissionSetRights(?array $userRolesPermissionSetRights) : self
+    public function setUserRolesPermissionSetRights(?array $userRolesPermissionSetRights): self
     {
         $this->initialized['userRolesPermissionSetRights'] = true;
         $this->userRolesPermissionSetRights = $userRolesPermissionSetRights;

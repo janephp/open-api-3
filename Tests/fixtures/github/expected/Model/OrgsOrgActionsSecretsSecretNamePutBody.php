@@ -8,7 +8,7 @@ class OrgsOrgActionsSecretsSecretNamePutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -44,7 +44,7 @@ class OrgsOrgActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEncryptedValue() : string
+    public function getEncryptedValue(): string
     {
         return $this->encryptedValue;
     }
@@ -55,7 +55,7 @@ class OrgsOrgActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEncryptedValue(string $encryptedValue) : self
+    public function setEncryptedValue(string $encryptedValue): self
     {
         $this->initialized['encryptedValue'] = true;
         $this->encryptedValue = $encryptedValue;
@@ -66,7 +66,7 @@ class OrgsOrgActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getKeyId() : string
+    public function getKeyId(): string
     {
         return $this->keyId;
     }
@@ -77,7 +77,7 @@ class OrgsOrgActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setKeyId(string $keyId) : self
+    public function setKeyId(string $keyId): self
     {
         $this->initialized['keyId'] = true;
         $this->keyId = $keyId;
@@ -91,7 +91,7 @@ class OrgsOrgActionsSecretsSecretNamePutBody extends \ArrayObject
     *
     * @return string
     */
-    public function getVisibility() : string
+    public function getVisibility(): string
     {
         return $this->visibility;
     }
@@ -105,7 +105,7 @@ class OrgsOrgActionsSecretsSecretNamePutBody extends \ArrayObject
     *
     * @return self
     */
-    public function setVisibility(string $visibility) : self
+    public function setVisibility(string $visibility): self
     {
         $this->initialized['visibility'] = true;
         $this->visibility = $visibility;
@@ -116,7 +116,7 @@ class OrgsOrgActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getSelectedRepositoryIds() : array
+    public function getSelectedRepositoryIds(): array
     {
         return $this->selectedRepositoryIds;
     }
@@ -127,7 +127,7 @@ class OrgsOrgActionsSecretsSecretNamePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSelectedRepositoryIds(array $selectedRepositoryIds) : self
+    public function setSelectedRepositoryIds(array $selectedRepositoryIds): self
     {
         $this->initialized['selectedRepositoryIds'] = true;
         $this->selectedRepositoryIds = $selectedRepositoryIds;

@@ -8,7 +8,7 @@ class JoinByTransformation extends BusinessRuleTransformation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class JoinByTransformation extends BusinessRuleTransformation
      *
      * @return string|null
      */
-    public function getSeparator() : ?string
+    public function getSeparator(): ?string
     {
         return $this->separator;
     }
@@ -34,7 +34,7 @@ class JoinByTransformation extends BusinessRuleTransformation
      *
      * @return self
      */
-    public function setSeparator(?string $separator) : self
+    public function setSeparator(?string $separator): self
     {
         $this->initialized['separator'] = true;
         $this->separator = $separator;

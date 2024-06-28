@@ -8,7 +8,7 @@ class VideoMetadata extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -136,7 +136,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -158,7 +158,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setDescriptions($descriptions) : self
+    public function setDescriptions($descriptions): self
     {
         $this->initialized['descriptions'] = true;
         $this->descriptions = $descriptions;
@@ -169,7 +169,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileExtension() : ?string
+    public function getFileExtension(): ?string
     {
         return $this->fileExtension;
     }
@@ -180,7 +180,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileExtension(?string $fileExtension) : self
+    public function setFileExtension(?string $fileExtension): self
     {
         $this->initialized['fileExtension'] = true;
         $this->fileExtension = $fileExtension;
@@ -191,7 +191,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileName() : ?string
+    public function getFileName(): ?string
     {
         return $this->fileName;
     }
@@ -202,7 +202,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileName(?string $fileName) : self
+    public function setFileName(?string $fileName): self
     {
         $this->initialized['fileName'] = true;
         $this->fileName = $fileName;
@@ -213,7 +213,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFilePath() : ?string
+    public function getFilePath(): ?string
     {
         return $this->filePath;
     }
@@ -224,7 +224,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFilePath(?string $filePath) : self
+    public function setFilePath(?string $filePath): self
     {
         $this->initialized['filePath'] = true;
         $this->filePath = $filePath;
@@ -235,7 +235,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return int|null
      */
-    public function getFileSizeInBytes() : ?int
+    public function getFileSizeInBytes(): ?int
     {
         return $this->fileSizeInBytes;
     }
@@ -246,7 +246,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileSizeInBytes(?int $fileSizeInBytes) : self
+    public function setFileSizeInBytes(?int $fileSizeInBytes): self
     {
         $this->initialized['fileSizeInBytes'] = true;
         $this->fileSizeInBytes = $fileSizeInBytes;
@@ -257,7 +257,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSha1Hash() : ?string
+    public function getSha1Hash(): ?string
     {
         return $this->sha1Hash;
     }
@@ -268,7 +268,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setSha1Hash(?string $sha1Hash) : self
+    public function setSha1Hash(?string $sha1Hash): self
     {
         $this->initialized['sha1Hash'] = true;
         $this->sha1Hash = $sha1Hash;
@@ -290,7 +290,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setXmpMetadata($xmpMetadata) : self
+    public function setXmpMetadata($xmpMetadata): self
     {
         $this->initialized['xmpMetadata'] = true;
         $this->xmpMetadata = $xmpMetadata;
@@ -312,7 +312,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setExifMetadata($exifMetadata) : self
+    public function setExifMetadata($exifMetadata): self
     {
         $this->initialized['exifMetadata'] = true;
         $this->exifMetadata = $exifMetadata;
@@ -323,7 +323,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLanguage() : ?string
+    public function getLanguage(): ?string
     {
         return $this->language;
     }
@@ -334,7 +334,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(?string $language) : self
+    public function setLanguage(?string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -345,7 +345,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getWidth() : int
+    public function getWidth(): int
     {
         return $this->width;
     }
@@ -356,7 +356,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setWidth(int $width) : self
+    public function setWidth(int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;
@@ -367,7 +367,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getHeight() : int
+    public function getHeight(): int
     {
         return $this->height;
     }
@@ -378,7 +378,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHeight(int $height) : self
+    public function setHeight(int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -389,7 +389,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return float
      */
-    public function getDurationInSeconds() : float
+    public function getDurationInSeconds(): float
     {
         return $this->durationInSeconds;
     }
@@ -400,7 +400,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setDurationInSeconds(float $durationInSeconds) : self
+    public function setDurationInSeconds(float $durationInSeconds): self
     {
         $this->initialized['durationInSeconds'] = true;
         $this->durationInSeconds = $durationInSeconds;
@@ -411,7 +411,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFormat() : ?string
+    public function getFormat(): ?string
     {
         return $this->format;
     }
@@ -422,7 +422,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFormat(?string $format) : self
+    public function setFormat(?string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -433,7 +433,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCodec() : ?string
+    public function getCodec(): ?string
     {
         return $this->codec;
     }
@@ -444,7 +444,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setCodec(?string $codec) : self
+    public function setCodec(?string $codec): self
     {
         $this->initialized['codec'] = true;
         $this->codec = $codec;
@@ -455,7 +455,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return int|null
      */
-    public function getOverallBitrate() : ?int
+    public function getOverallBitrate(): ?int
     {
         return $this->overallBitrate;
     }
@@ -466,7 +466,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setOverallBitrate(?int $overallBitrate) : self
+    public function setOverallBitrate(?int $overallBitrate): self
     {
         $this->initialized['overallBitrate'] = true;
         $this->overallBitrate = $overallBitrate;
@@ -477,7 +477,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return list<VideoStream>|null
      */
-    public function getVideoStreams() : ?array
+    public function getVideoStreams(): ?array
     {
         return $this->videoStreams;
     }
@@ -488,7 +488,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setVideoStreams(?array $videoStreams) : self
+    public function setVideoStreams(?array $videoStreams): self
     {
         $this->initialized['videoStreams'] = true;
         $this->videoStreams = $videoStreams;
@@ -499,7 +499,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return list<AudioStream>|null
      */
-    public function getAudioStreams() : ?array
+    public function getAudioStreams(): ?array
     {
         return $this->audioStreams;
     }
@@ -510,7 +510,7 @@ class VideoMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setAudioStreams(?array $audioStreams) : self
+    public function setAudioStreams(?array $audioStreams): self
     {
         $this->initialized['audioStreams'] = true;
         $this->audioStreams = $audioStreams;

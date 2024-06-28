@@ -8,7 +8,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -78,7 +78,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -89,7 +89,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -100,7 +100,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getHeadSha() : string
+    public function getHeadSha(): string
     {
         return $this->headSha;
     }
@@ -111,7 +111,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHeadSha(string $headSha) : self
+    public function setHeadSha(string $headSha): self
     {
         $this->initialized['headSha'] = true;
         $this->headSha = $headSha;
@@ -122,7 +122,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDetailsUrl() : string
+    public function getDetailsUrl(): string
     {
         return $this->detailsUrl;
     }
@@ -133,7 +133,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDetailsUrl(string $detailsUrl) : self
+    public function setDetailsUrl(string $detailsUrl): self
     {
         $this->initialized['detailsUrl'] = true;
         $this->detailsUrl = $detailsUrl;
@@ -144,7 +144,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getExternalId() : string
+    public function getExternalId(): string
     {
         return $this->externalId;
     }
@@ -155,7 +155,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setExternalId(string $externalId) : self
+    public function setExternalId(string $externalId): self
     {
         $this->initialized['externalId'] = true;
         $this->externalId = $externalId;
@@ -166,7 +166,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -177,7 +177,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -188,7 +188,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getStartedAt() : string
+    public function getStartedAt(): string
     {
         return $this->startedAt;
     }
@@ -199,7 +199,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setStartedAt(string $startedAt) : self
+    public function setStartedAt(string $startedAt): self
     {
         $this->initialized['startedAt'] = true;
         $this->startedAt = $startedAt;
@@ -211,7 +211,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
     *
     * @return string
     */
-    public function getConclusion() : string
+    public function getConclusion(): string
     {
         return $this->conclusion;
     }
@@ -223,7 +223,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setConclusion(string $conclusion) : self
+    public function setConclusion(string $conclusion): self
     {
         $this->initialized['conclusion'] = true;
         $this->conclusion = $conclusion;
@@ -234,7 +234,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCompletedAt() : string
+    public function getCompletedAt(): string
     {
         return $this->completedAt;
     }
@@ -245,7 +245,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCompletedAt(string $completedAt) : self
+    public function setCompletedAt(string $completedAt): self
     {
         $this->initialized['completedAt'] = true;
         $this->completedAt = $completedAt;
@@ -256,7 +256,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return ReposOwnerRepoCheckRunsPostBodyOutput
      */
-    public function getOutput() : ReposOwnerRepoCheckRunsPostBodyOutput
+    public function getOutput(): ReposOwnerRepoCheckRunsPostBodyOutput
     {
         return $this->output;
     }
@@ -267,7 +267,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOutput(ReposOwnerRepoCheckRunsPostBodyOutput $output) : self
+    public function setOutput(ReposOwnerRepoCheckRunsPostBodyOutput $output): self
     {
         $this->initialized['output'] = true;
         $this->output = $output;
@@ -278,7 +278,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return list<ReposOwnerRepoCheckRunsPostBodyActionsItem>
      */
-    public function getActions() : array
+    public function getActions(): array
     {
         return $this->actions;
     }
@@ -289,7 +289,7 @@ class ReposOwnerRepoCheckRunsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setActions(array $actions) : self
+    public function setActions(array $actions): self
     {
         $this->initialized['actions'] = true;
         $this->actions = $actions;

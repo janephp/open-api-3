@@ -8,7 +8,7 @@ class SimpleCommitStatus extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -94,7 +94,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -105,7 +105,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -116,7 +116,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -127,7 +127,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -138,7 +138,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -149,7 +149,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -160,7 +160,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -171,7 +171,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getContext() : string
+    public function getContext(): string
     {
         return $this->context;
     }
@@ -182,7 +182,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setContext(string $context) : self
+    public function setContext(string $context): self
     {
         $this->initialized['context'] = true;
         $this->context = $context;
@@ -193,7 +193,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getTargetUrl() : string
+    public function getTargetUrl(): string
     {
         return $this->targetUrl;
     }
@@ -204,7 +204,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setTargetUrl(string $targetUrl) : self
+    public function setTargetUrl(string $targetUrl): self
     {
         $this->initialized['targetUrl'] = true;
         $this->targetUrl = $targetUrl;
@@ -215,7 +215,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return bool|null
      */
-    public function getRequired() : ?bool
+    public function getRequired(): ?bool
     {
         return $this->required;
     }
@@ -226,7 +226,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setRequired(?bool $required) : self
+    public function setRequired(?bool $required): self
     {
         $this->initialized['required'] = true;
         $this->required = $required;
@@ -237,7 +237,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAvatarUrl() : ?string
+    public function getAvatarUrl(): ?string
     {
         return $this->avatarUrl;
     }
@@ -248,7 +248,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setAvatarUrl(?string $avatarUrl) : self
+    public function setAvatarUrl(?string $avatarUrl): self
     {
         $this->initialized['avatarUrl'] = true;
         $this->avatarUrl = $avatarUrl;
@@ -259,7 +259,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -270,7 +270,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -281,7 +281,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -292,7 +292,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -303,7 +303,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -314,7 +314,7 @@ class SimpleCommitStatus extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;

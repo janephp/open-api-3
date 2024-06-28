@@ -8,7 +8,7 @@ class MarketplaceAccount extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -70,7 +70,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -81,7 +81,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -92,7 +92,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -103,7 +103,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -114,7 +114,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -125,7 +125,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -136,7 +136,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -147,7 +147,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return string
      */
-    public function getLogin() : string
+    public function getLogin(): string
     {
         return $this->login;
     }
@@ -158,7 +158,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return self
      */
-    public function setLogin(string $login) : self
+    public function setLogin(string $login): self
     {
         $this->initialized['login'] = true;
         $this->login = $login;
@@ -169,7 +169,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return string|null
      */
-    public function getEmail() : ?string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -180,7 +180,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(?string $email) : self
+    public function setEmail(?string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -191,7 +191,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return string|null
      */
-    public function getOrganizationBillingEmail() : ?string
+    public function getOrganizationBillingEmail(): ?string
     {
         return $this->organizationBillingEmail;
     }
@@ -202,7 +202,7 @@ class MarketplaceAccount extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationBillingEmail(?string $organizationBillingEmail) : self
+    public function setOrganizationBillingEmail(?string $organizationBillingEmail): self
     {
         $this->initialized['organizationBillingEmail'] = true;
         $this->organizationBillingEmail = $organizationBillingEmail;

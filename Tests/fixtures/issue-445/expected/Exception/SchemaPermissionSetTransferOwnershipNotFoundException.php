@@ -18,11 +18,11 @@ class SchemaPermissionSetTransferOwnershipNotFoundException extends NotFoundExce
         $this->pictureparkNotFoundException = $pictureparkNotFoundException;
         $this->response = $response;
     }
-    public function getPictureparkNotFoundException() : \PicturePark\API\Model\PictureparkNotFoundException
+    public function getPictureparkNotFoundException(): \PicturePark\API\Model\PictureparkNotFoundException
     {
         return $this->pictureparkNotFoundException;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

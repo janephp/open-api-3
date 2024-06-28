@@ -8,7 +8,7 @@ class PullRequestMinimal extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -58,7 +58,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -69,7 +69,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return int
      */
-    public function getNumber() : int
+    public function getNumber(): int
     {
         return $this->number;
     }
@@ -80,7 +80,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return self
      */
-    public function setNumber(int $number) : self
+    public function setNumber(int $number): self
     {
         $this->initialized['number'] = true;
         $this->number = $number;
@@ -91,7 +91,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -102,7 +102,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -113,7 +113,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return PullRequestMinimalHead
      */
-    public function getHead() : PullRequestMinimalHead
+    public function getHead(): PullRequestMinimalHead
     {
         return $this->head;
     }
@@ -124,7 +124,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return self
      */
-    public function setHead(PullRequestMinimalHead $head) : self
+    public function setHead(PullRequestMinimalHead $head): self
     {
         $this->initialized['head'] = true;
         $this->head = $head;
@@ -135,7 +135,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return PullRequestMinimalBase
      */
-    public function getBase() : PullRequestMinimalBase
+    public function getBase(): PullRequestMinimalBase
     {
         return $this->base;
     }
@@ -146,7 +146,7 @@ class PullRequestMinimal extends \ArrayObject
      *
      * @return self
      */
-    public function setBase(PullRequestMinimalBase $base) : self
+    public function setBase(PullRequestMinimalBase $base): self
     {
         $this->initialized['base'] = true;
         $this->base = $base;

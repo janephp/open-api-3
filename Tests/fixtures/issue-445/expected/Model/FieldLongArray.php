@@ -8,7 +8,7 @@ class FieldLongArray extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class FieldLongArray extends FieldBase
      *
      * @return string|null
      */
-    public function getPattern() : ?string
+    public function getPattern(): ?string
     {
         return $this->pattern;
     }
@@ -64,7 +64,7 @@ class FieldLongArray extends FieldBase
      *
      * @return self
      */
-    public function setPattern(?string $pattern) : self
+    public function setPattern(?string $pattern): self
     {
         $this->initialized['pattern'] = true;
         $this->pattern = $pattern;
@@ -75,7 +75,7 @@ class FieldLongArray extends FieldBase
      *
      * @return float|null
      */
-    public function getMinimum() : ?float
+    public function getMinimum(): ?float
     {
         return $this->minimum;
     }
@@ -86,7 +86,7 @@ class FieldLongArray extends FieldBase
      *
      * @return self
      */
-    public function setMinimum(?float $minimum) : self
+    public function setMinimum(?float $minimum): self
     {
         $this->initialized['minimum'] = true;
         $this->minimum = $minimum;
@@ -97,7 +97,7 @@ class FieldLongArray extends FieldBase
      *
      * @return float|null
      */
-    public function getMaximum() : ?float
+    public function getMaximum(): ?float
     {
         return $this->maximum;
     }
@@ -108,7 +108,7 @@ class FieldLongArray extends FieldBase
      *
      * @return self
      */
-    public function setMaximum(?float $maximum) : self
+    public function setMaximum(?float $maximum): self
     {
         $this->initialized['maximum'] = true;
         $this->maximum = $maximum;
@@ -119,7 +119,7 @@ class FieldLongArray extends FieldBase
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -130,7 +130,7 @@ class FieldLongArray extends FieldBase
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;
@@ -141,7 +141,7 @@ class FieldLongArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMaximumItems() : ?int
+    public function getMaximumItems(): ?int
     {
         return $this->maximumItems;
     }
@@ -152,7 +152,7 @@ class FieldLongArray extends FieldBase
      *
      * @return self
      */
-    public function setMaximumItems(?int $maximumItems) : self
+    public function setMaximumItems(?int $maximumItems): self
     {
         $this->initialized['maximumItems'] = true;
         $this->maximumItems = $maximumItems;
@@ -163,7 +163,7 @@ class FieldLongArray extends FieldBase
      *
      * @return int|null
      */
-    public function getMinimumItems() : ?int
+    public function getMinimumItems(): ?int
     {
         return $this->minimumItems;
     }
@@ -174,7 +174,7 @@ class FieldLongArray extends FieldBase
      *
      * @return self
      */
-    public function setMinimumItems(?int $minimumItems) : self
+    public function setMinimumItems(?int $minimumItems): self
     {
         $this->initialized['minimumItems'] = true;
         $this->minimumItems = $minimumItems;

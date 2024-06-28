@@ -8,7 +8,7 @@ class GistFullhistoryItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -58,7 +58,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -69,7 +69,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return string
      */
-    public function getVersion() : string
+    public function getVersion(): string
     {
         return $this->version;
     }
@@ -80,7 +80,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return self
      */
-    public function setVersion(string $version) : self
+    public function setVersion(string $version): self
     {
         $this->initialized['version'] = true;
         $this->version = $version;
@@ -91,7 +91,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return GistFullhistoryItemUser|null
      */
-    public function getUser() : ?GistFullhistoryItemUser
+    public function getUser(): ?GistFullhistoryItemUser
     {
         return $this->user;
     }
@@ -102,7 +102,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?GistFullhistoryItemUser $user) : self
+    public function setUser(?GistFullhistoryItemUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -113,7 +113,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return GistFullhistoryItemChangeStatus
      */
-    public function getChangeStatus() : GistFullhistoryItemChangeStatus
+    public function getChangeStatus(): GistFullhistoryItemChangeStatus
     {
         return $this->changeStatus;
     }
@@ -124,7 +124,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return self
      */
-    public function setChangeStatus(GistFullhistoryItemChangeStatus $changeStatus) : self
+    public function setChangeStatus(GistFullhistoryItemChangeStatus $changeStatus): self
     {
         $this->initialized['changeStatus'] = true;
         $this->changeStatus = $changeStatus;
@@ -135,7 +135,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return string
      */
-    public function getCommittedAt() : string
+    public function getCommittedAt(): string
     {
         return $this->committedAt;
     }
@@ -146,7 +146,7 @@ class GistFullhistoryItem extends \ArrayObject
      *
      * @return self
      */
-    public function setCommittedAt(string $committedAt) : self
+    public function setCommittedAt(string $committedAt): self
     {
         $this->initialized['committedAt'] = true;
         $this->committedAt = $committedAt;

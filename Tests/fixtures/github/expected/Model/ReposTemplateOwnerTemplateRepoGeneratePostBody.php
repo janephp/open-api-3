@@ -8,7 +8,7 @@ class ReposTemplateOwnerTemplateRepoGeneratePostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ReposTemplateOwnerTemplateRepoGeneratePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getOwner() : string
+    public function getOwner(): string
     {
         return $this->owner;
     }
@@ -52,7 +52,7 @@ class ReposTemplateOwnerTemplateRepoGeneratePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOwner(string $owner) : self
+    public function setOwner(string $owner): self
     {
         $this->initialized['owner'] = true;
         $this->owner = $owner;
@@ -63,7 +63,7 @@ class ReposTemplateOwnerTemplateRepoGeneratePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -74,7 +74,7 @@ class ReposTemplateOwnerTemplateRepoGeneratePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -85,7 +85,7 @@ class ReposTemplateOwnerTemplateRepoGeneratePostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -96,7 +96,7 @@ class ReposTemplateOwnerTemplateRepoGeneratePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -107,7 +107,7 @@ class ReposTemplateOwnerTemplateRepoGeneratePostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getPrivate() : bool
+    public function getPrivate(): bool
     {
         return $this->private;
     }
@@ -118,7 +118,7 @@ class ReposTemplateOwnerTemplateRepoGeneratePostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivate(bool $private) : self
+    public function setPrivate(bool $private): self
     {
         $this->initialized['private'] = true;
         $this->private = $private;

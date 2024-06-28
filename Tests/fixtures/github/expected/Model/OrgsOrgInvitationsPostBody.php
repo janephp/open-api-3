@@ -8,7 +8,7 @@ class OrgsOrgInvitationsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -44,7 +44,7 @@ class OrgsOrgInvitationsPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getInviteeId() : int
+    public function getInviteeId(): int
     {
         return $this->inviteeId;
     }
@@ -55,7 +55,7 @@ class OrgsOrgInvitationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setInviteeId(int $inviteeId) : self
+    public function setInviteeId(int $inviteeId): self
     {
         $this->initialized['inviteeId'] = true;
         $this->inviteeId = $inviteeId;
@@ -66,7 +66,7 @@ class OrgsOrgInvitationsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -77,7 +77,7 @@ class OrgsOrgInvitationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -91,7 +91,7 @@ class OrgsOrgInvitationsPostBody extends \ArrayObject
     *
     * @return string
     */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -105,7 +105,7 @@ class OrgsOrgInvitationsPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;
@@ -116,7 +116,7 @@ class OrgsOrgInvitationsPostBody extends \ArrayObject
      *
      * @return list<int>
      */
-    public function getTeamIds() : array
+    public function getTeamIds(): array
     {
         return $this->teamIds;
     }
@@ -127,7 +127,7 @@ class OrgsOrgInvitationsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTeamIds(array $teamIds) : self
+    public function setTeamIds(array $teamIds): self
     {
         $this->initialized['teamIds'] = true;
         $this->teamIds = $teamIds;

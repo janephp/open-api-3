@@ -8,7 +8,7 @@ class SearchReindexCompletedEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class SearchReindexCompletedEvent extends ApplicationEvent
      *
      * @return string
      */
-    public function getSearchIndex() : string
+    public function getSearchIndex(): string
     {
         return $this->searchIndex;
     }
@@ -46,7 +46,7 @@ class SearchReindexCompletedEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setSearchIndex(string $searchIndex) : self
+    public function setSearchIndex(string $searchIndex): self
     {
         $this->initialized['searchIndex'] = true;
         $this->searchIndex = $searchIndex;
@@ -57,7 +57,7 @@ class SearchReindexCompletedEvent extends ApplicationEvent
      *
      * @return int
      */
-    public function getItems() : int
+    public function getItems(): int
     {
         return $this->items;
     }
@@ -68,7 +68,7 @@ class SearchReindexCompletedEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setItems(int $items) : self
+    public function setItems(int $items): self
     {
         $this->initialized['items'] = true;
         $this->items = $items;
@@ -79,7 +79,7 @@ class SearchReindexCompletedEvent extends ApplicationEvent
      *
      * @return string
      */
-    public function getDuration() : string
+    public function getDuration(): string
     {
         return $this->duration;
     }
@@ -90,7 +90,7 @@ class SearchReindexCompletedEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setDuration(string $duration) : self
+    public function setDuration(string $duration): self
     {
         $this->initialized['duration'] = true;
         $this->duration = $duration;

@@ -8,7 +8,7 @@ class Point extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class Point extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -40,7 +40,7 @@ class Point extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -51,7 +51,7 @@ class Point extends \ArrayObject
      *
      * @return list<float>
      */
-    public function getCoordinates() : array
+    public function getCoordinates(): array
     {
         return $this->coordinates;
     }
@@ -62,7 +62,7 @@ class Point extends \ArrayObject
      *
      * @return self
      */
-    public function setCoordinates(array $coordinates) : self
+    public function setCoordinates(array $coordinates): self
     {
         $this->initialized['coordinates'] = true;
         $this->coordinates = $coordinates;

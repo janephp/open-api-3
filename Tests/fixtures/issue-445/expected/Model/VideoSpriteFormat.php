@@ -8,7 +8,7 @@ class VideoSpriteFormat extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -52,7 +52,7 @@ class VideoSpriteFormat extends FormatBase
      *
      * @return self
      */
-    public function setSpriteResizeAction($spriteResizeAction) : self
+    public function setSpriteResizeAction($spriteResizeAction): self
     {
         $this->initialized['spriteResizeAction'] = true;
         $this->spriteResizeAction = $spriteResizeAction;
@@ -63,7 +63,7 @@ class VideoSpriteFormat extends FormatBase
      *
      * @return int
      */
-    public function getMaxNumberOfSprites() : int
+    public function getMaxNumberOfSprites(): int
     {
         return $this->maxNumberOfSprites;
     }
@@ -74,7 +74,7 @@ class VideoSpriteFormat extends FormatBase
      *
      * @return self
      */
-    public function setMaxNumberOfSprites(int $maxNumberOfSprites) : self
+    public function setMaxNumberOfSprites(int $maxNumberOfSprites): self
     {
         $this->initialized['maxNumberOfSprites'] = true;
         $this->maxNumberOfSprites = $maxNumberOfSprites;
@@ -85,7 +85,7 @@ class VideoSpriteFormat extends FormatBase
      *
      * @return int
      */
-    public function getQuality() : int
+    public function getQuality(): int
     {
         return $this->quality;
     }
@@ -96,7 +96,7 @@ class VideoSpriteFormat extends FormatBase
      *
      * @return self
      */
-    public function setQuality(int $quality) : self
+    public function setQuality(int $quality): self
     {
         $this->initialized['quality'] = true;
         $this->quality = $quality;
@@ -107,7 +107,7 @@ class VideoSpriteFormat extends FormatBase
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -118,7 +118,7 @@ class VideoSpriteFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;

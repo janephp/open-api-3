@@ -8,7 +8,7 @@ class DocumentMetadata extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -190,7 +190,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -212,7 +212,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setDescriptions($descriptions) : self
+    public function setDescriptions($descriptions): self
     {
         $this->initialized['descriptions'] = true;
         $this->descriptions = $descriptions;
@@ -223,7 +223,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileExtension() : ?string
+    public function getFileExtension(): ?string
     {
         return $this->fileExtension;
     }
@@ -234,7 +234,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileExtension(?string $fileExtension) : self
+    public function setFileExtension(?string $fileExtension): self
     {
         $this->initialized['fileExtension'] = true;
         $this->fileExtension = $fileExtension;
@@ -245,7 +245,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileName() : ?string
+    public function getFileName(): ?string
     {
         return $this->fileName;
     }
@@ -256,7 +256,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileName(?string $fileName) : self
+    public function setFileName(?string $fileName): self
     {
         $this->initialized['fileName'] = true;
         $this->fileName = $fileName;
@@ -267,7 +267,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFilePath() : ?string
+    public function getFilePath(): ?string
     {
         return $this->filePath;
     }
@@ -278,7 +278,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFilePath(?string $filePath) : self
+    public function setFilePath(?string $filePath): self
     {
         $this->initialized['filePath'] = true;
         $this->filePath = $filePath;
@@ -289,7 +289,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return int|null
      */
-    public function getFileSizeInBytes() : ?int
+    public function getFileSizeInBytes(): ?int
     {
         return $this->fileSizeInBytes;
     }
@@ -300,7 +300,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileSizeInBytes(?int $fileSizeInBytes) : self
+    public function setFileSizeInBytes(?int $fileSizeInBytes): self
     {
         $this->initialized['fileSizeInBytes'] = true;
         $this->fileSizeInBytes = $fileSizeInBytes;
@@ -311,7 +311,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSha1Hash() : ?string
+    public function getSha1Hash(): ?string
     {
         return $this->sha1Hash;
     }
@@ -322,7 +322,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setSha1Hash(?string $sha1Hash) : self
+    public function setSha1Hash(?string $sha1Hash): self
     {
         $this->initialized['sha1Hash'] = true;
         $this->sha1Hash = $sha1Hash;
@@ -344,7 +344,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setXmpMetadata($xmpMetadata) : self
+    public function setXmpMetadata($xmpMetadata): self
     {
         $this->initialized['xmpMetadata'] = true;
         $this->xmpMetadata = $xmpMetadata;
@@ -366,7 +366,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setExifMetadata($exifMetadata) : self
+    public function setExifMetadata($exifMetadata): self
     {
         $this->initialized['exifMetadata'] = true;
         $this->exifMetadata = $exifMetadata;
@@ -377,7 +377,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLanguage() : ?string
+    public function getLanguage(): ?string
     {
         return $this->language;
     }
@@ -388,7 +388,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(?string $language) : self
+    public function setLanguage(?string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -399,7 +399,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getApplicationName() : ?string
+    public function getApplicationName(): ?string
     {
         return $this->applicationName;
     }
@@ -410,7 +410,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setApplicationName(?string $applicationName) : self
+    public function setApplicationName(?string $applicationName): self
     {
         $this->initialized['applicationName'] = true;
         $this->applicationName = $applicationName;
@@ -421,7 +421,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getApplicationVersion() : ?string
+    public function getApplicationVersion(): ?string
     {
         return $this->applicationVersion;
     }
@@ -432,7 +432,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setApplicationVersion(?string $applicationVersion) : self
+    public function setApplicationVersion(?string $applicationVersion): self
     {
         $this->initialized['applicationVersion'] = true;
         $this->applicationVersion = $applicationVersion;
@@ -443,7 +443,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getAuthor() : ?string
+    public function getAuthor(): ?string
     {
         return $this->author;
     }
@@ -454,7 +454,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(?string $author) : self
+    public function setAuthor(?string $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -465,7 +465,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCreator() : ?string
+    public function getCreator(): ?string
     {
         return $this->creator;
     }
@@ -476,7 +476,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setCreator(?string $creator) : self
+    public function setCreator(?string $creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;
@@ -487,7 +487,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPublisher() : ?string
+    public function getPublisher(): ?string
     {
         return $this->publisher;
     }
@@ -498,7 +498,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setPublisher(?string $publisher) : self
+    public function setPublisher(?string $publisher): self
     {
         $this->initialized['publisher'] = true;
         $this->publisher = $publisher;
@@ -509,7 +509,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCompany() : ?string
+    public function getCompany(): ?string
     {
         return $this->company;
     }
@@ -520,7 +520,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setCompany(?string $company) : self
+    public function setCompany(?string $company): self
     {
         $this->initialized['company'] = true;
         $this->company = $company;
@@ -531,7 +531,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDocumentTitle() : ?string
+    public function getDocumentTitle(): ?string
     {
         return $this->documentTitle;
     }
@@ -542,7 +542,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentTitle(?string $documentTitle) : self
+    public function setDocumentTitle(?string $documentTitle): self
     {
         $this->initialized['documentTitle'] = true;
         $this->documentTitle = $documentTitle;
@@ -553,7 +553,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getCharacterCount() : int
+    public function getCharacterCount(): int
     {
         return $this->characterCount;
     }
@@ -564,7 +564,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setCharacterCount(int $characterCount) : self
+    public function setCharacterCount(int $characterCount): self
     {
         $this->initialized['characterCount'] = true;
         $this->characterCount = $characterCount;
@@ -575,7 +575,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getCharacterCountWithSpaces() : int
+    public function getCharacterCountWithSpaces(): int
     {
         return $this->characterCountWithSpaces;
     }
@@ -586,7 +586,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setCharacterCountWithSpaces(int $characterCountWithSpaces) : self
+    public function setCharacterCountWithSpaces(int $characterCountWithSpaces): self
     {
         $this->initialized['characterCountWithSpaces'] = true;
         $this->characterCountWithSpaces = $characterCountWithSpaces;
@@ -597,7 +597,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getLineCount() : int
+    public function getLineCount(): int
     {
         return $this->lineCount;
     }
@@ -608,7 +608,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setLineCount(int $lineCount) : self
+    public function setLineCount(int $lineCount): self
     {
         $this->initialized['lineCount'] = true;
         $this->lineCount = $lineCount;
@@ -619,7 +619,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getPageCount() : int
+    public function getPageCount(): int
     {
         return $this->pageCount;
     }
@@ -630,7 +630,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setPageCount(int $pageCount) : self
+    public function setPageCount(int $pageCount): self
     {
         $this->initialized['pageCount'] = true;
         $this->pageCount = $pageCount;
@@ -641,7 +641,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getSlideCount() : int
+    public function getSlideCount(): int
     {
         return $this->slideCount;
     }
@@ -652,7 +652,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setSlideCount(int $slideCount) : self
+    public function setSlideCount(int $slideCount): self
     {
         $this->initialized['slideCount'] = true;
         $this->slideCount = $slideCount;
@@ -663,7 +663,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getParagraphCount() : int
+    public function getParagraphCount(): int
     {
         return $this->paragraphCount;
     }
@@ -674,7 +674,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setParagraphCount(int $paragraphCount) : self
+    public function setParagraphCount(int $paragraphCount): self
     {
         $this->initialized['paragraphCount'] = true;
         $this->paragraphCount = $paragraphCount;
@@ -685,7 +685,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getRevisionNumber() : int
+    public function getRevisionNumber(): int
     {
         return $this->revisionNumber;
     }
@@ -696,7 +696,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setRevisionNumber(int $revisionNumber) : self
+    public function setRevisionNumber(int $revisionNumber): self
     {
         $this->initialized['revisionNumber'] = true;
         $this->revisionNumber = $revisionNumber;
@@ -707,7 +707,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getTitles() : ?array
+    public function getTitles(): ?array
     {
         return $this->titles;
     }
@@ -718,7 +718,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setTitles(?array $titles) : self
+    public function setTitles(?array $titles): self
     {
         $this->initialized['titles'] = true;
         $this->titles = $titles;
@@ -729,7 +729,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getImageTitles() : ?array
+    public function getImageTitles(): ?array
     {
         return $this->imageTitles;
     }
@@ -740,7 +740,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setImageTitles(?array $imageTitles) : self
+    public function setImageTitles(?array $imageTitles): self
     {
         $this->initialized['imageTitles'] = true;
         $this->imageTitles = $imageTitles;
@@ -762,7 +762,7 @@ class DocumentMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setEpsInfo($epsInfo) : self
+    public function setEpsInfo($epsInfo): self
     {
         $this->initialized['epsInfo'] = true;
         $this->epsInfo = $epsInfo;

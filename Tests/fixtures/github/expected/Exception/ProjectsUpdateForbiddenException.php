@@ -18,11 +18,11 @@ class ProjectsUpdateForbiddenException extends ForbiddenException
         $this->projectsProjectIdPatchResponse403 = $projectsProjectIdPatchResponse403;
         $this->response = $response;
     }
-    public function getProjectsProjectIdPatchResponse403() : \Github\Model\ProjectsProjectIdPatchResponse403
+    public function getProjectsProjectIdPatchResponse403(): \Github\Model\ProjectsProjectIdPatchResponse403
     {
         return $this->projectsProjectIdPatchResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

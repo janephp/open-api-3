@@ -8,7 +8,7 @@ class DefaultUserFieldsEntities extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class DefaultUserFieldsEntities extends \ArrayObject
      *
      * @return DefaultUserFieldsEntitiesUrl
      */
-    public function getUrl() : DefaultUserFieldsEntitiesUrl
+    public function getUrl(): DefaultUserFieldsEntitiesUrl
     {
         return $this->url;
     }
@@ -40,7 +40,7 @@ class DefaultUserFieldsEntities extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(DefaultUserFieldsEntitiesUrl $url) : self
+    public function setUrl(DefaultUserFieldsEntitiesUrl $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -51,7 +51,7 @@ class DefaultUserFieldsEntities extends \ArrayObject
      *
      * @return FullTextEntities
      */
-    public function getDescription() : FullTextEntities
+    public function getDescription(): FullTextEntities
     {
         return $this->description;
     }
@@ -62,7 +62,7 @@ class DefaultUserFieldsEntities extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(FullTextEntities $description) : self
+    public function setDescription(FullTextEntities $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

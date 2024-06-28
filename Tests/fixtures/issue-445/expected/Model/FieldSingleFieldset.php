@@ -8,7 +8,7 @@ class FieldSingleFieldset extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class FieldSingleFieldset extends FieldBase
      *
      * @return string
      */
-    public function getSchemaId() : string
+    public function getSchemaId(): string
     {
         return $this->schemaId;
     }
@@ -40,7 +40,7 @@ class FieldSingleFieldset extends FieldBase
      *
      * @return self
      */
-    public function setSchemaId(string $schemaId) : self
+    public function setSchemaId(string $schemaId): self
     {
         $this->initialized['schemaId'] = true;
         $this->schemaId = $schemaId;
@@ -62,7 +62,7 @@ class FieldSingleFieldset extends FieldBase
      *
      * @return self
      */
-    public function setSchemaIndexingInfo($schemaIndexingInfo) : self
+    public function setSchemaIndexingInfo($schemaIndexingInfo): self
     {
         $this->initialized['schemaIndexingInfo'] = true;
         $this->schemaIndexingInfo = $schemaIndexingInfo;

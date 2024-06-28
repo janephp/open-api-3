@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Model::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Jane\Component\OpenApi3\Tests\Expected\Model\Model::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -52,7 +52,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['bar']);
             }
             if (\array_key_exists('date', $data) && $data['date'] !== null) {
-                $object->setDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['date']));
+                $object->setDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['date']));
                 unset($data['date']);
             }
             elseif (\array_key_exists('date', $data) && $data['date'] === null) {
@@ -65,7 +65,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if ($object->isInitialized('foo') && null !== $object->getFoo()) {
@@ -75,7 +75,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['bar'] = $object->getBar();
             }
             if ($object->isInitialized('date') && null !== $object->getDate()) {
-                $data['date'] = $object->getDate()->format('Y-m-d\\TH:i:sP');
+                $data['date'] = $object->getDate()->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -84,7 +84,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Jane\Component\OpenApi3\Tests\Expected\Model\Model::class => false];
         }
@@ -96,11 +96,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \Jane\Component\OpenApi3\Tests\Expected\Model\Model::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Jane\Component\OpenApi3\Tests\Expected\Model\Model::class;
         }
@@ -131,7 +131,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['bar']);
             }
             if (\array_key_exists('date', $data) && $data['date'] !== null) {
-                $object->setDate(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['date']));
+                $object->setDate(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['date']));
                 unset($data['date']);
             }
             elseif (\array_key_exists('date', $data) && $data['date'] === null) {
@@ -157,7 +157,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['bar'] = $object->getBar();
             }
             if ($object->isInitialized('date') && null !== $object->getDate()) {
-                $data['date'] = $object->getDate()->format('Y-m-d\\TH:i:sP');
+                $data['date'] = $object->getDate()->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -166,7 +166,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Jane\Component\OpenApi3\Tests\Expected\Model\Model::class => false];
         }

@@ -13,7 +13,7 @@ class SyncPortfolioCompaniesToCSVRecordsForbiddenException extends ForbiddenExce
         parent::__construct('Forbidden');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

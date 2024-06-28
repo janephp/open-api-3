@@ -21,15 +21,15 @@ class ActionsDeleteSelfHostedRunnerFromRepo extends \Github\Runtime\Client\BaseE
         $this->runner_id = $runnerId;
     }
     use \Github\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'DELETE';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{owner}', '{repo}', '{runner_id}'], [$this->owner, $this->repo, $this->runner_id], '/repos/{owner}/{repo}/actions/runners/{runner_id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
@@ -47,7 +47,7 @@ class ActionsDeleteSelfHostedRunnerFromRepo extends \Github\Runtime\Client\BaseE
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

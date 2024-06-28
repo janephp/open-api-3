@@ -8,7 +8,7 @@ class EntityIndices extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class EntityIndices extends \ArrayObject
      *
      * @return int
      */
-    public function getStart() : int
+    public function getStart(): int
     {
         return $this->start;
     }
@@ -40,7 +40,7 @@ class EntityIndices extends \ArrayObject
      *
      * @return self
      */
-    public function setStart(int $start) : self
+    public function setStart(int $start): self
     {
         $this->initialized['start'] = true;
         $this->start = $start;
@@ -51,7 +51,7 @@ class EntityIndices extends \ArrayObject
      *
      * @return int
      */
-    public function getEnd() : int
+    public function getEnd(): int
     {
         return $this->end;
     }
@@ -62,7 +62,7 @@ class EntityIndices extends \ArrayObject
      *
      * @return self
      */
-    public function setEnd(int $end) : self
+    public function setEnd(int $end): self
     {
         $this->initialized['end'] = true;
         $this->end = $end;

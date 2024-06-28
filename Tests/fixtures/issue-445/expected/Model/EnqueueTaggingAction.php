@@ -8,7 +8,7 @@ class EnqueueTaggingAction extends BusinessRuleAction
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -34,7 +34,7 @@ class EnqueueTaggingAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setOptions($options) : self
+    public function setOptions($options): self
     {
         $this->initialized['options'] = true;
         $this->options = $options;

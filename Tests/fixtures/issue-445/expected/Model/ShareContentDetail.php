@@ -8,7 +8,7 @@ class ShareContentDetail
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -73,7 +73,7 @@ class ShareContentDetail
      *
      * @return string
      */
-    public function getContentSchemaId() : string
+    public function getContentSchemaId(): string
     {
         return $this->contentSchemaId;
     }
@@ -84,7 +84,7 @@ class ShareContentDetail
      *
      * @return self
      */
-    public function setContentSchemaId(string $contentSchemaId) : self
+    public function setContentSchemaId(string $contentSchemaId): self
     {
         $this->initialized['contentSchemaId'] = true;
         $this->contentSchemaId = $contentSchemaId;
@@ -95,7 +95,7 @@ class ShareContentDetail
      *
      * @return list<string>|null
      */
-    public function getLayerSchemaIds() : ?array
+    public function getLayerSchemaIds(): ?array
     {
         return $this->layerSchemaIds;
     }
@@ -106,7 +106,7 @@ class ShareContentDetail
      *
      * @return self
      */
-    public function setLayerSchemaIds(?array $layerSchemaIds) : self
+    public function setLayerSchemaIds(?array $layerSchemaIds): self
     {
         $this->initialized['layerSchemaIds'] = true;
         $this->layerSchemaIds = $layerSchemaIds;
@@ -118,7 +118,7 @@ class ShareContentDetail
     *
     * @return array<string, mixed>
     */
-    public function getContent() : iterable
+    public function getContent(): iterable
     {
         return $this->content;
     }
@@ -130,7 +130,7 @@ class ShareContentDetail
     *
     * @return self
     */
-    public function setContent(iterable $content) : self
+    public function setContent(iterable $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -142,7 +142,7 @@ class ShareContentDetail
     *
     * @return array<string, mixed>|null
     */
-    public function getMetadata() : ?iterable
+    public function getMetadata(): ?iterable
     {
         return $this->metadata;
     }
@@ -154,7 +154,7 @@ class ShareContentDetail
     *
     * @return self
     */
-    public function setMetadata(?iterable $metadata) : self
+    public function setMetadata(?iterable $metadata): self
     {
         $this->initialized['metadata'] = true;
         $this->metadata = $metadata;
@@ -165,7 +165,7 @@ class ShareContentDetail
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -176,7 +176,7 @@ class ShareContentDetail
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -187,7 +187,7 @@ class ShareContentDetail
      *
      * @return list<ShareOutputBase>
      */
-    public function getOutputs() : array
+    public function getOutputs(): array
     {
         return $this->outputs;
     }
@@ -198,7 +198,7 @@ class ShareContentDetail
      *
      * @return self
      */
-    public function setOutputs(array $outputs) : self
+    public function setOutputs(array $outputs): self
     {
         $this->initialized['outputs'] = true;
         $this->outputs = $outputs;
@@ -220,7 +220,7 @@ class ShareContentDetail
      *
      * @return self
      */
-    public function setContentType($contentType) : self
+    public function setContentType($contentType): self
     {
         $this->initialized['contentType'] = true;
         $this->contentType = $contentType;
@@ -242,7 +242,7 @@ class ShareContentDetail
      *
      * @return self
      */
-    public function setDisplayValues($displayValues) : self
+    public function setDisplayValues($displayValues): self
     {
         $this->initialized['displayValues'] = true;
         $this->displayValues = $displayValues;
@@ -253,7 +253,7 @@ class ShareContentDetail
      *
      * @return string|null
      */
-    public function getIconUrl() : ?string
+    public function getIconUrl(): ?string
     {
         return $this->iconUrl;
     }
@@ -264,7 +264,7 @@ class ShareContentDetail
      *
      * @return self
      */
-    public function setIconUrl(?string $iconUrl) : self
+    public function setIconUrl(?string $iconUrl): self
     {
         $this->initialized['iconUrl'] = true;
         $this->iconUrl = $iconUrl;

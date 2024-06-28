@@ -8,7 +8,7 @@ class FieldEmptyCondition extends BusinessRuleCondition
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class FieldEmptyCondition extends BusinessRuleCondition
      *
      * @return string|null
      */
-    public function getFieldPath() : ?string
+    public function getFieldPath(): ?string
     {
         return $this->fieldPath;
     }
@@ -34,7 +34,7 @@ class FieldEmptyCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setFieldPath(?string $fieldPath) : self
+    public function setFieldPath(?string $fieldPath): self
     {
         $this->initialized['fieldPath'] = true;
         $this->fieldPath = $fieldPath;

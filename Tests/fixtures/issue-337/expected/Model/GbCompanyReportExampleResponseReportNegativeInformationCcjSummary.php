@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCcjSummary extends 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCcjSummary extends 
      *
      * @return float
      */
-    public function getExactRegistered() : float
+    public function getExactRegistered(): float
     {
         return $this->exactRegistered;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCcjSummary extends 
      *
      * @return self
      */
-    public function setExactRegistered(float $exactRegistered) : self
+    public function setExactRegistered(float $exactRegistered): self
     {
         $this->initialized['exactRegistered'] = true;
         $this->exactRegistered = $exactRegistered;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCcjSummary extends 
      *
      * @return float
      */
-    public function getPossibleRegistered() : float
+    public function getPossibleRegistered(): float
     {
         return $this->possibleRegistered;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCcjSummary extends 
      *
      * @return self
      */
-    public function setPossibleRegistered(float $possibleRegistered) : self
+    public function setPossibleRegistered(float $possibleRegistered): self
     {
         $this->initialized['possibleRegistered'] = true;
         $this->possibleRegistered = $possibleRegistered;

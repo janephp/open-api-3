@@ -8,7 +8,7 @@ class PdfFormat extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class PdfFormat extends FormatBase
      *
      * @return int
      */
-    public function getJpegQuality() : int
+    public function getJpegQuality(): int
     {
         return $this->jpegQuality;
     }
@@ -58,7 +58,7 @@ class PdfFormat extends FormatBase
      *
      * @return self
      */
-    public function setJpegQuality(int $jpegQuality) : self
+    public function setJpegQuality(int $jpegQuality): self
     {
         $this->initialized['jpegQuality'] = true;
         $this->jpegQuality = $jpegQuality;
@@ -69,7 +69,7 @@ class PdfFormat extends FormatBase
      *
      * @return bool
      */
-    public function getFastWebView() : bool
+    public function getFastWebView(): bool
     {
         return $this->fastWebView;
     }
@@ -80,7 +80,7 @@ class PdfFormat extends FormatBase
      *
      * @return self
      */
-    public function setFastWebView(bool $fastWebView) : self
+    public function setFastWebView(bool $fastWebView): self
     {
         $this->initialized['fastWebView'] = true;
         $this->fastWebView = $fastWebView;
@@ -91,7 +91,7 @@ class PdfFormat extends FormatBase
      *
      * @return bool
      */
-    public function getReduceFileSize() : bool
+    public function getReduceFileSize(): bool
     {
         return $this->reduceFileSize;
     }
@@ -102,7 +102,7 @@ class PdfFormat extends FormatBase
      *
      * @return self
      */
-    public function setReduceFileSize(bool $reduceFileSize) : self
+    public function setReduceFileSize(bool $reduceFileSize): self
     {
         $this->initialized['reduceFileSize'] = true;
         $this->reduceFileSize = $reduceFileSize;
@@ -113,7 +113,7 @@ class PdfFormat extends FormatBase
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -124,7 +124,7 @@ class PdfFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;
@@ -135,7 +135,7 @@ class PdfFormat extends FormatBase
      *
      * @return bool
      */
-    public function getExtractFullText() : bool
+    public function getExtractFullText(): bool
     {
         return $this->extractFullText;
     }
@@ -146,7 +146,7 @@ class PdfFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtractFullText(bool $extractFullText) : self
+    public function setExtractFullText(bool $extractFullText): self
     {
         $this->initialized['extractFullText'] = true;
         $this->extractFullText = $extractFullText;

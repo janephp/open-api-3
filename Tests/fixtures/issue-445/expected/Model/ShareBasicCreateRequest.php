@@ -8,7 +8,7 @@ class ShareBasicCreateRequest extends ShareBaseCreateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShareBasicCreateRequest extends ShareBaseCreateRequest
      *
      * @return list<UserEmail>|null
      */
-    public function getRecipientEmails() : ?array
+    public function getRecipientEmails(): ?array
     {
         return $this->recipientEmails;
     }
@@ -46,7 +46,7 @@ class ShareBasicCreateRequest extends ShareBaseCreateRequest
      *
      * @return self
      */
-    public function setRecipientEmails(?array $recipientEmails) : self
+    public function setRecipientEmails(?array $recipientEmails): self
     {
         $this->initialized['recipientEmails'] = true;
         $this->recipientEmails = $recipientEmails;
@@ -57,7 +57,7 @@ class ShareBasicCreateRequest extends ShareBaseCreateRequest
      *
      * @return string
      */
-    public function getLanguageCode() : string
+    public function getLanguageCode(): string
     {
         return $this->languageCode;
     }
@@ -68,7 +68,7 @@ class ShareBasicCreateRequest extends ShareBaseCreateRequest
      *
      * @return self
      */
-    public function setLanguageCode(string $languageCode) : self
+    public function setLanguageCode(string $languageCode): self
     {
         $this->initialized['languageCode'] = true;
         $this->languageCode = $languageCode;
@@ -79,7 +79,7 @@ class ShareBasicCreateRequest extends ShareBaseCreateRequest
      *
      * @return bool
      */
-    public function getSuppressNotifications() : bool
+    public function getSuppressNotifications(): bool
     {
         return $this->suppressNotifications;
     }
@@ -90,7 +90,7 @@ class ShareBasicCreateRequest extends ShareBaseCreateRequest
      *
      * @return self
      */
-    public function setSuppressNotifications(bool $suppressNotifications) : self
+    public function setSuppressNotifications(bool $suppressNotifications): self
     {
         $this->initialized['suppressNotifications'] = true;
         $this->suppressNotifications = $suppressNotifications;

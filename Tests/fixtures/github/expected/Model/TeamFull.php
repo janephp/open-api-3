@@ -8,7 +8,7 @@ class TeamFull extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -125,7 +125,7 @@ class TeamFull extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -136,7 +136,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -147,7 +147,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -158,7 +158,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -169,7 +169,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -180,7 +180,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -191,7 +191,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -202,7 +202,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -213,7 +213,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -224,7 +224,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -235,7 +235,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getSlug() : string
+    public function getSlug(): string
     {
         return $this->slug;
     }
@@ -246,7 +246,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setSlug(string $slug) : self
+    public function setSlug(string $slug): self
     {
         $this->initialized['slug'] = true;
         $this->slug = $slug;
@@ -257,7 +257,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -268,7 +268,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -279,7 +279,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getPrivacy() : string
+    public function getPrivacy(): string
     {
         return $this->privacy;
     }
@@ -290,7 +290,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivacy(string $privacy) : self
+    public function setPrivacy(string $privacy): self
     {
         $this->initialized['privacy'] = true;
         $this->privacy = $privacy;
@@ -301,7 +301,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getPermission() : string
+    public function getPermission(): string
     {
         return $this->permission;
     }
@@ -312,7 +312,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setPermission(string $permission) : self
+    public function setPermission(string $permission): self
     {
         $this->initialized['permission'] = true;
         $this->permission = $permission;
@@ -323,7 +323,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getMembersUrl() : string
+    public function getMembersUrl(): string
     {
         return $this->membersUrl;
     }
@@ -334,7 +334,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setMembersUrl(string $membersUrl) : self
+    public function setMembersUrl(string $membersUrl): self
     {
         $this->initialized['membersUrl'] = true;
         $this->membersUrl = $membersUrl;
@@ -345,7 +345,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoriesUrl() : string
+    public function getRepositoriesUrl(): string
     {
         return $this->repositoriesUrl;
     }
@@ -356,7 +356,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoriesUrl(string $repositoriesUrl) : self
+    public function setRepositoriesUrl(string $repositoriesUrl): self
     {
         $this->initialized['repositoriesUrl'] = true;
         $this->repositoriesUrl = $repositoriesUrl;
@@ -367,7 +367,7 @@ class TeamFull extends \ArrayObject
      *
      * @return TeamFullParent|null
      */
-    public function getParent() : ?TeamFullParent
+    public function getParent(): ?TeamFullParent
     {
         return $this->parent;
     }
@@ -378,7 +378,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setParent(?TeamFullParent $parent) : self
+    public function setParent(?TeamFullParent $parent): self
     {
         $this->initialized['parent'] = true;
         $this->parent = $parent;
@@ -389,7 +389,7 @@ class TeamFull extends \ArrayObject
      *
      * @return int
      */
-    public function getMembersCount() : int
+    public function getMembersCount(): int
     {
         return $this->membersCount;
     }
@@ -400,7 +400,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setMembersCount(int $membersCount) : self
+    public function setMembersCount(int $membersCount): self
     {
         $this->initialized['membersCount'] = true;
         $this->membersCount = $membersCount;
@@ -411,7 +411,7 @@ class TeamFull extends \ArrayObject
      *
      * @return int
      */
-    public function getReposCount() : int
+    public function getReposCount(): int
     {
         return $this->reposCount;
     }
@@ -422,7 +422,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setReposCount(int $reposCount) : self
+    public function setReposCount(int $reposCount): self
     {
         $this->initialized['reposCount'] = true;
         $this->reposCount = $reposCount;
@@ -433,7 +433,7 @@ class TeamFull extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -444,7 +444,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -455,7 +455,7 @@ class TeamFull extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -466,7 +466,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -477,7 +477,7 @@ class TeamFull extends \ArrayObject
      *
      * @return Organization
      */
-    public function getOrganization() : Organization
+    public function getOrganization(): Organization
     {
         return $this->organization;
     }
@@ -488,7 +488,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganization(Organization $organization) : self
+    public function setOrganization(Organization $organization): self
     {
         $this->initialized['organization'] = true;
         $this->organization = $organization;
@@ -499,7 +499,7 @@ class TeamFull extends \ArrayObject
      *
      * @return string
      */
-    public function getLdapDn() : string
+    public function getLdapDn(): string
     {
         return $this->ldapDn;
     }
@@ -510,7 +510,7 @@ class TeamFull extends \ArrayObject
      *
      * @return self
      */
-    public function setLdapDn(string $ldapDn) : self
+    public function setLdapDn(string $ldapDn): self
     {
         $this->initialized['ldapDn'] = true;
         $this->ldapDn = $ldapDn;

@@ -8,7 +8,7 @@ class Baz extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class Baz extends \ArrayObject
      *
      * @return string
      */
-    public function getLabel() : string
+    public function getLabel(): string
     {
         return $this->label;
     }
@@ -40,7 +40,7 @@ class Baz extends \ArrayObject
      *
      * @return self
      */
-    public function setLabel(string $label) : self
+    public function setLabel(string $label): self
     {
         $this->initialized['label'] = true;
         $this->label = $label;
@@ -51,7 +51,7 @@ class Baz extends \ArrayObject
      *
      * @return SubBaz
      */
-    public function getSub() : SubBaz
+    public function getSub(): SubBaz
     {
         return $this->sub;
     }
@@ -62,7 +62,7 @@ class Baz extends \ArrayObject
      *
      * @return self
      */
-    public function setSub(SubBaz $sub) : self
+    public function setSub(SubBaz $sub): self
     {
         $this->initialized['sub'] = true;
         $this->sub = $sub;

@@ -8,7 +8,7 @@ class XmpWritebackCompletedEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class XmpWritebackCompletedEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getOutputDocId() : ?string
+    public function getOutputDocId(): ?string
     {
         return $this->outputDocId;
     }
@@ -34,7 +34,7 @@ class XmpWritebackCompletedEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setOutputDocId(?string $outputDocId) : self
+    public function setOutputDocId(?string $outputDocId): self
     {
         $this->initialized['outputDocId'] = true;
         $this->outputDocId = $outputDocId;

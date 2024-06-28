@@ -8,7 +8,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return ParchmentsGetHaljsonResponse200LinksSelf
      */
-    public function getSelf() : ParchmentsGetHaljsonResponse200LinksSelf
+    public function getSelf(): ParchmentsGetHaljsonResponse200LinksSelf
     {
         return $this->self;
     }
@@ -58,7 +58,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setSelf(ParchmentsGetHaljsonResponse200LinksSelf $self) : self
+    public function setSelf(ParchmentsGetHaljsonResponse200LinksSelf $self): self
     {
         $this->initialized['self'] = true;
         $this->self = $self;
@@ -69,7 +69,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return ParchmentsGetHaljsonResponse200LinksFirst
      */
-    public function getFirst() : ParchmentsGetHaljsonResponse200LinksFirst
+    public function getFirst(): ParchmentsGetHaljsonResponse200LinksFirst
     {
         return $this->first;
     }
@@ -80,7 +80,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setFirst(ParchmentsGetHaljsonResponse200LinksFirst $first) : self
+    public function setFirst(ParchmentsGetHaljsonResponse200LinksFirst $first): self
     {
         $this->initialized['first'] = true;
         $this->first = $first;
@@ -91,7 +91,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return ParchmentsGetHaljsonResponse200LinksLast
      */
-    public function getLast() : ParchmentsGetHaljsonResponse200LinksLast
+    public function getLast(): ParchmentsGetHaljsonResponse200LinksLast
     {
         return $this->last;
     }
@@ -102,7 +102,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setLast(ParchmentsGetHaljsonResponse200LinksLast $last) : self
+    public function setLast(ParchmentsGetHaljsonResponse200LinksLast $last): self
     {
         $this->initialized['last'] = true;
         $this->last = $last;
@@ -113,7 +113,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return ParchmentsGetHaljsonResponse200LinksNext
      */
-    public function getNext() : ParchmentsGetHaljsonResponse200LinksNext
+    public function getNext(): ParchmentsGetHaljsonResponse200LinksNext
     {
         return $this->next;
     }
@@ -124,7 +124,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setNext(ParchmentsGetHaljsonResponse200LinksNext $next) : self
+    public function setNext(ParchmentsGetHaljsonResponse200LinksNext $next): self
     {
         $this->initialized['next'] = true;
         $this->next = $next;
@@ -135,7 +135,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return ParchmentsGetHaljsonResponse200LinksPrevious
      */
-    public function getPrevious() : ParchmentsGetHaljsonResponse200LinksPrevious
+    public function getPrevious(): ParchmentsGetHaljsonResponse200LinksPrevious
     {
         return $this->previous;
     }
@@ -146,7 +146,7 @@ class ParchmentsGetHaljsonResponse200Links extends \ArrayObject
      *
      * @return self
      */
-    public function setPrevious(ParchmentsGetHaljsonResponse200LinksPrevious $previous) : self
+    public function setPrevious(ParchmentsGetHaljsonResponse200LinksPrevious $previous): self
     {
         $this->initialized['previous'] = true;
         $this->previous = $previous;

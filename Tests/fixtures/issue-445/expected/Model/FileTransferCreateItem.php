@@ -8,7 +8,7 @@ class FileTransferCreateItem
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -42,7 +42,7 @@ class FileTransferCreateItem
      *
      * @return string
      */
-    public function getFileId() : string
+    public function getFileId(): string
     {
         return $this->fileId;
     }
@@ -53,7 +53,7 @@ class FileTransferCreateItem
      *
      * @return self
      */
-    public function setFileId(string $fileId) : self
+    public function setFileId(string $fileId): self
     {
         $this->initialized['fileId'] = true;
         $this->fileId = $fileId;
@@ -64,7 +64,7 @@ class FileTransferCreateItem
      *
      * @return list<string>|null
      */
-    public function getLayerSchemaIds() : ?array
+    public function getLayerSchemaIds(): ?array
     {
         return $this->layerSchemaIds;
     }
@@ -75,7 +75,7 @@ class FileTransferCreateItem
      *
      * @return self
      */
-    public function setLayerSchemaIds(?array $layerSchemaIds) : self
+    public function setLayerSchemaIds(?array $layerSchemaIds): self
     {
         $this->initialized['layerSchemaIds'] = true;
         $this->layerSchemaIds = $layerSchemaIds;
@@ -87,7 +87,7 @@ class FileTransferCreateItem
     *
     * @return array<string, mixed>|null
     */
-    public function getMetadata() : ?iterable
+    public function getMetadata(): ?iterable
     {
         return $this->metadata;
     }
@@ -99,7 +99,7 @@ class FileTransferCreateItem
     *
     * @return self
     */
-    public function setMetadata(?iterable $metadata) : self
+    public function setMetadata(?iterable $metadata): self
     {
         $this->initialized['metadata'] = true;
         $this->metadata = $metadata;
@@ -110,7 +110,7 @@ class FileTransferCreateItem
      *
      * @return list<string>|null
      */
-    public function getContentPermissionSetIds() : ?array
+    public function getContentPermissionSetIds(): ?array
     {
         return $this->contentPermissionSetIds;
     }
@@ -121,7 +121,7 @@ class FileTransferCreateItem
      *
      * @return self
      */
-    public function setContentPermissionSetIds(?array $contentPermissionSetIds) : self
+    public function setContentPermissionSetIds(?array $contentPermissionSetIds): self
     {
         $this->initialized['contentPermissionSetIds'] = true;
         $this->contentPermissionSetIds = $contentPermissionSetIds;

@@ -8,7 +8,7 @@ class PermissionSetUpdateRequestItemOfMetadataRight extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -52,7 +52,7 @@ class PermissionSetUpdateRequestItemOfMetadataRight extends \ArrayObject
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -63,7 +63,7 @@ class PermissionSetUpdateRequestItemOfMetadataRight extends \ArrayObject
      *
      * @return list<UserRoleRightsOfMetadataRight>|null
      */
-    public function getUserRolesRights() : ?array
+    public function getUserRolesRights(): ?array
     {
         return $this->userRolesRights;
     }
@@ -74,7 +74,7 @@ class PermissionSetUpdateRequestItemOfMetadataRight extends \ArrayObject
      *
      * @return self
      */
-    public function setUserRolesRights(?array $userRolesRights) : self
+    public function setUserRolesRights(?array $userRolesRights): self
     {
         $this->initialized['userRolesRights'] = true;
         $this->userRolesRights = $userRolesRights;
@@ -85,7 +85,7 @@ class PermissionSetUpdateRequestItemOfMetadataRight extends \ArrayObject
      *
      * @return list<UserRoleRightsOfPermissionSetRight>|null
      */
-    public function getUserRolesPermissionSetRights() : ?array
+    public function getUserRolesPermissionSetRights(): ?array
     {
         return $this->userRolesPermissionSetRights;
     }
@@ -96,7 +96,7 @@ class PermissionSetUpdateRequestItemOfMetadataRight extends \ArrayObject
      *
      * @return self
      */
-    public function setUserRolesPermissionSetRights(?array $userRolesPermissionSetRights) : self
+    public function setUserRolesPermissionSetRights(?array $userRolesPermissionSetRights): self
     {
         $this->initialized['userRolesPermissionSetRights'] = true;
         $this->userRolesPermissionSetRights = $userRolesPermissionSetRights;
@@ -107,7 +107,7 @@ class PermissionSetUpdateRequestItemOfMetadataRight extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -118,7 +118,7 @@ class PermissionSetUpdateRequestItemOfMetadataRight extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;

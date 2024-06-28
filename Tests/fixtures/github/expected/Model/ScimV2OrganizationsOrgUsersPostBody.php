@@ -8,7 +8,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getUserName() : string
+    public function getUserName(): string
     {
         return $this->userName;
     }
@@ -76,7 +76,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setUserName(string $userName) : self
+    public function setUserName(string $userName): self
     {
         $this->initialized['userName'] = true;
         $this->userName = $userName;
@@ -87,7 +87,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return ScimV2OrganizationsOrgUsersPostBodyName
      */
-    public function getName() : ScimV2OrganizationsOrgUsersPostBodyName
+    public function getName(): ScimV2OrganizationsOrgUsersPostBodyName
     {
         return $this->name;
     }
@@ -98,7 +98,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(ScimV2OrganizationsOrgUsersPostBodyName $name) : self
+    public function setName(ScimV2OrganizationsOrgUsersPostBodyName $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -109,7 +109,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return list<ScimV2OrganizationsOrgUsersPostBodyEmailsItem>
      */
-    public function getEmails() : array
+    public function getEmails(): array
     {
         return $this->emails;
     }
@@ -120,7 +120,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmails(array $emails) : self
+    public function setEmails(array $emails): self
     {
         $this->initialized['emails'] = true;
         $this->emails = $emails;
@@ -131,7 +131,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getSchemas() : array
+    public function getSchemas(): array
     {
         return $this->schemas;
     }
@@ -142,7 +142,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSchemas(array $schemas) : self
+    public function setSchemas(array $schemas): self
     {
         $this->initialized['schemas'] = true;
         $this->schemas = $schemas;
@@ -153,7 +153,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDisplayName() : string
+    public function getDisplayName(): string
     {
         return $this->displayName;
     }
@@ -164,7 +164,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDisplayName(string $displayName) : self
+    public function setDisplayName(string $displayName): self
     {
         $this->initialized['displayName'] = true;
         $this->displayName = $displayName;
@@ -175,7 +175,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getExternalId() : string
+    public function getExternalId(): string
     {
         return $this->externalId;
     }
@@ -186,7 +186,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setExternalId(string $externalId) : self
+    public function setExternalId(string $externalId): self
     {
         $this->initialized['externalId'] = true;
         $this->externalId = $externalId;
@@ -197,7 +197,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getGroups() : array
+    public function getGroups(): array
     {
         return $this->groups;
     }
@@ -208,7 +208,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setGroups(array $groups) : self
+    public function setGroups(array $groups): self
     {
         $this->initialized['groups'] = true;
         $this->groups = $groups;
@@ -219,7 +219,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getActive() : bool
+    public function getActive(): bool
     {
         return $this->active;
     }
@@ -230,7 +230,7 @@ class ScimV2OrganizationsOrgUsersPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setActive(bool $active) : self
+    public function setActive(bool $active): self
     {
         $this->initialized['active'] = true;
         $this->active = $active;

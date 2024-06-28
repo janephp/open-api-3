@@ -18,11 +18,11 @@ class TestAnyOfWithDiscriminatorBadRequestException extends BadRequestException
         $this->fooBarWithMapping = $fooBarWithMapping;
         $this->response = $response;
     }
-    public function getFooBarWithMapping() : \Jane\Component\OpenApi3\Tests\Expected\Model\FooBarWithMapping
+    public function getFooBarWithMapping(): \Jane\Component\OpenApi3\Tests\Expected\Model\FooBarWithMapping
     {
         return $this->fooBarWithMapping;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

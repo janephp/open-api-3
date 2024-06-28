@@ -8,7 +8,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredStatusChecks|null
      */
-    public function getRequiredStatusChecks() : ?ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredStatusChecks
+    public function getRequiredStatusChecks(): ?ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredStatusChecks
     {
         return $this->requiredStatusChecks;
     }
@@ -70,7 +70,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredStatusChecks(?ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredStatusChecks $requiredStatusChecks) : self
+    public function setRequiredStatusChecks(?ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredStatusChecks $requiredStatusChecks): self
     {
         $this->initialized['requiredStatusChecks'] = true;
         $this->requiredStatusChecks = $requiredStatusChecks;
@@ -81,7 +81,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return bool|null
      */
-    public function getEnforceAdmins() : ?bool
+    public function getEnforceAdmins(): ?bool
     {
         return $this->enforceAdmins;
     }
@@ -92,7 +92,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEnforceAdmins(?bool $enforceAdmins) : self
+    public function setEnforceAdmins(?bool $enforceAdmins): self
     {
         $this->initialized['enforceAdmins'] = true;
         $this->enforceAdmins = $enforceAdmins;
@@ -103,7 +103,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredPullRequestReviews|null
      */
-    public function getRequiredPullRequestReviews() : ?ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredPullRequestReviews
+    public function getRequiredPullRequestReviews(): ?ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredPullRequestReviews
     {
         return $this->requiredPullRequestReviews;
     }
@@ -114,7 +114,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredPullRequestReviews(?ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredPullRequestReviews $requiredPullRequestReviews) : self
+    public function setRequiredPullRequestReviews(?ReposOwnerRepoBranchesBranchProtectionPutBodyRequiredPullRequestReviews $requiredPullRequestReviews): self
     {
         $this->initialized['requiredPullRequestReviews'] = true;
         $this->requiredPullRequestReviews = $requiredPullRequestReviews;
@@ -125,7 +125,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions|null
      */
-    public function getRestrictions() : ?ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions
+    public function getRestrictions(): ?ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions
     {
         return $this->restrictions;
     }
@@ -136,7 +136,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRestrictions(?ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions $restrictions) : self
+    public function setRestrictions(?ReposOwnerRepoBranchesBranchProtectionPutBodyRestrictions $restrictions): self
     {
         $this->initialized['restrictions'] = true;
         $this->restrictions = $restrictions;
@@ -147,7 +147,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getRequiredLinearHistory() : bool
+    public function getRequiredLinearHistory(): bool
     {
         return $this->requiredLinearHistory;
     }
@@ -158,7 +158,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredLinearHistory(bool $requiredLinearHistory) : self
+    public function setRequiredLinearHistory(bool $requiredLinearHistory): self
     {
         $this->initialized['requiredLinearHistory'] = true;
         $this->requiredLinearHistory = $requiredLinearHistory;
@@ -169,7 +169,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return bool|null
      */
-    public function getAllowForcePushes() : ?bool
+    public function getAllowForcePushes(): ?bool
     {
         return $this->allowForcePushes;
     }
@@ -180,7 +180,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowForcePushes(?bool $allowForcePushes) : self
+    public function setAllowForcePushes(?bool $allowForcePushes): self
     {
         $this->initialized['allowForcePushes'] = true;
         $this->allowForcePushes = $allowForcePushes;
@@ -191,7 +191,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getAllowDeletions() : bool
+    public function getAllowDeletions(): bool
     {
         return $this->allowDeletions;
     }
@@ -202,7 +202,7 @@ class ReposOwnerRepoBranchesBranchProtectionPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowDeletions(bool $allowDeletions) : self
+    public function setAllowDeletions(bool $allowDeletions): self
     {
         $this->initialized['allowDeletions'] = true;
         $this->allowDeletions = $allowDeletions;

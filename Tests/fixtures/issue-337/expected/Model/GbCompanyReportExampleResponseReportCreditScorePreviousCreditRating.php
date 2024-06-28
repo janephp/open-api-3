@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return string
      */
-    public function getCommonValue() : string
+    public function getCommonValue(): string
     {
         return $this->commonValue;
     }
@@ -58,7 +58,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return self
      */
-    public function setCommonValue(string $commonValue) : self
+    public function setCommonValue(string $commonValue): self
     {
         $this->initialized['commonValue'] = true;
         $this->commonValue = $commonValue;
@@ -69,7 +69,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return string
      */
-    public function getCommonDescription() : string
+    public function getCommonDescription(): string
     {
         return $this->commonDescription;
     }
@@ -80,7 +80,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return self
      */
-    public function setCommonDescription(string $commonDescription) : self
+    public function setCommonDescription(string $commonDescription): self
     {
         $this->initialized['commonDescription'] = true;
         $this->commonDescription = $commonDescription;
@@ -91,7 +91,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit
      */
-    public function getCreditLimit() : GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit
+    public function getCreditLimit(): GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit
     {
         return $this->creditLimit;
     }
@@ -102,7 +102,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return self
      */
-    public function setCreditLimit(GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit $creditLimit) : self
+    public function setCreditLimit(GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingCreditLimit $creditLimit): self
     {
         $this->initialized['creditLimit'] = true;
         $this->creditLimit = $creditLimit;
@@ -113,7 +113,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue
      */
-    public function getProviderValue() : GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue
+    public function getProviderValue(): GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue
     {
         return $this->providerValue;
     }
@@ -124,7 +124,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return self
      */
-    public function setProviderValue(GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue $providerValue) : self
+    public function setProviderValue(GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProviderValue $providerValue): self
     {
         $this->initialized['providerValue'] = true;
         $this->providerValue = $providerValue;
@@ -135,7 +135,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return string
      */
-    public function getProviderDescription() : string
+    public function getProviderDescription(): string
     {
         return $this->providerDescription;
     }
@@ -146,7 +146,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRating extend
      *
      * @return self
      */
-    public function setProviderDescription(string $providerDescription) : self
+    public function setProviderDescription(string $providerDescription): self
     {
         $this->initialized['providerDescription'] = true;
         $this->providerDescription = $providerDescription;

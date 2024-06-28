@@ -8,7 +8,7 @@ class ListFreshInvestigationResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ListFreshInvestigationResponse extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalCount() : int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -40,7 +40,7 @@ class ListFreshInvestigationResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalCount(int $totalCount) : self
+    public function setTotalCount(int $totalCount): self
     {
         $this->initialized['totalCount'] = true;
         $this->totalCount = $totalCount;
@@ -51,7 +51,7 @@ class ListFreshInvestigationResponse extends \ArrayObject
      *
      * @return list<ListFreshInvestigationResponseOrdersItem>
      */
-    public function getOrders() : array
+    public function getOrders(): array
     {
         return $this->orders;
     }
@@ -62,7 +62,7 @@ class ListFreshInvestigationResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setOrders(array $orders) : self
+    public function setOrders(array $orders): self
     {
         $this->initialized['orders'] = true;
         $this->orders = $orders;

@@ -8,7 +8,7 @@ class OutputFormatSetXmpWritebackStateRequestItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class OutputFormatSetXmpWritebackStateRequestItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getEnabled() : bool
+    public function getEnabled(): bool
     {
         return $this->enabled;
     }
@@ -40,7 +40,7 @@ class OutputFormatSetXmpWritebackStateRequestItem extends \ArrayObject
      *
      * @return self
      */
-    public function setEnabled(bool $enabled) : self
+    public function setEnabled(bool $enabled): self
     {
         $this->initialized['enabled'] = true;
         $this->enabled = $enabled;
@@ -51,7 +51,7 @@ class OutputFormatSetXmpWritebackStateRequestItem extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -62,7 +62,7 @@ class OutputFormatSetXmpWritebackStateRequestItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;

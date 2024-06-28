@@ -8,7 +8,7 @@ class ContentRestoreManyRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ContentRestoreManyRequest
      *
      * @return list<string>
      */
-    public function getContentIds() : array
+    public function getContentIds(): array
     {
         return $this->contentIds;
     }
@@ -40,7 +40,7 @@ class ContentRestoreManyRequest
      *
      * @return self
      */
-    public function setContentIds(array $contentIds) : self
+    public function setContentIds(array $contentIds): self
     {
         $this->initialized['contentIds'] = true;
         $this->contentIds = $contentIds;
@@ -51,7 +51,7 @@ class ContentRestoreManyRequest
      *
      * @return bool
      */
-    public function getAllowMissingDependencies() : bool
+    public function getAllowMissingDependencies(): bool
     {
         return $this->allowMissingDependencies;
     }
@@ -62,7 +62,7 @@ class ContentRestoreManyRequest
      *
      * @return self
      */
-    public function setAllowMissingDependencies(bool $allowMissingDependencies) : self
+    public function setAllowMissingDependencies(bool $allowMissingDependencies): self
     {
         $this->initialized['allowMissingDependencies'] = true;
         $this->allowMissingDependencies = $allowMissingDependencies;

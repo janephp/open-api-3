@@ -8,7 +8,7 @@ class CompactTweetFieldsAttachments extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class CompactTweetFieldsAttachments extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getMediaKeys() : array
+    public function getMediaKeys(): array
     {
         return $this->mediaKeys;
     }
@@ -40,7 +40,7 @@ class CompactTweetFieldsAttachments extends \ArrayObject
      *
      * @return self
      */
-    public function setMediaKeys(array $mediaKeys) : self
+    public function setMediaKeys(array $mediaKeys): self
     {
         $this->initialized['mediaKeys'] = true;
         $this->mediaKeys = $mediaKeys;
@@ -51,7 +51,7 @@ class CompactTweetFieldsAttachments extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getPollIds() : array
+    public function getPollIds(): array
     {
         return $this->pollIds;
     }
@@ -62,7 +62,7 @@ class CompactTweetFieldsAttachments extends \ArrayObject
      *
      * @return self
      */
-    public function setPollIds(array $pollIds) : self
+    public function setPollIds(array $pollIds): self
     {
         $this->initialized['pollIds'] = true;
         $this->pollIds = $pollIds;

@@ -8,7 +8,7 @@ class TestGetBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class TestGetBody extends \ArrayObject
      *
      * @return string
      */
-    public function getFoo() : string
+    public function getFoo(): string
     {
         return $this->foo;
     }
@@ -46,7 +46,7 @@ class TestGetBody extends \ArrayObject
      *
      * @return self
      */
-    public function setFoo(string $foo) : self
+    public function setFoo(string $foo): self
     {
         $this->initialized['foo'] = true;
         $this->foo = $foo;
@@ -57,7 +57,7 @@ class TestGetBody extends \ArrayObject
      *
      * @return Bar
      */
-    public function getBar() : Bar
+    public function getBar(): Bar
     {
         return $this->bar;
     }
@@ -68,7 +68,7 @@ class TestGetBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBar(Bar $bar) : self
+    public function setBar(Bar $bar): self
     {
         $this->initialized['bar'] = true;
         $this->bar = $bar;
@@ -79,7 +79,7 @@ class TestGetBody extends \ArrayObject
      *
      * @return TestGetBodyBaz
      */
-    public function getBaz() : TestGetBodyBaz
+    public function getBaz(): TestGetBodyBaz
     {
         return $this->baz;
     }
@@ -90,7 +90,7 @@ class TestGetBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBaz(TestGetBodyBaz $baz) : self
+    public function setBaz(TestGetBodyBaz $baz): self
     {
         $this->initialized['baz'] = true;
         $this->baz = $baz;

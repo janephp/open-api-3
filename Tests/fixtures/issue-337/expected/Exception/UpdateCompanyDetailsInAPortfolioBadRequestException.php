@@ -13,7 +13,7 @@ class UpdateCompanyDetailsInAPortfolioBadRequestException extends BadRequestExce
         parent::__construct('Bad Request');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

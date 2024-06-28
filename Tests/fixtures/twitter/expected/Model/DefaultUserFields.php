@@ -8,7 +8,7 @@ class DefaultUserFields extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return string
      */
-    public function getLocation() : string
+    public function getLocation(): string
     {
         return $this->location;
     }
@@ -64,7 +64,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return self
      */
-    public function setLocation(string $location) : self
+    public function setLocation(string $location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -75,7 +75,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -86,7 +86,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -97,7 +97,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -108,7 +108,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -119,7 +119,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return DefaultUserFieldsEntities
      */
-    public function getEntities() : DefaultUserFieldsEntities
+    public function getEntities(): DefaultUserFieldsEntities
     {
         return $this->entities;
     }
@@ -130,7 +130,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return self
      */
-    public function setEntities(DefaultUserFieldsEntities $entities) : self
+    public function setEntities(DefaultUserFieldsEntities $entities): self
     {
         $this->initialized['entities'] = true;
         $this->entities = $entities;
@@ -141,7 +141,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return string
      */
-    public function getMostRecentTweetId() : string
+    public function getMostRecentTweetId(): string
     {
         return $this->mostRecentTweetId;
     }
@@ -152,7 +152,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return self
      */
-    public function setMostRecentTweetId(string $mostRecentTweetId) : self
+    public function setMostRecentTweetId(string $mostRecentTweetId): self
     {
         $this->initialized['mostRecentTweetId'] = true;
         $this->mostRecentTweetId = $mostRecentTweetId;
@@ -163,7 +163,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return string
      */
-    public function getPinnedTweetId() : string
+    public function getPinnedTweetId(): string
     {
         return $this->pinnedTweetId;
     }
@@ -174,7 +174,7 @@ class DefaultUserFields extends \ArrayObject
      *
      * @return self
      */
-    public function setPinnedTweetId(string $pinnedTweetId) : self
+    public function setPinnedTweetId(string $pinnedTweetId): self
     {
         $this->initialized['pinnedTweetId'] = true;
         $this->pinnedTweetId = $pinnedTweetId;

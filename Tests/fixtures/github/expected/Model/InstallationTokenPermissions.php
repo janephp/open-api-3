@@ -8,7 +8,7 @@ class InstallationTokenPermissions extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class InstallationTokenPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getIssues() : string
+    public function getIssues(): string
     {
         return $this->issues;
     }
@@ -52,7 +52,7 @@ class InstallationTokenPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setIssues(string $issues) : self
+    public function setIssues(string $issues): self
     {
         $this->initialized['issues'] = true;
         $this->issues = $issues;
@@ -63,7 +63,7 @@ class InstallationTokenPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getContents() : string
+    public function getContents(): string
     {
         return $this->contents;
     }
@@ -74,7 +74,7 @@ class InstallationTokenPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setContents(string $contents) : self
+    public function setContents(string $contents): self
     {
         $this->initialized['contents'] = true;
         $this->contents = $contents;
@@ -85,7 +85,7 @@ class InstallationTokenPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getMetadata() : string
+    public function getMetadata(): string
     {
         return $this->metadata;
     }
@@ -96,7 +96,7 @@ class InstallationTokenPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setMetadata(string $metadata) : self
+    public function setMetadata(string $metadata): self
     {
         $this->initialized['metadata'] = true;
         $this->metadata = $metadata;
@@ -107,7 +107,7 @@ class InstallationTokenPermissions extends \ArrayObject
      *
      * @return string
      */
-    public function getSingleFile() : string
+    public function getSingleFile(): string
     {
         return $this->singleFile;
     }
@@ -118,7 +118,7 @@ class InstallationTokenPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setSingleFile(string $singleFile) : self
+    public function setSingleFile(string $singleFile): self
     {
         $this->initialized['singleFile'] = true;
         $this->singleFile = $singleFile;

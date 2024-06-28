@@ -8,7 +8,7 @@ class MetadataStatus
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class MetadataStatus
      *
      * @return list<string>|null
      */
-    public function getContentOrLayerSchemaIds() : ?array
+    public function getContentOrLayerSchemaIds(): ?array
     {
         return $this->contentOrLayerSchemaIds;
     }
@@ -52,7 +52,7 @@ class MetadataStatus
      *
      * @return self
      */
-    public function setContentOrLayerSchemaIds(?array $contentOrLayerSchemaIds) : self
+    public function setContentOrLayerSchemaIds(?array $contentOrLayerSchemaIds): self
     {
         $this->initialized['contentOrLayerSchemaIds'] = true;
         $this->contentOrLayerSchemaIds = $contentOrLayerSchemaIds;
@@ -63,7 +63,7 @@ class MetadataStatus
      *
      * @return list<string>|null
      */
-    public function getListSchemaIds() : ?array
+    public function getListSchemaIds(): ?array
     {
         return $this->listSchemaIds;
     }
@@ -74,7 +74,7 @@ class MetadataStatus
      *
      * @return self
      */
-    public function setListSchemaIds(?array $listSchemaIds) : self
+    public function setListSchemaIds(?array $listSchemaIds): self
     {
         $this->initialized['listSchemaIds'] = true;
         $this->listSchemaIds = $listSchemaIds;
@@ -96,7 +96,7 @@ class MetadataStatus
      *
      * @return self
      */
-    public function setState($state) : self
+    public function setState($state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -107,7 +107,7 @@ class MetadataStatus
      *
      * @return array<string, list<string>>|null
      */
-    public function getFieldIdsToCleanup() : ?iterable
+    public function getFieldIdsToCleanup(): ?iterable
     {
         return $this->fieldIdsToCleanup;
     }
@@ -118,7 +118,7 @@ class MetadataStatus
      *
      * @return self
      */
-    public function setFieldIdsToCleanup(?iterable $fieldIdsToCleanup) : self
+    public function setFieldIdsToCleanup(?iterable $fieldIdsToCleanup): self
     {
         $this->initialized['fieldIdsToCleanup'] = true;
         $this->fieldIdsToCleanup = $fieldIdsToCleanup;

@@ -8,7 +8,7 @@ class Blob extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class Blob extends \ArrayObject
      *
      * @return string
      */
-    public function getContent() : string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -70,7 +70,7 @@ class Blob extends \ArrayObject
      *
      * @return self
      */
-    public function setContent(string $content) : self
+    public function setContent(string $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -81,7 +81,7 @@ class Blob extends \ArrayObject
      *
      * @return string
      */
-    public function getEncoding() : string
+    public function getEncoding(): string
     {
         return $this->encoding;
     }
@@ -92,7 +92,7 @@ class Blob extends \ArrayObject
      *
      * @return self
      */
-    public function setEncoding(string $encoding) : self
+    public function setEncoding(string $encoding): self
     {
         $this->initialized['encoding'] = true;
         $this->encoding = $encoding;
@@ -103,7 +103,7 @@ class Blob extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -114,7 +114,7 @@ class Blob extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -125,7 +125,7 @@ class Blob extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -136,7 +136,7 @@ class Blob extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -147,7 +147,7 @@ class Blob extends \ArrayObject
      *
      * @return int|null
      */
-    public function getSize() : ?int
+    public function getSize(): ?int
     {
         return $this->size;
     }
@@ -158,7 +158,7 @@ class Blob extends \ArrayObject
      *
      * @return self
      */
-    public function setSize(?int $size) : self
+    public function setSize(?int $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;
@@ -169,7 +169,7 @@ class Blob extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -180,7 +180,7 @@ class Blob extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -191,7 +191,7 @@ class Blob extends \ArrayObject
      *
      * @return string
      */
-    public function getHighlightedContent() : string
+    public function getHighlightedContent(): string
     {
         return $this->highlightedContent;
     }
@@ -202,7 +202,7 @@ class Blob extends \ArrayObject
      *
      * @return self
      */
-    public function setHighlightedContent(string $highlightedContent) : self
+    public function setHighlightedContent(string $highlightedContent): self
     {
         $this->initialized['highlightedContent'] = true;
         $this->highlightedContent = $highlightedContent;

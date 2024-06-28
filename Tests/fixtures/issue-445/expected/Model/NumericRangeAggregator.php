@@ -8,7 +8,7 @@ class NumericRangeAggregator extends AggregatorBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class NumericRangeAggregator extends AggregatorBase
      *
      * @return string|null
      */
-    public function getField() : ?string
+    public function getField(): ?string
     {
         return $this->field;
     }
@@ -40,7 +40,7 @@ class NumericRangeAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setField(?string $field) : self
+    public function setField(?string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -51,7 +51,7 @@ class NumericRangeAggregator extends AggregatorBase
      *
      * @return list<NumericRangeForAggregator>
      */
-    public function getRanges() : array
+    public function getRanges(): array
     {
         return $this->ranges;
     }
@@ -62,7 +62,7 @@ class NumericRangeAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setRanges(array $ranges) : self
+    public function setRanges(array $ranges): self
     {
         $this->initialized['ranges'] = true;
         $this->ranges = $ranges;

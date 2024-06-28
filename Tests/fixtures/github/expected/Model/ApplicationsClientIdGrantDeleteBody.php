@@ -8,7 +8,7 @@ class ApplicationsClientIdGrantDeleteBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ApplicationsClientIdGrantDeleteBody extends \ArrayObject
      *
      * @return string
      */
-    public function getAccessToken() : string
+    public function getAccessToken(): string
     {
         return $this->accessToken;
     }
@@ -34,7 +34,7 @@ class ApplicationsClientIdGrantDeleteBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAccessToken(string $accessToken) : self
+    public function setAccessToken(string $accessToken): self
     {
         $this->initialized['accessToken'] = true;
         $this->accessToken = $accessToken;

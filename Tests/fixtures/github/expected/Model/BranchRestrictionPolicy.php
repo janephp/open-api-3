@@ -8,7 +8,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -70,7 +70,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -81,7 +81,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return string
      */
-    public function getUsersUrl() : string
+    public function getUsersUrl(): string
     {
         return $this->usersUrl;
     }
@@ -92,7 +92,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return self
      */
-    public function setUsersUrl(string $usersUrl) : self
+    public function setUsersUrl(string $usersUrl): self
     {
         $this->initialized['usersUrl'] = true;
         $this->usersUrl = $usersUrl;
@@ -103,7 +103,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return string
      */
-    public function getTeamsUrl() : string
+    public function getTeamsUrl(): string
     {
         return $this->teamsUrl;
     }
@@ -114,7 +114,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return self
      */
-    public function setTeamsUrl(string $teamsUrl) : self
+    public function setTeamsUrl(string $teamsUrl): self
     {
         $this->initialized['teamsUrl'] = true;
         $this->teamsUrl = $teamsUrl;
@@ -125,7 +125,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return string
      */
-    public function getAppsUrl() : string
+    public function getAppsUrl(): string
     {
         return $this->appsUrl;
     }
@@ -136,7 +136,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return self
      */
-    public function setAppsUrl(string $appsUrl) : self
+    public function setAppsUrl(string $appsUrl): self
     {
         $this->initialized['appsUrl'] = true;
         $this->appsUrl = $appsUrl;
@@ -147,7 +147,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return list<BranchRestrictionPolicyUsersItem>
      */
-    public function getUsers() : array
+    public function getUsers(): array
     {
         return $this->users;
     }
@@ -158,7 +158,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return self
      */
-    public function setUsers(array $users) : self
+    public function setUsers(array $users): self
     {
         $this->initialized['users'] = true;
         $this->users = $users;
@@ -169,7 +169,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return list<BranchRestrictionPolicyTeamsItem>
      */
-    public function getTeams() : array
+    public function getTeams(): array
     {
         return $this->teams;
     }
@@ -180,7 +180,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return self
      */
-    public function setTeams(array $teams) : self
+    public function setTeams(array $teams): self
     {
         $this->initialized['teams'] = true;
         $this->teams = $teams;
@@ -191,7 +191,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return list<BranchRestrictionPolicyAppsItem>
      */
-    public function getApps() : array
+    public function getApps(): array
     {
         return $this->apps;
     }
@@ -202,7 +202,7 @@ class BranchRestrictionPolicy extends \ArrayObject
      *
      * @return self
      */
-    public function setApps(array $apps) : self
+    public function setApps(array $apps): self
     {
         $this->initialized['apps'] = true;
         $this->apps = $apps;

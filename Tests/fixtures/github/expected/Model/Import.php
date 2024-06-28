@@ -8,7 +8,7 @@ class Import extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -155,7 +155,7 @@ class Import extends \ArrayObject
      *
      * @return string|null
      */
-    public function getVcs() : ?string
+    public function getVcs(): ?string
     {
         return $this->vcs;
     }
@@ -166,7 +166,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setVcs(?string $vcs) : self
+    public function setVcs(?string $vcs): self
     {
         $this->initialized['vcs'] = true;
         $this->vcs = $vcs;
@@ -177,7 +177,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getUseLfs() : string
+    public function getUseLfs(): string
     {
         return $this->useLfs;
     }
@@ -188,7 +188,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setUseLfs(string $useLfs) : self
+    public function setUseLfs(string $useLfs): self
     {
         $this->initialized['useLfs'] = true;
         $this->useLfs = $useLfs;
@@ -199,7 +199,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getVcsUrl() : string
+    public function getVcsUrl(): string
     {
         return $this->vcsUrl;
     }
@@ -210,7 +210,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setVcsUrl(string $vcsUrl) : self
+    public function setVcsUrl(string $vcsUrl): self
     {
         $this->initialized['vcsUrl'] = true;
         $this->vcsUrl = $vcsUrl;
@@ -221,7 +221,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getSvcRoot() : string
+    public function getSvcRoot(): string
     {
         return $this->svcRoot;
     }
@@ -232,7 +232,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setSvcRoot(string $svcRoot) : self
+    public function setSvcRoot(string $svcRoot): self
     {
         $this->initialized['svcRoot'] = true;
         $this->svcRoot = $svcRoot;
@@ -243,7 +243,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getTfvcProject() : string
+    public function getTfvcProject(): string
     {
         return $this->tfvcProject;
     }
@@ -254,7 +254,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setTfvcProject(string $tfvcProject) : self
+    public function setTfvcProject(string $tfvcProject): self
     {
         $this->initialized['tfvcProject'] = true;
         $this->tfvcProject = $tfvcProject;
@@ -265,7 +265,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -276,7 +276,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -287,7 +287,7 @@ class Import extends \ArrayObject
      *
      * @return string|null
      */
-    public function getStatusText() : ?string
+    public function getStatusText(): ?string
     {
         return $this->statusText;
     }
@@ -298,7 +298,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setStatusText(?string $statusText) : self
+    public function setStatusText(?string $statusText): self
     {
         $this->initialized['statusText'] = true;
         $this->statusText = $statusText;
@@ -309,7 +309,7 @@ class Import extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFailedStep() : ?string
+    public function getFailedStep(): ?string
     {
         return $this->failedStep;
     }
@@ -320,7 +320,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setFailedStep(?string $failedStep) : self
+    public function setFailedStep(?string $failedStep): self
     {
         $this->initialized['failedStep'] = true;
         $this->failedStep = $failedStep;
@@ -331,7 +331,7 @@ class Import extends \ArrayObject
      *
      * @return string|null
      */
-    public function getErrorMessage() : ?string
+    public function getErrorMessage(): ?string
     {
         return $this->errorMessage;
     }
@@ -342,7 +342,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setErrorMessage(?string $errorMessage) : self
+    public function setErrorMessage(?string $errorMessage): self
     {
         $this->initialized['errorMessage'] = true;
         $this->errorMessage = $errorMessage;
@@ -353,7 +353,7 @@ class Import extends \ArrayObject
      *
      * @return int|null
      */
-    public function getImportPercent() : ?int
+    public function getImportPercent(): ?int
     {
         return $this->importPercent;
     }
@@ -364,7 +364,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setImportPercent(?int $importPercent) : self
+    public function setImportPercent(?int $importPercent): self
     {
         $this->initialized['importPercent'] = true;
         $this->importPercent = $importPercent;
@@ -375,7 +375,7 @@ class Import extends \ArrayObject
      *
      * @return int|null
      */
-    public function getCommitCount() : ?int
+    public function getCommitCount(): ?int
     {
         return $this->commitCount;
     }
@@ -386,7 +386,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitCount(?int $commitCount) : self
+    public function setCommitCount(?int $commitCount): self
     {
         $this->initialized['commitCount'] = true;
         $this->commitCount = $commitCount;
@@ -397,7 +397,7 @@ class Import extends \ArrayObject
      *
      * @return int|null
      */
-    public function getPushPercent() : ?int
+    public function getPushPercent(): ?int
     {
         return $this->pushPercent;
     }
@@ -408,7 +408,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setPushPercent(?int $pushPercent) : self
+    public function setPushPercent(?int $pushPercent): self
     {
         $this->initialized['pushPercent'] = true;
         $this->pushPercent = $pushPercent;
@@ -419,7 +419,7 @@ class Import extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasLargeFiles() : bool
+    public function getHasLargeFiles(): bool
     {
         return $this->hasLargeFiles;
     }
@@ -430,7 +430,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setHasLargeFiles(bool $hasLargeFiles) : self
+    public function setHasLargeFiles(bool $hasLargeFiles): self
     {
         $this->initialized['hasLargeFiles'] = true;
         $this->hasLargeFiles = $hasLargeFiles;
@@ -441,7 +441,7 @@ class Import extends \ArrayObject
      *
      * @return int
      */
-    public function getLargeFilesSize() : int
+    public function getLargeFilesSize(): int
     {
         return $this->largeFilesSize;
     }
@@ -452,7 +452,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setLargeFilesSize(int $largeFilesSize) : self
+    public function setLargeFilesSize(int $largeFilesSize): self
     {
         $this->initialized['largeFilesSize'] = true;
         $this->largeFilesSize = $largeFilesSize;
@@ -463,7 +463,7 @@ class Import extends \ArrayObject
      *
      * @return int
      */
-    public function getLargeFilesCount() : int
+    public function getLargeFilesCount(): int
     {
         return $this->largeFilesCount;
     }
@@ -474,7 +474,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setLargeFilesCount(int $largeFilesCount) : self
+    public function setLargeFilesCount(int $largeFilesCount): self
     {
         $this->initialized['largeFilesCount'] = true;
         $this->largeFilesCount = $largeFilesCount;
@@ -485,7 +485,7 @@ class Import extends \ArrayObject
      *
      * @return list<ImportProjectChoicesItem>
      */
-    public function getProjectChoices() : array
+    public function getProjectChoices(): array
     {
         return $this->projectChoices;
     }
@@ -496,7 +496,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setProjectChoices(array $projectChoices) : self
+    public function setProjectChoices(array $projectChoices): self
     {
         $this->initialized['projectChoices'] = true;
         $this->projectChoices = $projectChoices;
@@ -507,7 +507,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -518,7 +518,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -529,7 +529,7 @@ class Import extends \ArrayObject
      *
      * @return int|null
      */
-    public function getAuthorsCount() : ?int
+    public function getAuthorsCount(): ?int
     {
         return $this->authorsCount;
     }
@@ -540,7 +540,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorsCount(?int $authorsCount) : self
+    public function setAuthorsCount(?int $authorsCount): self
     {
         $this->initialized['authorsCount'] = true;
         $this->authorsCount = $authorsCount;
@@ -551,7 +551,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -562,7 +562,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -573,7 +573,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -584,7 +584,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -595,7 +595,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorsUrl() : string
+    public function getAuthorsUrl(): string
     {
         return $this->authorsUrl;
     }
@@ -606,7 +606,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorsUrl(string $authorsUrl) : self
+    public function setAuthorsUrl(string $authorsUrl): self
     {
         $this->initialized['authorsUrl'] = true;
         $this->authorsUrl = $authorsUrl;
@@ -617,7 +617,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoryUrl() : string
+    public function getRepositoryUrl(): string
     {
         return $this->repositoryUrl;
     }
@@ -628,7 +628,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryUrl(string $repositoryUrl) : self
+    public function setRepositoryUrl(string $repositoryUrl): self
     {
         $this->initialized['repositoryUrl'] = true;
         $this->repositoryUrl = $repositoryUrl;
@@ -639,7 +639,7 @@ class Import extends \ArrayObject
      *
      * @return string
      */
-    public function getSvnRoot() : string
+    public function getSvnRoot(): string
     {
         return $this->svnRoot;
     }
@@ -650,7 +650,7 @@ class Import extends \ArrayObject
      *
      * @return self
      */
-    public function setSvnRoot(string $svnRoot) : self
+    public function setSvnRoot(string $svnRoot): self
     {
         $this->initialized['svnRoot'] = true;
         $this->svnRoot = $svnRoot;

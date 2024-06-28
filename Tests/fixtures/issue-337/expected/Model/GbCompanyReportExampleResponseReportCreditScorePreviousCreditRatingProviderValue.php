@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProvide
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProvide
      *
      * @return string
      */
-    public function getMaxValue() : string
+    public function getMaxValue(): string
     {
         return $this->maxValue;
     }
@@ -46,7 +46,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProvide
      *
      * @return self
      */
-    public function setMaxValue(string $maxValue) : self
+    public function setMaxValue(string $maxValue): self
     {
         $this->initialized['maxValue'] = true;
         $this->maxValue = $maxValue;
@@ -57,7 +57,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProvide
      *
      * @return string
      */
-    public function getMinValue() : string
+    public function getMinValue(): string
     {
         return $this->minValue;
     }
@@ -68,7 +68,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProvide
      *
      * @return self
      */
-    public function setMinValue(string $minValue) : self
+    public function setMinValue(string $minValue): self
     {
         $this->initialized['minValue'] = true;
         $this->minValue = $minValue;
@@ -79,7 +79,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProvide
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -90,7 +90,7 @@ class GbCompanyReportExampleResponseReportCreditScorePreviousCreditRatingProvide
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

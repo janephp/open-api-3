@@ -8,7 +8,7 @@ class FieldOverwriteSingleTagbox extends FieldOverwriteBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -56,7 +56,7 @@ class FieldOverwriteSingleTagbox extends FieldOverwriteBase
     *
     * @return self
     */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -67,7 +67,7 @@ class FieldOverwriteSingleTagbox extends FieldOverwriteBase
      *
      * @return bool
      */
-    public function getOverwriteFilter() : bool
+    public function getOverwriteFilter(): bool
     {
         return $this->overwriteFilter;
     }
@@ -78,7 +78,7 @@ class FieldOverwriteSingleTagbox extends FieldOverwriteBase
      *
      * @return self
      */
-    public function setOverwriteFilter(bool $overwriteFilter) : self
+    public function setOverwriteFilter(bool $overwriteFilter): self
     {
         $this->initialized['overwriteFilter'] = true;
         $this->overwriteFilter = $overwriteFilter;
@@ -90,7 +90,7 @@ class FieldOverwriteSingleTagbox extends FieldOverwriteBase
     *
     * @return string|null
     */
-    public function getListItemCreateTemplate() : ?string
+    public function getListItemCreateTemplate(): ?string
     {
         return $this->listItemCreateTemplate;
     }
@@ -102,7 +102,7 @@ class FieldOverwriteSingleTagbox extends FieldOverwriteBase
     *
     * @return self
     */
-    public function setListItemCreateTemplate(?string $listItemCreateTemplate) : self
+    public function setListItemCreateTemplate(?string $listItemCreateTemplate): self
     {
         $this->initialized['listItemCreateTemplate'] = true;
         $this->listItemCreateTemplate = $listItemCreateTemplate;
@@ -113,7 +113,7 @@ class FieldOverwriteSingleTagbox extends FieldOverwriteBase
      *
      * @return bool
      */
-    public function getOverwriteListItemCreateTemplate() : bool
+    public function getOverwriteListItemCreateTemplate(): bool
     {
         return $this->overwriteListItemCreateTemplate;
     }
@@ -124,7 +124,7 @@ class FieldOverwriteSingleTagbox extends FieldOverwriteBase
      *
      * @return self
      */
-    public function setOverwriteListItemCreateTemplate(bool $overwriteListItemCreateTemplate) : self
+    public function setOverwriteListItemCreateTemplate(bool $overwriteListItemCreateTemplate): self
     {
         $this->initialized['overwriteListItemCreateTemplate'] = true;
         $this->overwriteListItemCreateTemplate = $overwriteListItemCreateTemplate;

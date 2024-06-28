@@ -8,7 +8,7 @@ class PrivateUser extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -269,7 +269,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getLogin() : string
+    public function getLogin(): string
     {
         return $this->login;
     }
@@ -280,7 +280,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setLogin(string $login) : self
+    public function setLogin(string $login): self
     {
         $this->initialized['login'] = true;
         $this->login = $login;
@@ -291,7 +291,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -302,7 +302,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -313,7 +313,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -324,7 +324,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -335,7 +335,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getAvatarUrl() : string
+    public function getAvatarUrl(): string
     {
         return $this->avatarUrl;
     }
@@ -346,7 +346,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setAvatarUrl(string $avatarUrl) : self
+    public function setAvatarUrl(string $avatarUrl): self
     {
         $this->initialized['avatarUrl'] = true;
         $this->avatarUrl = $avatarUrl;
@@ -357,7 +357,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getGravatarId() : ?string
+    public function getGravatarId(): ?string
     {
         return $this->gravatarId;
     }
@@ -368,7 +368,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setGravatarId(?string $gravatarId) : self
+    public function setGravatarId(?string $gravatarId): self
     {
         $this->initialized['gravatarId'] = true;
         $this->gravatarId = $gravatarId;
@@ -379,7 +379,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -390,7 +390,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -401,7 +401,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -412,7 +412,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -423,7 +423,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getFollowersUrl() : string
+    public function getFollowersUrl(): string
     {
         return $this->followersUrl;
     }
@@ -434,7 +434,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowersUrl(string $followersUrl) : self
+    public function setFollowersUrl(string $followersUrl): self
     {
         $this->initialized['followersUrl'] = true;
         $this->followersUrl = $followersUrl;
@@ -445,7 +445,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getFollowingUrl() : string
+    public function getFollowingUrl(): string
     {
         return $this->followingUrl;
     }
@@ -456,7 +456,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowingUrl(string $followingUrl) : self
+    public function setFollowingUrl(string $followingUrl): self
     {
         $this->initialized['followingUrl'] = true;
         $this->followingUrl = $followingUrl;
@@ -467,7 +467,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getGistsUrl() : string
+    public function getGistsUrl(): string
     {
         return $this->gistsUrl;
     }
@@ -478,7 +478,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setGistsUrl(string $gistsUrl) : self
+    public function setGistsUrl(string $gistsUrl): self
     {
         $this->initialized['gistsUrl'] = true;
         $this->gistsUrl = $gistsUrl;
@@ -489,7 +489,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getStarredUrl() : string
+    public function getStarredUrl(): string
     {
         return $this->starredUrl;
     }
@@ -500,7 +500,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setStarredUrl(string $starredUrl) : self
+    public function setStarredUrl(string $starredUrl): self
     {
         $this->initialized['starredUrl'] = true;
         $this->starredUrl = $starredUrl;
@@ -511,7 +511,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getSubscriptionsUrl() : string
+    public function getSubscriptionsUrl(): string
     {
         return $this->subscriptionsUrl;
     }
@@ -522,7 +522,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setSubscriptionsUrl(string $subscriptionsUrl) : self
+    public function setSubscriptionsUrl(string $subscriptionsUrl): self
     {
         $this->initialized['subscriptionsUrl'] = true;
         $this->subscriptionsUrl = $subscriptionsUrl;
@@ -533,7 +533,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationsUrl() : string
+    public function getOrganizationsUrl(): string
     {
         return $this->organizationsUrl;
     }
@@ -544,7 +544,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationsUrl(string $organizationsUrl) : self
+    public function setOrganizationsUrl(string $organizationsUrl): self
     {
         $this->initialized['organizationsUrl'] = true;
         $this->organizationsUrl = $organizationsUrl;
@@ -555,7 +555,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getReposUrl() : string
+    public function getReposUrl(): string
     {
         return $this->reposUrl;
     }
@@ -566,7 +566,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setReposUrl(string $reposUrl) : self
+    public function setReposUrl(string $reposUrl): self
     {
         $this->initialized['reposUrl'] = true;
         $this->reposUrl = $reposUrl;
@@ -577,7 +577,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getEventsUrl() : string
+    public function getEventsUrl(): string
     {
         return $this->eventsUrl;
     }
@@ -588,7 +588,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setEventsUrl(string $eventsUrl) : self
+    public function setEventsUrl(string $eventsUrl): self
     {
         $this->initialized['eventsUrl'] = true;
         $this->eventsUrl = $eventsUrl;
@@ -599,7 +599,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getReceivedEventsUrl() : string
+    public function getReceivedEventsUrl(): string
     {
         return $this->receivedEventsUrl;
     }
@@ -610,7 +610,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setReceivedEventsUrl(string $receivedEventsUrl) : self
+    public function setReceivedEventsUrl(string $receivedEventsUrl): self
     {
         $this->initialized['receivedEventsUrl'] = true;
         $this->receivedEventsUrl = $receivedEventsUrl;
@@ -621,7 +621,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -632,7 +632,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -643,7 +643,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return bool
      */
-    public function getSiteAdmin() : bool
+    public function getSiteAdmin(): bool
     {
         return $this->siteAdmin;
     }
@@ -654,7 +654,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setSiteAdmin(bool $siteAdmin) : self
+    public function setSiteAdmin(bool $siteAdmin): self
     {
         $this->initialized['siteAdmin'] = true;
         $this->siteAdmin = $siteAdmin;
@@ -665,7 +665,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -676,7 +676,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setName(?string $name) : self
+    public function setName(?string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -687,7 +687,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCompany() : ?string
+    public function getCompany(): ?string
     {
         return $this->company;
     }
@@ -698,7 +698,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setCompany(?string $company) : self
+    public function setCompany(?string $company): self
     {
         $this->initialized['company'] = true;
         $this->company = $company;
@@ -709,7 +709,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getBlog() : ?string
+    public function getBlog(): ?string
     {
         return $this->blog;
     }
@@ -720,7 +720,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setBlog(?string $blog) : self
+    public function setBlog(?string $blog): self
     {
         $this->initialized['blog'] = true;
         $this->blog = $blog;
@@ -731,7 +731,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLocation() : ?string
+    public function getLocation(): ?string
     {
         return $this->location;
     }
@@ -742,7 +742,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setLocation(?string $location) : self
+    public function setLocation(?string $location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -753,7 +753,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getEmail() : ?string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -764,7 +764,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(?string $email) : self
+    public function setEmail(?string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -775,7 +775,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return bool|null
      */
-    public function getHireable() : ?bool
+    public function getHireable(): ?bool
     {
         return $this->hireable;
     }
@@ -786,7 +786,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setHireable(?bool $hireable) : self
+    public function setHireable(?bool $hireable): self
     {
         $this->initialized['hireable'] = true;
         $this->hireable = $hireable;
@@ -797,7 +797,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getBio() : ?string
+    public function getBio(): ?string
     {
         return $this->bio;
     }
@@ -808,7 +808,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setBio(?string $bio) : self
+    public function setBio(?string $bio): self
     {
         $this->initialized['bio'] = true;
         $this->bio = $bio;
@@ -819,7 +819,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTwitterUsername() : ?string
+    public function getTwitterUsername(): ?string
     {
         return $this->twitterUsername;
     }
@@ -830,7 +830,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setTwitterUsername(?string $twitterUsername) : self
+    public function setTwitterUsername(?string $twitterUsername): self
     {
         $this->initialized['twitterUsername'] = true;
         $this->twitterUsername = $twitterUsername;
@@ -841,7 +841,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getPublicRepos() : int
+    public function getPublicRepos(): int
     {
         return $this->publicRepos;
     }
@@ -852,7 +852,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setPublicRepos(int $publicRepos) : self
+    public function setPublicRepos(int $publicRepos): self
     {
         $this->initialized['publicRepos'] = true;
         $this->publicRepos = $publicRepos;
@@ -863,7 +863,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getPublicGists() : int
+    public function getPublicGists(): int
     {
         return $this->publicGists;
     }
@@ -874,7 +874,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setPublicGists(int $publicGists) : self
+    public function setPublicGists(int $publicGists): self
     {
         $this->initialized['publicGists'] = true;
         $this->publicGists = $publicGists;
@@ -885,7 +885,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getFollowers() : int
+    public function getFollowers(): int
     {
         return $this->followers;
     }
@@ -896,7 +896,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowers(int $followers) : self
+    public function setFollowers(int $followers): self
     {
         $this->initialized['followers'] = true;
         $this->followers = $followers;
@@ -907,7 +907,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getFollowing() : int
+    public function getFollowing(): int
     {
         return $this->following;
     }
@@ -918,7 +918,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowing(int $following) : self
+    public function setFollowing(int $following): self
     {
         $this->initialized['following'] = true;
         $this->following = $following;
@@ -929,7 +929,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -940,7 +940,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -951,7 +951,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -962,7 +962,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -973,7 +973,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getPrivateGists() : int
+    public function getPrivateGists(): int
     {
         return $this->privateGists;
     }
@@ -984,7 +984,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivateGists(int $privateGists) : self
+    public function setPrivateGists(int $privateGists): self
     {
         $this->initialized['privateGists'] = true;
         $this->privateGists = $privateGists;
@@ -995,7 +995,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalPrivateRepos() : int
+    public function getTotalPrivateRepos(): int
     {
         return $this->totalPrivateRepos;
     }
@@ -1006,7 +1006,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalPrivateRepos(int $totalPrivateRepos) : self
+    public function setTotalPrivateRepos(int $totalPrivateRepos): self
     {
         $this->initialized['totalPrivateRepos'] = true;
         $this->totalPrivateRepos = $totalPrivateRepos;
@@ -1017,7 +1017,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getOwnedPrivateRepos() : int
+    public function getOwnedPrivateRepos(): int
     {
         return $this->ownedPrivateRepos;
     }
@@ -1028,7 +1028,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setOwnedPrivateRepos(int $ownedPrivateRepos) : self
+    public function setOwnedPrivateRepos(int $ownedPrivateRepos): self
     {
         $this->initialized['ownedPrivateRepos'] = true;
         $this->ownedPrivateRepos = $ownedPrivateRepos;
@@ -1039,7 +1039,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getDiskUsage() : int
+    public function getDiskUsage(): int
     {
         return $this->diskUsage;
     }
@@ -1050,7 +1050,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setDiskUsage(int $diskUsage) : self
+    public function setDiskUsage(int $diskUsage): self
     {
         $this->initialized['diskUsage'] = true;
         $this->diskUsage = $diskUsage;
@@ -1061,7 +1061,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return int
      */
-    public function getCollaborators() : int
+    public function getCollaborators(): int
     {
         return $this->collaborators;
     }
@@ -1072,7 +1072,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setCollaborators(int $collaborators) : self
+    public function setCollaborators(int $collaborators): self
     {
         $this->initialized['collaborators'] = true;
         $this->collaborators = $collaborators;
@@ -1083,7 +1083,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return bool
      */
-    public function getTwoFactorAuthentication() : bool
+    public function getTwoFactorAuthentication(): bool
     {
         return $this->twoFactorAuthentication;
     }
@@ -1094,7 +1094,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setTwoFactorAuthentication(bool $twoFactorAuthentication) : self
+    public function setTwoFactorAuthentication(bool $twoFactorAuthentication): self
     {
         $this->initialized['twoFactorAuthentication'] = true;
         $this->twoFactorAuthentication = $twoFactorAuthentication;
@@ -1105,7 +1105,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return PrivateUserPlan
      */
-    public function getPlan() : PrivateUserPlan
+    public function getPlan(): PrivateUserPlan
     {
         return $this->plan;
     }
@@ -1116,7 +1116,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setPlan(PrivateUserPlan $plan) : self
+    public function setPlan(PrivateUserPlan $plan): self
     {
         $this->initialized['plan'] = true;
         $this->plan = $plan;
@@ -1127,7 +1127,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getSuspendedAt() : ?\DateTime
+    public function getSuspendedAt(): ?\DateTime
     {
         return $this->suspendedAt;
     }
@@ -1138,7 +1138,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setSuspendedAt(?\DateTime $suspendedAt) : self
+    public function setSuspendedAt(?\DateTime $suspendedAt): self
     {
         $this->initialized['suspendedAt'] = true;
         $this->suspendedAt = $suspendedAt;
@@ -1149,7 +1149,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return bool
      */
-    public function getBusinessPlus() : bool
+    public function getBusinessPlus(): bool
     {
         return $this->businessPlus;
     }
@@ -1160,7 +1160,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setBusinessPlus(bool $businessPlus) : self
+    public function setBusinessPlus(bool $businessPlus): self
     {
         $this->initialized['businessPlus'] = true;
         $this->businessPlus = $businessPlus;
@@ -1171,7 +1171,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return string
      */
-    public function getLdapDn() : string
+    public function getLdapDn(): string
     {
         return $this->ldapDn;
     }
@@ -1182,7 +1182,7 @@ class PrivateUser extends \ArrayObject
      *
      * @return self
      */
-    public function setLdapDn(string $ldapDn) : self
+    public function setLdapDn(string $ldapDn): self
     {
         $this->initialized['ldapDn'] = true;
         $this->ldapDn = $ldapDn;

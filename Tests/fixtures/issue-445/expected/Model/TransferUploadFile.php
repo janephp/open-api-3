@@ -8,7 +8,7 @@ class TransferUploadFile extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -39,7 +39,7 @@ class TransferUploadFile extends \ArrayObject
      *
      * @return string|null
      */
-    public function getIdentifier() : ?string
+    public function getIdentifier(): ?string
     {
         return $this->identifier;
     }
@@ -52,7 +52,7 @@ class TransferUploadFile extends \ArrayObject
      *
      * @return self
      */
-    public function setIdentifier(?string $identifier) : self
+    public function setIdentifier(?string $identifier): self
     {
         $this->initialized['identifier'] = true;
         $this->identifier = $identifier;
@@ -63,7 +63,7 @@ class TransferUploadFile extends \ArrayObject
      *
      * @return string|null
      */
-    public function getRequestId() : ?string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -74,7 +74,7 @@ class TransferUploadFile extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestId(?string $requestId) : self
+    public function setRequestId(?string $requestId): self
     {
         $this->initialized['requestId'] = true;
         $this->requestId = $requestId;
@@ -85,7 +85,7 @@ class TransferUploadFile extends \ArrayObject
      *
      * @return string
      */
-    public function getFileName() : string
+    public function getFileName(): string
     {
         return $this->fileName;
     }
@@ -96,7 +96,7 @@ class TransferUploadFile extends \ArrayObject
      *
      * @return self
      */
-    public function setFileName(string $fileName) : self
+    public function setFileName(string $fileName): self
     {
         $this->initialized['fileName'] = true;
         $this->fileName = $fileName;

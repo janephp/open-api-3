@@ -8,7 +8,7 @@ class CheckSuitePreferencePreferences extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class CheckSuitePreferencePreferences extends \ArrayObject
      *
      * @return list<CheckSuitePreferencePreferencesAutoTriggerChecksItem>
      */
-    public function getAutoTriggerChecks() : array
+    public function getAutoTriggerChecks(): array
     {
         return $this->autoTriggerChecks;
     }
@@ -34,7 +34,7 @@ class CheckSuitePreferencePreferences extends \ArrayObject
      *
      * @return self
      */
-    public function setAutoTriggerChecks(array $autoTriggerChecks) : self
+    public function setAutoTriggerChecks(array $autoTriggerChecks): self
     {
         $this->initialized['autoTriggerChecks'] = true;
         $this->autoTriggerChecks = $autoTriggerChecks;

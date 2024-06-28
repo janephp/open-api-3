@@ -8,7 +8,7 @@ class PullRequestReviewLinks extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class PullRequestReviewLinks extends \ArrayObject
      *
      * @return PullRequestReviewLinksHtml
      */
-    public function getHtml() : PullRequestReviewLinksHtml
+    public function getHtml(): PullRequestReviewLinksHtml
     {
         return $this->html;
     }
@@ -40,7 +40,7 @@ class PullRequestReviewLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setHtml(PullRequestReviewLinksHtml $html) : self
+    public function setHtml(PullRequestReviewLinksHtml $html): self
     {
         $this->initialized['html'] = true;
         $this->html = $html;
@@ -51,7 +51,7 @@ class PullRequestReviewLinks extends \ArrayObject
      *
      * @return PullRequestReviewLinksPullRequest
      */
-    public function getPullRequest() : PullRequestReviewLinksPullRequest
+    public function getPullRequest(): PullRequestReviewLinksPullRequest
     {
         return $this->pullRequest;
     }
@@ -62,7 +62,7 @@ class PullRequestReviewLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequest(PullRequestReviewLinksPullRequest $pullRequest) : self
+    public function setPullRequest(PullRequestReviewLinksPullRequest $pullRequest): self
     {
         $this->initialized['pullRequest'] = true;
         $this->pullRequest = $pullRequest;

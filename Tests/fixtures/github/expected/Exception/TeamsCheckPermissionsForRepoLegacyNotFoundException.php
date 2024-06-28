@@ -13,7 +13,7 @@ class TeamsCheckPermissionsForRepoLegacyNotFoundException extends NotFoundExcept
         parent::__construct('Response if repository is not managed by this team');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

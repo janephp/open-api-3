@@ -8,7 +8,7 @@ class IssueEventRename extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class IssueEventRename extends \ArrayObject
      *
      * @return string
      */
-    public function getFrom() : string
+    public function getFrom(): string
     {
         return $this->from;
     }
@@ -40,7 +40,7 @@ class IssueEventRename extends \ArrayObject
      *
      * @return self
      */
-    public function setFrom(string $from) : self
+    public function setFrom(string $from): self
     {
         $this->initialized['from'] = true;
         $this->from = $from;
@@ -51,7 +51,7 @@ class IssueEventRename extends \ArrayObject
      *
      * @return string
      */
-    public function getTo() : string
+    public function getTo(): string
     {
         return $this->to;
     }
@@ -62,7 +62,7 @@ class IssueEventRename extends \ArrayObject
      *
      * @return self
      */
-    public function setTo(string $to) : self
+    public function setTo(string $to): self
     {
         $this->initialized['to'] = true;
         $this->to = $to;

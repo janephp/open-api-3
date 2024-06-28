@@ -8,7 +8,7 @@ class DownloadTrackingInfo
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class DownloadTrackingInfo
      *
      * @return string|null
      */
-    public function getContentId() : ?string
+    public function getContentId(): ?string
     {
         return $this->contentId;
     }
@@ -58,7 +58,7 @@ class DownloadTrackingInfo
      *
      * @return self
      */
-    public function setContentId(?string $contentId) : self
+    public function setContentId(?string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;
@@ -69,7 +69,7 @@ class DownloadTrackingInfo
      *
      * @return string|null
      */
-    public function getOutputFormatId() : ?string
+    public function getOutputFormatId(): ?string
     {
         return $this->outputFormatId;
     }
@@ -80,7 +80,7 @@ class DownloadTrackingInfo
      *
      * @return self
      */
-    public function setOutputFormatId(?string $outputFormatId) : self
+    public function setOutputFormatId(?string $outputFormatId): self
     {
         $this->initialized['outputFormatId'] = true;
         $this->outputFormatId = $outputFormatId;
@@ -91,7 +91,7 @@ class DownloadTrackingInfo
      *
      * @return int|null
      */
-    public function getWidth() : ?int
+    public function getWidth(): ?int
     {
         return $this->width;
     }
@@ -102,7 +102,7 @@ class DownloadTrackingInfo
      *
      * @return self
      */
-    public function setWidth(?int $width) : self
+    public function setWidth(?int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;
@@ -113,7 +113,7 @@ class DownloadTrackingInfo
      *
      * @return int|null
      */
-    public function getHeight() : ?int
+    public function getHeight(): ?int
     {
         return $this->height;
     }
@@ -124,7 +124,7 @@ class DownloadTrackingInfo
      *
      * @return self
      */
-    public function setHeight(?int $height) : self
+    public function setHeight(?int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -135,7 +135,7 @@ class DownloadTrackingInfo
      *
      * @return string
      */
-    public function getContentDisposition() : string
+    public function getContentDisposition(): string
     {
         return $this->contentDisposition;
     }
@@ -146,7 +146,7 @@ class DownloadTrackingInfo
      *
      * @return self
      */
-    public function setContentDisposition(string $contentDisposition) : self
+    public function setContentDisposition(string $contentDisposition): self
     {
         $this->initialized['contentDisposition'] = true;
         $this->contentDisposition = $contentDisposition;

@@ -8,7 +8,7 @@ class BusinessProcessState
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class BusinessProcessState
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -46,7 +46,7 @@ class BusinessProcessState
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -57,7 +57,7 @@ class BusinessProcessState
      *
      * @return \DateTime
      */
-    public function getTimestamp() : \DateTime
+    public function getTimestamp(): \DateTime
     {
         return $this->timestamp;
     }
@@ -68,7 +68,7 @@ class BusinessProcessState
      *
      * @return self
      */
-    public function setTimestamp(\DateTime $timestamp) : self
+    public function setTimestamp(\DateTime $timestamp): self
     {
         $this->initialized['timestamp'] = true;
         $this->timestamp = $timestamp;
@@ -90,7 +90,7 @@ class BusinessProcessState
      *
      * @return self
      */
-    public function setError($error) : self
+    public function setError($error): self
     {
         $this->initialized['error'] = true;
         $this->error = $error;

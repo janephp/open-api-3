@@ -8,7 +8,7 @@ class UserProfile
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class UserProfile
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -112,7 +112,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -123,7 +123,7 @@ class UserProfile
      *
      * @return string|null
      */
-    public function getEmailAddress() : ?string
+    public function getEmailAddress(): ?string
     {
         return $this->emailAddress;
     }
@@ -134,7 +134,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setEmailAddress(?string $emailAddress) : self
+    public function setEmailAddress(?string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -145,7 +145,7 @@ class UserProfile
      *
      * @return string|null
      */
-    public function getFirstName() : ?string
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
@@ -156,7 +156,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setFirstName(?string $firstName) : self
+    public function setFirstName(?string $firstName): self
     {
         $this->initialized['firstName'] = true;
         $this->firstName = $firstName;
@@ -167,7 +167,7 @@ class UserProfile
      *
      * @return string|null
      */
-    public function getLastName() : ?string
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
@@ -178,7 +178,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setLastName(?string $lastName) : self
+    public function setLastName(?string $lastName): self
     {
         $this->initialized['lastName'] = true;
         $this->lastName = $lastName;
@@ -189,7 +189,7 @@ class UserProfile
      *
      * @return string|null
      */
-    public function getLanguageCode() : ?string
+    public function getLanguageCode(): ?string
     {
         return $this->languageCode;
     }
@@ -200,7 +200,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setLanguageCode(?string $languageCode) : self
+    public function setLanguageCode(?string $languageCode): self
     {
         $this->initialized['languageCode'] = true;
         $this->languageCode = $languageCode;
@@ -222,7 +222,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setAddress($address) : self
+    public function setAddress($address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -244,7 +244,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setAuthorizationState($authorizationState) : self
+    public function setAuthorizationState($authorizationState): self
     {
         $this->initialized['authorizationState'] = true;
         $this->authorizationState = $authorizationState;
@@ -255,7 +255,7 @@ class UserProfile
      *
      * @return bool
      */
-    public function getIsLocked() : bool
+    public function getIsLocked(): bool
     {
         return $this->isLocked;
     }
@@ -266,7 +266,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setIsLocked(bool $isLocked) : self
+    public function setIsLocked(bool $isLocked): self
     {
         $this->initialized['isLocked'] = true;
         $this->isLocked = $isLocked;
@@ -277,7 +277,7 @@ class UserProfile
      *
      * @return list<string>|null
      */
-    public function getUserRights() : ?array
+    public function getUserRights(): ?array
     {
         return $this->userRights;
     }
@@ -288,7 +288,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setUserRights(?array $userRights) : self
+    public function setUserRights(?array $userRights): self
     {
         $this->initialized['userRights'] = true;
         $this->userRights = $userRights;
@@ -299,7 +299,7 @@ class UserProfile
      *
      * @return list<string>|null
      */
-    public function getUserRoleIds() : ?array
+    public function getUserRoleIds(): ?array
     {
         return $this->userRoleIds;
     }
@@ -310,7 +310,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setUserRoleIds(?array $userRoleIds) : self
+    public function setUserRoleIds(?array $userRoleIds): self
     {
         $this->initialized['userRoleIds'] = true;
         $this->userRoleIds = $userRoleIds;
@@ -321,7 +321,7 @@ class UserProfile
      *
      * @return bool
      */
-    public function getTermsConsentExpired() : bool
+    public function getTermsConsentExpired(): bool
     {
         return $this->termsConsentExpired;
     }
@@ -332,7 +332,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setTermsConsentExpired(bool $termsConsentExpired) : self
+    public function setTermsConsentExpired(bool $termsConsentExpired): self
     {
         $this->initialized['termsConsentExpired'] = true;
         $this->termsConsentExpired = $termsConsentExpired;
@@ -343,7 +343,7 @@ class UserProfile
      *
      * @return list<string>|null
      */
-    public function getSystemUserRoles() : ?array
+    public function getSystemUserRoles(): ?array
     {
         return $this->systemUserRoles;
     }
@@ -354,7 +354,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setSystemUserRoles(?array $systemUserRoles) : self
+    public function setSystemUserRoles(?array $systemUserRoles): self
     {
         $this->initialized['systemUserRoles'] = true;
         $this->systemUserRoles = $systemUserRoles;
@@ -365,7 +365,7 @@ class UserProfile
      *
      * @return bool
      */
-    public function getIsDeveloper() : bool
+    public function getIsDeveloper(): bool
     {
         return $this->isDeveloper;
     }
@@ -376,7 +376,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setIsDeveloper(bool $isDeveloper) : self
+    public function setIsDeveloper(bool $isDeveloper): self
     {
         $this->initialized['isDeveloper'] = true;
         $this->isDeveloper = $isDeveloper;
@@ -387,7 +387,7 @@ class UserProfile
      *
      * @return bool
      */
-    public function getIsFederated() : bool
+    public function getIsFederated(): bool
     {
         return $this->isFederated;
     }
@@ -398,7 +398,7 @@ class UserProfile
      *
      * @return self
      */
-    public function setIsFederated(bool $isFederated) : self
+    public function setIsFederated(bool $isFederated): self
     {
         $this->initialized['isFederated'] = true;
         $this->isFederated = $isFederated;

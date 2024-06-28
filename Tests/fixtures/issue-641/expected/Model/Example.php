@@ -8,7 +8,7 @@ class Example extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class Example extends \ArrayObject
      *
      * @return string|null
      */
-    public function getProperty1() : ?string
+    public function getProperty1(): ?string
     {
         return $this->property1;
     }
@@ -34,7 +34,7 @@ class Example extends \ArrayObject
      *
      * @return self
      */
-    public function setProperty1(?string $property1) : self
+    public function setProperty1(?string $property1): self
     {
         $this->initialized['property1'] = true;
         $this->property1 = $property1;

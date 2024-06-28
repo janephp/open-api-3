@@ -8,7 +8,7 @@ class DetailedUserFieldsStats extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class DetailedUserFieldsStats extends \ArrayObject
      *
      * @return int
      */
-    public function getFollowersCount() : int
+    public function getFollowersCount(): int
     {
         return $this->followersCount;
     }
@@ -52,7 +52,7 @@ class DetailedUserFieldsStats extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowersCount(int $followersCount) : self
+    public function setFollowersCount(int $followersCount): self
     {
         $this->initialized['followersCount'] = true;
         $this->followersCount = $followersCount;
@@ -63,7 +63,7 @@ class DetailedUserFieldsStats extends \ArrayObject
      *
      * @return int
      */
-    public function getFollowingCount() : int
+    public function getFollowingCount(): int
     {
         return $this->followingCount;
     }
@@ -74,7 +74,7 @@ class DetailedUserFieldsStats extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowingCount(int $followingCount) : self
+    public function setFollowingCount(int $followingCount): self
     {
         $this->initialized['followingCount'] = true;
         $this->followingCount = $followingCount;
@@ -85,7 +85,7 @@ class DetailedUserFieldsStats extends \ArrayObject
      *
      * @return int
      */
-    public function getTweetCount() : int
+    public function getTweetCount(): int
     {
         return $this->tweetCount;
     }
@@ -96,7 +96,7 @@ class DetailedUserFieldsStats extends \ArrayObject
      *
      * @return self
      */
-    public function setTweetCount(int $tweetCount) : self
+    public function setTweetCount(int $tweetCount): self
     {
         $this->initialized['tweetCount'] = true;
         $this->tweetCount = $tweetCount;
@@ -107,7 +107,7 @@ class DetailedUserFieldsStats extends \ArrayObject
      *
      * @return int
      */
-    public function getListedCount() : int
+    public function getListedCount(): int
     {
         return $this->listedCount;
     }
@@ -118,7 +118,7 @@ class DetailedUserFieldsStats extends \ArrayObject
      *
      * @return self
      */
-    public function setListedCount(int $listedCount) : self
+    public function setListedCount(int $listedCount): self
     {
         $this->initialized['listedCount'] = true;
         $this->listedCount = $listedCount;

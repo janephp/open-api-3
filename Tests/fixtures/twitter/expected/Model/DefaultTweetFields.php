@@ -8,7 +8,7 @@ class DefaultTweetFields extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class DefaultTweetFields extends \ArrayObject
      *
      * @return DefaultTweetFieldsGeo
      */
-    public function getGeo() : DefaultTweetFieldsGeo
+    public function getGeo(): DefaultTweetFieldsGeo
     {
         return $this->geo;
     }
@@ -40,7 +40,7 @@ class DefaultTweetFields extends \ArrayObject
      *
      * @return self
      */
-    public function setGeo(DefaultTweetFieldsGeo $geo) : self
+    public function setGeo(DefaultTweetFieldsGeo $geo): self
     {
         $this->initialized['geo'] = true;
         $this->geo = $geo;
@@ -51,7 +51,7 @@ class DefaultTweetFields extends \ArrayObject
      *
      * @return FullTextEntities
      */
-    public function getEntities() : FullTextEntities
+    public function getEntities(): FullTextEntities
     {
         return $this->entities;
     }
@@ -62,7 +62,7 @@ class DefaultTweetFields extends \ArrayObject
      *
      * @return self
      */
-    public function setEntities(FullTextEntities $entities) : self
+    public function setEntities(FullTextEntities $entities): self
     {
         $this->initialized['entities'] = true;
         $this->entities = $entities;

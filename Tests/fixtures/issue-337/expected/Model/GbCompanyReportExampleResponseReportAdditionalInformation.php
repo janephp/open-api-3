@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationCompanyHistoryItem>
      */
-    public function getCompanyHistory() : array
+    public function getCompanyHistory(): array
     {
         return $this->companyHistory;
     }
@@ -70,7 +70,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return self
      */
-    public function setCompanyHistory(array $companyHistory) : self
+    public function setCompanyHistory(array $companyHistory): self
     {
         $this->initialized['companyHistory'] = true;
         $this->companyHistory = $companyHistory;
@@ -81,7 +81,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary
      */
-    public function getMortgageSummary() : GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary
+    public function getMortgageSummary(): GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary
     {
         return $this->mortgageSummary;
     }
@@ -92,7 +92,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return self
      */
-    public function setMortgageSummary(GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary $mortgageSummary) : self
+    public function setMortgageSummary(GbCompanyReportExampleResponseReportAdditionalInformationMortgageSummary $mortgageSummary): self
     {
         $this->initialized['mortgageSummary'] = true;
         $this->mortgageSummary = $mortgageSummary;
@@ -103,7 +103,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationMortgageDetailsItem>
      */
-    public function getMortgageDetails() : array
+    public function getMortgageDetails(): array
     {
         return $this->mortgageDetails;
     }
@@ -114,7 +114,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return self
      */
-    public function setMortgageDetails(array $mortgageDetails) : self
+    public function setMortgageDetails(array $mortgageDetails): self
     {
         $this->initialized['mortgageDetails'] = true;
         $this->mortgageDetails = $mortgageDetails;
@@ -125,7 +125,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem>
      */
-    public function getCommentaries() : array
+    public function getCommentaries(): array
     {
         return $this->commentaries;
     }
@@ -136,7 +136,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return self
      */
-    public function setCommentaries(array $commentaries) : self
+    public function setCommentaries(array $commentaries): self
     {
         $this->initialized['commentaries'] = true;
         $this->commentaries = $commentaries;
@@ -147,7 +147,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationRatingHistoryItem>
      */
-    public function getRatingHistory() : array
+    public function getRatingHistory(): array
     {
         return $this->ratingHistory;
     }
@@ -158,7 +158,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return self
      */
-    public function setRatingHistory(array $ratingHistory) : self
+    public function setRatingHistory(array $ratingHistory): self
     {
         $this->initialized['ratingHistory'] = true;
         $this->ratingHistory = $ratingHistory;
@@ -169,7 +169,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItem>
      */
-    public function getCreditLimitHistory() : array
+    public function getCreditLimitHistory(): array
     {
         return $this->creditLimitHistory;
     }
@@ -180,7 +180,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return self
      */
-    public function setCreditLimitHistory(array $creditLimitHistory) : self
+    public function setCreditLimitHistory(array $creditLimitHistory): self
     {
         $this->initialized['creditLimitHistory'] = true;
         $this->creditLimitHistory = $creditLimitHistory;
@@ -191,7 +191,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return list<GbCompanyReportExampleResponseReportAdditionalInformationBadDebtDetailsItem>
      */
-    public function getBadDebtDetails() : array
+    public function getBadDebtDetails(): array
     {
         return $this->badDebtDetails;
     }
@@ -202,7 +202,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformation extends \ArrayOb
      *
      * @return self
      */
-    public function setBadDebtDetails(array $badDebtDetails) : self
+    public function setBadDebtDetails(array $badDebtDetails): self
     {
         $this->initialized['badDebtDetails'] = true;
         $this->badDebtDetails = $badDebtDetails;

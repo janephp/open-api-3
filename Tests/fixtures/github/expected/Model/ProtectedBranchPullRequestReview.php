@@ -8,7 +8,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -58,7 +58,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -69,7 +69,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return ProtectedBranchPullRequestReviewDismissalRestrictions
      */
-    public function getDismissalRestrictions() : ProtectedBranchPullRequestReviewDismissalRestrictions
+    public function getDismissalRestrictions(): ProtectedBranchPullRequestReviewDismissalRestrictions
     {
         return $this->dismissalRestrictions;
     }
@@ -80,7 +80,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setDismissalRestrictions(ProtectedBranchPullRequestReviewDismissalRestrictions $dismissalRestrictions) : self
+    public function setDismissalRestrictions(ProtectedBranchPullRequestReviewDismissalRestrictions $dismissalRestrictions): self
     {
         $this->initialized['dismissalRestrictions'] = true;
         $this->dismissalRestrictions = $dismissalRestrictions;
@@ -91,7 +91,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return bool
      */
-    public function getDismissStaleReviews() : bool
+    public function getDismissStaleReviews(): bool
     {
         return $this->dismissStaleReviews;
     }
@@ -102,7 +102,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setDismissStaleReviews(bool $dismissStaleReviews) : self
+    public function setDismissStaleReviews(bool $dismissStaleReviews): self
     {
         $this->initialized['dismissStaleReviews'] = true;
         $this->dismissStaleReviews = $dismissStaleReviews;
@@ -113,7 +113,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return bool
      */
-    public function getRequireCodeOwnerReviews() : bool
+    public function getRequireCodeOwnerReviews(): bool
     {
         return $this->requireCodeOwnerReviews;
     }
@@ -124,7 +124,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setRequireCodeOwnerReviews(bool $requireCodeOwnerReviews) : self
+    public function setRequireCodeOwnerReviews(bool $requireCodeOwnerReviews): self
     {
         $this->initialized['requireCodeOwnerReviews'] = true;
         $this->requireCodeOwnerReviews = $requireCodeOwnerReviews;
@@ -135,7 +135,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return int
      */
-    public function getRequiredApprovingReviewCount() : int
+    public function getRequiredApprovingReviewCount(): int
     {
         return $this->requiredApprovingReviewCount;
     }
@@ -146,7 +146,7 @@ class ProtectedBranchPullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setRequiredApprovingReviewCount(int $requiredApprovingReviewCount) : self
+    public function setRequiredApprovingReviewCount(int $requiredApprovingReviewCount): self
     {
         $this->initialized['requiredApprovingReviewCount'] = true;
         $this->requiredApprovingReviewCount = $requiredApprovingReviewCount;

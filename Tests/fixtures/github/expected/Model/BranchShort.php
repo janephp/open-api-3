@@ -8,7 +8,7 @@ class BranchShort extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class BranchShort extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -46,7 +46,7 @@ class BranchShort extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -57,7 +57,7 @@ class BranchShort extends \ArrayObject
      *
      * @return BranchShortCommit
      */
-    public function getCommit() : BranchShortCommit
+    public function getCommit(): BranchShortCommit
     {
         return $this->commit;
     }
@@ -68,7 +68,7 @@ class BranchShort extends \ArrayObject
      *
      * @return self
      */
-    public function setCommit(BranchShortCommit $commit) : self
+    public function setCommit(BranchShortCommit $commit): self
     {
         $this->initialized['commit'] = true;
         $this->commit = $commit;
@@ -79,7 +79,7 @@ class BranchShort extends \ArrayObject
      *
      * @return bool
      */
-    public function getProtected() : bool
+    public function getProtected(): bool
     {
         return $this->protected;
     }
@@ -90,7 +90,7 @@ class BranchShort extends \ArrayObject
      *
      * @return self
      */
-    public function setProtected(bool $protected) : self
+    public function setProtected(bool $protected): self
     {
         $this->initialized['protected'] = true;
         $this->protected = $protected;

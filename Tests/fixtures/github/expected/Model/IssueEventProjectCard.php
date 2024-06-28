@@ -8,7 +8,7 @@ class IssueEventProjectCard extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -64,7 +64,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -75,7 +75,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -86,7 +86,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -97,7 +97,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return string
      */
-    public function getProjectUrl() : string
+    public function getProjectUrl(): string
     {
         return $this->projectUrl;
     }
@@ -108,7 +108,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setProjectUrl(string $projectUrl) : self
+    public function setProjectUrl(string $projectUrl): self
     {
         $this->initialized['projectUrl'] = true;
         $this->projectUrl = $projectUrl;
@@ -119,7 +119,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return int
      */
-    public function getProjectId() : int
+    public function getProjectId(): int
     {
         return $this->projectId;
     }
@@ -130,7 +130,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setProjectId(int $projectId) : self
+    public function setProjectId(int $projectId): self
     {
         $this->initialized['projectId'] = true;
         $this->projectId = $projectId;
@@ -141,7 +141,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return string
      */
-    public function getColumnName() : string
+    public function getColumnName(): string
     {
         return $this->columnName;
     }
@@ -152,7 +152,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setColumnName(string $columnName) : self
+    public function setColumnName(string $columnName): self
     {
         $this->initialized['columnName'] = true;
         $this->columnName = $columnName;
@@ -163,7 +163,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return string
      */
-    public function getPreviousColumnName() : string
+    public function getPreviousColumnName(): string
     {
         return $this->previousColumnName;
     }
@@ -174,7 +174,7 @@ class IssueEventProjectCard extends \ArrayObject
      *
      * @return self
      */
-    public function setPreviousColumnName(string $previousColumnName) : self
+    public function setPreviousColumnName(string $previousColumnName): self
     {
         $this->initialized['previousColumnName'] = true;
         $this->previousColumnName = $previousColumnName;

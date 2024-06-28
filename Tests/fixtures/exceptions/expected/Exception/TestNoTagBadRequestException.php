@@ -18,11 +18,11 @@ class TestNoTagBadRequestException extends BadRequestException
         $this->messageObject = $message;
         $this->response = $response;
     }
-    public function getMessageObject() : \Jane\Component\OpenApi3\Tests\Expected\Model\Message
+    public function getMessageObject(): \Jane\Component\OpenApi3\Tests\Expected\Model\Message
     {
         return $this->messageObject;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

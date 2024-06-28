@@ -8,7 +8,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -52,7 +52,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -63,7 +63,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getEmailAddress() : string
+    public function getEmailAddress(): string
     {
         return $this->emailAddress;
     }
@@ -74,7 +74,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailAddress(string $emailAddress) : self
+    public function setEmailAddress(string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;
@@ -85,7 +85,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
      *
      * @return string
      */
-    public function getTelephoneNumber() : string
+    public function getTelephoneNumber(): string
     {
         return $this->telephoneNumber;
     }
@@ -96,7 +96,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setTelephoneNumber(string $telephoneNumber) : self
+    public function setTelephoneNumber(string $telephoneNumber): self
     {
         $this->initialized['telephoneNumber'] = true;
         $this->telephoneNumber = $telephoneNumber;
@@ -107,7 +107,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
      *
      * @return CreateFreshInvestigationRequestContactInfoCompany
      */
-    public function getCompany() : CreateFreshInvestigationRequestContactInfoCompany
+    public function getCompany(): CreateFreshInvestigationRequestContactInfoCompany
     {
         return $this->company;
     }
@@ -118,7 +118,7 @@ class CreateFreshInvestigationRequestContactInfo extends \ArrayObject
      *
      * @return self
      */
-    public function setCompany(CreateFreshInvestigationRequestContactInfoCompany $company) : self
+    public function setCompany(CreateFreshInvestigationRequestContactInfoCompany $company): self
     {
         $this->initialized['company'] = true;
         $this->company = $company;

@@ -18,11 +18,11 @@ class AppsGetInstallationUnsupportedMediaTypeException extends UnsupportedMediaT
         $this->responsePreviewHeaderMissing = $responsePreviewHeaderMissing;
         $this->response = $response;
     }
-    public function getResponsePreviewHeaderMissing() : \Github\Model\ResponsePreviewHeaderMissing
+    public function getResponsePreviewHeaderMissing(): \Github\Model\ResponsePreviewHeaderMissing
     {
         return $this->responsePreviewHeaderMissing;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

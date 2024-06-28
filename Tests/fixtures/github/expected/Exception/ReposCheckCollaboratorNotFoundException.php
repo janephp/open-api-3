@@ -13,7 +13,7 @@ class ReposCheckCollaboratorNotFoundException extends NotFoundException
         parent::__construct('Response if user is not a collaborator');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

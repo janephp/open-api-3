@@ -8,7 +8,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -64,7 +64,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -75,7 +75,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTree() : string
+    public function getTree(): string
     {
         return $this->tree;
     }
@@ -86,7 +86,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTree(string $tree) : self
+    public function setTree(string $tree): self
     {
         $this->initialized['tree'] = true;
         $this->tree = $tree;
@@ -97,7 +97,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getParents() : array
+    public function getParents(): array
     {
         return $this->parents;
     }
@@ -108,7 +108,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setParents(array $parents) : self
+    public function setParents(array $parents): self
     {
         $this->initialized['parents'] = true;
         $this->parents = $parents;
@@ -119,7 +119,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return ReposOwnerRepoGitCommitsPostBodyAuthor
      */
-    public function getAuthor() : ReposOwnerRepoGitCommitsPostBodyAuthor
+    public function getAuthor(): ReposOwnerRepoGitCommitsPostBodyAuthor
     {
         return $this->author;
     }
@@ -130,7 +130,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(ReposOwnerRepoGitCommitsPostBodyAuthor $author) : self
+    public function setAuthor(ReposOwnerRepoGitCommitsPostBodyAuthor $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -141,7 +141,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return ReposOwnerRepoGitCommitsPostBodyCommitter
      */
-    public function getCommitter() : ReposOwnerRepoGitCommitsPostBodyCommitter
+    public function getCommitter(): ReposOwnerRepoGitCommitsPostBodyCommitter
     {
         return $this->committer;
     }
@@ -152,7 +152,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitter(ReposOwnerRepoGitCommitsPostBodyCommitter $committer) : self
+    public function setCommitter(ReposOwnerRepoGitCommitsPostBodyCommitter $committer): self
     {
         $this->initialized['committer'] = true;
         $this->committer = $committer;
@@ -163,7 +163,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getSignature() : string
+    public function getSignature(): string
     {
         return $this->signature;
     }
@@ -174,7 +174,7 @@ class ReposOwnerRepoGitCommitsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSignature(string $signature) : self
+    public function setSignature(string $signature): self
     {
         $this->initialized['signature'] = true;
         $this->signature = $signature;

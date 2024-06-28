@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPullNumberMergePutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ReposOwnerRepoPullsPullNumberMergePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitTitle() : string
+    public function getCommitTitle(): string
     {
         return $this->commitTitle;
     }
@@ -52,7 +52,7 @@ class ReposOwnerRepoPullsPullNumberMergePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitTitle(string $commitTitle) : self
+    public function setCommitTitle(string $commitTitle): self
     {
         $this->initialized['commitTitle'] = true;
         $this->commitTitle = $commitTitle;
@@ -63,7 +63,7 @@ class ReposOwnerRepoPullsPullNumberMergePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitMessage() : string
+    public function getCommitMessage(): string
     {
         return $this->commitMessage;
     }
@@ -74,7 +74,7 @@ class ReposOwnerRepoPullsPullNumberMergePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitMessage(string $commitMessage) : self
+    public function setCommitMessage(string $commitMessage): self
     {
         $this->initialized['commitMessage'] = true;
         $this->commitMessage = $commitMessage;
@@ -85,7 +85,7 @@ class ReposOwnerRepoPullsPullNumberMergePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -96,7 +96,7 @@ class ReposOwnerRepoPullsPullNumberMergePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -107,7 +107,7 @@ class ReposOwnerRepoPullsPullNumberMergePutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getMergeMethod() : string
+    public function getMergeMethod(): string
     {
         return $this->mergeMethod;
     }
@@ -118,7 +118,7 @@ class ReposOwnerRepoPullsPullNumberMergePutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMergeMethod(string $mergeMethod) : self
+    public function setMergeMethod(string $mergeMethod): self
     {
         $this->initialized['mergeMethod'] = true;
         $this->mergeMethod = $mergeMethod;

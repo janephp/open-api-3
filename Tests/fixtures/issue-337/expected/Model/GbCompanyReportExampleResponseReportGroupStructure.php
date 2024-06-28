@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportGroupStructure extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class GbCompanyReportExampleResponseReportGroupStructure extends \ArrayObject
      *
      * @return list<GbCompanyReportExampleResponseReportGroupStructureSubsidiaryCompaniesItem>
      */
-    public function getSubsidiaryCompanies() : array
+    public function getSubsidiaryCompanies(): array
     {
         return $this->subsidiaryCompanies;
     }
@@ -34,7 +34,7 @@ class GbCompanyReportExampleResponseReportGroupStructure extends \ArrayObject
      *
      * @return self
      */
-    public function setSubsidiaryCompanies(array $subsidiaryCompanies) : self
+    public function setSubsidiaryCompanies(array $subsidiaryCompanies): self
     {
         $this->initialized['subsidiaryCompanies'] = true;
         $this->subsidiaryCompanies = $subsidiaryCompanies;

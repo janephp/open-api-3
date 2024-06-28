@@ -8,7 +8,7 @@ class ListCompanyImagesDataItemLocalProperties extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ListCompanyImagesDataItemLocalProperties extends \ArrayObject
      *
      * @return string
      */
-    public function getAccountRefNumber() : string
+    public function getAccountRefNumber(): string
     {
         return $this->accountRefNumber;
     }
@@ -34,7 +34,7 @@ class ListCompanyImagesDataItemLocalProperties extends \ArrayObject
      *
      * @return self
      */
-    public function setAccountRefNumber(string $accountRefNumber) : self
+    public function setAccountRefNumber(string $accountRefNumber): self
     {
         $this->initialized['accountRefNumber'] = true;
         $this->accountRefNumber = $accountRefNumber;

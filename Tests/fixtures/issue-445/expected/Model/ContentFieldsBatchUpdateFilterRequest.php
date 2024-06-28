@@ -8,7 +8,7 @@ class ContentFieldsBatchUpdateFilterRequest extends MetadataValuesChangeRequestB
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -34,7 +34,7 @@ class ContentFieldsBatchUpdateFilterRequest extends MetadataValuesChangeRequestB
      *
      * @return self
      */
-    public function setFilterRequest($filterRequest) : self
+    public function setFilterRequest($filterRequest): self
     {
         $this->initialized['filterRequest'] = true;
         $this->filterRequest = $filterRequest;

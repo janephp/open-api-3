@@ -8,7 +8,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBody 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBody 
      *
      * @return ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyDismissalRestrictions
      */
-    public function getDismissalRestrictions() : ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyDismissalRestrictions
+    public function getDismissalRestrictions(): ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyDismissalRestrictions
     {
         return $this->dismissalRestrictions;
     }
@@ -52,7 +52,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBody 
      *
      * @return self
      */
-    public function setDismissalRestrictions(ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyDismissalRestrictions $dismissalRestrictions) : self
+    public function setDismissalRestrictions(ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBodyDismissalRestrictions $dismissalRestrictions): self
     {
         $this->initialized['dismissalRestrictions'] = true;
         $this->dismissalRestrictions = $dismissalRestrictions;
@@ -63,7 +63,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBody 
      *
      * @return bool
      */
-    public function getDismissStaleReviews() : bool
+    public function getDismissStaleReviews(): bool
     {
         return $this->dismissStaleReviews;
     }
@@ -74,7 +74,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBody 
      *
      * @return self
      */
-    public function setDismissStaleReviews(bool $dismissStaleReviews) : self
+    public function setDismissStaleReviews(bool $dismissStaleReviews): self
     {
         $this->initialized['dismissStaleReviews'] = true;
         $this->dismissStaleReviews = $dismissStaleReviews;
@@ -85,7 +85,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBody 
      *
      * @return bool
      */
-    public function getRequireCodeOwnerReviews() : bool
+    public function getRequireCodeOwnerReviews(): bool
     {
         return $this->requireCodeOwnerReviews;
     }
@@ -96,7 +96,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBody 
      *
      * @return self
      */
-    public function setRequireCodeOwnerReviews(bool $requireCodeOwnerReviews) : self
+    public function setRequireCodeOwnerReviews(bool $requireCodeOwnerReviews): self
     {
         $this->initialized['requireCodeOwnerReviews'] = true;
         $this->requireCodeOwnerReviews = $requireCodeOwnerReviews;
@@ -107,7 +107,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBody 
      *
      * @return int
      */
-    public function getRequiredApprovingReviewCount() : int
+    public function getRequiredApprovingReviewCount(): int
     {
         return $this->requiredApprovingReviewCount;
     }
@@ -118,7 +118,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredPullRequestReviewsPatchBody 
      *
      * @return self
      */
-    public function setRequiredApprovingReviewCount(int $requiredApprovingReviewCount) : self
+    public function setRequiredApprovingReviewCount(int $requiredApprovingReviewCount): self
     {
         $this->initialized['requiredApprovingReviewCount'] = true;
         $this->requiredApprovingReviewCount = $requiredApprovingReviewCount;

@@ -8,7 +8,7 @@ class UserGpgKeysPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class UserGpgKeysPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getArmoredPublicKey() : string
+    public function getArmoredPublicKey(): string
     {
         return $this->armoredPublicKey;
     }
@@ -34,7 +34,7 @@ class UserGpgKeysPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setArmoredPublicKey(string $armoredPublicKey) : self
+    public function setArmoredPublicKey(string $armoredPublicKey): self
     {
         $this->initialized['armoredPublicKey'] = true;
         $this->armoredPublicKey = $armoredPublicKey;

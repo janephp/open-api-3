@@ -8,7 +8,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getObjectUrl() : string
+    public function getObjectUrl(): string
     {
         return $this->objectUrl;
     }
@@ -58,7 +58,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setObjectUrl(string $objectUrl) : self
+    public function setObjectUrl(string $objectUrl): self
     {
         $this->initialized['objectUrl'] = true;
         $this->objectUrl = $objectUrl;
@@ -69,7 +69,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getObjectType() : ?string
+    public function getObjectType(): ?string
     {
         return $this->objectType;
     }
@@ -80,7 +80,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setObjectType(?string $objectType) : self
+    public function setObjectType(?string $objectType): self
     {
         $this->initialized['objectType'] = true;
         $this->objectType = $objectType;
@@ -91,7 +91,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getProperty() : string
+    public function getProperty(): string
     {
         return $this->property;
     }
@@ -102,7 +102,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setProperty(string $property) : self
+    public function setProperty(string $property): self
     {
         $this->initialized['property'] = true;
         $this->property = $property;
@@ -113,7 +113,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getFragment() : string
+    public function getFragment(): string
     {
         return $this->fragment;
     }
@@ -124,7 +124,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setFragment(string $fragment) : self
+    public function setFragment(string $fragment): self
     {
         $this->initialized['fragment'] = true;
         $this->fragment = $fragment;
@@ -135,7 +135,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return list<SearchResultTextMatchesItemMatchesItem>
      */
-    public function getMatches() : array
+    public function getMatches(): array
     {
         return $this->matches;
     }
@@ -146,7 +146,7 @@ class SearchResultTextMatchesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setMatches(array $matches) : self
+    public function setMatches(array $matches): self
     {
         $this->initialized['matches'] = true;
         $this->matches = $matches;

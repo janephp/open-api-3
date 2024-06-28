@@ -8,7 +8,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -64,7 +64,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -75,7 +75,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getContent() : string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -86,7 +86,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setContent(string $content) : self
+    public function setContent(string $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -97,7 +97,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -108,7 +108,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -119,7 +119,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBranch() : string
+    public function getBranch(): string
     {
         return $this->branch;
     }
@@ -130,7 +130,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBranch(string $branch) : self
+    public function setBranch(string $branch): self
     {
         $this->initialized['branch'] = true;
         $this->branch = $branch;
@@ -141,7 +141,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return ReposOwnerRepoContentsPathPutBodyCommitter
      */
-    public function getCommitter() : ReposOwnerRepoContentsPathPutBodyCommitter
+    public function getCommitter(): ReposOwnerRepoContentsPathPutBodyCommitter
     {
         return $this->committer;
     }
@@ -152,7 +152,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitter(ReposOwnerRepoContentsPathPutBodyCommitter $committer) : self
+    public function setCommitter(ReposOwnerRepoContentsPathPutBodyCommitter $committer): self
     {
         $this->initialized['committer'] = true;
         $this->committer = $committer;
@@ -163,7 +163,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return ReposOwnerRepoContentsPathPutBodyAuthor
      */
-    public function getAuthor() : ReposOwnerRepoContentsPathPutBodyAuthor
+    public function getAuthor(): ReposOwnerRepoContentsPathPutBodyAuthor
     {
         return $this->author;
     }
@@ -174,7 +174,7 @@ class ReposOwnerRepoContentsPathPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(ReposOwnerRepoContentsPathPutBodyAuthor $author) : self
+    public function setAuthor(ReposOwnerRepoContentsPathPutBodyAuthor $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;

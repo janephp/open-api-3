@@ -8,7 +8,7 @@ class Topic extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class Topic extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getNames() : array
+    public function getNames(): array
     {
         return $this->names;
     }
@@ -34,7 +34,7 @@ class Topic extends \ArrayObject
      *
      * @return self
      */
-    public function setNames(array $names) : self
+    public function setNames(array $names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;

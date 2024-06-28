@@ -18,11 +18,11 @@ class TeamsAddOrUpdateProjectPermissionsLegacyForbiddenException extends Forbidd
         $this->teamsTeamIdProjectsProjectIdPutResponse403 = $teamsTeamIdProjectsProjectIdPutResponse403;
         $this->response = $response;
     }
-    public function getTeamsTeamIdProjectsProjectIdPutResponse403() : \Github\Model\TeamsTeamIdProjectsProjectIdPutResponse403
+    public function getTeamsTeamIdProjectsProjectIdPutResponse403(): \Github\Model\TeamsTeamIdProjectsProjectIdPutResponse403
     {
         return $this->teamsTeamIdProjectsProjectIdPutResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

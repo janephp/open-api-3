@@ -8,7 +8,7 @@ class OutputDataVideo extends OutputDataBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class OutputDataVideo extends OutputDataBase
      *
      * @return float
      */
-    public function getDurationInSeconds() : float
+    public function getDurationInSeconds(): float
     {
         return $this->durationInSeconds;
     }
@@ -52,7 +52,7 @@ class OutputDataVideo extends OutputDataBase
      *
      * @return self
      */
-    public function setDurationInSeconds(float $durationInSeconds) : self
+    public function setDurationInSeconds(float $durationInSeconds): self
     {
         $this->initialized['durationInSeconds'] = true;
         $this->durationInSeconds = $durationInSeconds;
@@ -63,7 +63,7 @@ class OutputDataVideo extends OutputDataBase
      *
      * @return int
      */
-    public function getWidth() : int
+    public function getWidth(): int
     {
         return $this->width;
     }
@@ -74,7 +74,7 @@ class OutputDataVideo extends OutputDataBase
      *
      * @return self
      */
-    public function setWidth(int $width) : self
+    public function setWidth(int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;
@@ -85,7 +85,7 @@ class OutputDataVideo extends OutputDataBase
      *
      * @return int
      */
-    public function getHeight() : int
+    public function getHeight(): int
     {
         return $this->height;
     }
@@ -96,7 +96,7 @@ class OutputDataVideo extends OutputDataBase
      *
      * @return self
      */
-    public function setHeight(int $height) : self
+    public function setHeight(int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -107,7 +107,7 @@ class OutputDataVideo extends OutputDataBase
      *
      * @return list<Sprite>|null
      */
-    public function getSprites() : ?array
+    public function getSprites(): ?array
     {
         return $this->sprites;
     }
@@ -118,7 +118,7 @@ class OutputDataVideo extends OutputDataBase
      *
      * @return self
      */
-    public function setSprites(?array $sprites) : self
+    public function setSprites(?array $sprites): self
     {
         $this->initialized['sprites'] = true;
         $this->sprites = $sprites;

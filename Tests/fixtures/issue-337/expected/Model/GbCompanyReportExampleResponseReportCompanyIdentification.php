@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
      *
      * @return GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation
      */
-    public function getBasicInformation() : GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation
+    public function getBasicInformation(): GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation
     {
         return $this->basicInformation;
     }
@@ -46,7 +46,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
      *
      * @return self
      */
-    public function setBasicInformation(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation $basicInformation) : self
+    public function setBasicInformation(GbCompanyReportExampleResponseReportCompanyIdentificationBasicInformation $basicInformation): self
     {
         $this->initialized['basicInformation'] = true;
         $this->basicInformation = $basicInformation;
@@ -57,7 +57,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
      *
      * @return list<GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassificationsItem>
      */
-    public function getActivityClassifications() : array
+    public function getActivityClassifications(): array
     {
         return $this->activityClassifications;
     }
@@ -68,7 +68,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
      *
      * @return self
      */
-    public function setActivityClassifications(array $activityClassifications) : self
+    public function setActivityClassifications(array $activityClassifications): self
     {
         $this->initialized['activityClassifications'] = true;
         $this->activityClassifications = $activityClassifications;
@@ -79,7 +79,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
      *
      * @return list<GbCompanyReportExampleResponseReportCompanyIdentificationPreviousNamesItem>
      */
-    public function getPreviousNames() : array
+    public function getPreviousNames(): array
     {
         return $this->previousNames;
     }
@@ -90,7 +90,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentification extends \ArrayOb
      *
      * @return self
      */
-    public function setPreviousNames(array $previousNames) : self
+    public function setPreviousNames(array $previousNames): self
     {
         $this->initialized['previousNames'] = true;
         $this->previousNames = $previousNames;

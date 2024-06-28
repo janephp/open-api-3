@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return string
      */
-    public function getCommonValue() : string
+    public function getCommonValue(): string
     {
         return $this->commonValue;
     }
@@ -58,7 +58,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return self
      */
-    public function setCommonValue(string $commonValue) : self
+    public function setCommonValue(string $commonValue): self
     {
         $this->initialized['commonValue'] = true;
         $this->commonValue = $commonValue;
@@ -69,7 +69,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return string
      */
-    public function getCommonDescription() : string
+    public function getCommonDescription(): string
     {
         return $this->commonDescription;
     }
@@ -80,7 +80,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return self
      */
-    public function setCommonDescription(string $commonDescription) : self
+    public function setCommonDescription(string $commonDescription): self
     {
         $this->initialized['commonDescription'] = true;
         $this->commonDescription = $commonDescription;
@@ -91,7 +91,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryCreditRatingCreditLimit
      */
-    public function getCreditLimit() : GbCompanyReportExampleResponseReportCompanySummaryCreditRatingCreditLimit
+    public function getCreditLimit(): GbCompanyReportExampleResponseReportCompanySummaryCreditRatingCreditLimit
     {
         return $this->creditLimit;
     }
@@ -102,7 +102,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return self
      */
-    public function setCreditLimit(GbCompanyReportExampleResponseReportCompanySummaryCreditRatingCreditLimit $creditLimit) : self
+    public function setCreditLimit(GbCompanyReportExampleResponseReportCompanySummaryCreditRatingCreditLimit $creditLimit): self
     {
         $this->initialized['creditLimit'] = true;
         $this->creditLimit = $creditLimit;
@@ -113,7 +113,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValue
      */
-    public function getProviderValue() : GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValue
+    public function getProviderValue(): GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValue
     {
         return $this->providerValue;
     }
@@ -124,7 +124,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return self
      */
-    public function setProviderValue(GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValue $providerValue) : self
+    public function setProviderValue(GbCompanyReportExampleResponseReportCompanySummaryCreditRatingProviderValue $providerValue): self
     {
         $this->initialized['providerValue'] = true;
         $this->providerValue = $providerValue;
@@ -135,7 +135,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return string
      */
-    public function getProviderDescription() : string
+    public function getProviderDescription(): string
     {
         return $this->providerDescription;
     }
@@ -146,7 +146,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCreditRating extends \Ar
      *
      * @return self
      */
-    public function setProviderDescription(string $providerDescription) : self
+    public function setProviderDescription(string $providerDescription): self
     {
         $this->initialized['providerDescription'] = true;
         $this->providerDescription = $providerDescription;

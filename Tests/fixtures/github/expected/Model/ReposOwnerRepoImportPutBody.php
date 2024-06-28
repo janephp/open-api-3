@@ -8,7 +8,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getVcsUrl() : string
+    public function getVcsUrl(): string
     {
         return $this->vcsUrl;
     }
@@ -58,7 +58,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setVcsUrl(string $vcsUrl) : self
+    public function setVcsUrl(string $vcsUrl): self
     {
         $this->initialized['vcsUrl'] = true;
         $this->vcsUrl = $vcsUrl;
@@ -69,7 +69,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getVcs() : string
+    public function getVcs(): string
     {
         return $this->vcs;
     }
@@ -80,7 +80,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setVcs(string $vcs) : self
+    public function setVcs(string $vcs): self
     {
         $this->initialized['vcs'] = true;
         $this->vcs = $vcs;
@@ -91,7 +91,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getVcsUsername() : string
+    public function getVcsUsername(): string
     {
         return $this->vcsUsername;
     }
@@ -102,7 +102,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setVcsUsername(string $vcsUsername) : self
+    public function setVcsUsername(string $vcsUsername): self
     {
         $this->initialized['vcsUsername'] = true;
         $this->vcsUsername = $vcsUsername;
@@ -113,7 +113,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getVcsPassword() : string
+    public function getVcsPassword(): string
     {
         return $this->vcsPassword;
     }
@@ -124,7 +124,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setVcsPassword(string $vcsPassword) : self
+    public function setVcsPassword(string $vcsPassword): self
     {
         $this->initialized['vcsPassword'] = true;
         $this->vcsPassword = $vcsPassword;
@@ -135,7 +135,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTfvcProject() : string
+    public function getTfvcProject(): string
     {
         return $this->tfvcProject;
     }
@@ -146,7 +146,7 @@ class ReposOwnerRepoImportPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTfvcProject(string $tfvcProject) : self
+    public function setTfvcProject(string $tfvcProject): self
     {
         $this->initialized['tfvcProject'] = true;
         $this->tfvcProject = $tfvcProject;

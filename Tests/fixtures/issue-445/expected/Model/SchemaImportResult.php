@@ -8,7 +8,7 @@ class SchemaImportResult
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class SchemaImportResult
      *
      * @return int
      */
-    public function getImportedSchemaCount() : int
+    public function getImportedSchemaCount(): int
     {
         return $this->importedSchemaCount;
     }
@@ -58,7 +58,7 @@ class SchemaImportResult
      *
      * @return self
      */
-    public function setImportedSchemaCount(int $importedSchemaCount) : self
+    public function setImportedSchemaCount(int $importedSchemaCount): self
     {
         $this->initialized['importedSchemaCount'] = true;
         $this->importedSchemaCount = $importedSchemaCount;
@@ -69,7 +69,7 @@ class SchemaImportResult
      *
      * @return int
      */
-    public function getSkippedSchemaCount() : int
+    public function getSkippedSchemaCount(): int
     {
         return $this->skippedSchemaCount;
     }
@@ -80,7 +80,7 @@ class SchemaImportResult
      *
      * @return self
      */
-    public function setSkippedSchemaCount(int $skippedSchemaCount) : self
+    public function setSkippedSchemaCount(int $skippedSchemaCount): self
     {
         $this->initialized['skippedSchemaCount'] = true;
         $this->skippedSchemaCount = $skippedSchemaCount;
@@ -91,7 +91,7 @@ class SchemaImportResult
      *
      * @return int
      */
-    public function getTotalSchemaCount() : int
+    public function getTotalSchemaCount(): int
     {
         return $this->totalSchemaCount;
     }
@@ -102,7 +102,7 @@ class SchemaImportResult
      *
      * @return self
      */
-    public function setTotalSchemaCount(int $totalSchemaCount) : self
+    public function setTotalSchemaCount(int $totalSchemaCount): self
     {
         $this->initialized['totalSchemaCount'] = true;
         $this->totalSchemaCount = $totalSchemaCount;
@@ -113,7 +113,7 @@ class SchemaImportResult
      *
      * @return list<string>|null
      */
-    public function getSkippedSchemaIds() : ?array
+    public function getSkippedSchemaIds(): ?array
     {
         return $this->skippedSchemaIds;
     }
@@ -124,7 +124,7 @@ class SchemaImportResult
      *
      * @return self
      */
-    public function setSkippedSchemaIds(?array $skippedSchemaIds) : self
+    public function setSkippedSchemaIds(?array $skippedSchemaIds): self
     {
         $this->initialized['skippedSchemaIds'] = true;
         $this->skippedSchemaIds = $skippedSchemaIds;
@@ -135,7 +135,7 @@ class SchemaImportResult
      *
      * @return list<string>|null
      */
-    public function getImportedSchemaIds() : ?array
+    public function getImportedSchemaIds(): ?array
     {
         return $this->importedSchemaIds;
     }
@@ -146,7 +146,7 @@ class SchemaImportResult
      *
      * @return self
      */
-    public function setImportedSchemaIds(?array $importedSchemaIds) : self
+    public function setImportedSchemaIds(?array $importedSchemaIds): self
     {
         $this->initialized['importedSchemaIds'] = true;
         $this->importedSchemaIds = $importedSchemaIds;

@@ -17,15 +17,15 @@ class PatchEntity extends \Gounlaf\JanephpBug\Runtime\Client\BaseEndpoint implem
         $this->body = $requestBody;
     }
     use \Gounlaf\JanephpBug\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'PATCH';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{id}'], [$this->id], '/patchable/entity/{id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if ($this->body instanceof \Gounlaf\JanephpBug\Model\PatchableEntity) {
             return [['Content-Type' => ['application/json']], $serializer->serialize($this->body, 'json')];
@@ -54,7 +54,7 @@ class PatchEntity extends \Gounlaf\JanephpBug\Runtime\Client\BaseEndpoint implem
             throw new \Gounlaf\JanephpBug\Exception\PatchEntityNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

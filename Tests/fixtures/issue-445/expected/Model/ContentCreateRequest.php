@@ -8,7 +8,7 @@ class ContentCreateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -60,7 +60,7 @@ class ContentCreateRequest
     *
     * @return string
     */
-    public function getContentSchemaId() : string
+    public function getContentSchemaId(): string
     {
         return $this->contentSchemaId;
     }
@@ -72,7 +72,7 @@ class ContentCreateRequest
     *
     * @return self
     */
-    public function setContentSchemaId(string $contentSchemaId) : self
+    public function setContentSchemaId(string $contentSchemaId): self
     {
         $this->initialized['contentSchemaId'] = true;
         $this->contentSchemaId = $contentSchemaId;
@@ -84,7 +84,7 @@ class ContentCreateRequest
     *
     * @return list<string>|null
     */
-    public function getLayerSchemaIds() : ?array
+    public function getLayerSchemaIds(): ?array
     {
         return $this->layerSchemaIds;
     }
@@ -96,7 +96,7 @@ class ContentCreateRequest
     *
     * @return self
     */
-    public function setLayerSchemaIds(?array $layerSchemaIds) : self
+    public function setLayerSchemaIds(?array $layerSchemaIds): self
     {
         $this->initialized['layerSchemaIds'] = true;
         $this->layerSchemaIds = $layerSchemaIds;
@@ -107,7 +107,7 @@ class ContentCreateRequest
      *
      * @return array<string, mixed>|null
      */
-    public function getContent() : ?iterable
+    public function getContent(): ?iterable
     {
         return $this->content;
     }
@@ -118,7 +118,7 @@ class ContentCreateRequest
      *
      * @return self
      */
-    public function setContent(?iterable $content) : self
+    public function setContent(?iterable $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;
@@ -131,7 +131,7 @@ class ContentCreateRequest
     *
     * @return array<string, mixed>|null
     */
-    public function getMetadata() : ?iterable
+    public function getMetadata(): ?iterable
     {
         return $this->metadata;
     }
@@ -144,7 +144,7 @@ class ContentCreateRequest
     *
     * @return self
     */
-    public function setMetadata(?iterable $metadata) : self
+    public function setMetadata(?iterable $metadata): self
     {
         $this->initialized['metadata'] = true;
         $this->metadata = $metadata;
@@ -155,7 +155,7 @@ class ContentCreateRequest
      *
      * @return list<string>|null
      */
-    public function getContentPermissionSetIds() : ?array
+    public function getContentPermissionSetIds(): ?array
     {
         return $this->contentPermissionSetIds;
     }
@@ -166,7 +166,7 @@ class ContentCreateRequest
      *
      * @return self
      */
-    public function setContentPermissionSetIds(?array $contentPermissionSetIds) : self
+    public function setContentPermissionSetIds(?array $contentPermissionSetIds): self
     {
         $this->initialized['contentPermissionSetIds'] = true;
         $this->contentPermissionSetIds = $contentPermissionSetIds;
@@ -179,7 +179,7 @@ class ContentCreateRequest
     *
     * @return string|null
     */
-    public function getRequestId() : ?string
+    public function getRequestId(): ?string
     {
         return $this->requestId;
     }
@@ -192,7 +192,7 @@ class ContentCreateRequest
     *
     * @return self
     */
-    public function setRequestId(?string $requestId) : self
+    public function setRequestId(?string $requestId): self
     {
         $this->initialized['requestId'] = true;
         $this->requestId = $requestId;

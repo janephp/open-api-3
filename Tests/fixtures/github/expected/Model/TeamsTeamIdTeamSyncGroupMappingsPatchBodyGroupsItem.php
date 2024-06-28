@@ -8,7 +8,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getGroupId() : string
+    public function getGroupId(): string
     {
         return $this->groupId;
     }
@@ -64,7 +64,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setGroupId(string $groupId) : self
+    public function setGroupId(string $groupId): self
     {
         $this->initialized['groupId'] = true;
         $this->groupId = $groupId;
@@ -75,7 +75,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getGroupName() : string
+    public function getGroupName(): string
     {
         return $this->groupName;
     }
@@ -86,7 +86,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setGroupName(string $groupName) : self
+    public function setGroupName(string $groupName): self
     {
         $this->initialized['groupName'] = true;
         $this->groupName = $groupName;
@@ -97,7 +97,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getGroupDescription() : string
+    public function getGroupDescription(): string
     {
         return $this->groupDescription;
     }
@@ -108,7 +108,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setGroupDescription(string $groupDescription) : self
+    public function setGroupDescription(string $groupDescription): self
     {
         $this->initialized['groupDescription'] = true;
         $this->groupDescription = $groupDescription;
@@ -119,7 +119,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -130,7 +130,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -141,7 +141,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -152,7 +152,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -163,7 +163,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -174,7 +174,7 @@ class TeamsTeamIdTeamSyncGroupMappingsPatchBodyGroupsItem extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

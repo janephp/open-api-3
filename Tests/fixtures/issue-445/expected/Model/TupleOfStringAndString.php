@@ -8,7 +8,7 @@ class TupleOfStringAndString
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TupleOfStringAndString
      *
      * @return string
      */
-    public function getItem1() : string
+    public function getItem1(): string
     {
         return $this->item1;
     }
@@ -40,7 +40,7 @@ class TupleOfStringAndString
      *
      * @return self
      */
-    public function setItem1(string $item1) : self
+    public function setItem1(string $item1): self
     {
         $this->initialized['item1'] = true;
         $this->item1 = $item1;
@@ -51,7 +51,7 @@ class TupleOfStringAndString
      *
      * @return string
      */
-    public function getItem2() : string
+    public function getItem2(): string
     {
         return $this->item2;
     }
@@ -62,7 +62,7 @@ class TupleOfStringAndString
      *
      * @return self
      */
-    public function setItem2(string $item2) : self
+    public function setItem2(string $item2): self
     {
         $this->initialized['item2'] = true;
         $this->item2 = $item2;

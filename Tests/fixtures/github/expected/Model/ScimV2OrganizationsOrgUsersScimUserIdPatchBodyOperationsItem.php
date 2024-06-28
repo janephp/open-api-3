@@ -8,7 +8,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
      *
      * @return string
      */
-    public function getOp() : string
+    public function getOp(): string
     {
         return $this->op;
     }
@@ -46,7 +46,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
      *
      * @return self
      */
-    public function setOp(string $op) : self
+    public function setOp(string $op): self
     {
         $this->initialized['op'] = true;
         $this->op = $op;
@@ -57,7 +57,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -68,7 +68,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -90,7 +90,7 @@ class ScimV2OrganizationsOrgUsersScimUserIdPatchBodyOperationsItem extends \Arra
      *
      * @return self
      */
-    public function setValue($value) : self
+    public function setValue($value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

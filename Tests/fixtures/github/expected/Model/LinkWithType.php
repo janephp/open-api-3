@@ -8,7 +8,7 @@ class LinkWithType extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class LinkWithType extends \ArrayObject
      *
      * @return string
      */
-    public function getHref() : string
+    public function getHref(): string
     {
         return $this->href;
     }
@@ -40,7 +40,7 @@ class LinkWithType extends \ArrayObject
      *
      * @return self
      */
-    public function setHref(string $href) : self
+    public function setHref(string $href): self
     {
         $this->initialized['href'] = true;
         $this->href = $href;
@@ -51,7 +51,7 @@ class LinkWithType extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -62,7 +62,7 @@ class LinkWithType extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;

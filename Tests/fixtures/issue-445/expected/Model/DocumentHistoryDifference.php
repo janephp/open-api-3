@@ -8,7 +8,7 @@ class DocumentHistoryDifference
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -43,7 +43,7 @@ class DocumentHistoryDifference
      *
      * @return string|null
      */
-    public function getDocumentId() : ?string
+    public function getDocumentId(): ?string
     {
         return $this->documentId;
     }
@@ -54,7 +54,7 @@ class DocumentHistoryDifference
      *
      * @return self
      */
-    public function setDocumentId(?string $documentId) : self
+    public function setDocumentId(?string $documentId): self
     {
         $this->initialized['documentId'] = true;
         $this->documentId = $documentId;
@@ -65,7 +65,7 @@ class DocumentHistoryDifference
      *
      * @return int
      */
-    public function getOldDocumentVersion() : int
+    public function getOldDocumentVersion(): int
     {
         return $this->oldDocumentVersion;
     }
@@ -76,7 +76,7 @@ class DocumentHistoryDifference
      *
      * @return self
      */
-    public function setOldDocumentVersion(int $oldDocumentVersion) : self
+    public function setOldDocumentVersion(int $oldDocumentVersion): self
     {
         $this->initialized['oldDocumentVersion'] = true;
         $this->oldDocumentVersion = $oldDocumentVersion;
@@ -87,7 +87,7 @@ class DocumentHistoryDifference
      *
      * @return int
      */
-    public function getNewDocumentVersion() : int
+    public function getNewDocumentVersion(): int
     {
         return $this->newDocumentVersion;
     }
@@ -98,7 +98,7 @@ class DocumentHistoryDifference
      *
      * @return self
      */
-    public function setNewDocumentVersion(int $newDocumentVersion) : self
+    public function setNewDocumentVersion(int $newDocumentVersion): self
     {
         $this->initialized['newDocumentVersion'] = true;
         $this->newDocumentVersion = $newDocumentVersion;
@@ -124,7 +124,7 @@ class DocumentHistoryDifference
     *
     * @return self
     */
-    public function setPatch($patch) : self
+    public function setPatch($patch): self
     {
         $this->initialized['patch'] = true;
         $this->patch = $patch;

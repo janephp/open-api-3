@@ -18,11 +18,11 @@ class TeamsAddOrUpdateProjectPermissionsInOrgForbiddenException extends Forbidde
         $this->orgsOrgTeamsTeamSlugProjectsProjectIdPutResponse403 = $orgsOrgTeamsTeamSlugProjectsProjectIdPutResponse403;
         $this->response = $response;
     }
-    public function getOrgsOrgTeamsTeamSlugProjectsProjectIdPutResponse403() : \Github\Model\OrgsOrgTeamsTeamSlugProjectsProjectIdPutResponse403
+    public function getOrgsOrgTeamsTeamSlugProjectsProjectIdPutResponse403(): \Github\Model\OrgsOrgTeamsTeamSlugProjectsProjectIdPutResponse403
     {
         return $this->orgsOrgTeamsTeamSlugProjectsProjectIdPutResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class CatInSnakeCase extends Pet
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class CatInSnakeCase extends Pet
      *
      * @return string
      */
-    public function getHuntingSkill() : string
+    public function getHuntingSkill(): string
     {
         return $this->huntingSkill;
     }
@@ -34,7 +34,7 @@ class CatInSnakeCase extends Pet
      *
      * @return self
      */
-    public function setHuntingSkill(string $huntingSkill) : self
+    public function setHuntingSkill(string $huntingSkill): self
     {
         $this->initialized['huntingSkill'] = true;
         $this->huntingSkill = $huntingSkill;

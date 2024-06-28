@@ -8,7 +8,7 @@ class ReviewCommentLinks extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ReviewCommentLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getSelf() : Link
+    public function getSelf(): Link
     {
         return $this->self;
     }
@@ -46,7 +46,7 @@ class ReviewCommentLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setSelf(Link $self) : self
+    public function setSelf(Link $self): self
     {
         $this->initialized['self'] = true;
         $this->self = $self;
@@ -57,7 +57,7 @@ class ReviewCommentLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getHtml() : Link
+    public function getHtml(): Link
     {
         return $this->html;
     }
@@ -68,7 +68,7 @@ class ReviewCommentLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setHtml(Link $html) : self
+    public function setHtml(Link $html): self
     {
         $this->initialized['html'] = true;
         $this->html = $html;
@@ -79,7 +79,7 @@ class ReviewCommentLinks extends \ArrayObject
      *
      * @return Link
      */
-    public function getPullRequest() : Link
+    public function getPullRequest(): Link
     {
         return $this->pullRequest;
     }
@@ -90,7 +90,7 @@ class ReviewCommentLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequest(Link $pullRequest) : self
+    public function setPullRequest(Link $pullRequest): self
     {
         $this->initialized['pullRequest'] = true;
         $this->pullRequest = $pullRequest;

@@ -8,7 +8,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -58,7 +58,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -69,7 +69,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return string|null
      */
-    public function getBody() : ?string
+    public function getBody(): ?string
     {
         return $this->body;
     }
@@ -80,7 +80,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(?string $body) : self
+    public function setBody(?string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -91,7 +91,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -102,7 +102,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -113,7 +113,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationPermission() : string
+    public function getOrganizationPermission(): string
     {
         return $this->organizationPermission;
     }
@@ -124,7 +124,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationPermission(string $organizationPermission) : self
+    public function setOrganizationPermission(string $organizationPermission): self
     {
         $this->initialized['organizationPermission'] = true;
         $this->organizationPermission = $organizationPermission;
@@ -135,7 +135,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getPrivate() : bool
+    public function getPrivate(): bool
     {
         return $this->private;
     }
@@ -146,7 +146,7 @@ class ProjectsProjectIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivate(bool $private) : self
+    public function setPrivate(bool $private): self
     {
         $this->initialized['private'] = true;
         $this->private = $private;

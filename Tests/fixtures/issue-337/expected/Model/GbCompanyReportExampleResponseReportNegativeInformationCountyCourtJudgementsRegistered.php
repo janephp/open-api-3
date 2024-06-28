@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return list<GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegisteredExactItem>
      */
-    public function getExact() : array
+    public function getExact(): array
     {
         return $this->exact;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return self
      */
-    public function setExact(array $exact) : self
+    public function setExact(array $exact): self
     {
         $this->initialized['exact'] = true;
         $this->exact = $exact;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return list<GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgementsRegisteredPossibleItem>
      */
-    public function getPossible() : array
+    public function getPossible(): array
     {
         return $this->possible;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return self
      */
-    public function setPossible(array $possible) : self
+    public function setPossible(array $possible): self
     {
         $this->initialized['possible'] = true;
         $this->possible = $possible;

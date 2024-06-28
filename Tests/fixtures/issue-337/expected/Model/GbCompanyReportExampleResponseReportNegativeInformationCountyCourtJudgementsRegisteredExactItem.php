@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return string
      */
-    public function getCcjDate() : string
+    public function getCcjDate(): string
     {
         return $this->ccjDate;
     }
@@ -64,7 +64,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return self
      */
-    public function setCcjDate(string $ccjDate) : self
+    public function setCcjDate(string $ccjDate): self
     {
         $this->initialized['ccjDate'] = true;
         $this->ccjDate = $ccjDate;
@@ -75,7 +75,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return string
      */
-    public function getCourt() : string
+    public function getCourt(): string
     {
         return $this->court;
     }
@@ -86,7 +86,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return self
      */
-    public function setCourt(string $court) : self
+    public function setCourt(string $court): self
     {
         $this->initialized['court'] = true;
         $this->court = $court;
@@ -97,7 +97,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return float
      */
-    public function getCcjAmount() : float
+    public function getCcjAmount(): float
     {
         return $this->ccjAmount;
     }
@@ -108,7 +108,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return self
      */
-    public function setCcjAmount(float $ccjAmount) : self
+    public function setCcjAmount(float $ccjAmount): self
     {
         $this->initialized['ccjAmount'] = true;
         $this->ccjAmount = $ccjAmount;
@@ -119,7 +119,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return string
      */
-    public function getCaseNumber() : string
+    public function getCaseNumber(): string
     {
         return $this->caseNumber;
     }
@@ -130,7 +130,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return self
      */
-    public function setCaseNumber(string $caseNumber) : self
+    public function setCaseNumber(string $caseNumber): self
     {
         $this->initialized['caseNumber'] = true;
         $this->caseNumber = $caseNumber;
@@ -141,7 +141,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return string
      */
-    public function getCcjStatus() : string
+    public function getCcjStatus(): string
     {
         return $this->ccjStatus;
     }
@@ -152,7 +152,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return self
      */
-    public function setCcjStatus(string $ccjStatus) : self
+    public function setCcjStatus(string $ccjStatus): self
     {
         $this->initialized['ccjStatus'] = true;
         $this->ccjStatus = $ccjStatus;
@@ -163,7 +163,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return string
      */
-    public function getIncomingRecordDetails() : string
+    public function getIncomingRecordDetails(): string
     {
         return $this->incomingRecordDetails;
     }
@@ -174,7 +174,7 @@ class GbCompanyReportExampleResponseReportNegativeInformationCountyCourtJudgemen
      *
      * @return self
      */
-    public function setIncomingRecordDetails(string $incomingRecordDetails) : self
+    public function setIncomingRecordDetails(string $incomingRecordDetails): self
     {
         $this->initialized['incomingRecordDetails'] = true;
         $this->incomingRecordDetails = $incomingRecordDetails;

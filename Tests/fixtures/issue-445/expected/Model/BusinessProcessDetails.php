@@ -8,7 +8,7 @@ class BusinessProcessDetails extends BusinessProcess
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -34,7 +34,7 @@ class BusinessProcessDetails extends BusinessProcess
      *
      * @return self
      */
-    public function setDetails($details) : self
+    public function setDetails($details): self
     {
         $this->initialized['details'] = true;
         $this->details = $details;

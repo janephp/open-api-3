@@ -14,15 +14,15 @@ class BodyParameterTriggersContentTypeBeingSet extends \Jane\Component\OpenApi3\
         $this->body = $requestBody;
     }
     use \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'POST';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/test-simple';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         if (is_string($this->body)) {
             return [['Content-Type' => ['application/json']], json_encode($this->body)];
@@ -43,7 +43,7 @@ class BodyParameterTriggersContentTypeBeingSet extends \Jane\Component\OpenApi3\
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

@@ -8,7 +8,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getScopes() : ?array
+    public function getScopes(): ?array
     {
         return $this->scopes;
     }
@@ -64,7 +64,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setScopes(?array $scopes) : self
+    public function setScopes(?array $scopes): self
     {
         $this->initialized['scopes'] = true;
         $this->scopes = $scopes;
@@ -75,7 +75,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getAddScopes() : array
+    public function getAddScopes(): array
     {
         return $this->addScopes;
     }
@@ -86,7 +86,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAddScopes(array $addScopes) : self
+    public function setAddScopes(array $addScopes): self
     {
         $this->initialized['addScopes'] = true;
         $this->addScopes = $addScopes;
@@ -97,7 +97,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getRemoveScopes() : array
+    public function getRemoveScopes(): array
     {
         return $this->removeScopes;
     }
@@ -108,7 +108,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRemoveScopes(array $removeScopes) : self
+    public function setRemoveScopes(array $removeScopes): self
     {
         $this->initialized['removeScopes'] = true;
         $this->removeScopes = $removeScopes;
@@ -119,7 +119,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getNote() : string
+    public function getNote(): string
     {
         return $this->note;
     }
@@ -130,7 +130,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNote(string $note) : self
+    public function setNote(string $note): self
     {
         $this->initialized['note'] = true;
         $this->note = $note;
@@ -141,7 +141,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getNoteUrl() : string
+    public function getNoteUrl(): string
     {
         return $this->noteUrl;
     }
@@ -152,7 +152,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNoteUrl(string $noteUrl) : self
+    public function setNoteUrl(string $noteUrl): self
     {
         $this->initialized['noteUrl'] = true;
         $this->noteUrl = $noteUrl;
@@ -163,7 +163,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getFingerprint() : string
+    public function getFingerprint(): string
     {
         return $this->fingerprint;
     }
@@ -174,7 +174,7 @@ class AuthorizationsAuthorizationIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setFingerprint(string $fingerprint) : self
+    public function setFingerprint(string $fingerprint): self
     {
         $this->initialized['fingerprint'] = true;
         $this->fingerprint = $fingerprint;

@@ -8,7 +8,7 @@ class ReposOwnerRepoCheckSuitesCheckSuiteIdCheckRunsGetResponse200 extends \Arra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoCheckSuitesCheckSuiteIdCheckRunsGetResponse200 extends \Arra
      *
      * @return int
      */
-    public function getTotalCount() : int
+    public function getTotalCount(): int
     {
         return $this->totalCount;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoCheckSuitesCheckSuiteIdCheckRunsGetResponse200 extends \Arra
      *
      * @return self
      */
-    public function setTotalCount(int $totalCount) : self
+    public function setTotalCount(int $totalCount): self
     {
         $this->initialized['totalCount'] = true;
         $this->totalCount = $totalCount;
@@ -51,7 +51,7 @@ class ReposOwnerRepoCheckSuitesCheckSuiteIdCheckRunsGetResponse200 extends \Arra
      *
      * @return list<CheckRun>
      */
-    public function getCheckRuns() : array
+    public function getCheckRuns(): array
     {
         return $this->checkRuns;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoCheckSuitesCheckSuiteIdCheckRunsGetResponse200 extends \Arra
      *
      * @return self
      */
-    public function setCheckRuns(array $checkRuns) : self
+    public function setCheckRuns(array $checkRuns): self
     {
         $this->initialized['checkRuns'] = true;
         $this->checkRuns = $checkRuns;

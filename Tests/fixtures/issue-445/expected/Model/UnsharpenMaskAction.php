@@ -8,7 +8,7 @@ class UnsharpenMaskAction extends ImageActionBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class UnsharpenMaskAction extends ImageActionBase
      *
      * @return float
      */
-    public function getAmount() : float
+    public function getAmount(): float
     {
         return $this->amount;
     }
@@ -46,7 +46,7 @@ class UnsharpenMaskAction extends ImageActionBase
      *
      * @return self
      */
-    public function setAmount(float $amount) : self
+    public function setAmount(float $amount): self
     {
         $this->initialized['amount'] = true;
         $this->amount = $amount;
@@ -57,7 +57,7 @@ class UnsharpenMaskAction extends ImageActionBase
      *
      * @return float
      */
-    public function getRadius() : float
+    public function getRadius(): float
     {
         return $this->radius;
     }
@@ -68,7 +68,7 @@ class UnsharpenMaskAction extends ImageActionBase
      *
      * @return self
      */
-    public function setRadius(float $radius) : self
+    public function setRadius(float $radius): self
     {
         $this->initialized['radius'] = true;
         $this->radius = $radius;
@@ -79,7 +79,7 @@ class UnsharpenMaskAction extends ImageActionBase
      *
      * @return float
      */
-    public function getThreshold() : float
+    public function getThreshold(): float
     {
         return $this->threshold;
     }
@@ -90,7 +90,7 @@ class UnsharpenMaskAction extends ImageActionBase
      *
      * @return self
      */
-    public function setThreshold(float $threshold) : self
+    public function setThreshold(float $threshold): self
     {
         $this->initialized['threshold'] = true;
         $this->threshold = $threshold;

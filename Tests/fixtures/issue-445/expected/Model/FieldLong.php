@@ -8,7 +8,7 @@ class FieldLong extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class FieldLong extends FieldBase
      *
      * @return string|null
      */
-    public function getPattern() : ?string
+    public function getPattern(): ?string
     {
         return $this->pattern;
     }
@@ -52,7 +52,7 @@ class FieldLong extends FieldBase
      *
      * @return self
      */
-    public function setPattern(?string $pattern) : self
+    public function setPattern(?string $pattern): self
     {
         $this->initialized['pattern'] = true;
         $this->pattern = $pattern;
@@ -63,7 +63,7 @@ class FieldLong extends FieldBase
      *
      * @return float|null
      */
-    public function getMinimum() : ?float
+    public function getMinimum(): ?float
     {
         return $this->minimum;
     }
@@ -74,7 +74,7 @@ class FieldLong extends FieldBase
      *
      * @return self
      */
-    public function setMinimum(?float $minimum) : self
+    public function setMinimum(?float $minimum): self
     {
         $this->initialized['minimum'] = true;
         $this->minimum = $minimum;
@@ -85,7 +85,7 @@ class FieldLong extends FieldBase
      *
      * @return float|null
      */
-    public function getMaximum() : ?float
+    public function getMaximum(): ?float
     {
         return $this->maximum;
     }
@@ -96,7 +96,7 @@ class FieldLong extends FieldBase
      *
      * @return self
      */
-    public function setMaximum(?float $maximum) : self
+    public function setMaximum(?float $maximum): self
     {
         $this->initialized['maximum'] = true;
         $this->maximum = $maximum;
@@ -107,7 +107,7 @@ class FieldLong extends FieldBase
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -118,7 +118,7 @@ class FieldLong extends FieldBase
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;

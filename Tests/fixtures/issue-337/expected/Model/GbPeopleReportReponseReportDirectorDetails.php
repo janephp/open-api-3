@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -112,7 +112,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -123,7 +123,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getIdType() : string
+    public function getIdType(): string
     {
         return $this->idType;
     }
@@ -134,7 +134,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setIdType(string $idType) : self
+    public function setIdType(string $idType): self
     {
         $this->initialized['idType'] = true;
         $this->idType = $idType;
@@ -145,7 +145,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -156,7 +156,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -167,7 +167,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -178,7 +178,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -189,7 +189,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getFirstName() : string
+    public function getFirstName(): string
     {
         return $this->firstName;
     }
@@ -200,7 +200,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setFirstName(string $firstName) : self
+    public function setFirstName(string $firstName): self
     {
         $this->initialized['firstName'] = true;
         $this->firstName = $firstName;
@@ -211,7 +211,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getMiddleName() : string
+    public function getMiddleName(): string
     {
         return $this->middleName;
     }
@@ -222,7 +222,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setMiddleName(string $middleName) : self
+    public function setMiddleName(string $middleName): self
     {
         $this->initialized['middleName'] = true;
         $this->middleName = $middleName;
@@ -233,7 +233,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getSurname() : string
+    public function getSurname(): string
     {
         return $this->surname;
     }
@@ -244,7 +244,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setSurname(string $surname) : self
+    public function setSurname(string $surname): self
     {
         $this->initialized['surname'] = true;
         $this->surname = $surname;
@@ -255,7 +255,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return GbPeopleReportReponseReportDirectorDetailsAddress
      */
-    public function getAddress() : GbPeopleReportReponseReportDirectorDetailsAddress
+    public function getAddress(): GbPeopleReportReponseReportDirectorDetailsAddress
     {
         return $this->address;
     }
@@ -266,7 +266,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress(GbPeopleReportReponseReportDirectorDetailsAddress $address) : self
+    public function setAddress(GbPeopleReportReponseReportDirectorDetailsAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -277,7 +277,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getGender() : string
+    public function getGender(): string
     {
         return $this->gender;
     }
@@ -288,7 +288,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setGender(string $gender) : self
+    public function setGender(string $gender): self
     {
         $this->initialized['gender'] = true;
         $this->gender = $gender;
@@ -299,7 +299,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getDateOfBirth() : string
+    public function getDateOfBirth(): string
     {
         return $this->dateOfBirth;
     }
@@ -310,7 +310,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setDateOfBirth(string $dateOfBirth) : self
+    public function setDateOfBirth(string $dateOfBirth): self
     {
         $this->initialized['dateOfBirth'] = true;
         $this->dateOfBirth = $dateOfBirth;
@@ -321,7 +321,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getCountry() : string
+    public function getCountry(): string
     {
         return $this->country;
     }
@@ -332,7 +332,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(string $country): self
     {
         $this->initialized['country'] = true;
         $this->country = $country;
@@ -343,7 +343,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return string
      */
-    public function getDirectorType() : string
+    public function getDirectorType(): string
     {
         return $this->directorType;
     }
@@ -354,7 +354,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setDirectorType(string $directorType) : self
+    public function setDirectorType(string $directorType): self
     {
         $this->initialized['directorType'] = true;
         $this->directorType = $directorType;
@@ -365,7 +365,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return list<GbPeopleReportReponseReportDirectorDetailsPositionsItem>
      */
-    public function getPositions() : array
+    public function getPositions(): array
     {
         return $this->positions;
     }
@@ -376,7 +376,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setPositions(array $positions) : self
+    public function setPositions(array $positions): self
     {
         $this->initialized['positions'] = true;
         $this->positions = $positions;
@@ -387,7 +387,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return GbPeopleReportReponseReportDirectorDetailsAdditionalData
      */
-    public function getAdditionalData() : GbPeopleReportReponseReportDirectorDetailsAdditionalData
+    public function getAdditionalData(): GbPeopleReportReponseReportDirectorDetailsAdditionalData
     {
         return $this->additionalData;
     }
@@ -398,7 +398,7 @@ class GbPeopleReportReponseReportDirectorDetails extends \ArrayObject
      *
      * @return self
      */
-    public function setAdditionalData(GbPeopleReportReponseReportDirectorDetailsAdditionalData $additionalData) : self
+    public function setAdditionalData(GbPeopleReportReponseReportDirectorDetailsAdditionalData $additionalData): self
     {
         $this->initialized['additionalData'] = true;
         $this->additionalData = $additionalData;

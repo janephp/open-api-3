@@ -8,7 +8,7 @@ class GeoBoundingBoxFilter extends FilterBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -37,7 +37,7 @@ class GeoBoundingBoxFilter extends FilterBase
     *
     * @return string
     */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -49,7 +49,7 @@ class GeoBoundingBoxFilter extends FilterBase
     *
     * @return self
     */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -71,7 +71,7 @@ class GeoBoundingBoxFilter extends FilterBase
      *
      * @return self
      */
-    public function setTopLeft($topLeft) : self
+    public function setTopLeft($topLeft): self
     {
         $this->initialized['topLeft'] = true;
         $this->topLeft = $topLeft;
@@ -93,7 +93,7 @@ class GeoBoundingBoxFilter extends FilterBase
      *
      * @return self
      */
-    public function setBottomRight($bottomRight) : self
+    public function setBottomRight($bottomRight): self
     {
         $this->initialized['bottomRight'] = true;
         $this->bottomRight = $bottomRight;

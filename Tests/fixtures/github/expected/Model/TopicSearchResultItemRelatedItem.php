@@ -8,7 +8,7 @@ class TopicSearchResultItemRelatedItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class TopicSearchResultItemRelatedItem extends \ArrayObject
      *
      * @return TopicSearchResultItemRelatedItemTopicRelation
      */
-    public function getTopicRelation() : TopicSearchResultItemRelatedItemTopicRelation
+    public function getTopicRelation(): TopicSearchResultItemRelatedItemTopicRelation
     {
         return $this->topicRelation;
     }
@@ -34,7 +34,7 @@ class TopicSearchResultItemRelatedItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTopicRelation(TopicSearchResultItemRelatedItemTopicRelation $topicRelation) : self
+    public function setTopicRelation(TopicSearchResultItemRelatedItemTopicRelation $topicRelation): self
     {
         $this->initialized['topicRelation'] = true;
         $this->topicRelation = $topicRelation;

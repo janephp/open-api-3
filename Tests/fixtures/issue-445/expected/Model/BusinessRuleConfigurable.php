@@ -8,7 +8,7 @@ class BusinessRuleConfigurable extends BusinessRule
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class BusinessRuleConfigurable extends BusinessRule
      *
      * @return self
      */
-    public function setCondition($condition) : self
+    public function setCondition($condition): self
     {
         $this->initialized['condition'] = true;
         $this->condition = $condition;
@@ -57,7 +57,7 @@ class BusinessRuleConfigurable extends BusinessRule
      *
      * @return list<BusinessRuleTransformationGroup>|null
      */
-    public function getTransformationGroups() : ?array
+    public function getTransformationGroups(): ?array
     {
         return $this->transformationGroups;
     }
@@ -68,7 +68,7 @@ class BusinessRuleConfigurable extends BusinessRule
      *
      * @return self
      */
-    public function setTransformationGroups(?array $transformationGroups) : self
+    public function setTransformationGroups(?array $transformationGroups): self
     {
         $this->initialized['transformationGroups'] = true;
         $this->transformationGroups = $transformationGroups;
@@ -79,7 +79,7 @@ class BusinessRuleConfigurable extends BusinessRule
      *
      * @return list<BusinessRuleAction>|null
      */
-    public function getActions() : ?array
+    public function getActions(): ?array
     {
         return $this->actions;
     }
@@ -90,7 +90,7 @@ class BusinessRuleConfigurable extends BusinessRule
      *
      * @return self
      */
-    public function setActions(?array $actions) : self
+    public function setActions(?array $actions): self
     {
         $this->initialized['actions'] = true;
         $this->actions = $actions;

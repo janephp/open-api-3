@@ -8,7 +8,7 @@ class UserInviteManyRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class UserInviteManyRequest extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getUserIds() : array
+    public function getUserIds(): array
     {
         return $this->userIds;
     }
@@ -34,7 +34,7 @@ class UserInviteManyRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUserIds(array $userIds) : self
+    public function setUserIds(array $userIds): self
     {
         $this->initialized['userIds'] = true;
         $this->userIds = $userIds;

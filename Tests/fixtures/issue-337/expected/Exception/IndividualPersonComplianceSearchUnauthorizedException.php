@@ -13,7 +13,7 @@ class IndividualPersonComplianceSearchUnauthorizedException extends Unauthorized
         parent::__construct('Unauthorized');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

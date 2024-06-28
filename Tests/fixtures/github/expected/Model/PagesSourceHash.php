@@ -8,7 +8,7 @@ class PagesSourceHash extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class PagesSourceHash extends \ArrayObject
      *
      * @return string
      */
-    public function getBranch() : string
+    public function getBranch(): string
     {
         return $this->branch;
     }
@@ -40,7 +40,7 @@ class PagesSourceHash extends \ArrayObject
      *
      * @return self
      */
-    public function setBranch(string $branch) : self
+    public function setBranch(string $branch): self
     {
         $this->initialized['branch'] = true;
         $this->branch = $branch;
@@ -51,7 +51,7 @@ class PagesSourceHash extends \ArrayObject
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -62,7 +62,7 @@ class PagesSourceHash extends \ArrayObject
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;

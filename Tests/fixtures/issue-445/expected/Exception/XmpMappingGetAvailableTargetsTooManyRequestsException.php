@@ -13,7 +13,7 @@ class XmpMappingGetAvailableTargetsTooManyRequestsException extends TooManyReque
         parent::__construct('Too many requests');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

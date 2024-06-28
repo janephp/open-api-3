@@ -8,7 +8,7 @@ class Deployment extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -125,7 +125,7 @@ class Deployment extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -136,7 +136,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -147,7 +147,7 @@ class Deployment extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -158,7 +158,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -169,7 +169,7 @@ class Deployment extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -180,7 +180,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -191,7 +191,7 @@ class Deployment extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -202,7 +202,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -213,7 +213,7 @@ class Deployment extends \ArrayObject
      *
      * @return string
      */
-    public function getRef() : string
+    public function getRef(): string
     {
         return $this->ref;
     }
@@ -224,7 +224,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setRef(string $ref) : self
+    public function setRef(string $ref): self
     {
         $this->initialized['ref'] = true;
         $this->ref = $ref;
@@ -235,7 +235,7 @@ class Deployment extends \ArrayObject
      *
      * @return string
      */
-    public function getTask() : string
+    public function getTask(): string
     {
         return $this->task;
     }
@@ -246,7 +246,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setTask(string $task) : self
+    public function setTask(string $task): self
     {
         $this->initialized['task'] = true;
         $this->task = $task;
@@ -257,7 +257,7 @@ class Deployment extends \ArrayObject
      *
      * @return DeploymentPayload
      */
-    public function getPayload() : DeploymentPayload
+    public function getPayload(): DeploymentPayload
     {
         return $this->payload;
     }
@@ -268,7 +268,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setPayload(DeploymentPayload $payload) : self
+    public function setPayload(DeploymentPayload $payload): self
     {
         $this->initialized['payload'] = true;
         $this->payload = $payload;
@@ -279,7 +279,7 @@ class Deployment extends \ArrayObject
      *
      * @return string
      */
-    public function getOriginalEnvironment() : string
+    public function getOriginalEnvironment(): string
     {
         return $this->originalEnvironment;
     }
@@ -290,7 +290,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setOriginalEnvironment(string $originalEnvironment) : self
+    public function setOriginalEnvironment(string $originalEnvironment): self
     {
         $this->initialized['originalEnvironment'] = true;
         $this->originalEnvironment = $originalEnvironment;
@@ -301,7 +301,7 @@ class Deployment extends \ArrayObject
      *
      * @return string
      */
-    public function getEnvironment() : string
+    public function getEnvironment(): string
     {
         return $this->environment;
     }
@@ -312,7 +312,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setEnvironment(string $environment) : self
+    public function setEnvironment(string $environment): self
     {
         $this->initialized['environment'] = true;
         $this->environment = $environment;
@@ -323,7 +323,7 @@ class Deployment extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -334,7 +334,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(?string $description) : self
+    public function setDescription(?string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -345,7 +345,7 @@ class Deployment extends \ArrayObject
      *
      * @return DeploymentCreator|null
      */
-    public function getCreator() : ?DeploymentCreator
+    public function getCreator(): ?DeploymentCreator
     {
         return $this->creator;
     }
@@ -356,7 +356,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setCreator(?DeploymentCreator $creator) : self
+    public function setCreator(?DeploymentCreator $creator): self
     {
         $this->initialized['creator'] = true;
         $this->creator = $creator;
@@ -367,7 +367,7 @@ class Deployment extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -378,7 +378,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -389,7 +389,7 @@ class Deployment extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -400,7 +400,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;
@@ -411,7 +411,7 @@ class Deployment extends \ArrayObject
      *
      * @return string
      */
-    public function getStatusesUrl() : string
+    public function getStatusesUrl(): string
     {
         return $this->statusesUrl;
     }
@@ -422,7 +422,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setStatusesUrl(string $statusesUrl) : self
+    public function setStatusesUrl(string $statusesUrl): self
     {
         $this->initialized['statusesUrl'] = true;
         $this->statusesUrl = $statusesUrl;
@@ -433,7 +433,7 @@ class Deployment extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoryUrl() : string
+    public function getRepositoryUrl(): string
     {
         return $this->repositoryUrl;
     }
@@ -444,7 +444,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryUrl(string $repositoryUrl) : self
+    public function setRepositoryUrl(string $repositoryUrl): self
     {
         $this->initialized['repositoryUrl'] = true;
         $this->repositoryUrl = $repositoryUrl;
@@ -455,7 +455,7 @@ class Deployment extends \ArrayObject
      *
      * @return bool
      */
-    public function getTransientEnvironment() : bool
+    public function getTransientEnvironment(): bool
     {
         return $this->transientEnvironment;
     }
@@ -466,7 +466,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setTransientEnvironment(bool $transientEnvironment) : self
+    public function setTransientEnvironment(bool $transientEnvironment): self
     {
         $this->initialized['transientEnvironment'] = true;
         $this->transientEnvironment = $transientEnvironment;
@@ -477,7 +477,7 @@ class Deployment extends \ArrayObject
      *
      * @return bool
      */
-    public function getProductionEnvironment() : bool
+    public function getProductionEnvironment(): bool
     {
         return $this->productionEnvironment;
     }
@@ -488,7 +488,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setProductionEnvironment(bool $productionEnvironment) : self
+    public function setProductionEnvironment(bool $productionEnvironment): self
     {
         $this->initialized['productionEnvironment'] = true;
         $this->productionEnvironment = $productionEnvironment;
@@ -499,7 +499,7 @@ class Deployment extends \ArrayObject
      *
      * @return DeploymentPerformedViaGithubApp|null
      */
-    public function getPerformedViaGithubApp() : ?DeploymentPerformedViaGithubApp
+    public function getPerformedViaGithubApp(): ?DeploymentPerformedViaGithubApp
     {
         return $this->performedViaGithubApp;
     }
@@ -510,7 +510,7 @@ class Deployment extends \ArrayObject
      *
      * @return self
      */
-    public function setPerformedViaGithubApp(?DeploymentPerformedViaGithubApp $performedViaGithubApp) : self
+    public function setPerformedViaGithubApp(?DeploymentPerformedViaGithubApp $performedViaGithubApp): self
     {
         $this->initialized['performedViaGithubApp'] = true;
         $this->performedViaGithubApp = $performedViaGithubApp;

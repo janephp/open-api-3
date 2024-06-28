@@ -8,7 +8,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return string
      */
-    public function getContents() : string
+    public function getContents(): string
     {
         return $this->contents;
     }
@@ -58,7 +58,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return self
      */
-    public function setContents(string $contents) : self
+    public function setContents(string $contents): self
     {
         $this->initialized['contents'] = true;
         $this->contents = $contents;
@@ -69,7 +69,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return string
      */
-    public function getIssues() : string
+    public function getIssues(): string
     {
         return $this->issues;
     }
@@ -80,7 +80,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return self
      */
-    public function setIssues(string $issues) : self
+    public function setIssues(string $issues): self
     {
         $this->initialized['issues'] = true;
         $this->issues = $issues;
@@ -91,7 +91,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return string
      */
-    public function getDeployments() : string
+    public function getDeployments(): string
     {
         return $this->deployments;
     }
@@ -102,7 +102,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return self
      */
-    public function setDeployments(string $deployments) : self
+    public function setDeployments(string $deployments): self
     {
         $this->initialized['deployments'] = true;
         $this->deployments = $deployments;
@@ -113,7 +113,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return string
      */
-    public function getSingleFile() : string
+    public function getSingleFile(): string
     {
         return $this->singleFile;
     }
@@ -124,7 +124,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return self
      */
-    public function setSingleFile(string $singleFile) : self
+    public function setSingleFile(string $singleFile): self
     {
         $this->initialized['singleFile'] = true;
         $this->singleFile = $singleFile;
@@ -135,7 +135,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return string
      */
-    public function getDefNotARepo() : string
+    public function getDefNotARepo(): string
     {
         return $this->defNotARepo;
     }
@@ -146,7 +146,7 @@ class AppInstallationsInstallationIdAccessTokensPostBodyPermissions extends \Arr
      *
      * @return self
      */
-    public function setDefNotARepo(string $defNotARepo) : self
+    public function setDefNotARepo(string $defNotARepo): self
     {
         $this->initialized['defNotARepo'] = true;
         $this->defNotARepo = $defNotARepo;

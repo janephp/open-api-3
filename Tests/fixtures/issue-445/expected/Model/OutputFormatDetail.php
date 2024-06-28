@@ -8,7 +8,7 @@ class OutputFormatDetail extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -107,7 +107,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setSourceOutputFormats($sourceOutputFormats) : self
+    public function setSourceOutputFormats($sourceOutputFormats): self
     {
         $this->initialized['sourceOutputFormats'] = true;
         $this->sourceOutputFormats = $sourceOutputFormats;
@@ -129,7 +129,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setFormat($format) : self
+    public function setFormat($format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -151,7 +151,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -162,7 +162,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return string
      */
-    public function getRetentionTime() : string
+    public function getRetentionTime(): string
     {
         return $this->retentionTime;
     }
@@ -173,7 +173,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setRetentionTime(string $retentionTime) : self
+    public function setRetentionTime(string $retentionTime): self
     {
         $this->initialized['retentionTime'] = true;
         $this->retentionTime = $retentionTime;
@@ -197,7 +197,7 @@ class OutputFormatDetail extends \ArrayObject
     *
     * @return self
     */
-    public function setDownloadFileNamePatterns($downloadFileNamePatterns) : self
+    public function setDownloadFileNamePatterns($downloadFileNamePatterns): self
     {
         $this->initialized['downloadFileNamePatterns'] = true;
         $this->downloadFileNamePatterns = $downloadFileNamePatterns;
@@ -208,7 +208,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getViewForAll() : bool
+    public function getViewForAll(): bool
     {
         return $this->viewForAll;
     }
@@ -219,7 +219,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setViewForAll(bool $viewForAll) : self
+    public function setViewForAll(bool $viewForAll): self
     {
         $this->initialized['viewForAll'] = true;
         $this->viewForAll = $viewForAll;
@@ -230,7 +230,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getEnableXmpWriteback() : bool
+    public function getEnableXmpWriteback(): bool
     {
         return $this->enableXmpWriteback;
     }
@@ -241,7 +241,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setEnableXmpWriteback(bool $enableXmpWriteback) : self
+    public function setEnableXmpWriteback(bool $enableXmpWriteback): self
     {
         $this->initialized['enableXmpWriteback'] = true;
         $this->enableXmpWriteback = $enableXmpWriteback;
@@ -252,7 +252,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -263,7 +263,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -274,7 +274,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getSystem() : bool
+    public function getSystem(): bool
     {
         return $this->system;
     }
@@ -285,7 +285,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setSystem(bool $system) : self
+    public function setSystem(bool $system): self
     {
         $this->initialized['system'] = true;
         $this->system = $system;
@@ -296,7 +296,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getDynamic() : bool
+    public function getDynamic(): bool
     {
         return $this->dynamic;
     }
@@ -307,7 +307,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setDynamic(bool $dynamic) : self
+    public function setDynamic(bool $dynamic): self
     {
         $this->initialized['dynamic'] = true;
         $this->dynamic = $dynamic;
@@ -318,7 +318,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getDataExtraction() : bool
+    public function getDataExtraction(): bool
     {
         return $this->dataExtraction;
     }
@@ -329,7 +329,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setDataExtraction(bool $dataExtraction) : self
+    public function setDataExtraction(bool $dataExtraction): self
     {
         $this->initialized['dataExtraction'] = true;
         $this->dataExtraction = $dataExtraction;
@@ -340,7 +340,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return bool
      */
-    public function getTemporary() : bool
+    public function getTemporary(): bool
     {
         return $this->temporary;
     }
@@ -351,7 +351,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setTemporary(bool $temporary) : self
+    public function setTemporary(bool $temporary): self
     {
         $this->initialized['temporary'] = true;
         $this->temporary = $temporary;
@@ -373,7 +373,7 @@ class OutputFormatDetail extends \ArrayObject
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;

@@ -8,7 +8,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
      *
      * @return PullRequestReviewCommentLinksSelf
      */
-    public function getSelf() : PullRequestReviewCommentLinksSelf
+    public function getSelf(): PullRequestReviewCommentLinksSelf
     {
         return $this->self;
     }
@@ -46,7 +46,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setSelf(PullRequestReviewCommentLinksSelf $self) : self
+    public function setSelf(PullRequestReviewCommentLinksSelf $self): self
     {
         $this->initialized['self'] = true;
         $this->self = $self;
@@ -57,7 +57,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
      *
      * @return PullRequestReviewCommentLinksHtml
      */
-    public function getHtml() : PullRequestReviewCommentLinksHtml
+    public function getHtml(): PullRequestReviewCommentLinksHtml
     {
         return $this->html;
     }
@@ -68,7 +68,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setHtml(PullRequestReviewCommentLinksHtml $html) : self
+    public function setHtml(PullRequestReviewCommentLinksHtml $html): self
     {
         $this->initialized['html'] = true;
         $this->html = $html;
@@ -79,7 +79,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
      *
      * @return PullRequestReviewCommentLinksPullRequest
      */
-    public function getPullRequest() : PullRequestReviewCommentLinksPullRequest
+    public function getPullRequest(): PullRequestReviewCommentLinksPullRequest
     {
         return $this->pullRequest;
     }
@@ -90,7 +90,7 @@ class PullRequestReviewCommentLinks extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequest(PullRequestReviewCommentLinksPullRequest $pullRequest) : self
+    public function setPullRequest(PullRequestReviewCommentLinksPullRequest $pullRequest): self
     {
         $this->initialized['pullRequest'] = true;
         $this->pullRequest = $pullRequest;

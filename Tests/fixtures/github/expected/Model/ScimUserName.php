@@ -8,7 +8,7 @@ class ScimUserName extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ScimUserName extends \ArrayObject
      *
      * @return string|null
      */
-    public function getGivenName() : ?string
+    public function getGivenName(): ?string
     {
         return $this->givenName;
     }
@@ -40,7 +40,7 @@ class ScimUserName extends \ArrayObject
      *
      * @return self
      */
-    public function setGivenName(?string $givenName) : self
+    public function setGivenName(?string $givenName): self
     {
         $this->initialized['givenName'] = true;
         $this->givenName = $givenName;
@@ -51,7 +51,7 @@ class ScimUserName extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFamilyName() : ?string
+    public function getFamilyName(): ?string
     {
         return $this->familyName;
     }
@@ -62,7 +62,7 @@ class ScimUserName extends \ArrayObject
      *
      * @return self
      */
-    public function setFamilyName(?string $familyName) : self
+    public function setFamilyName(?string $familyName): self
     {
         $this->initialized['familyName'] = true;
         $this->familyName = $familyName;

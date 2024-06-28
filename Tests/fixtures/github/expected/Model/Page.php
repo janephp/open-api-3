@@ -8,7 +8,7 @@ class Page extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class Page extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -64,7 +64,7 @@ class Page extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -75,7 +75,7 @@ class Page extends \ArrayObject
      *
      * @return string|null
      */
-    public function getStatus() : ?string
+    public function getStatus(): ?string
     {
         return $this->status;
     }
@@ -86,7 +86,7 @@ class Page extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(?string $status) : self
+    public function setStatus(?string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -97,7 +97,7 @@ class Page extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCname() : ?string
+    public function getCname(): ?string
     {
         return $this->cname;
     }
@@ -108,7 +108,7 @@ class Page extends \ArrayObject
      *
      * @return self
      */
-    public function setCname(?string $cname) : self
+    public function setCname(?string $cname): self
     {
         $this->initialized['cname'] = true;
         $this->cname = $cname;
@@ -119,7 +119,7 @@ class Page extends \ArrayObject
      *
      * @return bool
      */
-    public function getCustom404() : bool
+    public function getCustom404(): bool
     {
         return $this->custom404;
     }
@@ -130,7 +130,7 @@ class Page extends \ArrayObject
      *
      * @return self
      */
-    public function setCustom404(bool $custom404) : self
+    public function setCustom404(bool $custom404): self
     {
         $this->initialized['custom404'] = true;
         $this->custom404 = $custom404;
@@ -141,7 +141,7 @@ class Page extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -152,7 +152,7 @@ class Page extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -163,7 +163,7 @@ class Page extends \ArrayObject
      *
      * @return PagesSourceHash
      */
-    public function getSource() : PagesSourceHash
+    public function getSource(): PagesSourceHash
     {
         return $this->source;
     }
@@ -174,7 +174,7 @@ class Page extends \ArrayObject
      *
      * @return self
      */
-    public function setSource(PagesSourceHash $source) : self
+    public function setSource(PagesSourceHash $source): self
     {
         $this->initialized['source'] = true;
         $this->source = $source;

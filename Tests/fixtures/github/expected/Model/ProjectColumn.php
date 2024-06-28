@@ -8,7 +8,7 @@ class ProjectColumn extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -76,7 +76,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -87,7 +87,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return string
      */
-    public function getProjectUrl() : string
+    public function getProjectUrl(): string
     {
         return $this->projectUrl;
     }
@@ -98,7 +98,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return self
      */
-    public function setProjectUrl(string $projectUrl) : self
+    public function setProjectUrl(string $projectUrl): self
     {
         $this->initialized['projectUrl'] = true;
         $this->projectUrl = $projectUrl;
@@ -109,7 +109,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return string
      */
-    public function getCardsUrl() : string
+    public function getCardsUrl(): string
     {
         return $this->cardsUrl;
     }
@@ -120,7 +120,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return self
      */
-    public function setCardsUrl(string $cardsUrl) : self
+    public function setCardsUrl(string $cardsUrl): self
     {
         $this->initialized['cardsUrl'] = true;
         $this->cardsUrl = $cardsUrl;
@@ -131,7 +131,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -142,7 +142,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -153,7 +153,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -164,7 +164,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -175,7 +175,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -186,7 +186,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -197,7 +197,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -208,7 +208,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -219,7 +219,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getUpdatedAt() : \DateTime
+    public function getUpdatedAt(): \DateTime
     {
         return $this->updatedAt;
     }
@@ -230,7 +230,7 @@ class ProjectColumn extends \ArrayObject
      *
      * @return self
      */
-    public function setUpdatedAt(\DateTime $updatedAt) : self
+    public function setUpdatedAt(\DateTime $updatedAt): self
     {
         $this->initialized['updatedAt'] = true;
         $this->updatedAt = $updatedAt;

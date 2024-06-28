@@ -8,7 +8,7 @@ class ConsoleMessage extends Message
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ConsoleMessage extends Message
      *
      * @return string|null
      */
-    public function getCommand() : ?string
+    public function getCommand(): ?string
     {
         return $this->command;
     }
@@ -46,7 +46,7 @@ class ConsoleMessage extends Message
      *
      * @return self
      */
-    public function setCommand(?string $command) : self
+    public function setCommand(?string $command): self
     {
         $this->initialized['command'] = true;
         $this->command = $command;
@@ -57,7 +57,7 @@ class ConsoleMessage extends Message
      *
      * @return list<TupleOfStringAndString>|null
      */
-    public function getArguments() : ?array
+    public function getArguments(): ?array
     {
         return $this->arguments;
     }
@@ -68,7 +68,7 @@ class ConsoleMessage extends Message
      *
      * @return self
      */
-    public function setArguments(?array $arguments) : self
+    public function setArguments(?array $arguments): self
     {
         $this->initialized['arguments'] = true;
         $this->arguments = $arguments;
@@ -79,7 +79,7 @@ class ConsoleMessage extends Message
      *
      * @return string|null
      */
-    public function getTargetQueue() : ?string
+    public function getTargetQueue(): ?string
     {
         return $this->targetQueue;
     }
@@ -90,7 +90,7 @@ class ConsoleMessage extends Message
      *
      * @return self
      */
-    public function setTargetQueue(?string $targetQueue) : self
+    public function setTargetQueue(?string $targetQueue): self
     {
         $this->initialized['targetQueue'] = true;
         $this->targetQueue = $targetQueue;

@@ -8,7 +8,7 @@ class FieldMultiRelation extends FieldBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class FieldMultiRelation extends FieldBase
      *
      * @return string
      */
-    public function getSchemaId() : string
+    public function getSchemaId(): string
     {
         return $this->schemaId;
     }
@@ -58,7 +58,7 @@ class FieldMultiRelation extends FieldBase
      *
      * @return self
      */
-    public function setSchemaId(string $schemaId) : self
+    public function setSchemaId(string $schemaId): self
     {
         $this->initialized['schemaId'] = true;
         $this->schemaId = $schemaId;
@@ -80,7 +80,7 @@ class FieldMultiRelation extends FieldBase
      *
      * @return self
      */
-    public function setSchemaIndexingInfo($schemaIndexingInfo) : self
+    public function setSchemaIndexingInfo($schemaIndexingInfo): self
     {
         $this->initialized['schemaIndexingInfo'] = true;
         $this->schemaIndexingInfo = $schemaIndexingInfo;
@@ -91,7 +91,7 @@ class FieldMultiRelation extends FieldBase
      *
      * @return list<RelationType>
      */
-    public function getRelationTypes() : array
+    public function getRelationTypes(): array
     {
         return $this->relationTypes;
     }
@@ -102,7 +102,7 @@ class FieldMultiRelation extends FieldBase
      *
      * @return self
      */
-    public function setRelationTypes(array $relationTypes) : self
+    public function setRelationTypes(array $relationTypes): self
     {
         $this->initialized['relationTypes'] = true;
         $this->relationTypes = $relationTypes;
@@ -113,7 +113,7 @@ class FieldMultiRelation extends FieldBase
      *
      * @return int|null
      */
-    public function getMaximumItems() : ?int
+    public function getMaximumItems(): ?int
     {
         return $this->maximumItems;
     }
@@ -124,7 +124,7 @@ class FieldMultiRelation extends FieldBase
      *
      * @return self
      */
-    public function setMaximumItems(?int $maximumItems) : self
+    public function setMaximumItems(?int $maximumItems): self
     {
         $this->initialized['maximumItems'] = true;
         $this->maximumItems = $maximumItems;
@@ -135,7 +135,7 @@ class FieldMultiRelation extends FieldBase
      *
      * @return int|null
      */
-    public function getMinimumItems() : ?int
+    public function getMinimumItems(): ?int
     {
         return $this->minimumItems;
     }
@@ -146,7 +146,7 @@ class FieldMultiRelation extends FieldBase
      *
      * @return self
      */
-    public function setMinimumItems(?int $minimumItems) : self
+    public function setMinimumItems(?int $minimumItems): self
     {
         $this->initialized['minimumItems'] = true;
         $this->minimumItems = $minimumItems;

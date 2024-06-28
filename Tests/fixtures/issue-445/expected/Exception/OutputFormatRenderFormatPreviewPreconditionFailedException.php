@@ -13,7 +13,7 @@ class OutputFormatRenderFormatPreviewPreconditionFailedException extends Precond
         parent::__construct('Precondition Failed');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

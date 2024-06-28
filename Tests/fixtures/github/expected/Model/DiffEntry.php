@@ -8,7 +8,7 @@ class DiffEntry extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -94,7 +94,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -105,7 +105,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getFilename() : string
+    public function getFilename(): string
     {
         return $this->filename;
     }
@@ -116,7 +116,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setFilename(string $filename) : self
+    public function setFilename(string $filename): self
     {
         $this->initialized['filename'] = true;
         $this->filename = $filename;
@@ -127,7 +127,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -138,7 +138,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -149,7 +149,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return int
      */
-    public function getAdditions() : int
+    public function getAdditions(): int
     {
         return $this->additions;
     }
@@ -160,7 +160,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setAdditions(int $additions) : self
+    public function setAdditions(int $additions): self
     {
         $this->initialized['additions'] = true;
         $this->additions = $additions;
@@ -171,7 +171,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return int
      */
-    public function getDeletions() : int
+    public function getDeletions(): int
     {
         return $this->deletions;
     }
@@ -182,7 +182,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setDeletions(int $deletions) : self
+    public function setDeletions(int $deletions): self
     {
         $this->initialized['deletions'] = true;
         $this->deletions = $deletions;
@@ -193,7 +193,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return int
      */
-    public function getChanges() : int
+    public function getChanges(): int
     {
         return $this->changes;
     }
@@ -204,7 +204,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setChanges(int $changes) : self
+    public function setChanges(int $changes): self
     {
         $this->initialized['changes'] = true;
         $this->changes = $changes;
@@ -215,7 +215,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getBlobUrl() : string
+    public function getBlobUrl(): string
     {
         return $this->blobUrl;
     }
@@ -226,7 +226,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setBlobUrl(string $blobUrl) : self
+    public function setBlobUrl(string $blobUrl): self
     {
         $this->initialized['blobUrl'] = true;
         $this->blobUrl = $blobUrl;
@@ -237,7 +237,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getRawUrl() : string
+    public function getRawUrl(): string
     {
         return $this->rawUrl;
     }
@@ -248,7 +248,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setRawUrl(string $rawUrl) : self
+    public function setRawUrl(string $rawUrl): self
     {
         $this->initialized['rawUrl'] = true;
         $this->rawUrl = $rawUrl;
@@ -259,7 +259,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getContentsUrl() : string
+    public function getContentsUrl(): string
     {
         return $this->contentsUrl;
     }
@@ -270,7 +270,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setContentsUrl(string $contentsUrl) : self
+    public function setContentsUrl(string $contentsUrl): self
     {
         $this->initialized['contentsUrl'] = true;
         $this->contentsUrl = $contentsUrl;
@@ -281,7 +281,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getPatch() : string
+    public function getPatch(): string
     {
         return $this->patch;
     }
@@ -292,7 +292,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setPatch(string $patch) : self
+    public function setPatch(string $patch): self
     {
         $this->initialized['patch'] = true;
         $this->patch = $patch;
@@ -303,7 +303,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return string
      */
-    public function getPreviousFilename() : string
+    public function getPreviousFilename(): string
     {
         return $this->previousFilename;
     }
@@ -314,7 +314,7 @@ class DiffEntry extends \ArrayObject
      *
      * @return self
      */
-    public function setPreviousFilename(string $previousFilename) : self
+    public function setPreviousFilename(string $previousFilename): self
     {
         $this->initialized['previousFilename'] = true;
         $this->previousFilename = $previousFilename;

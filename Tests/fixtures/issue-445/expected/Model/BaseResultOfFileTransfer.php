@@ -8,7 +8,7 @@ class BaseResultOfFileTransfer
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class BaseResultOfFileTransfer
      *
      * @return int
      */
-    public function getTotalResults() : int
+    public function getTotalResults(): int
     {
         return $this->totalResults;
     }
@@ -52,7 +52,7 @@ class BaseResultOfFileTransfer
      *
      * @return self
      */
-    public function setTotalResults(int $totalResults) : self
+    public function setTotalResults(int $totalResults): self
     {
         $this->initialized['totalResults'] = true;
         $this->totalResults = $totalResults;
@@ -63,7 +63,7 @@ class BaseResultOfFileTransfer
      *
      * @return list<FileTransfer>
      */
-    public function getResults() : array
+    public function getResults(): array
     {
         return $this->results;
     }
@@ -74,7 +74,7 @@ class BaseResultOfFileTransfer
      *
      * @return self
      */
-    public function setResults(array $results) : self
+    public function setResults(array $results): self
     {
         $this->initialized['results'] = true;
         $this->results = $results;
@@ -85,7 +85,7 @@ class BaseResultOfFileTransfer
      *
      * @return int
      */
-    public function getElapsedMilliseconds() : int
+    public function getElapsedMilliseconds(): int
     {
         return $this->elapsedMilliseconds;
     }
@@ -96,7 +96,7 @@ class BaseResultOfFileTransfer
      *
      * @return self
      */
-    public function setElapsedMilliseconds(int $elapsedMilliseconds) : self
+    public function setElapsedMilliseconds(int $elapsedMilliseconds): self
     {
         $this->initialized['elapsedMilliseconds'] = true;
         $this->elapsedMilliseconds = $elapsedMilliseconds;
@@ -107,7 +107,7 @@ class BaseResultOfFileTransfer
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -118,7 +118,7 @@ class BaseResultOfFileTransfer
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;

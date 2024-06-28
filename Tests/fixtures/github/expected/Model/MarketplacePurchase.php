@@ -8,7 +8,7 @@ class MarketplacePurchase extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -70,7 +70,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -81,7 +81,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -92,7 +92,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -103,7 +103,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -114,7 +114,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -125,7 +125,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return string
      */
-    public function getLogin() : string
+    public function getLogin(): string
     {
         return $this->login;
     }
@@ -136,7 +136,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return self
      */
-    public function setLogin(string $login) : self
+    public function setLogin(string $login): self
     {
         $this->initialized['login'] = true;
         $this->login = $login;
@@ -147,7 +147,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationBillingEmail() : string
+    public function getOrganizationBillingEmail(): string
     {
         return $this->organizationBillingEmail;
     }
@@ -158,7 +158,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationBillingEmail(string $organizationBillingEmail) : self
+    public function setOrganizationBillingEmail(string $organizationBillingEmail): self
     {
         $this->initialized['organizationBillingEmail'] = true;
         $this->organizationBillingEmail = $organizationBillingEmail;
@@ -169,7 +169,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return MarketplacePurchaseMarketplacePendingChange|null
      */
-    public function getMarketplacePendingChange() : ?MarketplacePurchaseMarketplacePendingChange
+    public function getMarketplacePendingChange(): ?MarketplacePurchaseMarketplacePendingChange
     {
         return $this->marketplacePendingChange;
     }
@@ -180,7 +180,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return self
      */
-    public function setMarketplacePendingChange(?MarketplacePurchaseMarketplacePendingChange $marketplacePendingChange) : self
+    public function setMarketplacePendingChange(?MarketplacePurchaseMarketplacePendingChange $marketplacePendingChange): self
     {
         $this->initialized['marketplacePendingChange'] = true;
         $this->marketplacePendingChange = $marketplacePendingChange;
@@ -191,7 +191,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return MarketplacePurchaseMarketplacePurchase
      */
-    public function getMarketplacePurchase() : MarketplacePurchaseMarketplacePurchase
+    public function getMarketplacePurchase(): MarketplacePurchaseMarketplacePurchase
     {
         return $this->marketplacePurchase;
     }
@@ -202,7 +202,7 @@ class MarketplacePurchase extends \ArrayObject
      *
      * @return self
      */
-    public function setMarketplacePurchase(MarketplacePurchaseMarketplacePurchase $marketplacePurchase) : self
+    public function setMarketplacePurchase(MarketplacePurchaseMarketplacePurchase $marketplacePurchase): self
     {
         $this->initialized['marketplacePurchase'] = true;
         $this->marketplacePurchase = $marketplacePurchase;

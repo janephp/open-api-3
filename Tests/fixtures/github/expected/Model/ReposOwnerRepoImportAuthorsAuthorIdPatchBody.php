@@ -8,7 +8,7 @@ class ReposOwnerRepoImportAuthorsAuthorIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ReposOwnerRepoImportAuthorsAuthorIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -46,7 +46,7 @@ class ReposOwnerRepoImportAuthorsAuthorIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -57,7 +57,7 @@ class ReposOwnerRepoImportAuthorsAuthorIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -68,7 +68,7 @@ class ReposOwnerRepoImportAuthorsAuthorIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -79,7 +79,7 @@ class ReposOwnerRepoImportAuthorsAuthorIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getRemoteId() : string
+    public function getRemoteId(): string
     {
         return $this->remoteId;
     }
@@ -90,7 +90,7 @@ class ReposOwnerRepoImportAuthorsAuthorIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRemoteId(string $remoteId) : self
+    public function setRemoteId(string $remoteId): self
     {
         $this->initialized['remoteId'] = true;
         $this->remoteId = $remoteId;

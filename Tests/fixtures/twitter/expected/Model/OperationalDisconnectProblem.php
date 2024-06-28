@@ -8,7 +8,7 @@ class OperationalDisconnectProblem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class OperationalDisconnectProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -52,7 +52,7 @@ class OperationalDisconnectProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -63,7 +63,7 @@ class OperationalDisconnectProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getDisconnectType() : string
+    public function getDisconnectType(): string
     {
         return $this->disconnectType;
     }
@@ -74,7 +74,7 @@ class OperationalDisconnectProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setDisconnectType(string $disconnectType) : self
+    public function setDisconnectType(string $disconnectType): self
     {
         $this->initialized['disconnectType'] = true;
         $this->disconnectType = $disconnectType;
@@ -85,7 +85,7 @@ class OperationalDisconnectProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -96,7 +96,7 @@ class OperationalDisconnectProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -107,7 +107,7 @@ class OperationalDisconnectProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getDetail() : string
+    public function getDetail(): string
     {
         return $this->detail;
     }
@@ -118,7 +118,7 @@ class OperationalDisconnectProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setDetail(string $detail) : self
+    public function setDetail(string $detail): self
     {
         $this->initialized['detail'] = true;
         $this->detail = $detail;

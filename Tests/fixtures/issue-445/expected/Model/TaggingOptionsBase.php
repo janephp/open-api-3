@@ -8,7 +8,7 @@ class TaggingOptionsBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class TaggingOptionsBase
      *
      * @return string|null
      */
-    public function getTagOutputFormatId() : ?string
+    public function getTagOutputFormatId(): ?string
     {
         return $this->tagOutputFormatId;
     }
@@ -72,7 +72,7 @@ class TaggingOptionsBase
      *
      * @return string|null
      */
-    public function getKeywordLookupCacheName() : ?string
+    public function getKeywordLookupCacheName(): ?string
     {
         return $this->keywordLookupCacheName;
     }
@@ -91,7 +91,7 @@ class TaggingOptionsBase
      *
      * @return string|null
      */
-    public function getTaggingLayerId() : ?string
+    public function getTaggingLayerId(): ?string
     {
         return $this->taggingLayerId;
     }
@@ -110,7 +110,7 @@ class TaggingOptionsBase
      *
      * @return string|null
      */
-    public function getFoundTagsFieldId() : ?string
+    public function getFoundTagsFieldId(): ?string
     {
         return $this->foundTagsFieldId;
     }
@@ -129,7 +129,7 @@ class TaggingOptionsBase
      *
      * @return string|null
      */
-    public function getMissingKeywordsFieldId() : ?string
+    public function getMissingKeywordsFieldId(): ?string
     {
         return $this->missingKeywordsFieldId;
     }
@@ -148,7 +148,7 @@ class TaggingOptionsBase
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

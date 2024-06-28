@@ -8,7 +8,7 @@ class RateLimitOverviewResources extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return RateLimit
      */
-    public function getCore() : RateLimit
+    public function getCore(): RateLimit
     {
         return $this->core;
     }
@@ -58,7 +58,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return self
      */
-    public function setCore(RateLimit $core) : self
+    public function setCore(RateLimit $core): self
     {
         $this->initialized['core'] = true;
         $this->core = $core;
@@ -69,7 +69,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return RateLimit
      */
-    public function getGraphql() : RateLimit
+    public function getGraphql(): RateLimit
     {
         return $this->graphql;
     }
@@ -80,7 +80,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return self
      */
-    public function setGraphql(RateLimit $graphql) : self
+    public function setGraphql(RateLimit $graphql): self
     {
         $this->initialized['graphql'] = true;
         $this->graphql = $graphql;
@@ -91,7 +91,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return RateLimit
      */
-    public function getSearch() : RateLimit
+    public function getSearch(): RateLimit
     {
         return $this->search;
     }
@@ -102,7 +102,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return self
      */
-    public function setSearch(RateLimit $search) : self
+    public function setSearch(RateLimit $search): self
     {
         $this->initialized['search'] = true;
         $this->search = $search;
@@ -113,7 +113,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return RateLimit
      */
-    public function getSourceImport() : RateLimit
+    public function getSourceImport(): RateLimit
     {
         return $this->sourceImport;
     }
@@ -124,7 +124,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return self
      */
-    public function setSourceImport(RateLimit $sourceImport) : self
+    public function setSourceImport(RateLimit $sourceImport): self
     {
         $this->initialized['sourceImport'] = true;
         $this->sourceImport = $sourceImport;
@@ -135,7 +135,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return RateLimit
      */
-    public function getIntegrationManifest() : RateLimit
+    public function getIntegrationManifest(): RateLimit
     {
         return $this->integrationManifest;
     }
@@ -146,7 +146,7 @@ class RateLimitOverviewResources extends \ArrayObject
      *
      * @return self
      */
-    public function setIntegrationManifest(RateLimit $integrationManifest) : self
+    public function setIntegrationManifest(RateLimit $integrationManifest): self
     {
         $this->initialized['integrationManifest'] = true;
         $this->integrationManifest = $integrationManifest;

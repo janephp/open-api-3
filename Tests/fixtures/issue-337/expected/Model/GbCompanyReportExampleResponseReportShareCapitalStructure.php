@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
      *
      * @return GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital
      */
-    public function getIssuedShareCapital() : GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital
+    public function getIssuedShareCapital(): GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital
     {
         return $this->issuedShareCapital;
     }
@@ -46,7 +46,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
      *
      * @return self
      */
-    public function setIssuedShareCapital(GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital $issuedShareCapital) : self
+    public function setIssuedShareCapital(GbCompanyReportExampleResponseReportShareCapitalStructureIssuedShareCapital $issuedShareCapital): self
     {
         $this->initialized['issuedShareCapital'] = true;
         $this->issuedShareCapital = $issuedShareCapital;
@@ -57,7 +57,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
      *
      * @return float
      */
-    public function getNumberOfSharesIssued() : float
+    public function getNumberOfSharesIssued(): float
     {
         return $this->numberOfSharesIssued;
     }
@@ -68,7 +68,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
      *
      * @return self
      */
-    public function setNumberOfSharesIssued(float $numberOfSharesIssued) : self
+    public function setNumberOfSharesIssued(float $numberOfSharesIssued): self
     {
         $this->initialized['numberOfSharesIssued'] = true;
         $this->numberOfSharesIssued = $numberOfSharesIssued;
@@ -79,7 +79,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
      *
      * @return list<GbCompanyReportExampleResponseReportShareCapitalStructureShareHoldersItem>
      */
-    public function getShareHolders() : array
+    public function getShareHolders(): array
     {
         return $this->shareHolders;
     }
@@ -90,7 +90,7 @@ class GbCompanyReportExampleResponseReportShareCapitalStructure extends \ArrayOb
      *
      * @return self
      */
-    public function setShareHolders(array $shareHolders) : self
+    public function setShareHolders(array $shareHolders): self
     {
         $this->initialized['shareHolders'] = true;
         $this->shareHolders = $shareHolders;

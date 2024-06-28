@@ -8,7 +8,7 @@ class MetadataReferencesPagingRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class MetadataReferencesPagingRequest extends \ArrayObject
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -46,7 +46,7 @@ class MetadataReferencesPagingRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -57,7 +57,7 @@ class MetadataReferencesPagingRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -68,7 +68,7 @@ class MetadataReferencesPagingRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;
@@ -79,7 +79,7 @@ class MetadataReferencesPagingRequest extends \ArrayObject
      *
      * @return bool
      */
-    public function getFetchReferencedByRestrictedItem() : bool
+    public function getFetchReferencedByRestrictedItem(): bool
     {
         return $this->fetchReferencedByRestrictedItem;
     }
@@ -90,7 +90,7 @@ class MetadataReferencesPagingRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setFetchReferencedByRestrictedItem(bool $fetchReferencedByRestrictedItem) : self
+    public function setFetchReferencedByRestrictedItem(bool $fetchReferencedByRestrictedItem): self
     {
         $this->initialized['fetchReferencedByRestrictedItem'] = true;
         $this->fetchReferencedByRestrictedItem = $fetchReferencedByRestrictedItem;

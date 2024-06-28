@@ -8,7 +8,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutputImagesItem extends \ArrayO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutputImagesItem extends \ArrayO
      *
      * @return string
      */
-    public function getAlt() : string
+    public function getAlt(): string
     {
         return $this->alt;
     }
@@ -46,7 +46,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutputImagesItem extends \ArrayO
      *
      * @return self
      */
-    public function setAlt(string $alt) : self
+    public function setAlt(string $alt): self
     {
         $this->initialized['alt'] = true;
         $this->alt = $alt;
@@ -57,7 +57,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutputImagesItem extends \ArrayO
      *
      * @return string
      */
-    public function getImageUrl() : string
+    public function getImageUrl(): string
     {
         return $this->imageUrl;
     }
@@ -68,7 +68,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutputImagesItem extends \ArrayO
      *
      * @return self
      */
-    public function setImageUrl(string $imageUrl) : self
+    public function setImageUrl(string $imageUrl): self
     {
         $this->initialized['imageUrl'] = true;
         $this->imageUrl = $imageUrl;
@@ -79,7 +79,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutputImagesItem extends \ArrayO
      *
      * @return string
      */
-    public function getCaption() : string
+    public function getCaption(): string
     {
         return $this->caption;
     }
@@ -90,7 +90,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutputImagesItem extends \ArrayO
      *
      * @return self
      */
-    public function setCaption(string $caption) : self
+    public function setCaption(string $caption): self
     {
         $this->initialized['caption'] = true;
         $this->caption = $caption;

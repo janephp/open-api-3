@@ -8,7 +8,7 @@ class GuidSuccessResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class GuidSuccessResponse extends \ArrayObject
      *
      * @return list<GuidSuccessResponseGUIDListItem>
      */
-    public function getGUIDList() : array
+    public function getGUIDList(): array
     {
         return $this->gUIDList;
     }
@@ -34,7 +34,7 @@ class GuidSuccessResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setGUIDList(array $gUIDList) : self
+    public function setGUIDList(array $gUIDList): self
     {
         $this->initialized['gUIDList'] = true;
         $this->gUIDList = $gUIDList;

@@ -8,7 +8,7 @@ class SearchFieldCount
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class SearchFieldCount
      *
      * @return int
      */
-    public function getIndexedField() : int
+    public function getIndexedField(): int
     {
         return $this->indexedField;
     }
@@ -46,7 +46,7 @@ class SearchFieldCount
      *
      * @return self
      */
-    public function setIndexedField(int $indexedField) : self
+    public function setIndexedField(int $indexedField): self
     {
         $this->initialized['indexedField'] = true;
         $this->indexedField = $indexedField;
@@ -57,7 +57,7 @@ class SearchFieldCount
      *
      * @return int
      */
-    public function getSimpleSearchField() : int
+    public function getSimpleSearchField(): int
     {
         return $this->simpleSearchField;
     }
@@ -68,7 +68,7 @@ class SearchFieldCount
      *
      * @return self
      */
-    public function setSimpleSearchField(int $simpleSearchField) : self
+    public function setSimpleSearchField(int $simpleSearchField): self
     {
         $this->initialized['simpleSearchField'] = true;
         $this->simpleSearchField = $simpleSearchField;
@@ -79,7 +79,7 @@ class SearchFieldCount
      *
      * @return int
      */
-    public function getSortableField() : int
+    public function getSortableField(): int
     {
         return $this->sortableField;
     }
@@ -90,7 +90,7 @@ class SearchFieldCount
      *
      * @return self
      */
-    public function setSortableField(int $sortableField) : self
+    public function setSortableField(int $sortableField): self
     {
         $this->initialized['sortableField'] = true;
         $this->sortableField = $sortableField;

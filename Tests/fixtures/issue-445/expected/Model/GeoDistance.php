@@ -8,7 +8,7 @@ class GeoDistance
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class GeoDistance
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -51,7 +51,7 @@ class GeoDistance
      *
      * @return float
      */
-    public function getDistance() : float
+    public function getDistance(): float
     {
         return $this->distance;
     }
@@ -62,7 +62,7 @@ class GeoDistance
      *
      * @return self
      */
-    public function setDistance(float $distance) : self
+    public function setDistance(float $distance): self
     {
         $this->initialized['distance'] = true;
         $this->distance = $distance;

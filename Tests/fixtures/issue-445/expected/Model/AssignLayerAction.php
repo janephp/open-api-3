@@ -8,7 +8,7 @@ class AssignLayerAction extends BusinessRuleAction
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class AssignLayerAction extends BusinessRuleAction
      *
      * @return string|null
      */
-    public function getLayerId() : ?string
+    public function getLayerId(): ?string
     {
         return $this->layerId;
     }
@@ -40,7 +40,7 @@ class AssignLayerAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setLayerId(?string $layerId) : self
+    public function setLayerId(?string $layerId): self
     {
         $this->initialized['layerId'] = true;
         $this->layerId = $layerId;
@@ -51,7 +51,7 @@ class AssignLayerAction extends BusinessRuleAction
      *
      * @return array<string, mixed>|null
      */
-    public function getDefaultValues() : ?iterable
+    public function getDefaultValues(): ?iterable
     {
         return $this->defaultValues;
     }
@@ -62,7 +62,7 @@ class AssignLayerAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setDefaultValues(?iterable $defaultValues) : self
+    public function setDefaultValues(?iterable $defaultValues): self
     {
         $this->initialized['defaultValues'] = true;
         $this->defaultValues = $defaultValues;

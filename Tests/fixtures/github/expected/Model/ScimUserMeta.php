@@ -8,7 +8,7 @@ class ScimUserMeta extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ScimUserMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getResourceType() : string
+    public function getResourceType(): string
     {
         return $this->resourceType;
     }
@@ -52,7 +52,7 @@ class ScimUserMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setResourceType(string $resourceType) : self
+    public function setResourceType(string $resourceType): self
     {
         $this->initialized['resourceType'] = true;
         $this->resourceType = $resourceType;
@@ -63,7 +63,7 @@ class ScimUserMeta extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreated() : \DateTime
+    public function getCreated(): \DateTime
     {
         return $this->created;
     }
@@ -74,7 +74,7 @@ class ScimUserMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setCreated(\DateTime $created) : self
+    public function setCreated(\DateTime $created): self
     {
         $this->initialized['created'] = true;
         $this->created = $created;
@@ -85,7 +85,7 @@ class ScimUserMeta extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getLastModified() : \DateTime
+    public function getLastModified(): \DateTime
     {
         return $this->lastModified;
     }
@@ -96,7 +96,7 @@ class ScimUserMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setLastModified(\DateTime $lastModified) : self
+    public function setLastModified(\DateTime $lastModified): self
     {
         $this->initialized['lastModified'] = true;
         $this->lastModified = $lastModified;
@@ -107,7 +107,7 @@ class ScimUserMeta extends \ArrayObject
      *
      * @return string
      */
-    public function getLocation() : string
+    public function getLocation(): string
     {
         return $this->location;
     }
@@ -118,7 +118,7 @@ class ScimUserMeta extends \ArrayObject
      *
      * @return self
      */
-    public function setLocation(string $location) : self
+    public function setLocation(string $location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;

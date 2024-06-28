@@ -8,7 +8,7 @@ class TopBookJsonhal extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return TopBookJsonhalLinks
      */
-    public function getLinks() : TopBookJsonhalLinks
+    public function getLinks(): TopBookJsonhalLinks
     {
         return $this->links;
     }
@@ -70,7 +70,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(TopBookJsonhalLinks $links) : self
+    public function setLinks(TopBookJsonhalLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;
@@ -81,7 +81,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -92,7 +92,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -103,7 +103,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -114,7 +114,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -125,7 +125,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthor() : string
+    public function getAuthor(): string
     {
         return $this->author;
     }
@@ -136,7 +136,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(string $author) : self
+    public function setAuthor(string $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -147,7 +147,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return string
      */
-    public function getPart() : string
+    public function getPart(): string
     {
         return $this->part;
     }
@@ -158,7 +158,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setPart(string $part) : self
+    public function setPart(string $part): self
     {
         $this->initialized['part'] = true;
         $this->part = $part;
@@ -169,7 +169,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return string
      */
-    public function getPlace() : string
+    public function getPlace(): string
     {
         return $this->place;
     }
@@ -180,7 +180,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setPlace(string $place) : self
+    public function setPlace(string $place): self
     {
         $this->initialized['place'] = true;
         $this->place = $place;
@@ -191,7 +191,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return int
      */
-    public function getBorrowCount() : int
+    public function getBorrowCount(): int
     {
         return $this->borrowCount;
     }
@@ -202,7 +202,7 @@ class TopBookJsonhal extends \ArrayObject
      *
      * @return self
      */
-    public function setBorrowCount(int $borrowCount) : self
+    public function setBorrowCount(int $borrowCount): self
     {
         $this->initialized['borrowCount'] = true;
         $this->borrowCount = $borrowCount;

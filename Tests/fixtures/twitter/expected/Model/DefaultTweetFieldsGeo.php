@@ -8,7 +8,7 @@ class DefaultTweetFieldsGeo extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class DefaultTweetFieldsGeo extends \ArrayObject
      *
      * @return Point
      */
-    public function getCoordinates() : Point
+    public function getCoordinates(): Point
     {
         return $this->coordinates;
     }
@@ -40,7 +40,7 @@ class DefaultTweetFieldsGeo extends \ArrayObject
      *
      * @return self
      */
-    public function setCoordinates(Point $coordinates) : self
+    public function setCoordinates(Point $coordinates): self
     {
         $this->initialized['coordinates'] = true;
         $this->coordinates = $coordinates;
@@ -51,7 +51,7 @@ class DefaultTweetFieldsGeo extends \ArrayObject
      *
      * @return string
      */
-    public function getPlaceId() : string
+    public function getPlaceId(): string
     {
         return $this->placeId;
     }
@@ -62,7 +62,7 @@ class DefaultTweetFieldsGeo extends \ArrayObject
      *
      * @return self
      */
-    public function setPlaceId(string $placeId) : self
+    public function setPlaceId(string $placeId): self
     {
         $this->initialized['placeId'] = true;
         $this->placeId = $placeId;

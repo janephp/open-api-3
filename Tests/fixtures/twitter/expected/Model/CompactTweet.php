@@ -8,7 +8,7 @@ class CompactTweet extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return string
      */
-    public function getFormat() : string
+    public function getFormat(): string
     {
         return $this->format;
     }
@@ -82,7 +82,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return self
      */
-    public function setFormat(string $format) : self
+    public function setFormat(string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -93,7 +93,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -104,7 +104,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -115,7 +115,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -126,7 +126,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -137,7 +137,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return string
      */
-    public function getText() : string
+    public function getText(): string
     {
         return $this->text;
     }
@@ -148,7 +148,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return self
      */
-    public function setText(string $text) : self
+    public function setText(string $text): self
     {
         $this->initialized['text'] = true;
         $this->text = $text;
@@ -159,7 +159,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorId() : string
+    public function getAuthorId(): string
     {
         return $this->authorId;
     }
@@ -170,7 +170,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorId(string $authorId) : self
+    public function setAuthorId(string $authorId): self
     {
         $this->initialized['authorId'] = true;
         $this->authorId = $authorId;
@@ -181,7 +181,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return string
      */
-    public function getInReplyToUserId() : string
+    public function getInReplyToUserId(): string
     {
         return $this->inReplyToUserId;
     }
@@ -192,7 +192,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return self
      */
-    public function setInReplyToUserId(string $inReplyToUserId) : self
+    public function setInReplyToUserId(string $inReplyToUserId): self
     {
         $this->initialized['inReplyToUserId'] = true;
         $this->inReplyToUserId = $inReplyToUserId;
@@ -203,7 +203,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return list<CompactTweetFieldsReferencedTweetsItem>
      */
-    public function getReferencedTweets() : array
+    public function getReferencedTweets(): array
     {
         return $this->referencedTweets;
     }
@@ -214,7 +214,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return self
      */
-    public function setReferencedTweets(array $referencedTweets) : self
+    public function setReferencedTweets(array $referencedTweets): self
     {
         $this->initialized['referencedTweets'] = true;
         $this->referencedTweets = $referencedTweets;
@@ -225,7 +225,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return CompactTweetFieldsAttachments
      */
-    public function getAttachments() : CompactTweetFieldsAttachments
+    public function getAttachments(): CompactTweetFieldsAttachments
     {
         return $this->attachments;
     }
@@ -236,7 +236,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return self
      */
-    public function setAttachments(CompactTweetFieldsAttachments $attachments) : self
+    public function setAttachments(CompactTweetFieldsAttachments $attachments): self
     {
         $this->initialized['attachments'] = true;
         $this->attachments = $attachments;
@@ -247,7 +247,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return TweetWithheld
      */
-    public function getWithheld() : TweetWithheld
+    public function getWithheld(): TweetWithheld
     {
         return $this->withheld;
     }
@@ -258,7 +258,7 @@ class CompactTweet extends \ArrayObject
      *
      * @return self
      */
-    public function setWithheld(TweetWithheld $withheld) : self
+    public function setWithheld(TweetWithheld $withheld): self
     {
         $this->initialized['withheld'] = true;
         $this->withheld = $withheld;

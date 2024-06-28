@@ -8,7 +8,7 @@ class AuthorizationsClientsClientIdFingerprintPutBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class AuthorizationsClientsClientIdFingerprintPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getClientSecret() : string
+    public function getClientSecret(): string
     {
         return $this->clientSecret;
     }
@@ -52,7 +52,7 @@ class AuthorizationsClientsClientIdFingerprintPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setClientSecret(string $clientSecret) : self
+    public function setClientSecret(string $clientSecret): self
     {
         $this->initialized['clientSecret'] = true;
         $this->clientSecret = $clientSecret;
@@ -63,7 +63,7 @@ class AuthorizationsClientsClientIdFingerprintPutBody extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getScopes() : ?array
+    public function getScopes(): ?array
     {
         return $this->scopes;
     }
@@ -74,7 +74,7 @@ class AuthorizationsClientsClientIdFingerprintPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setScopes(?array $scopes) : self
+    public function setScopes(?array $scopes): self
     {
         $this->initialized['scopes'] = true;
         $this->scopes = $scopes;
@@ -85,7 +85,7 @@ class AuthorizationsClientsClientIdFingerprintPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getNote() : string
+    public function getNote(): string
     {
         return $this->note;
     }
@@ -96,7 +96,7 @@ class AuthorizationsClientsClientIdFingerprintPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNote(string $note) : self
+    public function setNote(string $note): self
     {
         $this->initialized['note'] = true;
         $this->note = $note;
@@ -107,7 +107,7 @@ class AuthorizationsClientsClientIdFingerprintPutBody extends \ArrayObject
      *
      * @return string
      */
-    public function getNoteUrl() : string
+    public function getNoteUrl(): string
     {
         return $this->noteUrl;
     }
@@ -118,7 +118,7 @@ class AuthorizationsClientsClientIdFingerprintPutBody extends \ArrayObject
      *
      * @return self
      */
-    public function setNoteUrl(string $noteUrl) : self
+    public function setNoteUrl(string $noteUrl): self
     {
         $this->initialized['noteUrl'] = true;
         $this->noteUrl = $noteUrl;

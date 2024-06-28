@@ -8,7 +8,7 @@ class ObjectAggregationResult
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ObjectAggregationResult
      *
      * @return int
      */
-    public function getElapsedMilliseconds() : int
+    public function getElapsedMilliseconds(): int
     {
         return $this->elapsedMilliseconds;
     }
@@ -58,7 +58,7 @@ class ObjectAggregationResult
      *
      * @return self
      */
-    public function setElapsedMilliseconds(int $elapsedMilliseconds) : self
+    public function setElapsedMilliseconds(int $elapsedMilliseconds): self
     {
         $this->initialized['elapsedMilliseconds'] = true;
         $this->elapsedMilliseconds = $elapsedMilliseconds;
@@ -69,7 +69,7 @@ class ObjectAggregationResult
      *
      * @return list<AggregationResult>
      */
-    public function getAggregationResults() : array
+    public function getAggregationResults(): array
     {
         return $this->aggregationResults;
     }
@@ -80,7 +80,7 @@ class ObjectAggregationResult
      *
      * @return self
      */
-    public function setAggregationResults(array $aggregationResults) : self
+    public function setAggregationResults(array $aggregationResults): self
     {
         $this->initialized['aggregationResults'] = true;
         $this->aggregationResults = $aggregationResults;
@@ -91,7 +91,7 @@ class ObjectAggregationResult
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -102,7 +102,7 @@ class ObjectAggregationResult
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -113,7 +113,7 @@ class ObjectAggregationResult
      *
      * @return bool
      */
-    public function getIsSearchStringRewritten() : bool
+    public function getIsSearchStringRewritten(): bool
     {
         return $this->isSearchStringRewritten;
     }
@@ -124,7 +124,7 @@ class ObjectAggregationResult
      *
      * @return self
      */
-    public function setIsSearchStringRewritten(bool $isSearchStringRewritten) : self
+    public function setIsSearchStringRewritten(bool $isSearchStringRewritten): self
     {
         $this->initialized['isSearchStringRewritten'] = true;
         $this->isSearchStringRewritten = $isSearchStringRewritten;
@@ -135,7 +135,7 @@ class ObjectAggregationResult
      *
      * @return list<QueryDebugInformation>|null
      */
-    public function getQueryDebugInformation() : ?array
+    public function getQueryDebugInformation(): ?array
     {
         return $this->queryDebugInformation;
     }
@@ -146,7 +146,7 @@ class ObjectAggregationResult
      *
      * @return self
      */
-    public function setQueryDebugInformation(?array $queryDebugInformation) : self
+    public function setQueryDebugInformation(?array $queryDebugInformation): self
     {
         $this->initialized['queryDebugInformation'] = true;
         $this->queryDebugInformation = $queryDebugInformation;

@@ -8,7 +8,7 @@ class ReposOwnerRepoForksPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class ReposOwnerRepoForksPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganization() : string
+    public function getOrganization(): string
     {
         return $this->organization;
     }
@@ -34,7 +34,7 @@ class ReposOwnerRepoForksPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganization(string $organization) : self
+    public function setOrganization(string $organization): self
     {
         $this->initialized['organization'] = true;
         $this->organization = $organization;

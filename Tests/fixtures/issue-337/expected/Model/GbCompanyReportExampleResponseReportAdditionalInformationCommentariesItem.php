@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem 
      *
      * @return string
      */
-    public function getCommentaryText() : string
+    public function getCommentaryText(): string
     {
         return $this->commentaryText;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem 
      *
      * @return self
      */
-    public function setCommentaryText(string $commentaryText) : self
+    public function setCommentaryText(string $commentaryText): self
     {
         $this->initialized['commentaryText'] = true;
         $this->commentaryText = $commentaryText;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem 
      *
      * @return string
      */
-    public function getPositiveNegative() : string
+    public function getPositiveNegative(): string
     {
         return $this->positiveNegative;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCommentariesItem 
      *
      * @return self
      */
-    public function setPositiveNegative(string $positiveNegative) : self
+    public function setPositiveNegative(string $positiveNegative): self
     {
         $this->initialized['positiveNegative'] = true;
         $this->positiveNegative = $positiveNegative;

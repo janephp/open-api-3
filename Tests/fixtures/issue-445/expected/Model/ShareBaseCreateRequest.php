@@ -8,7 +8,7 @@ class ShareBaseCreateRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ShareBaseCreateRequest
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -78,7 +78,7 @@ class ShareBaseCreateRequest
      *
      * @return string|null
      */
-    public function getDescription() : ?string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
@@ -97,7 +97,7 @@ class ShareBaseCreateRequest
      *
      * @return \DateTime|null
      */
-    public function getExpirationDate() : ?\DateTime
+    public function getExpirationDate(): ?\DateTime
     {
         return $this->expirationDate;
     }
@@ -116,7 +116,7 @@ class ShareBaseCreateRequest
      *
      * @return list<ShareContent>
      */
-    public function getContents() : array
+    public function getContents(): array
     {
         return $this->contents;
     }
@@ -135,7 +135,7 @@ class ShareBaseCreateRequest
      *
      * @return list<string>|null
      */
-    public function getLayerSchemaIds() : ?array
+    public function getLayerSchemaIds(): ?array
     {
         return $this->layerSchemaIds;
     }
@@ -173,7 +173,7 @@ class ShareBaseCreateRequest
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

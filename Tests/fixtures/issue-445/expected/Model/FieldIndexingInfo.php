@@ -8,7 +8,7 @@ class FieldIndexingInfo
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class FieldIndexingInfo
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -64,7 +64,7 @@ class FieldIndexingInfo
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -75,7 +75,7 @@ class FieldIndexingInfo
      *
      * @return bool
      */
-    public function getIndex() : bool
+    public function getIndex(): bool
     {
         return $this->index;
     }
@@ -86,7 +86,7 @@ class FieldIndexingInfo
      *
      * @return self
      */
-    public function setIndex(bool $index) : self
+    public function setIndex(bool $index): self
     {
         $this->initialized['index'] = true;
         $this->index = $index;
@@ -97,7 +97,7 @@ class FieldIndexingInfo
      *
      * @return bool
      */
-    public function getSimpleSearch() : bool
+    public function getSimpleSearch(): bool
     {
         return $this->simpleSearch;
     }
@@ -108,7 +108,7 @@ class FieldIndexingInfo
      *
      * @return self
      */
-    public function setSimpleSearch(bool $simpleSearch) : self
+    public function setSimpleSearch(bool $simpleSearch): self
     {
         $this->initialized['simpleSearch'] = true;
         $this->simpleSearch = $simpleSearch;
@@ -119,7 +119,7 @@ class FieldIndexingInfo
      *
      * @return bool
      */
-    public function getSortable() : bool
+    public function getSortable(): bool
     {
         return $this->sortable;
     }
@@ -130,7 +130,7 @@ class FieldIndexingInfo
      *
      * @return self
      */
-    public function setSortable(bool $sortable) : self
+    public function setSortable(bool $sortable): self
     {
         $this->initialized['sortable'] = true;
         $this->sortable = $sortable;
@@ -141,7 +141,7 @@ class FieldIndexingInfo
      *
      * @return float
      */
-    public function getBoost() : float
+    public function getBoost(): float
     {
         return $this->boost;
     }
@@ -152,7 +152,7 @@ class FieldIndexingInfo
      *
      * @return self
      */
-    public function setBoost(float $boost) : self
+    public function setBoost(float $boost): self
     {
         $this->initialized['boost'] = true;
         $this->boost = $boost;
@@ -174,7 +174,7 @@ class FieldIndexingInfo
      *
      * @return self
      */
-    public function setRelatedSchemaIndexing($relatedSchemaIndexing) : self
+    public function setRelatedSchemaIndexing($relatedSchemaIndexing): self
     {
         $this->initialized['relatedSchemaIndexing'] = true;
         $this->relatedSchemaIndexing = $relatedSchemaIndexing;

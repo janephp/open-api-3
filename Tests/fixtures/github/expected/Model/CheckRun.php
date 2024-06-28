@@ -8,7 +8,7 @@ class CheckRun extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -113,7 +113,7 @@ class CheckRun extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -124,7 +124,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -135,7 +135,7 @@ class CheckRun extends \ArrayObject
      *
      * @return string
      */
-    public function getHeadSha() : string
+    public function getHeadSha(): string
     {
         return $this->headSha;
     }
@@ -146,7 +146,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setHeadSha(string $headSha) : self
+    public function setHeadSha(string $headSha): self
     {
         $this->initialized['headSha'] = true;
         $this->headSha = $headSha;
@@ -157,7 +157,7 @@ class CheckRun extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -168,7 +168,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -179,7 +179,7 @@ class CheckRun extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExternalId() : ?string
+    public function getExternalId(): ?string
     {
         return $this->externalId;
     }
@@ -190,7 +190,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setExternalId(?string $externalId) : self
+    public function setExternalId(?string $externalId): self
     {
         $this->initialized['externalId'] = true;
         $this->externalId = $externalId;
@@ -201,7 +201,7 @@ class CheckRun extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -212,7 +212,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -223,7 +223,7 @@ class CheckRun extends \ArrayObject
      *
      * @return string|null
      */
-    public function getHtmlUrl() : ?string
+    public function getHtmlUrl(): ?string
     {
         return $this->htmlUrl;
     }
@@ -234,7 +234,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(?string $htmlUrl) : self
+    public function setHtmlUrl(?string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -245,7 +245,7 @@ class CheckRun extends \ArrayObject
      *
      * @return string|null
      */
-    public function getDetailsUrl() : ?string
+    public function getDetailsUrl(): ?string
     {
         return $this->detailsUrl;
     }
@@ -256,7 +256,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setDetailsUrl(?string $detailsUrl) : self
+    public function setDetailsUrl(?string $detailsUrl): self
     {
         $this->initialized['detailsUrl'] = true;
         $this->detailsUrl = $detailsUrl;
@@ -267,7 +267,7 @@ class CheckRun extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -278,7 +278,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -289,7 +289,7 @@ class CheckRun extends \ArrayObject
      *
      * @return string|null
      */
-    public function getConclusion() : ?string
+    public function getConclusion(): ?string
     {
         return $this->conclusion;
     }
@@ -300,7 +300,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setConclusion(?string $conclusion) : self
+    public function setConclusion(?string $conclusion): self
     {
         $this->initialized['conclusion'] = true;
         $this->conclusion = $conclusion;
@@ -311,7 +311,7 @@ class CheckRun extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getStartedAt() : ?\DateTime
+    public function getStartedAt(): ?\DateTime
     {
         return $this->startedAt;
     }
@@ -322,7 +322,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setStartedAt(?\DateTime $startedAt) : self
+    public function setStartedAt(?\DateTime $startedAt): self
     {
         $this->initialized['startedAt'] = true;
         $this->startedAt = $startedAt;
@@ -333,7 +333,7 @@ class CheckRun extends \ArrayObject
      *
      * @return \DateTime|null
      */
-    public function getCompletedAt() : ?\DateTime
+    public function getCompletedAt(): ?\DateTime
     {
         return $this->completedAt;
     }
@@ -344,7 +344,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setCompletedAt(?\DateTime $completedAt) : self
+    public function setCompletedAt(?\DateTime $completedAt): self
     {
         $this->initialized['completedAt'] = true;
         $this->completedAt = $completedAt;
@@ -355,7 +355,7 @@ class CheckRun extends \ArrayObject
      *
      * @return CheckRunOutput
      */
-    public function getOutput() : CheckRunOutput
+    public function getOutput(): CheckRunOutput
     {
         return $this->output;
     }
@@ -366,7 +366,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setOutput(CheckRunOutput $output) : self
+    public function setOutput(CheckRunOutput $output): self
     {
         $this->initialized['output'] = true;
         $this->output = $output;
@@ -377,7 +377,7 @@ class CheckRun extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -388,7 +388,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -399,7 +399,7 @@ class CheckRun extends \ArrayObject
      *
      * @return CheckRunCheckSuite|null
      */
-    public function getCheckSuite() : ?CheckRunCheckSuite
+    public function getCheckSuite(): ?CheckRunCheckSuite
     {
         return $this->checkSuite;
     }
@@ -410,7 +410,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setCheckSuite(?CheckRunCheckSuite $checkSuite) : self
+    public function setCheckSuite(?CheckRunCheckSuite $checkSuite): self
     {
         $this->initialized['checkSuite'] = true;
         $this->checkSuite = $checkSuite;
@@ -421,7 +421,7 @@ class CheckRun extends \ArrayObject
      *
      * @return CheckRunApp|null
      */
-    public function getApp() : ?CheckRunApp
+    public function getApp(): ?CheckRunApp
     {
         return $this->app;
     }
@@ -432,7 +432,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setApp(?CheckRunApp $app) : self
+    public function setApp(?CheckRunApp $app): self
     {
         $this->initialized['app'] = true;
         $this->app = $app;
@@ -454,7 +454,7 @@ class CheckRun extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequests($pullRequests) : self
+    public function setPullRequests($pullRequests): self
     {
         $this->initialized['pullRequests'] = true;
         $this->pullRequests = $pullRequests;

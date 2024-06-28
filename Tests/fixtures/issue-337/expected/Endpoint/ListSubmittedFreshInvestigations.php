@@ -33,23 +33,23 @@ class ListSubmittedFreshInvestigations extends \CreditSafe\API\Runtime\Client\Ba
         $this->headerParameters = $headerParameters;
     }
     use \CreditSafe\API\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return '/freshInvestigations';
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
-    public function getExtraHeaders() : array
+    public function getExtraHeaders(): array
     {
         return ['Accept' => ['application/json']];
     }
-    protected function getQueryOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getQueryOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getQueryOptionsResolver();
         $optionsResolver->setDefined(['page', 'pageSize', 'transactionId', 'reportCreatedAfter', 'reportCreatedBefore', 'createdBefore', 'createdSince', 'lookUpOrderBy', 'companyDetailsCountry', 'companyDetailsName', 'searchCriteriaCountry', 'searchCriteriaName', 'sortBy', 'sortDir']);
@@ -71,7 +71,7 @@ class ListSubmittedFreshInvestigations extends \CreditSafe\API\Runtime\Client\Ba
         $optionsResolver->addAllowedTypes('sortDir', ['string']);
         return $optionsResolver;
     }
-    protected function getHeadersOptionsResolver() : \Symfony\Component\OptionsResolver\OptionsResolver
+    protected function getHeadersOptionsResolver(): \Symfony\Component\OptionsResolver\OptionsResolver
     {
         $optionsResolver = parent::getHeadersOptionsResolver();
         $optionsResolver->setDefined(['Authorization']);
@@ -95,7 +95,7 @@ class ListSubmittedFreshInvestigations extends \CreditSafe\API\Runtime\Client\Ba
         $status = $response->getStatusCode();
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos($contentType, 'application/json') !== false)) {
-            return $serializer->deserialize($body, 'CreditSafe\\API\\Model\\ListFreshInvestigationResponse', 'json');
+            return $serializer->deserialize($body, 'CreditSafe\API\Model\ListFreshInvestigationResponse', 'json');
         }
         if (is_null($contentType) === false && (400 === $status && mb_strpos($contentType, 'application/json') !== false)) {
             throw new \CreditSafe\API\Exception\ListSubmittedFreshInvestigationsBadRequestException($response);
@@ -110,7 +110,7 @@ class ListSubmittedFreshInvestigations extends \CreditSafe\API\Runtime\Client\Ba
             throw new \CreditSafe\API\Exception\ListSubmittedFreshInvestigationsNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return ['bearerAuth'];
     }

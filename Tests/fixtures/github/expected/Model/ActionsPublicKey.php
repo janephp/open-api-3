@@ -8,7 +8,7 @@ class ActionsPublicKey extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return string
      */
-    public function getKeyId() : string
+    public function getKeyId(): string
     {
         return $this->keyId;
     }
@@ -64,7 +64,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return self
      */
-    public function setKeyId(string $keyId) : self
+    public function setKeyId(string $keyId): self
     {
         $this->initialized['keyId'] = true;
         $this->keyId = $keyId;
@@ -75,7 +75,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return string
      */
-    public function getKey() : string
+    public function getKey(): string
     {
         return $this->key;
     }
@@ -86,7 +86,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return self
      */
-    public function setKey(string $key) : self
+    public function setKey(string $key): self
     {
         $this->initialized['key'] = true;
         $this->key = $key;
@@ -97,7 +97,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -108,7 +108,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -119,7 +119,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -130,7 +130,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -141,7 +141,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -152,7 +152,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -163,7 +163,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -174,7 +174,7 @@ class ActionsPublicKey extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;

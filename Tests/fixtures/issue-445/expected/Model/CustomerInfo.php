@@ -8,7 +8,7 @@ class CustomerInfo
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -101,7 +101,7 @@ class CustomerInfo
      *
      * @return string
      */
-    public function getCustomerId() : string
+    public function getCustomerId(): string
     {
         return $this->customerId;
     }
@@ -112,7 +112,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setCustomerId(string $customerId) : self
+    public function setCustomerId(string $customerId): self
     {
         $this->initialized['customerId'] = true;
         $this->customerId = $customerId;
@@ -123,7 +123,7 @@ class CustomerInfo
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -134,7 +134,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -145,7 +145,7 @@ class CustomerInfo
      *
      * @return string
      */
-    public function getCustomerAlias() : string
+    public function getCustomerAlias(): string
     {
         return $this->customerAlias;
     }
@@ -156,7 +156,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setCustomerAlias(string $customerAlias) : self
+    public function setCustomerAlias(string $customerAlias): self
     {
         $this->initialized['customerAlias'] = true;
         $this->customerAlias = $customerAlias;
@@ -167,7 +167,7 @@ class CustomerInfo
      *
      * @return string
      */
-    public function getIdentityServerUrl() : string
+    public function getIdentityServerUrl(): string
     {
         return $this->identityServerUrl;
     }
@@ -178,7 +178,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setIdentityServerUrl(string $identityServerUrl) : self
+    public function setIdentityServerUrl(string $identityServerUrl): self
     {
         $this->initialized['identityServerUrl'] = true;
         $this->identityServerUrl = $identityServerUrl;
@@ -189,7 +189,7 @@ class CustomerInfo
      *
      * @return string
      */
-    public function getApiUrl() : string
+    public function getApiUrl(): string
     {
         return $this->apiUrl;
     }
@@ -200,7 +200,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setApiUrl(string $apiUrl) : self
+    public function setApiUrl(string $apiUrl): self
     {
         $this->initialized['apiUrl'] = true;
         $this->apiUrl = $apiUrl;
@@ -211,7 +211,7 @@ class CustomerInfo
      *
      * @return bool
      */
-    public function getEnableQueryDetails() : bool
+    public function getEnableQueryDetails(): bool
     {
         return $this->enableQueryDetails;
     }
@@ -222,7 +222,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setEnableQueryDetails(bool $enableQueryDetails) : self
+    public function setEnableQueryDetails(bool $enableQueryDetails): self
     {
         $this->initialized['enableQueryDetails'] = true;
         $this->enableQueryDetails = $enableQueryDetails;
@@ -244,7 +244,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setLanguageConfiguration($languageConfiguration) : self
+    public function setLanguageConfiguration($languageConfiguration): self
     {
         $this->initialized['languageConfiguration'] = true;
         $this->languageConfiguration = $languageConfiguration;
@@ -255,7 +255,7 @@ class CustomerInfo
      *
      * @return list<Language>
      */
-    public function getLanguages() : array
+    public function getLanguages(): array
     {
         return $this->languages;
     }
@@ -266,7 +266,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setLanguages(array $languages) : self
+    public function setLanguages(array $languages): self
     {
         $this->initialized['languages'] = true;
         $this->languages = $languages;
@@ -277,7 +277,7 @@ class CustomerInfo
      *
      * @return list<OutputFormatInfo>
      */
-    public function getOutputFormats() : array
+    public function getOutputFormats(): array
     {
         return $this->outputFormats;
     }
@@ -288,7 +288,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setOutputFormats(array $outputFormats) : self
+    public function setOutputFormats(array $outputFormats): self
     {
         $this->initialized['outputFormats'] = true;
         $this->outputFormats = $outputFormats;
@@ -299,7 +299,7 @@ class CustomerInfo
      *
      * @return list<float>
      */
-    public function getBoostValues() : array
+    public function getBoostValues(): array
     {
         return $this->boostValues;
     }
@@ -310,7 +310,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setBoostValues(array $boostValues) : self
+    public function setBoostValues(array $boostValues): self
     {
         $this->initialized['boostValues'] = true;
         $this->boostValues = $boostValues;
@@ -321,7 +321,7 @@ class CustomerInfo
      *
      * @return list<CustomerApp>|null
      */
-    public function getApps() : ?array
+    public function getApps(): ?array
     {
         return $this->apps;
     }
@@ -332,7 +332,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setApps(?array $apps) : self
+    public function setApps(?array $apps): self
     {
         $this->initialized['apps'] = true;
         $this->apps = $apps;
@@ -343,7 +343,7 @@ class CustomerInfo
      *
      * @return \DateTime
      */
-    public function getModificationDate() : \DateTime
+    public function getModificationDate(): \DateTime
     {
         return $this->modificationDate;
     }
@@ -354,7 +354,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setModificationDate(\DateTime $modificationDate) : self
+    public function setModificationDate(\DateTime $modificationDate): self
     {
         $this->initialized['modificationDate'] = true;
         $this->modificationDate = $modificationDate;
@@ -365,7 +365,7 @@ class CustomerInfo
      *
      * @return string
      */
-    public function getBaseUrl() : string
+    public function getBaseUrl(): string
     {
         return $this->baseUrl;
     }
@@ -376,7 +376,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setBaseUrl(string $baseUrl) : self
+    public function setBaseUrl(string $baseUrl): self
     {
         $this->initialized['baseUrl'] = true;
         $this->baseUrl = $baseUrl;
@@ -387,7 +387,7 @@ class CustomerInfo
      *
      * @return string
      */
-    public function getLogosUrl() : string
+    public function getLogosUrl(): string
     {
         return $this->logosUrl;
     }
@@ -398,7 +398,7 @@ class CustomerInfo
      *
      * @return self
      */
-    public function setLogosUrl(string $logosUrl) : self
+    public function setLogosUrl(string $logosUrl): self
     {
         $this->initialized['logosUrl'] = true;
         $this->logosUrl = $logosUrl;

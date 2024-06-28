@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorDetailsAdditionalData extends \ArrayObj
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbPeopleReportReponseReportDirectorDetailsAdditionalData extends \ArrayObj
      *
      * @return bool
      */
-    public function getDisqualified() : bool
+    public function getDisqualified(): bool
     {
         return $this->disqualified;
     }
@@ -40,7 +40,7 @@ class GbPeopleReportReponseReportDirectorDetailsAdditionalData extends \ArrayObj
      *
      * @return self
      */
-    public function setDisqualified(bool $disqualified) : self
+    public function setDisqualified(bool $disqualified): self
     {
         $this->initialized['disqualified'] = true;
         $this->disqualified = $disqualified;
@@ -51,7 +51,7 @@ class GbPeopleReportReponseReportDirectorDetailsAdditionalData extends \ArrayObj
      *
      * @return bool
      */
-    public function getDisqualifiedException() : bool
+    public function getDisqualifiedException(): bool
     {
         return $this->disqualifiedException;
     }
@@ -62,7 +62,7 @@ class GbPeopleReportReponseReportDirectorDetailsAdditionalData extends \ArrayObj
      *
      * @return self
      */
-    public function setDisqualifiedException(bool $disqualifiedException) : self
+    public function setDisqualifiedException(bool $disqualifiedException): self
     {
         $this->initialized['disqualifiedException'] = true;
         $this->disqualifiedException = $disqualifiedException;

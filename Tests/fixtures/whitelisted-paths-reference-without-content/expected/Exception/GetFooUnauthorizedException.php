@@ -13,7 +13,7 @@ class GetFooUnauthorizedException extends UnauthorizedException
         parent::__construct('User must be identified to access this resource');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

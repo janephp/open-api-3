@@ -8,7 +8,7 @@ class UserAuditDetail
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class UserAuditDetail
      *
      * @return \DateTime
      */
-    public function getCreationDate() : \DateTime
+    public function getCreationDate(): \DateTime
     {
         return $this->creationDate;
     }
@@ -52,7 +52,7 @@ class UserAuditDetail
      *
      * @return self
      */
-    public function setCreationDate(\DateTime $creationDate) : self
+    public function setCreationDate(\DateTime $creationDate): self
     {
         $this->initialized['creationDate'] = true;
         $this->creationDate = $creationDate;
@@ -63,7 +63,7 @@ class UserAuditDetail
      *
      * @return \DateTime
      */
-    public function getModificationDate() : \DateTime
+    public function getModificationDate(): \DateTime
     {
         return $this->modificationDate;
     }
@@ -74,7 +74,7 @@ class UserAuditDetail
      *
      * @return self
      */
-    public function setModificationDate(\DateTime $modificationDate) : self
+    public function setModificationDate(\DateTime $modificationDate): self
     {
         $this->initialized['modificationDate'] = true;
         $this->modificationDate = $modificationDate;
@@ -96,7 +96,7 @@ class UserAuditDetail
      *
      * @return self
      */
-    public function setCreatedByUser($createdByUser) : self
+    public function setCreatedByUser($createdByUser): self
     {
         $this->initialized['createdByUser'] = true;
         $this->createdByUser = $createdByUser;
@@ -118,7 +118,7 @@ class UserAuditDetail
      *
      * @return self
      */
-    public function setModifiedByUser($modifiedByUser) : self
+    public function setModifiedByUser($modifiedByUser): self
     {
         $this->initialized['modifiedByUser'] = true;
         $this->modifiedByUser = $modifiedByUser;

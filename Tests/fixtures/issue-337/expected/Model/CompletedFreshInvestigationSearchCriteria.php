@@ -8,7 +8,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getAdditionalInfo() : string
+    public function getAdditionalInfo(): string
     {
         return $this->additionalInfo;
     }
@@ -64,7 +64,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setAdditionalInfo(string $additionalInfo) : self
+    public function setAdditionalInfo(string $additionalInfo): self
     {
         $this->initialized['additionalInfo'] = true;
         $this->additionalInfo = $additionalInfo;
@@ -75,7 +75,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return CompletedFreshInvestigationSearchCriteriaAddress
      */
-    public function getAddress() : CompletedFreshInvestigationSearchCriteriaAddress
+    public function getAddress(): CompletedFreshInvestigationSearchCriteriaAddress
     {
         return $this->address;
     }
@@ -86,7 +86,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setAddress(CompletedFreshInvestigationSearchCriteriaAddress $address) : self
+    public function setAddress(CompletedFreshInvestigationSearchCriteriaAddress $address): self
     {
         $this->initialized['address'] = true;
         $this->address = $address;
@@ -97,7 +97,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getCountryCode() : string
+    public function getCountryCode(): string
     {
         return $this->countryCode;
     }
@@ -108,7 +108,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setCountryCode(string $countryCode) : self
+    public function setCountryCode(string $countryCode): self
     {
         $this->initialized['countryCode'] = true;
         $this->countryCode = $countryCode;
@@ -119,7 +119,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -130,7 +130,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -141,7 +141,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getRegNo() : string
+    public function getRegNo(): string
     {
         return $this->regNo;
     }
@@ -152,7 +152,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setRegNo(string $regNo) : self
+    public function setRegNo(string $regNo): self
     {
         $this->initialized['regNo'] = true;
         $this->regNo = $regNo;
@@ -163,7 +163,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return string
      */
-    public function getVatNo() : string
+    public function getVatNo(): string
     {
         return $this->vatNo;
     }
@@ -174,7 +174,7 @@ class CompletedFreshInvestigationSearchCriteria extends \ArrayObject
      *
      * @return self
      */
-    public function setVatNo(string $vatNo) : self
+    public function setVatNo(string $vatNo): self
     {
         $this->initialized['vatNo'] = true;
         $this->vatNo = $vatNo;

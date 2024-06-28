@@ -8,7 +8,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getRepositories() : array
+    public function getRepositories(): array
     {
         return $this->repositories;
     }
@@ -46,7 +46,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositories(array $repositories) : self
+    public function setRepositories(array $repositories): self
     {
         $this->initialized['repositories'] = true;
         $this->repositories = $repositories;
@@ -57,7 +57,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
      *
      * @return list<int>
      */
-    public function getRepositoryIds() : array
+    public function getRepositoryIds(): array
     {
         return $this->repositoryIds;
     }
@@ -68,7 +68,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryIds(array $repositoryIds) : self
+    public function setRepositoryIds(array $repositoryIds): self
     {
         $this->initialized['repositoryIds'] = true;
         $this->repositoryIds = $repositoryIds;
@@ -79,7 +79,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
      *
      * @return AppInstallationsInstallationIdAccessTokensPostBodyPermissions
      */
-    public function getPermissions() : AppInstallationsInstallationIdAccessTokensPostBodyPermissions
+    public function getPermissions(): AppInstallationsInstallationIdAccessTokensPostBodyPermissions
     {
         return $this->permissions;
     }
@@ -90,7 +90,7 @@ class AppInstallationsInstallationIdAccessTokensPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(AppInstallationsInstallationIdAccessTokensPostBodyPermissions $permissions) : self
+    public function setPermissions(AppInstallationsInstallationIdAccessTokensPostBodyPermissions $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;

@@ -8,7 +8,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody extends \ArrayObjec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody extends \ArrayObjec
      *
      * @return list<MonitoringPortfoliosPortfolioIdCompaniesClearPatchBodyCompaniesItem>
      */
-    public function getCompanies() : array
+    public function getCompanies(): array
     {
         return $this->companies;
     }
@@ -34,7 +34,7 @@ class MonitoringPortfoliosPortfolioIdCompaniesClearPatchBody extends \ArrayObjec
      *
      * @return self
      */
-    public function setCompanies(array $companies) : self
+    public function setCompanies(array $companies): self
     {
         $this->initialized['companies'] = true;
         $this->companies = $companies;

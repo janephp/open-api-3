@@ -8,7 +8,7 @@ class PullRequestReview extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -106,7 +106,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -117,7 +117,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -128,7 +128,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -139,7 +139,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return PullRequestReviewUser|null
      */
-    public function getUser() : ?PullRequestReviewUser
+    public function getUser(): ?PullRequestReviewUser
     {
         return $this->user;
     }
@@ -150,7 +150,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setUser(?PullRequestReviewUser $user) : self
+    public function setUser(?PullRequestReviewUser $user): self
     {
         $this->initialized['user'] = true;
         $this->user = $user;
@@ -161,7 +161,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -172,7 +172,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -183,7 +183,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getState() : string
+    public function getState(): string
     {
         return $this->state;
     }
@@ -194,7 +194,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setState(string $state) : self
+    public function setState(string $state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -205,7 +205,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -216,7 +216,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -227,7 +227,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getPullRequestUrl() : string
+    public function getPullRequestUrl(): string
     {
         return $this->pullRequestUrl;
     }
@@ -238,7 +238,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequestUrl(string $pullRequestUrl) : self
+    public function setPullRequestUrl(string $pullRequestUrl): self
     {
         $this->initialized['pullRequestUrl'] = true;
         $this->pullRequestUrl = $pullRequestUrl;
@@ -249,7 +249,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return PullRequestReviewLinks
      */
-    public function getLinks() : PullRequestReviewLinks
+    public function getLinks(): PullRequestReviewLinks
     {
         return $this->links;
     }
@@ -260,7 +260,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setLinks(PullRequestReviewLinks $links) : self
+    public function setLinks(PullRequestReviewLinks $links): self
     {
         $this->initialized['links'] = true;
         $this->links = $links;
@@ -271,7 +271,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getSubmittedAt() : \DateTime
+    public function getSubmittedAt(): \DateTime
     {
         return $this->submittedAt;
     }
@@ -282,7 +282,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setSubmittedAt(\DateTime $submittedAt) : self
+    public function setSubmittedAt(\DateTime $submittedAt): self
     {
         $this->initialized['submittedAt'] = true;
         $this->submittedAt = $submittedAt;
@@ -293,7 +293,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitId() : string
+    public function getCommitId(): string
     {
         return $this->commitId;
     }
@@ -304,7 +304,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitId(string $commitId) : self
+    public function setCommitId(string $commitId): self
     {
         $this->initialized['commitId'] = true;
         $this->commitId = $commitId;
@@ -315,7 +315,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getBodyHtml() : string
+    public function getBodyHtml(): string
     {
         return $this->bodyHtml;
     }
@@ -326,7 +326,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setBodyHtml(string $bodyHtml) : self
+    public function setBodyHtml(string $bodyHtml): self
     {
         $this->initialized['bodyHtml'] = true;
         $this->bodyHtml = $bodyHtml;
@@ -337,7 +337,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getBodyText() : string
+    public function getBodyText(): string
     {
         return $this->bodyText;
     }
@@ -348,7 +348,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setBodyText(string $bodyText) : self
+    public function setBodyText(string $bodyText): self
     {
         $this->initialized['bodyText'] = true;
         $this->bodyText = $bodyText;
@@ -359,7 +359,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorAssociation() : string
+    public function getAuthorAssociation(): string
     {
         return $this->authorAssociation;
     }
@@ -370,7 +370,7 @@ class PullRequestReview extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorAssociation(string $authorAssociation) : self
+    public function setAuthorAssociation(string $authorAssociation): self
     {
         $this->initialized['authorAssociation'] = true;
         $this->authorAssociation = $authorAssociation;

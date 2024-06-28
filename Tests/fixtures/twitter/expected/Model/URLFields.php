@@ -8,7 +8,7 @@ class URLFields extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class URLFields extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -70,7 +70,7 @@ class URLFields extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -81,7 +81,7 @@ class URLFields extends \ArrayObject
      *
      * @return string
      */
-    public function getExpandedUrl() : string
+    public function getExpandedUrl(): string
     {
         return $this->expandedUrl;
     }
@@ -92,7 +92,7 @@ class URLFields extends \ArrayObject
      *
      * @return self
      */
-    public function setExpandedUrl(string $expandedUrl) : self
+    public function setExpandedUrl(string $expandedUrl): self
     {
         $this->initialized['expandedUrl'] = true;
         $this->expandedUrl = $expandedUrl;
@@ -103,7 +103,7 @@ class URLFields extends \ArrayObject
      *
      * @return string
      */
-    public function getDisplayUrl() : string
+    public function getDisplayUrl(): string
     {
         return $this->displayUrl;
     }
@@ -114,7 +114,7 @@ class URLFields extends \ArrayObject
      *
      * @return self
      */
-    public function setDisplayUrl(string $displayUrl) : self
+    public function setDisplayUrl(string $displayUrl): self
     {
         $this->initialized['displayUrl'] = true;
         $this->displayUrl = $displayUrl;
@@ -125,7 +125,7 @@ class URLFields extends \ArrayObject
      *
      * @return int
      */
-    public function getStatus() : int
+    public function getStatus(): int
     {
         return $this->status;
     }
@@ -136,7 +136,7 @@ class URLFields extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(int $status) : self
+    public function setStatus(int $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -147,7 +147,7 @@ class URLFields extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -158,7 +158,7 @@ class URLFields extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -169,7 +169,7 @@ class URLFields extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -180,7 +180,7 @@ class URLFields extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -191,7 +191,7 @@ class URLFields extends \ArrayObject
      *
      * @return list<URLImage>
      */
-    public function getImages() : array
+    public function getImages(): array
     {
         return $this->images;
     }
@@ -202,7 +202,7 @@ class URLFields extends \ArrayObject
      *
      * @return self
      */
-    public function setImages(array $images) : self
+    public function setImages(array $images): self
     {
         $this->initialized['images'] = true;
         $this->images = $images;

@@ -18,11 +18,11 @@ class OrgsConvertMemberToOutsideCollaboratorForbiddenException extends Forbidden
         $this->orgsOrgOutsideCollaboratorsUsernamePutResponse403 = $orgsOrgOutsideCollaboratorsUsernamePutResponse403;
         $this->response = $response;
     }
-    public function getOrgsOrgOutsideCollaboratorsUsernamePutResponse403() : \Github\Model\OrgsOrgOutsideCollaboratorsUsernamePutResponse403
+    public function getOrgsOrgOutsideCollaboratorsUsernamePutResponse403(): \Github\Model\OrgsOrgOutsideCollaboratorsUsernamePutResponse403
     {
         return $this->orgsOrgOutsideCollaboratorsUsernamePutResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

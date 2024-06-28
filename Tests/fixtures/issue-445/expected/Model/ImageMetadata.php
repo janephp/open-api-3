@@ -8,7 +8,7 @@ class ImageMetadata extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -232,7 +232,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -254,7 +254,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setDescriptions($descriptions) : self
+    public function setDescriptions($descriptions): self
     {
         $this->initialized['descriptions'] = true;
         $this->descriptions = $descriptions;
@@ -265,7 +265,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileExtension() : ?string
+    public function getFileExtension(): ?string
     {
         return $this->fileExtension;
     }
@@ -276,7 +276,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileExtension(?string $fileExtension) : self
+    public function setFileExtension(?string $fileExtension): self
     {
         $this->initialized['fileExtension'] = true;
         $this->fileExtension = $fileExtension;
@@ -287,7 +287,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFileName() : ?string
+    public function getFileName(): ?string
     {
         return $this->fileName;
     }
@@ -298,7 +298,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileName(?string $fileName) : self
+    public function setFileName(?string $fileName): self
     {
         $this->initialized['fileName'] = true;
         $this->fileName = $fileName;
@@ -309,7 +309,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getFilePath() : ?string
+    public function getFilePath(): ?string
     {
         return $this->filePath;
     }
@@ -320,7 +320,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFilePath(?string $filePath) : self
+    public function setFilePath(?string $filePath): self
     {
         $this->initialized['filePath'] = true;
         $this->filePath = $filePath;
@@ -331,7 +331,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return int|null
      */
-    public function getFileSizeInBytes() : ?int
+    public function getFileSizeInBytes(): ?int
     {
         return $this->fileSizeInBytes;
     }
@@ -342,7 +342,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setFileSizeInBytes(?int $fileSizeInBytes) : self
+    public function setFileSizeInBytes(?int $fileSizeInBytes): self
     {
         $this->initialized['fileSizeInBytes'] = true;
         $this->fileSizeInBytes = $fileSizeInBytes;
@@ -353,7 +353,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSha1Hash() : ?string
+    public function getSha1Hash(): ?string
     {
         return $this->sha1Hash;
     }
@@ -364,7 +364,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setSha1Hash(?string $sha1Hash) : self
+    public function setSha1Hash(?string $sha1Hash): self
     {
         $this->initialized['sha1Hash'] = true;
         $this->sha1Hash = $sha1Hash;
@@ -386,7 +386,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setXmpMetadata($xmpMetadata) : self
+    public function setXmpMetadata($xmpMetadata): self
     {
         $this->initialized['xmpMetadata'] = true;
         $this->xmpMetadata = $xmpMetadata;
@@ -408,7 +408,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setExifMetadata($exifMetadata) : self
+    public function setExifMetadata($exifMetadata): self
     {
         $this->initialized['exifMetadata'] = true;
         $this->exifMetadata = $exifMetadata;
@@ -419,7 +419,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLanguage() : ?string
+    public function getLanguage(): ?string
     {
         return $this->language;
     }
@@ -430,7 +430,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(?string $language) : self
+    public function setLanguage(?string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -441,7 +441,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getWidth() : int
+    public function getWidth(): int
     {
         return $this->width;
     }
@@ -452,7 +452,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setWidth(int $width) : self
+    public function setWidth(int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;
@@ -463,7 +463,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getHeight() : int
+    public function getHeight(): int
     {
         return $this->height;
     }
@@ -474,7 +474,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHeight(int $height) : self
+    public function setHeight(int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;
@@ -485,7 +485,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return float
      */
-    public function getWidthInInch() : float
+    public function getWidthInInch(): float
     {
         return $this->widthInInch;
     }
@@ -496,7 +496,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setWidthInInch(float $widthInInch) : self
+    public function setWidthInInch(float $widthInInch): self
     {
         $this->initialized['widthInInch'] = true;
         $this->widthInInch = $widthInInch;
@@ -507,7 +507,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return float
      */
-    public function getHeightInInch() : float
+    public function getHeightInInch(): float
     {
         return $this->heightInInch;
     }
@@ -518,7 +518,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHeightInInch(float $heightInInch) : self
+    public function setHeightInInch(float $heightInInch): self
     {
         $this->initialized['heightInInch'] = true;
         $this->heightInInch = $heightInInch;
@@ -529,7 +529,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return float
      */
-    public function getWidthInCm() : float
+    public function getWidthInCm(): float
     {
         return $this->widthInCm;
     }
@@ -540,7 +540,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setWidthInCm(float $widthInCm) : self
+    public function setWidthInCm(float $widthInCm): self
     {
         $this->initialized['widthInCm'] = true;
         $this->widthInCm = $widthInCm;
@@ -551,7 +551,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return float
      */
-    public function getHeightInCm() : float
+    public function getHeightInCm(): float
     {
         return $this->heightInCm;
     }
@@ -562,7 +562,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHeightInCm(float $heightInCm) : self
+    public function setHeightInCm(float $heightInCm): self
     {
         $this->initialized['heightInCm'] = true;
         $this->heightInCm = $heightInCm;
@@ -573,7 +573,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getColorSpace() : ?string
+    public function getColorSpace(): ?string
     {
         return $this->colorSpace;
     }
@@ -584,7 +584,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setColorSpace(?string $colorSpace) : self
+    public function setColorSpace(?string $colorSpace): self
     {
         $this->initialized['colorSpace'] = true;
         $this->colorSpace = $colorSpace;
@@ -595,7 +595,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getColorProfile() : ?string
+    public function getColorProfile(): ?string
     {
         return $this->colorProfile;
     }
@@ -606,7 +606,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setColorProfile(?string $colorProfile) : self
+    public function setColorProfile(?string $colorProfile): self
     {
         $this->initialized['colorProfile'] = true;
         $this->colorProfile = $colorProfile;
@@ -617,7 +617,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getBitsPerPixel() : int
+    public function getBitsPerPixel(): int
     {
         return $this->bitsPerPixel;
     }
@@ -628,7 +628,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setBitsPerPixel(int $bitsPerPixel) : self
+    public function setBitsPerPixel(int $bitsPerPixel): self
     {
         $this->initialized['bitsPerPixel'] = true;
         $this->bitsPerPixel = $bitsPerPixel;
@@ -639,7 +639,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getBitsPerChannel() : int
+    public function getBitsPerChannel(): int
     {
         return $this->bitsPerChannel;
     }
@@ -650,7 +650,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setBitsPerChannel(int $bitsPerChannel) : self
+    public function setBitsPerChannel(int $bitsPerChannel): self
     {
         $this->initialized['bitsPerChannel'] = true;
         $this->bitsPerChannel = $bitsPerChannel;
@@ -661,7 +661,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getChannels() : ?string
+    public function getChannels(): ?string
     {
         return $this->channels;
     }
@@ -672,7 +672,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setChannels(?string $channels) : self
+    public function setChannels(?string $channels): self
     {
         $this->initialized['channels'] = true;
         $this->channels = $channels;
@@ -683,7 +683,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return string|null
      */
-    public function getPixelFormat() : ?string
+    public function getPixelFormat(): ?string
     {
         return $this->pixelFormat;
     }
@@ -694,7 +694,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setPixelFormat(?string $pixelFormat) : self
+    public function setPixelFormat(?string $pixelFormat): self
     {
         $this->initialized['pixelFormat'] = true;
         $this->pixelFormat = $pixelFormat;
@@ -705,7 +705,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasAlpha() : bool
+    public function getHasAlpha(): bool
     {
         return $this->hasAlpha;
     }
@@ -716,7 +716,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHasAlpha(bool $hasAlpha) : self
+    public function setHasAlpha(bool $hasAlpha): self
     {
         $this->initialized['hasAlpha'] = true;
         $this->hasAlpha = $hasAlpha;
@@ -727,7 +727,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsIndexed() : bool
+    public function getIsIndexed(): bool
     {
         return $this->isIndexed;
     }
@@ -738,7 +738,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setIsIndexed(bool $isIndexed) : self
+    public function setIsIndexed(bool $isIndexed): self
     {
         $this->initialized['isIndexed'] = true;
         $this->isIndexed = $isIndexed;
@@ -749,7 +749,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsExtended() : bool
+    public function getIsExtended(): bool
     {
         return $this->isExtended;
     }
@@ -760,7 +760,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setIsExtended(bool $isExtended) : self
+    public function setIsExtended(bool $isExtended): self
     {
         $this->initialized['isExtended'] = true;
         $this->isExtended = $isExtended;
@@ -771,7 +771,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return float
      */
-    public function getHorizontalResolution() : float
+    public function getHorizontalResolution(): float
     {
         return $this->horizontalResolution;
     }
@@ -782,7 +782,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHorizontalResolution(float $horizontalResolution) : self
+    public function setHorizontalResolution(float $horizontalResolution): self
     {
         $this->initialized['horizontalResolution'] = true;
         $this->horizontalResolution = $horizontalResolution;
@@ -793,7 +793,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return float
      */
-    public function getVerticalResolution() : float
+    public function getVerticalResolution(): float
     {
         return $this->verticalResolution;
     }
@@ -804,7 +804,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setVerticalResolution(float $verticalResolution) : self
+    public function setVerticalResolution(float $verticalResolution): self
     {
         $this->initialized['verticalResolution'] = true;
         $this->verticalResolution = $verticalResolution;
@@ -815,7 +815,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalFrames() : int
+    public function getTotalFrames(): int
     {
         return $this->totalFrames;
     }
@@ -826,7 +826,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalFrames(int $totalFrames) : self
+    public function setTotalFrames(int $totalFrames): self
     {
         $this->initialized['totalFrames'] = true;
         $this->totalFrames = $totalFrames;
@@ -837,7 +837,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalUnspecifiedTiffExtraChannels() : int
+    public function getTotalUnspecifiedTiffExtraChannels(): int
     {
         return $this->totalUnspecifiedTiffExtraChannels;
     }
@@ -848,7 +848,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalUnspecifiedTiffExtraChannels(int $totalUnspecifiedTiffExtraChannels) : self
+    public function setTotalUnspecifiedTiffExtraChannels(int $totalUnspecifiedTiffExtraChannels): self
     {
         $this->initialized['totalUnspecifiedTiffExtraChannels'] = true;
         $this->totalUnspecifiedTiffExtraChannels = $totalUnspecifiedTiffExtraChannels;
@@ -859,7 +859,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasExifData() : bool
+    public function getHasExifData(): bool
     {
         return $this->hasExifData;
     }
@@ -870,7 +870,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHasExifData(bool $hasExifData) : self
+    public function setHasExifData(bool $hasExifData): self
     {
         $this->initialized['hasExifData'] = true;
         $this->hasExifData = $hasExifData;
@@ -881,7 +881,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasIptcData() : bool
+    public function getHasIptcData(): bool
     {
         return $this->hasIptcData;
     }
@@ -892,7 +892,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHasIptcData(bool $hasIptcData) : self
+    public function setHasIptcData(bool $hasIptcData): self
     {
         $this->initialized['hasIptcData'] = true;
         $this->hasIptcData = $hasIptcData;
@@ -903,7 +903,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasAdobeResourceData() : bool
+    public function getHasAdobeResourceData(): bool
     {
         return $this->hasAdobeResourceData;
     }
@@ -914,7 +914,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHasAdobeResourceData(bool $hasAdobeResourceData) : self
+    public function setHasAdobeResourceData(bool $hasAdobeResourceData): self
     {
         $this->initialized['hasAdobeResourceData'] = true;
         $this->hasAdobeResourceData = $hasAdobeResourceData;
@@ -925,7 +925,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasXmpData() : bool
+    public function getHasXmpData(): bool
     {
         return $this->hasXmpData;
     }
@@ -936,7 +936,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setHasXmpData(bool $hasXmpData) : self
+    public function setHasXmpData(bool $hasXmpData): self
     {
         $this->initialized['hasXmpData'] = true;
         $this->hasXmpData = $hasXmpData;
@@ -947,7 +947,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return int
      */
-    public function getUncompressedSizeInBytes() : int
+    public function getUncompressedSizeInBytes(): int
     {
         return $this->uncompressedSizeInBytes;
     }
@@ -958,7 +958,7 @@ class ImageMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setUncompressedSizeInBytes(int $uncompressedSizeInBytes) : self
+    public function setUncompressedSizeInBytes(int $uncompressedSizeInBytes): self
     {
         $this->initialized['uncompressedSizeInBytes'] = true;
         $this->uncompressedSizeInBytes = $uncompressedSizeInBytes;

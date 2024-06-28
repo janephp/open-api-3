@@ -8,7 +8,7 @@ class BusinessProcessDetailsDataBatchResponse extends BusinessProcessDetailsData
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class BusinessProcessDetailsDataBatchResponse extends BusinessProcessDetailsData
      *
      * @return string
      */
-    public function getDocType() : string
+    public function getDocType(): string
     {
         return $this->docType;
     }
@@ -40,7 +40,7 @@ class BusinessProcessDetailsDataBatchResponse extends BusinessProcessDetailsData
      *
      * @return self
      */
-    public function setDocType(string $docType) : self
+    public function setDocType(string $docType): self
     {
         $this->initialized['docType'] = true;
         $this->docType = $docType;
@@ -62,7 +62,7 @@ class BusinessProcessDetailsDataBatchResponse extends BusinessProcessDetailsData
      *
      * @return self
      */
-    public function setResponse($response) : self
+    public function setResponse($response): self
     {
         $this->initialized['response'] = true;
         $this->response = $response;

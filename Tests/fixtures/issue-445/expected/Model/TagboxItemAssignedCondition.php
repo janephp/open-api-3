@@ -8,7 +8,7 @@ class TagboxItemAssignedCondition extends BusinessRuleCondition
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class TagboxItemAssignedCondition extends BusinessRuleCondition
      *
      * @return string|null
      */
-    public function getFieldPath() : ?string
+    public function getFieldPath(): ?string
     {
         return $this->fieldPath;
     }
@@ -40,7 +40,7 @@ class TagboxItemAssignedCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setFieldPath(?string $fieldPath) : self
+    public function setFieldPath(?string $fieldPath): self
     {
         $this->initialized['fieldPath'] = true;
         $this->fieldPath = $fieldPath;
@@ -51,7 +51,7 @@ class TagboxItemAssignedCondition extends BusinessRuleCondition
      *
      * @return string|null
      */
-    public function getRefId() : ?string
+    public function getRefId(): ?string
     {
         return $this->refId;
     }
@@ -62,7 +62,7 @@ class TagboxItemAssignedCondition extends BusinessRuleCondition
      *
      * @return self
      */
-    public function setRefId(?string $refId) : self
+    public function setRefId(?string $refId): self
     {
         $this->initialized['refId'] = true;
         $this->refId = $refId;

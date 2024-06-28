@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus extends \A
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus extends \A
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus extends \A
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus extends \A
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportCompanySummaryCompanyStatus extends \A
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;

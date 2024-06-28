@@ -8,7 +8,7 @@ class CropAction extends ImageActionBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class CropAction extends ImageActionBase
      *
      * @return int
      */
-    public function getX() : int
+    public function getX(): int
     {
         return $this->x;
     }
@@ -52,7 +52,7 @@ class CropAction extends ImageActionBase
      *
      * @return self
      */
-    public function setX(int $x) : self
+    public function setX(int $x): self
     {
         $this->initialized['x'] = true;
         $this->x = $x;
@@ -63,7 +63,7 @@ class CropAction extends ImageActionBase
      *
      * @return int
      */
-    public function getY() : int
+    public function getY(): int
     {
         return $this->y;
     }
@@ -74,7 +74,7 @@ class CropAction extends ImageActionBase
      *
      * @return self
      */
-    public function setY(int $y) : self
+    public function setY(int $y): self
     {
         $this->initialized['y'] = true;
         $this->y = $y;
@@ -85,7 +85,7 @@ class CropAction extends ImageActionBase
      *
      * @return int
      */
-    public function getWidth() : int
+    public function getWidth(): int
     {
         return $this->width;
     }
@@ -96,7 +96,7 @@ class CropAction extends ImageActionBase
      *
      * @return self
      */
-    public function setWidth(int $width) : self
+    public function setWidth(int $width): self
     {
         $this->initialized['width'] = true;
         $this->width = $width;
@@ -107,7 +107,7 @@ class CropAction extends ImageActionBase
      *
      * @return int
      */
-    public function getHeight() : int
+    public function getHeight(): int
     {
         return $this->height;
     }
@@ -118,7 +118,7 @@ class CropAction extends ImageActionBase
      *
      * @return self
      */
-    public function setHeight(int $height) : self
+    public function setHeight(int $height): self
     {
         $this->initialized['height'] = true;
         $this->height = $height;

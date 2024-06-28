@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemPosition extends \Arra
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemPosition extends \Arra
      *
      * @return string
      */
-    public function getResignationDate() : string
+    public function getResignationDate(): string
     {
         return $this->resignationDate;
     }
@@ -46,7 +46,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemPosition extends \Arra
      *
      * @return self
      */
-    public function setResignationDate(string $resignationDate) : self
+    public function setResignationDate(string $resignationDate): self
     {
         $this->initialized['resignationDate'] = true;
         $this->resignationDate = $resignationDate;
@@ -57,7 +57,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemPosition extends \Arra
      *
      * @return string
      */
-    public function getDateAppointed() : string
+    public function getDateAppointed(): string
     {
         return $this->dateAppointed;
     }
@@ -68,7 +68,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemPosition extends \Arra
      *
      * @return self
      */
-    public function setDateAppointed(string $dateAppointed) : self
+    public function setDateAppointed(string $dateAppointed): self
     {
         $this->initialized['dateAppointed'] = true;
         $this->dateAppointed = $dateAppointed;
@@ -79,7 +79,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemPosition extends \Arra
      *
      * @return string
      */
-    public function getPositionName() : string
+    public function getPositionName(): string
     {
         return $this->positionName;
     }
@@ -90,7 +90,7 @@ class GbPeopleReportReponseReportDirectorshipsInactiveItemPosition extends \Arra
      *
      * @return self
      */
-    public function setPositionName(string $positionName) : self
+    public function setPositionName(string $positionName): self
     {
         $this->initialized['positionName'] = true;
         $this->positionName = $positionName;

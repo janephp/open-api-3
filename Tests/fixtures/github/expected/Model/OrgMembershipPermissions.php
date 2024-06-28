@@ -8,7 +8,7 @@ class OrgMembershipPermissions extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class OrgMembershipPermissions extends \ArrayObject
      *
      * @return bool
      */
-    public function getCanCreateRepository() : bool
+    public function getCanCreateRepository(): bool
     {
         return $this->canCreateRepository;
     }
@@ -34,7 +34,7 @@ class OrgMembershipPermissions extends \ArrayObject
      *
      * @return self
      */
-    public function setCanCreateRepository(bool $canCreateRepository) : self
+    public function setCanCreateRepository(bool $canCreateRepository): self
     {
         $this->initialized['canCreateRepository'] = true;
         $this->canCreateRepository = $canCreateRepository;

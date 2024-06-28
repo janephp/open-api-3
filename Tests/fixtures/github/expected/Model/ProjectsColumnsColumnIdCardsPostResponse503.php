@@ -8,7 +8,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
      *
      * @return string
      */
-    public function getCode() : string
+    public function getCode(): string
     {
         return $this->code;
     }
@@ -52,7 +52,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
      *
      * @return self
      */
-    public function setCode(string $code) : self
+    public function setCode(string $code): self
     {
         $this->initialized['code'] = true;
         $this->code = $code;
@@ -63,7 +63,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -74,7 +74,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -85,7 +85,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
      *
      * @return string
      */
-    public function getDocumentationUrl() : string
+    public function getDocumentationUrl(): string
     {
         return $this->documentationUrl;
     }
@@ -96,7 +96,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
      *
      * @return self
      */
-    public function setDocumentationUrl(string $documentationUrl) : self
+    public function setDocumentationUrl(string $documentationUrl): self
     {
         $this->initialized['documentationUrl'] = true;
         $this->documentationUrl = $documentationUrl;
@@ -107,7 +107,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
      *
      * @return list<ProjectsColumnsColumnIdCardsPostResponse503ErrorsItem>
      */
-    public function getErrors() : array
+    public function getErrors(): array
     {
         return $this->errors;
     }
@@ -118,7 +118,7 @@ class ProjectsColumnsColumnIdCardsPostResponse503 extends \ArrayObject
      *
      * @return self
      */
-    public function setErrors(array $errors) : self
+    public function setErrors(array $errors): self
     {
         $this->initialized['errors'] = true;
         $this->errors = $errors;

@@ -8,7 +8,7 @@ class SchemaOwnershipTransferManyRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class SchemaOwnershipTransferManyRequest
      *
      * @return list<string>|null
      */
-    public function getSchemaIds() : ?array
+    public function getSchemaIds(): ?array
     {
         return $this->schemaIds;
     }
@@ -40,7 +40,7 @@ class SchemaOwnershipTransferManyRequest
      *
      * @return self
      */
-    public function setSchemaIds(?array $schemaIds) : self
+    public function setSchemaIds(?array $schemaIds): self
     {
         $this->initialized['schemaIds'] = true;
         $this->schemaIds = $schemaIds;
@@ -51,7 +51,7 @@ class SchemaOwnershipTransferManyRequest
      *
      * @return string|null
      */
-    public function getTransferUserId() : ?string
+    public function getTransferUserId(): ?string
     {
         return $this->transferUserId;
     }
@@ -62,7 +62,7 @@ class SchemaOwnershipTransferManyRequest
      *
      * @return self
      */
-    public function setTransferUserId(?string $transferUserId) : self
+    public function setTransferUserId(?string $transferUserId): self
     {
         $this->initialized['transferUserId'] = true;
         $this->transferUserId = $transferUserId;

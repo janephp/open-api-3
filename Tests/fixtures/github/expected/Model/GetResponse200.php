@@ -8,7 +8,7 @@ class GetResponse200 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -215,7 +215,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getCurrentUserUrl() : string
+    public function getCurrentUserUrl(): string
     {
         return $this->currentUserUrl;
     }
@@ -226,7 +226,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserUrl(string $currentUserUrl) : self
+    public function setCurrentUserUrl(string $currentUserUrl): self
     {
         $this->initialized['currentUserUrl'] = true;
         $this->currentUserUrl = $currentUserUrl;
@@ -237,7 +237,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getCurrentUserAuthorizationsHtmlUrl() : string
+    public function getCurrentUserAuthorizationsHtmlUrl(): string
     {
         return $this->currentUserAuthorizationsHtmlUrl;
     }
@@ -248,7 +248,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserAuthorizationsHtmlUrl(string $currentUserAuthorizationsHtmlUrl) : self
+    public function setCurrentUserAuthorizationsHtmlUrl(string $currentUserAuthorizationsHtmlUrl): self
     {
         $this->initialized['currentUserAuthorizationsHtmlUrl'] = true;
         $this->currentUserAuthorizationsHtmlUrl = $currentUserAuthorizationsHtmlUrl;
@@ -259,7 +259,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorizationsUrl() : string
+    public function getAuthorizationsUrl(): string
     {
         return $this->authorizationsUrl;
     }
@@ -270,7 +270,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorizationsUrl(string $authorizationsUrl) : self
+    public function setAuthorizationsUrl(string $authorizationsUrl): self
     {
         $this->initialized['authorizationsUrl'] = true;
         $this->authorizationsUrl = $authorizationsUrl;
@@ -281,7 +281,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getCodeSearchUrl() : string
+    public function getCodeSearchUrl(): string
     {
         return $this->codeSearchUrl;
     }
@@ -292,7 +292,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setCodeSearchUrl(string $codeSearchUrl) : self
+    public function setCodeSearchUrl(string $codeSearchUrl): self
     {
         $this->initialized['codeSearchUrl'] = true;
         $this->codeSearchUrl = $codeSearchUrl;
@@ -303,7 +303,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitSearchUrl() : string
+    public function getCommitSearchUrl(): string
     {
         return $this->commitSearchUrl;
     }
@@ -314,7 +314,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitSearchUrl(string $commitSearchUrl) : self
+    public function setCommitSearchUrl(string $commitSearchUrl): self
     {
         $this->initialized['commitSearchUrl'] = true;
         $this->commitSearchUrl = $commitSearchUrl;
@@ -325,7 +325,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getEmailsUrl() : string
+    public function getEmailsUrl(): string
     {
         return $this->emailsUrl;
     }
@@ -336,7 +336,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setEmailsUrl(string $emailsUrl) : self
+    public function setEmailsUrl(string $emailsUrl): self
     {
         $this->initialized['emailsUrl'] = true;
         $this->emailsUrl = $emailsUrl;
@@ -347,7 +347,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getEmojisUrl() : string
+    public function getEmojisUrl(): string
     {
         return $this->emojisUrl;
     }
@@ -358,7 +358,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setEmojisUrl(string $emojisUrl) : self
+    public function setEmojisUrl(string $emojisUrl): self
     {
         $this->initialized['emojisUrl'] = true;
         $this->emojisUrl = $emojisUrl;
@@ -369,7 +369,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getEventsUrl() : string
+    public function getEventsUrl(): string
     {
         return $this->eventsUrl;
     }
@@ -380,7 +380,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setEventsUrl(string $eventsUrl) : self
+    public function setEventsUrl(string $eventsUrl): self
     {
         $this->initialized['eventsUrl'] = true;
         $this->eventsUrl = $eventsUrl;
@@ -391,7 +391,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getFeedsUrl() : string
+    public function getFeedsUrl(): string
     {
         return $this->feedsUrl;
     }
@@ -402,7 +402,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setFeedsUrl(string $feedsUrl) : self
+    public function setFeedsUrl(string $feedsUrl): self
     {
         $this->initialized['feedsUrl'] = true;
         $this->feedsUrl = $feedsUrl;
@@ -413,7 +413,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getFollowersUrl() : string
+    public function getFollowersUrl(): string
     {
         return $this->followersUrl;
     }
@@ -424,7 +424,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowersUrl(string $followersUrl) : self
+    public function setFollowersUrl(string $followersUrl): self
     {
         $this->initialized['followersUrl'] = true;
         $this->followersUrl = $followersUrl;
@@ -435,7 +435,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getFollowingUrl() : string
+    public function getFollowingUrl(): string
     {
         return $this->followingUrl;
     }
@@ -446,7 +446,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setFollowingUrl(string $followingUrl) : self
+    public function setFollowingUrl(string $followingUrl): self
     {
         $this->initialized['followingUrl'] = true;
         $this->followingUrl = $followingUrl;
@@ -457,7 +457,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getGistsUrl() : string
+    public function getGistsUrl(): string
     {
         return $this->gistsUrl;
     }
@@ -468,7 +468,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setGistsUrl(string $gistsUrl) : self
+    public function setGistsUrl(string $gistsUrl): self
     {
         $this->initialized['gistsUrl'] = true;
         $this->gistsUrl = $gistsUrl;
@@ -479,7 +479,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getHubUrl() : string
+    public function getHubUrl(): string
     {
         return $this->hubUrl;
     }
@@ -490,7 +490,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setHubUrl(string $hubUrl) : self
+    public function setHubUrl(string $hubUrl): self
     {
         $this->initialized['hubUrl'] = true;
         $this->hubUrl = $hubUrl;
@@ -501,7 +501,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getIssueSearchUrl() : string
+    public function getIssueSearchUrl(): string
     {
         return $this->issueSearchUrl;
     }
@@ -512,7 +512,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setIssueSearchUrl(string $issueSearchUrl) : self
+    public function setIssueSearchUrl(string $issueSearchUrl): self
     {
         $this->initialized['issueSearchUrl'] = true;
         $this->issueSearchUrl = $issueSearchUrl;
@@ -523,7 +523,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getIssuesUrl() : string
+    public function getIssuesUrl(): string
     {
         return $this->issuesUrl;
     }
@@ -534,7 +534,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setIssuesUrl(string $issuesUrl) : self
+    public function setIssuesUrl(string $issuesUrl): self
     {
         $this->initialized['issuesUrl'] = true;
         $this->issuesUrl = $issuesUrl;
@@ -545,7 +545,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getKeysUrl() : string
+    public function getKeysUrl(): string
     {
         return $this->keysUrl;
     }
@@ -556,7 +556,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setKeysUrl(string $keysUrl) : self
+    public function setKeysUrl(string $keysUrl): self
     {
         $this->initialized['keysUrl'] = true;
         $this->keysUrl = $keysUrl;
@@ -567,7 +567,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getLabelSearchUrl() : string
+    public function getLabelSearchUrl(): string
     {
         return $this->labelSearchUrl;
     }
@@ -578,7 +578,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setLabelSearchUrl(string $labelSearchUrl) : self
+    public function setLabelSearchUrl(string $labelSearchUrl): self
     {
         $this->initialized['labelSearchUrl'] = true;
         $this->labelSearchUrl = $labelSearchUrl;
@@ -589,7 +589,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getNotificationsUrl() : string
+    public function getNotificationsUrl(): string
     {
         return $this->notificationsUrl;
     }
@@ -600,7 +600,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setNotificationsUrl(string $notificationsUrl) : self
+    public function setNotificationsUrl(string $notificationsUrl): self
     {
         $this->initialized['notificationsUrl'] = true;
         $this->notificationsUrl = $notificationsUrl;
@@ -611,7 +611,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationUrl() : string
+    public function getOrganizationUrl(): string
     {
         return $this->organizationUrl;
     }
@@ -622,7 +622,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationUrl(string $organizationUrl) : self
+    public function setOrganizationUrl(string $organizationUrl): self
     {
         $this->initialized['organizationUrl'] = true;
         $this->organizationUrl = $organizationUrl;
@@ -633,7 +633,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationRepositoriesUrl() : string
+    public function getOrganizationRepositoriesUrl(): string
     {
         return $this->organizationRepositoriesUrl;
     }
@@ -644,7 +644,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationRepositoriesUrl(string $organizationRepositoriesUrl) : self
+    public function setOrganizationRepositoriesUrl(string $organizationRepositoriesUrl): self
     {
         $this->initialized['organizationRepositoriesUrl'] = true;
         $this->organizationRepositoriesUrl = $organizationRepositoriesUrl;
@@ -655,7 +655,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getOrganizationTeamsUrl() : string
+    public function getOrganizationTeamsUrl(): string
     {
         return $this->organizationTeamsUrl;
     }
@@ -666,7 +666,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setOrganizationTeamsUrl(string $organizationTeamsUrl) : self
+    public function setOrganizationTeamsUrl(string $organizationTeamsUrl): self
     {
         $this->initialized['organizationTeamsUrl'] = true;
         $this->organizationTeamsUrl = $organizationTeamsUrl;
@@ -677,7 +677,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getPublicGistsUrl() : string
+    public function getPublicGistsUrl(): string
     {
         return $this->publicGistsUrl;
     }
@@ -688,7 +688,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setPublicGistsUrl(string $publicGistsUrl) : self
+    public function setPublicGistsUrl(string $publicGistsUrl): self
     {
         $this->initialized['publicGistsUrl'] = true;
         $this->publicGistsUrl = $publicGistsUrl;
@@ -699,7 +699,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getRateLimitUrl() : string
+    public function getRateLimitUrl(): string
     {
         return $this->rateLimitUrl;
     }
@@ -710,7 +710,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setRateLimitUrl(string $rateLimitUrl) : self
+    public function setRateLimitUrl(string $rateLimitUrl): self
     {
         $this->initialized['rateLimitUrl'] = true;
         $this->rateLimitUrl = $rateLimitUrl;
@@ -721,7 +721,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositoryUrl() : string
+    public function getRepositoryUrl(): string
     {
         return $this->repositoryUrl;
     }
@@ -732,7 +732,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositoryUrl(string $repositoryUrl) : self
+    public function setRepositoryUrl(string $repositoryUrl): self
     {
         $this->initialized['repositoryUrl'] = true;
         $this->repositoryUrl = $repositoryUrl;
@@ -743,7 +743,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getRepositorySearchUrl() : string
+    public function getRepositorySearchUrl(): string
     {
         return $this->repositorySearchUrl;
     }
@@ -754,7 +754,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setRepositorySearchUrl(string $repositorySearchUrl) : self
+    public function setRepositorySearchUrl(string $repositorySearchUrl): self
     {
         $this->initialized['repositorySearchUrl'] = true;
         $this->repositorySearchUrl = $repositorySearchUrl;
@@ -765,7 +765,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getCurrentUserRepositoriesUrl() : string
+    public function getCurrentUserRepositoriesUrl(): string
     {
         return $this->currentUserRepositoriesUrl;
     }
@@ -776,7 +776,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentUserRepositoriesUrl(string $currentUserRepositoriesUrl) : self
+    public function setCurrentUserRepositoriesUrl(string $currentUserRepositoriesUrl): self
     {
         $this->initialized['currentUserRepositoriesUrl'] = true;
         $this->currentUserRepositoriesUrl = $currentUserRepositoriesUrl;
@@ -787,7 +787,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getStarredUrl() : string
+    public function getStarredUrl(): string
     {
         return $this->starredUrl;
     }
@@ -798,7 +798,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setStarredUrl(string $starredUrl) : self
+    public function setStarredUrl(string $starredUrl): self
     {
         $this->initialized['starredUrl'] = true;
         $this->starredUrl = $starredUrl;
@@ -809,7 +809,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getStarredGistsUrl() : string
+    public function getStarredGistsUrl(): string
     {
         return $this->starredGistsUrl;
     }
@@ -820,7 +820,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setStarredGistsUrl(string $starredGistsUrl) : self
+    public function setStarredGistsUrl(string $starredGistsUrl): self
     {
         $this->initialized['starredGistsUrl'] = true;
         $this->starredGistsUrl = $starredGistsUrl;
@@ -831,7 +831,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getTopicSearchUrl() : string
+    public function getTopicSearchUrl(): string
     {
         return $this->topicSearchUrl;
     }
@@ -842,7 +842,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setTopicSearchUrl(string $topicSearchUrl) : self
+    public function setTopicSearchUrl(string $topicSearchUrl): self
     {
         $this->initialized['topicSearchUrl'] = true;
         $this->topicSearchUrl = $topicSearchUrl;
@@ -853,7 +853,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getUserUrl() : string
+    public function getUserUrl(): string
     {
         return $this->userUrl;
     }
@@ -864,7 +864,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setUserUrl(string $userUrl) : self
+    public function setUserUrl(string $userUrl): self
     {
         $this->initialized['userUrl'] = true;
         $this->userUrl = $userUrl;
@@ -875,7 +875,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getUserOrganizationsUrl() : string
+    public function getUserOrganizationsUrl(): string
     {
         return $this->userOrganizationsUrl;
     }
@@ -886,7 +886,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setUserOrganizationsUrl(string $userOrganizationsUrl) : self
+    public function setUserOrganizationsUrl(string $userOrganizationsUrl): self
     {
         $this->initialized['userOrganizationsUrl'] = true;
         $this->userOrganizationsUrl = $userOrganizationsUrl;
@@ -897,7 +897,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getUserRepositoriesUrl() : string
+    public function getUserRepositoriesUrl(): string
     {
         return $this->userRepositoriesUrl;
     }
@@ -908,7 +908,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setUserRepositoriesUrl(string $userRepositoriesUrl) : self
+    public function setUserRepositoriesUrl(string $userRepositoriesUrl): self
     {
         $this->initialized['userRepositoriesUrl'] = true;
         $this->userRepositoriesUrl = $userRepositoriesUrl;
@@ -919,7 +919,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return string
      */
-    public function getUserSearchUrl() : string
+    public function getUserSearchUrl(): string
     {
         return $this->userSearchUrl;
     }
@@ -930,7 +930,7 @@ class GetResponse200 extends \ArrayObject
      *
      * @return self
      */
-    public function setUserSearchUrl(string $userSearchUrl) : self
+    public function setUserSearchUrl(string $userSearchUrl): self
     {
         $this->initialized['userSearchUrl'] = true;
         $this->userSearchUrl = $userSearchUrl;

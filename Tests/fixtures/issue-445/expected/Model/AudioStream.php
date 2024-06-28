@@ -8,7 +8,7 @@ class AudioStream
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class AudioStream
      *
      * @return string|null
      */
-    public function getBitRate() : ?string
+    public function getBitRate(): ?string
     {
         return $this->bitRate;
     }
@@ -94,7 +94,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setBitRate(?string $bitRate) : self
+    public function setBitRate(?string $bitRate): self
     {
         $this->initialized['bitRate'] = true;
         $this->bitRate = $bitRate;
@@ -105,7 +105,7 @@ class AudioStream
      *
      * @return string|null
      */
-    public function getBitRateMode() : ?string
+    public function getBitRateMode(): ?string
     {
         return $this->bitRateMode;
     }
@@ -116,7 +116,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setBitRateMode(?string $bitRateMode) : self
+    public function setBitRateMode(?string $bitRateMode): self
     {
         $this->initialized['bitRateMode'] = true;
         $this->bitRateMode = $bitRateMode;
@@ -127,7 +127,7 @@ class AudioStream
      *
      * @return string|null
      */
-    public function getChannels() : ?string
+    public function getChannels(): ?string
     {
         return $this->channels;
     }
@@ -138,7 +138,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setChannels(?string $channels) : self
+    public function setChannels(?string $channels): self
     {
         $this->initialized['channels'] = true;
         $this->channels = $channels;
@@ -149,7 +149,7 @@ class AudioStream
      *
      * @return string|null
      */
-    public function getChannelPositions() : ?string
+    public function getChannelPositions(): ?string
     {
         return $this->channelPositions;
     }
@@ -160,7 +160,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setChannelPositions(?string $channelPositions) : self
+    public function setChannelPositions(?string $channelPositions): self
     {
         $this->initialized['channelPositions'] = true;
         $this->channelPositions = $channelPositions;
@@ -171,7 +171,7 @@ class AudioStream
      *
      * @return string|null
      */
-    public function getCodec() : ?string
+    public function getCodec(): ?string
     {
         return $this->codec;
     }
@@ -182,7 +182,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setCodec(?string $codec) : self
+    public function setCodec(?string $codec): self
     {
         $this->initialized['codec'] = true;
         $this->codec = $codec;
@@ -193,7 +193,7 @@ class AudioStream
      *
      * @return float|null
      */
-    public function getDurationInSeconds() : ?float
+    public function getDurationInSeconds(): ?float
     {
         return $this->durationInSeconds;
     }
@@ -204,7 +204,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setDurationInSeconds(?float $durationInSeconds) : self
+    public function setDurationInSeconds(?float $durationInSeconds): self
     {
         $this->initialized['durationInSeconds'] = true;
         $this->durationInSeconds = $durationInSeconds;
@@ -215,7 +215,7 @@ class AudioStream
      *
      * @return string|null
      */
-    public function getFormat() : ?string
+    public function getFormat(): ?string
     {
         return $this->format;
     }
@@ -226,7 +226,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setFormat(?string $format) : self
+    public function setFormat(?string $format): self
     {
         $this->initialized['format'] = true;
         $this->format = $format;
@@ -237,7 +237,7 @@ class AudioStream
      *
      * @return string|null
      */
-    public function getLanguage() : ?string
+    public function getLanguage(): ?string
     {
         return $this->language;
     }
@@ -248,7 +248,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setLanguage(?string $language) : self
+    public function setLanguage(?string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -259,7 +259,7 @@ class AudioStream
      *
      * @return int|null
      */
-    public function getResolution() : ?int
+    public function getResolution(): ?int
     {
         return $this->resolution;
     }
@@ -270,7 +270,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setResolution(?int $resolution) : self
+    public function setResolution(?int $resolution): self
     {
         $this->initialized['resolution'] = true;
         $this->resolution = $resolution;
@@ -281,7 +281,7 @@ class AudioStream
      *
      * @return int|null
      */
-    public function getSamplingRate() : ?int
+    public function getSamplingRate(): ?int
     {
         return $this->samplingRate;
     }
@@ -292,7 +292,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setSamplingRate(?int $samplingRate) : self
+    public function setSamplingRate(?int $samplingRate): self
     {
         $this->initialized['samplingRate'] = true;
         $this->samplingRate = $samplingRate;
@@ -303,7 +303,7 @@ class AudioStream
      *
      * @return int|null
      */
-    public function getStreamSize() : ?int
+    public function getStreamSize(): ?int
     {
         return $this->streamSize;
     }
@@ -314,7 +314,7 @@ class AudioStream
      *
      * @return self
      */
-    public function setStreamSize(?int $streamSize) : self
+    public function setStreamSize(?int $streamSize): self
     {
         $this->initialized['streamSize'] = true;
         $this->streamSize = $streamSize;

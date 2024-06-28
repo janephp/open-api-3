@@ -8,7 +8,7 @@ class ActionsBillingUsage extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ActionsBillingUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalMinutesUsed() : int
+    public function getTotalMinutesUsed(): int
     {
         return $this->totalMinutesUsed;
     }
@@ -52,7 +52,7 @@ class ActionsBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalMinutesUsed(int $totalMinutesUsed) : self
+    public function setTotalMinutesUsed(int $totalMinutesUsed): self
     {
         $this->initialized['totalMinutesUsed'] = true;
         $this->totalMinutesUsed = $totalMinutesUsed;
@@ -63,7 +63,7 @@ class ActionsBillingUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getTotalPaidMinutesUsed() : int
+    public function getTotalPaidMinutesUsed(): int
     {
         return $this->totalPaidMinutesUsed;
     }
@@ -74,7 +74,7 @@ class ActionsBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setTotalPaidMinutesUsed(int $totalPaidMinutesUsed) : self
+    public function setTotalPaidMinutesUsed(int $totalPaidMinutesUsed): self
     {
         $this->initialized['totalPaidMinutesUsed'] = true;
         $this->totalPaidMinutesUsed = $totalPaidMinutesUsed;
@@ -85,7 +85,7 @@ class ActionsBillingUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getIncludedMinutes() : int
+    public function getIncludedMinutes(): int
     {
         return $this->includedMinutes;
     }
@@ -96,7 +96,7 @@ class ActionsBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludedMinutes(int $includedMinutes) : self
+    public function setIncludedMinutes(int $includedMinutes): self
     {
         $this->initialized['includedMinutes'] = true;
         $this->includedMinutes = $includedMinutes;
@@ -107,7 +107,7 @@ class ActionsBillingUsage extends \ArrayObject
      *
      * @return ActionsBillingUsageMinutesUsedBreakdown
      */
-    public function getMinutesUsedBreakdown() : ActionsBillingUsageMinutesUsedBreakdown
+    public function getMinutesUsedBreakdown(): ActionsBillingUsageMinutesUsedBreakdown
     {
         return $this->minutesUsedBreakdown;
     }
@@ -118,7 +118,7 @@ class ActionsBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setMinutesUsedBreakdown(ActionsBillingUsageMinutesUsedBreakdown $minutesUsedBreakdown) : self
+    public function setMinutesUsedBreakdown(ActionsBillingUsageMinutesUsedBreakdown $minutesUsedBreakdown): self
     {
         $this->initialized['minutesUsedBreakdown'] = true;
         $this->minutesUsedBreakdown = $minutesUsedBreakdown;

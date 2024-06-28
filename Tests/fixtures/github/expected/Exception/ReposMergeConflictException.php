@@ -18,11 +18,11 @@ class ReposMergeConflictException extends ConflictException
         $this->reposOwnerRepoMergesPostResponse409 = $reposOwnerRepoMergesPostResponse409;
         $this->response = $response;
     }
-    public function getReposOwnerRepoMergesPostResponse409() : \Github\Model\ReposOwnerRepoMergesPostResponse409
+    public function getReposOwnerRepoMergesPostResponse409(): \Github\Model\ReposOwnerRepoMergesPostResponse409
     {
         return $this->reposOwnerRepoMergesPostResponse409;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

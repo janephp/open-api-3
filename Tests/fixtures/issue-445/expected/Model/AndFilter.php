@@ -8,7 +8,7 @@ class AndFilter extends FilterBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class AndFilter extends FilterBase
      *
      * @return list<FilterBase>|null
      */
-    public function getFilters() : ?array
+    public function getFilters(): ?array
     {
         return $this->filters;
     }
@@ -34,7 +34,7 @@ class AndFilter extends FilterBase
      *
      * @return self
      */
-    public function setFilters(?array $filters) : self
+    public function setFilters(?array $filters): self
     {
         $this->initialized['filters'] = true;
         $this->filters = $filters;

@@ -8,7 +8,7 @@ class CombinedBillingUsage extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class CombinedBillingUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getDaysLeftInBillingCycle() : int
+    public function getDaysLeftInBillingCycle(): int
     {
         return $this->daysLeftInBillingCycle;
     }
@@ -46,7 +46,7 @@ class CombinedBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setDaysLeftInBillingCycle(int $daysLeftInBillingCycle) : self
+    public function setDaysLeftInBillingCycle(int $daysLeftInBillingCycle): self
     {
         $this->initialized['daysLeftInBillingCycle'] = true;
         $this->daysLeftInBillingCycle = $daysLeftInBillingCycle;
@@ -57,7 +57,7 @@ class CombinedBillingUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getEstimatedPaidStorageForMonth() : int
+    public function getEstimatedPaidStorageForMonth(): int
     {
         return $this->estimatedPaidStorageForMonth;
     }
@@ -68,7 +68,7 @@ class CombinedBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setEstimatedPaidStorageForMonth(int $estimatedPaidStorageForMonth) : self
+    public function setEstimatedPaidStorageForMonth(int $estimatedPaidStorageForMonth): self
     {
         $this->initialized['estimatedPaidStorageForMonth'] = true;
         $this->estimatedPaidStorageForMonth = $estimatedPaidStorageForMonth;
@@ -79,7 +79,7 @@ class CombinedBillingUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getEstimatedStorageForMonth() : int
+    public function getEstimatedStorageForMonth(): int
     {
         return $this->estimatedStorageForMonth;
     }
@@ -90,7 +90,7 @@ class CombinedBillingUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setEstimatedStorageForMonth(int $estimatedStorageForMonth) : self
+    public function setEstimatedStorageForMonth(int $estimatedStorageForMonth): self
     {
         $this->initialized['estimatedStorageForMonth'] = true;
         $this->estimatedStorageForMonth = $estimatedStorageForMonth;

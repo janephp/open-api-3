@@ -8,7 +8,7 @@ class IssueEvent extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -143,7 +143,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -154,7 +154,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -165,7 +165,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -176,7 +176,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -187,7 +187,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -198,7 +198,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -209,7 +209,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventActor|null
      */
-    public function getActor() : ?IssueEventActor
+    public function getActor(): ?IssueEventActor
     {
         return $this->actor;
     }
@@ -220,7 +220,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setActor(?IssueEventActor $actor) : self
+    public function setActor(?IssueEventActor $actor): self
     {
         $this->initialized['actor'] = true;
         $this->actor = $actor;
@@ -231,7 +231,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return string
      */
-    public function getEvent() : string
+    public function getEvent(): string
     {
         return $this->event;
     }
@@ -242,7 +242,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setEvent(string $event) : self
+    public function setEvent(string $event): self
     {
         $this->initialized['event'] = true;
         $this->event = $event;
@@ -253,7 +253,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCommitId() : ?string
+    public function getCommitId(): ?string
     {
         return $this->commitId;
     }
@@ -264,7 +264,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitId(?string $commitId) : self
+    public function setCommitId(?string $commitId): self
     {
         $this->initialized['commitId'] = true;
         $this->commitId = $commitId;
@@ -275,7 +275,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCommitUrl() : ?string
+    public function getCommitUrl(): ?string
     {
         return $this->commitUrl;
     }
@@ -286,7 +286,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitUrl(?string $commitUrl) : self
+    public function setCommitUrl(?string $commitUrl): self
     {
         $this->initialized['commitUrl'] = true;
         $this->commitUrl = $commitUrl;
@@ -297,7 +297,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return \DateTime
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
@@ -308,7 +308,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(\DateTime $createdAt) : self
+    public function setCreatedAt(\DateTime $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -319,7 +319,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueSimple
      */
-    public function getIssue() : IssueSimple
+    public function getIssue(): IssueSimple
     {
         return $this->issue;
     }
@@ -330,7 +330,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setIssue(IssueSimple $issue) : self
+    public function setIssue(IssueSimple $issue): self
     {
         $this->initialized['issue'] = true;
         $this->issue = $issue;
@@ -341,7 +341,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventLabel
      */
-    public function getLabel() : IssueEventLabel
+    public function getLabel(): IssueEventLabel
     {
         return $this->label;
     }
@@ -352,7 +352,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setLabel(IssueEventLabel $label) : self
+    public function setLabel(IssueEventLabel $label): self
     {
         $this->initialized['label'] = true;
         $this->label = $label;
@@ -363,7 +363,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventAssignee|null
      */
-    public function getAssignee() : ?IssueEventAssignee
+    public function getAssignee(): ?IssueEventAssignee
     {
         return $this->assignee;
     }
@@ -374,7 +374,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setAssignee(?IssueEventAssignee $assignee) : self
+    public function setAssignee(?IssueEventAssignee $assignee): self
     {
         $this->initialized['assignee'] = true;
         $this->assignee = $assignee;
@@ -385,7 +385,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventAssigner|null
      */
-    public function getAssigner() : ?IssueEventAssigner
+    public function getAssigner(): ?IssueEventAssigner
     {
         return $this->assigner;
     }
@@ -396,7 +396,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setAssigner(?IssueEventAssigner $assigner) : self
+    public function setAssigner(?IssueEventAssigner $assigner): self
     {
         $this->initialized['assigner'] = true;
         $this->assigner = $assigner;
@@ -407,7 +407,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventReviewRequester|null
      */
-    public function getReviewRequester() : ?IssueEventReviewRequester
+    public function getReviewRequester(): ?IssueEventReviewRequester
     {
         return $this->reviewRequester;
     }
@@ -418,7 +418,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setReviewRequester(?IssueEventReviewRequester $reviewRequester) : self
+    public function setReviewRequester(?IssueEventReviewRequester $reviewRequester): self
     {
         $this->initialized['reviewRequester'] = true;
         $this->reviewRequester = $reviewRequester;
@@ -429,7 +429,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventRequestedReviewer|null
      */
-    public function getRequestedReviewer() : ?IssueEventRequestedReviewer
+    public function getRequestedReviewer(): ?IssueEventRequestedReviewer
     {
         return $this->requestedReviewer;
     }
@@ -440,7 +440,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedReviewer(?IssueEventRequestedReviewer $requestedReviewer) : self
+    public function setRequestedReviewer(?IssueEventRequestedReviewer $requestedReviewer): self
     {
         $this->initialized['requestedReviewer'] = true;
         $this->requestedReviewer = $requestedReviewer;
@@ -451,7 +451,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return Team
      */
-    public function getRequestedTeam() : Team
+    public function getRequestedTeam(): Team
     {
         return $this->requestedTeam;
     }
@@ -462,7 +462,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setRequestedTeam(Team $requestedTeam) : self
+    public function setRequestedTeam(Team $requestedTeam): self
     {
         $this->initialized['requestedTeam'] = true;
         $this->requestedTeam = $requestedTeam;
@@ -473,7 +473,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventDismissedReview
      */
-    public function getDismissedReview() : IssueEventDismissedReview
+    public function getDismissedReview(): IssueEventDismissedReview
     {
         return $this->dismissedReview;
     }
@@ -484,7 +484,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setDismissedReview(IssueEventDismissedReview $dismissedReview) : self
+    public function setDismissedReview(IssueEventDismissedReview $dismissedReview): self
     {
         $this->initialized['dismissedReview'] = true;
         $this->dismissedReview = $dismissedReview;
@@ -495,7 +495,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventMilestone
      */
-    public function getMilestone() : IssueEventMilestone
+    public function getMilestone(): IssueEventMilestone
     {
         return $this->milestone;
     }
@@ -506,7 +506,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setMilestone(IssueEventMilestone $milestone) : self
+    public function setMilestone(IssueEventMilestone $milestone): self
     {
         $this->initialized['milestone'] = true;
         $this->milestone = $milestone;
@@ -517,7 +517,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventProjectCard
      */
-    public function getProjectCard() : IssueEventProjectCard
+    public function getProjectCard(): IssueEventProjectCard
     {
         return $this->projectCard;
     }
@@ -528,7 +528,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setProjectCard(IssueEventProjectCard $projectCard) : self
+    public function setProjectCard(IssueEventProjectCard $projectCard): self
     {
         $this->initialized['projectCard'] = true;
         $this->projectCard = $projectCard;
@@ -539,7 +539,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return IssueEventRename
      */
-    public function getRename() : IssueEventRename
+    public function getRename(): IssueEventRename
     {
         return $this->rename;
     }
@@ -550,7 +550,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setRename(IssueEventRename $rename) : self
+    public function setRename(IssueEventRename $rename): self
     {
         $this->initialized['rename'] = true;
         $this->rename = $rename;
@@ -561,7 +561,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return string
      */
-    public function getAuthorAssociation() : string
+    public function getAuthorAssociation(): string
     {
         return $this->authorAssociation;
     }
@@ -572,7 +572,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthorAssociation(string $authorAssociation) : self
+    public function setAuthorAssociation(string $authorAssociation): self
     {
         $this->initialized['authorAssociation'] = true;
         $this->authorAssociation = $authorAssociation;
@@ -583,7 +583,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLockReason() : ?string
+    public function getLockReason(): ?string
     {
         return $this->lockReason;
     }
@@ -594,7 +594,7 @@ class IssueEvent extends \ArrayObject
      *
      * @return self
      */
-    public function setLockReason(?string $lockReason) : self
+    public function setLockReason(?string $lockReason): self
     {
         $this->initialized['lockReason'] = true;
         $this->lockReason = $lockReason;

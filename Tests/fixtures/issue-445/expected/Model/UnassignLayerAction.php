@@ -8,7 +8,7 @@ class UnassignLayerAction extends BusinessRuleAction
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class UnassignLayerAction extends BusinessRuleAction
      *
      * @return string|null
      */
-    public function getLayerId() : ?string
+    public function getLayerId(): ?string
     {
         return $this->layerId;
     }
@@ -34,7 +34,7 @@ class UnassignLayerAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setLayerId(?string $layerId) : self
+    public function setLayerId(?string $layerId): self
     {
         $this->initialized['layerId'] = true;
         $this->layerId = $layerId;

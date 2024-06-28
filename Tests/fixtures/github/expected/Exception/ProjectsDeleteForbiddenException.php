@@ -18,11 +18,11 @@ class ProjectsDeleteForbiddenException extends ForbiddenException
         $this->projectsProjectIdDeleteResponse403 = $projectsProjectIdDeleteResponse403;
         $this->response = $response;
     }
-    public function getProjectsProjectIdDeleteResponse403() : \Github\Model\ProjectsProjectIdDeleteResponse403
+    public function getProjectsProjectIdDeleteResponse403(): \Github\Model\ProjectsProjectIdDeleteResponse403
     {
         return $this->projectsProjectIdDeleteResponse403;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorSummary extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class GbPeopleReportReponseReportDirectorSummary extends \ArrayObject
      *
      * @return int
      */
-    public function getCurrentAppointments() : int
+    public function getCurrentAppointments(): int
     {
         return $this->currentAppointments;
     }
@@ -46,7 +46,7 @@ class GbPeopleReportReponseReportDirectorSummary extends \ArrayObject
      *
      * @return self
      */
-    public function setCurrentAppointments(int $currentAppointments) : self
+    public function setCurrentAppointments(int $currentAppointments): self
     {
         $this->initialized['currentAppointments'] = true;
         $this->currentAppointments = $currentAppointments;
@@ -57,7 +57,7 @@ class GbPeopleReportReponseReportDirectorSummary extends \ArrayObject
      *
      * @return int
      */
-    public function getInactiveAppointments() : int
+    public function getInactiveAppointments(): int
     {
         return $this->inactiveAppointments;
     }
@@ -68,7 +68,7 @@ class GbPeopleReportReponseReportDirectorSummary extends \ArrayObject
      *
      * @return self
      */
-    public function setInactiveAppointments(int $inactiveAppointments) : self
+    public function setInactiveAppointments(int $inactiveAppointments): self
     {
         $this->initialized['inactiveAppointments'] = true;
         $this->inactiveAppointments = $inactiveAppointments;
@@ -79,7 +79,7 @@ class GbPeopleReportReponseReportDirectorSummary extends \ArrayObject
      *
      * @return int
      */
-    public function getPreviousAppointments() : int
+    public function getPreviousAppointments(): int
     {
         return $this->previousAppointments;
     }
@@ -90,7 +90,7 @@ class GbPeopleReportReponseReportDirectorSummary extends \ArrayObject
      *
      * @return self
      */
-    public function setPreviousAppointments(int $previousAppointments) : self
+    public function setPreviousAppointments(int $previousAppointments): self
     {
         $this->initialized['previousAppointments'] = true;
         $this->previousAppointments = $previousAppointments;

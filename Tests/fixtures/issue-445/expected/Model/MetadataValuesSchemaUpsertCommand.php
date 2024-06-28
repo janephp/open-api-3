@@ -8,7 +8,7 @@ class MetadataValuesSchemaUpsertCommand extends MetadataValuesChangeCommandBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class MetadataValuesSchemaUpsertCommand extends MetadataValuesChangeCommandBase
      *
      * @return array<string, mixed>
      */
-    public function getValue() : iterable
+    public function getValue(): iterable
     {
         return $this->value;
     }
@@ -34,7 +34,7 @@ class MetadataValuesSchemaUpsertCommand extends MetadataValuesChangeCommandBase
      *
      * @return self
      */
-    public function setValue(iterable $value) : self
+    public function setValue(iterable $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

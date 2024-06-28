@@ -8,7 +8,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -120,7 +120,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -131,7 +131,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -142,7 +142,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -153,7 +153,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -164,7 +164,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getHomepage() : string
+    public function getHomepage(): string
     {
         return $this->homepage;
     }
@@ -175,7 +175,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHomepage(string $homepage) : self
+    public function setHomepage(string $homepage): self
     {
         $this->initialized['homepage'] = true;
         $this->homepage = $homepage;
@@ -186,7 +186,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getPrivate() : bool
+    public function getPrivate(): bool
     {
         return $this->private;
     }
@@ -197,7 +197,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setPrivate(bool $private) : self
+    public function setPrivate(bool $private): self
     {
         $this->initialized['private'] = true;
         $this->private = $private;
@@ -209,7 +209,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
     *
     * @return string
     */
-    public function getVisibility() : string
+    public function getVisibility(): string
     {
         return $this->visibility;
     }
@@ -221,7 +221,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setVisibility(string $visibility) : self
+    public function setVisibility(string $visibility): self
     {
         $this->initialized['visibility'] = true;
         $this->visibility = $visibility;
@@ -232,7 +232,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasIssues() : bool
+    public function getHasIssues(): bool
     {
         return $this->hasIssues;
     }
@@ -243,7 +243,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHasIssues(bool $hasIssues) : self
+    public function setHasIssues(bool $hasIssues): self
     {
         $this->initialized['hasIssues'] = true;
         $this->hasIssues = $hasIssues;
@@ -254,7 +254,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasProjects() : bool
+    public function getHasProjects(): bool
     {
         return $this->hasProjects;
     }
@@ -265,7 +265,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHasProjects(bool $hasProjects) : self
+    public function setHasProjects(bool $hasProjects): self
     {
         $this->initialized['hasProjects'] = true;
         $this->hasProjects = $hasProjects;
@@ -276,7 +276,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasWiki() : bool
+    public function getHasWiki(): bool
     {
         return $this->hasWiki;
     }
@@ -287,7 +287,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHasWiki(bool $hasWiki) : self
+    public function setHasWiki(bool $hasWiki): self
     {
         $this->initialized['hasWiki'] = true;
         $this->hasWiki = $hasWiki;
@@ -298,7 +298,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsTemplate() : bool
+    public function getIsTemplate(): bool
     {
         return $this->isTemplate;
     }
@@ -309,7 +309,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIsTemplate(bool $isTemplate) : self
+    public function setIsTemplate(bool $isTemplate): self
     {
         $this->initialized['isTemplate'] = true;
         $this->isTemplate = $isTemplate;
@@ -320,7 +320,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getTeamId() : int
+    public function getTeamId(): int
     {
         return $this->teamId;
     }
@@ -331,7 +331,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTeamId(int $teamId) : self
+    public function setTeamId(int $teamId): self
     {
         $this->initialized['teamId'] = true;
         $this->teamId = $teamId;
@@ -342,7 +342,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getAutoInit() : bool
+    public function getAutoInit(): bool
     {
         return $this->autoInit;
     }
@@ -353,7 +353,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAutoInit(bool $autoInit) : self
+    public function setAutoInit(bool $autoInit): self
     {
         $this->initialized['autoInit'] = true;
         $this->autoInit = $autoInit;
@@ -364,7 +364,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getGitignoreTemplate() : string
+    public function getGitignoreTemplate(): string
     {
         return $this->gitignoreTemplate;
     }
@@ -375,7 +375,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setGitignoreTemplate(string $gitignoreTemplate) : self
+    public function setGitignoreTemplate(string $gitignoreTemplate): self
     {
         $this->initialized['gitignoreTemplate'] = true;
         $this->gitignoreTemplate = $gitignoreTemplate;
@@ -386,7 +386,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLicenseTemplate() : string
+    public function getLicenseTemplate(): string
     {
         return $this->licenseTemplate;
     }
@@ -397,7 +397,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLicenseTemplate(string $licenseTemplate) : self
+    public function setLicenseTemplate(string $licenseTemplate): self
     {
         $this->initialized['licenseTemplate'] = true;
         $this->licenseTemplate = $licenseTemplate;
@@ -408,7 +408,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getAllowSquashMerge() : bool
+    public function getAllowSquashMerge(): bool
     {
         return $this->allowSquashMerge;
     }
@@ -419,7 +419,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowSquashMerge(bool $allowSquashMerge) : self
+    public function setAllowSquashMerge(bool $allowSquashMerge): self
     {
         $this->initialized['allowSquashMerge'] = true;
         $this->allowSquashMerge = $allowSquashMerge;
@@ -430,7 +430,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getAllowMergeCommit() : bool
+    public function getAllowMergeCommit(): bool
     {
         return $this->allowMergeCommit;
     }
@@ -441,7 +441,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowMergeCommit(bool $allowMergeCommit) : self
+    public function setAllowMergeCommit(bool $allowMergeCommit): self
     {
         $this->initialized['allowMergeCommit'] = true;
         $this->allowMergeCommit = $allowMergeCommit;
@@ -452,7 +452,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getAllowRebaseMerge() : bool
+    public function getAllowRebaseMerge(): bool
     {
         return $this->allowRebaseMerge;
     }
@@ -463,7 +463,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setAllowRebaseMerge(bool $allowRebaseMerge) : self
+    public function setAllowRebaseMerge(bool $allowRebaseMerge): self
     {
         $this->initialized['allowRebaseMerge'] = true;
         $this->allowRebaseMerge = $allowRebaseMerge;
@@ -474,7 +474,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getDeleteBranchOnMerge() : bool
+    public function getDeleteBranchOnMerge(): bool
     {
         return $this->deleteBranchOnMerge;
     }
@@ -485,7 +485,7 @@ class OrgsOrgReposPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDeleteBranchOnMerge(bool $deleteBranchOnMerge) : self
+    public function setDeleteBranchOnMerge(bool $deleteBranchOnMerge): self
     {
         $this->initialized['deleteBranchOnMerge'] = true;
         $this->deleteBranchOnMerge = $deleteBranchOnMerge;

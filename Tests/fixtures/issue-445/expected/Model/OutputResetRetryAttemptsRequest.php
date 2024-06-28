@@ -8,7 +8,7 @@ class OutputResetRetryAttemptsRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return list<string>|null
      */
-    public function getOutputIds() : ?array
+    public function getOutputIds(): ?array
     {
         return $this->outputIds;
     }
@@ -58,7 +58,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return self
      */
-    public function setOutputIds(?array $outputIds) : self
+    public function setOutputIds(?array $outputIds): self
     {
         $this->initialized['outputIds'] = true;
         $this->outputIds = $outputIds;
@@ -69,7 +69,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return list<string>|null
      */
-    public function getContentIds() : ?array
+    public function getContentIds(): ?array
     {
         return $this->contentIds;
     }
@@ -80,7 +80,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return self
      */
-    public function setContentIds(?array $contentIds) : self
+    public function setContentIds(?array $contentIds): self
     {
         $this->initialized['contentIds'] = true;
         $this->contentIds = $contentIds;
@@ -91,7 +91,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return list<string>|null
      */
-    public function getFileExtensions() : ?array
+    public function getFileExtensions(): ?array
     {
         return $this->fileExtensions;
     }
@@ -102,7 +102,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return self
      */
-    public function setFileExtensions(?array $fileExtensions) : self
+    public function setFileExtensions(?array $fileExtensions): self
     {
         $this->initialized['fileExtensions'] = true;
         $this->fileExtensions = $fileExtensions;
@@ -113,7 +113,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return list<string>|null
      */
-    public function getOutputFormatIds() : ?array
+    public function getOutputFormatIds(): ?array
     {
         return $this->outputFormatIds;
     }
@@ -124,7 +124,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return self
      */
-    public function setOutputFormatIds(?array $outputFormatIds) : self
+    public function setOutputFormatIds(?array $outputFormatIds): self
     {
         $this->initialized['outputFormatIds'] = true;
         $this->outputFormatIds = $outputFormatIds;
@@ -135,7 +135,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return bool
      */
-    public function getIncludeCompleted() : bool
+    public function getIncludeCompleted(): bool
     {
         return $this->includeCompleted;
     }
@@ -146,7 +146,7 @@ class OutputResetRetryAttemptsRequest
      *
      * @return self
      */
-    public function setIncludeCompleted(bool $includeCompleted) : self
+    public function setIncludeCompleted(bool $includeCompleted): self
     {
         $this->initialized['includeCompleted'] = true;
         $this->includeCompleted = $includeCompleted;

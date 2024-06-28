@@ -8,7 +8,7 @@ class MetadataValuesChangeCommandBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class MetadataValuesChangeCommandBase
      *
      * @return string
      */
-    public function getSchemaId() : string
+    public function getSchemaId(): string
     {
         return $this->schemaId;
     }
@@ -48,7 +48,7 @@ class MetadataValuesChangeCommandBase
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

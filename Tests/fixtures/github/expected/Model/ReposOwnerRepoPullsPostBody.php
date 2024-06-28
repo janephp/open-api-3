@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -70,7 +70,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -81,7 +81,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getHead() : string
+    public function getHead(): string
     {
         return $this->head;
     }
@@ -92,7 +92,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHead(string $head) : self
+    public function setHead(string $head): self
     {
         $this->initialized['head'] = true;
         $this->head = $head;
@@ -103,7 +103,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBase() : string
+    public function getBase(): string
     {
         return $this->base;
     }
@@ -114,7 +114,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBase(string $base) : self
+    public function setBase(string $base): self
     {
         $this->initialized['base'] = true;
         $this->base = $base;
@@ -125,7 +125,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -136,7 +136,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -147,7 +147,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getMaintainerCanModify() : bool
+    public function getMaintainerCanModify(): bool
     {
         return $this->maintainerCanModify;
     }
@@ -158,7 +158,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setMaintainerCanModify(bool $maintainerCanModify) : self
+    public function setMaintainerCanModify(bool $maintainerCanModify): self
     {
         $this->initialized['maintainerCanModify'] = true;
         $this->maintainerCanModify = $maintainerCanModify;
@@ -169,7 +169,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getDraft() : bool
+    public function getDraft(): bool
     {
         return $this->draft;
     }
@@ -180,7 +180,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDraft(bool $draft) : self
+    public function setDraft(bool $draft): self
     {
         $this->initialized['draft'] = true;
         $this->draft = $draft;
@@ -191,7 +191,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return int
      */
-    public function getIssue() : int
+    public function getIssue(): int
     {
         return $this->issue;
     }
@@ -202,7 +202,7 @@ class ReposOwnerRepoPullsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setIssue(int $issue) : self
+    public function setIssue(int $issue): self
     {
         $this->initialized['issue'] = true;
         $this->issue = $issue;

@@ -8,7 +8,7 @@ class ParticipationStats extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ParticipationStats extends \ArrayObject
      *
      * @return list<int>
      */
-    public function getAll() : array
+    public function getAll(): array
     {
         return $this->all;
     }
@@ -40,7 +40,7 @@ class ParticipationStats extends \ArrayObject
      *
      * @return self
      */
-    public function setAll(array $all) : self
+    public function setAll(array $all): self
     {
         $this->initialized['all'] = true;
         $this->all = $all;
@@ -51,7 +51,7 @@ class ParticipationStats extends \ArrayObject
      *
      * @return list<int>
      */
-    public function getOwner() : array
+    public function getOwner(): array
     {
         return $this->owner;
     }
@@ -62,7 +62,7 @@ class ParticipationStats extends \ArrayObject
      *
      * @return self
      */
-    public function setOwner(array $owner) : self
+    public function setOwner(array $owner): self
     {
         $this->initialized['owner'] = true;
         $this->owner = $owner;

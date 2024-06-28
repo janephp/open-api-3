@@ -8,7 +8,7 @@ class ContentShareReference
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class ContentShareReference
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -58,7 +58,7 @@ class ContentShareReference
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -69,7 +69,7 @@ class ContentShareReference
      *
      * @return string|null
      */
-    public function getName() : ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -80,7 +80,7 @@ class ContentShareReference
      *
      * @return self
      */
-    public function setName(?string $name) : self
+    public function setName(?string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -102,7 +102,7 @@ class ContentShareReference
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;
@@ -124,7 +124,7 @@ class ContentShareReference
      *
      * @return self
      */
-    public function setShareType($shareType) : self
+    public function setShareType($shareType): self
     {
         $this->initialized['shareType'] = true;
         $this->shareType = $shareType;
@@ -135,7 +135,7 @@ class ContentShareReference
      *
      * @return string|null
      */
-    public function getEmailAddress() : ?string
+    public function getEmailAddress(): ?string
     {
         return $this->emailAddress;
     }
@@ -146,7 +146,7 @@ class ContentShareReference
      *
      * @return self
      */
-    public function setEmailAddress(?string $emailAddress) : self
+    public function setEmailAddress(?string $emailAddress): self
     {
         $this->initialized['emailAddress'] = true;
         $this->emailAddress = $emailAddress;

@@ -20,33 +20,33 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\OutputDataBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\OutputDataBase::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (array_key_exists('kind', $data) and 'OutputDataImage' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataImage', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataImage', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataAudio' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataAudio', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataAudio', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataVideo' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataVideo', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataVideo', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataDocument' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataDocument', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataDocument', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataVector' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataVector', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataVector', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataDefault' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataDefault', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataDefault', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -93,7 +93,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             if (null !== $object->getKind() and 'OutputDataImage' === $object->getKind()) {
@@ -132,7 +132,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\OutputDataBase::class => false];
         }
@@ -144,11 +144,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\OutputDataBase::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\OutputDataBase::class;
         }
@@ -158,22 +158,22 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function denormalize($data, $type, $format = null, array $context = [])
         {
             if (array_key_exists('kind', $data) and 'OutputDataImage' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataImage', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataImage', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataAudio' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataAudio', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataAudio', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataVideo' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataVideo', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataVideo', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataDocument' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataDocument', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataDocument', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataVector' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataVector', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataVector', $format, $context);
             }
             if (array_key_exists('kind', $data) and 'OutputDataDefault' === $data['kind']) {
-                return $this->denormalizer->denormalize($data, 'PicturePark\\API\\Model\\OutputDataDefault', $format, $context);
+                return $this->denormalizer->denormalize($data, 'PicturePark\API\Model\OutputDataDefault', $format, $context);
             }
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -262,7 +262,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['kind'] = $object->getKind();
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\OutputDataBase::class => false];
         }

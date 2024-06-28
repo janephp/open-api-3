@@ -8,7 +8,7 @@ class FullTextEntities extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return list<UrlEntity>
      */
-    public function getUrls() : array
+    public function getUrls(): array
     {
         return $this->urls;
     }
@@ -58,7 +58,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return self
      */
-    public function setUrls(array $urls) : self
+    public function setUrls(array $urls): self
     {
         $this->initialized['urls'] = true;
         $this->urls = $urls;
@@ -69,7 +69,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return list<HashtagEntity>
      */
-    public function getHashtags() : array
+    public function getHashtags(): array
     {
         return $this->hashtags;
     }
@@ -80,7 +80,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return self
      */
-    public function setHashtags(array $hashtags) : self
+    public function setHashtags(array $hashtags): self
     {
         $this->initialized['hashtags'] = true;
         $this->hashtags = $hashtags;
@@ -91,7 +91,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return list<MentionEntity>
      */
-    public function getMentions() : array
+    public function getMentions(): array
     {
         return $this->mentions;
     }
@@ -102,7 +102,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return self
      */
-    public function setMentions(array $mentions) : self
+    public function setMentions(array $mentions): self
     {
         $this->initialized['mentions'] = true;
         $this->mentions = $mentions;
@@ -113,7 +113,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return list<CashtagEntity>
      */
-    public function getCashtags() : array
+    public function getCashtags(): array
     {
         return $this->cashtags;
     }
@@ -124,7 +124,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return self
      */
-    public function setCashtags(array $cashtags) : self
+    public function setCashtags(array $cashtags): self
     {
         $this->initialized['cashtags'] = true;
         $this->cashtags = $cashtags;
@@ -135,7 +135,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return list<FullTextEntitiesAnnotationsItem>
      */
-    public function getAnnotations() : array
+    public function getAnnotations(): array
     {
         return $this->annotations;
     }
@@ -146,7 +146,7 @@ class FullTextEntities extends \ArrayObject
      *
      * @return self
      */
-    public function setAnnotations(array $annotations) : self
+    public function setAnnotations(array $annotations): self
     {
         $this->initialized['annotations'] = true;
         $this->annotations = $annotations;

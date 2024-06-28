@@ -18,11 +18,11 @@ class ProjectsCreateForOrgUnprocessableEntityException extends UnprocessableEnti
         $this->validationErrorSimple = $validationErrorSimple;
         $this->response = $response;
     }
-    public function getValidationErrorSimple() : \Github\Model\ValidationErrorSimple
+    public function getValidationErrorSimple(): \Github\Model\ValidationErrorSimple
     {
         return $this->validationErrorSimple;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

@@ -15,15 +15,15 @@ class ApiParchmentsIdDelete extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoin
         $this->id = $id;
     }
     use \ApiPlatform\Demo\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'DELETE';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{id}'], [$this->id], '/parchments/{id}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
@@ -45,7 +45,7 @@ class ApiParchmentsIdDelete extends \ApiPlatform\Demo\Runtime\Client\BaseEndpoin
             throw new \ApiPlatform\Demo\Exception\ApiParchmentsIdDeleteNotFoundException($response);
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return ['apiKey'];
     }

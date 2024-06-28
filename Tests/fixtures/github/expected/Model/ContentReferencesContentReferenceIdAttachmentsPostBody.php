@@ -8,7 +8,7 @@ class ContentReferencesContentReferenceIdAttachmentsPostBody extends \ArrayObjec
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ContentReferencesContentReferenceIdAttachmentsPostBody extends \ArrayObjec
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -40,7 +40,7 @@ class ContentReferencesContentReferenceIdAttachmentsPostBody extends \ArrayObjec
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -51,7 +51,7 @@ class ContentReferencesContentReferenceIdAttachmentsPostBody extends \ArrayObjec
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -62,7 +62,7 @@ class ContentReferencesContentReferenceIdAttachmentsPostBody extends \ArrayObjec
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;

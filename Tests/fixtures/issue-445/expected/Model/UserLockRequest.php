@@ -8,7 +8,7 @@ class UserLockRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -27,7 +27,7 @@ class UserLockRequest
     *
     * @return bool
     */
-    public function getLock() : bool
+    public function getLock(): bool
     {
         return $this->lock;
     }
@@ -40,7 +40,7 @@ class UserLockRequest
     *
     * @return self
     */
-    public function setLock(bool $lock) : self
+    public function setLock(bool $lock): self
     {
         $this->initialized['lock'] = true;
         $this->lock = $lock;

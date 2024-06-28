@@ -8,7 +8,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredStatusChecksPatchBody extend
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredStatusChecksPatchBody extend
      *
      * @return bool
      */
-    public function getStrict() : bool
+    public function getStrict(): bool
     {
         return $this->strict;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredStatusChecksPatchBody extend
      *
      * @return self
      */
-    public function setStrict(bool $strict) : self
+    public function setStrict(bool $strict): self
     {
         $this->initialized['strict'] = true;
         $this->strict = $strict;
@@ -51,7 +51,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredStatusChecksPatchBody extend
      *
      * @return list<string>
      */
-    public function getContexts() : array
+    public function getContexts(): array
     {
         return $this->contexts;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoBranchesBranchProtectionRequiredStatusChecksPatchBody extend
      *
      * @return self
      */
-    public function setContexts(array $contexts) : self
+    public function setContexts(array $contexts): self
     {
         $this->initialized['contexts'] = true;
         $this->contexts = $contexts;

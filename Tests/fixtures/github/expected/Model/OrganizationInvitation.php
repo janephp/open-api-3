@@ -8,7 +8,7 @@ class OrganizationInvitation extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -77,7 +77,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -88,7 +88,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -99,7 +99,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return string|null
      */
-    public function getLogin() : ?string
+    public function getLogin(): ?string
     {
         return $this->login;
     }
@@ -110,7 +110,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setLogin(?string $login) : self
+    public function setLogin(?string $login): self
     {
         $this->initialized['login'] = true;
         $this->login = $login;
@@ -121,7 +121,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return string|null
      */
-    public function getEmail() : ?string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -132,7 +132,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(?string $email) : self
+    public function setEmail(?string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -143,7 +143,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return string
      */
-    public function getRole() : string
+    public function getRole(): string
     {
         return $this->role;
     }
@@ -154,7 +154,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setRole(string $role) : self
+    public function setRole(string $role): self
     {
         $this->initialized['role'] = true;
         $this->role = $role;
@@ -165,7 +165,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt(): string
     {
         return $this->createdAt;
     }
@@ -176,7 +176,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setCreatedAt(string $createdAt) : self
+    public function setCreatedAt(string $createdAt): self
     {
         $this->initialized['createdAt'] = true;
         $this->createdAt = $createdAt;
@@ -187,7 +187,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return SimpleUser|null
      */
-    public function getInviter() : ?SimpleUser
+    public function getInviter(): ?SimpleUser
     {
         return $this->inviter;
     }
@@ -198,7 +198,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setInviter(?SimpleUser $inviter) : self
+    public function setInviter(?SimpleUser $inviter): self
     {
         $this->initialized['inviter'] = true;
         $this->inviter = $inviter;
@@ -209,7 +209,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return int
      */
-    public function getTeamCount() : int
+    public function getTeamCount(): int
     {
         return $this->teamCount;
     }
@@ -220,7 +220,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setTeamCount(int $teamCount) : self
+    public function setTeamCount(int $teamCount): self
     {
         $this->initialized['teamCount'] = true;
         $this->teamCount = $teamCount;
@@ -231,7 +231,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return string
      */
-    public function getInvitationTeamUrl() : string
+    public function getInvitationTeamUrl(): string
     {
         return $this->invitationTeamUrl;
     }
@@ -242,7 +242,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setInvitationTeamUrl(string $invitationTeamUrl) : self
+    public function setInvitationTeamUrl(string $invitationTeamUrl): self
     {
         $this->initialized['invitationTeamUrl'] = true;
         $this->invitationTeamUrl = $invitationTeamUrl;
@@ -253,7 +253,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -264,7 +264,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -275,7 +275,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return string
      */
-    public function getInvitationTeamsUrl() : string
+    public function getInvitationTeamsUrl(): string
     {
         return $this->invitationTeamsUrl;
     }
@@ -286,7 +286,7 @@ class OrganizationInvitation extends \ArrayObject
      *
      * @return self
      */
-    public function setInvitationTeamsUrl(string $invitationTeamsUrl) : self
+    public function setInvitationTeamsUrl(string $invitationTeamsUrl): self
     {
         $this->initialized['invitationTeamsUrl'] = true;
         $this->invitationTeamsUrl = $invitationTeamsUrl;

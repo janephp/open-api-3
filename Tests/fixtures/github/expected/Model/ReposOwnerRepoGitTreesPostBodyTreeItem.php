@@ -8,7 +8,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -49,7 +49,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -60,7 +60,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -71,7 +71,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return string
      */
-    public function getMode() : string
+    public function getMode(): string
     {
         return $this->mode;
     }
@@ -82,7 +82,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setMode(string $mode) : self
+    public function setMode(string $mode): self
     {
         $this->initialized['mode'] = true;
         $this->mode = $mode;
@@ -93,7 +93,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -104,7 +104,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -116,7 +116,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSha() : ?string
+    public function getSha(): ?string
     {
         return $this->sha;
     }
@@ -128,7 +128,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(?string $sha) : self
+    public function setSha(?string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -140,7 +140,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return string
      */
-    public function getContent() : string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -152,7 +152,7 @@ class ReposOwnerRepoGitTreesPostBodyTreeItem extends \ArrayObject
      *
      * @return self
      */
-    public function setContent(string $content) : self
+    public function setContent(string $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;

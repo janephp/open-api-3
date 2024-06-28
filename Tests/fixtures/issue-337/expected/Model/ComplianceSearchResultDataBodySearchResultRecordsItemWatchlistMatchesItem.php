@@ -8,7 +8,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -173,7 +173,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return int
      */
-    public function getAcceptListID() : int
+    public function getAcceptListID(): int
     {
         return $this->acceptListID;
     }
@@ -184,7 +184,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setAcceptListID(int $acceptListID) : self
+    public function setAcceptListID(int $acceptListID): self
     {
         $this->initialized['acceptListID'] = true;
         $this->acceptListID = $acceptListID;
@@ -195,7 +195,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getAddedToAcceptList() : bool
+    public function getAddedToAcceptList(): bool
     {
         return $this->addedToAcceptList;
     }
@@ -206,7 +206,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setAddedToAcceptList(bool $addedToAcceptList) : self
+    public function setAddedToAcceptList(bool $addedToAcceptList): self
     {
         $this->initialized['addedToAcceptList'] = true;
         $this->addedToAcceptList = $addedToAcceptList;
@@ -217,7 +217,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getAddressName() : bool
+    public function getAddressName(): bool
     {
         return $this->addressName;
     }
@@ -228,7 +228,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setAddressName(bool $addressName) : self
+    public function setAddressName(bool $addressName): self
     {
         $this->initialized['addressName'] = true;
         $this->addressName = $addressName;
@@ -239,7 +239,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getAutoFalsePositive() : bool
+    public function getAutoFalsePositive(): bool
     {
         return $this->autoFalsePositive;
     }
@@ -250,7 +250,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setAutoFalsePositive(bool $autoFalsePositive) : self
+    public function setAutoFalsePositive(bool $autoFalsePositive): self
     {
         $this->initialized['autoFalsePositive'] = true;
         $this->autoFalsePositive = $autoFalsePositive;
@@ -261,7 +261,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getBestAddressIsPartial() : bool
+    public function getBestAddressIsPartial(): bool
     {
         return $this->bestAddressIsPartial;
     }
@@ -272,7 +272,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setBestAddressIsPartial(bool $bestAddressIsPartial) : self
+    public function setBestAddressIsPartial(bool $bestAddressIsPartial): self
     {
         $this->initialized['bestAddressIsPartial'] = true;
         $this->bestAddressIsPartial = $bestAddressIsPartial;
@@ -283,7 +283,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return int
      */
-    public function getBestCountryScore() : int
+    public function getBestCountryScore(): int
     {
         return $this->bestCountryScore;
     }
@@ -294,7 +294,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setBestCountryScore(int $bestCountryScore) : self
+    public function setBestCountryScore(int $bestCountryScore): self
     {
         $this->initialized['bestCountryScore'] = true;
         $this->bestCountryScore = $bestCountryScore;
@@ -305,7 +305,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return string
      */
-    public function getBestCountryType() : string
+    public function getBestCountryType(): string
     {
         return $this->bestCountryType;
     }
@@ -316,7 +316,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setBestCountryType(string $bestCountryType) : self
+    public function setBestCountryType(string $bestCountryType): self
     {
         $this->initialized['bestCountryType'] = true;
         $this->bestCountryType = $bestCountryType;
@@ -327,7 +327,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getBestDOBIsPartial() : bool
+    public function getBestDOBIsPartial(): bool
     {
         return $this->bestDOBIsPartial;
     }
@@ -338,7 +338,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setBestDOBIsPartial(bool $bestDOBIsPartial) : self
+    public function setBestDOBIsPartial(bool $bestDOBIsPartial): self
     {
         $this->initialized['bestDOBIsPartial'] = true;
         $this->bestDOBIsPartial = $bestDOBIsPartial;
@@ -349,7 +349,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return string
      */
-    public function getBestName() : string
+    public function getBestName(): string
     {
         return $this->bestName;
     }
@@ -360,7 +360,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setBestName(string $bestName) : self
+    public function setBestName(string $bestName): self
     {
         $this->initialized['bestName'] = true;
         $this->bestName = $bestName;
@@ -371,7 +371,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return int
      */
-    public function getBestNameScore() : int
+    public function getBestNameScore(): int
     {
         return $this->bestNameScore;
     }
@@ -382,7 +382,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setBestNameScore(int $bestNameScore) : self
+    public function setBestNameScore(int $bestNameScore): self
     {
         $this->initialized['bestNameScore'] = true;
         $this->bestNameScore = $bestNameScore;
@@ -393,7 +393,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return int
      */
-    public function getCheckSum() : int
+    public function getCheckSum(): int
     {
         return $this->checkSum;
     }
@@ -404,7 +404,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setCheckSum(int $checkSum) : self
+    public function setCheckSum(int $checkSum): self
     {
         $this->initialized['checkSum'] = true;
         $this->checkSum = $checkSum;
@@ -415,7 +415,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemConflicts
      */
-    public function getConflicts() : ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemConflicts
+    public function getConflicts(): ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemConflicts
     {
         return $this->conflicts;
     }
@@ -426,7 +426,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setConflicts(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemConflicts $conflicts) : self
+    public function setConflicts(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemConflicts $conflicts): self
     {
         $this->initialized['conflicts'] = true;
         $this->conflicts = $conflicts;
@@ -437,7 +437,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetails
      */
-    public function getEntityDetails() : ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetails
+    public function getEntityDetails(): ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetails
     {
         return $this->entityDetails;
     }
@@ -448,7 +448,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setEntityDetails(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetails $entityDetails) : self
+    public function setEntityDetails(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemEntityDetails $entityDetails): self
     {
         $this->initialized['entityDetails'] = true;
         $this->entityDetails = $entityDetails;
@@ -459,7 +459,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return string
      */
-    public function getEntityName() : string
+    public function getEntityName(): string
     {
         return $this->entityName;
     }
@@ -470,7 +470,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setEntityName(string $entityName) : self
+    public function setEntityName(string $entityName): self
     {
         $this->initialized['entityName'] = true;
         $this->entityName = $entityName;
@@ -481,7 +481,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return int
      */
-    public function getEntityScore() : int
+    public function getEntityScore(): int
     {
         return $this->entityScore;
     }
@@ -492,7 +492,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setEntityScore(int $entityScore) : self
+    public function setEntityScore(int $entityScore): self
     {
         $this->initialized['entityScore'] = true;
         $this->entityScore = $entityScore;
@@ -503,7 +503,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return string
      */
-    public function getEntityUniqueID() : string
+    public function getEntityUniqueID(): string
     {
         return $this->entityUniqueID;
     }
@@ -514,7 +514,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setEntityUniqueID(string $entityUniqueID) : self
+    public function setEntityUniqueID(string $entityUniqueID): self
     {
         $this->initialized['entityUniqueID'] = true;
         $this->entityUniqueID = $entityUniqueID;
@@ -525,7 +525,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getFalsePositive() : bool
+    public function getFalsePositive(): bool
     {
         return $this->falsePositive;
     }
@@ -536,7 +536,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setFalsePositive(bool $falsePositive) : self
+    public function setFalsePositive(bool $falsePositive): self
     {
         $this->initialized['falsePositive'] = true;
         $this->falsePositive = $falsePositive;
@@ -547,7 +547,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemFile
      */
-    public function getFile() : ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemFile
+    public function getFile(): ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemFile
     {
         return $this->file;
     }
@@ -558,7 +558,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setFile(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemFile $file) : self
+    public function setFile(ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItemFile $file): self
     {
         $this->initialized['file'] = true;
         $this->file = $file;
@@ -569,7 +569,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getGatewayOFACScreeningIndicatorMatch() : bool
+    public function getGatewayOFACScreeningIndicatorMatch(): bool
     {
         return $this->gatewayOFACScreeningIndicatorMatch;
     }
@@ -580,7 +580,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setGatewayOFACScreeningIndicatorMatch(bool $gatewayOFACScreeningIndicatorMatch) : self
+    public function setGatewayOFACScreeningIndicatorMatch(bool $gatewayOFACScreeningIndicatorMatch): self
     {
         $this->initialized['gatewayOFACScreeningIndicatorMatch'] = true;
         $this->gatewayOFACScreeningIndicatorMatch = $gatewayOFACScreeningIndicatorMatch;
@@ -591,7 +591,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return int
      */
-    public function getId() : int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -602,7 +602,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setId(int $id) : self
+    public function setId(int $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -613,7 +613,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getMatchReAlert() : bool
+    public function getMatchReAlert(): bool
     {
         return $this->matchReAlert;
     }
@@ -624,7 +624,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setMatchReAlert(bool $matchReAlert) : self
+    public function setMatchReAlert(bool $matchReAlert): self
     {
         $this->initialized['matchReAlert'] = true;
         $this->matchReAlert = $matchReAlert;
@@ -635,7 +635,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return int
      */
-    public function getPreviousResultID() : int
+    public function getPreviousResultID(): int
     {
         return $this->previousResultID;
     }
@@ -646,7 +646,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setPreviousResultID(int $previousResultID) : self
+    public function setPreviousResultID(int $previousResultID): self
     {
         $this->initialized['previousResultID'] = true;
         $this->previousResultID = $previousResultID;
@@ -657,7 +657,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return string
      */
-    public function getReasonListed() : string
+    public function getReasonListed(): string
     {
         return $this->reasonListed;
     }
@@ -668,7 +668,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setReasonListed(string $reasonListed) : self
+    public function setReasonListed(string $reasonListed): self
     {
         $this->initialized['reasonListed'] = true;
         $this->reasonListed = $reasonListed;
@@ -679,7 +679,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return string
      */
-    public function getResultDate() : string
+    public function getResultDate(): string
     {
         return $this->resultDate;
     }
@@ -690,7 +690,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setResultDate(string $resultDate) : self
+    public function setResultDate(string $resultDate): self
     {
         $this->initialized['resultDate'] = true;
         $this->resultDate = $resultDate;
@@ -701,7 +701,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getSecondaryOFACScreeningIndicatorMatch() : bool
+    public function getSecondaryOFACScreeningIndicatorMatch(): bool
     {
         return $this->secondaryOFACScreeningIndicatorMatch;
     }
@@ -712,7 +712,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setSecondaryOFACScreeningIndicatorMatch(bool $secondaryOFACScreeningIndicatorMatch) : self
+    public function setSecondaryOFACScreeningIndicatorMatch(bool $secondaryOFACScreeningIndicatorMatch): self
     {
         $this->initialized['secondaryOFACScreeningIndicatorMatch'] = true;
         $this->secondaryOFACScreeningIndicatorMatch = $secondaryOFACScreeningIndicatorMatch;
@@ -723,7 +723,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return bool
      */
-    public function getTrueMatch() : bool
+    public function getTrueMatch(): bool
     {
         return $this->trueMatch;
     }
@@ -734,7 +734,7 @@ class ComplianceSearchResultDataBodySearchResultRecordsItemWatchlistMatchesItem 
      *
      * @return self
      */
-    public function setTrueMatch(bool $trueMatch) : self
+    public function setTrueMatch(bool $trueMatch): self
     {
         $this->initialized['trueMatch'] = true;
         $this->trueMatch = $trueMatch;

@@ -8,7 +8,7 @@ class ListItemAggregationRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -94,7 +94,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -105,7 +105,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getSearchBehaviors() : ?array
+    public function getSearchBehaviors(): ?array
     {
         return $this->searchBehaviors;
     }
@@ -116,7 +116,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSearchBehaviors(?array $searchBehaviors) : self
+    public function setSearchBehaviors(?array $searchBehaviors): self
     {
         $this->initialized['searchBehaviors'] = true;
         $this->searchBehaviors = $searchBehaviors;
@@ -138,7 +138,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -154,7 +154,7 @@ class ListItemAggregationRequest extends \ArrayObject
     *
     * @return list<AggregationFilter>|null
     */
-    public function getAggregationFilters() : ?array
+    public function getAggregationFilters(): ?array
     {
         return $this->aggregationFilters;
     }
@@ -170,7 +170,7 @@ class ListItemAggregationRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setAggregationFilters(?array $aggregationFilters) : self
+    public function setAggregationFilters(?array $aggregationFilters): self
     {
         $this->initialized['aggregationFilters'] = true;
         $this->aggregationFilters = $aggregationFilters;
@@ -181,7 +181,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return bool
      */
-    public function getIncludeAllSchemaChildren() : bool
+    public function getIncludeAllSchemaChildren(): bool
     {
         return $this->includeAllSchemaChildren;
     }
@@ -192,7 +192,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludeAllSchemaChildren(bool $includeAllSchemaChildren) : self
+    public function setIncludeAllSchemaChildren(bool $includeAllSchemaChildren): self
     {
         $this->initialized['includeAllSchemaChildren'] = true;
         $this->includeAllSchemaChildren = $includeAllSchemaChildren;
@@ -214,7 +214,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setBrokenDependenciesFilter($brokenDependenciesFilter) : self
+    public function setBrokenDependenciesFilter($brokenDependenciesFilter): self
     {
         $this->initialized['brokenDependenciesFilter'] = true;
         $this->brokenDependenciesFilter = $brokenDependenciesFilter;
@@ -225,7 +225,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return list<string>|null
      */
-    public function getSchemaIds() : ?array
+    public function getSchemaIds(): ?array
     {
         return $this->schemaIds;
     }
@@ -236,7 +236,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setSchemaIds(?array $schemaIds) : self
+    public function setSchemaIds(?array $schemaIds): self
     {
         $this->initialized['schemaIds'] = true;
         $this->schemaIds = $schemaIds;
@@ -248,7 +248,7 @@ class ListItemAggregationRequest extends \ArrayObject
     *
     * @return list<string>|null
     */
-    public function getSearchLanguages() : ?array
+    public function getSearchLanguages(): ?array
     {
         return $this->searchLanguages;
     }
@@ -260,7 +260,7 @@ class ListItemAggregationRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setSearchLanguages(?array $searchLanguages) : self
+    public function setSearchLanguages(?array $searchLanguages): self
     {
         $this->initialized['searchLanguages'] = true;
         $this->searchLanguages = $searchLanguages;
@@ -282,7 +282,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setLifeCycleFilter($lifeCycleFilter) : self
+    public function setLifeCycleFilter($lifeCycleFilter): self
     {
         $this->initialized['lifeCycleFilter'] = true;
         $this->lifeCycleFilter = $lifeCycleFilter;
@@ -293,7 +293,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return list<AggregatorBase>
      */
-    public function getAggregators() : array
+    public function getAggregators(): array
     {
         return $this->aggregators;
     }
@@ -304,7 +304,7 @@ class ListItemAggregationRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setAggregators(array $aggregators) : self
+    public function setAggregators(array $aggregators): self
     {
         $this->initialized['aggregators'] = true;
         $this->aggregators = $aggregators;

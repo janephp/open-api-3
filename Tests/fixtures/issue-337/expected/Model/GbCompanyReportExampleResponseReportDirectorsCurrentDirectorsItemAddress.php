@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress e
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress e
      *
      * @return string
      */
-    public function getSimpleValue() : string
+    public function getSimpleValue(): string
     {
         return $this->simpleValue;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress e
      *
      * @return self
      */
-    public function setSimpleValue(string $simpleValue) : self
+    public function setSimpleValue(string $simpleValue): self
     {
         $this->initialized['simpleValue'] = true;
         $this->simpleValue = $simpleValue;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress e
      *
      * @return string
      */
-    public function getPostalCode() : string
+    public function getPostalCode(): string
     {
         return $this->postalCode;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportDirectorsCurrentDirectorsItemAddress e
      *
      * @return self
      */
-    public function setPostalCode(string $postalCode) : self
+    public function setPostalCode(string $postalCode): self
     {
         $this->initialized['postalCode'] = true;
         $this->postalCode = $postalCode;

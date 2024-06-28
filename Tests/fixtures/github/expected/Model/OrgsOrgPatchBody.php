@@ -8,7 +8,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -134,7 +134,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBillingEmail() : string
+    public function getBillingEmail(): string
     {
         return $this->billingEmail;
     }
@@ -145,7 +145,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBillingEmail(string $billingEmail) : self
+    public function setBillingEmail(string $billingEmail): self
     {
         $this->initialized['billingEmail'] = true;
         $this->billingEmail = $billingEmail;
@@ -156,7 +156,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCompany() : string
+    public function getCompany(): string
     {
         return $this->company;
     }
@@ -167,7 +167,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCompany(string $company) : self
+    public function setCompany(string $company): self
     {
         $this->initialized['company'] = true;
         $this->company = $company;
@@ -178,7 +178,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEmail() : string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -189,7 +189,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEmail(string $email) : self
+    public function setEmail(string $email): self
     {
         $this->initialized['email'] = true;
         $this->email = $email;
@@ -200,7 +200,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTwitterUsername() : string
+    public function getTwitterUsername(): string
     {
         return $this->twitterUsername;
     }
@@ -211,7 +211,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTwitterUsername(string $twitterUsername) : self
+    public function setTwitterUsername(string $twitterUsername): self
     {
         $this->initialized['twitterUsername'] = true;
         $this->twitterUsername = $twitterUsername;
@@ -222,7 +222,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getLocation() : string
+    public function getLocation(): string
     {
         return $this->location;
     }
@@ -233,7 +233,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setLocation(string $location) : self
+    public function setLocation(string $location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -244,7 +244,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -255,7 +255,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -266,7 +266,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -277,7 +277,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -288,7 +288,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasOrganizationProjects() : bool
+    public function getHasOrganizationProjects(): bool
     {
         return $this->hasOrganizationProjects;
     }
@@ -299,7 +299,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHasOrganizationProjects(bool $hasOrganizationProjects) : self
+    public function setHasOrganizationProjects(bool $hasOrganizationProjects): self
     {
         $this->initialized['hasOrganizationProjects'] = true;
         $this->hasOrganizationProjects = $hasOrganizationProjects;
@@ -310,7 +310,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getHasRepositoryProjects() : bool
+    public function getHasRepositoryProjects(): bool
     {
         return $this->hasRepositoryProjects;
     }
@@ -321,7 +321,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setHasRepositoryProjects(bool $hasRepositoryProjects) : self
+    public function setHasRepositoryProjects(bool $hasRepositoryProjects): self
     {
         $this->initialized['hasRepositoryProjects'] = true;
         $this->hasRepositoryProjects = $hasRepositoryProjects;
@@ -336,7 +336,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return string
     */
-    public function getDefaultRepositoryPermission() : string
+    public function getDefaultRepositoryPermission(): string
     {
         return $this->defaultRepositoryPermission;
     }
@@ -351,7 +351,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return self
     */
-    public function setDefaultRepositoryPermission(string $defaultRepositoryPermission) : self
+    public function setDefaultRepositoryPermission(string $defaultRepositoryPermission): self
     {
         $this->initialized['defaultRepositoryPermission'] = true;
         $this->defaultRepositoryPermission = $defaultRepositoryPermission;
@@ -366,7 +366,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return bool
     */
-    public function getMembersCanCreateRepositories() : bool
+    public function getMembersCanCreateRepositories(): bool
     {
         return $this->membersCanCreateRepositories;
     }
@@ -381,7 +381,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return self
     */
-    public function setMembersCanCreateRepositories(bool $membersCanCreateRepositories) : self
+    public function setMembersCanCreateRepositories(bool $membersCanCreateRepositories): self
     {
         $this->initialized['membersCanCreateRepositories'] = true;
         $this->membersCanCreateRepositories = $membersCanCreateRepositories;
@@ -395,7 +395,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return bool
     */
-    public function getMembersCanCreateInternalRepositories() : bool
+    public function getMembersCanCreateInternalRepositories(): bool
     {
         return $this->membersCanCreateInternalRepositories;
     }
@@ -409,7 +409,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return self
     */
-    public function setMembersCanCreateInternalRepositories(bool $membersCanCreateInternalRepositories) : self
+    public function setMembersCanCreateInternalRepositories(bool $membersCanCreateInternalRepositories): self
     {
         $this->initialized['membersCanCreateInternalRepositories'] = true;
         $this->membersCanCreateInternalRepositories = $membersCanCreateInternalRepositories;
@@ -423,7 +423,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return bool
     */
-    public function getMembersCanCreatePrivateRepositories() : bool
+    public function getMembersCanCreatePrivateRepositories(): bool
     {
         return $this->membersCanCreatePrivateRepositories;
     }
@@ -437,7 +437,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return self
     */
-    public function setMembersCanCreatePrivateRepositories(bool $membersCanCreatePrivateRepositories) : self
+    public function setMembersCanCreatePrivateRepositories(bool $membersCanCreatePrivateRepositories): self
     {
         $this->initialized['membersCanCreatePrivateRepositories'] = true;
         $this->membersCanCreatePrivateRepositories = $membersCanCreatePrivateRepositories;
@@ -451,7 +451,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return bool
     */
-    public function getMembersCanCreatePublicRepositories() : bool
+    public function getMembersCanCreatePublicRepositories(): bool
     {
         return $this->membersCanCreatePublicRepositories;
     }
@@ -465,7 +465,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return self
     */
-    public function setMembersCanCreatePublicRepositories(bool $membersCanCreatePublicRepositories) : self
+    public function setMembersCanCreatePublicRepositories(bool $membersCanCreatePublicRepositories): self
     {
         $this->initialized['membersCanCreatePublicRepositories'] = true;
         $this->membersCanCreatePublicRepositories = $membersCanCreatePublicRepositories;
@@ -480,7 +480,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return string
     */
-    public function getMembersAllowedRepositoryCreationType() : string
+    public function getMembersAllowedRepositoryCreationType(): string
     {
         return $this->membersAllowedRepositoryCreationType;
     }
@@ -495,7 +495,7 @@ class OrgsOrgPatchBody extends \ArrayObject
     *
     * @return self
     */
-    public function setMembersAllowedRepositoryCreationType(string $membersAllowedRepositoryCreationType) : self
+    public function setMembersAllowedRepositoryCreationType(string $membersAllowedRepositoryCreationType): self
     {
         $this->initialized['membersAllowedRepositoryCreationType'] = true;
         $this->membersAllowedRepositoryCreationType = $membersAllowedRepositoryCreationType;
@@ -506,7 +506,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBlog() : string
+    public function getBlog(): string
     {
         return $this->blog;
     }
@@ -517,7 +517,7 @@ class OrgsOrgPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBlog(string $blog) : self
+    public function setBlog(string $blog): self
     {
         $this->initialized['blog'] = true;
         $this->blog = $blog;

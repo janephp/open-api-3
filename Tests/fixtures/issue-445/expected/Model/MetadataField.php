@@ -8,7 +8,7 @@ class MetadataField
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -42,7 +42,7 @@ class MetadataField
      *
      * @return string
      */
-    public function getPath() : string
+    public function getPath(): string
     {
         return $this->path;
     }
@@ -53,7 +53,7 @@ class MetadataField
      *
      * @return self
      */
-    public function setPath(string $path) : self
+    public function setPath(string $path): self
     {
         $this->initialized['path'] = true;
         $this->path = $path;
@@ -65,7 +65,7 @@ class MetadataField
     *
     * @return bool
     */
-    public function getIsWritable() : bool
+    public function getIsWritable(): bool
     {
         return $this->isWritable;
     }
@@ -77,7 +77,7 @@ class MetadataField
     *
     * @return self
     */
-    public function setIsWritable(bool $isWritable) : self
+    public function setIsWritable(bool $isWritable): self
     {
         $this->initialized['isWritable'] = true;
         $this->isWritable = $isWritable;
@@ -99,7 +99,7 @@ class MetadataField
      *
      * @return self
      */
-    public function setDataType($dataType) : self
+    public function setDataType($dataType): self
     {
         $this->initialized['dataType'] = true;
         $this->dataType = $dataType;
@@ -110,7 +110,7 @@ class MetadataField
      *
      * @return list<string>|null
      */
-    public function getAvailableKeyFields() : ?array
+    public function getAvailableKeyFields(): ?array
     {
         return $this->availableKeyFields;
     }
@@ -121,7 +121,7 @@ class MetadataField
      *
      * @return self
      */
-    public function setAvailableKeyFields(?array $availableKeyFields) : self
+    public function setAvailableKeyFields(?array $availableKeyFields): self
     {
         $this->initialized['availableKeyFields'] = true;
         $this->availableKeyFields = $availableKeyFields;

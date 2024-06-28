@@ -8,7 +8,7 @@ class QueryDebugInformation
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class QueryDebugInformation
      *
      * @return string|null
      */
-    public function getGeneral() : ?string
+    public function getGeneral(): ?string
     {
         return $this->general;
     }
@@ -52,7 +52,7 @@ class QueryDebugInformation
      *
      * @return self
      */
-    public function setGeneral(?string $general) : self
+    public function setGeneral(?string $general): self
     {
         $this->initialized['general'] = true;
         $this->general = $general;
@@ -63,7 +63,7 @@ class QueryDebugInformation
      *
      * @return string|null
      */
-    public function getAuditTrail() : ?string
+    public function getAuditTrail(): ?string
     {
         return $this->auditTrail;
     }
@@ -74,7 +74,7 @@ class QueryDebugInformation
      *
      * @return self
      */
-    public function setAuditTrail(?string $auditTrail) : self
+    public function setAuditTrail(?string $auditTrail): self
     {
         $this->initialized['auditTrail'] = true;
         $this->auditTrail = $auditTrail;
@@ -96,7 +96,7 @@ class QueryDebugInformation
      *
      * @return self
      */
-    public function setRequest($request) : self
+    public function setRequest($request): self
     {
         $this->initialized['request'] = true;
         $this->request = $request;
@@ -118,7 +118,7 @@ class QueryDebugInformation
      *
      * @return self
      */
-    public function setResponse($response) : self
+    public function setResponse($response): self
     {
         $this->initialized['response'] = true;
         $this->response = $response;

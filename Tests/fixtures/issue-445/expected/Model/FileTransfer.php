@@ -8,7 +8,7 @@ class FileTransfer
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -61,7 +61,7 @@ class FileTransfer
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -72,7 +72,7 @@ class FileTransfer
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -83,7 +83,7 @@ class FileTransfer
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -94,7 +94,7 @@ class FileTransfer
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -107,7 +107,7 @@ class FileTransfer
      *
      * @return string|null
      */
-    public function getIdentifier() : ?string
+    public function getIdentifier(): ?string
     {
         return $this->identifier;
     }
@@ -120,7 +120,7 @@ class FileTransfer
      *
      * @return self
      */
-    public function setIdentifier(?string $identifier) : self
+    public function setIdentifier(?string $identifier): self
     {
         $this->initialized['identifier'] = true;
         $this->identifier = $identifier;
@@ -131,7 +131,7 @@ class FileTransfer
      *
      * @return string
      */
-    public function getRequestId() : string
+    public function getRequestId(): string
     {
         return $this->requestId;
     }
@@ -142,7 +142,7 @@ class FileTransfer
      *
      * @return self
      */
-    public function setRequestId(string $requestId) : self
+    public function setRequestId(string $requestId): self
     {
         $this->initialized['requestId'] = true;
         $this->requestId = $requestId;
@@ -153,7 +153,7 @@ class FileTransfer
      *
      * @return string
      */
-    public function getTransferId() : string
+    public function getTransferId(): string
     {
         return $this->transferId;
     }
@@ -164,7 +164,7 @@ class FileTransfer
      *
      * @return self
      */
-    public function setTransferId(string $transferId) : self
+    public function setTransferId(string $transferId): self
     {
         $this->initialized['transferId'] = true;
         $this->transferId = $transferId;
@@ -186,7 +186,7 @@ class FileTransfer
      *
      * @return self
      */
-    public function setState($state) : self
+    public function setState($state): self
     {
         $this->initialized['state'] = true;
         $this->state = $state;
@@ -197,7 +197,7 @@ class FileTransfer
      *
      * @return string|null
      */
-    public function getContentId() : ?string
+    public function getContentId(): ?string
     {
         return $this->contentId;
     }
@@ -208,7 +208,7 @@ class FileTransfer
      *
      * @return self
      */
-    public function setContentId(?string $contentId) : self
+    public function setContentId(?string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;

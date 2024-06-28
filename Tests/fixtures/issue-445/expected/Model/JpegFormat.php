@@ -8,7 +8,7 @@ class JpegFormat extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -88,7 +88,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setColorProfile($colorProfile) : self
+    public function setColorProfile($colorProfile): self
     {
         $this->initialized['colorProfile'] = true;
         $this->colorProfile = $colorProfile;
@@ -110,7 +110,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setColorTransformationIntent($colorTransformationIntent) : self
+    public function setColorTransformationIntent($colorTransformationIntent): self
     {
         $this->initialized['colorTransformationIntent'] = true;
         $this->colorTransformationIntent = $colorTransformationIntent;
@@ -121,7 +121,7 @@ class JpegFormat extends FormatBase
      *
      * @return float|null
      */
-    public function getHorizontalResolution() : ?float
+    public function getHorizontalResolution(): ?float
     {
         return $this->horizontalResolution;
     }
@@ -132,7 +132,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setHorizontalResolution(?float $horizontalResolution) : self
+    public function setHorizontalResolution(?float $horizontalResolution): self
     {
         $this->initialized['horizontalResolution'] = true;
         $this->horizontalResolution = $horizontalResolution;
@@ -143,7 +143,7 @@ class JpegFormat extends FormatBase
      *
      * @return float|null
      */
-    public function getVerticalResolution() : ?float
+    public function getVerticalResolution(): ?float
     {
         return $this->verticalResolution;
     }
@@ -154,7 +154,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setVerticalResolution(?float $verticalResolution) : self
+    public function setVerticalResolution(?float $verticalResolution): self
     {
         $this->initialized['verticalResolution'] = true;
         $this->verticalResolution = $verticalResolution;
@@ -165,7 +165,7 @@ class JpegFormat extends FormatBase
      *
      * @return bool
      */
-    public function getKeepClippingPath() : bool
+    public function getKeepClippingPath(): bool
     {
         return $this->keepClippingPath;
     }
@@ -176,7 +176,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setKeepClippingPath(bool $keepClippingPath) : self
+    public function setKeepClippingPath(bool $keepClippingPath): self
     {
         $this->initialized['keepClippingPath'] = true;
         $this->keepClippingPath = $keepClippingPath;
@@ -198,7 +198,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setResizeAction($resizeAction) : self
+    public function setResizeAction($resizeAction): self
     {
         $this->initialized['resizeAction'] = true;
         $this->resizeAction = $resizeAction;
@@ -209,7 +209,7 @@ class JpegFormat extends FormatBase
      *
      * @return list<ImageActionBase>|null
      */
-    public function getActions() : ?array
+    public function getActions(): ?array
     {
         return $this->actions;
     }
@@ -220,7 +220,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setActions(?array $actions) : self
+    public function setActions(?array $actions): self
     {
         $this->initialized['actions'] = true;
         $this->actions = $actions;
@@ -231,7 +231,7 @@ class JpegFormat extends FormatBase
      *
      * @return int
      */
-    public function getQuality() : int
+    public function getQuality(): int
     {
         return $this->quality;
     }
@@ -242,7 +242,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setQuality(int $quality) : self
+    public function setQuality(int $quality): self
     {
         $this->initialized['quality'] = true;
         $this->quality = $quality;
@@ -253,7 +253,7 @@ class JpegFormat extends FormatBase
      *
      * @return bool
      */
-    public function getChromaSubsamplingEnabled() : bool
+    public function getChromaSubsamplingEnabled(): bool
     {
         return $this->chromaSubsamplingEnabled;
     }
@@ -264,7 +264,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setChromaSubsamplingEnabled(bool $chromaSubsamplingEnabled) : self
+    public function setChromaSubsamplingEnabled(bool $chromaSubsamplingEnabled): self
     {
         $this->initialized['chromaSubsamplingEnabled'] = true;
         $this->chromaSubsamplingEnabled = $chromaSubsamplingEnabled;
@@ -275,7 +275,7 @@ class JpegFormat extends FormatBase
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -286,7 +286,7 @@ class JpegFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;

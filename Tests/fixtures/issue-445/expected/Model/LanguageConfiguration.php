@@ -8,7 +8,7 @@ class LanguageConfiguration
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class LanguageConfiguration
      *
      * @return list<string>|null
      */
-    public function getSystemLanguages() : ?array
+    public function getSystemLanguages(): ?array
     {
         return $this->systemLanguages;
     }
@@ -46,7 +46,7 @@ class LanguageConfiguration
      *
      * @return self
      */
-    public function setSystemLanguages(?array $systemLanguages) : self
+    public function setSystemLanguages(?array $systemLanguages): self
     {
         $this->initialized['systemLanguages'] = true;
         $this->systemLanguages = $systemLanguages;
@@ -57,7 +57,7 @@ class LanguageConfiguration
      *
      * @return list<string>|null
      */
-    public function getMetadataLanguages() : ?array
+    public function getMetadataLanguages(): ?array
     {
         return $this->metadataLanguages;
     }
@@ -68,7 +68,7 @@ class LanguageConfiguration
      *
      * @return self
      */
-    public function setMetadataLanguages(?array $metadataLanguages) : self
+    public function setMetadataLanguages(?array $metadataLanguages): self
     {
         $this->initialized['metadataLanguages'] = true;
         $this->metadataLanguages = $metadataLanguages;
@@ -79,7 +79,7 @@ class LanguageConfiguration
      *
      * @return string|null
      */
-    public function getDefaultLanguage() : ?string
+    public function getDefaultLanguage(): ?string
     {
         return $this->defaultLanguage;
     }
@@ -90,7 +90,7 @@ class LanguageConfiguration
      *
      * @return self
      */
-    public function setDefaultLanguage(?string $defaultLanguage) : self
+    public function setDefaultLanguage(?string $defaultLanguage): self
     {
         $this->initialized['defaultLanguage'] = true;
         $this->defaultLanguage = $defaultLanguage;

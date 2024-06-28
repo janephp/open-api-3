@@ -8,7 +8,7 @@ class License extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class License extends \ArrayObject
      *
      * @return string
      */
-    public function getKey() : string
+    public function getKey(): string
     {
         return $this->key;
     }
@@ -106,7 +106,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setKey(string $key) : self
+    public function setKey(string $key): self
     {
         $this->initialized['key'] = true;
         $this->key = $key;
@@ -117,7 +117,7 @@ class License extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -128,7 +128,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -139,7 +139,7 @@ class License extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSpdxId() : ?string
+    public function getSpdxId(): ?string
     {
         return $this->spdxId;
     }
@@ -150,7 +150,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setSpdxId(?string $spdxId) : self
+    public function setSpdxId(?string $spdxId): self
     {
         $this->initialized['spdxId'] = true;
         $this->spdxId = $spdxId;
@@ -161,7 +161,7 @@ class License extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUrl() : ?string
+    public function getUrl(): ?string
     {
         return $this->url;
     }
@@ -172,7 +172,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(?string $url) : self
+    public function setUrl(?string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -183,7 +183,7 @@ class License extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -194,7 +194,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -205,7 +205,7 @@ class License extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -216,7 +216,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -227,7 +227,7 @@ class License extends \ArrayObject
      *
      * @return string
      */
-    public function getDescription() : string
+    public function getDescription(): string
     {
         return $this->description;
     }
@@ -238,7 +238,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setDescription(string $description) : self
+    public function setDescription(string $description): self
     {
         $this->initialized['description'] = true;
         $this->description = $description;
@@ -249,7 +249,7 @@ class License extends \ArrayObject
      *
      * @return string
      */
-    public function getImplementation() : string
+    public function getImplementation(): string
     {
         return $this->implementation;
     }
@@ -260,7 +260,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setImplementation(string $implementation) : self
+    public function setImplementation(string $implementation): self
     {
         $this->initialized['implementation'] = true;
         $this->implementation = $implementation;
@@ -271,7 +271,7 @@ class License extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getPermissions() : array
+    public function getPermissions(): array
     {
         return $this->permissions;
     }
@@ -282,7 +282,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setPermissions(array $permissions) : self
+    public function setPermissions(array $permissions): self
     {
         $this->initialized['permissions'] = true;
         $this->permissions = $permissions;
@@ -293,7 +293,7 @@ class License extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getConditions() : array
+    public function getConditions(): array
     {
         return $this->conditions;
     }
@@ -304,7 +304,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setConditions(array $conditions) : self
+    public function setConditions(array $conditions): self
     {
         $this->initialized['conditions'] = true;
         $this->conditions = $conditions;
@@ -315,7 +315,7 @@ class License extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getLimitations() : array
+    public function getLimitations(): array
     {
         return $this->limitations;
     }
@@ -326,7 +326,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setLimitations(array $limitations) : self
+    public function setLimitations(array $limitations): self
     {
         $this->initialized['limitations'] = true;
         $this->limitations = $limitations;
@@ -337,7 +337,7 @@ class License extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -348,7 +348,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -359,7 +359,7 @@ class License extends \ArrayObject
      *
      * @return bool
      */
-    public function getFeatured() : bool
+    public function getFeatured(): bool
     {
         return $this->featured;
     }
@@ -370,7 +370,7 @@ class License extends \ArrayObject
      *
      * @return self
      */
-    public function setFeatured(bool $featured) : self
+    public function setFeatured(bool $featured): self
     {
         $this->initialized['featured'] = true;
         $this->featured = $featured;

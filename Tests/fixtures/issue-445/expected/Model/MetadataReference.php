@@ -8,7 +8,7 @@ class MetadataReference
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -44,7 +44,7 @@ class MetadataReference
      *
      * @return string
      */
-    public function getTargetMetadataItemId() : string
+    public function getTargetMetadataItemId(): string
     {
         return $this->targetMetadataItemId;
     }
@@ -55,7 +55,7 @@ class MetadataReference
      *
      * @return self
      */
-    public function setTargetMetadataItemId(string $targetMetadataItemId) : self
+    public function setTargetMetadataItemId(string $targetMetadataItemId): self
     {
         $this->initialized['targetMetadataItemId'] = true;
         $this->targetMetadataItemId = $targetMetadataItemId;
@@ -69,7 +69,7 @@ class MetadataReference
     *
     * @return bool
     */
-    public function getIsRestricted() : bool
+    public function getIsRestricted(): bool
     {
         return $this->isRestricted;
     }
@@ -83,7 +83,7 @@ class MetadataReference
     *
     * @return self
     */
-    public function setIsRestricted(bool $isRestricted) : self
+    public function setIsRestricted(bool $isRestricted): self
     {
         $this->initialized['isRestricted'] = true;
         $this->isRestricted = $isRestricted;
@@ -94,7 +94,7 @@ class MetadataReference
      *
      * @return string|null
      */
-    public function getSourceMetadataItemId() : ?string
+    public function getSourceMetadataItemId(): ?string
     {
         return $this->sourceMetadataItemId;
     }
@@ -105,7 +105,7 @@ class MetadataReference
      *
      * @return self
      */
-    public function setSourceMetadataItemId(?string $sourceMetadataItemId) : self
+    public function setSourceMetadataItemId(?string $sourceMetadataItemId): self
     {
         $this->initialized['sourceMetadataItemId'] = true;
         $this->sourceMetadataItemId = $sourceMetadataItemId;
@@ -116,7 +116,7 @@ class MetadataReference
      *
      * @return string|null
      */
-    public function getSourceDocType() : ?string
+    public function getSourceDocType(): ?string
     {
         return $this->sourceDocType;
     }
@@ -127,7 +127,7 @@ class MetadataReference
      *
      * @return self
      */
-    public function setSourceDocType(?string $sourceDocType) : self
+    public function setSourceDocType(?string $sourceDocType): self
     {
         $this->initialized['sourceDocType'] = true;
         $this->sourceDocType = $sourceDocType;

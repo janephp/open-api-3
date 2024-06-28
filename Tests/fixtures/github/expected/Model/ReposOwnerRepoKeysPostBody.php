@@ -8,7 +8,7 @@ class ReposOwnerRepoKeysPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -37,7 +37,7 @@ class ReposOwnerRepoKeysPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -48,7 +48,7 @@ class ReposOwnerRepoKeysPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -59,7 +59,7 @@ class ReposOwnerRepoKeysPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getKey() : string
+    public function getKey(): string
     {
         return $this->key;
     }
@@ -70,7 +70,7 @@ class ReposOwnerRepoKeysPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setKey(string $key) : self
+    public function setKey(string $key): self
     {
         $this->initialized['key'] = true;
         $this->key = $key;
@@ -83,7 +83,7 @@ class ReposOwnerRepoKeysPostBody extends \ArrayObject
     *
     * @return bool
     */
-    public function getReadOnly() : bool
+    public function getReadOnly(): bool
     {
         return $this->readOnly;
     }
@@ -96,7 +96,7 @@ class ReposOwnerRepoKeysPostBody extends \ArrayObject
     *
     * @return self
     */
-    public function setReadOnly(bool $readOnly) : self
+    public function setReadOnly(bool $readOnly): self
     {
         $this->initialized['readOnly'] = true;
         $this->readOnly = $readOnly;

@@ -8,7 +8,7 @@ class SingleTweetLookupResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -46,7 +46,7 @@ class SingleTweetLookupResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setData($data) : self
+    public function setData($data): self
     {
         $this->initialized['data'] = true;
         $this->data = $data;
@@ -57,7 +57,7 @@ class SingleTweetLookupResponse extends \ArrayObject
      *
      * @return Expansions
      */
-    public function getIncludes() : Expansions
+    public function getIncludes(): Expansions
     {
         return $this->includes;
     }
@@ -68,7 +68,7 @@ class SingleTweetLookupResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setIncludes(Expansions $includes) : self
+    public function setIncludes(Expansions $includes): self
     {
         $this->initialized['includes'] = true;
         $this->includes = $includes;
@@ -79,7 +79,7 @@ class SingleTweetLookupResponse extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getErrors() : array
+    public function getErrors(): array
     {
         return $this->errors;
     }
@@ -90,7 +90,7 @@ class SingleTweetLookupResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setErrors(array $errors) : self
+    public function setErrors(array $errors): self
     {
         $this->initialized['errors'] = true;
         $this->errors = $errors;

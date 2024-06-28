@@ -8,7 +8,7 @@ class OutputRenderedEvent extends ApplicationEvent
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class OutputRenderedEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getOutputId() : ?string
+    public function getOutputId(): ?string
     {
         return $this->outputId;
     }
@@ -52,7 +52,7 @@ class OutputRenderedEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setOutputId(?string $outputId) : self
+    public function setOutputId(?string $outputId): self
     {
         $this->initialized['outputId'] = true;
         $this->outputId = $outputId;
@@ -63,7 +63,7 @@ class OutputRenderedEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getContentId() : ?string
+    public function getContentId(): ?string
     {
         return $this->contentId;
     }
@@ -74,7 +74,7 @@ class OutputRenderedEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setContentId(?string $contentId) : self
+    public function setContentId(?string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;
@@ -85,7 +85,7 @@ class OutputRenderedEvent extends ApplicationEvent
      *
      * @return string|null
      */
-    public function getOutputFormatId() : ?string
+    public function getOutputFormatId(): ?string
     {
         return $this->outputFormatId;
     }
@@ -96,7 +96,7 @@ class OutputRenderedEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setOutputFormatId(?string $outputFormatId) : self
+    public function setOutputFormatId(?string $outputFormatId): self
     {
         $this->initialized['outputFormatId'] = true;
         $this->outputFormatId = $outputFormatId;
@@ -107,7 +107,7 @@ class OutputRenderedEvent extends ApplicationEvent
      *
      * @return string
      */
-    public function getRenderingState() : string
+    public function getRenderingState(): string
     {
         return $this->renderingState;
     }
@@ -118,7 +118,7 @@ class OutputRenderedEvent extends ApplicationEvent
      *
      * @return self
      */
-    public function setRenderingState(string $renderingState) : self
+    public function setRenderingState(string $renderingState): self
     {
         $this->initialized['renderingState'] = true;
         $this->renderingState = $renderingState;

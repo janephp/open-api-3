@@ -8,7 +8,7 @@ class AddRulesRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class AddRulesRequest extends \ArrayObject
      *
      * @return list<RuleNoId>
      */
-    public function getAdd() : array
+    public function getAdd(): array
     {
         return $this->add;
     }
@@ -34,7 +34,7 @@ class AddRulesRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setAdd(array $add) : self
+    public function setAdd(array $add): self
     {
         $this->initialized['add'] = true;
         $this->add = $add;

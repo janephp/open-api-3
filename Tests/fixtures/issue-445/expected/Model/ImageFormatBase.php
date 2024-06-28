@@ -8,7 +8,7 @@ class ImageFormatBase extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -70,7 +70,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return self
      */
-    public function setColorProfile($colorProfile) : self
+    public function setColorProfile($colorProfile): self
     {
         $this->initialized['colorProfile'] = true;
         $this->colorProfile = $colorProfile;
@@ -92,7 +92,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return self
      */
-    public function setColorTransformationIntent($colorTransformationIntent) : self
+    public function setColorTransformationIntent($colorTransformationIntent): self
     {
         $this->initialized['colorTransformationIntent'] = true;
         $this->colorTransformationIntent = $colorTransformationIntent;
@@ -103,7 +103,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return float|null
      */
-    public function getHorizontalResolution() : ?float
+    public function getHorizontalResolution(): ?float
     {
         return $this->horizontalResolution;
     }
@@ -114,7 +114,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return self
      */
-    public function setHorizontalResolution(?float $horizontalResolution) : self
+    public function setHorizontalResolution(?float $horizontalResolution): self
     {
         $this->initialized['horizontalResolution'] = true;
         $this->horizontalResolution = $horizontalResolution;
@@ -125,7 +125,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return float|null
      */
-    public function getVerticalResolution() : ?float
+    public function getVerticalResolution(): ?float
     {
         return $this->verticalResolution;
     }
@@ -136,7 +136,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return self
      */
-    public function setVerticalResolution(?float $verticalResolution) : self
+    public function setVerticalResolution(?float $verticalResolution): self
     {
         $this->initialized['verticalResolution'] = true;
         $this->verticalResolution = $verticalResolution;
@@ -147,7 +147,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return bool
      */
-    public function getKeepClippingPath() : bool
+    public function getKeepClippingPath(): bool
     {
         return $this->keepClippingPath;
     }
@@ -158,7 +158,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return self
      */
-    public function setKeepClippingPath(bool $keepClippingPath) : self
+    public function setKeepClippingPath(bool $keepClippingPath): self
     {
         $this->initialized['keepClippingPath'] = true;
         $this->keepClippingPath = $keepClippingPath;
@@ -180,7 +180,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return self
      */
-    public function setResizeAction($resizeAction) : self
+    public function setResizeAction($resizeAction): self
     {
         $this->initialized['resizeAction'] = true;
         $this->resizeAction = $resizeAction;
@@ -191,7 +191,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return list<ImageActionBase>|null
      */
-    public function getActions() : ?array
+    public function getActions(): ?array
     {
         return $this->actions;
     }
@@ -202,7 +202,7 @@ class ImageFormatBase extends FormatBase
      *
      * @return self
      */
-    public function setActions(?array $actions) : self
+    public function setActions(?array $actions): self
     {
         $this->initialized['actions'] = true;
         $this->actions = $actions;

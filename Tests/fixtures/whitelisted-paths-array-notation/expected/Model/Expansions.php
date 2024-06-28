@@ -8,7 +8,7 @@ class Expansions extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class Expansions extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getUsers() : array
+    public function getUsers(): array
     {
         return $this->users;
     }
@@ -58,7 +58,7 @@ class Expansions extends \ArrayObject
      *
      * @return self
      */
-    public function setUsers(array $users) : self
+    public function setUsers(array $users): self
     {
         $this->initialized['users'] = true;
         $this->users = $users;
@@ -69,7 +69,7 @@ class Expansions extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getTweets() : array
+    public function getTweets(): array
     {
         return $this->tweets;
     }
@@ -80,7 +80,7 @@ class Expansions extends \ArrayObject
      *
      * @return self
      */
-    public function setTweets(array $tweets) : self
+    public function setTweets(array $tweets): self
     {
         $this->initialized['tweets'] = true;
         $this->tweets = $tweets;
@@ -91,7 +91,7 @@ class Expansions extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getPlaces() : array
+    public function getPlaces(): array
     {
         return $this->places;
     }
@@ -102,7 +102,7 @@ class Expansions extends \ArrayObject
      *
      * @return self
      */
-    public function setPlaces(array $places) : self
+    public function setPlaces(array $places): self
     {
         $this->initialized['places'] = true;
         $this->places = $places;
@@ -113,7 +113,7 @@ class Expansions extends \ArrayObject
      *
      * @return list<mixed>
      */
-    public function getMedia() : array
+    public function getMedia(): array
     {
         return $this->media;
     }
@@ -124,7 +124,7 @@ class Expansions extends \ArrayObject
      *
      * @return self
      */
-    public function setMedia(array $media) : self
+    public function setMedia(array $media): self
     {
         $this->initialized['media'] = true;
         $this->media = $media;
@@ -135,7 +135,7 @@ class Expansions extends \ArrayObject
      *
      * @return list<Poll>
      */
-    public function getPolls() : array
+    public function getPolls(): array
     {
         return $this->polls;
     }
@@ -146,7 +146,7 @@ class Expansions extends \ArrayObject
      *
      * @return self
      */
-    public function setPolls(array $polls) : self
+    public function setPolls(array $polls): self
     {
         $this->initialized['polls'] = true;
         $this->polls = $polls;

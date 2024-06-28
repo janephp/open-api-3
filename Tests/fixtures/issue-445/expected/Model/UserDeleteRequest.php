@@ -8,7 +8,7 @@ class UserDeleteRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class UserDeleteRequest
      *
      * @return string|null
      */
-    public function getOwnerTokenTransferUserId() : ?string
+    public function getOwnerTokenTransferUserId(): ?string
     {
         return $this->ownerTokenTransferUserId;
     }
@@ -34,7 +34,7 @@ class UserDeleteRequest
      *
      * @return self
      */
-    public function setOwnerTokenTransferUserId(?string $ownerTokenTransferUserId) : self
+    public function setOwnerTokenTransferUserId(?string $ownerTokenTransferUserId): self
     {
         $this->initialized['ownerTokenTransferUserId'] = true;
         $this->ownerTokenTransferUserId = $ownerTokenTransferUserId;

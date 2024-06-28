@@ -8,7 +8,7 @@ class Foo extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class Foo extends \ArrayObject
      *
      * @return string
      */
-    public function getLabel() : string
+    public function getLabel(): string
     {
         return $this->label;
     }
@@ -40,7 +40,7 @@ class Foo extends \ArrayObject
      *
      * @return self
      */
-    public function setLabel(string $label) : self
+    public function setLabel(string $label): self
     {
         $this->initialized['label'] = true;
         $this->label = $label;
@@ -51,7 +51,7 @@ class Foo extends \ArrayObject
      *
      * @return Foo
      */
-    public function getParent() : Foo
+    public function getParent(): Foo
     {
         return $this->parent;
     }
@@ -62,7 +62,7 @@ class Foo extends \ArrayObject
      *
      * @return self
      */
-    public function setParent(Foo $parent) : self
+    public function setParent(Foo $parent): self
     {
         $this->initialized['parent'] = true;
         $this->parent = $parent;

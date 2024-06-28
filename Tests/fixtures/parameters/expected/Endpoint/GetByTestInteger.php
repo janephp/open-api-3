@@ -15,15 +15,15 @@ class GetByTestInteger extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\C
         $this->test_integer = $testInteger;
     }
     use \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\EndpointTrait;
-    public function getMethod() : string
+    public function getMethod(): string
     {
         return 'GET';
     }
-    public function getUri() : string
+    public function getUri(): string
     {
         return str_replace(['{test_integer}'], [$this->test_integer], '/{test_integer}');
     }
-    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null) : array
+    public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
         return [[], null];
     }
@@ -41,7 +41,7 @@ class GetByTestInteger extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\C
             return null;
         }
     }
-    public function getAuthenticationScopes() : array
+    public function getAuthenticationScopes(): array
     {
         return [];
     }

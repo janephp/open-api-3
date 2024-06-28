@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\PullRequestReview::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\PullRequestReview::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -79,7 +79,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['_links']);
             }
             if (\array_key_exists('submitted_at', $data)) {
-                $object->setSubmittedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['submitted_at']));
+                $object->setSubmittedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['submitted_at']));
                 unset($data['submitted_at']);
             }
             if (\array_key_exists('commit_id', $data)) {
@@ -105,7 +105,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['id'] = $object->getId();
@@ -117,7 +117,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['pull_request_url'] = $object->getPullRequestUrl();
             $data['_links'] = $this->normalizer->normalize($object->getLinks(), 'json', $context);
             if ($object->isInitialized('submittedAt') && null !== $object->getSubmittedAt()) {
-                $data['submitted_at'] = $object->getSubmittedAt()->format('Y-m-d\\TH:i:sP');
+                $data['submitted_at'] = $object->getSubmittedAt()->format('Y-m-d\TH:i:sP');
             }
             $data['commit_id'] = $object->getCommitId();
             if ($object->isInitialized('bodyHtml') && null !== $object->getBodyHtml()) {
@@ -137,7 +137,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\PullRequestReview::class => false];
         }
@@ -149,11 +149,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \Github\Model\PullRequestReview::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === Github\Model\PullRequestReview::class;
         }
@@ -211,7 +211,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['_links']);
             }
             if (\array_key_exists('submitted_at', $data)) {
-                $object->setSubmittedAt(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['submitted_at']));
+                $object->setSubmittedAt(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['submitted_at']));
                 unset($data['submitted_at']);
             }
             if (\array_key_exists('commit_id', $data)) {
@@ -252,7 +252,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['pull_request_url'] = $object->getPullRequestUrl();
             $data['_links'] = $this->normalizer->normalize($object->getLinks(), 'json', $context);
             if ($object->isInitialized('submittedAt') && null !== $object->getSubmittedAt()) {
-                $data['submitted_at'] = $object->getSubmittedAt()->format('Y-m-d\\TH:i:sP');
+                $data['submitted_at'] = $object->getSubmittedAt()->format('Y-m-d\TH:i:sP');
             }
             $data['commit_id'] = $object->getCommitId();
             if ($object->isInitialized('bodyHtml') && null !== $object->getBodyHtml()) {
@@ -272,7 +272,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Github\Model\PullRequestReview::class => false];
         }

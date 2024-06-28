@@ -8,7 +8,7 @@ class Channel
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -95,7 +95,7 @@ class Channel
      *
      * @return string
      */
-    public function getId() : string
+    public function getId(): string
     {
         return $this->id;
     }
@@ -106,7 +106,7 @@ class Channel
      *
      * @return self
      */
-    public function setId(string $id) : self
+    public function setId(string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -117,7 +117,7 @@ class Channel
      *
      * @return int
      */
-    public function getSortOrder() : int
+    public function getSortOrder(): int
     {
         return $this->sortOrder;
     }
@@ -128,7 +128,7 @@ class Channel
      *
      * @return self
      */
-    public function setSortOrder(int $sortOrder) : self
+    public function setSortOrder(int $sortOrder): self
     {
         $this->initialized['sortOrder'] = true;
         $this->sortOrder = $sortOrder;
@@ -139,7 +139,7 @@ class Channel
      *
      * @return string
      */
-    public function getSearchIndexId() : string
+    public function getSearchIndexId(): string
     {
         return $this->searchIndexId;
     }
@@ -150,7 +150,7 @@ class Channel
      *
      * @return self
      */
-    public function setSearchIndexId(string $searchIndexId) : self
+    public function setSearchIndexId(string $searchIndexId): self
     {
         $this->initialized['searchIndexId'] = true;
         $this->searchIndexId = $searchIndexId;
@@ -172,7 +172,7 @@ class Channel
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -194,7 +194,7 @@ class Channel
      *
      * @return self
      */
-    public function setNames($names) : self
+    public function setNames($names): self
     {
         $this->initialized['names'] = true;
         $this->names = $names;
@@ -205,7 +205,7 @@ class Channel
      *
      * @return list<SortInfo>
      */
-    public function getSort() : array
+    public function getSort(): array
     {
         return $this->sort;
     }
@@ -216,7 +216,7 @@ class Channel
      *
      * @return self
      */
-    public function setSort(array $sort) : self
+    public function setSort(array $sort): self
     {
         $this->initialized['sort'] = true;
         $this->sort = $sort;
@@ -227,7 +227,7 @@ class Channel
      *
      * @return list<SortField>
      */
-    public function getSortFields() : array
+    public function getSortFields(): array
     {
         return $this->sortFields;
     }
@@ -238,7 +238,7 @@ class Channel
      *
      * @return self
      */
-    public function setSortFields(array $sortFields) : self
+    public function setSortFields(array $sortFields): self
     {
         $this->initialized['sortFields'] = true;
         $this->sortFields = $sortFields;
@@ -249,7 +249,7 @@ class Channel
      *
      * @return list<AggregatorBase>
      */
-    public function getAggregations() : array
+    public function getAggregations(): array
     {
         return $this->aggregations;
     }
@@ -260,7 +260,7 @@ class Channel
      *
      * @return self
      */
-    public function setAggregations(array $aggregations) : self
+    public function setAggregations(array $aggregations): self
     {
         $this->initialized['aggregations'] = true;
         $this->aggregations = $aggregations;
@@ -271,7 +271,7 @@ class Channel
      *
      * @return list<string>
      */
-    public function getExtendedSimpleSearchFields() : array
+    public function getExtendedSimpleSearchFields(): array
     {
         return $this->extendedSimpleSearchFields;
     }
@@ -282,7 +282,7 @@ class Channel
      *
      * @return self
      */
-    public function setExtendedSimpleSearchFields(array $extendedSimpleSearchFields) : self
+    public function setExtendedSimpleSearchFields(array $extendedSimpleSearchFields): self
     {
         $this->initialized['extendedSimpleSearchFields'] = true;
         $this->extendedSimpleSearchFields = $extendedSimpleSearchFields;
@@ -293,7 +293,7 @@ class Channel
      *
      * @return list<string>
      */
-    public function getGrantedUserRoleIds() : array
+    public function getGrantedUserRoleIds(): array
     {
         return $this->grantedUserRoleIds;
     }
@@ -304,7 +304,7 @@ class Channel
      *
      * @return self
      */
-    public function setGrantedUserRoleIds(array $grantedUserRoleIds) : self
+    public function setGrantedUserRoleIds(array $grantedUserRoleIds): self
     {
         $this->initialized['grantedUserRoleIds'] = true;
         $this->grantedUserRoleIds = $grantedUserRoleIds;
@@ -326,7 +326,7 @@ class Channel
      *
      * @return self
      */
-    public function setMissingResultsDisplayPatterns($missingResultsDisplayPatterns) : self
+    public function setMissingResultsDisplayPatterns($missingResultsDisplayPatterns): self
     {
         $this->initialized['missingResultsDisplayPatterns'] = true;
         $this->missingResultsDisplayPatterns = $missingResultsDisplayPatterns;
@@ -348,7 +348,7 @@ class Channel
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;
@@ -359,7 +359,7 @@ class Channel
      *
      * @return bool
      */
-    public function getViewForAll() : bool
+    public function getViewForAll(): bool
     {
         return $this->viewForAll;
     }
@@ -370,7 +370,7 @@ class Channel
      *
      * @return self
      */
-    public function setViewForAll(bool $viewForAll) : self
+    public function setViewForAll(bool $viewForAll): self
     {
         $this->initialized['viewForAll'] = true;
         $this->viewForAll = $viewForAll;

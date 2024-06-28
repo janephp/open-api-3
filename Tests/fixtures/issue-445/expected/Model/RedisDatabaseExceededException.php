@@ -8,7 +8,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return string
      */
-    public function getTraceLevel() : string
+    public function getTraceLevel(): string
     {
         return $this->traceLevel;
     }
@@ -94,7 +94,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceLevel(string $traceLevel) : self
+    public function setTraceLevel(string $traceLevel): self
     {
         $this->initialized['traceLevel'] = true;
         $this->traceLevel = $traceLevel;
@@ -105,7 +105,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceId() : ?string
+    public function getTraceId(): ?string
     {
         return $this->traceId;
     }
@@ -116,7 +116,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceId(?string $traceId) : self
+    public function setTraceId(?string $traceId): self
     {
         $this->initialized['traceId'] = true;
         $this->traceId = $traceId;
@@ -127,7 +127,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getTraceJobId() : ?string
+    public function getTraceJobId(): ?string
     {
         return $this->traceJobId;
     }
@@ -138,7 +138,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setTraceJobId(?string $traceJobId) : self
+    public function setTraceJobId(?string $traceJobId): self
     {
         $this->initialized['traceJobId'] = true;
         $this->traceJobId = $traceJobId;
@@ -149,7 +149,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return int
      */
-    public function getHttpStatusCode() : int
+    public function getHttpStatusCode(): int
     {
         return $this->httpStatusCode;
     }
@@ -160,7 +160,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setHttpStatusCode(int $httpStatusCode) : self
+    public function setHttpStatusCode(int $httpStatusCode): self
     {
         $this->initialized['httpStatusCode'] = true;
         $this->httpStatusCode = $httpStatusCode;
@@ -171,7 +171,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getExceptionMessage() : ?string
+    public function getExceptionMessage(): ?string
     {
         return $this->exceptionMessage;
     }
@@ -182,7 +182,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setExceptionMessage(?string $exceptionMessage) : self
+    public function setExceptionMessage(?string $exceptionMessage): self
     {
         $this->initialized['exceptionMessage'] = true;
         $this->exceptionMessage = $exceptionMessage;
@@ -193,7 +193,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }
@@ -204,7 +204,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setKind(string $kind) : self
+    public function setKind(string $kind): self
     {
         $this->initialized['kind'] = true;
         $this->kind = $kind;
@@ -215,7 +215,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return string|null
      */
-    public function getCustomerId() : ?string
+    public function getCustomerId(): ?string
     {
         return $this->customerId;
     }
@@ -226,7 +226,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerId(?string $customerId) : self
+    public function setCustomerId(?string $customerId): self
     {
         $this->initialized['customerId'] = true;
         $this->customerId = $customerId;
@@ -237,7 +237,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return int
      */
-    public function getCustomerCount() : int
+    public function getCustomerCount(): int
     {
         return $this->customerCount;
     }
@@ -248,7 +248,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setCustomerCount(int $customerCount) : self
+    public function setCustomerCount(int $customerCount): self
     {
         $this->initialized['customerCount'] = true;
         $this->customerCount = $customerCount;
@@ -259,7 +259,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return int
      */
-    public function getMaxCount() : int
+    public function getMaxCount(): int
     {
         return $this->maxCount;
     }
@@ -270,7 +270,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setMaxCount(int $maxCount) : self
+    public function setMaxCount(int $maxCount): self
     {
         $this->initialized['maxCount'] = true;
         $this->maxCount = $maxCount;
@@ -281,7 +281,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return int
      */
-    public function getStartIndex() : int
+    public function getStartIndex(): int
     {
         return $this->startIndex;
     }
@@ -292,7 +292,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setStartIndex(int $startIndex) : self
+    public function setStartIndex(int $startIndex): self
     {
         $this->initialized['startIndex'] = true;
         $this->startIndex = $startIndex;
@@ -303,7 +303,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return int
      */
-    public function getRedisDatabaseCount() : int
+    public function getRedisDatabaseCount(): int
     {
         return $this->redisDatabaseCount;
     }
@@ -314,7 +314,7 @@ class RedisDatabaseExceededException extends \ArrayObject
      *
      * @return self
      */
-    public function setRedisDatabaseCount(int $redisDatabaseCount) : self
+    public function setRedisDatabaseCount(int $redisDatabaseCount): self
     {
         $this->initialized['redisDatabaseCount'] = true;
         $this->redisDatabaseCount = $redisDatabaseCount;

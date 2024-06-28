@@ -8,7 +8,7 @@ class XmpMappingEntryEditable
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -64,7 +64,7 @@ class XmpMappingEntryEditable
      *
      * @return self
      */
-    public function setDirection($direction) : self
+    public function setDirection($direction): self
     {
         $this->initialized['direction'] = true;
         $this->direction = $direction;
@@ -75,7 +75,7 @@ class XmpMappingEntryEditable
      *
      * @return int
      */
-    public function getPriority() : int
+    public function getPriority(): int
     {
         return $this->priority;
     }
@@ -86,7 +86,7 @@ class XmpMappingEntryEditable
      *
      * @return self
      */
-    public function setPriority(int $priority) : self
+    public function setPriority(int $priority): self
     {
         $this->initialized['priority'] = true;
         $this->priority = $priority;
@@ -97,7 +97,7 @@ class XmpMappingEntryEditable
      *
      * @return bool
      */
-    public function getStopProcessing() : bool
+    public function getStopProcessing(): bool
     {
         return $this->stopProcessing;
     }
@@ -108,7 +108,7 @@ class XmpMappingEntryEditable
      *
      * @return self
      */
-    public function setStopProcessing(bool $stopProcessing) : self
+    public function setStopProcessing(bool $stopProcessing): self
     {
         $this->initialized['stopProcessing'] = true;
         $this->stopProcessing = $stopProcessing;
@@ -119,7 +119,7 @@ class XmpMappingEntryEditable
      *
      * @return string
      */
-    public function getXmpPath() : string
+    public function getXmpPath(): string
     {
         return $this->xmpPath;
     }
@@ -130,7 +130,7 @@ class XmpMappingEntryEditable
      *
      * @return self
      */
-    public function setXmpPath(string $xmpPath) : self
+    public function setXmpPath(string $xmpPath): self
     {
         $this->initialized['xmpPath'] = true;
         $this->xmpPath = $xmpPath;
@@ -141,7 +141,7 @@ class XmpMappingEntryEditable
      *
      * @return string
      */
-    public function getMetadataPath() : string
+    public function getMetadataPath(): string
     {
         return $this->metadataPath;
     }
@@ -152,7 +152,7 @@ class XmpMappingEntryEditable
      *
      * @return self
      */
-    public function setMetadataPath(string $metadataPath) : self
+    public function setMetadataPath(string $metadataPath): self
     {
         $this->initialized['metadataPath'] = true;
         $this->metadataPath = $metadataPath;
@@ -174,7 +174,7 @@ class XmpMappingEntryEditable
      *
      * @return self
      */
-    public function setConfiguration($configuration) : self
+    public function setConfiguration($configuration): self
     {
         $this->initialized['configuration'] = true;
         $this->configuration = $configuration;

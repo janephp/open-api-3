@@ -8,7 +8,7 @@ class AssignTagboxItemsInLayerAction extends BusinessRuleAction
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -36,7 +36,7 @@ class AssignTagboxItemsInLayerAction extends BusinessRuleAction
      *
      * @return string|null
      */
-    public function getNamedCache() : ?string
+    public function getNamedCache(): ?string
     {
         return $this->namedCache;
     }
@@ -47,7 +47,7 @@ class AssignTagboxItemsInLayerAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setNamedCache(?string $namedCache) : self
+    public function setNamedCache(?string $namedCache): self
     {
         $this->initialized['namedCache'] = true;
         $this->namedCache = $namedCache;
@@ -69,7 +69,7 @@ class AssignTagboxItemsInLayerAction extends BusinessRuleAction
      *
      * @return self
      */
-    public function setRefIds($refIds) : self
+    public function setRefIds($refIds): self
     {
         $this->initialized['refIds'] = true;
         $this->refIds = $refIds;
@@ -81,7 +81,7 @@ class AssignTagboxItemsInLayerAction extends BusinessRuleAction
     *
     * @return bool
     */
-    public function getReplace() : bool
+    public function getReplace(): bool
     {
         return $this->replace;
     }
@@ -93,7 +93,7 @@ class AssignTagboxItemsInLayerAction extends BusinessRuleAction
     *
     * @return self
     */
-    public function setReplace(bool $replace) : self
+    public function setReplace(bool $replace): self
     {
         $this->initialized['replace'] = true;
         $this->replace = $replace;

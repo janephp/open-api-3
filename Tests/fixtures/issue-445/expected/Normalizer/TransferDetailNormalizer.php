@@ -20,15 +20,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization(mixed $data, string $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\TransferDetail::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\TransferDetail::class;
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             if (isset($data['$ref'])) {
                 return new Reference($data['$ref'], $context['document-origin']);
@@ -103,14 +103,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['itemsCancelled']);
             }
             if (\array_key_exists('lastDataExtractionProgressTimeStamp', $data) && $data['lastDataExtractionProgressTimeStamp'] !== null) {
-                $object->setLastDataExtractionProgressTimeStamp(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastDataExtractionProgressTimeStamp']));
+                $object->setLastDataExtractionProgressTimeStamp(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastDataExtractionProgressTimeStamp']));
                 unset($data['lastDataExtractionProgressTimeStamp']);
             }
             elseif (\array_key_exists('lastDataExtractionProgressTimeStamp', $data) && $data['lastDataExtractionProgressTimeStamp'] === null) {
                 $object->setLastDataExtractionProgressTimeStamp(null);
             }
             if (\array_key_exists('lastFileUploadProgressTimeStamp', $data) && $data['lastFileUploadProgressTimeStamp'] !== null) {
-                $object->setLastFileUploadProgressTimeStamp(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastFileUploadProgressTimeStamp']));
+                $object->setLastFileUploadProgressTimeStamp(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastFileUploadProgressTimeStamp']));
                 unset($data['lastFileUploadProgressTimeStamp']);
             }
             elseif (\array_key_exists('lastFileUploadProgressTimeStamp', $data) && $data['lastFileUploadProgressTimeStamp'] === null) {
@@ -123,7 +123,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $object;
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
             $data['id'] = $object->getId();
@@ -157,10 +157,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['itemsCancelled'] = $object->getItemsCancelled();
             }
             if ($object->isInitialized('lastDataExtractionProgressTimeStamp') && null !== $object->getLastDataExtractionProgressTimeStamp()) {
-                $data['lastDataExtractionProgressTimeStamp'] = $object->getLastDataExtractionProgressTimeStamp()->format('Y-m-d\\TH:i:sP');
+                $data['lastDataExtractionProgressTimeStamp'] = $object->getLastDataExtractionProgressTimeStamp()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('lastFileUploadProgressTimeStamp') && null !== $object->getLastFileUploadProgressTimeStamp()) {
-                $data['lastFileUploadProgressTimeStamp'] = $object->getLastFileUploadProgressTimeStamp()->format('Y-m-d\\TH:i:sP');
+                $data['lastFileUploadProgressTimeStamp'] = $object->getLastFileUploadProgressTimeStamp()->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -169,7 +169,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\TransferDetail::class => false];
         }
@@ -181,11 +181,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        public function supportsDenormalization($data, $type, string $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, string $format = null, array $context = []): bool
         {
             return $type === \PicturePark\API\Model\TransferDetail::class;
         }
-        public function supportsNormalization(mixed $data, string $format = null, array $context = []) : bool
+        public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
         {
             return is_object($data) && get_class($data) === PicturePark\API\Model\TransferDetail::class;
         }
@@ -267,14 +267,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 unset($data['itemsCancelled']);
             }
             if (\array_key_exists('lastDataExtractionProgressTimeStamp', $data) && $data['lastDataExtractionProgressTimeStamp'] !== null) {
-                $object->setLastDataExtractionProgressTimeStamp(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastDataExtractionProgressTimeStamp']));
+                $object->setLastDataExtractionProgressTimeStamp(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastDataExtractionProgressTimeStamp']));
                 unset($data['lastDataExtractionProgressTimeStamp']);
             }
             elseif (\array_key_exists('lastDataExtractionProgressTimeStamp', $data) && $data['lastDataExtractionProgressTimeStamp'] === null) {
                 $object->setLastDataExtractionProgressTimeStamp(null);
             }
             if (\array_key_exists('lastFileUploadProgressTimeStamp', $data) && $data['lastFileUploadProgressTimeStamp'] !== null) {
-                $object->setLastFileUploadProgressTimeStamp(\DateTime::createFromFormat('Y-m-d\\TH:i:sP', $data['lastFileUploadProgressTimeStamp']));
+                $object->setLastFileUploadProgressTimeStamp(\DateTime::createFromFormat('Y-m-d\TH:i:sP', $data['lastFileUploadProgressTimeStamp']));
                 unset($data['lastFileUploadProgressTimeStamp']);
             }
             elseif (\array_key_exists('lastFileUploadProgressTimeStamp', $data) && $data['lastFileUploadProgressTimeStamp'] === null) {
@@ -324,10 +324,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['itemsCancelled'] = $object->getItemsCancelled();
             }
             if ($object->isInitialized('lastDataExtractionProgressTimeStamp') && null !== $object->getLastDataExtractionProgressTimeStamp()) {
-                $data['lastDataExtractionProgressTimeStamp'] = $object->getLastDataExtractionProgressTimeStamp()->format('Y-m-d\\TH:i:sP');
+                $data['lastDataExtractionProgressTimeStamp'] = $object->getLastDataExtractionProgressTimeStamp()->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('lastFileUploadProgressTimeStamp') && null !== $object->getLastFileUploadProgressTimeStamp()) {
-                $data['lastFileUploadProgressTimeStamp'] = $object->getLastFileUploadProgressTimeStamp()->format('Y-m-d\\TH:i:sP');
+                $data['lastFileUploadProgressTimeStamp'] = $object->getLastFileUploadProgressTimeStamp()->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -336,7 +336,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             return $data;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\PicturePark\API\Model\TransferDetail::class => false];
         }

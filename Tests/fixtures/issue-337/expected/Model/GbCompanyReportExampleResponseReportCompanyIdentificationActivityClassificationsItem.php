@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassific
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassific
      *
      * @return string
      */
-    public function getClassification() : string
+    public function getClassification(): string
     {
         return $this->classification;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassific
      *
      * @return self
      */
-    public function setClassification(string $classification) : self
+    public function setClassification(string $classification): self
     {
         $this->initialized['classification'] = true;
         $this->classification = $classification;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassific
      *
      * @return list<GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassificationsItemActivitiesItem>
      */
-    public function getActivities() : array
+    public function getActivities(): array
     {
         return $this->activities;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportCompanyIdentificationActivityClassific
      *
      * @return self
      */
-    public function setActivities(array $activities) : self
+    public function setActivities(array $activities): self
     {
         $this->initialized['activities'] = true;
         $this->activities = $activities;

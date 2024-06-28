@@ -8,7 +8,7 @@ class TweetInteractionMetrics extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -47,7 +47,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getLikeCount() : int
+    public function getLikeCount(): int
     {
         return $this->likeCount;
     }
@@ -58,7 +58,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setLikeCount(int $likeCount) : self
+    public function setLikeCount(int $likeCount): self
     {
         $this->initialized['likeCount'] = true;
         $this->likeCount = $likeCount;
@@ -69,7 +69,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getRetweetCount() : int
+    public function getRetweetCount(): int
     {
         return $this->retweetCount;
     }
@@ -80,7 +80,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setRetweetCount(int $retweetCount) : self
+    public function setRetweetCount(int $retweetCount): self
     {
         $this->initialized['retweetCount'] = true;
         $this->retweetCount = $retweetCount;
@@ -91,7 +91,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getQuoteCount() : int
+    public function getQuoteCount(): int
     {
         return $this->quoteCount;
     }
@@ -102,7 +102,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setQuoteCount(int $quoteCount) : self
+    public function setQuoteCount(int $quoteCount): self
     {
         $this->initialized['quoteCount'] = true;
         $this->quoteCount = $quoteCount;
@@ -113,7 +113,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getReplyCount() : int
+    public function getReplyCount(): int
     {
         return $this->replyCount;
     }
@@ -124,7 +124,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setReplyCount(int $replyCount) : self
+    public function setReplyCount(int $replyCount): self
     {
         $this->initialized['replyCount'] = true;
         $this->replyCount = $replyCount;
@@ -135,7 +135,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return int
      */
-    public function getImpressionCount() : int
+    public function getImpressionCount(): int
     {
         return $this->impressionCount;
     }
@@ -146,7 +146,7 @@ class TweetInteractionMetrics extends \ArrayObject
      *
      * @return self
      */
-    public function setImpressionCount(int $impressionCount) : self
+    public function setImpressionCount(int $impressionCount): self
     {
         $this->initialized['impressionCount'] = true;
         $this->impressionCount = $impressionCount;

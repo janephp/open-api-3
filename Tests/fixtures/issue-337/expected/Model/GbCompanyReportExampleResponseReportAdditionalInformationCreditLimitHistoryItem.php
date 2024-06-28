@@ -8,7 +8,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistor
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistor
      *
      * @return string
      */
-    public function getDate() : string
+    public function getDate(): string
     {
         return $this->date;
     }
@@ -40,7 +40,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistor
      *
      * @return self
      */
-    public function setDate(string $date) : self
+    public function setDate(string $date): self
     {
         $this->initialized['date'] = true;
         $this->date = $date;
@@ -51,7 +51,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistor
      *
      * @return GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItemCompanyValue
      */
-    public function getCompanyValue() : GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItemCompanyValue
+    public function getCompanyValue(): GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItemCompanyValue
     {
         return $this->companyValue;
     }
@@ -62,7 +62,7 @@ class GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistor
      *
      * @return self
      */
-    public function setCompanyValue(GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItemCompanyValue $companyValue) : self
+    public function setCompanyValue(GbCompanyReportExampleResponseReportAdditionalInformationCreditLimitHistoryItemCompanyValue $companyValue): self
     {
         $this->initialized['companyValue'] = true;
         $this->companyValue = $companyValue;

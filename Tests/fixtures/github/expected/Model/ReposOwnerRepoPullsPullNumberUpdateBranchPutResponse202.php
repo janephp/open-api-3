@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPullNumberUpdateBranchPutResponse202 extends \ArrayObje
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoPullsPullNumberUpdateBranchPutResponse202 extends \ArrayObje
      *
      * @return string
      */
-    public function getMessage() : string
+    public function getMessage(): string
     {
         return $this->message;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoPullsPullNumberUpdateBranchPutResponse202 extends \ArrayObje
      *
      * @return self
      */
-    public function setMessage(string $message) : self
+    public function setMessage(string $message): self
     {
         $this->initialized['message'] = true;
         $this->message = $message;
@@ -51,7 +51,7 @@ class ReposOwnerRepoPullsPullNumberUpdateBranchPutResponse202 extends \ArrayObje
      *
      * @return string
      */
-    public function getUrl() : string
+    public function getUrl(): string
     {
         return $this->url;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoPullsPullNumberUpdateBranchPutResponse202 extends \ArrayObje
      *
      * @return self
      */
-    public function setUrl(string $url) : self
+    public function setUrl(string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;

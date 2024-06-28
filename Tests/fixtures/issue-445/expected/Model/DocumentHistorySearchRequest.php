@@ -8,7 +8,7 @@ class DocumentHistorySearchRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class DocumentHistorySearchRequest
      *
      * @return \DateTime
      */
-    public function getFrom() : \DateTime
+    public function getFrom(): \DateTime
     {
         return $this->from;
     }
@@ -76,7 +76,7 @@ class DocumentHistorySearchRequest
      *
      * @return self
      */
-    public function setFrom(\DateTime $from) : self
+    public function setFrom(\DateTime $from): self
     {
         $this->initialized['from'] = true;
         $this->from = $from;
@@ -87,7 +87,7 @@ class DocumentHistorySearchRequest
      *
      * @return \DateTime
      */
-    public function getTo() : \DateTime
+    public function getTo(): \DateTime
     {
         return $this->to;
     }
@@ -98,7 +98,7 @@ class DocumentHistorySearchRequest
      *
      * @return self
      */
-    public function setTo(\DateTime $to) : self
+    public function setTo(\DateTime $to): self
     {
         $this->initialized['to'] = true;
         $this->to = $to;
@@ -109,7 +109,7 @@ class DocumentHistorySearchRequest
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -120,7 +120,7 @@ class DocumentHistorySearchRequest
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -131,7 +131,7 @@ class DocumentHistorySearchRequest
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -142,7 +142,7 @@ class DocumentHistorySearchRequest
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;
@@ -153,7 +153,7 @@ class DocumentHistorySearchRequest
      *
      * @return string|null
      */
-    public function getDocumentId() : ?string
+    public function getDocumentId(): ?string
     {
         return $this->documentId;
     }
@@ -164,7 +164,7 @@ class DocumentHistorySearchRequest
      *
      * @return self
      */
-    public function setDocumentId(?string $documentId) : self
+    public function setDocumentId(?string $documentId): self
     {
         $this->initialized['documentId'] = true;
         $this->documentId = $documentId;
@@ -175,7 +175,7 @@ class DocumentHistorySearchRequest
      *
      * @return int
      */
-    public function getDocumentVersion() : int
+    public function getDocumentVersion(): int
     {
         return $this->documentVersion;
     }
@@ -186,7 +186,7 @@ class DocumentHistorySearchRequest
      *
      * @return self
      */
-    public function setDocumentVersion(int $documentVersion) : self
+    public function setDocumentVersion(int $documentVersion): self
     {
         $this->initialized['documentVersion'] = true;
         $this->documentVersion = $documentVersion;
@@ -197,7 +197,7 @@ class DocumentHistorySearchRequest
      *
      * @return string|null
      */
-    public function getDocumentType() : ?string
+    public function getDocumentType(): ?string
     {
         return $this->documentType;
     }
@@ -208,7 +208,7 @@ class DocumentHistorySearchRequest
      *
      * @return self
      */
-    public function setDocumentType(?string $documentType) : self
+    public function setDocumentType(?string $documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;
@@ -219,7 +219,7 @@ class DocumentHistorySearchRequest
      *
      * @return list<SortInfo>|null
      */
-    public function getSort() : ?array
+    public function getSort(): ?array
     {
         return $this->sort;
     }
@@ -230,7 +230,7 @@ class DocumentHistorySearchRequest
      *
      * @return self
      */
-    public function setSort(?array $sort) : self
+    public function setSort(?array $sort): self
     {
         $this->initialized['sort'] = true;
         $this->sort = $sort;

@@ -8,7 +8,7 @@ class TransferSearchRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -54,7 +54,7 @@ class TransferSearchRequest
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -65,7 +65,7 @@ class TransferSearchRequest
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -76,7 +76,7 @@ class TransferSearchRequest
      *
      * @return list<string>|null
      */
-    public function getSearchBehaviors() : ?array
+    public function getSearchBehaviors(): ?array
     {
         return $this->searchBehaviors;
     }
@@ -87,7 +87,7 @@ class TransferSearchRequest
      *
      * @return self
      */
-    public function setSearchBehaviors(?array $searchBehaviors) : self
+    public function setSearchBehaviors(?array $searchBehaviors): self
     {
         $this->initialized['searchBehaviors'] = true;
         $this->searchBehaviors = $searchBehaviors;
@@ -98,7 +98,7 @@ class TransferSearchRequest
      *
      * @return int
      */
-    public function getLimit() : int
+    public function getLimit(): int
     {
         return $this->limit;
     }
@@ -109,7 +109,7 @@ class TransferSearchRequest
      *
      * @return self
      */
-    public function setLimit(int $limit) : self
+    public function setLimit(int $limit): self
     {
         $this->initialized['limit'] = true;
         $this->limit = $limit;
@@ -120,7 +120,7 @@ class TransferSearchRequest
      *
      * @return string|null
      */
-    public function getPageToken() : ?string
+    public function getPageToken(): ?string
     {
         return $this->pageToken;
     }
@@ -131,7 +131,7 @@ class TransferSearchRequest
      *
      * @return self
      */
-    public function setPageToken(?string $pageToken) : self
+    public function setPageToken(?string $pageToken): self
     {
         $this->initialized['pageToken'] = true;
         $this->pageToken = $pageToken;
@@ -153,7 +153,7 @@ class TransferSearchRequest
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -165,7 +165,7 @@ class TransferSearchRequest
     *
     * @return bool
     */
-    public function getDebugMode() : bool
+    public function getDebugMode(): bool
     {
         return $this->debugMode;
     }
@@ -177,7 +177,7 @@ class TransferSearchRequest
     *
     * @return self
     */
-    public function setDebugMode(bool $debugMode) : self
+    public function setDebugMode(bool $debugMode): self
     {
         $this->initialized['debugMode'] = true;
         $this->debugMode = $debugMode;

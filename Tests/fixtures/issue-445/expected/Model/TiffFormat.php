@@ -8,7 +8,7 @@ class TiffFormat extends FormatBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -94,7 +94,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setColorProfile($colorProfile) : self
+    public function setColorProfile($colorProfile): self
     {
         $this->initialized['colorProfile'] = true;
         $this->colorProfile = $colorProfile;
@@ -116,7 +116,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setColorTransformationIntent($colorTransformationIntent) : self
+    public function setColorTransformationIntent($colorTransformationIntent): self
     {
         $this->initialized['colorTransformationIntent'] = true;
         $this->colorTransformationIntent = $colorTransformationIntent;
@@ -127,7 +127,7 @@ class TiffFormat extends FormatBase
      *
      * @return float|null
      */
-    public function getHorizontalResolution() : ?float
+    public function getHorizontalResolution(): ?float
     {
         return $this->horizontalResolution;
     }
@@ -138,7 +138,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setHorizontalResolution(?float $horizontalResolution) : self
+    public function setHorizontalResolution(?float $horizontalResolution): self
     {
         $this->initialized['horizontalResolution'] = true;
         $this->horizontalResolution = $horizontalResolution;
@@ -149,7 +149,7 @@ class TiffFormat extends FormatBase
      *
      * @return float|null
      */
-    public function getVerticalResolution() : ?float
+    public function getVerticalResolution(): ?float
     {
         return $this->verticalResolution;
     }
@@ -160,7 +160,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setVerticalResolution(?float $verticalResolution) : self
+    public function setVerticalResolution(?float $verticalResolution): self
     {
         $this->initialized['verticalResolution'] = true;
         $this->verticalResolution = $verticalResolution;
@@ -171,7 +171,7 @@ class TiffFormat extends FormatBase
      *
      * @return bool
      */
-    public function getKeepClippingPath() : bool
+    public function getKeepClippingPath(): bool
     {
         return $this->keepClippingPath;
     }
@@ -182,7 +182,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setKeepClippingPath(bool $keepClippingPath) : self
+    public function setKeepClippingPath(bool $keepClippingPath): self
     {
         $this->initialized['keepClippingPath'] = true;
         $this->keepClippingPath = $keepClippingPath;
@@ -204,7 +204,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setResizeAction($resizeAction) : self
+    public function setResizeAction($resizeAction): self
     {
         $this->initialized['resizeAction'] = true;
         $this->resizeAction = $resizeAction;
@@ -215,7 +215,7 @@ class TiffFormat extends FormatBase
      *
      * @return list<ImageActionBase>|null
      */
-    public function getActions() : ?array
+    public function getActions(): ?array
     {
         return $this->actions;
     }
@@ -226,7 +226,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setActions(?array $actions) : self
+    public function setActions(?array $actions): self
     {
         $this->initialized['actions'] = true;
         $this->actions = $actions;
@@ -237,7 +237,7 @@ class TiffFormat extends FormatBase
      *
      * @return bool
      */
-    public function getAlphaPremultiplied() : bool
+    public function getAlphaPremultiplied(): bool
     {
         return $this->alphaPremultiplied;
     }
@@ -248,7 +248,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setAlphaPremultiplied(bool $alphaPremultiplied) : self
+    public function setAlphaPremultiplied(bool $alphaPremultiplied): self
     {
         $this->initialized['alphaPremultiplied'] = true;
         $this->alphaPremultiplied = $alphaPremultiplied;
@@ -270,7 +270,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setCompressionType($compressionType) : self
+    public function setCompressionType($compressionType): self
     {
         $this->initialized['compressionType'] = true;
         $this->compressionType = $compressionType;
@@ -281,7 +281,7 @@ class TiffFormat extends FormatBase
      *
      * @return bool
      */
-    public function getIncludeUnspecifiedTiffExtraChannels() : bool
+    public function getIncludeUnspecifiedTiffExtraChannels(): bool
     {
         return $this->includeUnspecifiedTiffExtraChannels;
     }
@@ -292,7 +292,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setIncludeUnspecifiedTiffExtraChannels(bool $includeUnspecifiedTiffExtraChannels) : self
+    public function setIncludeUnspecifiedTiffExtraChannels(bool $includeUnspecifiedTiffExtraChannels): self
     {
         $this->initialized['includeUnspecifiedTiffExtraChannels'] = true;
         $this->includeUnspecifiedTiffExtraChannels = $includeUnspecifiedTiffExtraChannels;
@@ -303,7 +303,7 @@ class TiffFormat extends FormatBase
      *
      * @return string|null
      */
-    public function getExtension() : ?string
+    public function getExtension(): ?string
     {
         return $this->extension;
     }
@@ -314,7 +314,7 @@ class TiffFormat extends FormatBase
      *
      * @return self
      */
-    public function setExtension(?string $extension) : self
+    public function setExtension(?string $extension): self
     {
         $this->initialized['extension'] = true;
         $this->extension = $extension;

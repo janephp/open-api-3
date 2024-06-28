@@ -8,7 +8,7 @@ class ShareDataBasic extends ShareDataBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class ShareDataBasic extends ShareDataBase
      *
      * @return list<MailRecipient>
      */
-    public function getMailRecipients() : array
+    public function getMailRecipients(): array
     {
         return $this->mailRecipients;
     }
@@ -46,7 +46,7 @@ class ShareDataBasic extends ShareDataBase
      *
      * @return self
      */
-    public function setMailRecipients(array $mailRecipients) : self
+    public function setMailRecipients(array $mailRecipients): self
     {
         $this->initialized['mailRecipients'] = true;
         $this->mailRecipients = $mailRecipients;
@@ -57,7 +57,7 @@ class ShareDataBasic extends ShareDataBase
      *
      * @return list<InternalRecipient>
      */
-    public function getInternalRecipients() : array
+    public function getInternalRecipients(): array
     {
         return $this->internalRecipients;
     }
@@ -68,7 +68,7 @@ class ShareDataBasic extends ShareDataBase
      *
      * @return self
      */
-    public function setInternalRecipients(array $internalRecipients) : self
+    public function setInternalRecipients(array $internalRecipients): self
     {
         $this->initialized['internalRecipients'] = true;
         $this->internalRecipients = $internalRecipients;
@@ -79,7 +79,7 @@ class ShareDataBasic extends ShareDataBase
      *
      * @return string|null
      */
-    public function getLanguageCode() : ?string
+    public function getLanguageCode(): ?string
     {
         return $this->languageCode;
     }
@@ -90,7 +90,7 @@ class ShareDataBasic extends ShareDataBase
      *
      * @return self
      */
-    public function setLanguageCode(?string $languageCode) : self
+    public function setLanguageCode(?string $languageCode): self
     {
         $this->initialized['languageCode'] = true;
         $this->languageCode = $languageCode;

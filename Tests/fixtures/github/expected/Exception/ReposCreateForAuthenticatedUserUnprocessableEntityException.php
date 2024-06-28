@@ -18,11 +18,11 @@ class ReposCreateForAuthenticatedUserUnprocessableEntityException extends Unproc
         $this->validationError = $validationError;
         $this->response = $response;
     }
-    public function getValidationError() : \Github\Model\ValidationError
+    public function getValidationError(): \Github\Model\ValidationError
     {
         return $this->validationError;
     }
-    public function getResponse() : \Psr\Http\Message\ResponseInterface
+    public function getResponse(): \Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

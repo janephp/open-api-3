@@ -8,7 +8,7 @@ class ShareOutputBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class ShareOutputBase
      *
      * @return string
      */
-    public function getContentId() : string
+    public function getContentId(): string
     {
         return $this->contentId;
     }
@@ -78,7 +78,7 @@ class ShareOutputBase
      *
      * @return string
      */
-    public function getOutputFormatId() : string
+    public function getOutputFormatId(): string
     {
         return $this->outputFormatId;
     }
@@ -97,7 +97,7 @@ class ShareOutputBase
      *
      * @return string|null
      */
-    public function getViewUrl() : ?string
+    public function getViewUrl(): ?string
     {
         return $this->viewUrl;
     }
@@ -116,7 +116,7 @@ class ShareOutputBase
      *
      * @return string|null
      */
-    public function getDownloadUrl() : ?string
+    public function getDownloadUrl(): ?string
     {
         return $this->downloadUrl;
     }
@@ -154,7 +154,7 @@ class ShareOutputBase
      *
      * @return bool
      */
-    public function getDynamicRendering() : bool
+    public function getDynamicRendering(): bool
     {
         return $this->dynamicRendering;
     }
@@ -173,7 +173,7 @@ class ShareOutputBase
      *
      * @return string
      */
-    public function getKind() : string
+    public function getKind(): string
     {
         return $this->kind;
     }

@@ -8,7 +8,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -72,7 +72,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -83,7 +83,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -94,7 +94,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getDetailsUrl() : string
+    public function getDetailsUrl(): string
     {
         return $this->detailsUrl;
     }
@@ -105,7 +105,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setDetailsUrl(string $detailsUrl) : self
+    public function setDetailsUrl(string $detailsUrl): self
     {
         $this->initialized['detailsUrl'] = true;
         $this->detailsUrl = $detailsUrl;
@@ -116,7 +116,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getExternalId() : string
+    public function getExternalId(): string
     {
         return $this->externalId;
     }
@@ -127,7 +127,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setExternalId(string $externalId) : self
+    public function setExternalId(string $externalId): self
     {
         $this->initialized['externalId'] = true;
         $this->externalId = $externalId;
@@ -138,7 +138,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getStartedAt() : string
+    public function getStartedAt(): string
     {
         return $this->startedAt;
     }
@@ -149,7 +149,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setStartedAt(string $startedAt) : self
+    public function setStartedAt(string $startedAt): self
     {
         $this->initialized['startedAt'] = true;
         $this->startedAt = $startedAt;
@@ -160,7 +160,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getStatus() : string
+    public function getStatus(): string
     {
         return $this->status;
     }
@@ -171,7 +171,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setStatus(string $status) : self
+    public function setStatus(string $status): self
     {
         $this->initialized['status'] = true;
         $this->status = $status;
@@ -183,7 +183,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
     *
     * @return string
     */
-    public function getConclusion() : string
+    public function getConclusion(): string
     {
         return $this->conclusion;
     }
@@ -195,7 +195,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
     *
     * @return self
     */
-    public function setConclusion(string $conclusion) : self
+    public function setConclusion(string $conclusion): self
     {
         $this->initialized['conclusion'] = true;
         $this->conclusion = $conclusion;
@@ -206,7 +206,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCompletedAt() : string
+    public function getCompletedAt(): string
     {
         return $this->completedAt;
     }
@@ -217,7 +217,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCompletedAt(string $completedAt) : self
+    public function setCompletedAt(string $completedAt): self
     {
         $this->initialized['completedAt'] = true;
         $this->completedAt = $completedAt;
@@ -228,7 +228,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput
      */
-    public function getOutput() : ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput
+    public function getOutput(): ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput
     {
         return $this->output;
     }
@@ -239,7 +239,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setOutput(ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput $output) : self
+    public function setOutput(ReposOwnerRepoCheckRunsCheckRunIdPatchBodyOutput $output): self
     {
         $this->initialized['output'] = true;
         $this->output = $output;
@@ -250,7 +250,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return list<ReposOwnerRepoCheckRunsCheckRunIdPatchBodyActionsItem>
      */
-    public function getActions() : array
+    public function getActions(): array
     {
         return $this->actions;
     }
@@ -261,7 +261,7 @@ class ReposOwnerRepoCheckRunsCheckRunIdPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setActions(array $actions) : self
+    public function setActions(array $actions): self
     {
         $this->initialized['actions'] = true;
         $this->actions = $actions;

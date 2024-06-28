@@ -8,7 +8,7 @@ class BusinessRuleConfiguration
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -35,7 +35,7 @@ class BusinessRuleConfiguration
      *
      * @return bool
      */
-    public function getDisableRuleEngine() : bool
+    public function getDisableRuleEngine(): bool
     {
         return $this->disableRuleEngine;
     }
@@ -46,7 +46,7 @@ class BusinessRuleConfiguration
      *
      * @return self
      */
-    public function setDisableRuleEngine(bool $disableRuleEngine) : self
+    public function setDisableRuleEngine(bool $disableRuleEngine): self
     {
         $this->initialized['disableRuleEngine'] = true;
         $this->disableRuleEngine = $disableRuleEngine;
@@ -57,7 +57,7 @@ class BusinessRuleConfiguration
      *
      * @return list<BusinessRule>|null
      */
-    public function getRules() : ?array
+    public function getRules(): ?array
     {
         return $this->rules;
     }
@@ -68,7 +68,7 @@ class BusinessRuleConfiguration
      *
      * @return self
      */
-    public function setRules(?array $rules) : self
+    public function setRules(?array $rules): self
     {
         $this->initialized['rules'] = true;
         $this->rules = $rules;
@@ -79,7 +79,7 @@ class BusinessRuleConfiguration
      *
      * @return list<NamedCacheConfigurationBase>|null
      */
-    public function getCaches() : ?array
+    public function getCaches(): ?array
     {
         return $this->caches;
     }
@@ -90,7 +90,7 @@ class BusinessRuleConfiguration
      *
      * @return self
      */
-    public function setCaches(?array $caches) : self
+    public function setCaches(?array $caches): self
     {
         $this->initialized['caches'] = true;
         $this->caches = $caches;

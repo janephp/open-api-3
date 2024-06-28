@@ -8,7 +8,7 @@ class RulesResponseMetadata extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class RulesResponseMetadata extends \ArrayObject
      *
      * @return string
      */
-    public function getSent() : string
+    public function getSent(): string
     {
         return $this->sent;
     }
@@ -40,7 +40,7 @@ class RulesResponseMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setSent(string $sent) : self
+    public function setSent(string $sent): self
     {
         $this->initialized['sent'] = true;
         $this->sent = $sent;
@@ -51,7 +51,7 @@ class RulesResponseMetadata extends \ArrayObject
      *
      * @return array<string, mixed>
      */
-    public function getSummary() : iterable
+    public function getSummary(): iterable
     {
         return $this->summary;
     }
@@ -62,7 +62,7 @@ class RulesResponseMetadata extends \ArrayObject
      *
      * @return self
      */
-    public function setSummary(iterable $summary) : self
+    public function setSummary(iterable $summary): self
     {
         $this->initialized['summary'] = true;
         $this->summary = $summary;

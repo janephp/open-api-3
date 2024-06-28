@@ -8,7 +8,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -64,7 +64,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -75,7 +75,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getResourceId() : string
+    public function getResourceId(): string
     {
         return $this->resourceId;
     }
@@ -86,7 +86,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setResourceId(string $resourceId) : self
+    public function setResourceId(string $resourceId): self
     {
         $this->initialized['resourceId'] = true;
         $this->resourceId = $resourceId;
@@ -97,7 +97,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getResourceType() : string
+    public function getResourceType(): string
     {
         return $this->resourceType;
     }
@@ -108,7 +108,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setResourceType(string $resourceType) : self
+    public function setResourceType(string $resourceType): self
     {
         $this->initialized['resourceType'] = true;
         $this->resourceType = $resourceType;
@@ -119,7 +119,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getSection() : string
+    public function getSection(): string
     {
         return $this->section;
     }
@@ -130,7 +130,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setSection(string $section) : self
+    public function setSection(string $section): self
     {
         $this->initialized['section'] = true;
         $this->section = $section;
@@ -141,7 +141,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -152,7 +152,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -163,7 +163,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return string
      */
-    public function getDetail() : string
+    public function getDetail(): string
     {
         return $this->detail;
     }
@@ -174,7 +174,7 @@ class ResourceUnauthorizedProblem extends \ArrayObject
      *
      * @return self
      */
-    public function setDetail(string $detail) : self
+    public function setDetail(string $detail): self
     {
         $this->initialized['detail'] = true;
         $this->detail = $detail;

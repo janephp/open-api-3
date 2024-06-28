@@ -8,7 +8,7 @@ class UserSearchAndAggregationBaseRequest
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -71,7 +71,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -82,7 +82,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -93,7 +93,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return list<string>|null
      */
-    public function getSearchBehaviors() : ?array
+    public function getSearchBehaviors(): ?array
     {
         return $this->searchBehaviors;
     }
@@ -104,7 +104,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return self
      */
-    public function setSearchBehaviors(?array $searchBehaviors) : self
+    public function setSearchBehaviors(?array $searchBehaviors): self
     {
         $this->initialized['searchBehaviors'] = true;
         $this->searchBehaviors = $searchBehaviors;
@@ -126,7 +126,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return self
      */
-    public function setFilter($filter) : self
+    public function setFilter($filter): self
     {
         $this->initialized['filter'] = true;
         $this->filter = $filter;
@@ -148,7 +148,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return self
      */
-    public function setLifeCycleFilter($lifeCycleFilter) : self
+    public function setLifeCycleFilter($lifeCycleFilter): self
     {
         $this->initialized['lifeCycleFilter'] = true;
         $this->lifeCycleFilter = $lifeCycleFilter;
@@ -159,7 +159,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return list<string>|null
      */
-    public function getUserRightsFilter() : ?array
+    public function getUserRightsFilter(): ?array
     {
         return $this->userRightsFilter;
     }
@@ -170,7 +170,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return self
      */
-    public function setUserRightsFilter(?array $userRightsFilter) : self
+    public function setUserRightsFilter(?array $userRightsFilter): self
     {
         $this->initialized['userRightsFilter'] = true;
         $this->userRightsFilter = $userRightsFilter;
@@ -186,7 +186,7 @@ class UserSearchAndAggregationBaseRequest
     *
     * @return list<AggregationFilter>|null
     */
-    public function getAggregationFilters() : ?array
+    public function getAggregationFilters(): ?array
     {
         return $this->aggregationFilters;
     }
@@ -202,7 +202,7 @@ class UserSearchAndAggregationBaseRequest
     *
     * @return self
     */
-    public function setAggregationFilters(?array $aggregationFilters) : self
+    public function setAggregationFilters(?array $aggregationFilters): self
     {
         $this->initialized['aggregationFilters'] = true;
         $this->aggregationFilters = $aggregationFilters;
@@ -213,7 +213,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return bool
      */
-    public function getIncludeServiceUser() : bool
+    public function getIncludeServiceUser(): bool
     {
         return $this->includeServiceUser;
     }
@@ -224,7 +224,7 @@ class UserSearchAndAggregationBaseRequest
      *
      * @return self
      */
-    public function setIncludeServiceUser(bool $includeServiceUser) : self
+    public function setIncludeServiceUser(bool $includeServiceUser): self
     {
         $this->initialized['includeServiceUser'] = true;
         $this->includeServiceUser = $includeServiceUser;
@@ -236,7 +236,7 @@ class UserSearchAndAggregationBaseRequest
     *
     * @return bool
     */
-    public function getEditableOnly() : bool
+    public function getEditableOnly(): bool
     {
         return $this->editableOnly;
     }
@@ -248,7 +248,7 @@ class UserSearchAndAggregationBaseRequest
     *
     * @return self
     */
-    public function setEditableOnly(bool $editableOnly) : self
+    public function setEditableOnly(bool $editableOnly): self
     {
         $this->initialized['editableOnly'] = true;
         $this->editableOnly = $editableOnly;

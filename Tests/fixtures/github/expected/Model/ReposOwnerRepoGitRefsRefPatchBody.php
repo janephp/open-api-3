@@ -8,7 +8,7 @@ class ReposOwnerRepoGitRefsRefPatchBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoGitRefsRefPatchBody extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoGitRefsRefPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -51,7 +51,7 @@ class ReposOwnerRepoGitRefsRefPatchBody extends \ArrayObject
      *
      * @return bool
      */
-    public function getForce() : bool
+    public function getForce(): bool
     {
         return $this->force;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoGitRefsRefPatchBody extends \ArrayObject
      *
      * @return self
      */
-    public function setForce(bool $force) : self
+    public function setForce(bool $force): self
     {
         $this->initialized['force'] = true;
         $this->force = $force;

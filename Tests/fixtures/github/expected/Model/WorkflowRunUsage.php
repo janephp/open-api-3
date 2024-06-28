@@ -8,7 +8,7 @@ class WorkflowRunUsage extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class WorkflowRunUsage extends \ArrayObject
      *
      * @return WorkflowRunUsageBillable
      */
-    public function getBillable() : WorkflowRunUsageBillable
+    public function getBillable(): WorkflowRunUsageBillable
     {
         return $this->billable;
     }
@@ -40,7 +40,7 @@ class WorkflowRunUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setBillable(WorkflowRunUsageBillable $billable) : self
+    public function setBillable(WorkflowRunUsageBillable $billable): self
     {
         $this->initialized['billable'] = true;
         $this->billable = $billable;
@@ -51,7 +51,7 @@ class WorkflowRunUsage extends \ArrayObject
      *
      * @return int
      */
-    public function getRunDurationMs() : int
+    public function getRunDurationMs(): int
     {
         return $this->runDurationMs;
     }
@@ -62,7 +62,7 @@ class WorkflowRunUsage extends \ArrayObject
      *
      * @return self
      */
-    public function setRunDurationMs(int $runDurationMs) : self
+    public function setRunDurationMs(int $runDurationMs): self
     {
         $this->initialized['runDurationMs'] = true;
         $this->runDurationMs = $runDurationMs;

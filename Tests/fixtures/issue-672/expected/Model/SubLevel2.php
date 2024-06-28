@@ -8,7 +8,7 @@ class SubLevel2 extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class SubLevel2 extends \ArrayObject
      *
      * @return SubLevel3
      */
-    public function getSubLevel3() : SubLevel3
+    public function getSubLevel3(): SubLevel3
     {
         return $this->subLevel3;
     }
@@ -34,7 +34,7 @@ class SubLevel2 extends \ArrayObject
      *
      * @return self
      */
-    public function setSubLevel3(SubLevel3 $subLevel3) : self
+    public function setSubLevel3(SubLevel3 $subLevel3): self
     {
         $this->initialized['subLevel3'] = true;
         $this->subLevel3 = $subLevel3;

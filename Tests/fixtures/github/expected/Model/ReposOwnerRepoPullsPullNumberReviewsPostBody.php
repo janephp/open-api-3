@@ -8,7 +8,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBody extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -41,7 +41,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getCommitId() : string
+    public function getCommitId(): string
     {
         return $this->commitId;
     }
@@ -52,7 +52,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitId(string $commitId) : self
+    public function setCommitId(string $commitId): self
     {
         $this->initialized['commitId'] = true;
         $this->commitId = $commitId;
@@ -63,7 +63,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
@@ -74,7 +74,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setBody(string $body) : self
+    public function setBody(string $body): self
     {
         $this->initialized['body'] = true;
         $this->body = $body;
@@ -85,7 +85,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBody extends \ArrayObject
      *
      * @return string
      */
-    public function getEvent() : string
+    public function getEvent(): string
     {
         return $this->event;
     }
@@ -96,7 +96,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setEvent(string $event) : self
+    public function setEvent(string $event): self
     {
         $this->initialized['event'] = true;
         $this->event = $event;
@@ -107,7 +107,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBody extends \ArrayObject
      *
      * @return list<ReposOwnerRepoPullsPullNumberReviewsPostBodyCommentsItem>
      */
-    public function getComments() : array
+    public function getComments(): array
     {
         return $this->comments;
     }
@@ -118,7 +118,7 @@ class ReposOwnerRepoPullsPullNumberReviewsPostBody extends \ArrayObject
      *
      * @return self
      */
-    public function setComments(array $comments) : self
+    public function setComments(array $comments): self
     {
         $this->initialized['comments'] = true;
         $this->comments = $comments;

@@ -8,7 +8,7 @@ class UserRoleAssignManyRequest extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -36,7 +36,7 @@ class UserRoleAssignManyRequest extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getUserIds() : array
+    public function getUserIds(): array
     {
         return $this->userIds;
     }
@@ -47,7 +47,7 @@ class UserRoleAssignManyRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUserIds(array $userIds) : self
+    public function setUserIds(array $userIds): self
     {
         $this->initialized['userIds'] = true;
         $this->userIds = $userIds;
@@ -58,7 +58,7 @@ class UserRoleAssignManyRequest extends \ArrayObject
      *
      * @return list<string>
      */
-    public function getUserRoleIds() : array
+    public function getUserRoleIds(): array
     {
         return $this->userRoleIds;
     }
@@ -69,7 +69,7 @@ class UserRoleAssignManyRequest extends \ArrayObject
      *
      * @return self
      */
-    public function setUserRoleIds(array $userRoleIds) : self
+    public function setUserRoleIds(array $userRoleIds): self
     {
         $this->initialized['userRoleIds'] = true;
         $this->userRoleIds = $userRoleIds;
@@ -93,7 +93,7 @@ class UserRoleAssignManyRequest extends \ArrayObject
     *
     * @return self
     */
-    public function setOperation($operation) : self
+    public function setOperation($operation): self
     {
         $this->initialized['operation'] = true;
         $this->operation = $operation;

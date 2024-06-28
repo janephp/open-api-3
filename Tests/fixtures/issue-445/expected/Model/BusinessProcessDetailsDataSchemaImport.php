@@ -8,7 +8,7 @@ class BusinessProcessDetailsDataSchemaImport extends BusinessProcessDetailsDataB
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -40,7 +40,7 @@ class BusinessProcessDetailsDataSchemaImport extends BusinessProcessDetailsDataB
      *
      * @return self
      */
-    public function setSchemaImportResult($schemaImportResult) : self
+    public function setSchemaImportResult($schemaImportResult): self
     {
         $this->initialized['schemaImportResult'] = true;
         $this->schemaImportResult = $schemaImportResult;
@@ -62,7 +62,7 @@ class BusinessProcessDetailsDataSchemaImport extends BusinessProcessDetailsDataB
      *
      * @return self
      */
-    public function setListItemImportResult($listItemImportResult) : self
+    public function setListItemImportResult($listItemImportResult): self
     {
         $this->initialized['listItemImportResult'] = true;
         $this->listItemImportResult = $listItemImportResult;

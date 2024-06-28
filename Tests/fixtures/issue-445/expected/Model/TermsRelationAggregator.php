@@ -8,7 +8,7 @@ class TermsRelationAggregator extends AggregatorBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return string
      */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -70,7 +70,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -81,7 +81,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return int|null
      */
-    public function getSize() : ?int
+    public function getSize(): ?int
     {
         return $this->size;
     }
@@ -92,7 +92,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setSize(?int $size) : self
+    public function setSize(?int $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;
@@ -103,7 +103,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return list<string>|null
      */
-    public function getIncludes() : ?array
+    public function getIncludes(): ?array
     {
         return $this->includes;
     }
@@ -114,7 +114,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setIncludes(?array $includes) : self
+    public function setIncludes(?array $includes): self
     {
         $this->initialized['includes'] = true;
         $this->includes = $includes;
@@ -125,7 +125,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return list<string>|null
      */
-    public function getExcludes() : ?array
+    public function getExcludes(): ?array
     {
         return $this->excludes;
     }
@@ -136,7 +136,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setExcludes(?array $excludes) : self
+    public function setExcludes(?array $excludes): self
     {
         $this->initialized['excludes'] = true;
         $this->excludes = $excludes;
@@ -147,7 +147,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return string|null
      */
-    public function getSearchString() : ?string
+    public function getSearchString(): ?string
     {
         return $this->searchString;
     }
@@ -158,7 +158,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setSearchString(?string $searchString) : self
+    public function setSearchString(?string $searchString): self
     {
         $this->initialized['searchString'] = true;
         $this->searchString = $searchString;
@@ -169,7 +169,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return list<string>|null
      */
-    public function getSearchFields() : ?array
+    public function getSearchFields(): ?array
     {
         return $this->searchFields;
     }
@@ -180,7 +180,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setSearchFields(?array $searchFields) : self
+    public function setSearchFields(?array $searchFields): self
     {
         $this->initialized['searchFields'] = true;
         $this->searchFields = $searchFields;
@@ -202,7 +202,7 @@ class TermsRelationAggregator extends AggregatorBase
      *
      * @return self
      */
-    public function setDocumentType($documentType) : self
+    public function setDocumentType($documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;

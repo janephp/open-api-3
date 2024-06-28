@@ -8,7 +8,7 @@ class OutputResolveResult
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class OutputResolveResult
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -64,7 +64,7 @@ class OutputResolveResult
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -75,7 +75,7 @@ class OutputResolveResult
      *
      * @return string
      */
-    public function getOutputFormatId() : string
+    public function getOutputFormatId(): string
     {
         return $this->outputFormatId;
     }
@@ -86,7 +86,7 @@ class OutputResolveResult
      *
      * @return self
      */
-    public function setOutputFormatId(string $outputFormatId) : self
+    public function setOutputFormatId(string $outputFormatId): self
     {
         $this->initialized['outputFormatId'] = true;
         $this->outputFormatId = $outputFormatId;
@@ -97,7 +97,7 @@ class OutputResolveResult
      *
      * @return string
      */
-    public function getContentId() : string
+    public function getContentId(): string
     {
         return $this->contentId;
     }
@@ -108,7 +108,7 @@ class OutputResolveResult
      *
      * @return self
      */
-    public function setContentId(string $contentId) : self
+    public function setContentId(string $contentId): self
     {
         $this->initialized['contentId'] = true;
         $this->contentId = $contentId;
@@ -130,7 +130,7 @@ class OutputResolveResult
      *
      * @return self
      */
-    public function setRenderingState($renderingState) : self
+    public function setRenderingState($renderingState): self
     {
         $this->initialized['renderingState'] = true;
         $this->renderingState = $renderingState;
@@ -141,7 +141,7 @@ class OutputResolveResult
      *
      * @return bool
      */
-    public function getDynamicRendering() : bool
+    public function getDynamicRendering(): bool
     {
         return $this->dynamicRendering;
     }
@@ -152,7 +152,7 @@ class OutputResolveResult
      *
      * @return self
      */
-    public function setDynamicRendering(bool $dynamicRendering) : self
+    public function setDynamicRendering(bool $dynamicRendering): self
     {
         $this->initialized['dynamicRendering'] = true;
         $this->dynamicRendering = $dynamicRendering;
@@ -163,7 +163,7 @@ class OutputResolveResult
      *
      * @return int|null
      */
-    public function getFileSize() : ?int
+    public function getFileSize(): ?int
     {
         return $this->fileSize;
     }
@@ -174,7 +174,7 @@ class OutputResolveResult
      *
      * @return self
      */
-    public function setFileSize(?int $fileSize) : self
+    public function setFileSize(?int $fileSize): self
     {
         $this->initialized['fileSize'] = true;
         $this->fileSize = $fileSize;

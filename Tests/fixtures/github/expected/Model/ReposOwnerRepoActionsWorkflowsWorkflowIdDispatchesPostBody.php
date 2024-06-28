@@ -8,7 +8,7 @@ class ReposOwnerRepoActionsWorkflowsWorkflowIdDispatchesPostBody extends \ArrayO
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class ReposOwnerRepoActionsWorkflowsWorkflowIdDispatchesPostBody extends \ArrayO
      *
      * @return string
      */
-    public function getRef() : string
+    public function getRef(): string
     {
         return $this->ref;
     }
@@ -40,7 +40,7 @@ class ReposOwnerRepoActionsWorkflowsWorkflowIdDispatchesPostBody extends \ArrayO
      *
      * @return self
      */
-    public function setRef(string $ref) : self
+    public function setRef(string $ref): self
     {
         $this->initialized['ref'] = true;
         $this->ref = $ref;
@@ -51,7 +51,7 @@ class ReposOwnerRepoActionsWorkflowsWorkflowIdDispatchesPostBody extends \ArrayO
      *
      * @return array<string, string>
      */
-    public function getInputs() : iterable
+    public function getInputs(): iterable
     {
         return $this->inputs;
     }
@@ -62,7 +62,7 @@ class ReposOwnerRepoActionsWorkflowsWorkflowIdDispatchesPostBody extends \ArrayO
      *
      * @return self
      */
-    public function setInputs(iterable $inputs) : self
+    public function setInputs(iterable $inputs): self
     {
         $this->initialized['inputs'] = true;
         $this->inputs = $inputs;

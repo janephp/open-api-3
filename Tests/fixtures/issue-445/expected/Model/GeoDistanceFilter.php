@@ -8,7 +8,7 @@ class GeoDistanceFilter extends FilterBase
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -37,7 +37,7 @@ class GeoDistanceFilter extends FilterBase
     *
     * @return string
     */
-    public function getField() : string
+    public function getField(): string
     {
         return $this->field;
     }
@@ -49,7 +49,7 @@ class GeoDistanceFilter extends FilterBase
     *
     * @return self
     */
-    public function setField(string $field) : self
+    public function setField(string $field): self
     {
         $this->initialized['field'] = true;
         $this->field = $field;
@@ -71,7 +71,7 @@ class GeoDistanceFilter extends FilterBase
      *
      * @return self
      */
-    public function setLocation($location) : self
+    public function setLocation($location): self
     {
         $this->initialized['location'] = true;
         $this->location = $location;
@@ -82,7 +82,7 @@ class GeoDistanceFilter extends FilterBase
      *
      * @return float
      */
-    public function getDistance() : float
+    public function getDistance(): float
     {
         return $this->distance;
     }
@@ -93,7 +93,7 @@ class GeoDistanceFilter extends FilterBase
      *
      * @return self
      */
-    public function setDistance(float $distance) : self
+    public function setDistance(float $distance): self
     {
         $this->initialized['distance'] = true;
         $this->distance = $distance;

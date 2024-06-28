@@ -8,7 +8,7 @@ class EventRulesResponse extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return bool
      */
-    public function getIsActive() : bool
+    public function getIsActive(): bool
     {
         return $this->isActive;
     }
@@ -76,7 +76,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setIsActive(bool $isActive) : self
+    public function setIsActive(bool $isActive): self
     {
         $this->initialized['isActive'] = true;
         $this->isActive = $isActive;
@@ -87,7 +87,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return float
      */
-    public function getRuleCode() : float
+    public function getRuleCode(): float
     {
         return $this->ruleCode;
     }
@@ -98,7 +98,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setRuleCode(float $ruleCode) : self
+    public function setRuleCode(float $ruleCode): self
     {
         $this->initialized['ruleCode'] = true;
         $this->ruleCode = $ruleCode;
@@ -109,7 +109,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getRuleCountryCode() : string
+    public function getRuleCountryCode(): string
     {
         return $this->ruleCountryCode;
     }
@@ -120,7 +120,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setRuleCountryCode(string $ruleCountryCode) : self
+    public function setRuleCountryCode(string $ruleCountryCode): self
     {
         $this->initialized['ruleCountryCode'] = true;
         $this->ruleCountryCode = $ruleCountryCode;
@@ -131,7 +131,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return float
      */
-    public function getRuleType() : float
+    public function getRuleType(): float
     {
         return $this->ruleType;
     }
@@ -142,7 +142,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setRuleType(float $ruleType) : self
+    public function setRuleType(float $ruleType): self
     {
         $this->initialized['ruleType'] = true;
         $this->ruleType = $ruleType;
@@ -153,7 +153,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getRuleTypeName() : string
+    public function getRuleTypeName(): string
     {
         return $this->ruleTypeName;
     }
@@ -164,7 +164,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setRuleTypeName(string $ruleTypeName) : self
+    public function setRuleTypeName(string $ruleTypeName): self
     {
         $this->initialized['ruleTypeName'] = true;
         $this->ruleTypeName = $ruleTypeName;
@@ -175,7 +175,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getName() : string
+    public function getName(): string
     {
         return $this->name;
     }
@@ -186,7 +186,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(string $name): self
     {
         $this->initialized['name'] = true;
         $this->name = $name;
@@ -197,7 +197,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getParam0() : string
+    public function getParam0(): string
     {
         return $this->param0;
     }
@@ -208,7 +208,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setParam0(string $param0) : self
+    public function setParam0(string $param0): self
     {
         $this->initialized['param0'] = true;
         $this->param0 = $param0;
@@ -219,7 +219,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return string
      */
-    public function getParam1() : string
+    public function getParam1(): string
     {
         return $this->param1;
     }
@@ -230,7 +230,7 @@ class EventRulesResponse extends \ArrayObject
      *
      * @return self
      */
-    public function setParam1(string $param1) : self
+    public function setParam1(string $param1): self
     {
         $this->initialized['param1'] = true;
         $this->param1 = $param1;

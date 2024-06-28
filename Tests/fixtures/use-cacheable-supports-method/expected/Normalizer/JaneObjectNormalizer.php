@@ -20,21 +20,21 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use CheckArray;
         use ValidatorTrait;
         protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SchemaNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SchemaObjectPropertyNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
-        public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);
         }
-        public function supportsNormalization($data, $format = null, array $context = []) : bool
+        public function supportsNormalization($data, $format = null, array $context = []): bool
         {
             return is_object($data) && array_key_exists(get_class($data), $this->normalizers);
         }
-        public function normalize(mixed $object, string $format = null, array $context = []) : array|string|int|float|bool|\ArrayObject|null
+        public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $normalizerClass = $this->normalizers[get_class($object)];
             $normalizer = $this->getNormalizer($normalizerClass);
             return $normalizer->normalize($object, $format, $context);
         }
-        public function denormalize(mixed $data, string $type, string $format = null, array $context = []) : mixed
+        public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
         {
             $denormalizerClass = $this->normalizers[$type];
             $denormalizer = $this->getNormalizer($denormalizerClass);
@@ -52,7 +52,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $this->normalizersCache[$normalizerClass] = $normalizer;
             return $normalizer;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
@@ -65,11 +65,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use CheckArray;
         use ValidatorTrait;
         protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SchemaNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\SchemaObjectPropertyNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
-        public function supportsDenormalization($data, $type, $format = null, array $context = []) : bool
+        public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);
         }
-        public function supportsNormalization($data, $format = null, array $context = []) : bool
+        public function supportsNormalization($data, $format = null, array $context = []): bool
         {
             return is_object($data) && array_key_exists(get_class($data), $this->normalizers);
         }
@@ -103,11 +103,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $this->normalizersCache[$normalizerClass] = $normalizer;
             return $normalizer;
         }
-        public function getSupportedTypes(?string $format = null) : array
+        public function getSupportedTypes(?string $format = null): array
         {
             return [\Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
         }
-        public function hasCacheableSupportsMethod() : bool
+        public function hasCacheableSupportsMethod(): bool
         {
             return true;
         }

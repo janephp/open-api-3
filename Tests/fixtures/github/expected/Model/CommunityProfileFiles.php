@@ -8,7 +8,7 @@ class CommunityProfileFiles extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return CommunityProfileFilesCodeOfConduct|null
      */
-    public function getCodeOfConduct() : ?CommunityProfileFilesCodeOfConduct
+    public function getCodeOfConduct(): ?CommunityProfileFilesCodeOfConduct
     {
         return $this->codeOfConduct;
     }
@@ -64,7 +64,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return self
      */
-    public function setCodeOfConduct(?CommunityProfileFilesCodeOfConduct $codeOfConduct) : self
+    public function setCodeOfConduct(?CommunityProfileFilesCodeOfConduct $codeOfConduct): self
     {
         $this->initialized['codeOfConduct'] = true;
         $this->codeOfConduct = $codeOfConduct;
@@ -75,7 +75,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return CommunityProfileFilesLicense|null
      */
-    public function getLicense() : ?CommunityProfileFilesLicense
+    public function getLicense(): ?CommunityProfileFilesLicense
     {
         return $this->license;
     }
@@ -86,7 +86,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return self
      */
-    public function setLicense(?CommunityProfileFilesLicense $license) : self
+    public function setLicense(?CommunityProfileFilesLicense $license): self
     {
         $this->initialized['license'] = true;
         $this->license = $license;
@@ -97,7 +97,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return CommunityProfileFilesContributing|null
      */
-    public function getContributing() : ?CommunityProfileFilesContributing
+    public function getContributing(): ?CommunityProfileFilesContributing
     {
         return $this->contributing;
     }
@@ -108,7 +108,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return self
      */
-    public function setContributing(?CommunityProfileFilesContributing $contributing) : self
+    public function setContributing(?CommunityProfileFilesContributing $contributing): self
     {
         $this->initialized['contributing'] = true;
         $this->contributing = $contributing;
@@ -119,7 +119,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return CommunityProfileFilesReadme|null
      */
-    public function getReadme() : ?CommunityProfileFilesReadme
+    public function getReadme(): ?CommunityProfileFilesReadme
     {
         return $this->readme;
     }
@@ -130,7 +130,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return self
      */
-    public function setReadme(?CommunityProfileFilesReadme $readme) : self
+    public function setReadme(?CommunityProfileFilesReadme $readme): self
     {
         $this->initialized['readme'] = true;
         $this->readme = $readme;
@@ -141,7 +141,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return CommunityProfileFilesIssueTemplate|null
      */
-    public function getIssueTemplate() : ?CommunityProfileFilesIssueTemplate
+    public function getIssueTemplate(): ?CommunityProfileFilesIssueTemplate
     {
         return $this->issueTemplate;
     }
@@ -152,7 +152,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return self
      */
-    public function setIssueTemplate(?CommunityProfileFilesIssueTemplate $issueTemplate) : self
+    public function setIssueTemplate(?CommunityProfileFilesIssueTemplate $issueTemplate): self
     {
         $this->initialized['issueTemplate'] = true;
         $this->issueTemplate = $issueTemplate;
@@ -163,7 +163,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return CommunityProfileFilesPullRequestTemplate|null
      */
-    public function getPullRequestTemplate() : ?CommunityProfileFilesPullRequestTemplate
+    public function getPullRequestTemplate(): ?CommunityProfileFilesPullRequestTemplate
     {
         return $this->pullRequestTemplate;
     }
@@ -174,7 +174,7 @@ class CommunityProfileFiles extends \ArrayObject
      *
      * @return self
      */
-    public function setPullRequestTemplate(?CommunityProfileFilesPullRequestTemplate $pullRequestTemplate) : self
+    public function setPullRequestTemplate(?CommunityProfileFilesPullRequestTemplate $pullRequestTemplate): self
     {
         $this->initialized['pullRequestTemplate'] = true;
         $this->pullRequestTemplate = $pullRequestTemplate;

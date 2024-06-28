@@ -8,7 +8,7 @@ class EventPayloadPagesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -53,7 +53,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getPageName() : string
+    public function getPageName(): string
     {
         return $this->pageName;
     }
@@ -64,7 +64,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setPageName(string $pageName) : self
+    public function setPageName(string $pageName): self
     {
         $this->initialized['pageName'] = true;
         $this->pageName = $pageName;
@@ -75,7 +75,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -86,7 +86,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTitle(string $title) : self
+    public function setTitle(string $title): self
     {
         $this->initialized['title'] = true;
         $this->title = $title;
@@ -97,7 +97,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSummary() : ?string
+    public function getSummary(): ?string
     {
         return $this->summary;
     }
@@ -108,7 +108,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSummary(?string $summary) : self
+    public function setSummary(?string $summary): self
     {
         $this->initialized['summary'] = true;
         $this->summary = $summary;
@@ -119,7 +119,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getAction() : string
+    public function getAction(): string
     {
         return $this->action;
     }
@@ -130,7 +130,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setAction(string $action) : self
+    public function setAction(string $action): self
     {
         $this->initialized['action'] = true;
         $this->action = $action;
@@ -141,7 +141,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getSha() : string
+    public function getSha(): string
     {
         return $this->sha;
     }
@@ -152,7 +152,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(string $sha) : self
+    public function setSha(string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -163,7 +163,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -174,7 +174,7 @@ class EventPayloadPagesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;

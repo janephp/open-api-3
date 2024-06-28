@@ -8,7 +8,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -29,7 +29,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
      *
      * @return string
      */
-    public function getCurrency() : string
+    public function getCurrency(): string
     {
         return $this->currency;
     }
@@ -40,7 +40,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
      *
      * @return self
      */
-    public function setCurrency(string $currency) : self
+    public function setCurrency(string $currency): self
     {
         $this->initialized['currency'] = true;
         $this->currency = $currency;
@@ -51,7 +51,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
      *
      * @return string
      */
-    public function getValue() : string
+    public function getValue(): string
     {
         return $this->value;
     }
@@ -62,7 +62,7 @@ class GbPeopleReportReponseReportDirectorshipsPreviousItemCreditScoreCurrentCred
      *
      * @return self
      */
-    public function setValue(string $value) : self
+    public function setValue(string $value): self
     {
         $this->initialized['value'] = true;
         $this->value = $value;

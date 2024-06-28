@@ -9,12 +9,12 @@ class XHeaderAuthentication implements \Jane\Component\OpenApiRuntime\Client\Aut
     {
         $this->{'apiKey'} = $apiKey;
     }
-    public function authentication(\Psr\Http\Message\RequestInterface $request) : \Psr\Http\Message\RequestInterface
+    public function authentication(\Psr\Http\Message\RequestInterface $request): \Psr\Http\Message\RequestInterface
     {
         $request = $request->withHeader('X-API-KEY', $this->{'apiKey'});
         return $request;
     }
-    public function getScope() : string
+    public function getScope(): string
     {
         return 'x-header';
     }

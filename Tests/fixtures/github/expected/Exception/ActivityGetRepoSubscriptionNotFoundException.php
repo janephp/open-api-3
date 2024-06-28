@@ -13,7 +13,7 @@ class ActivityGetRepoSubscriptionNotFoundException extends NotFoundException
         parent::__construct('Response if you don\'t subscribe to the repository');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

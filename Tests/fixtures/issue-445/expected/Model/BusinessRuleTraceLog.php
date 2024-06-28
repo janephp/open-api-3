@@ -8,7 +8,7 @@ class BusinessRuleTraceLog
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -65,7 +65,7 @@ class BusinessRuleTraceLog
      *
      * @return string|null
      */
-    public function getId() : ?string
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -76,7 +76,7 @@ class BusinessRuleTraceLog
      *
      * @return self
      */
-    public function setId(?string $id) : self
+    public function setId(?string $id): self
     {
         $this->initialized['id'] = true;
         $this->id = $id;
@@ -87,7 +87,7 @@ class BusinessRuleTraceLog
      *
      * @return string|null
      */
-    public function getDocumentId() : ?string
+    public function getDocumentId(): ?string
     {
         return $this->documentId;
     }
@@ -98,7 +98,7 @@ class BusinessRuleTraceLog
      *
      * @return self
      */
-    public function setDocumentId(?string $documentId) : self
+    public function setDocumentId(?string $documentId): self
     {
         $this->initialized['documentId'] = true;
         $this->documentId = $documentId;
@@ -120,7 +120,7 @@ class BusinessRuleTraceLog
      *
      * @return self
      */
-    public function setDocumentType($documentType) : self
+    public function setDocumentType($documentType): self
     {
         $this->initialized['documentType'] = true;
         $this->documentType = $documentType;
@@ -131,7 +131,7 @@ class BusinessRuleTraceLog
      *
      * @return list<string>|null
      */
-    public function getRuleIds() : ?array
+    public function getRuleIds(): ?array
     {
         return $this->ruleIds;
     }
@@ -142,7 +142,7 @@ class BusinessRuleTraceLog
      *
      * @return self
      */
-    public function setRuleIds(?array $ruleIds) : self
+    public function setRuleIds(?array $ruleIds): self
     {
         $this->initialized['ruleIds'] = true;
         $this->ruleIds = $ruleIds;
@@ -153,7 +153,7 @@ class BusinessRuleTraceLog
      *
      * @return list<BusinessRuleTracedRule>|null
      */
-    public function getRules() : ?array
+    public function getRules(): ?array
     {
         return $this->rules;
     }
@@ -164,7 +164,7 @@ class BusinessRuleTraceLog
      *
      * @return self
      */
-    public function setRules(?array $rules) : self
+    public function setRules(?array $rules): self
     {
         $this->initialized['rules'] = true;
         $this->rules = $rules;
@@ -175,7 +175,7 @@ class BusinessRuleTraceLog
      *
      * @return list<ErrorResponse>|null
      */
-    public function getValidationErrors() : ?array
+    public function getValidationErrors(): ?array
     {
         return $this->validationErrors;
     }
@@ -186,7 +186,7 @@ class BusinessRuleTraceLog
      *
      * @return self
      */
-    public function setValidationErrors(?array $validationErrors) : self
+    public function setValidationErrors(?array $validationErrors): self
     {
         $this->initialized['validationErrors'] = true;
         $this->validationErrors = $validationErrors;
@@ -197,7 +197,7 @@ class BusinessRuleTraceLog
      *
      * @return list<ErrorResponse>|null
      */
-    public function getGeneralErrors() : ?array
+    public function getGeneralErrors(): ?array
     {
         return $this->generalErrors;
     }
@@ -208,7 +208,7 @@ class BusinessRuleTraceLog
      *
      * @return self
      */
-    public function setGeneralErrors(?array $generalErrors) : self
+    public function setGeneralErrors(?array $generalErrors): self
     {
         $this->initialized['generalErrors'] = true;
         $this->generalErrors = $generalErrors;
@@ -230,7 +230,7 @@ class BusinessRuleTraceLog
      *
      * @return self
      */
-    public function setAudit($audit) : self
+    public function setAudit($audit): self
     {
         $this->initialized['audit'] = true;
         $this->audit = $audit;

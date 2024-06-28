@@ -8,7 +8,7 @@ class BusinessRuleScript extends BusinessRule
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -23,7 +23,7 @@ class BusinessRuleScript extends BusinessRule
      *
      * @return string|null
      */
-    public function getScript() : ?string
+    public function getScript(): ?string
     {
         return $this->script;
     }
@@ -34,7 +34,7 @@ class BusinessRuleScript extends BusinessRule
      *
      * @return self
      */
-    public function setScript(?string $script) : self
+    public function setScript(?string $script): self
     {
         $this->initialized['script'] = true;
         $this->script = $script;

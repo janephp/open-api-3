@@ -13,7 +13,7 @@ class PullsCheckIfMergedNotFoundException extends NotFoundException
         parent::__construct('Response if pull request has not been merged');
         $this->response = $response;
     }
-    public function getResponse() : ?\Psr\Http\Message\ResponseInterface
+    public function getResponse(): ?\Psr\Http\Message\ResponseInterface
     {
         return $this->response;
     }

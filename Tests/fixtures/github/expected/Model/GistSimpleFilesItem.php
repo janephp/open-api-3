@@ -8,7 +8,7 @@ class GistSimpleFilesItem extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -59,7 +59,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getFilename() : string
+    public function getFilename(): string
     {
         return $this->filename;
     }
@@ -70,7 +70,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setFilename(string $filename) : self
+    public function setFilename(string $filename): self
     {
         $this->initialized['filename'] = true;
         $this->filename = $filename;
@@ -81,7 +81,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getType() : string
+    public function getType(): string
     {
         return $this->type;
     }
@@ -92,7 +92,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setType(string $type) : self
+    public function setType(string $type): self
     {
         $this->initialized['type'] = true;
         $this->type = $type;
@@ -103,7 +103,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getLanguage() : string
+    public function getLanguage(): string
     {
         return $this->language;
     }
@@ -114,7 +114,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setLanguage(string $language) : self
+    public function setLanguage(string $language): self
     {
         $this->initialized['language'] = true;
         $this->language = $language;
@@ -125,7 +125,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getRawUrl() : string
+    public function getRawUrl(): string
     {
         return $this->rawUrl;
     }
@@ -136,7 +136,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setRawUrl(string $rawUrl) : self
+    public function setRawUrl(string $rawUrl): self
     {
         $this->initialized['rawUrl'] = true;
         $this->rawUrl = $rawUrl;
@@ -147,7 +147,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return int
      */
-    public function getSize() : int
+    public function getSize(): int
     {
         return $this->size;
     }
@@ -158,7 +158,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setSize(int $size) : self
+    public function setSize(int $size): self
     {
         $this->initialized['size'] = true;
         $this->size = $size;
@@ -169,7 +169,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return bool
      */
-    public function getTruncated() : bool
+    public function getTruncated(): bool
     {
         return $this->truncated;
     }
@@ -180,7 +180,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setTruncated(bool $truncated) : self
+    public function setTruncated(bool $truncated): self
     {
         $this->initialized['truncated'] = true;
         $this->truncated = $truncated;
@@ -191,7 +191,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return string
      */
-    public function getContent() : string
+    public function getContent(): string
     {
         return $this->content;
     }
@@ -202,7 +202,7 @@ class GistSimpleFilesItem extends \ArrayObject
      *
      * @return self
      */
-    public function setContent(string $content) : self
+    public function setContent(string $content): self
     {
         $this->initialized['content'] = true;
         $this->content = $content;

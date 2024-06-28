@@ -8,7 +8,7 @@ class Commit extends \ArrayObject
      * @var array
      */
     protected $initialized = [];
-    public function isInitialized($property) : bool
+    public function isInitialized($property): bool
     {
         return array_key_exists($property, $this->initialized);
     }
@@ -83,7 +83,7 @@ class Commit extends \ArrayObject
      *
      * @return string|null
      */
-    public function getUrl() : ?string
+    public function getUrl(): ?string
     {
         return $this->url;
     }
@@ -94,7 +94,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setUrl(?string $url) : self
+    public function setUrl(?string $url): self
     {
         $this->initialized['url'] = true;
         $this->url = $url;
@@ -105,7 +105,7 @@ class Commit extends \ArrayObject
      *
      * @return string|null
      */
-    public function getSha() : ?string
+    public function getSha(): ?string
     {
         return $this->sha;
     }
@@ -116,7 +116,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setSha(?string $sha) : self
+    public function setSha(?string $sha): self
     {
         $this->initialized['sha'] = true;
         $this->sha = $sha;
@@ -127,7 +127,7 @@ class Commit extends \ArrayObject
      *
      * @return string
      */
-    public function getNodeId() : string
+    public function getNodeId(): string
     {
         return $this->nodeId;
     }
@@ -138,7 +138,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setNodeId(string $nodeId) : self
+    public function setNodeId(string $nodeId): self
     {
         $this->initialized['nodeId'] = true;
         $this->nodeId = $nodeId;
@@ -149,7 +149,7 @@ class Commit extends \ArrayObject
      *
      * @return string
      */
-    public function getHtmlUrl() : string
+    public function getHtmlUrl(): string
     {
         return $this->htmlUrl;
     }
@@ -160,7 +160,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setHtmlUrl(string $htmlUrl) : self
+    public function setHtmlUrl(string $htmlUrl): self
     {
         $this->initialized['htmlUrl'] = true;
         $this->htmlUrl = $htmlUrl;
@@ -171,7 +171,7 @@ class Commit extends \ArrayObject
      *
      * @return string
      */
-    public function getCommentsUrl() : string
+    public function getCommentsUrl(): string
     {
         return $this->commentsUrl;
     }
@@ -182,7 +182,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setCommentsUrl(string $commentsUrl) : self
+    public function setCommentsUrl(string $commentsUrl): self
     {
         $this->initialized['commentsUrl'] = true;
         $this->commentsUrl = $commentsUrl;
@@ -193,7 +193,7 @@ class Commit extends \ArrayObject
      *
      * @return CommitCommit
      */
-    public function getCommit() : CommitCommit
+    public function getCommit(): CommitCommit
     {
         return $this->commit;
     }
@@ -204,7 +204,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setCommit(CommitCommit $commit) : self
+    public function setCommit(CommitCommit $commit): self
     {
         $this->initialized['commit'] = true;
         $this->commit = $commit;
@@ -215,7 +215,7 @@ class Commit extends \ArrayObject
      *
      * @return CommitAuthor|null
      */
-    public function getAuthor() : ?CommitAuthor
+    public function getAuthor(): ?CommitAuthor
     {
         return $this->author;
     }
@@ -226,7 +226,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setAuthor(?CommitAuthor $author) : self
+    public function setAuthor(?CommitAuthor $author): self
     {
         $this->initialized['author'] = true;
         $this->author = $author;
@@ -237,7 +237,7 @@ class Commit extends \ArrayObject
      *
      * @return CommitCommitter|null
      */
-    public function getCommitter() : ?CommitCommitter
+    public function getCommitter(): ?CommitCommitter
     {
         return $this->committer;
     }
@@ -248,7 +248,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setCommitter(?CommitCommitter $committer) : self
+    public function setCommitter(?CommitCommitter $committer): self
     {
         $this->initialized['committer'] = true;
         $this->committer = $committer;
@@ -259,7 +259,7 @@ class Commit extends \ArrayObject
      *
      * @return list<CommitParentsItem>
      */
-    public function getParents() : array
+    public function getParents(): array
     {
         return $this->parents;
     }
@@ -270,7 +270,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setParents(array $parents) : self
+    public function setParents(array $parents): self
     {
         $this->initialized['parents'] = true;
         $this->parents = $parents;
@@ -281,7 +281,7 @@ class Commit extends \ArrayObject
      *
      * @return CommitStats
      */
-    public function getStats() : CommitStats
+    public function getStats(): CommitStats
     {
         return $this->stats;
     }
@@ -292,7 +292,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setStats(CommitStats $stats) : self
+    public function setStats(CommitStats $stats): self
     {
         $this->initialized['stats'] = true;
         $this->stats = $stats;
@@ -303,7 +303,7 @@ class Commit extends \ArrayObject
      *
      * @return list<CommitFilesItem>
      */
-    public function getFiles() : array
+    public function getFiles(): array
     {
         return $this->files;
     }
@@ -314,7 +314,7 @@ class Commit extends \ArrayObject
      *
      * @return self
      */
-    public function setFiles(array $files) : self
+    public function setFiles(array $files): self
     {
         $this->initialized['files'] = true;
         $this->files = $files;
