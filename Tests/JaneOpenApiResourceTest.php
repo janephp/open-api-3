@@ -28,6 +28,10 @@ class JaneOpenApiResourceTest extends TestCase
      */
     public function testResources($name, SplFileInfo $testDirectory): void
     {
+        if ($this->shouldSkipPathForCurrentPhpParserVersion($testDirectory->getRealPath())) {
+            $this->markTestSkipped('Skip path ' . $testDirectory->getRealPath());
+        }
+
         // 1. Generate
         $command = new GenerateCommand(new ConfigLoader(), new SchemaLoader(), new OpenApiMatcher());
         $input = new ArrayInput(['--config-file' => $testDirectory->getRealPath() . \DIRECTORY_SEPARATOR . '.jane-openapi'], $command->getDefinition());
