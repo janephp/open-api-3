@@ -25,7 +25,7 @@ abstract class BaseEndpoint implements Endpoint
     {
         $optionsResolved = $this->getQueryOptionsResolver()->resolve($this->queryParameters);
         $optionsResolved = array_map(function ($value) {
-            return (null !== $value) ? $value : '';
+            return null !== $value ? $value : '';
         }, $optionsResolved);
         return http_build_query($optionsResolved, '', '&', PHP_QUERY_RFC3986);
     }
