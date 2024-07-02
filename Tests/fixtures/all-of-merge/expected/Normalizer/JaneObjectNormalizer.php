@@ -18,7 +18,16 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Bar::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\BarNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Foo::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FooNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Fuz::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FuzNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        protected $normalizers = [
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Bar::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\BarNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Foo::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FooNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Fuz::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FuzNormalizer::class,
+            
+            \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class,
+        ], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -63,7 +72,16 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Bar::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\BarNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Foo::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FooNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Fuz::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FuzNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        protected $normalizers = [
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Bar::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\BarNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Foo::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FooNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Fuz::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FuzNormalizer::class,
+            
+            \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class,
+        ], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);

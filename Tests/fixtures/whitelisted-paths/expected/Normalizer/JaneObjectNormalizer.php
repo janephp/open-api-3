@@ -18,7 +18,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ExpansionsNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\TweetLookupResponseNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollOptionNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        protected $normalizers = [
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ExpansionsNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\TweetLookupResponseNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollOptionNormalizer::class,
+            
+            \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class,
+        ], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -63,7 +74,18 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ExpansionsNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\TweetLookupResponseNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollOptionNormalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        protected $normalizers = [
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ExpansionsNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\TweetLookupResponseNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\PollOptionNormalizer::class,
+            
+            \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class,
+        ], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);

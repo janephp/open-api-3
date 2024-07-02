@@ -18,7 +18,16 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\FooPayload::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FooPayloadNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse400::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ResponseProblemDetailsResponse400Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse500::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ResponseProblemDetailsResponse500Normalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        protected $normalizers = [
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\FooPayload::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FooPayloadNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse400::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ResponseProblemDetailsResponse400Normalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse500::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ResponseProblemDetailsResponse500Normalizer::class,
+            
+            \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class,
+        ], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -63,7 +72,16 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\FooPayload::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FooPayloadNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse400::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ResponseProblemDetailsResponse400Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse500::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ResponseProblemDetailsResponse500Normalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        protected $normalizers = [
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\FooPayload::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\FooPayloadNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse400::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ResponseProblemDetailsResponse400Normalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\ResponseProblemDetailsResponse500::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\ResponseProblemDetailsResponse500Normalizer::class,
+            
+            \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class,
+        ], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);

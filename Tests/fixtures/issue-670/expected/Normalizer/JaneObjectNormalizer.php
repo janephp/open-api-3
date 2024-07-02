@@ -18,7 +18,26 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1GetResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint1GetResponseNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint1PostBodyNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2GetResponse200Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2PostBodyNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200Field3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Field3Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3PostBodyNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBodyPostField3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3PostBodyPostField3Normalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        protected $normalizers = [
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1GetResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint1GetResponseNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint1PostBodyNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2GetResponse200Normalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2PostBodyNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Normalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200Field3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Field3Normalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3PostBodyNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBodyPostField3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3PostBodyPostField3Normalizer::class,
+            
+            \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class,
+        ], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);
@@ -63,7 +82,26 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         use NormalizerAwareTrait;
         use CheckArray;
         use ValidatorTrait;
-        protected $normalizers = [\Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1GetResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint1GetResponseNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint1PostBodyNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2GetResponse200Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2PostBodyNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200Field3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Field3Normalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3PostBodyNormalizer::class, \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBodyPostField3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3PostBodyPostField3Normalizer::class, \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class], $normalizersCache = [];
+        protected $normalizers = [
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1GetResponse::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint1GetResponseNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint1PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint1PostBodyNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2GetResponse200Normalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint2PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint2PostBodyNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Normalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3GetResponse200Field3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3GetResponse200Field3Normalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBody::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3PostBodyNormalizer::class,
+            
+            \Jane\Component\OpenApi3\Tests\Expected\Model\Endpoint3PostBodyPostField3::class => \Jane\Component\OpenApi3\Tests\Expected\Normalizer\Endpoint3PostBodyPostField3Normalizer::class,
+            
+            \Jane\Component\JsonSchemaRuntime\Reference::class => \Jane\Component\OpenApi3\Tests\Expected\Runtime\Normalizer\ReferenceNormalizer::class,
+        ], $normalizersCache = [];
         public function supportsDenormalization($data, $type, $format = null, array $context = []): bool
         {
             return array_key_exists($type, $this->normalizers);
