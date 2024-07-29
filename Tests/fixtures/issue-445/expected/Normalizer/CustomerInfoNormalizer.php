@@ -135,7 +135,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 }
                 $data['apps'] = $values_3;
             }
-            $data['modificationDate'] = $object->getModificationDate()->format('Y-m-d\TH:i:sP');
+            $data['modificationDate'] = $object->getModificationDate()?->format('Y-m-d\TH:i:sP');
             $data['baseUrl'] = $object->getBaseUrl();
             $data['logosUrl'] = $object->getLogosUrl();
             return $data;
@@ -273,7 +273,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 }
                 $data['apps'] = $values_3;
             }
-            $data['modificationDate'] = $object->getModificationDate()->format('Y-m-d\TH:i:sP');
+            $data['modificationDate'] = $object->getModificationDate()?->format('Y-m-d\TH:i:sP');
             $data['baseUrl'] = $object->getBaseUrl();
             $data['logosUrl'] = $object->getLogosUrl();
             return $data;

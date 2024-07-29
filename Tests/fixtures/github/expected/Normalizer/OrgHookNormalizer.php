@@ -108,8 +108,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['events'] = $values;
             $data['active'] = $object->getActive();
             $data['config'] = $this->normalizer->normalize($object->getConfig(), 'json', $context);
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['type'] = $object->getType();
             foreach ($object as $key => $value_1) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -227,8 +227,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['events'] = $values;
             $data['active'] = $object->getActive();
             $data['config'] = $this->normalizer->normalize($object->getConfig(), 'json', $context);
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['type'] = $object->getType();
             foreach ($object as $key => $value_1) {
                 if (preg_match('/.*/', (string) $key)) {

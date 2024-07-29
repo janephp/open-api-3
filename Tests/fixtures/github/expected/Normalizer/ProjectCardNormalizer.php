@@ -108,8 +108,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['node_id'] = $object->getNodeId();
             $data['note'] = $object->getNote();
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('archived') && null !== $object->getArchived()) {
                 $data['archived'] = $object->getArchived();
             }
@@ -234,8 +234,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['node_id'] = $object->getNodeId();
             $data['note'] = $object->getNote();
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('archived') && null !== $object->getArchived()) {
                 $data['archived'] = $object->getArchived();
             }

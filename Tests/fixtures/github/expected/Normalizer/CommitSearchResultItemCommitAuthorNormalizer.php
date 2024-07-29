@@ -67,7 +67,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data = [];
             $data['name'] = $object->getName();
             $data['email'] = $object->getEmail();
-            $data['date'] = $object->getDate()->format('Y-m-d\TH:i:sP');
+            $data['date'] = $object->getDate()?->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;
@@ -143,7 +143,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data = [];
             $data['name'] = $object->getName();
             $data['email'] = $object->getEmail();
-            $data['date'] = $object->getDate()->format('Y-m-d\TH:i:sP');
+            $data['date'] = $object->getDate()?->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;

@@ -98,7 +98,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('tokenLastEight') && null !== $object->getTokenLastEight()) {
                 $data['token_last_eight'] = $object->getTokenLastEight();
             }
-            $data['credential_authorized_at'] = $object->getCredentialAuthorizedAt()->format('Y-m-d\TH:i:sP');
+            $data['credential_authorized_at'] = $object->getCredentialAuthorizedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('scopes') && null !== $object->getScopes()) {
                 $values = [];
                 foreach ($object->getScopes() as $value) {
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('tokenLastEight') && null !== $object->getTokenLastEight()) {
                 $data['token_last_eight'] = $object->getTokenLastEight();
             }
-            $data['credential_authorized_at'] = $object->getCredentialAuthorizedAt()->format('Y-m-d\TH:i:sP');
+            $data['credential_authorized_at'] = $object->getCredentialAuthorizedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('scopes') && null !== $object->getScopes()) {
                 $values = [];
                 foreach ($object->getScopes() as $value) {

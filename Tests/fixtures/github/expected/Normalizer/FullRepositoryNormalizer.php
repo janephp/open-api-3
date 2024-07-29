@@ -523,9 +523,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('visibility') && null !== $object->getVisibility()) {
                 $data['visibility'] = $object->getVisibility();
             }
-            $data['pushed_at'] = $object->getPushedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['pushed_at'] = $object->getPushedAt()?->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('permissions') && null !== $object->getPermissions()) {
                 $data['permissions'] = $this->normalizer->normalize($object->getPermissions(), 'json', $context);
             }
@@ -1099,9 +1099,9 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('visibility') && null !== $object->getVisibility()) {
                 $data['visibility'] = $object->getVisibility();
             }
-            $data['pushed_at'] = $object->getPushedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['pushed_at'] = $object->getPushedAt()?->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('permissions') && null !== $object->getPermissions()) {
                 $data['permissions'] = $this->normalizer->normalize($object->getPermissions(), 'json', $context);
             }

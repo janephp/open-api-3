@@ -150,8 +150,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['app'] = $this->normalizer->normalize($object->getApp(), 'json', $context);
             $data['note'] = $object->getNote();
             $data['note_url'] = $object->getNoteUrl();
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['fingerprint'] = $object->getFingerprint();
             if ($object->isInitialized('user') && null !== $object->getUser()) {
                 $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
@@ -317,8 +317,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['app'] = $this->normalizer->normalize($object->getApp(), 'json', $context);
             $data['note'] = $object->getNote();
             $data['note_url'] = $object->getNoteUrl();
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['fingerprint'] = $object->getFingerprint();
             if ($object->isInitialized('user') && null !== $object->getUser()) {
                 $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);

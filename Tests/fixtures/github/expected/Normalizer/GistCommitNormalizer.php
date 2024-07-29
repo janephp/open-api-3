@@ -80,7 +80,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['version'] = $object->getVersion();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
             $data['change_status'] = $this->normalizer->normalize($object->getChangeStatus(), 'json', $context);
-            $data['committed_at'] = $object->getCommittedAt()->format('Y-m-d\TH:i:sP');
+            $data['committed_at'] = $object->getCommittedAt()?->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;
@@ -169,7 +169,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['version'] = $object->getVersion();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
             $data['change_status'] = $this->normalizer->normalize($object->getChangeStatus(), 'json', $context);
-            $data['committed_at'] = $object->getCommittedAt()->format('Y-m-d\TH:i:sP');
+            $data['committed_at'] = $object->getCommittedAt()?->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;

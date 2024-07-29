@@ -66,7 +66,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             if ($object->isInitialized('date') && null !== $object->getDate()) {
-                $data['date'] = $object->getDate()->format('Y-m-d\TH:i:sP');
+                $data['date'] = $object->getDate()?->format('Y-m-d\TH:i:sP');
             }
             $data['email'] = $object->getEmail();
             $data['name'] = $object->getName();
@@ -144,7 +144,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             if ($object->isInitialized('date') && null !== $object->getDate()) {
-                $data['date'] = $object->getDate()->format('Y-m-d\TH:i:sP');
+                $data['date'] = $object->getDate()?->format('Y-m-d\TH:i:sP');
             }
             $data['email'] = $object->getEmail();
             $data['name'] = $object->getName();

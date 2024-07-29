@@ -93,8 +93,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['url'] = $object->getUrl();
             $data['body'] = $object->getBody();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['author_association'] = $object->getAuthorAssociation();
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -197,8 +197,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['url'] = $object->getUrl();
             $data['body'] = $object->getBody();
             $data['user'] = $this->normalizer->normalize($object->getUser(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['author_association'] = $object->getAuthorAssociation();
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {

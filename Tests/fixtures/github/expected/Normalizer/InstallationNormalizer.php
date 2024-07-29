@@ -171,8 +171,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $values[] = $value_1;
             }
             $data['events'] = $values;
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['single_file_name'] = $object->getSingleFileName();
             $data['app_slug'] = $object->getAppSlug();
             if ($object->isInitialized('suspendedBy') && null !== $object->getSuspendedBy()) {
@@ -363,8 +363,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $values[] = $value_1;
             }
             $data['events'] = $values;
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['single_file_name'] = $object->getSingleFileName();
             $data['app_slug'] = $object->getAppSlug();
             if ($object->isInitialized('suspendedBy') && null !== $object->getSuspendedBy()) {

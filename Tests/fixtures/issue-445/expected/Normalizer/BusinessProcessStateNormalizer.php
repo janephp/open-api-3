@@ -58,7 +58,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             $data['state'] = $object->getState();
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('error') && null !== $object->getError()) {
                 $data['error'] = $object->getError();
             }
@@ -120,7 +120,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             $data['state'] = $object->getState();
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('error') && null !== $object->getError()) {
                 $data['error'] = $object->getError();
             }

@@ -147,8 +147,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['environment'] = $object->getEnvironment();
             $data['description'] = $object->getDescription();
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['statuses_url'] = $object->getStatusesUrl();
             $data['repository_url'] = $object->getRepositoryUrl();
             if ($object->isInitialized('transientEnvironment') && null !== $object->getTransientEnvironment()) {
@@ -315,8 +315,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['environment'] = $object->getEnvironment();
             $data['description'] = $object->getDescription();
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['statuses_url'] = $object->getStatusesUrl();
             $data['repository_url'] = $object->getRepositoryUrl();
             if ($object->isInitialized('transientEnvironment') && null !== $object->getTransientEnvironment()) {

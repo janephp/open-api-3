@@ -98,7 +98,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['eventId'] = $object->getEventId();
             }
             if ($object->isInitialized('eventDate') && null !== $object->getEventDate()) {
-                $data['eventDate'] = $object->getEventDate()->format('Y-m-d\TH:i:sP');
+                $data['eventDate'] = $object->getEventDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('newValue') && null !== $object->getNewValue()) {
                 $data['newValue'] = $object->getNewValue();
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['eventId'] = $object->getEventId();
             }
             if ($object->isInitialized('eventDate') && null !== $object->getEventDate()) {
-                $data['eventDate'] = $object->getEventDate()->format('Y-m-d\TH:i:sP');
+                $data['eventDate'] = $object->getEventDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('newValue') && null !== $object->getNewValue()) {
                 $data['newValue'] = $object->getNewValue();

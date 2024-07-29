@@ -65,7 +65,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             $data['uniques'] = $object->getUniques();
             $data['count'] = $object->getCount();
             foreach ($object as $key => $value) {
@@ -141,7 +141,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function normalize($object, $format = null, array $context = [])
         {
             $data = [];
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             $data['uniques'] = $object->getUniques();
             $data['count'] = $object->getCount();
             foreach ($object as $key => $value) {

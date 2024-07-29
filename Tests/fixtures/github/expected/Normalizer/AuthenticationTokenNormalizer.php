@@ -89,7 +89,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             $data['token'] = $object->getToken();
-            $data['expires_at'] = $object->getExpiresAt()->format('Y-m-d\TH:i:sP');
+            $data['expires_at'] = $object->getExpiresAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('permissions') && null !== $object->getPermissions()) {
                 $values = [];
                 foreach ($object->getPermissions() as $key => $value) {
@@ -207,7 +207,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             $data['token'] = $object->getToken();
-            $data['expires_at'] = $object->getExpiresAt()->format('Y-m-d\TH:i:sP');
+            $data['expires_at'] = $object->getExpiresAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('permissions') && null !== $object->getPermissions()) {
                 $values = [];
                 foreach ($object->getPermissions() as $key => $value) {

@@ -138,8 +138,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['number'] = $object->getNumber();
             $data['state'] = $object->getState();
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('organizationPermission') && null !== $object->getOrganizationPermission()) {
                 $data['organization_permission'] = $object->getOrganizationPermission();
             }
@@ -298,8 +298,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['number'] = $object->getNumber();
             $data['state'] = $object->getState();
             $data['creator'] = $this->normalizer->normalize($object->getCreator(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('organizationPermission') && null !== $object->getOrganizationPermission()) {
                 $data['organization_permission'] = $object->getOrganizationPermission();
             }

@@ -128,8 +128,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['repositories'] = $values;
             $data['url'] = $object->getUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['node_id'] = $object->getNodeId();
             if ($object->isInitialized('archiveUrl') && null !== $object->getArchiveUrl()) {
                 $data['archive_url'] = $object->getArchiveUrl();
@@ -277,8 +277,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['repositories'] = $values;
             $data['url'] = $object->getUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['node_id'] = $object->getNodeId();
             if ($object->isInitialized('archiveUrl') && null !== $object->getArchiveUrl()) {
                 $data['archive_url'] = $object->getArchiveUrl();

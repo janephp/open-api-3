@@ -102,13 +102,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['name'] = $object->getName();
             $data['path'] = $object->getPath();
             $data['state'] = $object->getState();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['url'] = $object->getUrl();
             $data['html_url'] = $object->getHtmlUrl();
             $data['badge_url'] = $object->getBadgeUrl();
             if ($object->isInitialized('deletedAt') && null !== $object->getDeletedAt()) {
-                $data['deleted_at'] = $object->getDeletedAt()->format('Y-m-d\TH:i:sP');
+                $data['deleted_at'] = $object->getDeletedAt()?->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -220,13 +220,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['name'] = $object->getName();
             $data['path'] = $object->getPath();
             $data['state'] = $object->getState();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['url'] = $object->getUrl();
             $data['html_url'] = $object->getHtmlUrl();
             $data['badge_url'] = $object->getBadgeUrl();
             if ($object->isInitialized('deletedAt') && null !== $object->getDeletedAt()) {
-                $data['deleted_at'] = $object->getDeletedAt()->format('Y-m-d\TH:i:sP');
+                $data['deleted_at'] = $object->getDeletedAt()?->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {

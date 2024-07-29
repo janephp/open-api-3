@@ -79,7 +79,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('action') && null !== $object->getAction()) {
                 $data['action'] = $object->getAction();
             }
-            $data['timeStamp'] = $object->getTimeStamp()->format('Y-m-d\TH:i:sP');
+            $data['timeStamp'] = $object->getTimeStamp()?->format('Y-m-d\TH:i:sP');
             return $data;
         }
         public function getSupportedTypes(?string $format = null): array
@@ -159,7 +159,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('action') && null !== $object->getAction()) {
                 $data['action'] = $object->getAction();
             }
-            $data['timeStamp'] = $object->getTimeStamp()->format('Y-m-d\TH:i:sP');
+            $data['timeStamp'] = $object->getTimeStamp()?->format('Y-m-d\TH:i:sP');
             return $data;
         }
         public function getSupportedTypes(?string $format = null): array

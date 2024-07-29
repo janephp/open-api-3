@@ -126,7 +126,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['customerAlias'] = $object->getCustomerAlias();
             }
             if ($object->isInitialized('timestamp') && null !== $object->getTimestamp()) {
-                $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+                $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('scope') && null !== $object->getScope()) {
                 $data['scope'] = $object->getScope();
@@ -268,7 +268,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['customerAlias'] = $object->getCustomerAlias();
             }
             if ($object->isInitialized('timestamp') && null !== $object->getTimestamp()) {
-                $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+                $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('scope') && null !== $object->getScope()) {
                 $data['scope'] = $object->getScope();

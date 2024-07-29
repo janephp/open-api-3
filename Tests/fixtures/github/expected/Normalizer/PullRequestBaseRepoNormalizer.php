@@ -474,7 +474,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['allow_rebase_merge'] = $object->getAllowRebaseMerge();
             }
             $data['license'] = $this->normalizer->normalize($object->getLicense(), 'json', $context);
-            $data['pushed_at'] = $object->getPushedAt()->format('Y-m-d\TH:i:sP');
+            $data['pushed_at'] = $object->getPushedAt()?->format('Y-m-d\TH:i:sP');
             $data['size'] = $object->getSize();
             $data['ssh_url'] = $object->getSshUrl();
             $data['stargazers_count'] = $object->getStargazersCount();
@@ -488,8 +488,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['watchers'] = $object->getWatchers();
             $data['watchers_count'] = $object->getWatchersCount();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value_1) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value_1;
@@ -972,7 +972,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['allow_rebase_merge'] = $object->getAllowRebaseMerge();
             }
             $data['license'] = $this->normalizer->normalize($object->getLicense(), 'json', $context);
-            $data['pushed_at'] = $object->getPushedAt()->format('Y-m-d\TH:i:sP');
+            $data['pushed_at'] = $object->getPushedAt()?->format('Y-m-d\TH:i:sP');
             $data['size'] = $object->getSize();
             $data['ssh_url'] = $object->getSshUrl();
             $data['stargazers_count'] = $object->getStargazersCount();
@@ -986,8 +986,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['watchers'] = $object->getWatchers();
             $data['watchers_count'] = $object->getWatchersCount();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value_1) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value_1;

@@ -91,8 +91,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['id'] = $object->getId();
             $data['url'] = $object->getUrl();
             $data['app'] = $this->normalizer->normalize($object->getApp(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $values = [];
             foreach ($object->getScopes() as $value) {
                 $values[] = $value;
@@ -200,8 +200,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['id'] = $object->getId();
             $data['url'] = $object->getUrl();
             $data['app'] = $this->normalizer->normalize($object->getApp(), 'json', $context);
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $values = [];
             foreach ($object->getScopes() as $value) {
                 $values[] = $value;

@@ -101,7 +101,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['title'] = $object->getTitle();
             }
             if ($object->isInitialized('createdAt') && null !== $object->getCreatedAt()) {
-                $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+                $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('verified') && null !== $object->getVerified()) {
                 $data['verified'] = $object->getVerified();
@@ -218,7 +218,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['title'] = $object->getTitle();
             }
             if ($object->isInitialized('createdAt') && null !== $object->getCreatedAt()) {
-                $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+                $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('verified') && null !== $object->getVerified()) {
                 $data['verified'] = $object->getVerified();

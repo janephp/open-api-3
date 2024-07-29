@@ -91,11 +91,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('documentType') && null !== $object->getDocumentType()) {
                 $data['documentType'] = $object->getDocumentType();
             }
-            $data['documentDate'] = $object->getDocumentDate()->format('Y-m-d\TH:i:sP');
+            $data['documentDate'] = $object->getDocumentDate()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('document') && null !== $object->getDocument()) {
                 $data['document'] = $object->getDocument();
             }
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('audit') && null !== $object->getAudit()) {
                 $data['audit'] = $object->getAudit();
             }
@@ -192,11 +192,11 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('documentType') && null !== $object->getDocumentType()) {
                 $data['documentType'] = $object->getDocumentType();
             }
-            $data['documentDate'] = $object->getDocumentDate()->format('Y-m-d\TH:i:sP');
+            $data['documentDate'] = $object->getDocumentDate()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('document') && null !== $object->getDocument()) {
                 $data['document'] = $object->getDocument();
             }
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('audit') && null !== $object->getAudit()) {
                 $data['audit'] = $object->getAudit();
             }

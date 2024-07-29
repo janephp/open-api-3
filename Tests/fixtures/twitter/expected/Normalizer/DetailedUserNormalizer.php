@@ -118,7 +118,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['format'] = $object->getFormat();
             }
             $data['id'] = $object->getId();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['name'] = $object->getName();
             $data['username'] = $object->getUsername();
             $data['protected'] = $object->getProtected();
@@ -269,7 +269,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['format'] = $object->getFormat();
             }
             $data['id'] = $object->getId();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['name'] = $object->getName();
             $data['username'] = $object->getUsername();
             $data['protected'] = $object->getProtected();

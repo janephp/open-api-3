@@ -108,7 +108,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['title'] = $object->getTitle();
             $data['description'] = $object->getDescription();
             $data['author'] = $object->getAuthor();
-            $data['publicationDate'] = $object->getPublicationDate()->format('Y-m-d\TH:i:sP');
+            $data['publicationDate'] = $object->getPublicationDate()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('reviews') && null !== $object->getReviews()) {
                 $values = [];
                 foreach ($object->getReviews() as $value) {
@@ -235,7 +235,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['title'] = $object->getTitle();
             $data['description'] = $object->getDescription();
             $data['author'] = $object->getAuthor();
-            $data['publicationDate'] = $object->getPublicationDate()->format('Y-m-d\TH:i:sP');
+            $data['publicationDate'] = $object->getPublicationDate()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('reviews') && null !== $object->getReviews()) {
                 $values = [];
                 foreach ($object->getReviews() as $value) {

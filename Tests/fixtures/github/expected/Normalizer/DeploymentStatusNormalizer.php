@@ -129,8 +129,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['environment'] = $object->getEnvironment();
             }
             $data['target_url'] = $object->getTargetUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['deployment_url'] = $object->getDeploymentUrl();
             $data['repository_url'] = $object->getRepositoryUrl();
             if ($object->isInitialized('environmentUrl') && null !== $object->getEnvironmentUrl()) {
@@ -279,8 +279,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['environment'] = $object->getEnvironment();
             }
             $data['target_url'] = $object->getTargetUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['deployment_url'] = $object->getDeploymentUrl();
             $data['repository_url'] = $object->getRepositoryUrl();
             if ($object->isInitialized('environmentUrl') && null !== $object->getEnvironmentUrl()) {

@@ -115,8 +115,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['events'] = $values;
             $data['config'] = $this->normalizer->normalize($object->getConfig(), 'json', $context);
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['url'] = $object->getUrl();
             $data['test_url'] = $object->getTestUrl();
             $data['ping_url'] = $object->getPingUrl();
@@ -244,8 +244,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['events'] = $values;
             $data['config'] = $this->normalizer->normalize($object->getConfig(), 'json', $context);
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['url'] = $object->getUrl();
             $data['test_url'] = $object->getTestUrl();
             $data['ping_url'] = $object->getPingUrl();

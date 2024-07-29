@@ -117,7 +117,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['pull_request_url'] = $object->getPullRequestUrl();
             $data['_links'] = $this->normalizer->normalize($object->getLinks(), 'json', $context);
             if ($object->isInitialized('submittedAt') && null !== $object->getSubmittedAt()) {
-                $data['submitted_at'] = $object->getSubmittedAt()->format('Y-m-d\TH:i:sP');
+                $data['submitted_at'] = $object->getSubmittedAt()?->format('Y-m-d\TH:i:sP');
             }
             $data['commit_id'] = $object->getCommitId();
             if ($object->isInitialized('bodyHtml') && null !== $object->getBodyHtml()) {
@@ -252,7 +252,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['pull_request_url'] = $object->getPullRequestUrl();
             $data['_links'] = $this->normalizer->normalize($object->getLinks(), 'json', $context);
             if ($object->isInitialized('submittedAt') && null !== $object->getSubmittedAt()) {
-                $data['submitted_at'] = $object->getSubmittedAt()->format('Y-m-d\TH:i:sP');
+                $data['submitted_at'] = $object->getSubmittedAt()?->format('Y-m-d\TH:i:sP');
             }
             $data['commit_id'] = $object->getCommitId();
             if ($object->isInitialized('bodyHtml') && null !== $object->getBodyHtml()) {

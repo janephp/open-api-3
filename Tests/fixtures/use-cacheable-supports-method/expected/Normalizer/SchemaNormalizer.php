@@ -98,7 +98,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['stringProperty'] = $object->getStringProperty();
             }
             if ($object->isInitialized('dateProperty') && null !== $object->getDateProperty()) {
-                $data['dateProperty'] = $object->getDateProperty()->format('Y-m-d\TH:i:sP');
+                $data['dateProperty'] = $object->getDateProperty()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('integerProperty') && null !== $object->getIntegerProperty()) {
                 $data['integerProperty'] = $object->getIntegerProperty();
@@ -228,7 +228,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['stringProperty'] = $object->getStringProperty();
             }
             if ($object->isInitialized('dateProperty') && null !== $object->getDateProperty()) {
-                $data['dateProperty'] = $object->getDateProperty()->format('Y-m-d\TH:i:sP');
+                $data['dateProperty'] = $object->getDateProperty()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('integerProperty') && null !== $object->getIntegerProperty()) {
                 $data['integerProperty'] = $object->getIntegerProperty();

@@ -141,7 +141,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (null !== $object->getKind() and 'XmpWritebackCompletedEvent' === $object->getKind()) {
                 return $this->normalizer->normalize($object, $format, $context);
             }
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             $data['kind'] = $object->getKind();
             return $data;
         }
@@ -284,7 +284,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if (null !== $object->getKind() and 'XmpWritebackCompletedEvent' === $object->getKind()) {
                 return $this->normalizer->normalize($object, $format, $context);
             }
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             $data['kind'] = $object->getKind();
             return $data;
         }

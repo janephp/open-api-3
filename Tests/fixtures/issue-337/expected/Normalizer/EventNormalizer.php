@@ -124,10 +124,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['oldValue'] = $object->getOldValue();
             }
             if ($object->isInitialized('eventDate') && null !== $object->getEventDate()) {
-                $data['eventDate'] = $object->getEventDate()->format('Y-m-d\TH:i:sP');
+                $data['eventDate'] = $object->getEventDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('createdDate') && null !== $object->getCreatedDate()) {
-                $data['createdDate'] = $object->getCreatedDate()->format('Y-m-d\TH:i:sP');
+                $data['createdDate'] = $object->getCreatedDate()?->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -258,10 +258,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['oldValue'] = $object->getOldValue();
             }
             if ($object->isInitialized('eventDate') && null !== $object->getEventDate()) {
-                $data['eventDate'] = $object->getEventDate()->format('Y-m-d\TH:i:sP');
+                $data['eventDate'] = $object->getEventDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('createdDate') && null !== $object->getCreatedDate()) {
-                $data['createdDate'] = $object->getCreatedDate()->format('Y-m-d\TH:i:sP');
+                $data['createdDate'] = $object->getCreatedDate()?->format('Y-m-d\TH:i:sP');
             }
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {

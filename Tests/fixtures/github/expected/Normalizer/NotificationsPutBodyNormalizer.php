@@ -62,7 +62,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             if ($object->isInitialized('lastReadAt') && null !== $object->getLastReadAt()) {
-                $data['last_read_at'] = $object->getLastReadAt()->format('Y-m-d\TH:i:sP');
+                $data['last_read_at'] = $object->getLastReadAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('read') && null !== $object->getRead()) {
                 $data['read'] = $object->getRead();
@@ -137,7 +137,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             if ($object->isInitialized('lastReadAt') && null !== $object->getLastReadAt()) {
-                $data['last_read_at'] = $object->getLastReadAt()->format('Y-m-d\TH:i:sP');
+                $data['last_read_at'] = $object->getLastReadAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('read') && null !== $object->getRead()) {
                 $data['read'] = $object->getRead();

@@ -249,8 +249,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['assignee'] = $this->normalizer->normalize($object->getAssignee(), 'json', $context);
             $data['milestone'] = $this->normalizer->normalize($object->getMilestone(), 'json', $context);
             $data['comments'] = $object->getComments();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('textMatches') && null !== $object->getTextMatches()) {
                 $values_2 = [];
@@ -542,8 +542,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['assignee'] = $this->normalizer->normalize($object->getAssignee(), 'json', $context);
             $data['milestone'] = $this->normalizer->normalize($object->getMilestone(), 'json', $context);
             $data['comments'] = $object->getComments();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('textMatches') && null !== $object->getTextMatches()) {
                 $values_2 = [];

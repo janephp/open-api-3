@@ -168,7 +168,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['event'] = $object->getEvent();
             $data['commit_id'] = $object->getCommitId();
             $data['commit_url'] = $object->getCommitUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('issue') && null !== $object->getIssue()) {
                 $data['issue'] = $this->normalizer->normalize($object->getIssue(), 'json', $context);
             }
@@ -384,7 +384,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['event'] = $object->getEvent();
             $data['commit_id'] = $object->getCommitId();
             $data['commit_url'] = $object->getCommitUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('issue') && null !== $object->getIssue()) {
                 $data['issue'] = $this->normalizer->normalize($object->getIssue(), 'json', $context);
             }

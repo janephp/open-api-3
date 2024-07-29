@@ -73,10 +73,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['resourceType'] = $object->getResourceType();
             }
             if ($object->isInitialized('created') && null !== $object->getCreated()) {
-                $data['created'] = $object->getCreated()->format('Y-m-d\TH:i:sP');
+                $data['created'] = $object->getCreated()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('lastModified') && null !== $object->getLastModified()) {
-                $data['lastModified'] = $object->getLastModified()->format('Y-m-d\TH:i:sP');
+                $data['lastModified'] = $object->getLastModified()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('location') && null !== $object->getLocation()) {
                 $data['location'] = $object->getLocation();
@@ -162,10 +162,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['resourceType'] = $object->getResourceType();
             }
             if ($object->isInitialized('created') && null !== $object->getCreated()) {
-                $data['created'] = $object->getCreated()->format('Y-m-d\TH:i:sP');
+                $data['created'] = $object->getCreated()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('lastModified') && null !== $object->getLastModified()) {
-                $data['lastModified'] = $object->getLastModified()->format('Y-m-d\TH:i:sP');
+                $data['lastModified'] = $object->getLastModified()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('location') && null !== $object->getLocation()) {
                 $data['location'] = $object->getLocation();

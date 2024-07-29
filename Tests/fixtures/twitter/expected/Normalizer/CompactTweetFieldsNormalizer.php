@@ -87,7 +87,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             $data['id'] = $object->getId();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['text'] = $object->getText();
             $data['author_id'] = $object->getAuthorId();
             if ($object->isInitialized('inReplyToUserId') && null !== $object->getInReplyToUserId()) {
@@ -198,7 +198,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             $data['id'] = $object->getId();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['text'] = $object->getText();
             $data['author_id'] = $object->getAuthorId();
             if ($object->isInitialized('inReplyToUserId') && null !== $object->getInReplyToUserId()) {

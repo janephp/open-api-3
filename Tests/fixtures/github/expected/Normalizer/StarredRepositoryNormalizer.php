@@ -61,7 +61,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
-            $data['starred_at'] = $object->getStarredAt()->format('Y-m-d\TH:i:sP');
+            $data['starred_at'] = $object->getStarredAt()?->format('Y-m-d\TH:i:sP');
             $data['repo'] = $this->normalizer->normalize($object->getRepo(), 'json', $context);
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -132,7 +132,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function normalize($object, $format = null, array $context = [])
         {
             $data = [];
-            $data['starred_at'] = $object->getStarredAt()->format('Y-m-d\TH:i:sP');
+            $data['starred_at'] = $object->getStarredAt()?->format('Y-m-d\TH:i:sP');
             $data['repo'] = $this->normalizer->normalize($object->getRepo(), 'json', $context);
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {

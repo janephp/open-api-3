@@ -171,7 +171,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['draft'] = $object->getDraft();
             $data['prerelease'] = $object->getPrerelease();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['published_at'] = $object->getPublishedAt()->format('Y-m-d\TH:i:sP');
             $data['author'] = $this->normalizer->normalize($object->getAuthor(), 'json', $context);
             $values = [];
@@ -364,7 +364,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['draft'] = $object->getDraft();
             $data['prerelease'] = $object->getPrerelease();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['published_at'] = $object->getPublishedAt()->format('Y-m-d\TH:i:sP');
             $data['author'] = $this->normalizer->normalize($object->getAuthor(), 'json', $context);
             $values = [];

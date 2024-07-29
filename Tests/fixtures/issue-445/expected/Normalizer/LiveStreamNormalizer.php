@@ -82,7 +82,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('scopeType') && null !== $object->getScopeType()) {
                 $data['scopeType'] = $object->getScopeType();
             }
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('traceJob') && null !== $object->getTraceJob()) {
                 $data['traceJob'] = $object->getTraceJob();
             }
@@ -171,7 +171,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('scopeType') && null !== $object->getScopeType()) {
                 $data['scopeType'] = $object->getScopeType();
             }
-            $data['timestamp'] = $object->getTimestamp()->format('Y-m-d\TH:i:sP');
+            $data['timestamp'] = $object->getTimestamp()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('traceJob') && null !== $object->getTraceJob()) {
                 $data['traceJob'] = $object->getTraceJob();
             }

@@ -129,7 +129,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['tool'] = $object->getTool();
             }
             if ($object->isInitialized('createdAt') && null !== $object->getCreatedAt()) {
-                $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+                $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('open') && null !== $object->getOpen()) {
                 $data['open'] = $object->getOpen();
@@ -286,7 +286,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['tool'] = $object->getTool();
             }
             if ($object->isInitialized('createdAt') && null !== $object->getCreatedAt()) {
-                $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+                $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('open') && null !== $object->getOpen()) {
                 $data['open'] = $object->getOpen();

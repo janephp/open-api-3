@@ -269,8 +269,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('activeLockReason') && null !== $object->getActiveLockReason()) {
                 $data['active_lock_reason'] = $object->getActiveLockReason();
             }
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\TH:i:sP');
             $data['merged_at'] = $object->getMergedAt()->format('Y-m-d\TH:i:sP');
             $data['merge_commit_sha'] = $object->getMergeCommitSha();
@@ -580,8 +580,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('activeLockReason') && null !== $object->getActiveLockReason()) {
                 $data['active_lock_reason'] = $object->getActiveLockReason();
             }
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\TH:i:sP');
             $data['merged_at'] = $object->getMergedAt()->format('Y-m-d\TH:i:sP');
             $data['merge_commit_sha'] = $object->getMergeCommitSha();

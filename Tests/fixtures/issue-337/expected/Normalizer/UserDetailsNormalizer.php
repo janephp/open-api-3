@@ -103,7 +103,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['countryCode'] = $object->getCountryCode();
             }
             if ($object->isInitialized('createdDate') && null !== $object->getCreatedDate()) {
-                $data['createdDate'] = $object->getCreatedDate()->format('Y-m-d\TH:i:sP');
+                $data['createdDate'] = $object->getCreatedDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('csCustomerId') && null !== $object->getCsCustomerId()) {
                 $data['csCustomerId'] = $object->getCsCustomerId();
@@ -118,13 +118,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['languageCode'] = $object->getLanguageCode();
             }
             if ($object->isInitialized('lastAccessDate') && null !== $object->getLastAccessDate()) {
-                $data['lastAccessDate'] = $object->getLastAccessDate()->format('Y-m-d\TH:i:sP');
+                $data['lastAccessDate'] = $object->getLastAccessDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('modifiedDate') && null !== $object->getModifiedDate()) {
-                $data['modifiedDate'] = $object->getModifiedDate()->format('Y-m-d\TH:i:sP');
+                $data['modifiedDate'] = $object->getModifiedDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('contractEndDate') && null !== $object->getContractEndDate()) {
-                $data['contractEndDate'] = $object->getContractEndDate()->format('Y-m-d\TH:i:sP');
+                $data['contractEndDate'] = $object->getContractEndDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('userId') && null !== $object->getUserId()) {
                 $data['userId'] = $object->getUserId();
@@ -237,7 +237,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['countryCode'] = $object->getCountryCode();
             }
             if ($object->isInitialized('createdDate') && null !== $object->getCreatedDate()) {
-                $data['createdDate'] = $object->getCreatedDate()->format('Y-m-d\TH:i:sP');
+                $data['createdDate'] = $object->getCreatedDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('csCustomerId') && null !== $object->getCsCustomerId()) {
                 $data['csCustomerId'] = $object->getCsCustomerId();
@@ -252,13 +252,13 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['languageCode'] = $object->getLanguageCode();
             }
             if ($object->isInitialized('lastAccessDate') && null !== $object->getLastAccessDate()) {
-                $data['lastAccessDate'] = $object->getLastAccessDate()->format('Y-m-d\TH:i:sP');
+                $data['lastAccessDate'] = $object->getLastAccessDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('modifiedDate') && null !== $object->getModifiedDate()) {
-                $data['modifiedDate'] = $object->getModifiedDate()->format('Y-m-d\TH:i:sP');
+                $data['modifiedDate'] = $object->getModifiedDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('contractEndDate') && null !== $object->getContractEndDate()) {
-                $data['contractEndDate'] = $object->getContractEndDate()->format('Y-m-d\TH:i:sP');
+                $data['contractEndDate'] = $object->getContractEndDate()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('userId') && null !== $object->getUserId()) {
                 $data['userId'] = $object->getUserId();

@@ -240,8 +240,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['pull_request'] = $this->normalizer->normalize($object->getPullRequest(), 'json', $context);
             }
             $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['author_association'] = $object->getAuthorAssociation();
             if ($object->isInitialized('bodyHtml') && null !== $object->getBodyHtml()) {
                 $data['body_html'] = $object->getBodyHtml();
@@ -506,8 +506,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['pull_request'] = $this->normalizer->normalize($object->getPullRequest(), 'json', $context);
             }
             $data['closed_at'] = $object->getClosedAt()->format('Y-m-d\TH:i:sP');
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['author_association'] = $object->getAuthorAssociation();
             if ($object->isInitialized('bodyHtml') && null !== $object->getBodyHtml()) {
                 $data['body_html'] = $object->getBodyHtml();

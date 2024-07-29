@@ -140,7 +140,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['hostName'] = $object->getHostName();
             }
             if ($object->isInitialized('lastResponseTime') && null !== $object->getLastResponseTime()) {
-                $data['lastResponseTime'] = $object->getLastResponseTime()->format('Y-m-d\TH:i:sP');
+                $data['lastResponseTime'] = $object->getLastResponseTime()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('serviceName') && null !== $object->getServiceName()) {
                 $data['serviceName'] = $object->getServiceName();
@@ -302,7 +302,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['hostName'] = $object->getHostName();
             }
             if ($object->isInitialized('lastResponseTime') && null !== $object->getLastResponseTime()) {
-                $data['lastResponseTime'] = $object->getLastResponseTime()->format('Y-m-d\TH:i:sP');
+                $data['lastResponseTime'] = $object->getLastResponseTime()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('serviceName') && null !== $object->getServiceName()) {
                 $data['serviceName'] = $object->getServiceName();

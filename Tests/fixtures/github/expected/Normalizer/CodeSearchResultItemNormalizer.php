@@ -131,7 +131,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['language'] = $object->getLanguage();
             }
             if ($object->isInitialized('lastModifiedAt') && null !== $object->getLastModifiedAt()) {
-                $data['last_modified_at'] = $object->getLastModifiedAt()->format('Y-m-d\TH:i:sP');
+                $data['last_modified_at'] = $object->getLastModifiedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('lineNumbers') && null !== $object->getLineNumbers()) {
                 $values = [];
@@ -286,7 +286,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['language'] = $object->getLanguage();
             }
             if ($object->isInitialized('lastModifiedAt') && null !== $object->getLastModifiedAt()) {
-                $data['last_modified_at'] = $object->getLastModifiedAt()->format('Y-m-d\TH:i:sP');
+                $data['last_modified_at'] = $object->getLastModifiedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('lineNumbers') && null !== $object->getLineNumbers()) {
                 $values = [];

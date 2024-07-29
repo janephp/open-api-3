@@ -121,8 +121,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['content_type'] = $object->getContentType();
             $data['size'] = $object->getSize();
             $data['download_count'] = $object->getDownloadCount();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['uploader'] = $this->normalizer->normalize($object->getUploader(), 'json', $context);
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
@@ -253,8 +253,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['content_type'] = $object->getContentType();
             $data['size'] = $object->getSize();
             $data['download_count'] = $object->getDownloadCount();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['uploader'] = $this->normalizer->normalize($object->getUploader(), 'json', $context);
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {

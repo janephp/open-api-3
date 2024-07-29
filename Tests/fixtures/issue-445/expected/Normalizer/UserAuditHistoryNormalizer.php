@@ -54,7 +54,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function normalize(mixed $object, string $format = null, array $context = []): array|string|int|float|bool|\ArrayObject|null
         {
             $data = [];
-            $data['modificationDate'] = $object->getModificationDate()->format('Y-m-d\TH:i:sP');
+            $data['modificationDate'] = $object->getModificationDate()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('modifiedByUser') && null !== $object->getModifiedByUser()) {
                 $data['modifiedByUser'] = $object->getModifiedByUser();
             }
@@ -112,7 +112,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         public function normalize($object, $format = null, array $context = [])
         {
             $data = [];
-            $data['modificationDate'] = $object->getModificationDate()->format('Y-m-d\TH:i:sP');
+            $data['modificationDate'] = $object->getModificationDate()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('modifiedByUser') && null !== $object->getModifiedByUser()) {
                 $data['modifiedByUser'] = $object->getModifiedByUser();
             }

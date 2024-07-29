@@ -227,8 +227,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['public_gists'] = $object->getPublicGists();
             $data['followers'] = $object->getFollowers();
             $data['following'] = $object->getFollowing();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('plan') && null !== $object->getPlan()) {
                 $data['plan'] = $this->normalizer->normalize($object->getPlan(), 'json', $context);
             }
@@ -480,8 +480,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['public_gists'] = $object->getPublicGists();
             $data['followers'] = $object->getFollowers();
             $data['following'] = $object->getFollowing();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('plan') && null !== $object->getPlan()) {
                 $data['plan'] = $this->normalizer->normalize($object->getPlan(), 'json', $context);
             }

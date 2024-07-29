@@ -129,8 +129,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['supportsCancellation'] = $object->getSupportsCancellation();
             $data['businessProcessScope'] = $object->getBusinessProcessScope();
             $data['lifeCycle'] = $object->getLifeCycle();
-            $data['startDate'] = $object->getStartDate()->format('Y-m-d\TH:i:sP');
-            $data['endDate'] = $object->getEndDate()->format('Y-m-d\TH:i:sP');
+            $data['startDate'] = $object->getStartDate()?->format('Y-m-d\TH:i:sP');
+            $data['endDate'] = $object->getEndDate()?->format('Y-m-d\TH:i:sP');
             $data['finished'] = $object->getFinished();
             if ($object->isInitialized('stateHistory') && null !== $object->getStateHistory()) {
                 $values = [];
@@ -278,8 +278,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['supportsCancellation'] = $object->getSupportsCancellation();
             $data['businessProcessScope'] = $object->getBusinessProcessScope();
             $data['lifeCycle'] = $object->getLifeCycle();
-            $data['startDate'] = $object->getStartDate()->format('Y-m-d\TH:i:sP');
-            $data['endDate'] = $object->getEndDate()->format('Y-m-d\TH:i:sP');
+            $data['startDate'] = $object->getStartDate()?->format('Y-m-d\TH:i:sP');
+            $data['endDate'] = $object->getEndDate()?->format('Y-m-d\TH:i:sP');
             $data['finished'] = $object->getFinished();
             if ($object->isInitialized('stateHistory') && null !== $object->getStateHistory()) {
                 $values = [];

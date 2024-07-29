@@ -131,7 +131,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['html_url'] = $object->getHtmlUrl();
             $data['status'] = $object->getStatus();
             $data['conclusion'] = $object->getConclusion();
-            $data['started_at'] = $object->getStartedAt()->format('Y-m-d\TH:i:sP');
+            $data['started_at'] = $object->getStartedAt()?->format('Y-m-d\TH:i:sP');
             $data['completed_at'] = $object->getCompletedAt()->format('Y-m-d\TH:i:sP');
             $data['name'] = $object->getName();
             if ($object->isInitialized('steps') && null !== $object->getSteps()) {
@@ -281,7 +281,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['html_url'] = $object->getHtmlUrl();
             $data['status'] = $object->getStatus();
             $data['conclusion'] = $object->getConclusion();
-            $data['started_at'] = $object->getStartedAt()->format('Y-m-d\TH:i:sP');
+            $data['started_at'] = $object->getStartedAt()?->format('Y-m-d\TH:i:sP');
             $data['completed_at'] = $object->getCompletedAt()->format('Y-m-d\TH:i:sP');
             $data['name'] = $object->getName();
             if ($object->isInitialized('steps') && null !== $object->getSteps()) {

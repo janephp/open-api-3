@@ -292,7 +292,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['followers'] = $object->getFollowers();
             $data['following'] = $object->getFollowing();
             $data['html_url'] = $object->getHtmlUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['type'] = $object->getType();
             if ($object->isInitialized('totalPrivateRepos') && null !== $object->getTotalPrivateRepos()) {
                 $data['total_private_repos'] = $object->getTotalPrivateRepos();
@@ -336,7 +336,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('membersCanCreateInternalRepositories') && null !== $object->getMembersCanCreateInternalRepositories()) {
                 $data['members_can_create_internal_repositories'] = $object->getMembersCanCreateInternalRepositories();
             }
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;
@@ -637,7 +637,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             $data['followers'] = $object->getFollowers();
             $data['following'] = $object->getFollowing();
             $data['html_url'] = $object->getHtmlUrl();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             $data['type'] = $object->getType();
             if ($object->isInitialized('totalPrivateRepos') && null !== $object->getTotalPrivateRepos()) {
                 $data['total_private_repos'] = $object->getTotalPrivateRepos();
@@ -681,7 +681,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             if ($object->isInitialized('membersCanCreateInternalRepositories') && null !== $object->getMembersCanCreateInternalRepositories()) {
                 $data['members_can_create_internal_repositories'] = $object->getMembersCanCreateInternalRepositories();
             }
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             foreach ($object as $key => $value) {
                 if (preg_match('/.*/', (string) $key)) {
                     $data[$key] = $value;

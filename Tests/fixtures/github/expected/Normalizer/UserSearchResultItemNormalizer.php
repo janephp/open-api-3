@@ -251,10 +251,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['following'] = $object->getFollowing();
             }
             if ($object->isInitialized('createdAt') && null !== $object->getCreatedAt()) {
-                $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+                $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('updatedAt') && null !== $object->getUpdatedAt()) {
-                $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+                $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('name') && null !== $object->getName()) {
                 $data['name'] = $object->getName();
@@ -547,10 +547,10 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
                 $data['following'] = $object->getFollowing();
             }
             if ($object->isInitialized('createdAt') && null !== $object->getCreatedAt()) {
-                $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
+                $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('updatedAt') && null !== $object->getUpdatedAt()) {
-                $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+                $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             }
             if ($object->isInitialized('name') && null !== $object->getName()) {
                 $data['name'] = $object->getName();

@@ -74,8 +74,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             $data['name'] = $object->getName();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['visibility'] = $object->getVisibility();
             if ($object->isInitialized('selectedRepositoriesUrl') && null !== $object->getSelectedRepositoriesUrl()) {
                 $data['selected_repositories_url'] = $object->getSelectedRepositoriesUrl();
@@ -162,8 +162,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         {
             $data = [];
             $data['name'] = $object->getName();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['visibility'] = $object->getVisibility();
             if ($object->isInitialized('selectedRepositoriesUrl') && null !== $object->getSelectedRepositoriesUrl()) {
                 $data['selected_repositories_url'] = $object->getSelectedRepositoriesUrl();

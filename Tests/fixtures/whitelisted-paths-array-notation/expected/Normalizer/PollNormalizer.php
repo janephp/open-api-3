@@ -81,7 +81,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['options'] = $values;
             $data['voting_status'] = $object->getVotingStatus();
-            $data['end_datetime'] = $object->getEndDatetime()->format('Y-m-d\TH:i:sP');
+            $data['end_datetime'] = $object->getEndDatetime()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('durationMinutes') && null !== $object->getDurationMinutes()) {
                 $data['duration_minutes'] = $object->getDurationMinutes();
             }
@@ -171,7 +171,7 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['options'] = $values;
             $data['voting_status'] = $object->getVotingStatus();
-            $data['end_datetime'] = $object->getEndDatetime()->format('Y-m-d\TH:i:sP');
+            $data['end_datetime'] = $object->getEndDatetime()?->format('Y-m-d\TH:i:sP');
             if ($object->isInitialized('durationMinutes') && null !== $object->getDurationMinutes()) {
                 $data['duration_minutes'] = $object->getDurationMinutes();
             }

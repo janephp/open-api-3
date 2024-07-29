@@ -149,8 +149,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['members_count'] = $object->getMembersCount();
             $data['repos_count'] = $object->getReposCount();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['organization'] = $this->normalizer->normalize($object->getOrganization(), 'json', $context);
             if ($object->isInitialized('ldapDn') && null !== $object->getLdapDn()) {
                 $data['ldap_dn'] = $object->getLdapDn();
@@ -312,8 +312,8 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
             }
             $data['members_count'] = $object->getMembersCount();
             $data['repos_count'] = $object->getReposCount();
-            $data['created_at'] = $object->getCreatedAt()->format('Y-m-d\TH:i:sP');
-            $data['updated_at'] = $object->getUpdatedAt()->format('Y-m-d\TH:i:sP');
+            $data['created_at'] = $object->getCreatedAt()?->format('Y-m-d\TH:i:sP');
+            $data['updated_at'] = $object->getUpdatedAt()?->format('Y-m-d\TH:i:sP');
             $data['organization'] = $this->normalizer->normalize($object->getOrganization(), 'json', $context);
             if ($object->isInitialized('ldapDn') && null !== $object->getLdapDn()) {
                 $data['ldap_dn'] = $object->getLdapDn();
