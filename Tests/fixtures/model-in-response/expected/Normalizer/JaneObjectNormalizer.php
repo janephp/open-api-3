@@ -66,7 +66,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null): array
         {
-            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Error::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\EmptySpace::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\TestIdGetResponse200::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
+            return [
+                
+                \Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\Error::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\EmptySpace::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\TestIdGetResponse200::class => false,
+                \Jane\Component\JsonSchemaRuntime\Reference::class => false,
+            ];
         }
     }
 } else {
@@ -130,7 +138,15 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null): array
         {
-            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Error::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\EmptySpace::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\TestIdGetResponse200::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
+            return [
+                
+                \Jane\Component\OpenApi3\Tests\Expected\Model\Schema::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\SchemaObjectProperty::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\Error::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\EmptySpace::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\TestIdGetResponse200::class => false,
+                \Jane\Component\JsonSchemaRuntime\Reference::class => false,
+            ];
         }
     }
 }

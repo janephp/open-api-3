@@ -64,7 +64,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null): array
         {
-            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
+            return [
+                
+                \Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => false,
+                \Jane\Component\JsonSchemaRuntime\Reference::class => false,
+            ];
         }
     }
 } else {
@@ -126,7 +133,14 @@ if (!class_exists(Kernel::class) or (Kernel::MAJOR_VERSION >= 7 or Kernel::MAJOR
         }
         public function getSupportedTypes(?string $format = null): array
         {
-            return [\Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => false, \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => false, \Jane\Component\JsonSchemaRuntime\Reference::class => false];
+            return [
+                
+                \Jane\Component\OpenApi3\Tests\Expected\Model\Expansions::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\TweetLookupResponse::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\Poll::class => false,
+                \Jane\Component\OpenApi3\Tests\Expected\Model\PollOption::class => false,
+                \Jane\Component\JsonSchemaRuntime\Reference::class => false,
+            ];
         }
     }
 }
