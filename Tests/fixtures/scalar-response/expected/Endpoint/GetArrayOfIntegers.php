@@ -1,17 +1,17 @@
 <?php
 
-namespace Github\Endpoint;
+namespace Jane\Component\OpenApi3\Tests\Expected\Endpoint;
 
-class GitignoreGetAllTemplates extends \Github\Runtime\Client\BaseEndpoint implements \Github\Runtime\Client\Endpoint
+class GetArrayOfIntegers extends \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\BaseEndpoint implements \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\Endpoint
 {
-    use \Github\Runtime\Client\EndpointTrait;
+    use \Jane\Component\OpenApi3\Tests\Expected\Runtime\Client\EndpointTrait;
     public function getMethod(): string
     {
         return 'GET';
     }
     public function getUri(): string
     {
-        return '/gitignore/templates';
+        return '/array-of-integers';
     }
     public function getBody(\Symfony\Component\Serializer\SerializerInterface $serializer, $streamFactory = null): array
     {
@@ -33,9 +33,6 @@ class GitignoreGetAllTemplates extends \Github\Runtime\Client\BaseEndpoint imple
         $body = (string) $response->getBody();
         if (is_null($contentType) === false && (200 === $status && mb_strpos(strtolower($contentType), 'application/json') !== false)) {
             return json_decode($body);
-        }
-        if (304 === $status) {
-            return null;
         }
     }
     public function getAuthenticationScopes(): array
