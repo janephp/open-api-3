@@ -4,7 +4,7 @@ namespace Jane\Component\OpenApi3\Tests\Client\Model;
 
 use Jane\Component\OpenApi3\Tests\Client\Runtime\AdditionalAndPatternProperties;
 use Jane\Component\OpenApi3\Tests\Client\Runtime\AdditionalPropertiesInterface;
-class SimpleResponse implements AdditionalPropertiesInterface
+class ThingInput implements AdditionalPropertiesInterface
 {
     use AdditionalAndPatternProperties;
     /**
@@ -18,49 +18,49 @@ class SimpleResponse implements AdditionalPropertiesInterface
     /**
      * @var string
      */
-    protected $foo;
+    protected $name;
     /**
-     * @var bool
+     * @var string
      */
-    protected $baz;
+    protected $kind;
     /**
      * @return string
      */
-    public function getFoo(): string
+    public function getName(): string
     {
-        return $this->foo;
+        return $this->name;
     }
     /**
-     * @param string $foo
+     * @param string $name
      *
      * @return self
      */
-    public function setFoo(string $foo): self
+    public function setName(string $name): self
     {
-        $this->initialized['foo'] = true;
-        $this->foo = $foo;
+        $this->initialized['name'] = true;
+        $this->name = $name;
         return $this;
     }
     /**
-     * @return bool
+     * @return string
      */
-    public function getBaz(): bool
+    public function getKind(): string
     {
-        return $this->baz;
+        return $this->kind;
     }
     /**
-     * @param bool $baz
+     * @param string $kind
      *
      * @return self
      */
-    public function setBaz(bool $baz): self
+    public function setKind(string $kind): self
     {
-        $this->initialized['baz'] = true;
-        $this->baz = $baz;
+        $this->initialized['kind'] = true;
+        $this->kind = $kind;
         return $this;
     }
     public function definedProperties(): array
     {
-        return ['foo' => ['foo', 'getFoo', 'setFoo'], 'baz' => ['baz', 'getBaz', 'setBaz']];
+        return ['name' => ['name', 'getName', 'setName'], 'kind' => ['kind', 'getKind', 'setKind']];
     }
 }
